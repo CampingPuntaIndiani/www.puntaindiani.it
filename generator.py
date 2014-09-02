@@ -2,20 +2,22 @@
 __author__ = 'martin'
 
 import gettext
+from gettext import gettext as _
 from jinja2 import Environment, FileSystemLoader
 from unipath import FSPath as Path
 
-I18N_PATH = Path(__file__).absolute().ancestor(1).child('i18n')
+# CONFIG
+BASE = Path(__file__).absolute().ancestor(1)
+I18N_PATH = BASE.child('i18n')
+TPL_PATH = BASE.child('templates')
+DIST_PATH = BASE.child('dist')
 
-TPL_PATH = Path(__file__).absolute().ancestor(1).child('templates')
 TPL_SUFFIX = '.tpl.html'
-
-DIST_PATH = Path(__file__).absolute().ancestor(1).child('dist')
 DIST_SUFFIX = '.html'
 
 
 # Langs to be rendered with
-LANGS = ['eng', "ita", "ger", "ned"]
+LANGS = ['en', "it", "nl", "de"]
 
 # pages that has to be generated
 PAGES = ['home']
@@ -24,28 +26,29 @@ PAGES = ['home']
 def generate():
     env = Environment(loader=FileSystemLoader(TPL_PATH),
                       extensions=['jinja2.ext.i18n'])
-    en = gettext.translation('website', localedir=I18N_PATH, languages=['en'])
-    env.install_gettext_translations(en)
 
-    """
-    enable i18n extension,
-    generate localized
-    put in dist/
-    """
+    for lang in LANGS:
+        trans = gettext.translation('website',  localedir=I18N_PATH,
+                                    languages=[lang])
+        env.install_gettext_translations(trans)
 
-    for page in PAGES:
-        tpl = env.get_template(page + TPL_SUFFIX)
+        wpath = DIST_PATH.child(lang)
+        wpath.rmtree()
+        wpath.mkdir(True)
 
-        context = {
-            'lang': 'eng',
-            #'title': _(page),
-            'title': page,
-            'page': page,
+        for page in PAGES:
+            tpl = env.get_template(page + TPL_SUFFIX)
 
-        }
+            context = {
+                'lang': 'eng',
+                'title': _(page),
+                'page': page,
 
-        # render to dist
-        print tpl.render(**context)
+            }
+
+            with open(wpath.child(page+DIST_SUFFIX), 'w+') as out:
+                out.write(tpl.render(**context))
+        env.uninstall_gettext_translations(trans)
 
 
 if __name__ == '__main__':

@@ -59,3 +59,10 @@ docs/_build/
 .venv/
 
 .idea/
+
+# generated dirs
+i18n/
+dist/en/
+dist/it/
+dist/nl/
+dist/de/
