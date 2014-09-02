@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 __author__ = 'martin'
 
+import gettext
 from jinja2 import Environment, FileSystemLoader
 from unipath import FSPath as Path
+
+I18N_PATH = Path(__file__).absolute().ancestor(1).child('i18n')
 
 TPL_PATH = Path(__file__).absolute().ancestor(1).child('templates')
 TPL_SUFFIX = '.tpl.html'
@@ -21,6 +24,8 @@ PAGES = ['home']
 def generate():
     env = Environment(loader=FileSystemLoader(TPL_PATH),
                       extensions=['jinja2.ext.i18n'])
+    en = gettext.translation('website', localedir=I18N_PATH, languages=['en'])
+    env.install_gettext_translations(en)
 
     """
     enable i18n extension,
