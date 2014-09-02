@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+
+    <title>{{title}}</title>
+
+    <!-- Google internalization -->
+    <link rel="alternate" hreflang="x-default" href="/eng/{{page}}">
+    <link rel="alternate" hreflang="en" href="/eng/{{page}}">
+    <link rel="alternate" hreflang="it" href="/ita/{{page}}">
+    <link rel="alternate" hreflang="de" href="/ger/{{page}}">
+    <link rel="alternate" hreflang="nl" href="/ned/{{page}}">
+
+
+    <!-- A little bit of egocentrism :p -->
+    <meta name="author" content="Martin Brugnara <martin.brugnara@gmail.com">
+
+    <!-- Google -->
+    <meta name="google-site-verification" content="h7NhDkvsryR3wPb1KDHoRfajA7moBLGymNKtzpgerJ8"/>
+    <meta name="description" content="Camping Punta Indiani snc - Lago Caldonazzo - Italy - Trentino - Camping">
+
+    <!-- IE compatibility shit -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- favicons -->
+    <!-- firefox and favicon.ico ... DIO .. :( -->
+    <link rel="icon" href="/favicon.ico"> <!-- real location: /static/favicon/favicon.ico -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/static/favicon/favicon-196.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/static/favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/static/favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" href="/static/favicon/favicon-57.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/static/favicon/favicon-144.png">
+    <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
+    <!-- Thanks faviconit.com -->
+
+    <!-- Thanks google cdn -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+
+
+    <style type="text/css">
+        #topmenu {
+            background-color: #FC3;
+        }
+
+        #topmenu li > a {
+            text-transform: capitalize;
+        }
+    </style>
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <!-- Menu -->
+    <div id="topmenu" class="pure-menu pure-menu-open pure-menu-horizontal">
+        <a href="#" class="pure-menu-heading">Camping Punta Indiani</a>
+        <ul>
+            <li class="pure-menu-selected"><a href="#">{% trans %}home{% endtrans %}</a></li>
+            <li><a href="#">Flickr</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Finance</a></li>
+        </ul>
+    </div>
+    <!-- end menu -->
+
+    {% block body %}{%  endblock %}
+</body>
+</html>

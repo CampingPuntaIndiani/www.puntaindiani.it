@@ -52,3 +52,10 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# vim
+*.sw*
+
+# Virtual env
+.venv/
+
+.idea/
