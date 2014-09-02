@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html">
 
-    <title>{{title}}</title>
+    <title>{{title|capitalize}}</title>
 
     <!-- Google internalization -->
     <link rel="alternate" hreflang="x-default" href="/eng/{{page}}">
@@ -51,18 +51,11 @@
     <!-- Thanks google cdn -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="../static/css/pure-min.css">
+    <link rel="stylesheet" href="../static/css/CampingPuntaIndiani.css">
 
 
-    <style type="text/css">
-        #topmenu {
-            background-color: #FC3;
-        }
 
-        #topmenu li > a {
-            text-transform: capitalize;
-        }
-    </style>
 
     {% block head %}{% endblock %}
 </head>
@@ -71,14 +64,38 @@
     <div id="topmenu" class="pure-menu pure-menu-open pure-menu-horizontal">
         <a href="#" class="pure-menu-heading">Camping Punta Indiani</a>
         <ul>
-            <li class="pure-menu-selected"><a href="#">{% trans %}home{% endtrans %}</a></li>
-            <li><a href="#">Flickr</a></li>
-            <li><a href="#">Messenger</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Finance</a></li>
+            {% for p in pages %}
+            <li {% if page == p %}class="pure-menu-selected"{% endif %}>
+                <a href="{% if page != p %}{{ p }}.html{% else %}#{% endif %}">{% trans %}{{ p }}{% endtrans %}</a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <ul class="pull-right">
+            <li>
+                {{ _("languages") }}:
+                <i onclick="javascript:window.location.href='../en/{{ page }}.html'" class="flag flag-en"></i>
+                <i onclick="javascript:window.location.href='../nl/{{ page }}.html'" class="flag flag-nl"></i>
+                <i onclick="javascript:window.location.href='../de/{{ page }}.html'" class="flag flag-de"></i>
+                <i onclick="javascript:window.location.href='../it/{{ page }}.html'" class="flag flag-it"></i>
+            </li>
+            <li {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
+                <a href="http//booking.campingpuntaindiani.it">{{ _("booking") }}</a>
+            </li>
         </ul>
     </div>
     <!-- end menu -->
+
+    <!-- CSS3 only slide show -->
+    <div class="css-slideshow">
+        {% for i in range(0,8) %}
+        <figure>
+            <img src="../static/img/slideshow/CampingPuntaIndianiHeader{{ i }}.jpg" alt="Camping Punta Indiani header {{ i }} " />
+            <!-- <figcaption><strong></strong></figcaption> -->
+        </figure>
+        {%  endfor %}
+    </div>
+    <!-- end slide show -->
 
     {% block body %}{%  endblock %}
 </body>

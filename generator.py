@@ -40,10 +40,10 @@ def generate():
             tpl = env.get_template(page + TPL_SUFFIX)
 
             context = {
+                'pages': PAGES,
                 'lang': 'eng',
-                'title': _(page),
                 'page': page,
-
+                'title': _(page),
             }
 
             with open(wpath.child(page+DIST_SUFFIX), 'w+') as out:
@@ -53,3 +53,6 @@ def generate():
 
 if __name__ == '__main__':
     generate()
+
+#TODO:
+# compile and minify the world
