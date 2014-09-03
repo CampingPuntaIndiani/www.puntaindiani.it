@@ -1,0 +1,150 @@
+/* Menu */
+#topmenu {
+    background-color: #FC3;
+}
+
+#topmenu li {text-transform: capitalize;}
+
+#topmenu .pull-right {
+    float: right;
+}
+
+.flag {
+    display: inline-block;
+    width: 1.5em;
+    height: 1em;
+    margin: 0 0 -0.2em;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+.flag.flag-it {
+    background:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjEwMDAiIHZpZXdCb3g9IjAgMCAzIDIiPg0KPHBhdGggZmlsbD0iIzAwOTI0NiIgZD0ibTAsMGgxdjJoLTF6Ii8+DQo8cGF0aCBmaWxsPSIjZmZmIiBkPSJtMSwwaDF2MmgtMXoiLz4NCjxwYXRoIGZpbGw9IiNjZTJiMzciIGQ9Im0yLDBoMXYyaC0xeiIvPg0KPC9zdmc+DQo=');
+    background-size: 100% 100%;
+}
+.flag.flag-de {
+    background:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjYwMCIgdmlld0JveD0iMCAwIDUgMyI+DQo8cGF0aCBkPSJtMCwwaDV2M2gtNXoiLz4NCjxwYXRoIGZpbGw9IiNkMDAiIGQ9Im0wLDFoNXYyaC01eiIvPg0KPHBhdGggZmlsbD0iI2ZmY2UwMCIgZD0ibTAsMmg1djFoLTV6Ii8+DQo8L3N2Zz4NCg==');
+    background-size: 100% 100%;
+}
+.flag.flag-nl {
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgOSA2Ij4NCjxwYXRoIGZpbGw9IiMyMTQ2OGIiIGQ9Im0wLDBoOXY2aC05eiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMGg5djRoLTl6Ii8+DQo8cGF0aCBmaWxsPSIjYWUxYzI4IiBkPSJtMCwwaDl2MmgtOXoiLz4NCjwvc3ZnPg0K');
+    background-size: 100% 100%;
+}
+.flag.flag-en {
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjUgMTUiIGhlaWdodD0iNzIwIj4NCjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0wLDBoMjV2MTVoLTI1eiIvPg0KPGcgZmlsbD0iI2NmMTQyYiI+DQo8cGF0aCBkPSJtMTEsMGgzdjE1aC0zeiIvPg0KPHBhdGggZD0ibTAsNmgyNXYzaC0yNXoiLz4NCjwvZz4NCjwvc3ZnPg0K');
+    background-size: 100% 100%;
+}
+
+li i:hover {cursor: pointer;}
+/* end Menu */
+
+/*  Slide show:
+    http://themarklee.com/2013/10/16/simple-crossfading-slideshow-css/
+*/
+
+/* use media query for size */
+.css-slideshow{
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+    .css-slideshow figure {
+        margin:0;
+        border:0;
+        padding:0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    /* height hack */
+    .css-slideshow figure:nth-child(1) {
+        position: relative;
+    }
+
+        .css-slideshow figure img {
+            width: 100%;
+        }
+
+/*
+.css-slideshow figcaption{
+   position: absolute;
+   top: 0;
+   color: #fff;
+   background: rgba(0,0,0, .3);
+   font-size: .8em;
+   padding: 8px 12px;
+   opacity: 0;
+   transition: opacity .5s;
+}
+.css-slideshow:hover figure figcaption{
+   transition: opacity .5s;
+   opacity: 1;
+}
+*/
+.css-slideshow figure{
+    opacity:0;
+}
+
+.css-slideshow figure:nth-child(1) {
+    animation: xfade 32s 28s infinite;
+}
+.css-slideshow figure:nth-child(2) {
+    animation: xfade 32s 24s infinite;
+}
+.css-slideshow figure:nth-child(3) {
+    animation: xfade 32s 20s infinite;
+}
+.css-slideshow figure:nth-child(4) {
+    animation: xfade 32s 16s infinite;
+}
+.css-slideshow figure:nth-child(5) {
+    animation: xfade 32s 12s infinite;
+}
+.css-slideshow figure:nth-child(6) {
+    animation: xfade 32s 8s infinite;
+}
+.css-slideshow figure:nth-child(7) {
+    animation: xfade 32s 4s infinite;
+}
+.css-slideshow figure:nth-child(8) {
+    animation: xfade 32s 0s infinite;
+}
+
+/* configured for 8 images */
+@keyframes xfade{
+    0%{opacity:1;}
+    /* 100 / num photo */
+    12.5% {opacity:1;}
+    /* overlay out */
+    14.5%{opacity:0;}
+    /* overlay in */
+    98% {opacity:0;}
+    100% {opacity:1;}
+}
+/* end slide show */
+
+/* slide show style */
+#top-slide-show {
+    margin-top: 0.5em;
+    border: 1px solid #333;
+}
+/* end */
+
+/* news style */
+#news {
+    margin-top: 0.5em;
+    border: solid 1px #eee;
+    background: none repeat scroll 0% 0% #FAFAFA
+}
+
+#news figure {
+    padding: 0.5em;
+}
+#news figure span[data-title]{
+    text-transform: uppercase;
+    color: #565D64;
+    font-size: 90%;
+}
+/* end news */
+

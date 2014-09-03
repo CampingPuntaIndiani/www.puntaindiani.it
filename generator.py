@@ -22,6 +22,12 @@ LANGS = ['en', "it", "nl", "de"]
 # pages that has to be generated
 PAGES = ['home']
 
+NEWS = [
+    (_('first'), _('new website')),
+    (_('second'), _('new website')),
+    (_('third'), _('new website')),
+]
+
 
 def generate():
     env = Environment(loader=FileSystemLoader(TPL_PATH),
@@ -41,6 +47,7 @@ def generate():
 
             context = {
                 'pages': PAGES,
+                'news': NEWS,
                 'lang': 'eng',
                 'page': page,
                 'title': _(page),

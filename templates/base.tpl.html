@@ -55,6 +55,28 @@
     <link rel="stylesheet" href="../static/css/CampingPuntaIndiani.css">
 
 
+    <style type="text/css">
+        /* news hack */
+        {%  if news|count == 0 %}
+            #news {display: none;}
+        {% else%}
+        {% set duration = 5 %}
+        {%  for x in news %}
+        #news figure:nth-child({{ loop.index }}) {
+            animation: xnofade {{ duration * loop.length }}s {{ (loop.index - 1) * duration }}s infinite;
+        }
+        {%  endfor  %}
+
+        @keyframes xnofade {
+            0%{opacity:0;}
+            2%{opacity:1;}
+            {{ (100 / news|count) - 2 }}%{opacity:1;}
+            {{ 100 / news|count }}%{opacity:0;}
+            100% {opacity:0;}
+        }
+        {% endif %}
+
+    </style>
 
 
     {% block head %}{% endblock %}
@@ -73,7 +95,6 @@
 
         <ul class="pull-right">
             <li>
-                {{ _("languages") }}:
                 <i onclick="javascript:window.location.href='../en/{{ page }}.html'" class="flag flag-en"></i>
                 <i onclick="javascript:window.location.href='../nl/{{ page }}.html'" class="flag flag-nl"></i>
                 <i onclick="javascript:window.location.href='../de/{{ page }}.html'" class="flag flag-de"></i>
@@ -87,15 +108,30 @@
     <!-- end menu -->
 
     <!-- CSS3 only slide show -->
-    <div class="css-slideshow">
-        {% for i in range(0,8) %}
-        <figure>
-            <img src="../static/img/slideshow/CampingPuntaIndianiHeader{{ i }}.jpg" alt="Camping Punta Indiani header {{ i }} " />
-            <!-- <figcaption><strong></strong></figcaption> -->
-        </figure>
-        {%  endfor %}
+    <div class="pure-g">
+        <div class="pure-u-1-5"><!-- offset --></div>
+        <div id="top-slide-show" class="pure-u-3-5 css-slideshow">
+            {% for i in range(0,8) %}
+                <figure>
+                    <img src="../static/img/slideshow/CampingPuntaIndianiHeader{{ i }}.jpg" alt="Camping Punta Indiani header {{ i }} " class="pure-img">
+                    <!-- <figcaption></figcaption> -->
+                </figure>
+            {%  endfor %}
+        </div>
     </div>
     <!-- end slide show -->
+
+    <!-- CSS3 only news -->
+       <div class="pure-g">
+        <div class="pure-u-1-5"><!-- offset --></div>
+        <!-- CSS3 only slide show -->
+        <div id="news" class="pure-u-3-5 css-slideshow">
+            {% for (title, n) in news %}
+            <figure><span data-title>{{ title }}</span> {{ n }}</figure>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- end news -->
 
     {% block body %}{%  endblock %}
 </body>
