@@ -7,11 +7,11 @@
     <title>{{title|capitalize}}</title>
 
     <!-- Google internalization -->
-    <link rel="alternate" hreflang="x-default" href="/eng/{{page}}">
-    <link rel="alternate" hreflang="en" href="/eng/{{page}}">
-    <link rel="alternate" hreflang="it" href="/ita/{{page}}">
-    <link rel="alternate" hreflang="de" href="/ger/{{page}}">
-    <link rel="alternate" hreflang="nl" href="/ned/{{page}}">
+    <link rel="alternate" hreflang="x-default" href="/eng/{{page}}.html">
+    <link rel="alternate" hreflang="en" href="/eng/{{page}}.html">
+    <link rel="alternate" hreflang="it" href="/ita/{{page}}.html">
+    <link rel="alternate" hreflang="de" href="/ger/{{page}}.html">
+    <link rel="alternate" hreflang="nl" href="/ned/{{page}}.html">
 
 
     <!-- A little bit of egocentrism :p -->
@@ -49,9 +49,13 @@
     <!-- Thanks faviconit.com -->
 
     <!-- Thanks google cdn -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+    <!--
     <link rel="stylesheet" href="../static/css/pure-min.css">
+    -->
+    <link rel="stylesheet" href="../static/css/main-16px.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../static/css/CampingPuntaIndiani.css">
 
 
@@ -62,11 +66,19 @@
         {% else%}
         {% set duration = 5 %}
         {%  for x in news %}
-        #news figure:nth-child({{ loop.index }}) {
+        #news > *:nth-child({{ loop.index }}) {
+            -webkit-animation: xnofade {{ duration * loop.length }}s {{ (loop.index - 1) * duration }}s infinite;
             animation: xnofade {{ duration * loop.length }}s {{ (loop.index - 1) * duration }}s infinite;
         }
         {%  endfor  %}
 
+        @-webkit-keyframes xnofade {
+            0%{opacity:0;}
+            2%{opacity:1;}
+            {{ (100 / news|count) - 2 }}%{opacity:1;}
+            {{ 100 / news|count }}%{opacity:0;}
+            100% {opacity:0;}
+        }
         @keyframes xnofade {
             0%{opacity:0;}
             2%{opacity:1;}
@@ -83,38 +95,35 @@
 </head>
 <body>
     <!-- Menu -->
-    <div id="topmenu" class="pure-menu pure-menu-open pure-menu-horizontal">
-        <a href="#" class="pure-menu-heading">Camping Punta Indiani</a>
-        <ul>
-            {% for p in pages %}
-            <li {% if page == p %}class="pure-menu-selected"{% endif %}>
-                <a href="{% if page != p %}{{ p }}.html{% else %}#{% endif %}">{% trans %}{{ p }}{% endtrans %}</a>
-            </li>
-            {% endfor %}
-        </ul>
+    <header id="top-menu">
+        <section class="constraint">
+            <img class="logo" src="../static/img/logo.png" alt="logo">
+            <a href="#" class="brand">Camping Punta Indiani</a>
+            <ul>
+                {% for p in pages %}
+                <li {% if page == p %}class="selected"{% endif %}>
+                    <a href="{% if page != p %}{{ p }}.html{% else %}#{% endif %}">{% trans %}{{ p }}{% endtrans %}</a>
+                </li>
+                {% endfor %}
+            </ul>
 
-        <ul class="pull-right">
-            <li {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
-                <a href="http//booking.campingpuntaindiani.it">{{ _("booking") }}</a>
-            </li>
-            <li>
-                <i class="vsep"></i>
-            </li>
-
-            <li>
-                <a class="nostyle" href="../en/{{ page }}.html" target="_self"><i class="flag flag-en"></i></a>
-                <a class="nostyle" href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl"></i></a>
-                <a class="nostyle" href="../de/{{ page }}.html" target="_self"><i class="flag flag-de"></i></a>
-                <a class="nostyle" href="../it/{{ page }}.html" target="_self"><i class="flag flag-it"></i></a>
-            </li>
-        </ul>
-    </div>
+            <ul class="pull-right">
+                <li {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
+                    <a href="http//booking.campingpuntaindiani.it">{{ _("booking") }}</a>
+                </li>
+                <li class="nostyle separator"></li>
+                <li class="nostyle">
+                    <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en"></i></a>
+                    <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl"></i></a>
+                    <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de"></i></a>
+                    <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it"></i></a>
+                </li>
+            </ul>
+        </section>
+    </header>
     <!-- end menu -->
 
-    <!-- CSS3 only slide show -->
-    <div class="pure-g">
-        <div class="pure-u-1-5"><!-- offset --></div>
-        <div id="top-slide-show" class="pure-u-3-5 css-slideshow">
+    <div id="header-slide-show" class="slideshow">
             {% for i in range(0,8) %}
                 <figure>
                     <img src="../static/img/slideshow/CampingPuntaIndianiHeader{{ i }}.jpg" alt="Camping Punta Indiani header {{ i }} " class="pure-img">
@@ -123,20 +132,45 @@
             {%  endfor %}
         </div>
     </div>
-    <!-- end slide show -->
 
-    <!-- CSS3 only news -->
-       <div class="pure-g">
-        <div class="pure-u-1-5"><!-- offset --></div>
-        <!-- CSS3 only slide show -->
-        <div id="news" class="pure-u-3-5 css-slideshow">
-            {% for (title, n) in news %}
-            <figure><span data-title>{{ title }}</span> {{ n }}</figure>
-            {% endfor %}
-        </div>
+    <div id="news" class="slideshow">
+        {% for (title, n) in news %}
+        <section><span data-title>{{ title }}</span>&nbsp;<span data-news>{{ n }}</span></section>
+        {% endfor %}
     </div>
-    <!-- end news -->
 
     {% block body %}{%  endblock %}
+
+    <footer>
+        <section class="ref expand center">
+            <img src="../static/img/footer/trentino.gif" alt="Trentino">
+            <img src="../static/img/footer/valsugana.png" alt="Valsugana">
+            <img src="../static/img/footer/adac.jpg" alt="ADAC">
+            <img src="../static/img/footer/wifi.png" alt="wifi">
+            <img src="../static/img/footer/zoover.png" alt="Zoover winner 2012">
+            <img src="../static/img/footer/ecc.jpg" alt="ECC">
+            <img src="../static/img/footer/anwb.png" alt="ANWB">
+            <img src="../static/img/footer/dcc.gif" alt="DCC"/>
+        </section>
+        <section class="half preserve">
+            <address>
+                <strong>Camping Punta Indiani</strong><br>
+                38057 Valcanover Pergine<br>
+                (TN) ITALY<br>
+                <abbr title="Phone">Phone: 0461 548062</abbr><br>
+                <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
+            </address>
+        </section><section class="half right preserve">
+            &copy; <a href="mailto:martin.brugnara@gmail.com">Martin Brugnara</a> 2010-2015<br>
+            <small>Last update : {{ now }}</small>
+            <br>
+            <br>
+        </section>
+        <section class="expand center">
+        Camping Punta Indiani Snc  di Piffer Renzo e C. - P.IVA 01834810226 <br>
+        </section>
+
+                <!-- Generated: {{ now }} -->
+    </footer>
 </body>
 </html>

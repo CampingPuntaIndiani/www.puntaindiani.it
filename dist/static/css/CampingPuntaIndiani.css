@@ -1,35 +1,211 @@
-/* Menu */
-#topmenu {
-    background-color: #FC3;
+body {
+    padding-top: 0;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #3c3c3c;
 }
 
-#topmenu li {text-transform: capitalize;}
+* {box-sizing: border-box;}
+.center {text-align: center;}
+.right {text-align: right;}
 
-#topmenu .pull-right {
-    float: right;
-    margin-right: 20px;
+strong, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
 }
 
-li a.nostyle {
-    display: inline-block;
-    padding: 0;
-}
-li a.nostyle:hover, li a.nostyle:focus {
-    background: none transparent;
+a {text-decoration: none;}
+a, a:visited, a:hover, a:active {
+  color: inherit;
 }
 
-i.vsep {
-    display: inline-block;
-    border-right: 1px dotted #333;
-    height: 1em;
-    margin-bottom: -0.2em;
+/* TODO: insert logo as brand:before, consider to use 3em or 4em for big screens */
+#top-menu {
+    font-family: 'Lato', sans-serif;
+
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    top: 0;
+    left: 0;
+
+    background-color: #fc3;
+    line-height: 2em;
+    height: 2em;
+    padding: 0 .5em 0 .5em;
+    box-shadow: 0 2px 3px #555;
 }
 
+    #top-menu .logo {
+        height: 2em;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Do not lose the menu */
+    @media only screen and (min-width: 1338px) {
+        #top-menu > .constraint {
+            display: block;
+            max-width: 1338px;
+            width: 1338px;
+            margin: auto;
+        }
+    }
+
+    #top-menu .brand {
+        font-size: 20px;
+        max-height: 2em;
+        height: 2em;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #555;
+        margin-right: 1em;
+        box-sizing: border-box;
+    }
+
+    #top-menu  > .constraint * {
+        display: inline-block;
+        margin: auto;
+    }
+
+    @media only screen and (min-width: 970px) {
+        #top-menu > .constraint > * {
+            vertical-align: top;
+        }
+    }
+
+    body {padding-top: 2em;}
+    @media only screen and (max-width: 970px) {
+        body {
+            margin-bottom: 0;
+        }
+        #top-menu {
+            position: relative;
+            height: auto;
+            width: 100%;
+        }
+        #top-menu > .constraint > * {
+            display: block;
+        }
+
+        #top-menu li {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    #top-menu ul {
+        list-style: none;
+    }
+
+    @media only screen and (min-width: 970px) {
+        #top-menu ul.pull-right {
+            float: right;
+            margin-right: .5em;
+        }
+    }
+        #top-menu ul li {
+            padding: 0 .5em 0 .5em;
+            text-transform: capitalize;
+            box-sizing: border-box;
+        }
+        #top-menu ul li.selected{
+            color: red;
+        }
+        #top-menu ul li:not(.nostyle):hover {
+            background-color: #cad2d3;
+        }
+
+        #top-menu li.separator {display:none;}
+        @media only screen and (min-width: 970px) {
+            #top-menu li.separator {
+                display: inline-block;
+                height: 1em;
+                margin-bottom: -.2em;
+                border-right: solid 1px #333;
+            }
+        }
+
+
+#header-slide-show {
+    margin-top: 1em;
+    border: solid 1px #333;
+    width: 100%;
+    height: auto;
+}
+
+#news {
+    margin: .5em 0 .5em 0;
+    border: solid #333;
+    border-width: 1px 0 1px 0;
+    padding: 0 .5em 0 .5em;
+    font-size: 18px;
+}
+    #news > *:before {
+        font-family: 'Lato', sans-serif;
+
+        content: "news: ";
+        text-transform: uppercase;
+        color: #129FEA;
+        font-size: 90%;
+        margin-right: .5em;
+    }
+    #news *[data-title] {
+        text-transform: uppercase;
+        font-size: 90%;
+        color: #555;
+        font-weight: bold;
+    }
+
+
+body > footer {
+    margin-top: 1em;
+    padding-top: 0.2em;
+    vertical-align: middle;
+}
+
+body > footer > hr {
+    color: #fc3;
+}
+
+    body > footer > section {
+        display: inline-block;
+    }
+    body > footer > .expand {width: 100%;}
+    body > footer > .half {width: 50%;}
+
+    body > footer .ref {
+        text-align: center;
+        padding: 0.2em;
+        border: solid #333;
+        border-width: 1px 0 1px 0;
+        vertical-align: middle;
+        line-height: .6em; /* dunno */
+    }
+    body > footer .ref *{
+        display: inline-block;
+    }
+    body > footer .ref img {
+        height: 3em;
+        padding: 0.2em;
+        border: solid 1px #333;
+        box-sizing: border-box;
+    }
+    @media only screen and (max-width: 767px) {
+        body > footer > section.preserve {
+            display: block;
+            width: 100%;
+            margin-top: .5em;
+            text-align: left;
+        }
+    }
+
+/* Flags support */
 .flag {
     display: inline-block;
     width: 1.5em;
     height: 1em;
-    margin: 0 0 -0.2em;
+    margin-bottom: -.2em !important;
     border: 1px solid #333;
     box-sizing: border-box;
 }
@@ -50,21 +226,17 @@ i.vsep {
     background-size: 100% 100%;
 }
 
-li i:hover {cursor: pointer;}
-/* end Menu */
-
-/*  Slide show:
-    http://themarklee.com/2013/10/16/simple-crossfading-slideshow-css/
+/* Slide show
+    Forked from: http://themarklee.com/2013/10/16/simple-crossfading-slideshow-css/
 */
 
 /* use media query for size */
-.css-slideshow{
+.slideshow{
     position: relative;
-    margin: auto;
     box-sizing: border-box;
 }
 
-    .css-slideshow figure {
+    .slideshow > * {
         margin:0;
         border:0;
         padding:0;
@@ -73,94 +245,62 @@ li i:hover {cursor: pointer;}
         width: 100%;
     }
 
-    /* height hack */
-    .css-slideshow figure:nth-child(1) {
-        position: relative;
+    .slideshow > * > * {
+        width: 100%;
     }
 
-        .css-slideshow figure img {
-            width: 100%;
-        }
+    /* hack for relative context (height) */
+    .slideshow > *:nth-child(1) {
+        position: relative !important;
+    }
 
-/*
-.css-slideshow figcaption{
-   position: absolute;
-   top: 0;
-   color: #fff;
-   background: rgba(0,0,0, .3);
-   font-size: .8em;
-   padding: 8px 12px;
-   opacity: 0;
-   transition: opacity .5s;
-}
-.css-slideshow:hover figure figcaption{
-   transition: opacity .5s;
-   opacity: 1;
-}
-*/
-.css-slideshow figure{
-    opacity:0;
-}
+.slideshow > *{opacity:0;}
 
-.css-slideshow figure:nth-child(1) {
+/* setup for 8 slide, 4 seconds each with cross fade */
+.slideshow > *:nth-child(1) {
+    -webkit-animation: xfade 32s 28s infinite;
     animation: xfade 32s 28s infinite;
 }
-.css-slideshow figure:nth-child(2) {
+.slideshow > *:nth-child(2) {
+    -webkit-animation: xfade 32s 24s infinite;
     animation: xfade 32s 24s infinite;
 }
-.css-slideshow figure:nth-child(3) {
+.slideshow > *:nth-child(3) {
+    -webkit-animation: xfade 32s 20s infinite;
     animation: xfade 32s 20s infinite;
 }
-.css-slideshow figure:nth-child(4) {
+.slideshow > *:nth-child(4) {
+    -webkit-animation: xfade 32s 16s infinite;
     animation: xfade 32s 16s infinite;
 }
-.css-slideshow figure:nth-child(5) {
+.slideshow > *:nth-child(5) {
+    -webkit-animation: xfade 32s 12s infinite;
     animation: xfade 32s 12s infinite;
 }
-.css-slideshow figure:nth-child(6) {
+.slideshow > *:nth-child(6) {
+    -webkit-animation: xfade 32s 8s infinite;
     animation: xfade 32s 8s infinite;
 }
-.css-slideshow figure:nth-child(7) {
+.slideshow > *:nth-child(7) {
+    -webkit-animation: xfade 32s 4s infinite;
     animation: xfade 32s 4s infinite;
 }
-.css-slideshow figure:nth-child(8) {
+.slideshow > *:nth-child(8) {
+    -webkit-animation: xfade 32s 0s infinite;
     animation: xfade 32s 0s infinite;
 }
 
-/* configured for 8 images */
-@keyframes xfade{
+@-webkit-keyframes xfade{
     0%{opacity:1;}
-    /* 100 / num photo */
-    12.5% {opacity:1;}
-    /* overlay out */
-    14.5%{opacity:0;}
-    /* overlay in */
-    98% {opacity:0;}
+    12.5% {opacity:1;} /* 100 / num photo */
+    14.5%{opacity:0;}/* overlay out */
+    98% {opacity:0;}/* overlay in */
     100% {opacity:1;}
 }
-/* end slide show */
-
-/* slide show style */
-#top-slide-show {
-    margin-top: 0.5em;
-    border: 1px solid #333;
+@keyframes xfade{
+    0%{opacity:1;}
+    12.5% {opacity:1;} /* 100 / num photo */
+    14.5%{opacity:0;}/* overlay out */
+    98% {opacity:0;}/* overlay in */
+    100% {opacity:1;}
 }
-/* end */
-
-/* news style */
-#news {
-    margin-top: 0.5em;
-    border: solid 1px #eee;
-    background: none repeat scroll 0% 0% #FAFAFA
-}
-
-#news figure {
-    padding: 0.5em;
-}
-#news figure span[data-title]{
-    text-transform: uppercase;
-    color: #565D64;
-    font-size: 90%;
-}
-/* end news */
-

@@ -2,6 +2,7 @@
 __author__ = 'martin'
 
 import gettext
+import datetime
 from gettext import gettext as _
 from jinja2 import Environment, FileSystemLoader
 from unipath import FSPath as Path
@@ -46,6 +47,7 @@ def generate():
             tpl = env.get_template(page + TPL_SUFFIX)
 
             context = {
+                'now': datetime.datetime.utcnow().isoformat(),
                 'pages': PAGES,
                 'news': NEWS,
                 'lang': 'eng',

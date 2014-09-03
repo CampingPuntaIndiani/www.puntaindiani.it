@@ -20,10 +20,10 @@ case $1 in
     "-u")
         echo "Updating"
         pybabel extract -o ./i18n/dict.pot ./templates -F babel.cfg
-        pybabel init -i ./i18n/dict.pot -D website -d ./i18n -l en
-        pybabel init -i ./i18n/dict.pot -D website -d ./i18n -l it
-        pybabel init -i ./i18n/dict.pot -D website -d ./i18n -l nl
-        pybabel init -i ./i18n/dict.pot -D website -d ./i18n -l de
+        pybabel update -i ./i18n/dict.pot -D website -d ./i18n -l en
+        pybabel update -i ./i18n/dict.pot -D website -d ./i18n -l it
+        pybabel update -i ./i18n/dict.pot -D website -d ./i18n -l nl
+        pybabel update -i ./i18n/dict.pot -D website -d ./i18n -l de
         ;;
     "-c")
         echo "compiling"
