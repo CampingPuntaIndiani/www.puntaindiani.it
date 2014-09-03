@@ -38,9 +38,9 @@ def generate():
                                     languages=[lang])
         env.install_gettext_translations(trans)
 
-        wpath = DIST_PATH.child(lang)
-        wpath.rmtree()
-        wpath.mkdir(True)
+        output_path = DIST_PATH.child(lang)
+        output_path.rmtree()
+        output_path.mkdir(True)
 
         for page in PAGES:
             tpl = env.get_template(page + TPL_SUFFIX)
@@ -53,7 +53,7 @@ def generate():
                 'title': _(page),
             }
 
-            with open(wpath.child(page+DIST_SUFFIX), 'w+') as out:
+            with open(output_path.child(page+DIST_SUFFIX), 'w+') as out:
                 out.write(tpl.render(**context))
         env.uninstall_gettext_translations(trans)
 

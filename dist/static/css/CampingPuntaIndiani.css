@@ -7,6 +7,22 @@
 
 #topmenu .pull-right {
     float: right;
+    margin-right: 20px;
+}
+
+li a.nostyle {
+    display: inline-block;
+    padding: 0;
+}
+li a.nostyle:hover, li a.nostyle:focus {
+    background: none transparent;
+}
+
+i.vsep {
+    display: inline-block;
+    border-right: 1px dotted #333;
+    height: 1em;
+    margin-bottom: -0.2em;
 }
 
 .flag {

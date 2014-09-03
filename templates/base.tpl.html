@@ -94,14 +94,18 @@
         </ul>
 
         <ul class="pull-right">
-            <li>
-                <i onclick="javascript:window.location.href='../en/{{ page }}.html'" class="flag flag-en"></i>
-                <i onclick="javascript:window.location.href='../nl/{{ page }}.html'" class="flag flag-nl"></i>
-                <i onclick="javascript:window.location.href='../de/{{ page }}.html'" class="flag flag-de"></i>
-                <i onclick="javascript:window.location.href='../it/{{ page }}.html'" class="flag flag-it"></i>
-            </li>
             <li {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
                 <a href="http//booking.campingpuntaindiani.it">{{ _("booking") }}</a>
+            </li>
+            <li>
+                <i class="vsep"></i>
+            </li>
+
+            <li>
+                <a class="nostyle" href="../en/{{ page }}.html" target="_self"><i class="flag flag-en"></i></a>
+                <a class="nostyle" href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl"></i></a>
+                <a class="nostyle" href="../de/{{ page }}.html" target="_self"><i class="flag flag-de"></i></a>
+                <a class="nostyle" href="../it/{{ page }}.html" target="_self"><i class="flag flag-it"></i></a>
             </li>
         </ul>
     </div>

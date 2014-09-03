@@ -65,3 +65,5 @@ dist/en/
 dist/it/
 dist/nl/
 dist/de/
+
+.DS_Store
