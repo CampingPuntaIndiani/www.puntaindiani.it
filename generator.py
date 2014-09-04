@@ -21,7 +21,8 @@ DIST_SUFFIX = '.html'
 LANGS = ['en', "it", "nl", "de"]
 
 # pages that has to be generated
-PAGES = ['home']
+PAGES = ['home', 'prices']
+EXTRA = ['pet_disclaimer']
 
 NEWS = [
     (_('first'), _('new website')),
@@ -43,7 +44,7 @@ def generate():
         output_path.rmtree()
         output_path.mkdir(True)
 
-        for page in PAGES:
+        for page in PAGES + EXTRA:
             tpl = env.get_template(page + TPL_SUFFIX)
 
             context = {

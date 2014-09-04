@@ -19,6 +19,10 @@ a, a:visited, a:hover, a:active {
   color: inherit;
 }
 
+p {
+    text-indent: 2em;
+}
+
 /* TODO: insert logo as brand:before, consider to use 3em or 4em for big screens */
 #top-menu {
     font-family: 'Lato', sans-serif;
@@ -257,35 +261,35 @@ body > footer > hr {
 .slideshow > *{opacity:0;}
 
 /* setup for 8 slide, 4 seconds each with cross fade */
-.slideshow > *:nth-child(1) {
+.slideshow > *:nth-child(8) {
     -webkit-animation: xfade 32s 28s infinite;
     animation: xfade 32s 28s infinite;
 }
-.slideshow > *:nth-child(2) {
+.slideshow > *:nth-child(7) {
     -webkit-animation: xfade 32s 24s infinite;
     animation: xfade 32s 24s infinite;
 }
-.slideshow > *:nth-child(3) {
+.slideshow > *:nth-child(6) {
     -webkit-animation: xfade 32s 20s infinite;
     animation: xfade 32s 20s infinite;
 }
-.slideshow > *:nth-child(4) {
+.slideshow > *:nth-child(5) {
     -webkit-animation: xfade 32s 16s infinite;
     animation: xfade 32s 16s infinite;
 }
-.slideshow > *:nth-child(5) {
+.slideshow > *:nth-child(4) {
     -webkit-animation: xfade 32s 12s infinite;
     animation: xfade 32s 12s infinite;
 }
-.slideshow > *:nth-child(6) {
+.slideshow > *:nth-child(3) {
     -webkit-animation: xfade 32s 8s infinite;
     animation: xfade 32s 8s infinite;
 }
-.slideshow > *:nth-child(7) {
+.slideshow > *:nth-child(2) {
     -webkit-animation: xfade 32s 4s infinite;
     animation: xfade 32s 4s infinite;
 }
-.slideshow > *:nth-child(8) {
+.slideshow > *:nth-child(1) {
     -webkit-animation: xfade 32s 0s infinite;
     animation: xfade 32s 0s infinite;
 }
@@ -304,3 +308,64 @@ body > footer > hr {
     98% {opacity:0;}/* overlay in */
     100% {opacity:1;}
 }
+
+/* Modal support */
+#modal {display: none}
+#modal.active {
+    display: block;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+    #modal > section {
+        position: absolute;
+        top: 5%;
+        height: 90%;
+        margin: auto;
+        left: 0;
+        right: 0;
+        background: #fff;
+
+        width: 1170px;
+        padding: 72px 48px 84px;
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        #modal > section {
+            width: 896px;
+            padding: 72px 48px 84px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #modal > section {
+            width: 712px;
+            padding: 48px 28px 60px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        #modal > section {
+            width: 252px;
+            padding: 48px 34px 60px;
+        }
+
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        #modal > section {
+            width: 436px;
+            padding: 36px 22px 48px;
+        }
+    }
+
+    #modal a[data-action=close] {
+        position: absolute;
+        top: 12px;
+        right: 5px;
+        font-size: 4em;
+    }
