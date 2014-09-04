@@ -15,13 +15,6 @@
         <!--
         <caption>
         -->
-        <colgroup>
-            <col class="title">
-            <col class="price">
-            <col class="price">
-            <col class="price">
-            <col class="price">
-        </colgroup>
         <thead>
           <th>2014</th>
           <th>27-04 : 30-06</th>
@@ -74,27 +67,26 @@
           </tr>
           <tr>
             <td>{{ _('visitor') }}&sup2;</td>
-            <td >9.00</td>
-            <td >9.00</td>
-            <td >9.00</td>
-            <td >9.00</td>
+            <td>9.00</td>
+            <td>9.00</td>
+            <td>9.00</td>
+            <td>9.00</td>
           </tr>
           <tr>
-            <td>{{ _('dog') }}&sup3;<td>
-            <td >4.00</td>
-            <td >4.00</td>
-            <td >5.00</td>
-            <td >4.00</td>
+            <td>{{ _('dog') }}&sup3;</td>
+            <td>4.00</td>
+            <td>4.00</td>
+            <td>5.00</td>
+            <td>4.00</td>
           </tr>
         </tbody>
         <tfoot>
             <tr>
-              <td colspan="5">
-             &sup1;&rpar; {{ _('2nd car | small tent | boats, etc.. Outside the place.') }}<br>
-             &sup2;&rpar; {{ _('each visit has to be pre-authorized by direction.') }}<br>
-             &sup3;&rpar; {{ _('dog entrance must be pre-authorized by the Management.') }}<br>
-             {{ _('at the following') }} <a href="pet_disclaimer.html" target="_blank" data-mode="modal">{{ _('conditions') }}</a>
-          </td>
+                <td colspan="5">
+                    <p>&sup1; {{ _('2nd car | small tent | boats, etc.. Outside the place.') }}</p>
+                    <p>&sup2; {{ _('each visit has to be pre-authorized by direction.') }}</p>
+                    <p>&sup3; {{ _('dog entrance must be pre-authorized by the Management and must comply the following') }} <a href="pet_disclaimer.html" target="_blank" data-mode="modal">{{ _('conditions') }}</a></p>
+              </td>
             </tr>
         </tfoot>
       </table>

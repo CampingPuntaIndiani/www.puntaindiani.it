@@ -19,9 +19,8 @@ a, a:visited, a:hover, a:active {
   color: inherit;
 }
 
-p {
-    text-indent: 2em;
-}
+p {text-indent: 2em;}
+p::first-letter {text-transform: uppercase;}
 
 /* TODO: insert logo as brand:before, consider to use 3em or 4em for big screens */
 #top-menu {
@@ -375,18 +374,19 @@ table.prices-table {
     margin: auto;
     width: 80%;
 }
-    table.prices-table .price:before {
-        content: '\20AC';
+    table.prices-table tbody td {text-align: center;}
+    table.prices-table tbody tr td:first-child{
+        text-align: left;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    table.prices-table tfoot tr:last-child td {
+        font-size: 12px;
+        font-weight: lighter;
     }
 
-    table.prices-table .gratis {
-        background-color: forestgreen;
-    }
-    table.prices-table .gratis:before {
-        content: 'GRATIS';
-    }
-
-    table.prices-table .special {
-    background-color: orange;
-}
+    table.prices-table tbody tr td:not(:first-child):before {content: '\20AC  ';}
+    table.prices-table .gratis {background-color: forestgreen;}
+    table.prices-table .gratis:before {content: 'GRATIS' !important;}
+    table.prices-table .special {background-color: orange;}
 
