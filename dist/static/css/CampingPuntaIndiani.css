@@ -441,3 +441,24 @@ table.prices-table {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     #map {height: 300px;}
 }
+
+.row {
+    display: block;
+    width: 100%;
+}
+
+.row > * {
+    display: inline-block;
+}
+
+.pic-sm {
+    height: 200px;
+    padding: .2em;
+    border: solid 1px #333;
+    float: left;
+    clear: right;
+}
+
+section, .pic-sm {
+    clear: both;
+}
