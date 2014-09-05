@@ -2,14 +2,12 @@
 {% block head %}{% endblock %}
 
 {% block body %}
-    <p>
     {% trans %}
-        You can make a reservation after the first of January.
-        Be aware that Punta Indiani is a familycamping, with lots of returning guests.
-        We recommend you to make your reservation in time.
-        For the months july and august we suggest a reservation.
+        You can make a reservation after the first of January.<br>
+        Be aware that Punta Indiani is a familycamping, with lots of returning guests.<br>
+        We recommend you to make your reservation in time.<br>
+        For the months july and august we suggest a reservation.<br>
     {% endtrans %}
-    </p>
 
     <table class="prices-table">
         <!--
@@ -85,7 +83,7 @@
                 <td colspan="5">
                     <p>&sup1; {{ _('2nd car | small tent | boats, etc.. Outside the place.') }}</p>
                     <p>&sup2; {{ _('each visit has to be pre-authorized by direction.') }}</p>
-                    <p>&sup3; {{ _('dog entrance must be pre-authorized by the Management and must comply the following') }} <a href="pet_disclaimer.html" target="_blank" data-mode="modal">{{ _('conditions') }}</a></p>
+                    <p>&sup3; {{ _('dog entrance must be pre-authorized by the Management and must comply the following') }} <a class="h" href="pet_disclaimer.html" target="_blank" data-mode="modal">{{ _('conditions') }}</a></p>
               </td>
             </tr>
         </tfoot>
