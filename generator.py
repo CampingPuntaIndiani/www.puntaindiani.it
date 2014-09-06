@@ -21,7 +21,7 @@ DIST_SUFFIX = '.html'
 LANGS = ['en', "it", "nl", "de"]
 
 # pages that has to be generated
-PAGES = ['home', 'prices', 'route']
+PAGES = ['home', 'prices', 'map', 'route']
 EXTRA = ['pet_disclaimer']
 
 NEWS = [

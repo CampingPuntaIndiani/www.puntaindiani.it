@@ -1,0 +1,13 @@
+{% extends 'base.tpl.html' %}
+{% block head %}{% endblock %}
+
+{% block body %}
+    <div id="cmap-wrapper">
+        <picture>
+            <source media="(min-width: 768px)"  src="../static/img/cmap/CampingMapH.jpg">
+            <source media="(max-width: 767px)"  src="../static/img/cmap/CampingMapL.jpg">
+            <img id="cmap" src="../static/img/cmap/CampingMapH.jpg" alt="Camping Map">
+        </picture>
+        <section id="cmap-points"></section>
+    </div><img id="cmap-view" alt="please enable javascript">
+{% endblock %}
