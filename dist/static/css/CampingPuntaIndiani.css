@@ -33,7 +33,6 @@ p::first-letter {text-transform: uppercase;}
 
     position: absolute;
     width: 100vw;
-    height: auto;
     top: 0;
     left: 0;
 
@@ -377,8 +376,7 @@ body > footer > hr {
 /* prices.html */
 table.prices-table {
     font-family: 'Lato', sans-serif;
-    margin: auto;
-    margin-top: .5em;
+    margin: .5em auto auto auto;
     width: 80%;
     border: 1px solid #ddd;
     border-spacing: 0;
@@ -451,14 +449,66 @@ table.prices-table {
     display: inline-block;
 }
 
-.pic-sm {
-    height: 200px;
-    padding: .2em;
-    border: solid 1px #333;
-    float: left;
-    clear: right;
+figure.prices-pitch {
+    display: inline-block;
+    width: 33.3%;
+    vertical-align: top;
+    padding: 0 3em 0 3em;
 }
 
-section, .pic-sm {
-    clear: both;
+    figure.prices-pitch img {
+        margin: auto;
+        width: 100%;
+        border: solid 1px #333;
+    }
+
+    figure.prices-pitch figcaption {
+        text-align: left;
+    }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    figure.prices-pitch {padding: 0 2em 0 2em;}
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    figure.prices-pitch {padding: 0 1em 0 1em;}
+}
+@media only screen and (max-width: 768px) {
+   figure.prices-pitch {
+       display: block;
+       padding: 0 1em 0 1em;
+       width: 100%;
+   }
+    figure.prices-pitch img {
+        width: auto;
+        height: 126px;
+    }
+}
+
+.slideshow.slide-3 > *:nth-child(3) {
+    -webkit-animation: xfade3 18s 12s infinite;
+    animation: xfade3 18s 12s infinite;
+}
+.slideshow.slide-3 > *:nth-child(2) {
+    -webkit-animation: xfade3 12s 6s infinite;
+    animation: xfade3 18s 6s infinite;
+}
+.slideshow.slide-3 > *:nth-child(1) {
+    -webkit-animation: xfade3 12s 0s infinite;
+    animation: xfade3 18s 0s infinite;
+}
+
+@-webkit-keyframes xfade3{
+    0%{opacity:1;}
+    33.3% {opacity:1;} /* 100 / num photo */
+    38.3%{opacity:0;}/* overlay out */
+    96% {opacity:0;}/* overlay in */
+    100% {opacity:1;}
+}
+@keyframes xfade3{
+    0%{opacity:1;}
+    33.3% {opacity:1;} /* 100 / num photo */
+    38.3%{opacity:0;}/* overlay out */
+    96% {opacity:0;}/* overlay in */
+    100% {opacity:1;}
+}
+

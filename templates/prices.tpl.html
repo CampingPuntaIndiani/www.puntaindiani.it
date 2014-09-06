@@ -92,34 +92,84 @@
     <br>
     <br>
 
-    <section class="row">
-        <img class="pic-sm" src="../static/img/prices/placeA.jpg" alt="Place A">
+    <figure class="prices-pitch">
+        <h4>{{ _('Pitch A') }}</h4>
+        <div class="slideshow slide-3">
+            <picture>
+                <source media="(min-width: 768px)"  src="../static/img/prices/pitchA_0h.jpg">
+                <source media="(max-width: 767px)"  src="../static/img/prices/pitchA_0l.jpg">
+                <img src="../static/img/prices/placeA_0h.jpg" alt="Place A es 1">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)"  src="../static/img/prices/pitchA_1h.jpg">
+                <source media="(max-width: 767px)"  src="../static/img/prices/pitchA_1l.jpg">
+                <img src="../static/img/prices/placeA_1h.jpg" alt="Place A es 2">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)"  src="../static/img/prices/pitchA_2h.jpg">
+                <source media="(max-width: 767px)"  src="../static/img/prices/pitchA_2l.jpg">
+                <img src="../static/img/prices/placeA_2h.jpg" alt="Place A es 3">
+            </picture>
+        </div>
+        <figcaption>
         {% trans %}
-            <strong>Place A</strong>
             Piazzole direttamente sul lago [50mq -70mq].
             Hanno un parcheggio esterno riservato (incluso nel prezzo).
             In questa zona non sono ammessi cani.
         {% endtrans %}
-    </section>
-
-    <section class="row">
-        <img class="pic-sm" src="../static/img/prices/placeB.jpg" alt="Place B">
+        </figcaption>
+    </figure><figure class="prices-pitch">
+        <h4>{{ _('Pitch B') }}</h4>
+        <div class="slideshow slide-3">
+            <picture>
+                <source media="(min-width: 768px)"  src="../static/img/prices/pitchB_0h.jpg">
+                <source media="(max-width: 767px)"  src="../static/img/prices/pitchB_0l.jpg">
+                <img src="../static/img/prices/placeB_0h.jpg" alt="Place B es 1">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)"  src="../static/img/prices/pitchB_1h.jpg">
+                <source media="(max-width: 767px)"  src="../static/img/prices/pitchB_1l.jpg">
+                <img src="../static/img/prices/placeB_1h.jpg" alt="Place B es 2">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)"  src="../static/img/prices/pitchB_2h.jpg">
+                <source media="(max-width: 767px)"  src="../static/img/prices/pitchB_2l.jpg">
+                <img src="../static/img/prices/placeB_2h.jpg" alt="Place B es 3">
+            </picture>
+        </div>
+        <figcaption>
         {% trans %}
-            <strong>Place B</strong>
             Piazzole in zona lago (non direttamente sulla riva) [60mq-80mq].
             Le piu' piccole hanno parcheggio esterno riservato (incluso nel prezzo).
             In questa zona non sono ammessi cani.
         {% endtrans %}
-    </section>
-
-    <section class="row">
-        <img class="pic-sm" src="../static/img/prices/placeC.jpg" alt="Place C">
+        </figcaption>
+    </figure><figure class="prices-pitch">
+        <h4>{{ _('Pitch C') }}</h4>
+        <div class="slideshow slide-3">
+            <picture>
+                <source media="(min-width: 768px)"  src="../static/img/prices/pitchC_0h.jpg">
+                <source media="(max-width: 767px)"  src="../static/img/prices/pitchC_0l.jpg">
+                <img src="../static/img/prices/placeC_0h.jpg" alt="Place C es 1">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)"  src="../static/img/prices/pitchC_1h.jpg">
+                <source media="(max-width: 767px)"  src="../static/img/prices/pitchC_1l.jpg">
+                <img src="../static/img/prices/placeC_1h.jpg" alt="Place C es 2">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)"  src="../static/img/prices/pitchC_2h.jpg">
+                <source media="(max-width: 767px)"  src="../static/img/prices/pitchC_2l.jpg">
+                <img src="../static/img/prices/placeC_2h.jpg" alt="Place C es 3">
+            </picture>
+        </div>
+        <figcaption>
         {% trans %}
-            <strong>Place C</strong>
             Piazzola erbosa ed alberata, da 70mq a 100mq.
             Cani ammessi previo accordo con la direzione.
         {% endtrans %}
-    </section>
+        </figcaption>
+    </figure>
 
 
 {% endblock %}

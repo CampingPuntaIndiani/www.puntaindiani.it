@@ -88,6 +88,7 @@ body {
     color: rgb(60, 60, 60);
     -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
     padding: 72px 48px 84px; /* TODO: check this */
+    min-width: 436px;
 }
 
 
@@ -136,7 +137,7 @@ px      68    160    252    344    436    528    620    712    */
 ---------------------------------------------
 cols    1     2      3
 px      68    160    252    */
-
+/*
 @media only screen and (max-width: 767px) {
 	
 	body {
@@ -145,6 +146,7 @@ px      68    160    252    */
 	}
 	
 }
+*/
 
 
 
@@ -156,8 +158,11 @@ px      68    160    252    */
 cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
+/*
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	
+*/
+@media only screen and (max-width: 767px) {
+
 	body {
 		width: 436px;
 		padding: 36px 22px 48px;
