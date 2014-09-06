@@ -140,7 +140,6 @@ function init_cmap() {
     });
 
     $('#cmap').load(function(){
-            console.log('load');
             $(window).resize();
         });
 
