@@ -540,3 +540,12 @@ figure.prices-pitch {
     background-size: 40px auto;
 }
 
+/* surroundings */
+dt {
+    color: #333;
+    font-weight: bold;
+}
+dd {
+    margin-left: 1em;
+}
+
