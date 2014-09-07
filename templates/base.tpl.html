@@ -62,28 +62,28 @@
         {%  if news|count == 0 %}
             #news {display: none;}
         {% else%}
-        {% set duration = 5 %}
-        {%  for x in news %}
-        #news > *:nth-child({{ loop.index }}) {
-            -webkit-animation: xnofade {{ duration * loop.length }}s {{ (loop.index - 1) * duration }}s infinite;
-            animation: xnofade {{ duration * loop.length }}s {{ (loop.index - 1) * duration }}s infinite;
-        }
-        {%  endfor  %}
+            {% set duration = 5 %}
+            {%  for x in news %}
+            #news > *:nth-child({{ loop.index }}) {
+                -webkit-animation: xnofade {{ duration * loop.length }}s {{ (loop.index - 1) * duration }}s infinite;
+                animation: xnofade {{ duration * loop.length }}s {{ (loop.index - 1) * duration }}s infinite;
+            }
+            {%  endfor  %}
 
-        @-webkit-keyframes xnofade {
-            0%{opacity:0;}
-            2%{opacity:1;}
-            {{ (100 / news|count) - 2 }}%{opacity:1;}
-            {{ 100 / news|count }}%{opacity:0;}
-            100% {opacity:0;}
-        }
-        @keyframes xnofade {
-            0%{opacity:0;}
-            2%{opacity:1;}
-            {{ (100 / news|count) - 2 }}%{opacity:1;}
-            {{ 100 / news|count }}%{opacity:0;}
-            100% {opacity:0;}
-        }
+            @-webkit-keyframes xnofade {
+                0%{opacity:0;}
+                2%{opacity:1;}
+                {{ (100 / news|count) - 2 }}%{opacity:1;}
+                {{ 100 / news|count }}%{opacity:0;}
+                100%{opacity:0;}
+            }
+            @keyframes xnofade {
+                0%{opacity:0;}
+                2%{opacity:1;}
+                {{ (100 / news|count) - 2 }}%{opacity:1;}
+                {{ 100 / news|count }}%{opacity:0;}
+                100%{opacity:0;}
+            }
         {% endif %}
 
     </style>

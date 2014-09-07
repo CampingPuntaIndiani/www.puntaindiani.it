@@ -48,8 +48,8 @@ function init_gmap() {
     map = new google.maps.Map(document.getElementById('map'),
         mapOptions);
     marker = new google.maps.Marker({
-        map:map,
-        draggable:false,
+        map: map,
+        draggable: false,
         animation: google.maps.Animation.DROP,
         position: point,
         raiseOnDrag: true,
@@ -125,10 +125,10 @@ function init_cmap() {
 
     window.last_cmap_size = 0;
     $(window).on('resize', function () {
-        if (window.last_cmap_size === $('#cmap').width()) {
+        if (window.last_cmap_size === img_map.width()) {
             return;
         }
-        window.last_cmap_size = $('#cmap').width();
+        window.last_cmap_size = img_map.width();
 
         var selected = $('#cmap-points div[selected]');
         $('#cmap-points').html(build_points());
