@@ -612,3 +612,30 @@ dd {
     width: 100%;
     clear: both;
 }
+
+/* gallery */
+section.gallery-album {
+    display: block;
+}
+section.gallery-album figure {
+    width: 170px;
+    margin: 20px 5px 20px 5px;
+    display: inline-block;
+}
+
+section.gallery-album figure:nth-child(6n+1) {margin-left: 0;}
+section.gallery-album figure:nth-child(6n+6) {margin-right: 0;}
+
+section.gallery-album figure img {
+    width: 170px;
+    border: 1px solid #666;
+    padding: .2em;
+}
+section.gallery-album figcaption {
+    width: 170px;
+    height: 18px;
+    font-size: 12px;
+    overflow: hidden;
+    word-break: break-all;
+    box-sizing: border-box;
+}

@@ -146,6 +146,20 @@ function init_cmap() {
     $('#cmap-points').delegate('div', 'click', click);
 }
 
+/* gallery */
+function init_gallery() {
+    $('section.gallery-album > figure > a').on('click', function (e) {
+        e.preventDefault();
+        var links = $(e.target).parents('section').find('figure > a'),
+            options = {
+                index: $(e.target).parents('a').get(0),
+                event: e,
+                slideshowInterval: 4000,
+                enableKeyboardNavigation: true
+            };
+        blueimp.Gallery(links, options);
+    })
+}
 
 /* main */
 $(function(){
@@ -160,6 +174,11 @@ $(function(){
     /* cmap */
     if ($('#cmap-wrapper').length == 1) {
         init_cmap();
+    }
+
+    /* gallery */
+    if ($('section.gallery-album').length > 0) {
+        init_gallery();
     }
 });
 

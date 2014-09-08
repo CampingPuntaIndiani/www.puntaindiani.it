@@ -66,4 +66,7 @@ dist/it/
 dist/nl/
 dist/de/
 
+GallerySupport/gallery/*
+dist/static/gallery/*
+
 .DS_Store
