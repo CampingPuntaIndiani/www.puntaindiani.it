@@ -69,3 +69,5 @@ dist/de/
 dist/static/img/gallery/*
 
 .DS_Store
+
+*min*
