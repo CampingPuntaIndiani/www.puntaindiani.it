@@ -17,12 +17,11 @@ strong, h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-a {text-decoration: none;}
-a, a:visited, a:hover, a:active {
-  color: inherit;
+a {
+    color: #129FEA;
+    text-decoration: none;
 }
-
-a.h {color: #129FEA;}
+a:visited, a:hover, a:active {color: #129FEA;}
 
 p {text-indent: 2em;}
 p::first-letter {text-transform: uppercase;}
@@ -52,6 +51,8 @@ body {padding-top: 40px;}
     margin: 0;
     padding: 0;
 }
+
+#top-menu a {color: #333;}
 
 /* Do not lose the menu: limit width */
 @media only screen and (min-width: 1338px) {
@@ -97,7 +98,7 @@ body {padding-top: 40px;}
     box-sizing: border-box;
 }
 
-#top-menu ul li.selected{
+#top-menu ul li.selected a {
     color: #129FEA;
     text-shadow: 0 0 1px #fff
 }
@@ -665,6 +666,7 @@ section.gallery-album figcaption {
 }
 
 section.video {
+    margin-top: 20px;
     display: block;
     text-align: center;
 }
@@ -674,3 +676,23 @@ section.video iframe {
     height: 540px;
 }
 
+@media only screen and (max-width: 1199px) {
+    section.video iframe {
+        width: 780px;
+        height: 439px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    section.video iframe {
+        width: 640px;
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section.video iframe {
+        width: 380px;
+        height: 214px;
+    }
+}
