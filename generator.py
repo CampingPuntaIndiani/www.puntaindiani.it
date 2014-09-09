@@ -18,10 +18,20 @@ DIST_SUFFIX = '.html'
 
 
 # Langs to be rendered with
-LANGS = ['en', "it", "nl", "de"]
+LANGS = ['it', 'en', 'nl', 'de']
 
 # pages that has to be generated
-PAGES = ['home', 'prices', 'map', 'route', 'surroundings', 'gallery', 'services', 'offers']
+PAGES = [
+    ('home', _('home')),
+    ('prices', _('prices')),
+    ('map', _('map')),
+    ('route', _('route')),
+    ('surroundings', _('surroundings')),
+    ('gallery', _('gallery')),
+    ('services', _('services')),
+    ('offers', _('offers'))
+]
+
 EXTRA = ['pet_disclaimer']
 
 NEWS = [
@@ -36,9 +46,10 @@ def generate():
                       extensions=['jinja2.ext.i18n'])
 
     for lang in LANGS:
-        trans = gettext.translation('website',  localedir=I18N_PATH,
-                                    languages=[lang])
+        print "building {}".format(lang)
+        trans = gettext.translation('website',  localedir=I18N_PATH, languages=[lang])
         env.install_gettext_translations(trans)
+
 
         output_path = DIST_PATH.child(lang)
         output_path.rmtree()
@@ -51,9 +62,9 @@ def generate():
                 'now': datetime.datetime.utcnow().isoformat(),
                 'pages': PAGES,
                 'news': NEWS,
-                'lang': 'eng',
+                'lang': lang,
                 'page': page,
-                'title': _(page),
+                'title': page[1],
             }
 
             with open(output_path.child(page+DIST_SUFFIX), 'w+') as out:

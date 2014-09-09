@@ -92,8 +92,8 @@
             <div class="menu-broker"></div>
             <ul>
                 {% for p in pages %}
-                <li {% if page == p %}class="selected"{% endif %}>
-                    <a href="{% if page != p %}{{ p }}.html{% else %}#{% endif %}">{% trans %}{{ p }}{% endtrans %}</a>
+                <li {% if page == p.0 %}class="selected"{% endif %}>
+                    <a href="{% if page != p.0 %}{{ p.0 }}.html{% else %}#{% endif %}">{{ p.1 }}</a>
                 </li>
                 {% endfor %}
             </ul>
