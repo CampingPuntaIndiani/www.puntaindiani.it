@@ -614,28 +614,63 @@ dd {
 }
 
 /* gallery */
+header.gallery-title {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 2em;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
 section.gallery-album {
     display: block;
+    width: 100%;
 }
 section.gallery-album figure {
-    width: 170px;
-    margin: 20px 5px 20px 5px;
+    width: 16.66%;
+    margin: 10px auto 10px auto;
     display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
 }
-
-section.gallery-album figure:nth-child(6n+1) {margin-left: 0;}
-section.gallery-album figure:nth-child(6n+6) {margin-right: 0;}
-
 section.gallery-album figure img {
     width: 170px;
+    margin: auto;
     border: 1px solid #666;
-    padding: .2em;
 }
 section.gallery-album figcaption {
     width: 170px;
     height: 18px;
+    margin: auto;
     font-size: 12px;
+    text-align: left;
     overflow: hidden;
     word-break: break-all;
-    box-sizing: border-box;
 }
+
+@media only screen and (max-width: 1199px) {
+    section.gallery-album figure {width: 25%;}
+}
+
+@media only screen and (max-width: 991px) {
+    section.gallery-album figure img,
+    section.gallery-album figcaption {
+        width: 104px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    section.gallery-album figure {
+        width: 33.3%;
+    }
+}
+
+section.video {
+    display: block;
+    text-align: center;
+}
+
+section.video iframe {
+    width: 960px;
+    height: 540px;
+}
+

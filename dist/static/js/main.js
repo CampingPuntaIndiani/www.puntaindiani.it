@@ -155,7 +155,10 @@ function init_gallery() {
                 index: $(e.target).parents('a').get(0),
                 event: e,
                 slideshowInterval: 4000,
-                enableKeyboardNavigation: true
+                enableKeyboardNavigation: true,
+                toggleControlsOnReturn: false,
+                startSlideshow: true,
+                thumbnailIndicators: true,
             };
         blueimp.Gallery(links, options);
     })
