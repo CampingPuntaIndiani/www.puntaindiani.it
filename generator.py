@@ -32,7 +32,7 @@ PAGES = [
     ('offers', _('offers'))
 ]
 
-EXTRA = ['pet_disclaimer']
+EXTRA = [('pet_disclaimer', '')]
 
 NEWS = [
     (_('first'), _('new website')),
@@ -46,7 +46,8 @@ def generate():
                       extensions=['jinja2.ext.i18n'])
 
     for lang in LANGS:
-        print "building {}".format(lang)
+        print "Building {}".format(lang)
+
         trans = gettext.translation('website',  localedir=I18N_PATH, languages=[lang])
         env.install_gettext_translations(trans)
 
@@ -56,18 +57,19 @@ def generate():
         output_path.mkdir(True)
 
         for page in PAGES + EXTRA:
-            tpl = env.get_template(page + TPL_SUFFIX)
+            print '\t- {}'.format(page[0])
+            tpl = env.get_template(page[0] + TPL_SUFFIX)
 
             context = {
                 'now': datetime.datetime.utcnow().isoformat(),
                 'pages': PAGES,
                 'news': NEWS,
                 'lang': lang,
-                'page': page,
+                'page': page[0],
                 'title': page[1],
             }
 
-            with open(output_path.child(page+DIST_SUFFIX), 'w+') as out:
+            with open(output_path.child(page[0] + DIST_SUFFIX), 'w+') as out:
                 out.write(tpl.render(**context).encode('ascii', 'xmlcharrefreplace'))
         env.uninstall_gettext_translations(trans)
 
