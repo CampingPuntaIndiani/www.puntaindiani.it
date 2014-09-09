@@ -166,8 +166,41 @@ function init_gallery() {
     })
 }
 
+var slide_k = {};
+function init_slideshow() {
+    var s = $('.slideshow');
+    for (var x=0; x < s.length; x++) {
+        var cs = $(s[x]),
+            cl = cs.find('img').length;
+        if (!cl)
+            continue;
+
+        cs.find('> *').css({
+            '-webkit-animation-play-state': 'paused', /* Chrome, Safari, Opera */
+            'animation-play-state': 'paused'
+        });
+
+        slide_k[cs.attr('id')] = cl;
+        cs.find('img').load(function(cs, id){
+            return function () {
+                slide_k[id]--;
+                if (!slide_k[id]) {
+                    cs.find('> *').css({
+                        '-webkit-animation-play-state': 'running', /* Chrome, Safari, Opera */
+                        'animation-play-state': 'running'
+                    });
+                }
+            };
+        }(cs, cs.attr('id')));
+    }
+}
+
+
+
 /* main */
 $(function(){
+    init_slideshow();
+
     $('a[data-mode=modal]').click(open_modal);
     $('#modal').click(close_modal);
 

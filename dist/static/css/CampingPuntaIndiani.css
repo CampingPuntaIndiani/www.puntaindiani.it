@@ -701,12 +701,9 @@ body > footer > hr {
         width: 100%;
     }
 
-    /* hack for relative context (height) */
-    .slideshow > *:nth-child(1) {
-        position: relative !important;
-    }
-
-.slideshow > *{opacity:0;}
+.slideshow > *{
+    opacity:0;
+}
 
 /* setup for 8 slide, 4 seconds each with cross fade */
 .slideshow > *:nth-child(8) {
@@ -742,18 +739,24 @@ body > footer > hr {
     animation: xfade 32s 0s infinite;
 }
 
+/* hack for relative context (height) */
+.slideshow > *:nth-child(1) {
+    opacity: 1;
+    position: relative !important;
+}
+
 @-webkit-keyframes xfade{
     0%{opacity:1;}
-    12.5% {opacity:1;} /* 100 / num photo */
-    14.5%{opacity:0;}/* overlay out */
-    98% {opacity:0;}/* overlay in */
+    11.5% {opacity:1;} /* 100 / num photo */
+    13.5%{opacity:0;}/* overlay out */
+    99% {opacity:0;}/* overlay in */
     100% {opacity:1;}
 }
 @keyframes xfade{
     0%{opacity:1;}
-    12.5% {opacity:1;} /* 100 / num photo */
-    14.5%{opacity:0;}/* overlay out */
-    98% {opacity:0;}/* overlay in */
+    11.5% {opacity:1;} /* 100 / num photo */
+    13.5%{opacity:0;}/* overlay out */
+    99% {opacity:0;}/* overlay in */
     100% {opacity:1;}
 }
 
@@ -944,16 +947,16 @@ figure.prices-pitch {
 
 @-webkit-keyframes xfade3{
     0%{opacity:1;}
-    33.3% {opacity:1;} /* 100 / num photo */
-    38.3%{opacity:0;}/* overlay out */
-    96% {opacity:0;}/* overlay in */
+    31.3% {opacity:1;} /* 100 / num photo */
+    35.3%{opacity:0;}/* overlay out */
+    97.5% {opacity:0;}/* overlay in */
     100% {opacity:1;}
 }
 @keyframes xfade3{
     0%{opacity:1;}
-    33.3% {opacity:1;} /* 100 / num photo */
-    38.3%{opacity:0;}/* overlay out */
-    96% {opacity:0;}/* overlay in */
+    31.3% {opacity:1;} /* 100 / num photo */
+    35.3%{opacity:0;}/* overlay out */
+    97.5% {opacity:0;}/* overlay in */
     100% {opacity:1;}
 }
 
