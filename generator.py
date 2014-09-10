@@ -57,7 +57,6 @@ def generate():
         output_path.mkdir(True)
 
         for page in PAGES + EXTRA:
-            print '\t- {}'.format(page[0])
             tpl = env.get_template(page[0] + TPL_SUFFIX)
 
             context = {

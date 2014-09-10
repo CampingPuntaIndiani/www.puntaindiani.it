@@ -48,40 +48,23 @@
     <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
     <!-- Thanks faviconit.com -->
 
-    <link rel="stylesheet" href="../static/css/CampingPuntaIndiani.min.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!--
+    <link rel="stylesheet" href="../static/css/CampingPuntaIndiani.min.css">
     <script type="text/javascript" src="../static/js/CampingPuntaIndiani.min.js"></script>
+-->
+    <link rel="stylesheet" href="../static/css/CampingPuntaIndiani.css">
+    <script type="text/javascript" src="../static/js/CampingPuntaIndiani.js"></script>
 
-    <style type="text/css">
-        /* news hack */
-        {%  if news|count == 0 %}
-            #news {display: none;}
-        {% else%}
-            {% set duration = 5 %}
-            {%  for x in news %}
-            #news > *:nth-child({{ loop.index }}) {
-                -webkit-animation: xnofade {{ duration * loop.length }}s {{ (loop.index - 1) * duration }}s infinite;
-                animation: xnofade {{ duration * loop.length }}s {{ (loop.index - 1) * duration }}s infinite;
-            }
-            {%  endfor  %}
-
-            @-webkit-keyframes xnofade {
-                0%{opacity:0;}
-                2%{opacity:1;}
-                {{ (100 / news|count) - 1 }}%{opacity:1;}
-                {{ (100 / news|count) + 1 }}%{opacity:0;}
-                100%{opacity:0;}
-            }
-            @keyframes xnofade {
-                0%{opacity:0;}
-                2%{opacity:1;}
-                {{ (100 / news|count) - 2 }}%{opacity:1;}
-                {{ 100 / news|count }}%{opacity:0;}
-                100%{opacity:0;}
-            }
-        {% endif %}
-
-    </style>
+    <noscript>
+        <style type="text/css">
+            #header-slide-show, .pitch-slide {border: 0; margin-bottom: 1em}
+            #header-slide-show div, .pitch-slide div { display: none; }
+            #header-slide-show div:first-child, .pitch-slide div:first-child{ display: block; }
+            #news {margin-bottom: 1em}
+        </style>
+    </noscript>
 </head>
 <body>
     <!-- Menu -->
@@ -115,19 +98,21 @@
     </header>
     <!-- end menu -->
 
-    <div id="header-slide-show" class="slideshow">
-            {% for i in range(0,8) %}
-                <figure>
-                    <img src="../static/img/slideshow/CampingPuntaIndianiHeader{{ i }}.jpg" alt="Camping Punta Indiani header {{ i }} " class="pure-img">
-                    <!-- <figcaption></figcaption> -->
-                </figure>
-            {%  endfor %}
-        </div>
+    <div id="header-slide-show">
+        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader0.jpg"></div>
+        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader1.jpg"></div>
+        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader2.jpg"></div>
+        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader3.jpg"></div>
+        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader4.jpg"></div>
+        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader5.jpg"></div>
+        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader6.jpg"></div>
+        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader7.jpg"></div>
     </div>
 
-    <div id="news" class="slideshow">
+    <span class="news-title">News</span>
+    <div id="news">
         {% for (title, n) in news %}
-        <section><span data-title>{{ title }}</span>&nbsp;<span data-news>{{ n }}</span></section>
+        <div><section class="news-item"><span data-title>{{ title }}</span>&nbsp;<span data-news>{{ n }}</span></section></div>
         {% endfor %}
     </div>
 
