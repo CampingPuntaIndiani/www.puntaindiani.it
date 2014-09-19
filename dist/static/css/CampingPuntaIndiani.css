@@ -661,18 +661,13 @@ p::first-letter {text-transform: uppercase;}
 body {padding-top: 40px;}
 
 #logo {
-    display: none;
     z-index:100;
-    float: left;
-    top: 4px;
-    left: 4px;
-    width: 100px;
+    top: 0;
+    left: 0;
+    height: 40px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid #333;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
 }
 
 #top-menu a {color: #333;}
@@ -688,11 +683,11 @@ body {padding-top: 40px;}
 }
 
 #top-menu .brand {
-    font-size: 20px;
+    font-size: 30px;
     max-height: 40px;
     height: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 300;
+    text-transform: capitalize;
     color: #555;
     margin-right: 1em;
     box-sizing: border-box;
@@ -726,7 +721,9 @@ body {padding-top: 40px;}
     text-shadow: 0 0 1px #fff
 }
 
-#top-menu ul li:not(.nostyle):hover {background-color: darkorange;}
+#top-menu ul li:not(.nostyle):hover {
+  text-decoration: underline;
+}
 #top-menu li.separator {
     display: inline-block;
     height: 1em;
