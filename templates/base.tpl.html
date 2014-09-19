@@ -59,10 +59,9 @@
 
     <noscript>
         <style type="text/css">
-            #header-slide-show, .pitch-slide {border: 0; margin-bottom: 1em}
-            #header-slide-show div, .pitch-slide div { display: none; }
-            #header-slide-show div:first-child, .pitch-slide div:first-child{ display: block; }
-            #news {margin-bottom: 1em}
+            #header-slide-show {list-style:none; margin-top: 40px;}
+            #header-slide-show li {display: none;}
+            #header-slide-show li:first-child {display: block;}
         </style>
     </noscript>
 </head>
@@ -70,7 +69,7 @@
     <!-- Menu -->
     <header id="top-menu">
         <section class="constraint">
-            <img class="logo" src="../static/img/LogoSmall.png" alt="logo">
+            <!-- <img class="logo" src="../static/img/LogoSmall.png" alt="logo"> -->
             <a href="#" class="brand">Camping Punta Indiani</a>
             <div class="menu-broker"></div>
             <ul>
@@ -98,23 +97,25 @@
     </header>
     <!-- end menu -->
 
-    <div id="header-slide-show">
-        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader0.jpg"></div>
-        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader1.jpg"></div>
-        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader2.jpg"></div>
-        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader3.jpg"></div>
-        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader4.jpg"></div>
-        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader5.jpg"></div>
-        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader6.jpg"></div>
-        <div><img src="../static/img/slideshow/CampingPuntaIndianiHeader7.jpg"></div>
-    </div>
+    <ul class="bxslider" id="header-slide-show">
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader0.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader1.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader2.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader3.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader4.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader5.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader6.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader7.jpg" alt="Camping Punta Indiani"></li>
+    </ul>
 
-    <span class="news-title">News</span>
+<!--    <span class="news-title">News</span> -->
     <div id="news">
         {% for (title, n) in news %}
         <div><section class="news-item"><span data-title>{{ title }}</span>&nbsp;<span data-news>{{ n }}</span></section></div>
         {% endfor %}
     </div>
+
+    <br>
 
 <!-- BODY START -->
     {% block body %}{%  endblock %}
