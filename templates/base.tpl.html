@@ -66,36 +66,33 @@
     </noscript>
 </head>
 <body>
-    <!-- Menu -->
-    <header id="top-menu">
-        <section class="constraint">
-            <img id="logo" src="../static/img/LogoSmall.png" alt="logo">
-            <a href="#" class="brand">Camping Punta Indiani</a>
-            <div class="menu-broker"></div>
-            <ul>
-                {% for p in pages %}
-                <li {% if page == p.0 %}class="selected"{% endif %}>
-                    <a href="{% if page != p.0 %}{{ p.0 }}.html{% else %}#{% endif %}">{{ p.1 }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-
-            <ul class="pull-right">
-                <li {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
-                    <a href="booking.html">{{ _("booking") }}</a>
-                    <!-- <a href="http://booking.campingpuntaindiani.it">{{ _("booking") }}</a> -->
-                </li>
-                <li class="nostyle separator"></li>
-                <li class="nostyle">
-                    <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en"></i></a>
-                    <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl"></i></a>
-                    <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de"></i></a>
-                    <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it"></i></a>
-                </li>
-            </ul>
-        </section>
+    <header>
+      <img id="logo" src="../static/img/Logo.png" alt="logo">
+      <p id="brand">Camping Punta Indiani</p>
     </header>
-    <!-- end menu -->
+    <section id="menu">
+      <ul>
+        {% for p in pages %}
+        <li {% if page == p.0 %}class="selected"{% endif %}>
+          <a href="{% if page != p.0 %}{{ p.0 }}.html{% else %}#{% endif %}">{{ p.1 }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="pull-right">
+        <li class="booking" {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
+          <a href="booking.html">{{ _("booking") }}</a>
+          <!-- <a href="http://booking.campingpuntaindiani.it">{{ _("booking") }}</a> -->
+        </li>
+        <li class="nostyle">
+          <a><i class="separator"></i></a>
+          <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en"></i></a>
+          <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl"></i></a>
+          <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de"></i></a>
+          <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it"></i></a>
+        </li>
+      </ul>
+    </section>
 
     <ul class="bxslider" id="header-slide-show">
       <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader0.jpg" alt="Camping Punta Indiani"></li>
@@ -108,14 +105,15 @@
       <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader7.jpg" alt="Camping Punta Indiani"></li>
     </ul>
 
-<!--    <span class="news-title">News</span> -->
-    <div id="news">
+    <section id="news">
+      <div>
+        News
+      </div><div>
         {% for (title, n) in news %}
-        <div><section class="news-item"><span data-title>{{ title }}</span>&nbsp;<span data-news>{{ n }}</span></section></div>
+        <p><span data-title>{{ title }}</span>&nbsp;<span data-news>{{ n }}</span></p>
         {% endfor %}
-    </div>
-
-    <br>
+      </div>
+    </section>
 
 <!-- BODY START -->
     {% block body %}{%  endblock %}

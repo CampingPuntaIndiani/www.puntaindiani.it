@@ -37,7 +37,6 @@ EXTRA = [('pet_disclaimer', '')]
 NEWS = [
     (_('first'), _('new website')),
     (_('second'), _('new website')),
-    (_('third'), _('new website')),
 ]
 
 
