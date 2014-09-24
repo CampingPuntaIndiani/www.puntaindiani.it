@@ -48,7 +48,8 @@
     <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
     <!-- Thanks faviconit.com -->
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
 
 <!--
     <link rel="stylesheet" href="../static/css/CampingPuntaIndiani.min.css">
@@ -80,16 +81,17 @@
       </ul>
 
       <ul class="pull-right">
-        <li class="booking" {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
-          <a href="booking.html">{{ _("booking") }}</a>
-          <!-- <a href="http://booking.campingpuntaindiani.it">{{ _("booking") }}</a> -->
-        </li>
+        
         <li class="nostyle">
-          <a><i class="separator"></i></a>
           <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en"></i></a>
           <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl"></i></a>
           <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de"></i></a>
           <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it"></i></a>
+          <a><i class="separator"></i></a>
+        </li>
+        <li class="booking" {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
+          <a href="booking.html">{{ _("booking") }}</a>
+          <!-- <a href="http://booking.campingpuntaindiani.it">{{ _("booking") }}</a> -->
         </li>
       </ul>
     </section>
