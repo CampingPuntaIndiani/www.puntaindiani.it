@@ -26,7 +26,7 @@ PAGES = [
     ('prices', _('prices')),
     ('map', _('map')),
     ('route', _('route')),
-    ('surroundings', _('surroundings')),
+    ('around', _('around')),
     ('gallery', _('gallery')),
     ('services', _('services')),
     ('offers', _('offers'))
