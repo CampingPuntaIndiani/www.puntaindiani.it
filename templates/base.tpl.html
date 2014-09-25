@@ -68,6 +68,13 @@
     {% block head %}{% endblock %}
 </head>
 <body>
+  <section name="lang">
+    <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en"></i></a>
+    <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl"></i></a>
+    <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de"></i></a>
+    <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it"></i></a>
+  </section>
+
     <header>
       <img id="logo" src="../static/img/Logo.png" alt="logo">
       <p id="brand">Camping Punta Indiani</p>
@@ -80,14 +87,7 @@
         </li>
         {% endfor %}
       </ul>
-
       <ul class="pull-right">
-        <li class="nostyle">
-          <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en"></i></a>
-          <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl"></i></a>
-          <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de"></i></a>
-          <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it"></i></a>
-        </li>
         <li class="booking" {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
           <a href="booking.html">{{ _("booking") }}</a>
           <!-- <a href="http://booking.campingpuntaindiani.it">{{ _("booking") }}</a> -->

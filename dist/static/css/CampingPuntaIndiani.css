@@ -607,7 +607,13 @@ p::first-letter {text-transform: uppercase;}
 
 /* menu */
 
-body {padding-top: 20px;}
+section[name="lang"] {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+body {padding-top: 10px;}
 
 #logo {
     z-index: 100;
@@ -661,6 +667,8 @@ body {padding-top: 20px;}
   padding: 5px .5em 5px .5em;
   border-right: 1px solid #FFBF00;
 }
+
+
 #menu ul li:last-child {border-right: none;}
 
 #menu li a {
@@ -682,7 +690,6 @@ body {padding-top: 20px;}
   #brand {font-size: 38px; font-weight: 600; margin:auto; text-align:center;}
   #logo {float: none;display:block;margin:auto;}
 }
-
 
 /* header */
 #header-slide-show img {width: 100%;}
