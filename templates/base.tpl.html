@@ -65,6 +65,7 @@
             #header-slide-show li:first-child {display: block;}
         </style>
     </noscript>
+    {% block head %}{% endblock %}
 </head>
 <body>
     <header>
@@ -139,9 +140,9 @@
                 <a class="h" href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
             </address>
         </section><section class="half right preserve">
-            &copy; <a href="mailto:martin.brugnara@gmail.com">Martin Brugnara</a> 2010-2015<br>
-            <small>Last update : <time datetime="{{ now }}">{{ now }}</time></small>
             <br>
+            &copy; <a href="mailto:martin.brugnara@gmail.com">Martin Brugnara</a> 2010-2015<br>
+            <p><small>Last update : <time datetime="{{ now }}">{{ now }}</time></small><p>
             <br>
         </section>
         <section class="expand center">

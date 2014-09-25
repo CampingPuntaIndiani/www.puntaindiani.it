@@ -170,7 +170,9 @@ function init_gallery() {
 /* main */
 $(function(){
     $('.bxslider').bxSlider({
-      auto:true
+      auto: true,
+      mode: 'fade',
+      easing: 'ease',
     });
 
     $('a[data-mode=modal]').click(open_modal);
