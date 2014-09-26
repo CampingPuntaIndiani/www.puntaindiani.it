@@ -75,7 +75,6 @@ cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
     body {
         width: 712px;
         padding: 48px 28px 60px;
@@ -543,6 +542,19 @@ body:last-child .blueimp-gallery-playing > .play-pause {
 /* ========================================================================== */
 /* Camping Punta Indiani | martin.brugnara@gmail.com */
 
+.icon {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 1em;
+    height: 1em;
+    vertical-align: sub !important;
+    background-size: 100% 100% !important; 
+    padding: 2px 2px 2px 2px;
+}
+
+.icon.icon-open {background: no-repeat url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij4KPGcgaWQ9Imljb21vb24taWdub3JlIj4KCTxsaW5lIHN0cm9rZS13aWR0aD0iMSIgeDE9IiIgeTE9IiIgeDI9IiIgeTI9IiIgc3Ryb2tlPSIjNDQ5RkRCIiBvcGFjaXR5PSIiPjwvbGluZT4KPC9nPgoJPHBhdGggZD0iTTguMjYyIDE3LjkyM2MtMC44NjctMC44NTgtMi4yNjktMC44NTgtMy4xMzMgMC0wLjg2NCAwLjg1NC0wLjg2NCAyLjI0MyAwIDMuMTAxbDI1LjMwNiAyNS4wNTZjMC44NjcgMC44NTggMi4yNjYgMC44NTggMy4xMzMgMGwyNS4zMDYtMjUuMDU2YzAuODY0LTAuODU4IDAuODY3LTIuMjQzIDAtMy4xMDFzLTIuMjcyLTAuODU4LTMuMTMzLTAuMDAzbC0yMy43NDEgMjIuODUxLTIzLjczOC0yMi44NDh6IiBmaWxsPSIjMDAwMDAwIj48L3BhdGg+Cjwvc3ZnPgo=');}
+.icon.icon-close {background: no-repeat url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij4KPGcgaWQ9Imljb21vb24taWdub3JlIj4KCTxsaW5lIHN0cm9rZS13aWR0aD0iMSIgeDE9IiIgeTE9IiIgeDI9IiIgeTI9IiIgc3Ryb2tlPSIjNDQ5RkRCIiBvcGFjaXR5PSIiPjwvbGluZT4KPC9nPgoJPHBhdGggZD0iTTU1LjczOCA0Ni4wNzdjMC44NjcgMC44NTggMi4yNjkgMC44NTggMy4xMzMgMCAwLjg2Ny0wLjg1OCAwLjg2Ny0yLjI0MyAwLTMuMTAxbC0yNS4zMDYtMjUuMDU2Yy0wLjg2NC0wLjg1OC0yLjI2Ni0wLjg1OC0zLjEzIDBsLTI1LjMwNiAyNS4wNTZjLTAuODY0IDAuODU4LTAuODY3IDIuMjQzIDAgMy4xMDFzMi4yNjYgMC44NTggMy4xMzMgMGwyMy43MzgtMjIuODUxIDIzLjczOCAyMi44NTF6IiBmaWxsPSIjMDAwMDAwIj48L3BhdGg+Cjwvc3ZnPgo=');}
+
 html {background: #aaaaaa}
 
 @font-face {
@@ -631,7 +643,6 @@ body {padding-top: 10px;}
 }
 
 #menu {
-  /* media dep TODO: fix */
   margin-left: -48px; 
   width: 1170px;
 
@@ -645,6 +656,10 @@ body {padding-top: 10px;}
 
   margin-top: 20px;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {#menu {width: 896px;}}
+@media only screen and (min-width: 768px) and (max-width: 991px) {#menu {width: 712px;margin-left: -28px;}}
+@media only screen and (max-width: 767px) {#menu {width: 436px;margin-left: -22px;}}
 
 #menu * {
   list-style: none;
@@ -681,14 +696,51 @@ body {padding-top: 10px;}
 
 #menu ul li:not(.nostyle) a:hover {text-decoration: underline;}
 
-@media only screen and (max-width: 1199px) {
-  #menu {text-align:center;}
-  #brand, #logo {font-size: 46px;}
-  #menu ul.pull-right {float:none;}
+@media only screen and (max-width: 1199px) {#brand, #logo {font-size: 46px;}}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #menu {text-align:center}
+  #menu ul.pull-right {float:none; width:100%; text-align: center}
+  #menu ul.pull-right > li {float:none;}
 }
+
+#menu ul.only-vert {display: none;}
+
 @media only screen and (max-width: 767px) {
+  #menu ul.pull-right {float:none;}
+
   #brand {font-size: 38px; font-weight: 600; margin:auto; text-align:center;}
   #logo {float: none;display:block;margin:auto;}
+
+  /* going vertical */
+  #menu ul {display: block;}
+
+  #menu li {
+    float:none;
+    display: block;
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid #FFBF00;
+  }
+  #menu ul.pull-right {margin:auto;}
+  #brand {font-size:36px}
+
+  #menu ul.only-vert {display: none;}
+  #menu ul.only-vert i {display: none;}
+
+  #menu ul.only-vert li {text-align: left; font-weight: 500;}
+  #menu ul.only-vert i {float:right; margin-right: .5em;}
+
+  /* if we have js */
+  #menu.js ul.only-vert {display: block;}
+
+  #menu.js ul.only-vert .icon-close {display: block;}
+  #menu.js ul.only-vert .icon-open {display: none;}
+
+  #menu.js.closed ul.only-vert .icon-open {display: block;}
+  #menu.js.closed ul.only-vert .icon-close {display: none;}
+
+  #menu.js.closed ul {display:none}
+  #menu.js.closed ul.only-vert {display:block}
 }
 
 /* header */

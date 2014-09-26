@@ -169,6 +169,9 @@ function init_gallery() {
 
 /* main */
 $(function(){
+    $('#menu').addClass('js closed');
+    $('#menu .icon-open, #menu .icon-close').on('click', function(){$('#menu').toggleClass('closed');});
+
     $('.bxslider').bxSlider({
       auto: true,
       mode: 'fade',

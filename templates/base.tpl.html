@@ -69,10 +69,10 @@
 </head>
 <body>
   <section name="lang">
-    <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en"></i></a>
-    <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl"></i></a>
-    <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de"></i></a>
-    <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it"></i></a>
+    <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en">&nbsp;</i></a>
+    <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl">&nbsp;</i></a>
+    <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de">&nbsp;</i></a>
+    <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it">&nbsp;</i></a>
   </section>
 
     <header>
@@ -80,6 +80,9 @@
       <p id="brand">Camping Punta Indiani</p>
     </header>
     <section id="menu">
+      <ul class="only-vert">
+        <li>Menu<i class="icon icon-open">&nbsp;</i><i class="icon icon-close">&nbsp;</i></li>
+      </uL>
       <ul>
         {% for p in pages %}
         <li {% if page == p.0 %}class="selected"{% endif %}>
