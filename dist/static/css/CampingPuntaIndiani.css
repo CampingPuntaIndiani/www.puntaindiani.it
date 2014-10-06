@@ -1161,10 +1161,13 @@ section.gallery-album figure img {
 }
 section.gallery-album figcaption {
     width: 170px;
-    height: 1em; /* 1 row */
     margin: auto;
     font-size: 12px;
-    text-align: left;
+    text-align: right;
+    margin-top: -1.5em;
+    padding-right: .2em;
+    text-shadow: #000 0 0 2px;
+    font-weight: bold;
     overflow: hidden;
     word-break: break-all;
 }
