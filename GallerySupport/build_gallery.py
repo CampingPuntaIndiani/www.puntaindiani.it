@@ -114,7 +114,7 @@ def build(source, dist, html):
             org_img.save(path_org, "JPEG", quality=90)
 
             html.write('<figure>')
-            html.write('<a href="{}{}" title="{}">'.format(STATIC_URL, path_big, photo.stem))
+            html.write('<a href="{}{}">'.format(STATIC_URL, path_big))
             html.write('<picture>')
             html.write('<source src="{}{}" media=(min-width:992px)>'.format(STATIC_URL, path_ico_big))
             html.write('<source src="{}{}" media=(max-width:991px)>'.format(STATIC_URL, path_ico_small))
@@ -122,7 +122,7 @@ def build(source, dist, html):
             html.write('</picture>')
             html.write('</a>')
             html.write('<figcaption>')
-            html.write('<a href="{}{}">HD: {}</a>'.format(STATIC_URL, path_org, photo.name))
+            html.write('<a href="{}{}">HD</a>'.format(STATIC_URL, path_org))
             html.write('</figcaption>')
             html.write('</figure>')
         html.write('</section>')

@@ -630,7 +630,7 @@ body {padding-top: 10px;}
 #logo {
     z-index: 100;
     float: right;
-    height: 1em;
+    height: 83px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -696,7 +696,7 @@ body {padding-top: 10px;}
 
 #menu ul li:not(.nostyle) a:hover {text-decoration: underline;}
 
-@media only screen and (max-width: 1199px) {#brand, #logo {font-size: 46px;}}
+@media only screen and (max-width: 1199px) {#brand {font-size: 46px;} #logo {height: 64px;}}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #menu {text-align:center}
   #menu ul.pull-right {float:none; width:100%; text-align: center}
@@ -709,7 +709,7 @@ body {padding-top: 10px;}
   #menu ul.pull-right {float:none;}
 
   #brand {font-size: 38px; font-weight: 600; margin:auto; text-align:center;}
-  #logo {float: none;display:block;margin:auto;}
+  #logo {float: none;display:block;margin:auto;height:100%;}
 
   /* going vertical */
   #menu ul {display: block;}
