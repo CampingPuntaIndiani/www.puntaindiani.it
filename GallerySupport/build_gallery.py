@@ -86,8 +86,15 @@ def build(source, dist, html):
 
         # process photos
         for photo in album.listdir(filter=unipath.FILES):
+            if photo.name.startswith('.'):
+                continue
 
-            org_img = Image.open(photo)
+            try:
+                org_img = Image.open(photo)
+            except Exception:
+                print('skipping {}'.format(photo))
+                continue
+
             hname = himg(org_img)
 
             img = org_img.resize(SIZE_ICON_BIG, Image.ANTIALIAS)
@@ -122,10 +129,10 @@ def build(source, dist, html):
             html.write('</picture>')
             html.write('</a>')
             html.write('<figcaption>')
-            html.write('<a href="{}{}">HD</a>'.format(STATIC_URL, path_org))
+            html.write('<a href="{}{}" target="_blank">HD</a>'.format(STATIC_URL, path_org))
             html.write('</figcaption>')
             html.write('</figure>')
-        html.write('</section>')
+        html.write('</section>\n')
 
 if __name__ == '__main__':
     with open('out.html', 'w+') as html:
