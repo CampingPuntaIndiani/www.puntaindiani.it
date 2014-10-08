@@ -42,7 +42,7 @@ function gallery {
         fi
     fi
 
-    cp Gallery/out.html template/album.tpl.html
+    cp Gallery/out.html templates/album.tpl.html
     cp -r Gallery/gallery dist/static/img/gallery
 }
 gallery
