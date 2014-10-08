@@ -6,6 +6,8 @@ import hashlib
 import io
 import unipath
 from unipath import FSPath as Path
+import threading
+import StringIO
 
 """
 From tree:
@@ -14,7 +16,7 @@ From tree:
         image
 Build
 - orig /
-- dist
+- DIST
     - Album | Author
         - original
         - icon-h
@@ -41,37 +43,29 @@ SIZE_BIG_H = 600
 
 SOURCE = Path(__file__).ancestor(1).child('original')
 DIST = Path(__file__).ancestor(1).child('gallery')
+OUT = Path(__file__).ancestor(1).child('out.self.output')
 
 BASE_NAME = 'CampingPuntaIndiani_'
 
 STATIC_URL = '../static/img/'
 
 
-def himg(img):
-    m = hashlib.md5()
-    with io.BytesIO() as memf:
-        img.save(memf, 'JPEG')
-        data = memf.getvalue()
-        m.update(data)
-    return m.hexdigest()
+class AlbumBuilder(threading.Thread):
+    def __init__(self, album):
+        super(AlbumBuilder, self).__init__()
+        self.album = album
+        self.output = StringIO.StringIO()
 
-
-def build(source, dist, html):
-    print 'Starting.. source: {}'.format(source)
-    DIST.mkdir()
-
-    for album in source.listdir(filter=unipath.DIRS):
-        print 'Processing album: {}'.format(album)
-
+    def run(self):
         m = hashlib.md5()
-        m.update(album.name)
+        m.update(self.album.name)
         album_hash = m.hexdigest()
-        html.write('<header class="gallery-title">{}</header>'.format(album.name))
-        html.write('<section class="gallery-album" data-dir="{}">'.format(album_hash))
+        self.output.write('<header class="gallery-title">{}</header>'.format(self.album.name))
+        self.output.write('<section class="gallery-album" data-dir="{}">'.format(album_hash))
 
 
         # build album tree
-        album_dir = dist.child(album_hash)
+        album_dir = DIST.child(album_hash)
         album_dir.mkdir()
 
         # build tree
@@ -85,7 +79,7 @@ def build(source, dist, html):
         big.mkdir()
 
         # process photos
-        for photo in album.listdir(filter=unipath.FILES):
+        for photo in self.album.listdir(filter=unipath.FILES):
             if photo.name.startswith('.'):
                 continue
 
@@ -120,20 +114,57 @@ def build(source, dist, html):
             path_org = org.child(BASE_NAME+hname+'.jpg')
             org_img.save(path_org, "JPEG", quality=90)
 
-            html.write('<figure>')
-            html.write('<a href="{}{}">'.format(STATIC_URL, path_big))
-            html.write('<picture>')
-            html.write('<source src="{}{}" media=(min-width:992px)>'.format(STATIC_URL, path_ico_big))
-            html.write('<source src="{}{}" media=(max-width:991px)>'.format(STATIC_URL, path_ico_small))
-            html.write('<img src="{}{}" alt="{}">'.format(STATIC_URL, path_ico_big, photo.name))
-            html.write('</picture>')
-            html.write('</a>')
-            html.write('<figcaption>')
-            html.write('<a href="{}{}" target="_blank">HD</a>'.format(STATIC_URL, path_org))
-            html.write('</figcaption>')
-            html.write('</figure>')
-        html.write('</section>\n')
+            self.output.write('<figure>')
+            self.output.write('<a href="{}{}">'.format(STATIC_URL, path_big))
+            self.output.write('<picture>')
+            self.output.write('<source src="{}{}" media=(min-width:992px)>'.format(STATIC_URL, path_ico_big))
+            self.output.write('<source src="{}{}" media=(max-width:991px)>'.format(STATIC_URL, path_ico_small))
+            self.output.write('<img src="{}{}" alt="{}">'.format(STATIC_URL, path_ico_big, photo.name))
+            self.output.write('</picture>')
+            self.output.write('</a>')
+            self.output.write('<figcaption>')
+            self.output.write('<a href="{}{}" target="_blank">HD</a>'.format(STATIC_URL, path_org))
+            self.output.write('</figcaption>')
+            self.output.write('</figure>')
+        self.output.write('</section>\n')
 
+
+
+def himg(img):
+    m = hashlib.md5()
+    with io.BytesIO() as memf:
+        img.save(memf, 'JPEG')
+        data = memf.getvalue()
+        m.update(data)
+    return m.hexdigest()
+
+
+def chunks(l, n):
+    """ Yield successive n-sized chunks from l.
+    """
+    for i in xrange(0, len(l), n):
+        yield l[i:i+n]
+
+def build(source, html):
+    print 'Starting.. source: {}'.format(source)
+    DIST.mkdir()
+
+    albums = []
+    for album in source.listdir(filter=unipath.DIRS):
+        A = AlbumBuilder(album)
+        albums.append(A)
+
+    for c in chunks(albums, 4):
+        for a in c:
+            print 'Start album: {}'.format(a.album)
+            a.start()
+        for a in c:
+            print 'Join album: {}'.format(a.album)
+            a.join()
+
+    for album in albums:
+        html.write(album.output.getvalue())
+        
 if __name__ == '__main__':
-    with open('out.html', 'w+') as html:
-        build(SOURCE, DIST, html)
+    with open(OUT, 'w+') as html:
+        build(SOURCE, html)
