@@ -1,0 +1,198 @@
+# English translations for PROJECT.
+# Copyright (C) 2014 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2014-09-25 15:31+0200\n"
+"PO-Revision-Date: 2014-09-09 17:44+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+
+#: templates/base.tpl.html:93 templates/base.tpl.html:94
+msgid "booking"
+msgstr ""
+
+#: templates/home.tpl.html:5
+msgid "Close your eyes ..."
+msgstr ""
+
+#: templates/home.tpl.html:7
+msgid ""
+"\n"
+"Would you like to have breakfast on the shore of the lake while the "
+"children are playing on the beach?<br>\n"
+"Can you imagine yourself relaxing on the grass in the shade of a weeping "
+"willow, or under the warm sun, before taking a dip in the water?<br>\n"
+"Would you like to be within walking distance of a supermarket, bank, pub,"
+" and restaurant?<br>\n"
+"If you are looking for a real holiday in nature without abandoning all "
+"comforts, you are most welcome at Camping Punta Indiani.<br>\n"
+"Here the atmosphere is friendly and every guest is special.\n"
+"    "
+msgstr ""
+
+#: templates/home.tpl.html:17
+msgid ""
+"\n"
+"You can book, as you wish, a lakeside site or one of the large grass "
+"pitches under the trees in the northern area, always with 400 meters of "
+"private beach at your disposal.<br>\n"
+"Some of your new friends will tell you about the time they used to come "
+"to Punta Indiani with their parents when they were small, or as teenagers"
+" with a motorbike and a tent.<br>\n"
+"Today they are here with the family... because one always returns to "
+"Punta Indiani.<br>\n"
+"We are waiting to welcome you.\n"
+"    "
+msgstr ""
+
+#: templates/offers.tpl.html:14
+msgid "Low Season: 2 People + 1 Pitch B o C = &euro;18 a day"
+msgstr ""
+
+#: templates/offers.tpl.html:24
+msgid "offer cyclists"
+msgstr ""
+
+#: templates/offers.tpl.html:26
+msgid ""
+"Guests who arrive by bicycle and tent, pay ALWAYS (high and low season) "
+"only &euro;9.00 a day all incl."
+msgstr ""
+
+#: templates/prices.tpl.html:5
+msgid ""
+"\n"
+"You can make a reservation after the first of January.<br>\n"
+"Be aware that Punta Indiani is a familycamping, with lots of returning "
+"guests.<br>\n"
+"We recommend you to make your reservation in time.<br>\n"
+"For the months july and august we suggest a reservation.<br>\n"
+"    "
+msgstr ""
+
+#: templates/prices.tpl.html:25 templates/prices.tpl.html:32
+#: templates/prices.tpl.html:39 templates/prices.tpl.html:96
+#: templates/prices.tpl.html:106 templates/prices.tpl.html:116
+msgid "pitch"
+msgstr ""
+
+#: templates/prices.tpl.html:46
+msgid "person"
+msgstr ""
+
+#: templates/prices.tpl.html:53
+msgid "child"
+msgstr ""
+
+#: templates/prices.tpl.html:67
+msgid "visitor"
+msgstr ""
+
+#: templates/prices.tpl.html:74
+msgid "dog"
+msgstr ""
+
+#: templates/prices.tpl.html:84
+msgid "2nd car | small tent | boats, etc.. Outside the place."
+msgstr ""
+
+#: templates/prices.tpl.html:85
+msgid "each visit has to be pre-authorized by direction."
+msgstr ""
+
+#: templates/prices.tpl.html:86
+msgid ""
+"dog entrance must be pre-authorized by the Management and must comply the"
+" following"
+msgstr ""
+
+#: templates/prices.tpl.html:86
+msgid "conditions"
+msgstr ""
+
+#: templates/prices.tpl.html:99
+msgid ""
+"\n"
+"Piazzole direttamente sul lago [50mq -70mq].\n"
+"Hanno un parcheggio esterno riservato (incluso nel prezzo).\n"
+"In questa zona non sono ammessi cani.\n"
+"        "
+msgstr ""
+
+#: templates/prices.tpl.html:109
+msgid ""
+"\n"
+"Piazzole in zona lago (non direttamente sulla riva) [60mq-80mq].\n"
+"Le piu' piccole hanno parcheggio esterno riservato (incluso nel prezzo).\n"
+"In questa zona non sono ammessi cani.\n"
+"        "
+msgstr ""
+
+#: templates/prices.tpl.html:119
+msgid ""
+"\n"
+"Piazzola erbosa ed alberata, da 70mq a 100mq.\n"
+"Cani ammessi previo accordo con la direzione.\n"
+"        "
+msgstr ""
+
+#: templates/route.tpl.html:8
+msgid "easy way"
+msgstr ""
+
+#: templates/route.tpl.html:9
+msgid ""
+"\n"
+"Camping Punta Indiani is situated in North Italy, region Trento.<br>\n"
+"On the highway A22 {autostrada del Brennero} take exit Trento-Nord.<br>\n"
+"Follow SS47 {Superstrada della Valsugana} in the direction of Padova.<br>"
+"\n"
+"When passing Pergine take the exit right towards Lago di Caldonazzo.<br>\n"
+"After 500 m you see a sign Camping Punta Indiani.\n"
+"    "
+msgstr ""
+
+#: templates/route.tpl.html:24
+msgid "view on Google"
+msgstr ""
+
+#: templates/services.tpl.html:14
+msgid ""
+"\n"
+"Camping Punta Indiani offers gratis for all guests:<br>\n"
+"<br>\n"
+"Guest Card Trentino gives you free admission to museums, castles and "
+"nature parks and to free travel throughout Trentino on the province’s "
+"public transport system for your entire holiday.\n"
+"                "
+msgstr ""
+
+#: templates/services.tpl.html:30
+msgid ""
+"\n"
+"Be prepared for your vacation!<br>\n"
+"<br>\n"
+"Discover the experiences that your stay in Valsugana offers.<br>\n"
+"                "
+msgstr ""
+
+#~ msgid "Low Season: 2 People + 1 Pitch B o C = €18 a day"
+#~ msgstr ""
+
+#~ msgid ""
+#~ msgstr ""
+
+#~ msgid "Close your eyes..."
+#~ msgstr ""
+
