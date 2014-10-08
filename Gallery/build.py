@@ -43,7 +43,7 @@ SIZE_BIG_H = 600
 
 SOURCE = Path(__file__).ancestor(1).child('original')
 DIST = Path(__file__).ancestor(1).child('gallery')
-OUT = Path(__file__).ancestor(1).child('out.self.output')
+OUT = Path(__file__).ancestor(1).child('out.html')
 
 BASE_NAME = 'CampingPuntaIndiani_'
 
