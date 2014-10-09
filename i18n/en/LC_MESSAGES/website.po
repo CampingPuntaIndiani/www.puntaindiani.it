@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-10-09 16:06+0200\n"
+"POT-Creation-Date: 2014-10-09 19:49+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -58,20 +58,6 @@ msgid ""
 "Punta Indiani.<br>\n"
 "We are waiting to welcome you.\n"
 "    "
-msgstr ""
-
-#: templates/offers.tpl.html:14
-msgid "Low Season: 2 People + 1 Pitch B o C = &euro;18 a day"
-msgstr ""
-
-#: templates/offers.tpl.html:24
-msgid "offer cyclists"
-msgstr ""
-
-#: templates/offers.tpl.html:26
-msgid ""
-"Guests who arrive by bicycle and tent, pay ALWAYS (high and low season) "
-"only &euro;9.00 a day all incl."
 msgstr ""
 
 #: templates/prices.tpl.html:5
@@ -170,11 +156,11 @@ msgid ""
 "    "
 msgstr ""
 
-#: templates/route.tpl.html:24
+#: templates/route.tpl.html:28
 msgid "view on Google"
 msgstr ""
 
-#: templates/services.tpl.html:14
+#: templates/services.tpl.html:14 templates/services_and_offers.tpl.html:23
 msgid ""
 "\n"
 "Camping Punta Indiani offers gratis for all guests:<br>\n"
@@ -185,7 +171,7 @@ msgid ""
 "                "
 msgstr ""
 
-#: templates/services.tpl.html:30
+#: templates/services.tpl.html:30 templates/services_and_offers.tpl.html:53
 msgid ""
 "\n"
 "Be prepared for your vacation!<br>\n"
@@ -193,3 +179,32 @@ msgid ""
 "Discover the experiences that your stay in Valsugana offers.<br>\n"
 "                "
 msgstr ""
+
+#: templates/services_and_offers.tpl.html:8
+msgid "services"
+msgstr ""
+
+#: templates/services_and_offers.tpl.html:10
+msgid "offers"
+msgstr ""
+
+#: templates/services_and_offers.tpl.html:40
+msgid "Low Season:<br> 2 People + 1 Pitch B o C = &euro;18 a day"
+msgstr ""
+
+#: templates/services_and_offers.tpl.html:60
+msgid "cyclists offer"
+msgstr ""
+
+#: templates/services_and_offers.tpl.html:67
+msgid ""
+"Guests who arrive by bicycle and tent, pay ALWAYS (high and low season) "
+"only &euro;9.00 a day all incl."
+msgstr ""
+
+#~ msgid "Low Season: 2 People + 1 Pitch B o C = &euro;18 a day"
+#~ msgstr ""
+
+#~ msgid "offer cyclists"
+#~ msgstr ""
+

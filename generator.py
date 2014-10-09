@@ -28,11 +28,10 @@ PAGES = [
     ('route', _('route')),
     ('around', _('around')),
     ('gallery', _('gallery')),
-    ('services', _('services')),
-    ('offers', _('offers'))
+    ('services_and_offers', _('services & offers')),
 ]
 
-EXTRA = [('pet_disclaimer', ''), ('booking', '')]
+EXTRA = [('pet_disclaimer', ''), ('booking', ''), ('authors', '')]
 
 NEWS = [
     (_('first'), _('new website')),
