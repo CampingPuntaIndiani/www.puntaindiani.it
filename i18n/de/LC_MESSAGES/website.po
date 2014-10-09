@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-10-09 15:29+0200\n"
+"POT-Creation-Date: 2014-10-09 16:06+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de <LL@li.org>\n"
@@ -20,15 +20,15 @@ msgstr ""
 
 #: templates/base.tpl.html:90 templates/base.tpl.html:91
 msgid "booking"
-msgstr ""
+msgstr "Reservierung"
 
 #: templates/booking.tpl.html:6
-msgid "You can reserve you place starting form 2015-01-01"
-msgstr ""
+msgid "You can reserve you place starting from 2015-01-01"
+msgstr "Sie können Ihren Platz ab 2015.01.01 behalten"
 
 #: templates/home.tpl.html:5
 msgid "Close your eyes ..."
-msgstr ""
+msgstr "Schließen Sie Ihre Augen...!"
 
 #: templates/home.tpl.html:7
 msgid ""
@@ -44,6 +44,16 @@ msgid ""
 "Here the atmosphere is friendly and every guest is special.\n"
 "    "
 msgstr ""
+"Würde es Ihnen gefallen, am Seehufer zu frühstücken, während Ihre Kinder "
+"am Strand unbehindert spielen?\n"
+"Stellen Sie sich vor, auf einer Wiese zu entspannen, im Schatten einer "
+"Trauerweide oder unter den warmen Sonnenstrahlen, bevor Sie einen Sprung "
+"ins Wasser wagen!\n"
+"Möchten Sie während eines Spaziergangs den Supermarkt, die Bank, Bars und"
+" Restaurants erreichen?\n"
+"Sollten Sie einen Urlaub in der Natur suchen, ohne auf alle Komforts zu "
+"verzichten, dann gibt es für Sie Camping Punta Indiani.\n"
+"Hier herrscht eine familiäre Atmosphäre und jeder Gast ist wichtig.\n"
 
 #: templates/home.tpl.html:17
 msgid ""
@@ -59,20 +69,32 @@ msgid ""
 "We are waiting to welcome you.\n"
 "    "
 msgstr ""
+"Je nach Bedarf, können Sie einen Stellplatz am See oder einen der "
+"grossen, grasbewachsenen und schattigen Stellplätze im nördlichen Bereich"
+" reservieren. v400m. Privatstrand werden Ihnen in jedem Fall zugesichert."
+"\n"
+"Irgendjemand unter Ihren neuen Freunden wird Ihnen erzählen, daß er schon"
+" als Kind mit seinen Eltern oder als Junge mit seinem Motorrad und einem "
+"Zelt\n"
+"nach \"PUNTA INDIANI\" kam... Heute ist er hier mit seiner Familie.\n"
+"Denn nach Punta Indiani kehrt man immer wieder zurück.\n"
+"Wir erwarten Sie!\n"
 
 #: templates/offers.tpl.html:14
 msgid "Low Season: 2 People + 1 Pitch B o C = &euro;18 a day"
-msgstr ""
+msgstr "Neben Saison: Platz B und C = GRATIS"
 
 #: templates/offers.tpl.html:24
 msgid "offer cyclists"
-msgstr ""
+msgstr "Angebot Fahrradfahrer"
 
 #: templates/offers.tpl.html:26
 msgid ""
 "Guests who arrive by bicycle and tent, pay ALWAYS (high and low season) "
 "only &euro;9.00 a day all incl."
 msgstr ""
+"Anreisenden mit Fahrrad und Zelt zahlen Sie IMMER (Hoch-und Nebensaison) "
+"nur €9.00 am Tag alles Inkl."
 
 #: templates/prices.tpl.html:5
 msgid ""
@@ -84,46 +106,53 @@ msgid ""
 "For the months july and august we suggest a reservation.<br>\n"
 "    "
 msgstr ""
+"Reservieren geht nur nach den 1. Januar.\n"
+"Achten sie darauf das Punta Indiani ein Familienbetrieb ist, mit viele "
+"Gäste die jedes Jahr wieder kommen.\n"
+"Darum raten wir Sie zu reservieren.\n"
+"Für die monate Juli und August empfehlen wir eine Reservierung.\n"
 
 #: templates/prices.tpl.html:24 templates/prices.tpl.html:30
 #: templates/prices.tpl.html:36 templates/prices.tpl.html:87
-#: templates/prices.tpl.html:103 templates/prices.tpl.html:119
+#: templates/prices.tpl.html:98 templates/prices.tpl.html:109
 msgid "pitch"
-msgstr ""
+msgstr "Platz"
 
 #: templates/prices.tpl.html:42
 msgid "person"
-msgstr ""
+msgstr "Erwachsene"
 
 #: templates/prices.tpl.html:48
 msgid "child"
-msgstr ""
+msgstr "Kind"
 
 #: templates/prices.tpl.html:60
 msgid "visitor"
-msgstr ""
+msgstr "Besuch"
 
 #: templates/prices.tpl.html:66
 msgid "dog"
-msgstr ""
+msgstr "Hund"
 
 #: templates/prices.tpl.html:75
 msgid "2nd car | small tent | boats, etc.. Outside the place."
-msgstr ""
+msgstr "Zweites auto | klaines Zelt | boot, etc. nicht im Platz"
 
 #: templates/prices.tpl.html:76
 msgid "each visit has to be pre-authorized by direction."
-msgstr ""
+msgstr "je Besucher müssen durch Richtung genehmigt werden"
 
 #: templates/prices.tpl.html:77
 msgid ""
 "dog entrance must be pre-authorized by the Management and must comply the"
 " following"
 msgstr ""
+"Fuer das Mitbringen des Hundes auf dem Campingplatz ist die Zustimmung "
+"der Direktion erforderlich, nach folgenden"
 
 #: templates/prices.tpl.html:77
 msgid "conditions"
-msgstr ""
+msgstr "Regeln"
 
 #: templates/prices.tpl.html:90
 msgid ""
@@ -135,7 +164,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:106
+#: templates/prices.tpl.html:101
 msgid ""
 "\n"
 "Pitches near the water but not directly on.\n"
@@ -145,7 +174,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:122
+#: templates/prices.tpl.html:112
 msgid ""
 "\n"
 "Wooded and grassy pitches.\n"
@@ -156,7 +185,7 @@ msgstr ""
 
 #: templates/route.tpl.html:8
 msgid "easy way"
-msgstr ""
+msgstr "einfache Weise"
 
 #: templates/route.tpl.html:9
 msgid ""
@@ -169,10 +198,16 @@ msgid ""
 "After 500 m you see a sign Camping Punta Indiani.\n"
 "    "
 msgstr ""
+"Camping Punta Indiani liegt am Caldonazzosee, im gebiet Trentino im "
+"Norden Italien.\n"
+"Folgen Sie Autoweg A22 zu Trento, gehen sie bei Trento-NORD ab.\n"
+"Folgen sie ab Trento-Nord die SS47 richtung Padova / Pergine, und bei "
+"Pergine biegen Sie ab richting \"Lago di Caldonazzo\".\n"
+"Nach 0,5 km gibt es ein schild \"Camping Punta Indiani\".\n"
 
 #: templates/route.tpl.html:24
 msgid "view on Google"
-msgstr ""
+msgstr "Ansicht auf Google"
 
 #: templates/services.tpl.html:14
 msgid ""
@@ -184,6 +219,11 @@ msgid ""
 "public transport system for your entire holiday.\n"
 "                "
 msgstr ""
+"Camping Punta Indiani bietet gratis allen Kunden:<br>\n"
+"<br>\n"
+"Guest Card Trentino ist Ihr Schlüssel, um freien Eintritt zu Museen, "
+"Schlössern und Naturparks zu haben und für die Dauer Ihres Urlaubs im "
+"ganzen Trentino die öffentlichen Verkehrsmittel der Provinz zu nutzen.\n"
 
 #: templates/services.tpl.html:30
 msgid ""
@@ -193,13 +233,7 @@ msgid ""
 "Discover the experiences that your stay in Valsugana offers.<br>\n"
 "                "
 msgstr ""
-
-#~ msgid "Low Season: 2 People + 1 Pitch B o C = €18 a day"
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Close your eyes..."
-#~ msgstr ""
-
+"Fuer Ihren Urlaub vorbereitet sein!\n"
+"<br>\n"
+"Entdecken Sie die Erfahrungen, die Ihren Aufenthalt in Valsugana "
+"anbietet.\n"

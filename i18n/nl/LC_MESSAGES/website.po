@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-10-09 15:29+0200\n"
+"POT-Creation-Date: 2014-10-09 16:06+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid "booking"
 msgstr ""
 
 #: templates/booking.tpl.html:6
-msgid "You can reserve you place starting form 2015-01-01"
+msgid "You can reserve you place starting from 2015-01-01"
 msgstr ""
 
 #: templates/home.tpl.html:5
@@ -87,7 +87,7 @@ msgstr ""
 
 #: templates/prices.tpl.html:24 templates/prices.tpl.html:30
 #: templates/prices.tpl.html:36 templates/prices.tpl.html:87
-#: templates/prices.tpl.html:103 templates/prices.tpl.html:119
+#: templates/prices.tpl.html:98 templates/prices.tpl.html:109
 msgid "pitch"
 msgstr ""
 
@@ -135,7 +135,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:106
+#: templates/prices.tpl.html:101
 msgid ""
 "\n"
 "Pitches near the water but not directly on.\n"
@@ -145,7 +145,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:122
+#: templates/prices.tpl.html:112
 msgid ""
 "\n"
 "Wooded and grassy pitches.\n"
@@ -201,5 +201,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Close your eyes..."
+#~ msgstr ""
+
+#~ msgid "You can reserve you place starting form 2015-01-01"
 #~ msgstr ""
 

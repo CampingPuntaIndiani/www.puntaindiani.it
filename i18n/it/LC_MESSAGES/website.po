@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2014-10-09 15:29+0200\n"
+"POT-Creation-Date: 2014-10-09 16:06+0200\n"
 "PO-Revision-Date: 2014-09-09 17:04+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -23,16 +23,14 @@ msgid "booking"
 msgstr "prenota"
 
 #: templates/booking.tpl.html:6
-msgid "You can reserve you place starting form 2015-01-01"
+msgid "You can reserve you place starting from 2015-01-01"
 msgstr "Potete prenotare le vostre vacanze a partire dal 2015-01-01"
 
 #: templates/home.tpl.html:5
-#, fuzzy
 msgid "Close your eyes ..."
 msgstr "Provate a chiudere gli occhi..."
 
 #: templates/home.tpl.html:7
-#, fuzzy
 msgid ""
 "\n"
 "Would you like to have breakfast on the shore of the lake while the "
@@ -114,7 +112,7 @@ msgstr ""
 
 #: templates/prices.tpl.html:24 templates/prices.tpl.html:30
 #: templates/prices.tpl.html:36 templates/prices.tpl.html:87
-#: templates/prices.tpl.html:103 templates/prices.tpl.html:119
+#: templates/prices.tpl.html:98 templates/prices.tpl.html:109
 msgid "pitch"
 msgstr "piazzola"
 
@@ -165,7 +163,7 @@ msgstr ""
 "Hanno un parcheggio esterno riservato (incluso nel prezzo).\n"
 "In questa zona non sono ammessi cani.\n"
 
-#: templates/prices.tpl.html:106
+#: templates/prices.tpl.html:101
 msgid ""
 "\n"
 "Pitches near the water but not directly on.\n"
@@ -174,11 +172,11 @@ msgid ""
 "Dogs generally not allowed.\n"
 "        "
 msgstr ""
-"Piazzole in zona lago (non direttamente sulla riva) [60mq-80mq]."
-"Le piu' piccole hanno parcheggio esterno riservato (incluso nel prezzo)."
-"In questa zona non sono ammessi cani."
+"Piazzole in zona lago (non direttamente sulla riva) [60mq-80mq].Le piu' "
+"piccole hanno parcheggio esterno riservato (incluso nel prezzo).In questa"
+" zona non sono ammessi cani."
 
-#: templates/prices.tpl.html:122
+#: templates/prices.tpl.html:112
 msgid ""
 "\n"
 "Wooded and grassy pitches.\n"
@@ -205,9 +203,12 @@ msgid ""
 "After 500 m you see a sign Camping Punta Indiani.\n"
 "    "
 msgstr ""
-"A22 {autostrada del Brennero} uscita Trento nord - SS47 {Superstrada della Valsugana} direzione Padova fino a Pergine.\n"
-"Dopo Pergine uscire per \"Lago di Caldonazzo\" proseguire fino a Valcanover, a sinistra, sul lago , trovate \"PUNTA INDIANI\".\n"
-"Provenendo da Padova sulla ss47 uscita PERGINE-LAGO di CALDONAZZO fino a Valcanover.\n"
+"A22 {autostrada del Brennero} uscita Trento nord - SS47 {Superstrada "
+"della Valsugana} direzione Padova fino a Pergine.\n"
+"Dopo Pergine uscire per \"Lago di Caldonazzo\" proseguire fino a "
+"Valcanover, a sinistra, sul lago , trovate \"PUNTA INDIANI\".\n"
+"Provenendo da Padova sulla ss47 uscita PERGINE-LAGO di CALDONAZZO fino a "
+"Valcanover.\n"
 
 #: templates/route.tpl.html:24
 msgid "view on Google"
