@@ -24,11 +24,11 @@ msgstr "Reservierung"
 
 #: templates/booking.tpl.html:6
 msgid "You can reserve you place starting from 2015-01-01"
-msgstr "Sie kö#246;#246;nnen Ihren Platz ab 2015.01.01 behalten"
+msgstr "Sie k&#246;nnen Ihren Platz ab 2015.01.01 behalten"
 
 #: templates/home.tpl.html:5
 msgid "Close your eyes ..."
-msgstr "Schließ#223;#223;en Sie Ihre Augen...!"
+msgstr "Schlie&#223;en Sie Ihre Augen...!"
 
 #: templates/home.tpl.html:7
 msgid ""
@@ -44,16 +44,16 @@ msgid ""
 "Here the atmosphere is friendly and every guest is special.\n"
 "    "
 msgstr ""
-"Wü#252;#252;rde es Ihnen gefallen, am Seehufer zu frü#252;#252;hstü#252;#252;cken, wä#228;#228;hrend Ihre Kinder "
+"W&#252;rde es Ihnen gefallen, am Seehufer zu fr&#252;hst&#252;cken, w&#228;hrend Ihre Kinder "
 "am Strand unbehindert spielen?\n"
 "Stellen Sie sich vor, auf einer Wiese zu entspannen, im Schatten einer "
 "Trauerweide oder unter den warmen Sonnenstrahlen, bevor Sie einen Sprung "
 "ins Wasser wagen!\n"
-"Mö#246;#246;chten Sie wä#228;#228;hrend eines Spaziergangs den Supermarkt, die Bank, Bars und"
+"M&#246;chten Sie w&#228;hrend eines Spaziergangs den Supermarkt, die Bank, Bars und"
 " Restaurants erreichen?\n"
 "Sollten Sie einen Urlaub in der Natur suchen, ohne auf alle Komforts zu "
-"verzichten, dann gibt es fü#252;#252;r Sie Camping Punta Indiani.\n"
-"Hier herrscht eine familiä#228;#228;re Atmosphä#228;#228;re und jeder Gast ist wichtig.\n"
+"verzichten, dann gibt es f&#252;r Sie Camping Punta Indiani.\n"
+"Hier herrscht eine famili&#228;re Atmosph&#228;re und jeder Gast ist wichtig.\n"
 
 #: templates/home.tpl.html:17
 msgid ""
@@ -69,15 +69,15 @@ msgid ""
 "We are waiting to welcome you.\n"
 "    "
 msgstr ""
-"Je nach Bedarf, kö#246;#246;nnen Sie einen Stellplatz am See oder einen der "
-"grossen, grasbewachsenen und schattigen Stellplä#228;#228;tze im nö#246;#246;rdlichen Bereich"
+"Je nach Bedarf, k&#246;nnen Sie einen Stellplatz am See oder einen der "
+"grossen, grasbewachsenen und schattigen Stellpl&#228;tze im n&#246;rdlichen Bereich"
 " reservieren. v400m. Privatstrand werden Ihnen in jedem Fall zugesichert."
 "\n"
-"Irgendjemand unter Ihren neuen Freunden wird Ihnen erzä#228;#228;hlen, daß#223;#223; er schon"
+"Irgendjemand unter Ihren neuen Freunden wird Ihnen erz&#228;hlen, da&#223; er schon"
 " als Kind mit seinen Eltern oder als Junge mit seinem Motorrad und einem "
 "Zelt\n"
 "nach \"PUNTA INDIANI\" kam... Heute ist er hier mit seiner Familie.\n"
-"Denn nach Punta Indiani kehrt man immer wieder zurü#252;#252;ck.\n"
+"Denn nach Punta Indiani kehrt man immer wieder zur&#252;ck.\n"
 "Wir erwarten Sie!\n"
 
 #: templates/offers.tpl.html:14
@@ -94,7 +94,7 @@ msgid ""
 "only &euro;9.00 a day all incl."
 msgstr ""
 "Anreisenden mit Fahrrad und Zelt zahlen Sie IMMER (Hoch-und Nebensaison) "
-"nur €euro;euro;9.00 am Tag alles Inkl."
+"nur &euro;9.00 am Tag alles Inkl."
 
 #: templates/prices.tpl.html:5
 msgid ""
@@ -108,9 +108,9 @@ msgid ""
 msgstr ""
 "Reservieren geht nur nach den 1. Januar.\n"
 "Achten sie darauf das Punta Indiani ein Familienbetrieb ist, mit viele "
-"Gä#228;#228;ste die jedes Jahr wieder kommen.\n"
+"G&#228;ste die jedes Jahr wieder kommen.\n"
 "Darum raten wir Sie zu reservieren.\n"
-"Fü#252;#252;r die monate Juli und August empfehlen wir eine Reservierung.\n"
+"F&#252;r die monate Juli und August empfehlen wir eine Reservierung.\n"
 
 #: templates/prices.tpl.html:24 templates/prices.tpl.html:30
 #: templates/prices.tpl.html:36 templates/prices.tpl.html:87
@@ -140,7 +140,7 @@ msgstr "Zweites auto | klaines Zelt | boot, etc. nicht im Platz"
 
 #: templates/prices.tpl.html:76
 msgid "each visit has to be pre-authorized by direction."
-msgstr "je Besucher mü#252;#252;ssen durch Richtung genehmigt werden"
+msgstr "je Besucher m&#252;ssen durch Richtung genehmigt werden"
 
 #: templates/prices.tpl.html:77
 msgid ""
@@ -221,9 +221,9 @@ msgid ""
 msgstr ""
 "Camping Punta Indiani bietet gratis allen Kunden:<br>\n"
 "<br>\n"
-"Guest Card Trentino ist Ihr Schlü#252;#252;ssel, um freien Eintritt zu Museen, "
-"Schlö#246;#246;ssern und Naturparks zu haben und fü#252;#252;r die Dauer Ihres Urlaubs im "
-"ganzen Trentino die ö#246;#246;ffentlichen Verkehrsmittel der Provinz zu nutzen.\n"
+"Guest Card Trentino ist Ihr Schl&#252;ssel, um freien Eintritt zu Museen, "
+"Schl&#246;ssern und Naturparks zu haben und f&#252;r die Dauer Ihres Urlaubs im "
+"ganzen Trentino die &#246;ffentlichen Verkehrsmittel der Provinz zu nutzen.\n"
 
 #: templates/services.tpl.html:30
 msgid ""
