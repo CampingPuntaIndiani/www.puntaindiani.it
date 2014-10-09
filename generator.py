@@ -32,7 +32,7 @@ PAGES = [
     ('offers', _('offers'))
 ]
 
-EXTRA = [('pet_disclaimer', '')]
+EXTRA = [('pet_disclaimer', ''), ('booking', '')]
 
 NEWS = [
     (_('first'), _('new website')),

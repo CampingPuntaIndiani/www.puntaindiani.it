@@ -52,5 +52,3 @@ gallery
 
 # Generate Pages
 python generator.py
-
-
