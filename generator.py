@@ -34,8 +34,7 @@ PAGES = [
 EXTRA = [('pet_disclaimer', ''), ('booking', ''), ('authors', '')]
 
 NEWS = [
-    (_('first'), _('new website')),
-    (_('second'), _('new website')),
+    (_('ACSI'), _('off-season discount')),
 ]
 
 

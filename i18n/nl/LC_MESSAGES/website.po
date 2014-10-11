@@ -6,12 +6,12 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
 "POT-Creation-Date: 2014-10-09 19:49+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: nl <LL@li.org>\n"
+"Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
+"Language-Team: -\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: templates/base.tpl.html:90 templates/base.tpl.html:91
 msgid "booking"
-msgstr ""
+msgstr "reserven"
 
 #: templates/booking.tpl.html:6
 msgid "You can reserve you place starting from 2015-01-01"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: templates/home.tpl.html:5
 msgid "Close your eyes ..."
-msgstr ""
+msgstr "Sluit je ogen, en denk je eens in..."
 
 #: templates/home.tpl.html:7
 msgid ""
@@ -44,6 +44,11 @@ msgid ""
 "Here the atmosphere is friendly and every guest is special.\n"
 "    "
 msgstr ""
+"Je ontbijt aan de rand van het meer, terwijl de kinderen vrij op het strand spelen.<br>\n"
+"Stel je voor lekker op het gras te ontspannen, in de schaduw van een treurwilg of je op te warmen onder de warme zon, voordat je in het water duikt.<br>\n"
+"En als je gaat wandelen kom je langs de supermarkt, bank, bar en restaurant.<br>\n"
+"Wie een echte vakantie in de natuur zoekt zonder alle gemakken te moeten missen, is hier op het juiste adres.<br>\n"
+"Op Punta Indiani is de sfeer gemoedelijk en iedere gast even belangrijk.<br>\n"
 
 #: templates/home.tpl.html:17
 msgid ""
@@ -59,6 +64,11 @@ msgid ""
 "We are waiting to welcome you.\n"
 "    "
 msgstr ""
+"Er zijn plekken aan het meer of staanplaatsen in de meer begroeide schaduwrijke noordzijde van de camping, met altijd de beschikking over 400 meter privèstrand.<br>\n"
+"Iemand van jullie nieuwe vrienden zal jullie vertellen dat zij toen zij klein waren, met de ouders of als jongen met tent en motor<br>\n"
+"naar Punta Indiani kwamen... Vandaag is hij er met zijn hele familie.<br>\n"
+"Want iedereen keert ooit terug naar Camping Punta Indiani.<br>\n"
+"Wij verwachten jullie!<br>\n"
 
 #: templates/prices.tpl.html:5
 msgid ""
@@ -70,28 +80,33 @@ msgid ""
 "For the months july and august we suggest a reservation.<br>\n"
 "    "
 msgstr ""
+"Reserveren is mogelijk na 1 januari.<br>\n"
+"Let wel: Camping Punta Indiana is een echte familiecamping met jaarlijks terugkerende gasten.<br>\n"
+"Het is daarom aan te bevelen ruimschoots op tijd te reserveren.<br>\n"
+"Voor de maanden juli en augustus is het sowieso aan te raden te reserveren.<br>\n"
+
 
 #: templates/prices.tpl.html:24 templates/prices.tpl.html:30
 #: templates/prices.tpl.html:36 templates/prices.tpl.html:87
 #: templates/prices.tpl.html:98 templates/prices.tpl.html:109
 msgid "pitch"
-msgstr ""
+msgstr "plek"
 
 #: templates/prices.tpl.html:42
 msgid "person"
-msgstr ""
+msgstr "volwassenen"
 
 #: templates/prices.tpl.html:48
 msgid "child"
-msgstr ""
+msgstr "kind"
 
 #: templates/prices.tpl.html:60
 msgid "visitor"
-msgstr ""
+msgstr "bezoek"
 
 #: templates/prices.tpl.html:66
 msgid "dog"
-msgstr ""
+msgstr "hond"
 
 #: templates/prices.tpl.html:75
 msgid "2nd car | small tent | boats, etc.. Outside the place."
@@ -99,17 +114,17 @@ msgstr ""
 
 #: templates/prices.tpl.html:76
 msgid "each visit has to be pre-authorized by direction."
-msgstr ""
+msgstr "elk bezoek dienen te worden goedgekeurd door de richting."
 
 #: templates/prices.tpl.html:77
 msgid ""
 "dog entrance must be pre-authorized by the Management and must comply the"
 " following"
-msgstr ""
+msgstr "De aankomst moet worden goedgekeurd door de direktie en op deze"
 
 #: templates/prices.tpl.html:77
 msgid "conditions"
-msgstr ""
+msgstr "voorwaarden"
 
 #: templates/prices.tpl.html:90
 msgid ""
@@ -155,6 +170,10 @@ msgid ""
 "After 500 m you see a sign Camping Punta Indiani.\n"
 "    "
 msgstr ""
+"Camping Punta Indiani ligt aan het Caldonazzomeer, in het gebied Trentino in Noord-Italie.<br>\n"
+"Volg in Italie de Autoweg A22 tot Trento-Nord, en neem daar de afrit.<br>\n"
+"Volg vanaf Trento-Nord de SS47 richting Padova / Pergine, en voorbij Pergine neem de afrit rechts naar Valcanouver / Lago di Caldonazzo.<br>\n"
+"Na 0,5 km volg de borden "Camping Punta Indiani".<br>\n"
 
 #: templates/route.tpl.html:28
 msgid "view on Google"
@@ -170,6 +189,9 @@ msgid ""
 "public transport system for your entire holiday.\n"
 "                "
 msgstr ""
+"Camping Punta Indiani biedt gratis voor alle gasten:<br>\n"
+"<br>\n"
+"Guest Card Trentino gives you free admission to museums, castles and nature parks and to free travel throughout Trentino on the province’s public transport system for your entire holiday.<br>\n"
 
 #: templates/services.tpl.html:30 templates/services_and_offers.tpl.html:53
 msgid ""
@@ -190,33 +212,14 @@ msgstr ""
 
 #: templates/services_and_offers.tpl.html:40
 msgid "Low Season:<br> 2 People + 1 Pitch B o C = &euro;18 a day"
-msgstr ""
+msgstr "Low Season:<br> 2 Mensen + 1 Pitch B o C = €18 al een dag"
 
 #: templates/services_and_offers.tpl.html:60
 msgid "cyclists offer"
-msgstr ""
+msgstr "Speciaal voor Fietsers"
 
 #: templates/services_and_offers.tpl.html:67
 msgid ""
 "Guests who arrive by bicycle and tent, pay ALWAYS (high and low season) "
 "only &euro;9.00 a day all incl."
-msgstr ""
-
-#~ msgid "Low Season: 2 People + 1 Pitch B o C = €18 a day"
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Close your eyes..."
-#~ msgstr ""
-
-#~ msgid "You can reserve you place starting form 2015-01-01"
-#~ msgstr ""
-
-#~ msgid "Low Season: 2 People + 1 Pitch B o C = &euro;18 a day"
-#~ msgstr ""
-
-#~ msgid "offer cyclists"
-#~ msgstr ""
-
+msgstr "Als u komt met kleine tent en fiets , betaalt u ALTIJD (hoog-en laagseizoen) slechts €9.00 per dag alles inclusief."
