@@ -91,9 +91,7 @@
       <div>
         News
       </div><div>
-        {% for (title, n) in news %}
-        <p><span data-title>{{ title }}</span>&nbsp;<span data-news>{{ n }}</span></p>
-        {% endfor %}
+        {% include 'news.tpl.html' %}
       </div>
     </section>
 

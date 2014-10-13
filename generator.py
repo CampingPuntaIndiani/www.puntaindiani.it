@@ -33,11 +33,6 @@ PAGES = [
 
 EXTRA = ['pet_disclaimer', 'booking', 'authors']
 
-NEWS = [
-    (_('ACSI'), _('off-season discount')),
-]
-
-
 def generate():
     env = Environment(loader=FileSystemLoader(TPL_PATH),
                       extensions=['jinja2.ext.i18n'])
@@ -58,7 +53,6 @@ def generate():
 
             context = {
                 'now': datetime.datetime.utcnow().isoformat(),
-                'news': NEWS,
                 'lang': lang,
                 'page': page,
                 'title': page,

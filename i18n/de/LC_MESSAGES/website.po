@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2014-10-13 14:40+0200\n"
+"POT-Creation-Date: 2014-10-13 17:17+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -18,35 +18,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: templates/base.tpl.html:82
+#: templates/base.tpl.html:63
 msgid "home"
 msgstr ""
 
-#: templates/base.tpl.html:83
+#: templates/base.tpl.html:64
 msgid "prices"
-msgstr ""
+msgstr "preise"
 
-#: templates/base.tpl.html:84
+#: templates/base.tpl.html:65
 msgid "map"
-msgstr ""
+msgstr "plan"
 
-#: templates/base.tpl.html:85
+#: templates/base.tpl.html:66
 msgid "route"
-msgstr ""
+msgstr "weg"
 
-#: templates/base.tpl.html:86
+#: templates/base.tpl.html:67
 msgid "around"
-msgstr ""
+msgstr "umgebung"
 
-#: templates/base.tpl.html:87
+#: templates/base.tpl.html:68
 msgid "gallery"
 msgstr ""
 
-#: templates/base.tpl.html:88
+#: templates/base.tpl.html:69
 msgid "services & offers"
-msgstr ""
+msgstr "services & angebot"
 
-#: templates/base.tpl.html:92 templates/base.tpl.html:93
+#: templates/base.tpl.html:73 templates/base.tpl.html:74
 msgid "booking"
 msgstr "Reservierung"
 
@@ -108,6 +108,80 @@ msgstr ""
 "nach \"PUNTA INDIANI\" kam... Heute ist er hier mit seiner Familie.\n"
 "Denn nach Punta Indiani kehrt man immer wieder zur&#252;ck.\n"
 "Wir erwarten Sie!\n"
+
+#: templates/pet_disclaimer.tpl.html:1
+msgid "Pet disclaimer"
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:2
+msgid "Pets owners must declare their pet when making reservation or on arrival."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:5
+#, fuzzy
+msgid "Dogs"
+msgstr "Hund"
+
+#: templates/pet_disclaimer.tpl.html:7
+msgid "They are allowed only in area C."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:8
+msgid ""
+"DOGS ARE NOT ALLOWED on the BEACH, in the SERVICES, on PLAYGROUNDS and in"
+" the PARKINGS."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:9
+msgid "NOT ALLOWED DOBERMANN, PITT-BULL, ROTTWEILER and MOLOSSI."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:10
+msgid "MUST NOT DISTURB."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:11
+msgid "MUST NOT BE LEFT UNATTENDED."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:12
+msgid "they must be kept on a SHORT LEASH at all times."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:13
+msgid "medium and large size dogs must wear muzzle."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:14
+msgid ""
+"the Management can decide not to welcome dogs declared dangerous or "
+"aggressive."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:15
+msgid ""
+"the entrance in the campsite must be authorised by the management. "
+"Sanitary condition certificate is compulsory to welcome dog in the "
+"campsite"
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:16
+msgid ""
+"must be taken outside the campsite for their physical needs. (take with "
+"you scoop and bags)"
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:17
+msgid ""
+"owners must ensure respect of sanitary rules and are personally "
+"responsible for any damage caused by their dogs."
+msgstr ""
+
+#: templates/pet_disclaimer.tpl.html:18
+msgid ""
+"dogs owners who do not comply with these rules will be kindly asked to "
+"leave the camp-site."
+msgstr ""
 
 #: templates/prices.tpl.html:5
 msgid ""
@@ -176,6 +250,9 @@ msgid ""
 "Dogs not allowed.\n"
 "        "
 msgstr ""
+"Platze am Seehufer [50mq-70mq].\n"
+"Mit privat Parkplatz fuer Auto neben dem Platz (inclusiv im Preis).\n"
+"In dieser Zone Hunde sind nicht erlaubt.\n"
 
 #: templates/prices.tpl.html:101
 msgid ""
@@ -186,6 +263,9 @@ msgid ""
 "Dogs generally not allowed.\n"
 "        "
 msgstr ""
+"Platze in der naehe vom See, nicht direct am Wasser [60mq-80mq].\n"
+"Die kleinere haben privat Parkplatz fuer Auto. (inclusiv im Preis).\n"
+"In dieser Zone Hunde sind nicht erlaubt.\n"
 
 #: templates/prices.tpl.html:112
 msgid ""
@@ -195,6 +275,9 @@ msgid ""
 "Dogs always allowed, after pre-authorization from the Management.\n"
 "        "
 msgstr ""
+"Grasbewachsenen und schattigen Stellplätze [70mq-100mq].\n"
+"400m. Privatstrand werden Ihnen in jedem Fall zugesichert.\n"
+"Hunden nach Managementverträge zulässig.\n"
 
 #: templates/route.tpl.html:8
 msgid "easy way"
