@@ -7,11 +7,11 @@
     <title>{{title|capitalize}}</title>
 
     <!-- Google internalization -->
-    <link rel="alternate" hreflang="x-default" href="/eng/{{page}}.html">
-    <link rel="alternate" hreflang="en" href="/eng/{{page}}.html">
-    <link rel="alternate" hreflang="it" href="/ita/{{page}}.html">
-    <link rel="alternate" hreflang="de" href="/ger/{{page}}.html">
-    <link rel="alternate" hreflang="nl" href="/ned/{{page}}.html">
+    <link rel="alternate" hreflang="x-default" href="/en/{{page}}.html">
+    <link rel="alternate" hreflang="en" href="/en/{{page}}.html">
+    <link rel="alternate" hreflang="it" href="/it/{{page}}.html">
+    <link rel="alternate" hreflang="de" href="/de/{{page}}.html">
+    <link rel="alternate" hreflang="nl" href="/nl/{{page}}.html">
 
 
     <!-- A little bit of egocentrism :p -->
@@ -23,30 +23,11 @@
 
     <!-- IE compatibility shit -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
     <!-- Mobile support -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- favicons -->
-    <!-- firefox and favicon.ico ... DIO .. :( -->
-    <link rel="icon" href="/favicon.ico"> <!-- real location: /static/favicon/favicon.ico -->
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="196x196" href="/static/favicon/favicon-196.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="/static/favicon/favicon-160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon/favicon-96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/static/favicon/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/static/favicon/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/static/favicon/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/static/favicon/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/static/favicon/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/static/favicon/favicon-72.png">
-    <link rel="apple-touch-icon" href="/static/favicon/favicon-57.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="/static/favicon/favicon-144.png">
-    <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
-    <!-- Thanks faviconit.com -->
+    <link rel="icon" href="/static/favicon.png">
 
     <script type="text/javascript" src="../static/js/jquery.min.js"></script>
 
@@ -64,10 +45,10 @@
 </head>
 <body>
   <section name="lang">
-    <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en">&nbsp;</i></a>
-    <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl">&nbsp;</i></a>
-    <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de">&nbsp;</i></a>
-    <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it">&nbsp;</i></a>
+    <a href="../en/{{ page }}.html" target="_self"><i alt="en" class="flag flag-en">en</i></a>
+    <a href="../nl/{{ page }}.html" target="_self"><i alt="nl" class="flag flag-nl">nl</i></a>
+    <a href="../de/{{ page }}.html" target="_self"><i alt="de" class="flag flag-de">de</i></a>
+    <a href="../it/{{ page }}.html" target="_self"><i alt="it" class="flag flag-it">it</i></a>
   </section>
 
     <header>
@@ -79,11 +60,13 @@
         <li>Menu<i class="icon icon-open">&nbsp;</i><i class="icon icon-close">&nbsp;</i></li>
       </uL>
       <ul>
-        {% for p in pages %}
-        <li {% if page == p.0 %}class="selected"{% endif %}>
-          <a href="{% if page != p.0 %}{{ p.0 }}.html{% else %}#{% endif %}">{{ p.1 }}</a>
-        </li>
-        {% endfor %}
+        <li {% if page == 'home' %}class="selected"{% endif %}><a href="home.html">{{ _('home') }}</a></li>
+        <li {% if page == 'prices' %}class="selected"{% endif %}><a href="prices.html">{{ _('prices') }}</a></li>
+        <li {% if page == 'map' %}class="selected"{% endif %}><a href="map.html">{{ _('map') }}</a></li>
+        <li {% if page == 'route' %}class="selected"{% endif %}><a href="route.html">{{ _('route') }}</a></li>
+        <li {% if page == 'around' %}class="selected"{% endif %}><a href="around.html">{{ _('around') }}</a></li>
+        <li {% if page == 'gallery' %}class="selected"{% endif %}><a href="gallery.html">{{ _('gallery') }}</a></li>
+        <li {% if page == 'services_and_offers' %}class="selected"{% endif %}><a href="services_and_offers.html">{{ _('services & offers') }}</a></li>
       </ul>
       <ul class="pull-right">
         <li class="booking" {% if page == "booking" %}class="pure-menu-selected"{% endif %}>

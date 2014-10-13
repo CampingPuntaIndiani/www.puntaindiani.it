@@ -1,14 +1,14 @@
-# Dutch translations for PROJECT.
+# Dutch translations for .
 # Copyright (C) 2014 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the  project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2014-10-09 19:49+0200\n"
+"POT-Creation-Date: 2014-10-13 14:40+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -18,7 +18,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: templates/base.tpl.html:90 templates/base.tpl.html:91
+#: templates/base.tpl.html:82
+msgid "home"
+msgstr ""
+
+#: templates/base.tpl.html:83
+msgid "prices"
+msgstr ""
+
+#: templates/base.tpl.html:84
+msgid "map"
+msgstr ""
+
+#: templates/base.tpl.html:85
+msgid "route"
+msgstr ""
+
+#: templates/base.tpl.html:86
+msgid "around"
+msgstr ""
+
+#: templates/base.tpl.html:87
+msgid "gallery"
+msgstr ""
+
+#: templates/base.tpl.html:88
+msgid "services & offers"
+msgstr ""
+
+#: templates/base.tpl.html:92 templates/base.tpl.html:93
 msgid "booking"
 msgstr "reserven"
 
@@ -44,11 +72,17 @@ msgid ""
 "Here the atmosphere is friendly and every guest is special.\n"
 "    "
 msgstr ""
-"Je ontbijt aan de rand van het meer, terwijl de kinderen vrij op het strand spelen.<br>\n"
-"Stel je voor lekker op het gras te ontspannen, in de schaduw van een treurwilg of je op te warmen onder de warme zon, voordat je in het water duikt.<br>\n"
-"En als je gaat wandelen kom je langs de supermarkt, bank, bar en restaurant.<br>\n"
-"Wie een echte vakantie in de natuur zoekt zonder alle gemakken te moeten missen, is hier op het juiste adres.<br>\n"
-"Op Punta Indiani is de sfeer gemoedelijk en iedere gast even belangrijk.<br>\n"
+"Je ontbijt aan de rand van het meer, terwijl de kinderen vrij op het "
+"strand spelen.<br>\n"
+"Stel je voor lekker op het gras te ontspannen, in de schaduw van een "
+"treurwilg of je op te warmen onder de warme zon, voordat je in het water "
+"duikt.<br>\n"
+"En als je gaat wandelen kom je langs de supermarkt, bank, bar en "
+"restaurant.<br>\n"
+"Wie een echte vakantie in de natuur zoekt zonder alle gemakken te moeten "
+"missen, is hier op het juiste adres.<br>\n"
+"Op Punta Indiani is de sfeer gemoedelijk en iedere gast even "
+"belangrijk.<br>\n"
 
 #: templates/home.tpl.html:17
 msgid ""
@@ -64,9 +98,13 @@ msgid ""
 "We are waiting to welcome you.\n"
 "    "
 msgstr ""
-"Er zijn plekken aan het meer of staanplaatsen in de meer begroeide schaduwrijke noordzijde van de camping, met altijd de beschikking over 400 meter privèstrand.<br>\n"
-"Iemand van jullie nieuwe vrienden zal jullie vertellen dat zij toen zij klein waren, met de ouders of als jongen met tent en motor<br>\n"
-"naar Punta Indiani kwamen... Vandaag is hij er met zijn hele familie.<br>\n"
+"Er zijn plekken aan het meer of staanplaatsen in de meer begroeide "
+"schaduwrijke noordzijde van de camping, met altijd de beschikking over "
+"400 meter privèstrand.<br>\n"
+"Iemand van jullie nieuwe vrienden zal jullie vertellen dat zij toen zij "
+"klein waren, met de ouders of als jongen met tent en motor<br>\n"
+"naar Punta Indiani kwamen... Vandaag is hij er met zijn hele familie.<br>"
+"\n"
 "Want iedereen keert ooit terug naar Camping Punta Indiani.<br>\n"
 "Wij verwachten jullie!<br>\n"
 
@@ -81,10 +119,11 @@ msgid ""
 "    "
 msgstr ""
 "Reserveren is mogelijk na 1 januari.<br>\n"
-"Let wel: Camping Punta Indiana is een echte familiecamping met jaarlijks terugkerende gasten.<br>\n"
+"Let wel: Camping Punta Indiana is een echte familiecamping met jaarlijks "
+"terugkerende gasten.<br>\n"
 "Het is daarom aan te bevelen ruimschoots op tijd te reserveren.<br>\n"
-"Voor de maanden juli en augustus is het sowieso aan te raden te reserveren.<br>\n"
-
+"Voor de maanden juli en augustus is het sowieso aan te raden te "
+"reserveren.<br>\n"
 
 #: templates/prices.tpl.html:24 templates/prices.tpl.html:30
 #: templates/prices.tpl.html:36 templates/prices.tpl.html:87
@@ -170,10 +209,13 @@ msgid ""
 "After 500 m you see a sign Camping Punta Indiani.\n"
 "    "
 msgstr ""
-"Camping Punta Indiani ligt aan het Caldonazzomeer, in het gebied Trentino in Noord-Italie.<br>\n"
-"Volg in Italie de Autoweg A22 tot Trento-Nord, en neem daar de afrit.<br>\n"
-"Volg vanaf Trento-Nord de SS47 richting Padova / Pergine, en voorbij Pergine neem de afrit rechts naar Valcanouver / Lago di Caldonazzo.<br>\n"
-"Na 0,5 km volg de borden "Camping Punta Indiani".<br>\n"
+"Camping Punta Indiani ligt aan het Caldonazzomeer, in het gebied Trentino"
+" in Noord-Italie.<br>\n"
+"Volg in Italie de Autoweg A22 tot Trento-Nord, en neem daar de afrit.<br>"
+"\n"
+"Volg vanaf Trento-Nord de SS47 richting Padova / Pergine, en voorbij "
+"Pergine neem de afrit rechts naar Valcanouver / Lago di Caldonazzo.<br>\n"
+"Na 0,5 km volg de borden \"Camping Punta Indiani\".<br>\n"
 
 #: templates/route.tpl.html:28
 msgid "view on Google"
@@ -191,7 +233,9 @@ msgid ""
 msgstr ""
 "Camping Punta Indiani biedt gratis voor alle gasten:<br>\n"
 "<br>\n"
-"Guest Card Trentino gives you free admission to museums, castles and nature parks and to free travel throughout Trentino on the province’s public transport system for your entire holiday.<br>\n"
+"Guest Card Trentino gives you free admission to museums, castles and "
+"nature parks and to free travel throughout Trentino on the province’s "
+"public transport system for your entire holiday.<br>\n"
 
 #: templates/services.tpl.html:30 templates/services_and_offers.tpl.html:53
 msgid ""
@@ -222,4 +266,7 @@ msgstr "Speciaal voor Fietsers"
 msgid ""
 "Guests who arrive by bicycle and tent, pay ALWAYS (high and low season) "
 "only &euro;9.00 a day all incl."
-msgstr "Als u komt met kleine tent en fiets , betaalt u ALTIJD (hoog-en laagseizoen) slechts €9.00 per dag alles inclusief."
+msgstr ""
+"Als u komt met kleine tent en fiets , betaalt u ALTIJD (hoog-en "
+"laagseizoen) slechts €9.00 per dag alles inclusief."
+

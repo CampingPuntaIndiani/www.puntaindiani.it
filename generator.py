@@ -22,16 +22,16 @@ LANGS = ['it', 'en', 'nl', 'de']
 
 # pages that has to be generated
 PAGES = [
-    ('home', _('home')),
-    ('prices', _('prices')),
-    ('map', _('map')),
-    ('route', _('route')),
-    ('around', _('around')),
-    ('gallery', _('gallery')),
-    ('services_and_offers', _('services & offers')),
+    'home',
+    'prices',
+    'map',
+    'route', 
+    'around', 
+    'gallery',
+    'services_and_offers',
 ]
 
-EXTRA = [('pet_disclaimer', ''), ('booking', ''), ('authors', '')]
+EXTRA = ['pet_disclaimer', 'booking', 'authors']
 
 NEWS = [
     (_('ACSI'), _('off-season discount')),
@@ -54,24 +54,20 @@ def generate():
         output_path.mkdir(True)
 
         for page in PAGES + EXTRA:
-            tpl = env.get_template(page[0] + TPL_SUFFIX)
+            tpl = env.get_template(page + TPL_SUFFIX)
 
             context = {
                 'now': datetime.datetime.utcnow().isoformat(),
-                'pages': PAGES,
                 'news': NEWS,
                 'lang': lang,
-                'page': page[0],
-                'title': page[1],
+                'page': page,
+                'title': page,
             }
 
-            with open(output_path.child(page[0] + DIST_SUFFIX), 'w+') as out:
+            with open(output_path.child(page + DIST_SUFFIX), 'w+') as out:
                 out.write(tpl.render(**context).encode('ascii', 'xmlcharrefreplace'))
         env.uninstall_gettext_translations(trans)
 
 
 if __name__ == '__main__':
     generate()
-
-#TODO:
-# compile and minify the world

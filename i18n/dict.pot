@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-10-09 19:49+0200\n"
+"POT-Creation-Date: 2014-10-13 14:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: templates/base.tpl.html:90 templates/base.tpl.html:91
+#: templates/base.tpl.html:82
+msgid "home"
+msgstr ""
+
+#: templates/base.tpl.html:83
+msgid "prices"
+msgstr ""
+
+#: templates/base.tpl.html:84
+msgid "map"
+msgstr ""
+
+#: templates/base.tpl.html:85
+msgid "route"
+msgstr ""
+
+#: templates/base.tpl.html:86
+msgid "around"
+msgstr ""
+
+#: templates/base.tpl.html:87
+msgid "gallery"
+msgstr ""
+
+#: templates/base.tpl.html:88
+msgid "services & offers"
+msgstr ""
+
+#: templates/base.tpl.html:92 templates/base.tpl.html:93
 msgid "booking"
 msgstr ""
 

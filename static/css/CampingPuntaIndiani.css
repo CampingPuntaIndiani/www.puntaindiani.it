@@ -187,7 +187,7 @@ only screen and (min-device-pixel-ratio: 2) {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url(../img/bx_loader.gif) center center no-repeat #fff;
+  /* background: url(../img/bx_loader.gif) center center no-repeat #fff; */
   height: 100%;
   width: 100%;
   position: absolute;
@@ -837,7 +837,8 @@ body > footer .ref img {
   height: 1em;
   vertical-align: sub !important;
   border: 1px solid #333;
-  background-size: 100% 100% !important; 
+  background-size: 100% 100% !important;
+  color: transparent; /* now we can insert fallback like img alt */
 }
 .flag.flag-it {
   background:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjEwMDAiIHZpZXdCb3g9IjAgMCAzIDIiPg0KPHBhdGggZmlsbD0iIzAwOTI0NiIgZD0ibTAsMGgxdjJoLTF6Ii8+DQo8cGF0aCBmaWxsPSIjZmZmIiBkPSJtMSwwaDF2MmgtMXoiLz4NCjxwYXRoIGZpbGw9IiNjZTJiMzciIGQ9Im0yLDBoMXYyaC0xeiIvPg0KPC9zdmc+DQo=');
@@ -867,6 +868,7 @@ body > footer .ref img {
   right:0;
   bottom:0;
   background-color: rgba(0,0,0,0.8);
+  z-index: 9999;
 }
 
 #modal > section {
@@ -880,6 +882,15 @@ body > footer .ref img {
 
   width: 1170px;
   padding: 72px 48px 84px;
+}
+
+#modal h3 {
+  font-size: 36px;
+  line-height: 1.5em;
+}
+#modal h3 {
+  font-size: 32px;
+  line-height: 1.5em;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -914,8 +925,8 @@ body > footer .ref img {
 #modal a[data-action=close] {
   position: absolute;
   top: 12px;
-  right: 5px;
-  font-size: 4em;
+  right: 20px;
+  font-size: 40px;
 }
 
 /* prices.html */

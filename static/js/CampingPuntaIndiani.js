@@ -8,16 +8,14 @@ var $ = window.$ || window.jQuery;
 
 /* Modal support */
 function open_modal(e) {
-    console.log(e.target);
     e.preventDefault();
     var page_url = $(e.target).attr('href');
-    console.log(page_url);
     $.get(page_url, function (data, status) {
         if (['success', 'notmodified'].indexOf(status) === -1) {
             console.error("Error " + status + " loading " + page_url);
             return;
         }
-        $('#modal section[modal-content]').html(data);
+        $('#modal section[name=modal-content]').html(data);
         $('#modal').addClass('active');
     });
 }
