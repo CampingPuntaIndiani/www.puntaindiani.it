@@ -1138,12 +1138,12 @@ dd {
 
 .info-list li > div {
   list-style: none;
-  width: 49%;
+  width: 48%;
   display: inline-block;
   vertical-align: top;
 }
-.info-list li > div:first-child { margin-right: 1%; }
-.info-list li > div:last-child { margin-left: 1%; }
+.info-list li > div:first-child { margin-right: 2%; }
+.info-list li > div:last-child { margin-left: 2%; }
 
 .info-list li {
   clear: both;
