@@ -44,7 +44,7 @@ msgstr ""
 
 #: templates/base.tpl.html:66
 msgid "services & offers"
-msgstr "servizzi & offerte"
+msgstr "servizi & offerte"
 
 #: templates/base.tpl.html:70 templates/base.tpl.html:71
 msgid "booking"
@@ -333,7 +333,7 @@ msgstr ""
 
 #: templates/services_and_offers.tpl.html:64
 msgid "services"
-msgstr "servizzi"
+msgstr "servizi"
 
 #: templates/services_and_offers.tpl.html:74
 msgid ""
