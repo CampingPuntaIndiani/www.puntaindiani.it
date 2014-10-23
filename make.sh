@@ -64,3 +64,9 @@ echo "[+] Compile lang"
 # Generate Pages
 echo "[+] Compile templates"
 python generator.py
+
+# Copy CNAME
+echo "[+] Copy CNAME config"
+cp CNAME dist/CNAME
+
+echo "[+] Completed"

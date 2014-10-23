@@ -13,13 +13,14 @@ rm static/.gitignore
 
 echo "[*] Setup deploy git env"
 git init
-git remote origin git@github.com:CampingPuntaIndiani/CampingPuntaIndiani.github.io.git
+git remote add origin git@github.com:CampingPuntaIndiani/CampingPuntaIndiani.github.io.git
 
 echo "[*] Commit & tag"
+git add .
 git commit -am "release"
 if [ ! -z "$1" ]; then
     git tag $1
 fi
 
 echo "[*] Push release"
-git push -u origin master
+git push -u origin master --force --tags
