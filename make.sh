@@ -34,7 +34,7 @@ rm dist/static/js/CampingPuntaIndiani.js
 function gallery {
     function generate {
         echo "[+] Generate Gallery"
-        python Gallery/build.py
+        cd ./Gallery && python build.py && cd ..
         find Gallery/original -type f -name "*" -exec md5sum {} + | awk '{print $1}' | sort | md5sum | awk -s" " '{print $1}' > Gallery/original.md5
     }
 
