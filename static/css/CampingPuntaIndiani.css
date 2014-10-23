@@ -1136,17 +1136,9 @@ dd {
   text-transform: capitalize;
 }
 
-.info-list li > div {
-  list-style: none;
-  width: 48%;
-  display: inline-block;
-  vertical-align: top;
-}
-.info-list li > div:first-child { margin-right: 2%; }
-.info-list li > div:last-child { margin-left: 2%; }
-
 .info-list li {
   clear: both;
+  list-style: none;
   width: 100%;
   border-bottom: 1px solid #ddd;
   padding: 1em 0 1em 0;

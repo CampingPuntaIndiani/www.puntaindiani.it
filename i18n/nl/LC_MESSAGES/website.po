@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2014-10-13 17:17+0200\n"
+"POT-Creation-Date: 2014-10-23 14:12+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -18,35 +18,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: templates/base.tpl.html:63
+#: templates/base.tpl.html:60
 msgid "home"
 msgstr ""
 
-#: templates/base.tpl.html:64
+#: templates/base.tpl.html:61
 msgid "prices"
 msgstr "prijzen"
 
-#: templates/base.tpl.html:65
+#: templates/base.tpl.html:62
 msgid "map"
 msgstr "plattegrond"
 
-#: templates/base.tpl.html:66
+#: templates/base.tpl.html:63
 msgid "route"
 msgstr ""
 
-#: templates/base.tpl.html:67
+#: templates/base.tpl.html:64
 msgid "around"
 msgstr "omgeving"
 
-#: templates/base.tpl.html:68
+#: templates/base.tpl.html:65
 msgid "gallery"
 msgstr ""
 
-#: templates/base.tpl.html:69
+#: templates/base.tpl.html:66
 msgid "services & offers"
 msgstr ""
 
-#: templates/base.tpl.html:73 templates/base.tpl.html:74
+#: templates/base.tpl.html:70 templates/base.tpl.html:71
 msgid "booking"
 msgstr "reserven"
 
@@ -108,6 +108,10 @@ msgstr ""
 "Want iedereen keert ooit terug naar Camping Punta Indiani.<br>\n"
 "Wij verwachten jullie!<br>\n"
 
+#: templates/news.tpl.html:1
+msgid "off-season discount"
+msgstr ""
+
 #: templates/pet_disclaimer.tpl.html:1
 msgid "Pet disclaimer"
 msgstr ""
@@ -117,7 +121,6 @@ msgid "Pets owners must declare their pet when making reservation or on arrival.
 msgstr ""
 
 #: templates/pet_disclaimer.tpl.html:5
-#, fuzzy
 msgid "Dogs"
 msgstr "hond"
 
@@ -295,7 +298,39 @@ msgstr ""
 msgid "view on Google"
 msgstr ""
 
-#: templates/services.tpl.html:14 templates/services_and_offers.tpl.html:23
+#: templates/services_and_offers.tpl.html:6
+msgid "offers"
+msgstr ""
+
+#: templates/services_and_offers.tpl.html:16
+#: templates/services_and_offers.tpl.html:30
+#: templates/services_and_offers.tpl.html:44
+msgid "Low Season:<br> 2 People + 1 Pitch B + power = &euro;18 a day"
+msgstr "Low Season:<br> 2 Mensen + 1 Pitch B + power = &euro;18 al een dag"
+
+#: templates/services_and_offers.tpl.html:17
+#: templates/services_and_offers.tpl.html:31
+#: templates/services_and_offers.tpl.html:45
+msgid "Low Season:<br> 2 People + 1 Pitch C + 1 dog = &euro;16 a day"
+msgstr "Low Season:<br> 2 Mensen + 1 Pitch C + 1 Hond = &euro;16 al een dag"
+
+#: templates/services_and_offers.tpl.html:50
+msgid "cyclists offer"
+msgstr "Speciaal voor Fietsers"
+
+#: templates/services_and_offers.tpl.html:57
+msgid ""
+"Guests who arrive by bicycle and tent, pay ALWAYS (high and low season) "
+"only &euro;9.00 a day all incl."
+msgstr ""
+"Als u komt met kleine tent en fiets , betaalt u ALTIJD (hoog-en "
+"laagseizoen) slechts €9.00 per dag alles inclusief."
+
+#: templates/services_and_offers.tpl.html:64
+msgid "services"
+msgstr ""
+
+#: templates/services_and_offers.tpl.html:74
 msgid ""
 "\n"
 "Camping Punta Indiani offers gratis for all guests:<br>\n"
@@ -303,7 +338,7 @@ msgid ""
 "Guest Card Trentino gives you free admission to museums, castles and "
 "nature parks and to free travel throughout Trentino on the province’s "
 "public transport system for your entire holiday.\n"
-"                "
+"            "
 msgstr ""
 "Camping Punta Indiani biedt gratis voor alle gasten:<br>\n"
 "<br>\n"
@@ -311,36 +346,20 @@ msgstr ""
 "nature parks and to free travel throughout Trentino on the province’s "
 "public transport system for your entire holiday.<br>\n"
 
-#: templates/services.tpl.html:30 templates/services_and_offers.tpl.html:53
+#: templates/services_and_offers.tpl.html:90
 msgid ""
 "\n"
 "Be prepared for your vacation!<br>\n"
 "<br>\n"
 "Discover the experiences that your stay in Valsugana offers.<br>\n"
-"                "
+"            "
 msgstr ""
 
-#: templates/services_and_offers.tpl.html:8
-msgid "services"
-msgstr ""
-
-#: templates/services_and_offers.tpl.html:10
-msgid "offers"
-msgstr ""
-
-#: templates/services_and_offers.tpl.html:40
-msgid "Low Season:<br> 2 People + 1 Pitch B o C = &euro;18 a day"
-msgstr "Low Season:<br> 2 Mensen + 1 Pitch B o C = €18 al een dag"
-
-#: templates/services_and_offers.tpl.html:60
-msgid "cyclists offer"
-msgstr "Speciaal voor Fietsers"
-
-#: templates/services_and_offers.tpl.html:67
-msgid ""
-"Guests who arrive by bicycle and tent, pay ALWAYS (high and low season) "
-"only &euro;9.00 a day all incl."
-msgstr ""
-"Als u komt met kleine tent en fiets , betaalt u ALTIJD (hoog-en "
-"laagseizoen) slechts €9.00 per dag alles inclusief."
+#~ msgid ""
+#~ "\n"
+#~ "Be prepared for your vacation!<br>\n"
+#~ "<br>\n"
+#~ "Discover the experiences that your stay in Valsugana offers.<br>\n"
+#~ "                "
+#~ msgstr ""
 
