@@ -3,20 +3,30 @@
 echo "[*] Build website"
 ./make.sh
 
-echo "[*] Setup deploy dir"
-rm -rf ../CampingPuntaIndiani.github.io
-cp -r dist ../CampingPuntaIndiani.github.io
-cd ../CampingPuntaIndiani.github.io
+DEPLOY=../CampingPuntaIndiani.github.io
+if [ ! -d $DEPLOY]; then
+    echo "[*] Deploy directory does not exists"
+    echo "[*] Setup git & fetch current status"
+    git clone git@github.com:CampingPuntaIndiani/CampingPuntaIndiani.github.io.git $DEPLOY
+fi
 
-echo "[*] Setup deploy git env"
-git init
-git remote add origin git@github.com:CampingPuntaIndiani/CampingPuntaIndiani.github.io.git
+echo "[*] Update data"
+find $DEPLOY  -maxdepth 1 -not -name '.git' -print0 | xargs -0 rm -rf
+cp -r dist $DEPLOY
 
-echo "[*] Commit & tag"
+echo "[*] Add changes"
 git add .
-git commit -am "release"
+
+echo "[*] Commit"
+MSG="Update $(date +"%Y-%m-%d %r")"
 if [ ! -z "$1" ]; then
-    git tag $1
+    MSG=$1
+fi
+git commit -am "release"
+
+if [ ! -z "$2" ]; then
+    echo "[*] Tag"
+    git tag $2
 fi
 
 echo "[*] Push release"
