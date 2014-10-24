@@ -4,7 +4,7 @@ echo "[*] Build website"
 ./make.sh
 
 DEPLOY=../CampingPuntaIndiani.github.io
-if [ ! -d $DEPLOY]; then
+if [ ! -d $DEPLOY ]; then
     echo "[*] Deploy directory does not exists"
     echo "[*] Setup git & fetch current status"
     git clone git@github.com:CampingPuntaIndiani/CampingPuntaIndiani.github.io.git $DEPLOY
