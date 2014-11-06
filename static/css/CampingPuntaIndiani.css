@@ -883,6 +883,8 @@ body > footer .ref img {
 
   width: 1170px;
   padding: 72px 48px 84px;
+
+  overflow: scroll;
 }
 
 #modal h3 {
@@ -1257,4 +1259,84 @@ section.video iframe {
     width: 380px;
     height: 214px;
   }
+}
+
+/* booking */
+form.booking {width: 100%;}
+form.booking section {
+  display: block;
+  width: 100%; 
+  clear: both;
+  margin-bottom: 40px;
+}
+
+form.booking section.split {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+@media only screen and (max-width: 991px) {
+  form.booking section.split {width:100%;}
+}
+
+form.booking header {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+form.booking section > div {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+form.booking section > div  > * {
+  width: 50%;
+  height: 34px;
+  display:inline-block;
+  padding: 2px 10px 2px 10px;
+}
+
+form.booking section > div  > * {text-align:center;}
+@media only screen and (max-width: 991px) {
+  form.booking section > div  > *:first-child {text-align:right;}
+  form.booking section > div  > *:last-child {text-align:left;}
+}
+
+form.booking label, form.booking input, form.booking select{
+  font-size: 18px!important;
+  padding: 2px !important;
+  text-align:center;
+}
+form.booking select{
+  font-size: 16px!important;
+  text-align:center;
+}
+form.booking label {text-transform: capitalize;}
+
+form.booking textarea {
+  display: inline-block;
+  width: 80%;
+  height: 200px;
+  resize: none;
+  margin: auto;
+}
+
+form.booking input[name=pet] {width:60%;}
+
+form.booking button {
+  font-size: 28px;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+form.booking button[type=submit] {
+  color: white;
+  background-color: #5cb85c;
+  border: solid 1px #4cae4c;
 }

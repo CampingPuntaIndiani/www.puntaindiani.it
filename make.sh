@@ -19,6 +19,9 @@ mkdir -p dist
 echo "[+] Copy index"
 cp templates/index.html dist/index.html
 
+echo "[+] Copy index"
+cp sitemap.xml dist/sitemap.xml
+
 # Static file
 echo "[+] Copy static"
 cp -r static dist/static

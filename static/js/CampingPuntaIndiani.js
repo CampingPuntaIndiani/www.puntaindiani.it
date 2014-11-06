@@ -165,6 +165,20 @@ function init_gallery() {
     })
 }
 
+function init_booking(){
+  // set up pitch selection 
+  $('select[name=resource-kind]').on('change', function(){
+    var r = $('select[name=resource]');
+    r.find('optgroup').hide();
+
+    var area = $('select[name=resource-kind]').val(); // use this?
+    var group = r.find('optgroup[data-kind='+area+']');
+
+    group.show();
+    r.val(group.find('option:first-child()').attr('value'));
+  }).show().change();
+}
+
 /* main */
 $(function(){
     $('#menu').addClass('js closed');
@@ -192,5 +206,9 @@ $(function(){
     /* gallery */
     if ($('section.gallery-album').length > 0) {
         init_gallery();
+    }
+    
+    if ($('form.booking').length > 0) {
+      init_booking();
     }
 });
