@@ -3,7 +3,9 @@
 
 {% block body %}
 
-<form class="booking" method="POST" action="booking.campingpuntaindiani.it/website/reserve/" autocomplete="on" autofocus="on">
+<form id="reserve" class="booking" method="POST" action="booking.campingpuntaindiani.it/website/reserve/" autocomplete="on" autofocus="on">
+
+    <input type="hidden" name="lang" value="{{ lang }}">
 
     <section class="split">
         <header>{{ _('Personal information') }}</header>

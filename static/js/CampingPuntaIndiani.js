@@ -177,6 +177,22 @@ function init_booking(){
     group.show();
     r.val(group.find('option:first-child()').attr('value'));
   }).show().change();
+
+  // form on AJAX
+  var form = $('form#reserve');
+  form.on('submit', function(e){
+    console.log('submit');
+    e.preventDefault();
+    
+    $.ajax({
+      type: form.attr('method'),
+      url: form.attr('action'),
+      data: form.serialize(),
+      dataType: 'JSON',
+      success: function(data) {
+      }
+    });
+  });
 }
 
 /* main */
