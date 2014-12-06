@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2014-10-23 14:12+0200\n"
+"POT-Creation-Date: 2014-12-06 15:42+0100\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -18,40 +18,127 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: templates/base.tpl.html:60
+#: templates/base.tpl.html:63
 msgid "home"
 msgstr ""
 
-#: templates/base.tpl.html:61
+#: templates/base.tpl.html:64
 msgid "prices"
 msgstr ""
 
-#: templates/base.tpl.html:62
+#: templates/base.tpl.html:65
 msgid "map"
 msgstr ""
 
-#: templates/base.tpl.html:63
+#: templates/base.tpl.html:66
 msgid "route"
 msgstr ""
 
-#: templates/base.tpl.html:64
+#: templates/base.tpl.html:67
 msgid "around"
 msgstr ""
 
-#: templates/base.tpl.html:65
+#: templates/base.tpl.html:68
 msgid "gallery"
 msgstr ""
 
-#: templates/base.tpl.html:66
+#: templates/base.tpl.html:69
 msgid "services & offers"
 msgstr ""
 
-#: templates/base.tpl.html:70 templates/base.tpl.html:71
+#: templates/base.tpl.html:73 templates/base.tpl.html:74
 msgid "booking"
 msgstr ""
 
-#: templates/booking.tpl.html:6
-msgid "You can reserve you place starting from 2015-01-01"
+#: templates/base.tpl.html:92
+msgid "Merry Christmas and Happy new Year!"
+msgstr ""
+
+#: templates/booking.tpl.html:11
+msgid "Personal information"
+msgstr ""
+
+#: templates/booking.tpl.html:14
+msgid "surname"
+msgstr ""
+
+#: templates/booking.tpl.html:22
+msgid "name"
+msgstr ""
+
+#: templates/booking.tpl.html:30
+msgid "email"
+msgstr ""
+
+#: templates/booking.tpl.html:39
+msgid "birth date"
+msgstr ""
+
+#: templates/booking.tpl.html:47
+msgid "gender"
+msgstr ""
+
+#: templates/booking.tpl.html:56
+msgid "citizenship"
+msgstr ""
+
+#: templates/booking.tpl.html:67
+msgid "Other"
+msgstr ""
+
+#: templates/booking.tpl.html:72
+msgid "staying"
+msgstr ""
+
+#: templates/booking.tpl.html:75
+msgid "arrival"
+msgstr ""
+
+#: templates/booking.tpl.html:83
+msgid "departure"
+msgstr ""
+
+#: templates/booking.tpl.html:91 templates/prices.tpl.html:24
+#: templates/prices.tpl.html:30 templates/prices.tpl.html:36
+#: templates/prices.tpl.html:87 templates/prices.tpl.html:98
+#: templates/prices.tpl.html:109
+msgid "pitch"
+msgstr ""
+
+#: templates/booking.tpl.html:231
+msgid "adults"
+msgstr ""
+
+#: templates/booking.tpl.html:238
+msgid "children"
+msgstr ""
+
+#: templates/booking.tpl.html:245
+msgid "equipement"
+msgstr ""
+
+#: templates/booking.tpl.html:247
+msgid "middle size caravan"
+msgstr ""
+
+#: templates/booking.tpl.html:254
+msgid "I will take with me my pet &amp; thus I accept the following "
+msgstr ""
+
+#: templates/booking.tpl.html:255 templates/prices.tpl.html:77
+msgid "conditions"
+msgstr ""
+
+#: templates/booking.tpl.html:259
+msgid "I will take a ..."
+msgstr ""
+
+#: templates/booking.tpl.html:263
+msgid "note"
+msgstr ""
+
+#: templates/booking.tpl.html:268
+msgid "reserve"
 msgstr ""
 
 #: templates/home.tpl.html:5
@@ -88,7 +175,7 @@ msgid ""
 "    "
 msgstr ""
 
-#: templates/news.tpl.html:1
+#: templates/news.tpl.html:2
 msgid "off-season discount"
 msgstr ""
 
@@ -176,12 +263,6 @@ msgid ""
 "    "
 msgstr ""
 
-#: templates/prices.tpl.html:24 templates/prices.tpl.html:30
-#: templates/prices.tpl.html:36 templates/prices.tpl.html:87
-#: templates/prices.tpl.html:98 templates/prices.tpl.html:109
-msgid "pitch"
-msgstr ""
-
 #: templates/prices.tpl.html:42
 msgid "person"
 msgstr ""
@@ -210,10 +291,6 @@ msgstr ""
 msgid ""
 "dog entrance must be pre-authorized by the Management and must comply the"
 " following"
-msgstr ""
-
-#: templates/prices.tpl.html:77
-msgid "conditions"
 msgstr ""
 
 #: templates/prices.tpl.html:90
@@ -265,6 +342,81 @@ msgstr ""
 msgid "view on Google"
 msgstr ""
 
+#: templates/rules.tpl.html:5
+msgid "CAMPING REGULATIONS"
+msgstr ""
+
+#: templates/rules.tpl.html:7
+msgid ""
+"Management authorisation and legal registration is compulsory to access "
+"the camping site."
+msgstr ""
+
+#: templates/rules.tpl.html:8
+msgid ""
+"The prices exhibited at the reception for the stay at the camping site "
+"are valid from arrival to 11.00 a.m. of the following day."
+msgstr ""
+
+#: templates/rules.tpl.html:9
+msgid ""
+"To take possession of your tent or caravan pitch you must be authorised "
+"by the management."
+msgstr ""
+
+#: templates/rules.tpl.html:10
+msgid "You can leave vehicles only in the places indicated by the management."
+msgstr ""
+
+#: templates/rules.tpl.html:11
+msgid ""
+"Silence is essential from 11.00 p.m. to 8.00 a.m.; limit the noise during"
+" the day; television is tolerated only if at very low volume."
+msgstr ""
+
+#: templates/rules.tpl.html:12
+msgid ""
+"Guests must take care of their belongings; the management declines all "
+"responsibilities for any theft or damage except for the objects that have"
+" been left in custody with regular receipt."
+msgstr ""
+
+#: templates/rules.tpl.html:13
+msgid ""
+"The vehicles inside the tourist complex must not exceed the speed of 5 "
+"km/h."
+msgstr ""
+
+#: templates/rules.tpl.html:14
+msgid ""
+"You must respect the vegetation, the hygiene and the cleanliness of the "
+"site."
+msgstr ""
+
+#: templates/rules.tpl.html:15
+msgid "Dog entrance must be pre-authorized by the Management"
+msgstr ""
+
+#: templates/rules.tpl.html:16
+msgid ""
+"Under the authorisation of the management you can connect to the proper "
+"sockets necessary but only for lighting and fridge which must be earthen."
+" Tents are not entitled to power supply."
+msgstr ""
+
+#: templates/rules.tpl.html:17
+msgid ""
+"No visits are allowed (see article 1). In case of authorised visits, they"
+" are subject to the price list."
+msgstr ""
+
+#: templates/rules.tpl.html:18
+msgid ""
+"After consideration by the management, the non-observance of these rules "
+"or a behaviour that ruins the harmonious atmosphere of the camping site "
+"may result in expulsion as an unwelcome guest."
+msgstr ""
+
 #: templates/services_and_offers.tpl.html:6
 msgid "offers"
 msgstr ""
@@ -272,13 +424,13 @@ msgstr ""
 #: templates/services_and_offers.tpl.html:16
 #: templates/services_and_offers.tpl.html:30
 #: templates/services_and_offers.tpl.html:44
-msgid "Low Season:<br> 2 People + 1 Pitch B + power = &euro;18 a day"
+msgid "Low Season:<br> 2 People + 1 Pitch C + 1 dog = &euro;16 a day"
 msgstr ""
 
 #: templates/services_and_offers.tpl.html:17
 #: templates/services_and_offers.tpl.html:31
 #: templates/services_and_offers.tpl.html:45
-msgid "Low Season:<br> 2 People + 1 Pitch C + 1 dog = &euro;16 a day"
+msgid "Low Season:<br> 2 People + 1 Pitch B + power = &euro;18 a day"
 msgstr ""
 
 #: templates/services_and_offers.tpl.html:50
@@ -300,13 +452,14 @@ msgid ""
 "\n"
 "Camping Punta Indiani offers gratis for all guests:<br>\n"
 "<br>\n"
+"<!-- Deleted as of 2014-12-06: Waiting to hear about APT decision\n"
 "Guest Card Trentino gives you free admission to museums, castles and "
 "nature parks and to free travel throughout Trentino on the province’s "
 "public transport system for your entire holiday.\n"
 "            "
 msgstr ""
 
-#: templates/services_and_offers.tpl.html:90
+#: templates/services_and_offers.tpl.html:91
 msgid ""
 "\n"
 "Be prepared for your vacation!<br>\n"
@@ -314,34 +467,3 @@ msgid ""
 "Discover the experiences that your stay in Valsugana offers.<br>\n"
 "            "
 msgstr ""
-
-#~ msgid "Low Season: 2 People + 1 Pitch B o C = &euro;18 a day"
-#~ msgstr ""
-
-#~ msgid "offer cyclists"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "Camping Punta Indiani offers gratis for all guests:<br>\n"
-#~ "<br>\n"
-#~ "Guest Card Trentino gives you free "
-#~ "admission to museums, castles and nature"
-#~ " parks and to free travel throughout"
-#~ " Trentino on the province’s public "
-#~ "transport system for your entire "
-#~ "holiday.\n"
-#~ "                "
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "Be prepared for your vacation!<br>\n"
-#~ "<br>\n"
-#~ "Discover the experiences that your stay in Valsugana offers.<br>\n"
-#~ "                "
-#~ msgstr ""
-
-#~ msgid "Low Season:<br> 2 People + 1 Pitch B o C = &euro;18 a day"
-#~ msgstr ""
-

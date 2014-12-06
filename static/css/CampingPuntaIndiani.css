@@ -547,7 +547,7 @@ body:last-child .blueimp-gallery-playing > .play-pause {
   width: 1em;
   height: 1em;
   vertical-align: sub !important;
-  background-size: 100% 100% !important; 
+  background-size: 100% 100% !important;
   padding: 2px 2px 2px 2px;
 }
 
@@ -641,7 +641,7 @@ body {padding-top: 10px;}
 }
 
 #menu {
-  margin-left: -48px; 
+  margin-left: -48px;
   width: 1170px;
 
   font-size: 18px;
@@ -672,7 +672,7 @@ body {padding-top: 10px;}
 }
 
 #menu li {
-  float:left; 
+  float:left;
 
   text-align: center;
   min-width: 75px;
@@ -754,6 +754,17 @@ body {padding-top: 10px;}
   margin: 20px 0 30px 0;
 }
 
+#banner {
+  background:#097054;
+  color: #fff;
+  line-height: 3em;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 3px #333;
+}
+
 /* News */
 #news {
   display: block;
@@ -778,9 +789,9 @@ body {padding-top: 10px;}
 }
 
 #news *[data-title] {
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #555;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 /* Footer */
@@ -1265,7 +1276,7 @@ section.video iframe {
 form.booking {width: 100%;}
 form.booking section {
   display: block;
-  width: 100%; 
+  width: 100%;
   clear: both;
   margin-bottom: 40px;
 }

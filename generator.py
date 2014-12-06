@@ -25,13 +25,13 @@ PAGES = [
     'home',
     'prices',
     'map',
-    'route', 
-    'around', 
+    'route',
+    'around',
     'gallery',
     'services_and_offers',
 ]
 
-EXTRA = ['pet_disclaimer', 'booking', 'authors']
+EXTRA = ['pet_disclaimer', 'booking', 'authors', 'rules']
 
 def generate():
     env = Environment(loader=FileSystemLoader(TPL_PATH),
