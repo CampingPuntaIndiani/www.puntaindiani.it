@@ -201,11 +201,11 @@ msgstr ""
 
 #: templates/pet_disclaimer.tpl.html:1
 msgid "Pet disclaimer"
-msgstr ""
+msgstr "Regolamento animali"
 
 #: templates/pet_disclaimer.tpl.html:2
 msgid "Pets owners must declare their pet when making reservation or on arrival."
-msgstr ""
+msgstr "La presenza di animali deve essere segnalata alla Direzione al momento della prenotazione e check-in."
 
 #: templates/pet_disclaimer.tpl.html:5
 msgid "Dogs"
@@ -213,64 +213,64 @@ msgstr "cane"
 
 #: templates/pet_disclaimer.tpl.html:7
 msgid "They are allowed only in area C."
-msgstr ""
+msgstr "Sono ammessi SOLO in area C."
 
 #: templates/pet_disclaimer.tpl.html:8
 msgid ""
 "DOGS ARE NOT ALLOWED on the BEACH, in the SERVICES, on PLAYGROUNDS and in"
 " the PARKINGS."
-msgstr ""
+msgstr "NON SONO AMMESSI sulla SPIAGGIA, nei SERVIZI, nei PARCO GIOCHI, nei PARCHEGGI, e in tutti i luoghi comuni."
 
 #: templates/pet_disclaimer.tpl.html:9
 msgid "NOT ALLOWED DOBERMANN, PITT-BULL, ROTTWEILER and MOLOSSI."
-msgstr ""
+msgstr "NON sono accettati: dobermann, pitt bull, rottweiler e molossi."
 
 #: templates/pet_disclaimer.tpl.html:10
 msgid "MUST NOT DISTURB."
-msgstr ""
+msgstr "NON DEVONO ARRECARE DISTURBO."
 
 #: templates/pet_disclaimer.tpl.html:11
 msgid "MUST NOT BE LEFT UNATTENDED."
-msgstr ""
+msgstr "NON DEVONO ESSERE LASCIATI INCUSTODITI."
 
 #: templates/pet_disclaimer.tpl.html:12
 msgid "they must be kept on a SHORT LEASH at all times."
-msgstr ""
+msgstr "Devono essere tenuti al GUINZAGLIO CORTO."
 
 #: templates/pet_disclaimer.tpl.html:13
 msgid "medium and large size dogs must wear muzzle."
-msgstr ""
+msgstr "Cani di MEDIA E GROSSA TAGLIA devono essere sempre muniti di museruola."
 
 #: templates/pet_disclaimer.tpl.html:14
 msgid ""
 "the Management can decide not to welcome dogs declared dangerous or "
 "aggressive."
-msgstr ""
+msgstr "Razze di cani e animali ritenuti pericolosi o segnalati tali dalle autorita' competenti possono essere, a discrezione della Direzione, allontanati dal Campeggio."
 
 #: templates/pet_disclaimer.tpl.html:15
 msgid ""
 "the entrance in the campsite must be authorised by the management. "
 "Sanitary condition certificate is compulsory to welcome dog in the "
 "campsite"
-msgstr ""
+msgstr "Il loro ingresso è subordinato ad autorizzazione e presentazione di libretto sanitario/vaccinazoni."
 
 #: templates/pet_disclaimer.tpl.html:16
 msgid ""
 "must be taken outside the campsite for their physical needs. (take with "
 "you scoop and bags)"
-msgstr ""
+msgstr "Devono essere accompagnati per i loro bisogni fuori dal complesso turistico. (munirsi di paletta e sacchetti)"
 
 #: templates/pet_disclaimer.tpl.html:17
 msgid ""
 "owners must ensure respect of sanitary rules and are personally "
 "responsible for any damage caused by their dogs."
-msgstr ""
+msgstr "I proprietari devono assicurare il rispetto delle norme igienico-sanitarie e sono responsabili di eventuali danni arrecati dagli animali a persone e cose."
 
 #: templates/pet_disclaimer.tpl.html:18
 msgid ""
 "dogs owners who do not comply with these rules will be kindly asked to "
 "leave the camp-site."
-msgstr ""
+msgstr "I proprietari che trasgrediranno queste disposizioni verranno pregati di lasciare immediatamente il campeggio."
 
 #: templates/prices.tpl.html:5
 msgid ""
@@ -282,6 +282,7 @@ msgid ""
 "For the months july and august we suggest a reservation.<br>\n"
 "    "
 msgstr ""
+"\n"
 "Potete prenotare la vostra piazzola a partire dal primo gennaio;<br>\n"
 "Punta Indiani è un campeggio famigliare con molti ospiti affezionati, "
 "consigliamo di prenotare per tempo.<br>\n"

@@ -206,7 +206,7 @@ msgstr ""
 
 #: templates/pet_disclaimer.tpl.html:2
 msgid "Pets owners must declare their pet when making reservation or on arrival."
-msgstr ""
+msgstr "De aanwezigheid van dieren moet gemeld worden aan de receptie op het moment van reservering en of aankomst, tijdens de check-in."
 
 #: templates/pet_disclaimer.tpl.html:5
 msgid "Dogs"
@@ -214,64 +214,64 @@ msgstr "hond"
 
 #: templates/pet_disclaimer.tpl.html:7
 msgid "They are allowed only in area C."
-msgstr ""
+msgstr "zjin toegestaan ALLEEN in Area C."
 
 #: templates/pet_disclaimer.tpl.html:8
 msgid ""
 "DOGS ARE NOT ALLOWED on the BEACH, in the SERVICES, on PLAYGROUNDS and in"
 " the PARKINGS."
-msgstr ""
+msgstr "ZIJN NIET op op het STRAND TOEGESTAAN, in het TOILET GEBOUW, in the SPEELTUINEN en in de PARKINGS."
 
 #: templates/pet_disclaimer.tpl.html:9
 msgid "NOT ALLOWED DOBERMANN, PITT-BULL, ROTTWEILER and MOLOSSI."
-msgstr ""
+msgstr "NIET TOEGESTAAN DOBERMANN, PITT-BULL, ROTTWEILER and MOLOSSI."
 
 #: templates/pet_disclaimer.tpl.html:10
 msgid "MUST NOT DISTURB."
-msgstr ""
+msgstr "MOETEN NIET STOREN."
 
 #: templates/pet_disclaimer.tpl.html:11
 msgid "MUST NOT BE LEFT UNATTENDED."
-msgstr ""
+msgstr "MOETEN NIET ONBEHEERD WORDEN ACHTERGELATEN."
 
 #: templates/pet_disclaimer.tpl.html:12
 msgid "they must be kept on a SHORT LEASH at all times."
-msgstr ""
+msgstr "Honden moeten aan een korte LIJN LOPEN."
 
 #: templates/pet_disclaimer.tpl.html:13
 msgid "medium and large size dogs must wear muzzle."
-msgstr ""
+msgstr "Half grote en grote honden moeten een muilkorf dragen."
 
 #: templates/pet_disclaimer.tpl.html:14
 msgid ""
 "the Management can decide not to welcome dogs declared dangerous or "
 "aggressive."
-msgstr ""
+msgstr "Rassen van honden en of dieren die gevaarlijk zijn of lastig zijn kunnen door de direktie van de camping worden gestuurd."
 
 #: templates/pet_disclaimer.tpl.html:15
 msgid ""
 "the entrance in the campsite must be authorised by the management. "
 "Sanitary condition certificate is compulsory to welcome dog in the "
 "campsite"
-msgstr ""
+msgstr "De aankomst moet worden goedgekeurd door de direktie en ze moeten een gezondheidskaart met vaccinaties bij zich hebben."
 
 #: templates/pet_disclaimer.tpl.html:16
 msgid ""
 "must be taken outside the campsite for their physical needs. (take with "
 "you scoop and bags)"
-msgstr ""
+msgstr "moeten worden genomen buiten de camping voor hun lichamelijke behoeften. (mee te nemen scoop en tassen)</li>"
 
 #: templates/pet_disclaimer.tpl.html:17
 msgid ""
 "owners must ensure respect of sanitary rules and are personally "
 "responsible for any damage caused by their dogs."
-msgstr ""
+msgstr "eigenaars moeten de eerbiediging van de sanitaire regels en bent zelf verantwoordelijk voor eventuel schade veroorzaakt door hun honden."
 
 #: templates/pet_disclaimer.tpl.html:18
 msgid ""
 "dogs owners who do not comply with these rules will be kindly asked to "
 "leave the camp-site."
-msgstr ""
+msgstr "De eigenaar van de honden die zich niet aan de regels houden worden meteen van de camping gestuurd"
 
 #: templates/prices.tpl.html:5
 msgid ""

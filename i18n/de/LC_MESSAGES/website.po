@@ -208,7 +208,7 @@ msgstr ""
 
 #: templates/pet_disclaimer.tpl.html:2
 msgid "Pets owners must declare their pet when making reservation or on arrival."
-msgstr ""
+msgstr "Fuer das Mitbringen der Heimtiere auf den Campingplatz ist die Zustimmung der Direktion erforderlich"
 
 #: templates/pet_disclaimer.tpl.html:5
 msgid "Dogs"
@@ -216,64 +216,64 @@ msgstr "Hund"
 
 #: templates/pet_disclaimer.tpl.html:7
 msgid "They are allowed only in area C."
-msgstr ""
+msgstr "sind NUR in Area C erlaubt"
 
 #: templates/pet_disclaimer.tpl.html:8
 msgid ""
 "DOGS ARE NOT ALLOWED on the BEACH, in the SERVICES, on PLAYGROUNDS and in"
 " the PARKINGS."
-msgstr ""
+msgstr "HUNDE SIND am STRAND, bei Toilettenanlage, am Spielplatz, im Parkplatz und in allen oeffentlichen Bereichen NICHT ERLAUBT."
 
 #: templates/pet_disclaimer.tpl.html:9
 msgid "NOT ALLOWED DOBERMANN, PITT-BULL, ROTTWEILER and MOLOSSI."
-msgstr ""
+msgstr "NICHT ERLAUBT DOBERMANN, PITT-BULL, ROTTWEILER and MOLOSSI."
 
 #: templates/pet_disclaimer.tpl.html:10
 msgid "MUST NOT DISTURB."
-msgstr ""
+msgstr "MUSSEN NICHT STOEREN."
 
 #: templates/pet_disclaimer.tpl.html:11
 msgid "MUST NOT BE LEFT UNATTENDED."
-msgstr ""
+msgstr "DUERFTEN NICHT UNBEAFSICHTIGT GELASSEN WERDEN."
 
 #: templates/pet_disclaimer.tpl.html:12
 msgid "they must be kept on a SHORT LEASH at all times."
-msgstr ""
+msgstr "sind auf dem Campingplatz immer an der KURZEN lEINE zu führen."
 
 #: templates/pet_disclaimer.tpl.html:13
 msgid "medium and large size dogs must wear muzzle."
-msgstr ""
+msgstr "Mittelgrosse und grosse Hunde müssen immer einen Maulkorb tragen."
 
 #: templates/pet_disclaimer.tpl.html:14
 msgid ""
 "the Management can decide not to welcome dogs declared dangerous or "
 "aggressive."
-msgstr ""
+msgstr "Das Mitbringen von aggressiven oder gefährlichen Hunden ist nicht erlaubt; die Entscheidung trifft die Direktion."
 
 #: templates/pet_disclaimer.tpl.html:15
 msgid ""
 "the entrance in the campsite must be authorised by the management. "
 "Sanitary condition certificate is compulsory to welcome dog in the "
 "campsite"
-msgstr ""
+msgstr "Fuer das Mitbringen des Hundes auf den Campingplatz ist die Zustimmung der Direktion erforderlich, dafuer muss zwingend das Impfbuch (EU-Heimtierausweis) des Hundes vorgelegt werden"
 
 #: templates/pet_disclaimer.tpl.html:16
 msgid ""
 "must be taken outside the campsite for their physical needs. (take with "
 "you scoop and bags)"
-msgstr ""
+msgstr "Die fuer den Hund verantwortliche Person muss dafuer sorgen, dass der Hund nicht stoert und den Campingplatz nicht verunreinigt, das heisst, der Hund muss seine Notdurft ausserhalb des Campingplatzes verrichten (ruesten sich zu schoepfen un Tasche)"
 
 #: templates/pet_disclaimer.tpl.html:17
 msgid ""
 "owners must ensure respect of sanitary rules and are personally "
 "responsible for any damage caused by their dogs."
-msgstr ""
+msgstr "Der Hundebesitzer ist verantwortlich für alle Personen- oder Sachschäden, die der Hund verursac."
 
 #: templates/pet_disclaimer.tpl.html:18
 msgid ""
 "dogs owners who do not comply with these rules will be kindly asked to "
 "leave the camp-site."
-msgstr ""
+msgstr "Hundebesitzer, die diese Regelungen nicht befolgen, werden aufgefordert den Campingplatz unverzüglich zu verlasse."
 
 #: templates/prices.tpl.html:5
 msgid ""
