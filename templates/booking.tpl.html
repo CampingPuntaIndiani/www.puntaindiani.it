@@ -38,7 +38,7 @@
             <div>
                 <label for="birth_date">{{ _('birth date') }}</label>
             </div><div>
-                <input type="text" name="birth_date" id="birth_date" placeholder="dd/mm/yyyy" required>
+                <input type="text" name="birth_date" id="birth_date" placeholder="yyyy-mm-dd" data-autofix="date" required>
             </div>
         </div>
 
@@ -74,7 +74,7 @@
             <div>
                 <label for="arrival">{{ _('arrival') }}</label>
             </div><div>
-                <input type="text" id="arrival" name="arrival" palceholder="dd/mm/yyyy" required>
+                <input type="text" id="arrival" name="arrival" palceholder="yyyy-mm-dd" data-autofix="date" min="2015-05-01" max="2015-09-29" required>
             </div>
         </div>
 
@@ -82,7 +82,7 @@
             <div>
                 <label for="departure">{{ _('departure') }}</label>
             </div><div>
-                <input type="text" id="departure" name="departure" palceholder="dd/mm/yyyy" required>
+                <input type="text" id="departure" name="departure" palceholder="yyyy-mm-dd" data-autofix="date" min="2015-05-02" max="2015-09-30" required>
             </div>
         </div>
 
@@ -129,12 +129,14 @@
 
 
     <section name="offers" class="center">
+        <header>{{ _('Booking options') }}</header>
         <div>
             <header>ACSI &amp;<br> Camping Key Europe</header><label>C</label>
 
-            <span class="enchant">&euro; 16.00</span>
+            <span class="enchant">&euro; 16.00<sub>/{{ _('day')}}</sub></span>
             <footer>
-                2 {{ _('people') }} + 1 {{ _('pitch') }} C + 1 {{ _('dog') }}
+                2 {{ _('people') }} + 1 {{ _('pitch') }} C + 1 {{ _('dog') }}<br>
+                {{ _('low season only') }}
             </footer>
             <div class="opt">
                 <div><input type="radio" name="opt" value="A_CKE_C"></div>
@@ -142,9 +144,10 @@
         </div><div>
             <header>ACSI &amp;<br> Camping Key Europe</header><label>B</label>
 
-            <span class="enchant">&euro; 18.00</span>
+            <span class="enchant">&euro; 18.00<sub>/{{ _('day')}}</sub></span>
             <footer>
-                2 {{ _('people') }} + 1 {{ _('pitch') }} B
+                2 {{ _('people') }} + 1 {{ _('pitch') }} B<br>
+                {{ _('low season only') }}
             </footer>
             <div class="opt">
                 <div><input type="radio" name="opt" value="A_CKE_B"></div>
@@ -304,43 +307,4 @@
         <button type="submit">{{ _('reserve') }}</button>
     </section>
 </form>
-
-<script type="text/javascript">
-    $(function(){
-        var now = new Date();
-        /* Year selection is a shit
-        $('#birth_date').pickadate({
-            selectYears: true,
-            selectMonths: true,
-            min: new Date(1900,1,1),
-            max: new Date(now.getFullYear() - 18, now.getMonth(), now.getDate()),
-            first_day: new Date(now.getFullYear() - 40, now.getMonth(), now.getDate()),
-            format: 'dd/mm/yyyy',
-            formatSubmit: 'dd/mm/yyyy',
-        });
-        */
-
-        var opening = new Date(2015,4,1);
-        var min = new Date(Math.max(opening, new Date()));
-        var min_dep = new Date(min);
-        min_dep.setDate(min_dep.getDate()+1);
-
-        $('#arrival').pickadate({
-            min: min,
-            max: new Date(2015,8,29),
-            firstDay: min,
-            format: 'dd/mm/yyyy',
-            formatSubmit: 'dd/mm/yyyy',
-        });
-
-        $('#departure').pickadate({
-            min: min_dep,
-            max: new Date(2015,8,30),
-            firstDay: min_dep,
-            format: 'dd/mm/yyyy',
-            formatSubmit: 'dd/mm/yyyy',
-        });
-    });
-</script>
-
 {% endblock %}

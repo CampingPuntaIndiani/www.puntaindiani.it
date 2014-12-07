@@ -1869,7 +1869,8 @@ form.booking section[name=offers] label {
 }
 
 form.booking section[name=offers] span.enchant {
-  margin: 1em;
+  width: auto;
+  margin: .5em 0 .5em 0;p
   font-size: 22px;
   font-weight: bold;
   text-shadow: 1px 1px 0 #333;
