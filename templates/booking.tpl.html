@@ -13,7 +13,7 @@
             <div>
                 <label for="surname">{{ _('surname') }}</label>
             </div><div>
-                <input id="surname" type="text" name="surname" placeholder="Smith" required>
+                <input id="surname" type="text" name="surname" placeholder="Smith" required><i>&nbsp;</i>
             </div>
         </div>
 
@@ -21,7 +21,7 @@
             <div>
                 <label for="name">{{ _('name') }}</label>
             </div><div>
-                <input id="name" type="text" name="name" placeholder="John" required>
+                <input id="name" type="text" name="name" placeholder="John" required><i>&nbsp;</i>
             </div>
         </div>
 
@@ -29,7 +29,7 @@
             <div>
                 <label for="email">{{ _('email') }}</label>
             </div><div>
-                <input type="email" name="email" placeholder="john@smith.com" required>
+                <input type="email" name="email" placeholder="john@smith.com" required><i>&nbsp;</i>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
             <div>
                 <label for="birth_date">{{ _('birth date') }}</label>
             </div><div>
-                <input type="text" name="birth_date" id="birth_date" placeholder="yyyy-mm-dd" data-autofix="date" required>
+                <input type="date" name="birth_date" id="birth_date" placeholder="yyyy-mm-dd" data-autofix="date" required><i>&nbsp;</i>
             </div>
         </div>
 
@@ -55,7 +55,7 @@
             <div>
                 <label for="citizenship">{{ _('citizenship') }}</label>
             </div><div>
-                <select id="citizenship" name="citizenship">
+                <select id="citizenship" name="citizenship" required>
                     <option value="100000100"{% if lang == 'it' %} selected{% endif %}>Italy</option>
                     <option value="100000232"{% if lang == 'nl' %} selected{% endif %}>Netherlands</option>
                     <option value="100000216"{% if lang == 'de' %} selected{% endif %}>Germany</option>
@@ -74,7 +74,7 @@
             <div>
                 <label for="arrival">{{ _('arrival') }}</label>
             </div><div>
-                <input type="text" id="arrival" name="arrival" palceholder="yyyy-mm-dd" data-autofix="date" min="2015-05-01" max="2015-09-29" required>
+                <input type="date" id="arrival" name="arrival" placeholder="yyyy-mm-dd" data-autofix="date" min="2015-05-01" max="2015-09-29" required><i>&nbsp;</i>
             </div>
         </div>
 
@@ -82,7 +82,7 @@
             <div>
                 <label for="departure">{{ _('departure') }}</label>
             </div><div>
-                <input type="text" id="departure" name="departure" palceholder="yyyy-mm-dd" data-autofix="date" min="2015-05-02" max="2015-09-30" required>
+                <input type="date" id="departure" name="departure" placeholder="yyyy-mm-dd" data-autofix="date" min="2015-05-02" max="2015-09-30" required><i>&nbsp;</i>
             </div>
         </div>
 
@@ -91,28 +91,28 @@
             <div>
                 <label for="adults">{{ _('adults') }}</label>
             </div><div>
-                <input type="text" id="adults" name="adults" pattern="([1-9][0-9]*|0)" value="1">
+                <input type="text" id="adults" name="adults" pattern="([1-9][0-9]*|0)" value="1"><i>&nbsp;</i>
             </div>
         </div>
         <div>
             <div>
                 <label for="children">{{ _('children') }}</label>
             </div><div>
-                <input type="text" id="children" name="children" pattern="([1-9][0-9]*|0)" value="0">
+                <input type="text" id="children" name="children" pattern="([1-9][0-9]*|0)" value="0"><i>&nbsp;</i>
             </div>
         </div>
         <div>
             <div>
                 <label for="equipement">{{ _('equipement') }}</label>
             </div><div>
-                <input type="text" id="equipment" name="equipment" placeholder="{{ _('middle size caravan') }}">
+                <input type="text" id="equipment" name="equipment" placeholder="{{ _('middle size caravan') }}"><i>&nbsp;</i>
             </div>
         </div>
         <div>
             <div>
                 <label for="extra_tents">{{ _('extra tents') }}</label>
             </div><div>
-                <input type="text" id="extra_tents" name="extra_tents" value="0" pattern="([1-9][0-9]*|0)">
+                <input type="text" id="extra_tents" name="extra_tents" value="0" pattern="([1-9][0-9]*|0)"><i>&nbsp;</i>
             </div>
         </div>
     </section>
@@ -124,7 +124,7 @@
 
             <br>
 
-            <input type="text" name="pet" placeholder="{{ _('I will take a ...') }}">
+            <input type="text" name="pet" placeholder="{{ _('I will take a ...') }}"><i></i>
     </section>
 
 
@@ -136,7 +136,7 @@
             <span class="enchant">&euro; 16.00<sub>/{{ _('day')}}</sub></span>
             <footer>
                 2 {{ _('people') }} + 1 {{ _('pitch') }} C + 1 {{ _('dog') }}<br>
-                {{ _('low season only') }}
+                {{ _('low season days only') }}
             </footer>
             <div class="opt">
                 <div><input type="radio" name="opt" value="A_CKE_C"></div>
@@ -147,7 +147,7 @@
             <span class="enchant">&euro; 18.00<sub>/{{ _('day')}}</sub></span>
             <footer>
                 2 {{ _('people') }} + 1 {{ _('pitch') }} B<br>
-                {{ _('low season only') }}
+                {{ _('low season days only') }}
             </footer>
             <div class="opt">
                 <div><input type="radio" name="opt" value="A_CKE_B"></div>

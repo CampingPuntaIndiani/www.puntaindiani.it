@@ -1781,13 +1781,13 @@ form.booking header {
 
 form.booking section > div {
   display: block;
+  height: 40px; /* single row */
   width: 100%;
   text-align: center;
 }
 
 form.booking section > div  > * {
   width: 50%;
-  height: 34px;
   display:inline-block;
   padding: 2px 10px 2px 10px;
 }
@@ -1904,3 +1904,16 @@ form.booking section[name=offers] > div > div.opt > div {
   margin-top: 1px;
   border-radius: 100%;
 }
+
+input ~ i::before {
+  display: inline-block;
+  font-size: 18px;
+  padding-left: 1px;
+  width: 14px;
+  text-align: center;
+  content: " ";
+}
+
+input:invalid ~ i::before, input:focus:invalid ~ i::before {content: "\274c";}
+
+input:valid ~ i::before {content: "\2713";}

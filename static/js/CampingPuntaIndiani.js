@@ -14,7 +14,7 @@
       date_str = input.val(),
       date_a = date_str.split(/[^0-9]/),
         ndate_a = [],
-        error = false,
+        error = '',
           curr_year = new Date().getFullYear();
       if (date_a.length === 2) {
         // we suppose day/month
@@ -30,7 +30,7 @@
         }
       } else {
         // invalid data
-        error = true;
+        error = '.Invalid date format yyyy-mm-dd or dd/mm/yyyy';
       }
       // expand year (if required)
       if (!error && ndate_a[0].length <= 2) {
@@ -50,7 +50,10 @@
       }).join('-');
       // validating new Data
       var ndate = new Date(date_str);
-      error = isNaN(ndate.getDate());
+      if (isNaN(ndate.getDate())) {
+        error = '.Invalid date';
+      }
+
       if (!error) {
         // set the celaned value
         input.val(date_str);
@@ -58,22 +61,26 @@
         var min = new Date(input.attr('min')),
         max = new Date(input.attr('max'));
         if (!isNaN(min.getDate())) {
-          error = min > ndate;
+          if (min > ndate)
+            error = '.Min is ' + min.toJSON().split('T')[0];
         }
-        if (!isNaN(max.getDate())) {
-          error = error || max < ndate;
+        if (!isNaN(max.getDate()) && !error) {
+          if (max < ndate)
+            error = '.Max is ' + max.toJSON().split('T')[0];
         }
       } else {
         // invalid data struct -- clean up
         input.val('');
       }
-      if (error) {
-        // not valid
-        input.parents('.control-group').addClass('error');
-      } else {
-        // valid
-        input.parents('.control-group').removeClass('error');
+
+      if (!error && (this.validationMessage + ',')[0] == '.') {
+        this.setCustomValidity('');
+        this.checkValidity();
+        $(this).change();
       }
+
+      if (error)
+        this.setCustomValidity(error);
     });
   });
 })(jQuery);
@@ -241,7 +248,8 @@ function init_gallery() {
 
 function init_booking(){
 
-  var opening = new Date(2015,4,1);
+  var opening = new Date('2015-05-01');
+  console.log(opening);
 
   // set up pitch selection
   $('select[name=resource-kind]').on('change', function(){
@@ -256,6 +264,10 @@ function init_booking(){
   }).show().change();
 
   // TODO: add constraint offers-period | zone-pet
+  //
+  // if take dog:
+  // select only C
+  // tell me wtf it is
 
   // Setup date picker
   (function(){
@@ -268,9 +280,37 @@ function init_booking(){
 
     $('#birth_date').attr('max', max_age.toJSON().split('T')[0]);
     $('#arrival').attr('min', start.toJSON().split('T')[0]);
-    $('#departure').attr('max', dep_start.toJSON().split('T')[0]);
+    $('#departure').attr('min', dep_start.toJSON().split('T')[0]);
   })();
 
+
+  $('#arrival, #departure').on('change', function(){
+    var arr = document.getElementById('arrival'),
+      dep = document.getElementById('departure'),
+      emsg = 'You should arrive before leaving';
+
+    var a = new Date(arr.value),
+      d = new Date(dep.value);
+
+    if (isNaN(a) || isNaN(d)) return; ;
+
+    if (d <= a) {
+      arr.setCustomValidity(emsg);
+      dep.setCustomValidity(emsg);
+    } else {
+      if (arr.validationMessage == emsg) {
+        arr.setCustomValidity('');
+        arr.checkValidity();
+        $(arr).change();
+      }
+
+      if (dep.validationMessage == emsg) {
+        dep.setCustomValidity('');
+        dep.checkValidity();
+        $(dep).change();
+      }
+    }
+  });
 
 
   // form on AJAX
