@@ -262,12 +262,6 @@ function init_booking(){
     r.val(group.find('option:first-child()').attr('value'));
   }).show().change();
 
-  // TODO: add constraint offers-period | zone-pet
-  //
-  // if take dog:
-  // select only C
-  // tell me wtf it is
-
   // Pet bindings
   (function(){
     var wp = document.getElementById('with_pet'),
