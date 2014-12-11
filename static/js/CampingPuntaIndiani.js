@@ -249,14 +249,13 @@ function init_gallery() {
 function init_booking(){
 
   var opening = new Date('2015-05-01');
-  console.log(opening);
 
   // set up pitch selection
-  $('select[name=resource-kind]').on('change', function(){
-    var r = $('select[name=resource]');
+  $('select[name=area]').on('change', function(){
+    var r = $('select[name=pitch]');
     r.find('optgroup').hide();
 
-    var area = $('select[name=resource-kind]').val(); // use this?
+    var area = $('select[name=area]').val(); // use this?
     var group = r.find('optgroup[data-kind='+area+']');
 
     group.show();
@@ -268,6 +267,46 @@ function init_booking(){
   // if take dog:
   // select only C
   // tell me wtf it is
+
+  // Pet bindings
+  (function(){
+    var wp = document.getElementById('with_pet'),
+      area = document.getElementById('area'),
+      pet = document.getElementById('pet'),
+      opt_none = document.getElementById('OPT_NONE'),
+      opt_a = document.getElementById('OPT_A'),
+      opt_b = document.getElementById('OPT_B');
+
+    wp.onchange = function(_){
+      if (this.checked) {
+        pet.required = true;
+        area.value = 'C';
+        area.disabled = true;
+
+        opt_a.disabled = true;
+        opt_b.disabled = true;
+        opt_none.checked = true;
+      } else {
+        pet.required = false;
+        area.disabled = false;
+        opt_a.disabled = false;
+        opt_b.disabled = false;
+      }
+    };
+    wp.onchange();
+  })();
+
+  // Season bindings
+  (function(){
+    var area = document.getElementById('area'),
+      pitch = document.getElementById('pitch');
+
+    $('input[name=opt]').change(function(_){
+      var disable = this.value != 'NONE';
+      area.disabled = disable;
+      pitch.disabled = disable;
+    }).change();
+  })();
 
   // Setup date picker
   (function(){
@@ -312,8 +351,6 @@ function init_booking(){
     }
   });
 
-
-  // form on AJAX
   var form = $('form#reserve');
   form.on('submit', function(e){
     console.log('submit');
@@ -325,6 +362,12 @@ function init_booking(){
       data: form.serialize(),
       dataType: 'JSON',
       success: function(data) {
+        /* TODO: process status || errors */
+        console.log("success");
+      },
+      error: function(jqXHR, textStatus, emsg) {
+        /* TODO: process status || errors */
+        console.error("error");
       }
     });
   });

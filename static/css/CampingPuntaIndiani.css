@@ -1896,24 +1896,8 @@ form.booking section[name=offers] > div > div.opt  input {
   margin: 0;
 }
 
-form.booking section[name=offers] > div > div.opt > div {
-  display: inline-block;
-  border: 1px solid #e8e8e8;
-  background: #e8e8e8;
-  padding-right: 3px;
-  margin-top: 1px;
-  border-radius: 100%;
-}
-
-input ~ i::before {
-  display: inline-block;
+form.booking textarea {
+  white-space: normal;
   font-size: 18px;
-  padding-left: 1px;
-  width: 14px;
-  text-align: center;
-  content: " ";
 }
 
-input:invalid ~ i::before, input:focus:invalid ~ i::before {content: "\274c";}
-
-input:valid ~ i::before {content: "\2713";}

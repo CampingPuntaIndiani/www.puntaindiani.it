@@ -1,5 +1,5 @@
 {% extends 'base.tpl.html' %}
-{% block head %}{% endblock %}
+{% block head %}<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>{% endblock %}
 
 {% block body %}
 
@@ -13,7 +13,7 @@
             <div>
                 <label for="surname">{{ _('surname') }}</label>
             </div><div>
-                <input id="surname" type="text" name="surname" placeholder="Smith" required><i>&nbsp;</i>
+                <input id="surname" type="text" name="surname" placeholder="Smith" required>
             </div>
         </div>
 
@@ -21,7 +21,7 @@
             <div>
                 <label for="name">{{ _('name') }}</label>
             </div><div>
-                <input id="name" type="text" name="name" placeholder="John" required><i>&nbsp;</i>
+                <input id="name" type="text" name="name" placeholder="John" required>
             </div>
         </div>
 
@@ -29,7 +29,7 @@
             <div>
                 <label for="email">{{ _('email') }}</label>
             </div><div>
-                <input type="email" name="email" placeholder="john@smith.com" required><i>&nbsp;</i>
+                <input type="email" name="email" placeholder="john@smith.com" required>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
             <div>
                 <label for="birth_date">{{ _('birth date') }}</label>
             </div><div>
-                <input type="date" name="birth_date" id="birth_date" placeholder="yyyy-mm-dd" data-autofix="date" required><i>&nbsp;</i>
+                <input type="date" name="birth_date" id="birth_date" placeholder="yyyy-mm-dd" data-autofix="date" required>
             </div>
         </div>
 
@@ -74,7 +74,7 @@
             <div>
                 <label for="arrival">{{ _('arrival') }}</label>
             </div><div>
-                <input type="date" id="arrival" name="arrival" placeholder="yyyy-mm-dd" data-autofix="date" min="2015-05-01" max="2015-09-29" required><i>&nbsp;</i>
+                <input type="date" id="arrival" name="arrival" placeholder="yyyy-mm-dd" data-autofix="date" min="2015-05-01" max="2015-09-29" required>
             </div>
         </div>
 
@@ -82,7 +82,7 @@
             <div>
                 <label for="departure">{{ _('departure') }}</label>
             </div><div>
-                <input type="date" id="departure" name="departure" placeholder="yyyy-mm-dd" data-autofix="date" min="2015-05-02" max="2015-09-30" required><i>&nbsp;</i>
+                <input type="date" id="departure" name="departure" placeholder="yyyy-mm-dd" data-autofix="date" min="2015-05-02" max="2015-09-30" required>
             </div>
         </div>
 
@@ -91,40 +91,63 @@
             <div>
                 <label for="adults">{{ _('adults') }}</label>
             </div><div>
-                <input type="text" id="adults" name="adults" pattern="([1-9][0-9]*|0)" value="1"><i>&nbsp;</i>
+                <select type="text" id="adults" name="adults">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">&gt;5</option>
+                </select>
             </div>
         </div>
         <div>
             <div>
                 <label for="children">{{ _('children') }}</label>
             </div><div>
-                <input type="text" id="children" name="children" pattern="([1-9][0-9]*|0)" value="0"><i>&nbsp;</i>
+                <select id="children" name="children">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">&gt;5</option>
+                </select>
             </div>
         </div>
         <div>
             <div>
                 <label for="equipement">{{ _('equipement') }}</label>
             </div><div>
-                <input type="text" id="equipment" name="equipment" placeholder="{{ _('middle size caravan') }}"><i>&nbsp;</i>
+                <input type="text" id="equipment" name="equipment" placeholder="{{ _('middle size caravan') }}">
             </div>
         </div>
         <div>
             <div>
                 <label for="extra_tents">{{ _('extra tents') }}</label>
             </div><div>
-                <input type="text" id="extra_tents" name="extra_tents" value="0" pattern="([1-9][0-9]*|0)"><i>&nbsp;</i>
+                <select type="" id="extra_tents" name="extra_tents">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
         </div>
     </section>
 
     <section class="center">
-        <input type="checkbox" name="with_pet">
+        <input type="checkbox" name="with_pet" id="with_pet">
             {{ _('I will take with me my pet &amp; thus I accept the following ') }}
             <a href="pet_disclaimer.html" target="_blank" data-mode="modal">{{ _('conditions') }}</a>.
 
             <br>
 
-            <input type="text" name="pet" placeholder="{{ _('I will take a ...') }}"><i></i>
+            <input type="text" id="pet" name="pet" placeholder="{{ _('I will take a ...') }}"><i></i>
     </section>
 
 
@@ -139,7 +162,7 @@
                 {{ _('low season days only') }}
             </footer>
             <div class="opt">
-                <div><input type="radio" name="opt" value="A_CKE_C"></div>
+                <div><input type="radio" name="opt" value="A_CKE_C" id="OPT_A"></div>
             </div>
         </div><div>
             <header>ACSI &amp;<br> Camping Key Europe</header><label>B</label>
@@ -150,20 +173,20 @@
                 {{ _('low season days only') }}
             </footer>
             <div class="opt">
-                <div><input type="radio" name="opt" value="A_CKE_B"></div>
+                <div><input type="radio" name="opt" value="A_CKE_B" id="OPT_B"></div>
             </div>
         </div><div>
             <header>{{ _('Without promotions') }}</header><label>#</label>
 
             <footer>{{ _('Chose your favourite place') }}:</footer>
 
-            <select name="resource-kind" style="display:none;">
+            <select name="area" style="display:none;" id="area">
                 <option value="A">Area A</option>
                 <option value="B" selected>Area B</option>
                 <option value="C">Area C</option>
             </select>
 
-            <select name="resource">
+            <select name="pitch" id="pitch">
                 <optgroup data-kind="A" label="Area A">
                     <option value="1">{{ _('Any Pitch') }}</option>
                     <option value="4">2</option>
@@ -292,7 +315,7 @@
             </select>
 
             <div class="opt">
-                <div><input type="radio" name="opt" value="" checked></div>
+                <div><input type="radio" name="opt" value="NONE" id="OPT_NONE" checked></div>
             </div>
         </div>
 
@@ -300,7 +323,7 @@
 
     <section class="center">
         <header>{{ _('note') }}</header>
-        <textarea name="note">
+        <textarea name="note" value="" placeholder="{{ _('We would like to stay next to...\r\n We have got more than 5 children...\r\n We would like a shadowed place...\r\n') }}">
         </textarea>
     </section>
     <section class="center">
