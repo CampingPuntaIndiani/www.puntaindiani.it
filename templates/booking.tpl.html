@@ -29,7 +29,7 @@
             <div>
                 <label for="email">{{ _('email') }}</label>
             </div><div>
-                <input type="email" name="email" placeholder="john@smith.com" required>
+                <input id="email" type="text" name="email" placeholder="john@smith.com" required>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
             <div>
                 <label for="birth_date">{{ _('birth date') }}</label>
             </div><div>
-                <input type="date" name="birth_date" id="birth_date" placeholder="yyyy-mm-dd" data-autofix="date" required>
+                <input id="birth_date" type="text" name="birth_date" placeholder="yyyy-mm-dd" required>
             </div>
         </div>
 
@@ -74,7 +74,7 @@
             <div>
                 <label for="arrival">{{ _('arrival') }}</label>
             </div><div>
-                <input type="date" id="arrival" name="arrival" placeholder="yyyy-mm-dd" data-autofix="date" min="2015-05-01" max="2015-09-29" required>
+                <input type="text" id="arrival" name="arrival" placeholder="yyyy-mm-dd" min="2015-05-01" max="2015-09-29" required>
             </div>
         </div>
 
@@ -82,7 +82,7 @@
             <div>
                 <label for="departure">{{ _('departure') }}</label>
             </div><div>
-                <input type="date" id="departure" name="departure" placeholder="yyyy-mm-dd" data-autofix="date" min="2015-05-02" max="2015-09-30" required>
+                <input type="text" id="departure" name="departure" placeholder="yyyy-mm-dd" min="2015-05-02" max="2015-09-30" required>
             </div>
         </div>
 

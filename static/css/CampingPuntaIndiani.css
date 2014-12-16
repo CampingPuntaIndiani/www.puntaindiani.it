@@ -1901,3 +1901,7 @@ form.booking textarea {
   font-size: 18px;
 }
 
+form.booking .error {
+  border-color: red !important;
+}
+
