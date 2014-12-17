@@ -277,7 +277,7 @@ function init_gallery() {
 function rt(field, f) {
   field.onchange=f;
   // Thanks user friendly browser.
-  if (field.value.length > 0) f();
+  if (field.value.length > 0 || field.checked) field.onchange();
   return field;
 }
 
@@ -356,7 +356,7 @@ function init_booking(){
 
     if (this.checked) {
       pet.required = true;
-      area.value = 'C';
+      area.value = 'C'; area.onchange(); // Too fast
       area.disabled = true;
 
       opt_a.disabled = opt_b.disabled = opt_none.checked = true;
