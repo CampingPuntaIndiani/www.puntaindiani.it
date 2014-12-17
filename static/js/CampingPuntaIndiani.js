@@ -327,53 +327,45 @@ function init_booking(){
   rt(id('surname'), val(id('surname'), [rx(string)]));
   rt(id('name'), val(id('name'), [rx(string)]));
   rt(id('email'), val(id('email'), [rx(email)]));
-  rt(id('birth_date'), val(id('birth_date'), [date])); // TODO: refactor date lib in func
+  rt(id('birth_date'), val(id('birth_date'), [date]));
   rt(id('arrival'), val(id('arrival'), [date]));
   rt(id('departure'), val(id('departure'), [date]));
   rt(id('equipment'), val(id('equipment'), [rx(/^[\w\d ]+$/)]));
 
-  /*
+  // Area - Pitch binding
+  rt(id('area'), function(){
+    var area = id('area').value,
+      pitch = $('#pitch');
 
-  // set up pitch selection
-  $('select[name=area]').on('change', function(){
-    var r = $('select[name=pitch]');
-    r.find('optgroup').hide();
-
-    var area = $('select[name=area]').val(); // use this?
-    var group = r.find('optgroup[data-kind='+area+']');
-
-    group.show();
-    r.val(group.find('option:first-child()').attr('value'));
-  }).show().change();
+    pitch.children('optgroup').hide();
+    pitch.val(pitch
+      .children('optgroup[data-kind='+area+']')
+      .show()
+      .children('option:first-child()').
+      val()
+    );
+  });
+  id('area').classList.remove('hide');
 
   // Pet bindings
-  (function(){
-    var wp = document.getElementById('with_pet'),
-      area = document.getElementById('area'),
-      pet = document.getElementById('pet'),
-      opt_none = document.getElementById('OPT_NONE'),
-      opt_a = document.getElementById('OPT_A'),
-      opt_b = document.getElementById('OPT_B');
+  rt(id('with_pet'), function(){
+    var wp = id('with_pet'),
+    area = id('area'),
+    pet = id('pet'),
+      opt_none = id('OPT_NONE'), opt_a = id('OPT_A'), opt_b = id('OPT_B');
 
-    wp.onchange = function(_){
-      if (this.checked) {
-        pet.required = true;
-        area.value = 'C';
-        area.disabled = true;
+    if (this.checked) {
+      pet.required = true;
+      area.value = 'C';
+      area.disabled = true;
 
-        opt_a.disabled = true;
-        opt_b.disabled = true;
-        opt_none.checked = true;
-      } else {
-        pet.required = false;
-        area.disabled = false;
-        opt_a.disabled = false;
-        opt_b.disabled = false;
-      }
-    };
-    wp.onchange();
-  })();
+      opt_a.disabled = opt_b.disabled = opt_none.checked = true;
+    } else {
+      pet.required = area.disabled = opt_a.disabled = opt_b.disabled = false;
+    }
+  });
 
+  /*
   // Season bindings
   (function(){
     var area = document.getElementById('area'),
