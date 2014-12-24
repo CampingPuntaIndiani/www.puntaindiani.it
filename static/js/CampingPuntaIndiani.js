@@ -408,37 +408,6 @@ function init_booking(){
     }).change();
   })();
 
-
-  /*
-  $('#arrival, #departure').on('change', function(){
-    var arr = document.getElementById('arrival'),
-      dep = document.getElementById('departure'),
-      emsg = 'You should arrive before leaving';
-
-    var a = new Date(arr.value),
-      d = new Date(dep.value);
-
-    if (isNaN(a) || isNaN(d)) return; ;
-
-    if (d <= a) {
-      arr.setCustomValidity(emsg);
-      dep.setCustomValidity(emsg);
-    } else {
-      if (arr.validationMessage == emsg) {
-        arr.setCustomValidity('');
-        arr.checkValidity();
-        $(arr).change();
-      }
-
-      if (dep.validationMessage == emsg) {
-        dep.setCustomValidity('');
-        dep.checkValidity();
-        $(dep).change();
-      }
-    }
-  });
-*/
-
   var form = $('form#reserve');
   form.on('submit', function(e){
     console.log('submit');
@@ -450,9 +419,8 @@ function init_booking(){
       data: form.serialize(),
       dataType: 'JSON',
       success: function(data) {
-        /* TODO: process status || errors */
-        /* Using a modal? */
         console.log("success");
+        document.location.href = "booking_success.html";
       },
       error: function(jqXHR, textStatus, emsg) {
         if (jqXHR.status == 422) { // Form contains errors
