@@ -362,12 +362,17 @@ function init_booking(){
   /* Disable HTML5 form validation ... Until it works every were */
   var f = document.getElementById('reserve');
   f.novalidate = true;
+  // disable nojs tag
+  $('input[name=nojs]').remove();
 
-  // TODO: consider allow any utf8 charter and not only ASCII || at least ger & ned
-  string = /^[a-zA-Z ]+$/;
+  // consider allow any utf8 charter and not only ASCII || at least ger & ned
+  // NOTE: not sure if this solution works...
+  string = /^[a-zA-Z äÄöÖüÜßåæéøéëïó]+$/;
 
   // ref: http://www.regular-expressions.info/email.html
   email = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
+
 
   /* Real-time validation & processing */
   rt(id('surname'), val(id('surname'), [rx(string)]));
@@ -407,6 +412,7 @@ function init_booking(){
       pitch.disabled = disable;
     }).change();
   })();
+
 
   var form = $('form#reserve');
   form.on('submit', function(e){
