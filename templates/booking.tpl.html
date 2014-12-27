@@ -4,7 +4,8 @@
 {% block body %}
 
 <!-- Target _blank: on nojs and validation error please do not clear the data. -->
-<form id="reserve" class="booking" method="POST" action="booking.campingpuntaindiani.it/website/reserve/" autocomplete="on" autofocus="on" target="_blank">
+<!-- <form id="reserve" class="booking" method="POST" action="booking.campingpuntaindiani.it/website/reserve/" autocomplete="on" autofocus="on" target="_blank"> -->
+<form id="reserve" class="booking" method="POST" action="//127.0.0.1:8080/website/reserve/" autocomplete="on" autofocus="on" target="_blank">
     <!-- This will be striped from js (if enabled) ;) -->
     <input type="hidden" name="nojs" value="1">
 
@@ -49,8 +50,8 @@
             <div>
                 <label for="male">{{ _('gender') }}</label>
             </div><div>
-                <input type="radio" name="male" value="1" checked> M
-                <input type="radio" name="male" value="0"> F
+                <input type="radio" name="gender" value="M" checked> M
+                <input type="radio" name="gender" value="F"> F
             </div>
         </div>
 
@@ -77,7 +78,7 @@
             <div>
                 <label for="arrival">{{ _('arrival') }}</label>
             </div><div>
-                <input type="text" id="arrival" name="arrival" placeholder="yyyy-mm-dd" min="2015-05-01" max="2015-09-29" required>
+                <input type="text" id="arrival" name="start" placeholder="yyyy-mm-dd" min="2015-05-01" max="2015-09-29" required>
             </div>
         </div>
 
@@ -85,7 +86,7 @@
             <div>
                 <label for="departure">{{ _('departure') }}</label>
             </div><div>
-                <input type="text" id="departure" name="departure" placeholder="yyyy-mm-dd" min="2015-05-02" max="2015-09-30" required>
+                <input type="text" id="departure" name="end" placeholder="yyyy-mm-dd" min="2015-05-02" max="2015-09-30" required>
             </div>
         </div>
 
@@ -95,8 +96,7 @@
                 <label for="adults">{{ _('adults') }}</label>
             </div><div>
                 <select type="text" id="adults" name="adults">
-                    <option value="0" selected>0</option>
-                    <option value="1">1</option>
+                    <option value="1" selected>1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -189,7 +189,7 @@
                 <option value="C">Area C</option>
             </select>
 
-            <select name="pitch" id="pitch">
+            <select name="resource" id="pitch">
                 <optgroup data-kind="A" label="Area A">
                     <option value="1">{{ _('Any Pitch') }}</option>
                     <option value="4">2</option>

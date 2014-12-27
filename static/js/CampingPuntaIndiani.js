@@ -401,13 +401,16 @@ function init_booking(){
   // Pet bindings
   rt(id('with_pet'), opt);
 
-  // Season bindings
+  // Pitch bindings
   (function(){
     var area = document.getElementById('area'),
       pitch = document.getElementById('pitch');
 
     $('input[name=opt]').change(function(_){
       var disable = this.value != 'NONE';
+      if (this.value == 'A_CKE_C') area.value = 'C';
+      if (this.value == 'A_CKE_B') area.value = 'B';
+      area.onchange();
       area.disabled = disable;
       pitch.disabled = disable;
     }).change();
@@ -420,6 +423,7 @@ function init_booking(){
     e.preventDefault();
 
     $.ajax({
+      crossDomain: true,
       type: form.attr('method'),
       url: form.attr('action'),
       data: form.serialize(),
@@ -431,13 +435,14 @@ function init_booking(){
       error: function(jqXHR, textStatus, emsg) {
         if (jqXHR.status == 422) { // Form contains errors
           console.error("form error");
+          console.error(jqXHR.responseText);
           var res = JSON.parse(jqXHR.responseText);
           res.map(function(e){
             document.getElementById(e['name']).classList.add('error');
           });
         } else {
           console.error(textStatus + '\n' + emsg);
-          allert(textStatus + '\n' + emsg);
+          alert(textStatus + '\n' + emsg);
         }
       }
     });
