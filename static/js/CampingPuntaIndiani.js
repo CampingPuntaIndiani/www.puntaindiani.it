@@ -422,11 +422,22 @@ function init_booking(){
     console.log('submit');
     e.preventDefault();
 
-    $.ajax({
+    var pitch = document.getElementById('pitch'),
+      dis = pitch.disabled; // Hack
+
+    pitch.disabled = false;
+    var data = form.serialize();
+    pitch.disabled = dis; // Hack
+
+    if (window.__ajax !== undefined) {
+      window.__ajax.abort();
+      window.__ajax = undefined;
+    }
+    window.__ajax = $.ajax({
       crossDomain: true,
       type: form.attr('method'),
       url: form.attr('action'),
-      data: form.serialize(),
+      data: data,
       dataType: 'JSON',
       success: function(data) {
         console.log("success");
