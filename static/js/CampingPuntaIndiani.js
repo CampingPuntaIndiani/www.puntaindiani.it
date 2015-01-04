@@ -429,6 +429,7 @@ function init_booking(){
     var data = form.serialize();
     pitch.disabled = dis; // Hack
 
+    id('fade').classList.add('active');
     if (window.__ajax !== undefined) {
       window.__ajax.abort();
       window.__ajax = undefined;
@@ -444,6 +445,8 @@ function init_booking(){
         document.location.href = "booking_success.html";
       },
       error: function(jqXHR, textStatus, emsg) {
+        id('fade').classList.remove('active');
+
         if (jqXHR.status == 422) { // Form contains errors
           console.error("form error");
           console.error(jqXHR.responseText);
