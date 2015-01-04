@@ -135,9 +135,8 @@ msgid "I will take a ..."
 msgstr ""
 
 #: templates/booking.tpl.html:263
-#, fuzzy
 msgid "note"
-msgstr "weg"
+msgstr "note"
 
 #: templates/booking.tpl.html:268
 msgid "reserve"
@@ -159,8 +158,8 @@ msgid ""
 "If you are looking for a real holiday in nature without abandoning all "
 "comforts, you are most welcome at Camping Punta Indiani.<br>\n"
 "Here the atmosphere is friendly and every guest is special.\n"
-"    "
 msgstr ""
+"\n"
 "W&#252;rde es Ihnen gefallen, am Seehufer zu fr&#252;hst&#252;cken, "
 "w&#228;hrend Ihre Kinder am Strand unbehindert spielen?\n"
 "Stellen Sie sich vor, auf einer Wiese zu entspannen, im Schatten einer "
