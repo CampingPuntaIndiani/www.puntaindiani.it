@@ -14,7 +14,7 @@ pip-delete-this-directory.txt
 # Translations
 *.mo
 
-# Editor 
+# Editor
 .idea/
 *.sw*
 
@@ -22,3 +22,4 @@ pip-delete-this-directory.txt
 dist/
 img/gallery/
 
+node_modules
