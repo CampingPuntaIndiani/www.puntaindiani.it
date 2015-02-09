@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2014-12-06 15:42+0100\n"
+"POT-Creation-Date: 2015-02-09 15:32+0100\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -50,95 +50,162 @@ msgstr ""
 msgid "booking"
 msgstr ""
 
-#: templates/base.tpl.html:92
+#: templates/base.tpl.html:93
 msgid "Merry Christmas and Happy new Year!"
 msgstr ""
 
-#: templates/booking.tpl.html:11
+#: templates/booking.tpl.html:15
 msgid "Personal information"
 msgstr ""
 
-#: templates/booking.tpl.html:14
+#: templates/booking.tpl.html:18
 msgid "surname"
 msgstr ""
 
-#: templates/booking.tpl.html:22
+#: templates/booking.tpl.html:26
 msgid "name"
 msgstr ""
 
-#: templates/booking.tpl.html:30
+#: templates/booking.tpl.html:34
 msgid "email"
 msgstr ""
 
-#: templates/booking.tpl.html:39
+#: templates/booking.tpl.html:43
 msgid "birth date"
 msgstr ""
 
-#: templates/booking.tpl.html:47
+#: templates/booking.tpl.html:51
 msgid "gender"
 msgstr ""
 
-#: templates/booking.tpl.html:56
+#: templates/booking.tpl.html:60
 msgid "citizenship"
 msgstr ""
 
-#: templates/booking.tpl.html:67
+#: templates/booking.tpl.html:71
 msgid "Other"
 msgstr ""
 
-#: templates/booking.tpl.html:72
+#: templates/booking.tpl.html:76
 msgid "staying"
 msgstr ""
 
-#: templates/booking.tpl.html:75
+#: templates/booking.tpl.html:79
 msgid "arrival"
 msgstr ""
 
-#: templates/booking.tpl.html:83
+#: templates/booking.tpl.html:87
 msgid "departure"
 msgstr ""
 
-#: templates/booking.tpl.html:91 templates/prices.tpl.html:24
-#: templates/prices.tpl.html:30 templates/prices.tpl.html:36
-#: templates/prices.tpl.html:87 templates/prices.tpl.html:98
-#: templates/prices.tpl.html:109
-msgid "pitch"
-msgstr ""
-
-#: templates/booking.tpl.html:231
+#: templates/booking.tpl.html:96
 msgid "adults"
 msgstr ""
 
-#: templates/booking.tpl.html:238
+#: templates/booking.tpl.html:110
 msgid "children"
 msgstr ""
 
-#: templates/booking.tpl.html:245
+#: templates/booking.tpl.html:125
 msgid "equipement"
 msgstr ""
 
-#: templates/booking.tpl.html:247
+#: templates/booking.tpl.html:127
 msgid "middle size caravan"
 msgstr ""
 
-#: templates/booking.tpl.html:254
+#: templates/booking.tpl.html:132
+msgid "extra tents"
+msgstr ""
+
+#: templates/booking.tpl.html:148
 msgid "I will take with me my pet &amp; thus I accept the following "
 msgstr ""
 
-#: templates/booking.tpl.html:255 templates/prices.tpl.html:77
+#: templates/booking.tpl.html:149 templates/prices.tpl.html:78
 msgid "conditions"
 msgstr ""
 
-#: templates/booking.tpl.html:259
+#: templates/booking.tpl.html:153
 msgid "I will take a ..."
 msgstr ""
 
-#: templates/booking.tpl.html:263
+#: templates/booking.tpl.html:158
+msgid "Booking options"
+msgstr ""
+
+#: templates/booking.tpl.html:162 templates/booking.tpl.html:173
+msgid "day"
+msgstr ""
+
+#: templates/booking.tpl.html:164 templates/booking.tpl.html:175
+msgid "people"
+msgstr ""
+
+#: templates/booking.tpl.html:164 templates/booking.tpl.html:175
+#: templates/prices.tpl.html:24 templates/prices.tpl.html:30
+#: templates/prices.tpl.html:36 templates/prices.tpl.html:88
+#: templates/prices.tpl.html:99 templates/prices.tpl.html:110
+msgid "pitch"
+msgstr ""
+
+#: templates/booking.tpl.html:164 templates/prices.tpl.html:66
+msgid "dog"
+msgstr ""
+
+#: templates/booking.tpl.html:165 templates/booking.tpl.html:176
+msgid "low season days only"
+msgstr ""
+
+#: templates/booking.tpl.html:182
+msgid "Without promotions"
+msgstr ""
+
+#: templates/booking.tpl.html:184
+msgid "Chose your favourite place"
+msgstr ""
+
+#: templates/booking.tpl.html:194 templates/booking.tpl.html:224
+#: templates/booking.tpl.html:266
+msgid "Any Pitch"
+msgstr ""
+
+#: templates/booking.tpl.html:328
 msgid "note"
 msgstr ""
 
-#: templates/booking.tpl.html:268
+#: templates/booking.tpl.html:329
+msgid ""
+"We would like to stay next to...\r\n"
+" We have got more than 5 children...\r\n"
+" We would like a shadowed place...\r\n"
+msgstr ""
+
+#: templates/booking.tpl.html:333 templates/booking.tpl.html:334
+msgid "I accept the"
+msgstr ""
+
+#: templates/booking.tpl.html:333 templates/prices.tpl.html:75
+msgid "camping regulations"
+msgstr ""
+
+#: templates/booking.tpl.html:334
+msgid "privacy policy"
+msgstr ""
+
+#: templates/booking.tpl.html:336
 msgid "reserve"
+msgstr ""
+
+#: templates/booking_success.tpl.html:6
+msgid "Reservation completed successfully!"
+msgstr ""
+
+#: templates/booking_success.tpl.html:8
+msgid ""
+"\n"
+"We have sent you an email with your reservation data.<br>\n"
+"If it's not in your incoming mail please check the spam folder.\n"
 msgstr ""
 
 #: templates/home.tpl.html:5
@@ -275,49 +342,45 @@ msgstr ""
 msgid "visitor"
 msgstr ""
 
-#: templates/prices.tpl.html:66
-msgid "dog"
-msgstr ""
-
-#: templates/prices.tpl.html:75
+#: templates/prices.tpl.html:76
 msgid "2nd car | small tent | boats, etc.. Outside the place."
 msgstr ""
 
-#: templates/prices.tpl.html:76
+#: templates/prices.tpl.html:77
 msgid "each visit has to be pre-authorized by direction."
 msgstr ""
 
-#: templates/prices.tpl.html:77
+#: templates/prices.tpl.html:78
 msgid ""
 "dog entrance must be pre-authorized by the Management and must comply the"
 " following"
 msgstr ""
 
-#: templates/prices.tpl.html:90
+#: templates/prices.tpl.html:91
 msgid ""
 "\n"
 "Pitches direct on the water.\n"
-"From 50mq to 70mq. \n"
+"From 50mq to 70mq.\n"
 "External parking lot included.\n"
 "Dogs not allowed.\n"
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:101
+#: templates/prices.tpl.html:102
 msgid ""
 "\n"
 "Pitches near the water but not directly on.\n"
-"From 60mq to 80mq. \n"
+"From 60mq to 80mq.\n"
 "The smaller  have got external parking lot included.\n"
 "Dogs generally not allowed.\n"
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:112
+#: templates/prices.tpl.html:113
 msgid ""
 "\n"
 "Wooded and grassy pitches.\n"
-"From 70mq to 100mq. \n"
+"From 70mq to 100mq.\n"
 "Dogs always allowed, after pre-authorization from the Management.\n"
 "        "
 msgstr ""
@@ -447,19 +510,18 @@ msgstr ""
 msgid "services"
 msgstr ""
 
-#: templates/services_and_offers.tpl.html:74
+#: templates/services_and_offers.tpl.html:75
 msgid ""
 "\n"
 "Camping Punta Indiani offers gratis for all guests:<br>\n"
 "<br>\n"
-"<!-- Deleted as of 2014-12-06: Waiting to hear about APT decision\n"
 "Guest Card Trentino gives you free admission to museums, castles and "
 "nature parks and to free travel throughout Trentino on the province’s "
 "public transport system for your entire holiday.\n"
 "            "
 msgstr ""
 
-#: templates/services_and_offers.tpl.html:91
+#: templates/services_and_offers.tpl.html:92
 msgid ""
 "\n"
 "Be prepared for your vacation!<br>\n"
@@ -467,3 +529,44 @@ msgid ""
 "Discover the experiences that your stay in Valsugana offers.<br>\n"
 "            "
 msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Pitches direct on the water.\n"
+#~ "From 50mq to 70mq. \n"
+#~ "External parking lot included.\n"
+#~ "Dogs not allowed.\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Pitches near the water but not directly on.\n"
+#~ "From 60mq to 80mq. \n"
+#~ "The smaller  have got external parking lot included.\n"
+#~ "Dogs generally not allowed.\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Wooded and grassy pitches.\n"
+#~ "From 70mq to 100mq. \n"
+#~ "Dogs always allowed, after pre-authorization from the Management.\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Camping Punta Indiani offers gratis for all guests:<br>\n"
+#~ "<br>\n"
+#~ "<!-- Deleted as of 2014-12-06: Waiting to hear about APT decision\n"
+#~ "Guest Card Trentino gives you free "
+#~ "admission to museums, castles and nature"
+#~ " parks and to free travel throughout"
+#~ " Trentino on the province’s public "
+#~ "transport system for your entire "
+#~ "holiday.\n"
+#~ "            "
+#~ msgstr ""
+

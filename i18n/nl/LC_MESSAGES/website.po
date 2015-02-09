@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2014-12-06 15:42+0100\n"
+"POT-Creation-Date: 2015-02-09 15:32+0100\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -50,96 +50,162 @@ msgstr ""
 msgid "booking"
 msgstr "reserven"
 
-#: templates/base.tpl.html:92
+#: templates/base.tpl.html:93
 msgid "Merry Christmas and Happy new Year!"
 msgstr "Vrolijk Kerstfeest en Gelukkig Nieuwjaar!"
 
-#: templates/booking.tpl.html:11
+#: templates/booking.tpl.html:15
 msgid "Personal information"
 msgstr ""
 
-#: templates/booking.tpl.html:14
+#: templates/booking.tpl.html:18
 msgid "surname"
 msgstr ""
 
-#: templates/booking.tpl.html:22
+#: templates/booking.tpl.html:26
 msgid "name"
 msgstr ""
 
-#: templates/booking.tpl.html:30
+#: templates/booking.tpl.html:34
 msgid "email"
 msgstr ""
 
-#: templates/booking.tpl.html:39
+#: templates/booking.tpl.html:43
 msgid "birth date"
 msgstr ""
 
-#: templates/booking.tpl.html:47
+#: templates/booking.tpl.html:51
 msgid "gender"
 msgstr ""
 
-#: templates/booking.tpl.html:56
+#: templates/booking.tpl.html:60
 msgid "citizenship"
 msgstr ""
 
-#: templates/booking.tpl.html:67
+#: templates/booking.tpl.html:71
 msgid "Other"
 msgstr ""
 
-#: templates/booking.tpl.html:72
+#: templates/booking.tpl.html:76
 msgid "staying"
 msgstr ""
 
-#: templates/booking.tpl.html:75
+#: templates/booking.tpl.html:79
 msgid "arrival"
 msgstr ""
 
-#: templates/booking.tpl.html:83
+#: templates/booking.tpl.html:87
 msgid "departure"
 msgstr ""
 
-#: templates/booking.tpl.html:91 templates/prices.tpl.html:24
-#: templates/prices.tpl.html:30 templates/prices.tpl.html:36
-#: templates/prices.tpl.html:87 templates/prices.tpl.html:98
-#: templates/prices.tpl.html:109
-msgid "pitch"
-msgstr "plek"
-
-#: templates/booking.tpl.html:231
+#: templates/booking.tpl.html:96
 msgid "adults"
 msgstr ""
 
-#: templates/booking.tpl.html:238
-#, fuzzy
+#: templates/booking.tpl.html:110
 msgid "children"
 msgstr "kind"
 
-#: templates/booking.tpl.html:245
+#: templates/booking.tpl.html:125
 msgid "equipement"
 msgstr ""
 
-#: templates/booking.tpl.html:247
+#: templates/booking.tpl.html:127
 msgid "middle size caravan"
 msgstr ""
 
-#: templates/booking.tpl.html:254
+#: templates/booking.tpl.html:132
+msgid "extra tents"
+msgstr ""
+
+#: templates/booking.tpl.html:148
 msgid "I will take with me my pet &amp; thus I accept the following "
 msgstr ""
 
-#: templates/booking.tpl.html:255 templates/prices.tpl.html:77
+#: templates/booking.tpl.html:149 templates/prices.tpl.html:78
 msgid "conditions"
 msgstr "voorwaarden"
 
-#: templates/booking.tpl.html:259
+#: templates/booking.tpl.html:153
 msgid "I will take a ..."
 msgstr ""
 
-#: templates/booking.tpl.html:263
+#: templates/booking.tpl.html:158
+msgid "Booking options"
+msgstr "Boekingsmogelijkheden"
+
+#: templates/booking.tpl.html:162 templates/booking.tpl.html:173
+msgid "day"
+msgstr ""
+
+#: templates/booking.tpl.html:164 templates/booking.tpl.html:175
+msgid "people"
+msgstr ""
+
+#: templates/booking.tpl.html:164 templates/booking.tpl.html:175
+#: templates/prices.tpl.html:24 templates/prices.tpl.html:30
+#: templates/prices.tpl.html:36 templates/prices.tpl.html:88
+#: templates/prices.tpl.html:99 templates/prices.tpl.html:110
+msgid "pitch"
+msgstr "plek"
+
+#: templates/booking.tpl.html:164 templates/prices.tpl.html:66
+msgid "dog"
+msgstr "hond"
+
+#: templates/booking.tpl.html:165 templates/booking.tpl.html:176
+msgid "low season days only"
+msgstr ""
+
+#: templates/booking.tpl.html:182
+msgid "Without promotions"
+msgstr ""
+
+#: templates/booking.tpl.html:184
+msgid "Chose your favourite place"
+msgstr ""
+
+#: templates/booking.tpl.html:194 templates/booking.tpl.html:224
+#: templates/booking.tpl.html:266
+msgid "Any Pitch"
+msgstr "Elke Kampeerplaats"
+
+#: templates/booking.tpl.html:328
 msgid "note"
 msgstr ""
 
-#: templates/booking.tpl.html:268
+#: templates/booking.tpl.html:329
+msgid ""
+"We would like to stay next to...\r\n"
+" We have got more than 5 children...\r\n"
+" We would like a shadowed place...\r\n"
+msgstr ""
+
+#: templates/booking.tpl.html:333 templates/booking.tpl.html:334
+msgid "I accept the"
+msgstr ""
+
+#: templates/booking.tpl.html:333 templates/prices.tpl.html:75
+msgid "camping regulations"
+msgstr ""
+
+#: templates/booking.tpl.html:334
+msgid "privacy policy"
+msgstr ""
+
+#: templates/booking.tpl.html:336
 msgid "reserve"
+msgstr ""
+
+#: templates/booking_success.tpl.html:6
+msgid "Reservation completed successfully!"
+msgstr ""
+
+#: templates/booking_success.tpl.html:8
+msgid ""
+"\n"
+"We have sent you an email with your reservation data.<br>\n"
+"If it's not in your incoming mail please check the spam folder.\n"
 msgstr ""
 
 #: templates/home.tpl.html:5
@@ -206,7 +272,9 @@ msgstr ""
 
 #: templates/pet_disclaimer.tpl.html:2
 msgid "Pets owners must declare their pet when making reservation or on arrival."
-msgstr "De aanwezigheid van dieren moet gemeld worden aan de receptie op het moment van reservering en of aankomst, tijdens de check-in."
+msgstr ""
+"De aanwezigheid van dieren moet gemeld worden aan de receptie op het "
+"moment van reservering en of aankomst, tijdens de check-in."
 
 #: templates/pet_disclaimer.tpl.html:5
 msgid "Dogs"
@@ -220,7 +288,9 @@ msgstr "zjin toegestaan ALLEEN in Area C."
 msgid ""
 "DOGS ARE NOT ALLOWED on the BEACH, in the SERVICES, on PLAYGROUNDS and in"
 " the PARKINGS."
-msgstr "ZIJN NIET op op het STRAND TOEGESTAAN, in het TOILET GEBOUW, in the SPEELTUINEN en in de PARKINGS."
+msgstr ""
+"ZIJN NIET op op het STRAND TOEGESTAAN, in het TOILET GEBOUW, in the "
+"SPEELTUINEN en in de PARKINGS."
 
 #: templates/pet_disclaimer.tpl.html:9
 msgid "NOT ALLOWED DOBERMANN, PITT-BULL, ROTTWEILER and MOLOSSI."
@@ -246,32 +316,42 @@ msgstr "Half grote en grote honden moeten een muilkorf dragen."
 msgid ""
 "the Management can decide not to welcome dogs declared dangerous or "
 "aggressive."
-msgstr "Rassen van honden en of dieren die gevaarlijk zijn of lastig zijn kunnen door de direktie van de camping worden gestuurd."
+msgstr ""
+"Rassen van honden en of dieren die gevaarlijk zijn of lastig zijn kunnen "
+"door de direktie van de camping worden gestuurd."
 
 #: templates/pet_disclaimer.tpl.html:15
 msgid ""
 "the entrance in the campsite must be authorised by the management. "
 "Sanitary condition certificate is compulsory to welcome dog in the "
 "campsite"
-msgstr "De aankomst moet worden goedgekeurd door de direktie en ze moeten een gezondheidskaart met vaccinaties bij zich hebben."
+msgstr ""
+"De aankomst moet worden goedgekeurd door de direktie en ze moeten een "
+"gezondheidskaart met vaccinaties bij zich hebben."
 
 #: templates/pet_disclaimer.tpl.html:16
 msgid ""
 "must be taken outside the campsite for their physical needs. (take with "
 "you scoop and bags)"
-msgstr "moeten worden genomen buiten de camping voor hun lichamelijke behoeften. (mee te nemen scoop en tassen)</li>"
+msgstr ""
+"moeten worden genomen buiten de camping voor hun lichamelijke behoeften. "
+"(mee te nemen scoop en tassen)</li>"
 
 #: templates/pet_disclaimer.tpl.html:17
 msgid ""
 "owners must ensure respect of sanitary rules and are personally "
 "responsible for any damage caused by their dogs."
-msgstr "eigenaars moeten de eerbiediging van de sanitaire regels en bent zelf verantwoordelijk voor eventuel schade veroorzaakt door hun honden."
+msgstr ""
+"eigenaars moeten de eerbiediging van de sanitaire regels en bent zelf "
+"verantwoordelijk voor eventuel schade veroorzaakt door hun honden."
 
 #: templates/pet_disclaimer.tpl.html:18
 msgid ""
 "dogs owners who do not comply with these rules will be kindly asked to "
 "leave the camp-site."
-msgstr "De eigenaar van de honden die zich niet aan de regels houden worden meteen van de camping gestuurd"
+msgstr ""
+"De eigenaar van de honden die zich niet aan de regels houden worden "
+"meteen van de camping gestuurd"
 
 #: templates/prices.tpl.html:5
 msgid ""
@@ -302,49 +382,45 @@ msgstr "kind"
 msgid "visitor"
 msgstr "bezoek"
 
-#: templates/prices.tpl.html:66
-msgid "dog"
-msgstr "hond"
-
-#: templates/prices.tpl.html:75
+#: templates/prices.tpl.html:76
 msgid "2nd car | small tent | boats, etc.. Outside the place."
 msgstr ""
 
-#: templates/prices.tpl.html:76
+#: templates/prices.tpl.html:77
 msgid "each visit has to be pre-authorized by direction."
 msgstr "elk bezoek dienen te worden goedgekeurd door de richting."
 
-#: templates/prices.tpl.html:77
+#: templates/prices.tpl.html:78
 msgid ""
 "dog entrance must be pre-authorized by the Management and must comply the"
 " following"
 msgstr "De aankomst moet worden goedgekeurd door de direktie en op deze"
 
-#: templates/prices.tpl.html:90
+#: templates/prices.tpl.html:91
 msgid ""
 "\n"
 "Pitches direct on the water.\n"
-"From 50mq to 70mq. \n"
+"From 50mq to 70mq.\n"
 "External parking lot included.\n"
 "Dogs not allowed.\n"
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:101
+#: templates/prices.tpl.html:102
 msgid ""
 "\n"
 "Pitches near the water but not directly on.\n"
-"From 60mq to 80mq. \n"
+"From 60mq to 80mq.\n"
 "The smaller  have got external parking lot included.\n"
 "Dogs generally not allowed.\n"
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:112
+#: templates/prices.tpl.html:113
 msgid ""
 "\n"
 "Wooded and grassy pitches.\n"
-"From 70mq to 100mq. \n"
+"From 70mq to 100mq.\n"
 "Dogs always allowed, after pre-authorization from the Management.\n"
 "        "
 msgstr ""
@@ -384,48 +460,65 @@ msgstr "CAMPING REGLEMENT"
 msgid ""
 "Management authorisation and legal registration is compulsory to access "
 "the camping site."
-msgstr "Voor de toegang tot de camping zijn de toestemming van de directie en bijbehorende wettelijke registratie vereist."
+msgstr ""
+"Voor de toegang tot de camping zijn de toestemming van de directie en "
+"bijbehorende wettelijke registratie vereist."
 
 #: templates/rules.tpl.html:8
 msgid ""
 "The prices exhibited at the reception for the stay at the camping site "
 "are valid from arrival to 11.00 a.m. of the following day."
-msgstr "De verblijfstarieven van de camping, die bij de receptie zijn opgehangen, gelden vanaf de dag van aankomst tot aan 11:00 uur van de volgende dag."
+msgstr ""
+"De verblijfstarieven van de camping, die bij de receptie zijn opgehangen,"
+" gelden vanaf de dag van aankomst tot aan 11:00 uur van de volgende dag."
 
 #: templates/rules.tpl.html:9
 msgid ""
 "To take possession of your tent or caravan pitch you must be authorised "
 "by the management."
-msgstr "Het bezetten van een staanplaats voor tent of caravan is afhankelijk van de toestemming van de directie."
+msgstr ""
+"Het bezetten van een staanplaats voor tent of caravan is afhankelijk van "
+"de toestemming van de directie."
 
 #: templates/rules.tpl.html:10
 msgid "You can leave vehicles only in the places indicated by the management."
-msgstr "Het parkeren van vervoersmiddelen egestaan, na verkregen toestemming van de direktie. Een klein tentje wordt niet van elektriciteit voorzien."
+msgstr ""
+"Het parkeren van vervoersmiddelen egestaan, na verkregen toestemming van "
+"de direktie. Een klein tentje wordt niet van elektriciteit voorzien."
 
 #: templates/rules.tpl.html:11
 msgid ""
 "Silence is essential from 11.00 p.m. to 8.00 a.m.; limit the noise during"
 " the day; television is tolerated only if at very low volume."
-msgstr "Van 23:00 uur tot 8:00 uur is stilte voorgeschreven, overdag gematigd geluid, de televisie mag alleen zachtjes aan."
+msgstr ""
+"Van 23:00 uur tot 8:00 uur is stilte voorgeschreven, overdag gematigd "
+"geluid, de televisie mag alleen zachtjes aan."
 
 #: templates/rules.tpl.html:12
 msgid ""
 "Guests must take care of their belongings; the management declines all "
 "responsibilities for any theft or damage except for the objects that have"
 " been left in custody with regular receipt."
-msgstr "De gasten word verzocht zelf op hun bezittigen te letten. De directie is niet aansprakelijk voor eventuele diefstal of schade, behalve als  die bezittigen ter bewaring waren afgegeven tegen een ontvangstbewijs."
+msgstr ""
+"De gasten word verzocht zelf op hun bezittigen te letten. De directie is "
+"niet aansprakelijk voor eventuele diefstal of schade, behalve als  die "
+"bezittigen ter bewaring waren afgegeven tegen een ontvangstbewijs."
 
 #: templates/rules.tpl.html:13
 msgid ""
 "The vehicles inside the tourist complex must not exceed the speed of 5 "
 "km/h."
-msgstr "De snelheid van voertuigen op het hele kampeerterrein mag de 5 km per uur niet overschrijden."
+msgstr ""
+"De snelheid van voertuigen op het hele kampeerterrein mag de 5 km per uur"
+" niet overschrijden."
 
 #: templates/rules.tpl.html:14
 msgid ""
 "You must respect the vegetation, the hygiene and the cleanliness of the "
 "site."
-msgstr "Men is verplicht de groenzones, de hygi&#235;ne en properheid van de inrichting te respecteren."
+msgstr ""
+"Men is verplicht de groenzones, de hygi&#235;ne en properheid van de "
+"inrichting te respecteren."
 
 #: templates/rules.tpl.html:15
 msgid "Dog entrance must be pre-authorized by the Management"
@@ -436,20 +529,29 @@ msgid ""
 "Under the authorisation of the management you can connect to the proper "
 "sockets necessary but only for lighting and fridge which must be earthen."
 " Tents are not entitled to power supply."
-msgstr "Aansluiting op het elektriciteitsnet aan de daarvoor bedoelde stopcontacten is alleen met geaarde stekkers voor verlichting en ijskast toegestaan, na verkregen toestemming van de direktie. Een klein tentje (extra) wordt niet van elektriciteit voorzien."
+msgstr ""
+"Aansluiting op het elektriciteitsnet aan de daarvoor bedoelde "
+"stopcontacten is alleen met geaarde stekkers voor verlichting en ijskast "
+"toegestaan, na verkregen toestemming van de direktie. Een klein tentje "
+"(extra) wordt niet van elektriciteit voorzien."
 
 #: templates/rules.tpl.html:17
 msgid ""
 "No visits are allowed (see article 1). In case of authorised visits, they"
 " are subject to the price list."
-msgstr "Bezoek is niet toegestaan (zie artikel 1). Voor eventueel toegestaan bezoek gelden de tarieven volgens de prijslijst."
+msgstr ""
+"Bezoek is niet toegestaan (zie artikel 1). Voor eventueel toegestaan "
+"bezoek gelden de tarieven volgens de prijslijst."
 
 #: templates/rules.tpl.html:18
 msgid ""
 "After consideration by the management, the non-observance of these rules "
 "or a behaviour that ruins the harmonious atmosphere of the camping site "
 "may result in expulsion as an unwelcome guest."
-msgstr "Als deze regels volgens de directie niet worden nageleefd en als het gedrag de verstandhouding en de geest van de inrichting schaadt, kan dit leiden tot verwijdering van de camping als ongewenste gast."
+msgstr ""
+"Als deze regels volgens de directie niet worden nageleefd en als het "
+"gedrag de verstandhouding en de geest van de inrichting schaadt, kan dit "
+"leiden tot verwijdering van de camping als ongewenste gast."
 
 #: templates/services_and_offers.tpl.html:6
 msgid "offers"
@@ -483,25 +585,18 @@ msgstr ""
 msgid "services"
 msgstr ""
 
-#: templates/services_and_offers.tpl.html:74
-#, fuzzy
+#: templates/services_and_offers.tpl.html:75
 msgid ""
 "\n"
 "Camping Punta Indiani offers gratis for all guests:<br>\n"
 "<br>\n"
-"<!-- Deleted as of 2014-12-06: Waiting to hear about APT decision\n"
 "Guest Card Trentino gives you free admission to museums, castles and "
 "nature parks and to free travel throughout Trentino on the province’s "
 "public transport system for your entire holiday.\n"
 "            "
 msgstr ""
-"Camping Punta Indiani biedt gratis voor alle gasten:<br>\n"
-"<br>\n"
-"Guest Card Trentino gives you free admission to museums, castles and "
-"nature parks and to free travel throughout Trentino on the province’s "
-"public transport system for your entire holiday.<br>\n"
 
-#: templates/services_and_offers.tpl.html:91
+#: templates/services_and_offers.tpl.html:92
 msgid ""
 "\n"
 "Be prepared for your vacation!<br>\n"
@@ -515,4 +610,52 @@ msgstr ""
 
 #~ msgid "You can reserve you place starting from 2015-01-01"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Pitches direct on the water.\n"
+#~ "From 50mq to 70mq. \n"
+#~ "External parking lot included.\n"
+#~ "Dogs not allowed.\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Pitches near the water but not directly on.\n"
+#~ "From 60mq to 80mq. \n"
+#~ "The smaller  have got external parking lot included.\n"
+#~ "Dogs generally not allowed.\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Wooded and grassy pitches.\n"
+#~ "From 70mq to 100mq. \n"
+#~ "Dogs always allowed, after pre-authorization from the Management.\n"
+#~ "        "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "Camping Punta Indiani offers gratis for all guests:<br>\n"
+#~ "<br>\n"
+#~ "<!-- Deleted as of 2014-12-06: Waiting to hear about APT decision\n"
+#~ "Guest Card Trentino gives you free "
+#~ "admission to museums, castles and nature"
+#~ " parks and to free travel throughout"
+#~ " Trentino on the province’s public "
+#~ "transport system for your entire "
+#~ "holiday.\n"
+#~ "            "
+#~ msgstr ""
+#~ "Camping Punta Indiani biedt gratis voor alle gasten:<br>\n"
+#~ "<br>\n"
+#~ "Guest Card Trentino gives you free "
+#~ "admission to museums, castles and nature"
+#~ " parks and to free travel throughout"
+#~ " Trentino on the province’s public "
+#~ "transport system for your entire "
+#~ "holiday.<br>\n"
 
