@@ -38,7 +38,7 @@ function gallery {
     function generate {
         echo "[+] Generate Gallery"
         cd ./Gallery && python build.py && cd ..
-        find Gallery/original -type f -name "*" -exec md5sum {} + | awk '{print $1}' | sort | md5sum | awk -s" " '{print $1}' > Gallery/original.md5
+        find Gallery/original -type f -name "*" -exec md5sum {} + | awk '{print $1}' | sort | md5sum | awk -F" " '{print $1}' > Gallery/original.md5
     }
 
     echo "[+] Check Gallery"
@@ -47,7 +47,7 @@ function gallery {
         generate
     else
         old_hash=`head -n1 Gallery/original.md5`
-        curr_hash=`find Gallery/original -type f -name "*" -exec md5sum {} + | awk '{print $1}' | sort | md5sum | awk -s" " '{print $1}'`
+        curr_hash=`find Gallery/original -type f -name "*" -exec md5sum {} + | awk '{print $1}' | sort | md5sum | awk -F" " '{print $1}'`
         if [ "$old_hash" != "$curr_hash" ]; then
             rm -rf Gallery/gallery
             generate

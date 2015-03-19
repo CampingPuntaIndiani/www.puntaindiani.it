@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
   <noscript>
+    <!-- No js WA -->
     <meta http-equiv="refresh" content="0; url=en/home.html">
   </noscript>
+  <!-- Fall back - Blocked GA -->
+  <meta http-equiv="refresh" content="5; url=en/home.html">
+</head>
+<body>
+  <!-- ShinyStat -->
+  <script type="text/javascript" language="JavaScript" src="http://codiceisp.shinystat.com/cgi-bin/getcod.cgi?USER=puntaindiani&P=4"></script>
+  <noscript><img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=puntaindiani&P=4" alt="" style="border:0; height:0; width:0;"></noscript>
+
+  <!-- Google Analytics -->
   <script type="text/javascript">
-  <!--
-    window.onload = function(){
+    // Language based redirect
+    function redirect(){
       switch(window.navigator.language) {
         case "de":
           window.location = "de/home.html"
@@ -21,9 +31,16 @@
           window.location = "en/home.html"
       };
     };
-  //-->
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34314298-1']);
+    _gaq.push(['_set', 'hitCallback', redirect]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
   </script>
-</head>
-<body>
 </body>
 </html>
