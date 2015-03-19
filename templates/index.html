@@ -7,8 +7,7 @@
   <script type="text/javascript">
   <!--
     window.onload = function(){
-      // Save referrer
-      document.cookie = "HomeRef=" + (document.referrer || '');
+      if (sessionStorage) sessionStorage.setItem("HomeRef", document.referrer || ''); // Save referrer
 
       // Redirect
       var lang_map = {

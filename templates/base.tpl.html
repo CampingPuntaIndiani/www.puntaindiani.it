@@ -159,10 +159,11 @@
 
     <!-- Google Analytics -->
     <script type="text/javascript">
-      // https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie
-      var ref = document.cookie.replace(/(?:(?:^|.*;\s*)HomeRef\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '';
-      // https://msdn.microsoft.com/en-us/library/aa289495(v=vs.71).aspx
-      if (ref) document.cookie = 'HomeRef=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+      var ref = '';
+      if (sessionStorage) {
+        ref = sessionStorage.getItem('HomeRef');
+        sessionStorage.removeItem('HomeRef');
+      }
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34314298-1']);
