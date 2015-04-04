@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2015-02-09 15:32+0100\n"
+"POT-Creation-Date: 2015-04-04 11:54+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -59,11 +59,11 @@ msgid "Personal information"
 msgstr ""
 
 #: templates/booking.tpl.html:18
-msgid "surname"
+msgid "last name"
 msgstr ""
 
 #: templates/booking.tpl.html:26
-msgid "name"
+msgid "first name"
 msgstr ""
 
 #: templates/booking.tpl.html:34
@@ -111,7 +111,7 @@ msgid "equipement"
 msgstr ""
 
 #: templates/booking.tpl.html:127
-msgid "middle size caravan"
+msgid "middle sized caravan"
 msgstr ""
 
 #: templates/booking.tpl.html:132
@@ -162,12 +162,12 @@ msgid "Without promotions"
 msgstr ""
 
 #: templates/booking.tpl.html:184
-msgid "Chose your favourite place"
+msgid "Choose your favourite place"
 msgstr ""
 
 #: templates/booking.tpl.html:194 templates/booking.tpl.html:224
 #: templates/booking.tpl.html:266
-msgid "Any Pitch"
+msgid "Any"
 msgstr ""
 
 #: templates/booking.tpl.html:328
@@ -178,7 +178,7 @@ msgstr ""
 msgid ""
 "We would like to stay next to...\r\n"
 " We have got more than 5 children...\r\n"
-" We would like a shadowed place...\r\n"
+" We would like a shaded place...\r\n"
 msgstr ""
 
 #: templates/booking.tpl.html:333 templates/booking.tpl.html:334
@@ -531,42 +531,26 @@ msgid ""
 msgstr ""
 
 #~ msgid ""
-#~ "\n"
-#~ "Pitches direct on the water.\n"
-#~ "From 50mq to 70mq. \n"
-#~ "External parking lot included.\n"
-#~ "Dogs not allowed.\n"
-#~ "        "
 #~ msgstr ""
 
-#~ msgid ""
-#~ "\n"
-#~ "Pitches near the water but not directly on.\n"
-#~ "From 60mq to 80mq. \n"
-#~ "The smaller  have got external parking lot included.\n"
-#~ "Dogs generally not allowed.\n"
-#~ "        "
+#~ msgid "surname"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "\n"
-#~ "Wooded and grassy pitches.\n"
-#~ "From 70mq to 100mq. \n"
-#~ "Dogs always allowed, after pre-authorization from the Management.\n"
-#~ "        "
+#~ msgid "last"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "\n"
-#~ "Camping Punta Indiani offers gratis for all guests:<br>\n"
-#~ "<br>\n"
-#~ "<!-- Deleted as of 2014-12-06: Waiting to hear about APT decision\n"
-#~ "Guest Card Trentino gives you free "
-#~ "admission to museums, castles and nature"
-#~ " parks and to free travel throughout"
-#~ " Trentino on the province’s public "
-#~ "transport system for your entire "
-#~ "holiday.\n"
-#~ "            "
+#~ msgid "name"
+#~ msgstr ""
+
+#~ msgid "first"
+#~ msgstr ""
+
+#~ msgid "middle size caravan"
+#~ msgstr ""
+
+#~ msgid "Chose your favourite place"
+#~ msgstr ""
+
+#~ msgid "Any Pitch"
 #~ msgstr ""
 

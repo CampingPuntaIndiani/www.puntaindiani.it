@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2015-02-09 15:32+0100\n"
+"POT-Creation-Date: 2015-04-04 11:54+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -56,15 +56,15 @@ msgstr "Buon Natale e Felice anno nuovo!"
 
 #: templates/booking.tpl.html:15
 msgid "Personal information"
-msgstr ""
+msgstr "Informazioni personali"
 
 #: templates/booking.tpl.html:18
-msgid "surname"
-msgstr ""
+msgid "last name"
+msgstr "cognome"
 
 #: templates/booking.tpl.html:26
-msgid "name"
-msgstr ""
+msgid "first name"
+msgstr "nome"
 
 #: templates/booking.tpl.html:34
 msgid "email"
@@ -72,35 +72,35 @@ msgstr ""
 
 #: templates/booking.tpl.html:43
 msgid "birth date"
-msgstr ""
+msgstr "data di nascita"
 
 #: templates/booking.tpl.html:51
 msgid "gender"
-msgstr ""
+msgstr "sesso"
 
 #: templates/booking.tpl.html:60
 msgid "citizenship"
-msgstr ""
+msgstr "cittadinanza"
 
 #: templates/booking.tpl.html:71
 msgid "Other"
-msgstr ""
+msgstr "Altro"
 
 #: templates/booking.tpl.html:76
 msgid "staying"
-msgstr ""
+msgstr "soggiorno"
 
 #: templates/booking.tpl.html:79
 msgid "arrival"
-msgstr ""
+msgstr "arrivo"
 
 #: templates/booking.tpl.html:87
 msgid "departure"
-msgstr ""
+msgstr "partenza"
 
 #: templates/booking.tpl.html:96
 msgid "adults"
-msgstr ""
+msgstr "adulti"
 
 #: templates/booking.tpl.html:110
 msgid "children"
@@ -108,19 +108,19 @@ msgstr "bambini"
 
 #: templates/booking.tpl.html:125
 msgid "equipement"
-msgstr ""
+msgstr "mezzo"
 
 #: templates/booking.tpl.html:127
-msgid "middle size caravan"
-msgstr ""
+msgid "middle sized caravan"
+msgstr "roulotte nella media"
 
 #: templates/booking.tpl.html:132
 msgid "extra tents"
-msgstr ""
+msgstr "tendine extra"
 
 #: templates/booking.tpl.html:148
 msgid "I will take with me my pet &amp; thus I accept the following "
-msgstr ""
+msgstr "Porterò con me il mio animale &amp; accetto quindi le seguenti "
 
 #: templates/booking.tpl.html:149 templates/prices.tpl.html:78
 msgid "conditions"
@@ -128,7 +128,7 @@ msgstr "condizioni"
 
 #: templates/booking.tpl.html:153
 msgid "I will take a ..."
-msgstr ""
+msgstr "Porterò un ..."
 
 #: templates/booking.tpl.html:158
 msgid "Booking options"
@@ -136,11 +136,11 @@ msgstr "Opzioni Prenotazione"
 
 #: templates/booking.tpl.html:162 templates/booking.tpl.html:173
 msgid "day"
-msgstr ""
+msgstr "giorno"
 
 #: templates/booking.tpl.html:164 templates/booking.tpl.html:175
 msgid "people"
-msgstr ""
+msgstr "persone"
 
 #: templates/booking.tpl.html:164 templates/booking.tpl.html:175
 #: templates/prices.tpl.html:24 templates/prices.tpl.html:30
@@ -155,20 +155,20 @@ msgstr "cane"
 
 #: templates/booking.tpl.html:165 templates/booking.tpl.html:176
 msgid "low season days only"
-msgstr ""
+msgstr "solo bassa stagione"
 
 #: templates/booking.tpl.html:182
 msgid "Without promotions"
-msgstr ""
+msgstr "senza convenzioni"
 
 #: templates/booking.tpl.html:184
-msgid "Chose your favourite place"
-msgstr ""
+msgid "Choose your favourite place"
+msgstr "Scegli la tua piazzola preferita"
 
 #: templates/booking.tpl.html:194 templates/booking.tpl.html:224
 #: templates/booking.tpl.html:266
-msgid "Any Pitch"
-msgstr "qualsiasi piazzola"
+msgid "Any"
+msgstr "Qualsiasi"
 
 #: templates/booking.tpl.html:328
 msgid "note"
@@ -178,16 +178,16 @@ msgstr "note"
 msgid ""
 "We would like to stay next to...\r\n"
 " We have got more than 5 children...\r\n"
-" We would like a shadowed place...\r\n"
+" We would like a shaded place...\r\n"
 msgstr ""
 
 #: templates/booking.tpl.html:333 templates/booking.tpl.html:334
 msgid "I accept the"
-msgstr ""
+msgstr "Accetto"
 
 #: templates/booking.tpl.html:333 templates/prices.tpl.html:75
 msgid "camping regulations"
-msgstr ""
+msgstr "il regolamento"
 
 #: templates/booking.tpl.html:334
 msgid "privacy policy"
@@ -627,24 +627,23 @@ msgstr ""
 #~ msgstr "Potete prenotare le vostre vacanze a partire dal 2015-01-01"
 
 #~ msgid ""
-#~ "\n"
-#~ "Camping Punta Indiani offers gratis for all guests:<br>\n"
-#~ "<br>\n"
-#~ "<!-- Deleted as of 2014-12-06: Waiting to hear about APT decision\n"
-#~ "Guest Card Trentino gives you free "
-#~ "admission to museums, castles and nature"
-#~ " parks and to free travel throughout"
-#~ " Trentino on the province’s public "
-#~ "transport system for your entire "
-#~ "holiday.\n"
-#~ "            "
 #~ msgstr ""
-#~ "Camping Punta Indiani offre gratis a tutti gli ospiti:<br>\n"
-#~ "<br>\n"
-#~ "Guest Card Trentino è la chiave "
-#~ "per entrare nei musei, castelli, parchi"
-#~ " naturali e viaggiare liberamente in "
-#~ "tutto il Trentino con il trasporto "
-#~ "pubblico provinciale per tutta la "
-#~ "vacanza. <br>\n"
+
+#~ msgid "surname"
+#~ msgstr ""
+
+#~ msgid "last"
+#~ msgstr ""
+
+#~ msgid "name"
+#~ msgstr ""
+
+#~ msgid "first"
+#~ msgstr ""
+
+#~ msgid "middle size caravan"
+#~ msgstr ""
+
+#~ msgid "Chose your favourite place"
+#~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-02-09 15:32+0100\n"
+"POT-Creation-Date: 2015-04-04 11:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,11 +58,11 @@ msgid "Personal information"
 msgstr ""
 
 #: templates/booking.tpl.html:18
-msgid "surname"
+msgid "last name"
 msgstr ""
 
 #: templates/booking.tpl.html:26
-msgid "name"
+msgid "first name"
 msgstr ""
 
 #: templates/booking.tpl.html:34
@@ -110,7 +110,7 @@ msgid "equipement"
 msgstr ""
 
 #: templates/booking.tpl.html:127
-msgid "middle size caravan"
+msgid "middle sized caravan"
 msgstr ""
 
 #: templates/booking.tpl.html:132
@@ -161,12 +161,12 @@ msgid "Without promotions"
 msgstr ""
 
 #: templates/booking.tpl.html:184
-msgid "Chose your favourite place"
+msgid "Choose your favourite place"
 msgstr ""
 
 #: templates/booking.tpl.html:194 templates/booking.tpl.html:224
 #: templates/booking.tpl.html:266
-msgid "Any Pitch"
+msgid "Any"
 msgstr ""
 
 #: templates/booking.tpl.html:328
@@ -177,7 +177,7 @@ msgstr ""
 msgid ""
 "We would like to stay next to...\r\n"
 " We have got more than 5 children...\r\n"
-" We would like a shadowed place...\r\n"
+" We would like a shaded place...\r\n"
 msgstr ""
 
 #: templates/booking.tpl.html:333 templates/booking.tpl.html:334

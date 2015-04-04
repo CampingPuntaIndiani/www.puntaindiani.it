@@ -15,7 +15,7 @@
         <header>{{ _('Personal information') }}</header>
         <div>
             <div>
-                <label for="surname">{{ _('surname') }}</label>
+                <label for="surname">{{ _('last name') }}</label>
             </div><div>
                 <input id="surname" type="text" name="surname" placeholder="Smith" required>
             </div>
@@ -23,7 +23,7 @@
 
         <div>
             <div>
-                <label for="name">{{ _('name') }}</label>
+                <label for="name">{{ _('first name') }}</label>
             </div><div>
                 <input id="name" type="text" name="name" placeholder="John" required>
             </div>
@@ -124,7 +124,7 @@
             <div>
                 <label for="equipement">{{ _('equipement') }}</label>
             </div><div>
-                <input type="text" id="equipment" name="equipment" placeholder="{{ _('middle size caravan') }}">
+                <input type="text" id="equipment" name="equipment" placeholder="{{ _('middle sized caravan') }}">
             </div>
         </div>
         <div>
@@ -181,7 +181,7 @@
         </div><div>
             <header>{{ _('Without promotions') }}</header><label>#</label>
 
-            <footer>{{ _('Chose your favourite place') }}:</footer>
+            <footer>{{ _('Choose your favourite place') }}:</footer>
 
             <select name="area" class="hide" id="area">
                 <option value="A">Area A</option>
@@ -191,7 +191,7 @@
 
             <select name="resource" id="pitch">
                 <optgroup data-kind="A" label="Area A">
-                    <option value="1">{{ _('Any Pitch') }}</option>
+                    <option value="1">{{ _('Any') }}</option>
                     <option value="4">2</option>
                     <option value="6">4</option>
                     <option value="7">5</option>
@@ -221,7 +221,7 @@
                 </optgroup>
 
                 <optgroup data-kind="B" label="Area B">
-                    <option value="2" selected>{{ _('Any Pitch') }}</option>
+                    <option value="2" selected>{{ _('Any') }}</option>
                     <option value="5">3</option>
                     <option value="8">6</option>
                     <option value="9">7</option>
@@ -263,7 +263,7 @@
                 </optgroup>
 
                 <optgroup data-kind="C" label="Area C">
-                    <option value="3">{{ _('Any Pitch') }}</option>
+                    <option value="3">{{ _('Any') }}</option>
                     <option value="70">66</option>
                     <option value="71">67</option>
                     <option value="72">68</option>
@@ -326,7 +326,7 @@
 
     <section class="center">
         <header>{{ _('note') }}</header>
-        <textarea name="note" value="" placeholder="{{ _('We would like to stay next to...\r\n We have got more than 5 children...\r\n We would like a shadowed place...\r\n') }}">
+        <textarea name="note" value="" placeholder="{{ _('We would like to stay next to...\r\n We have got more than 5 children...\r\n We would like a shaded place...\r\n') }}">
         </textarea>
     </section>
     <section class="center">
