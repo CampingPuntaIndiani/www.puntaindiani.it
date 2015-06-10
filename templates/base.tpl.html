@@ -44,6 +44,7 @@
     {% block head %}{% endblock %}
 </head>
 <body>
+
   <section name="lang">
     <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en">en</i></a>
     <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl">nl</i></a>
@@ -150,6 +151,15 @@
         </section>
     </div>
 
+    <script type="text/javascript">
+      /* Call here before HTML component is rendered */
+      (function(){if (!sessionStorage || !sessionStorage.getItem('cookie-bar')) document.write('<div id="cookie-bar"><p>Il Sito di Camping Punta Indiani utilizza cookies di sessione ed analytics.Per saperne di pi&ugrave; consulta la nostra <a href="cookie.html">Privacy Policy</a>.<br>Se prosegui nella navigazione di questo sito, acconsenti all’utilizzo dei cookies.</p><button onclick="hideCookieBanner()">Continua</button></div>');})();
+    </script>
+    <noscript>
+        <p>Il Sito di Camping Punta Indiani utilizza cookies di sessione ed analytics.
+        Per saperne di pi&ugrave; consulta la nostra <a href="cookie.html">Privacy Policy</a>.<br>
+        Se prosegui nella navigazione di questo sito, acconsenti all’utilizzo dei cookies.</p>
+    </noscript>
 
     <!-- ShinyStat -->
     <script type="text/javascript" language="JavaScript" src="http://codiceisp.shinystat.com/cgi-bin/getcod.cgi?USER=puntaindiani&P=4"></script>

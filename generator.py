@@ -31,7 +31,8 @@ PAGES = [
     'services_and_offers',
 ]
 
-EXTRA = ['pet_disclaimer', 'booking', 'authors', 'rules', 'privacy', 'booking_success']
+EXTRA = ['pet_disclaimer', 'booking', 'authors', 'rules', 'privacy',
+        'booking_success', 'cookie']
 
 def generate():
     env = Environment(loader=FileSystemLoader(TPL_PATH),

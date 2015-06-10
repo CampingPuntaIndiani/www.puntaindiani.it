@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2015-04-04 11:54+0200\n"
+"POT-Creation-Date: 2015-04-10 16:30+0200\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -455,11 +455,89 @@ msgstr ""
 msgid "view on Google"
 msgstr ""
 
-#: templates/rules.tpl.html:5
+#: templates/rules.tpl.html:16
+#, fuzzy
+msgid "Booking conditions"
+msgstr "Boekingsmogelijkheden"
+
+#: templates/rules.tpl.html:17
+msgid ""
+"\n"
+"<p>Following your booking request,\n"
+"Camping Punta Indiani sends you the <i>Booking Confirmation</i> e-mail "
+"with,\n"
+"also in accordance with art. 13 of the D. Lgs. 70/2003,\n"
+"the summary of the general conditions and details applicable to the "
+"contract,\n"
+"the information relative to the essential characteristics of the service "
+"booked,\n"
+"the rates specification,\n"
+"the means of payment,\n"
+"and the deposit charges requested.</p>\n"
+"\n"
+"<p>Camping Punta Indiani requests the Guest to pay a sum of money as a "
+"confirmation deposit,\n"
+"in accordance with art. 1385 of the Italian Civil Code,\n"
+"which is a guarantee of the booking made and account on the balance "
+"outstanding.</p>\n"
+"\n"
+"<p>There are no extra booking costs.</p>\n"
+"\n"
+"<p>Confirmation is subject to payment of the deposit by bank transfer,\n"
+"using the bank codes printed on the Booking Confirmation mail.\n"
+"The booking will be finally confirmed only when the sum requested\n"
+"has been credited to Camping Punta Indiani account.</p>\n"
+msgstr ""
+
+#: templates/rules.tpl.html:39
+msgid "Arrival and departure dates"
+msgstr ""
+
+#: templates/rules.tpl.html:40
+msgid ""
+"\n"
+"<p>The Guest is entitled to use the booked services from 2.00 p.m. on the"
+" scheduled arrival date,\n"
+"use of the booked services must end by 11.00 a.m. on the scheduled "
+"departure date unless otherwise agreed.</p>\n"
+"<p>If the Guest decides to leave before the scheduled departure date,\n"
+"Camping Punta Indiani is entitled to request payment of the full price of"
+" the stay\n"
+"and is also entitled to re-assign the  place(s) previously occupied by "
+"the Guest,\n"
+"as far as possible, unless otherwise agreed.</p>\n"
+msgstr ""
+
+#: templates/rules.tpl.html:49
+msgid "Cancellation of booking"
+msgstr ""
+
+#: templates/rules.tpl.html:50
+msgid ""
+"\n"
+"<p>The Guest who intends to cancel a booking must notify its intention in"
+" writing (by e-mail).</p>\n"
+"<p>If the notice of cancellation <strong>reaches</strong> Camping Punta "
+"indiani at least 30 days before the start of the holiday,\n"
+"the Guest is entitled to receive a refund of any deposit paid when the "
+"booking was made, net of expenses,\n"
+"by Camping Punta indiani (e.g. costs for bank transfer) duly "
+"accounted.</p>\n"
+"<p>The refund shall be made by bank transfer within 30 days of the "
+"necessary operations.</p>\n"
+"<p>If the notice of cancellation is received after the aforementioned "
+"deadline, or is not received at all (so-called No Show)\n"
+"Camping Punta indiani  may retain the entire amount paid by bank "
+"transfer.</p>\n"
+"<p>No Show means the Guest fails to arrive at the booked facility by 6 "
+"p.m. on the day established, unless otherwise agreed.</p>\n"
+msgstr ""
+
+#: templates/rules.tpl.html:61
 msgid "CAMPING REGULATIONS"
 msgstr "CAMPING REGLEMENT"
 
-#: templates/rules.tpl.html:7
+#: templates/rules.tpl.html:63
 msgid ""
 "Management authorisation and legal registration is compulsory to access "
 "the camping site."
@@ -467,7 +545,7 @@ msgstr ""
 "Voor de toegang tot de camping zijn de toestemming van de directie en "
 "bijbehorende wettelijke registratie vereist."
 
-#: templates/rules.tpl.html:8
+#: templates/rules.tpl.html:64
 msgid ""
 "The prices exhibited at the reception for the stay at the camping site "
 "are valid from arrival to 11.00 a.m. of the following day."
@@ -475,7 +553,7 @@ msgstr ""
 "De verblijfstarieven van de camping, die bij de receptie zijn opgehangen,"
 " gelden vanaf de dag van aankomst tot aan 11:00 uur van de volgende dag."
 
-#: templates/rules.tpl.html:9
+#: templates/rules.tpl.html:65
 msgid ""
 "To take possession of your tent or caravan pitch you must be authorised "
 "by the management."
@@ -483,13 +561,13 @@ msgstr ""
 "Het bezetten van een staanplaats voor tent of caravan is afhankelijk van "
 "de toestemming van de directie."
 
-#: templates/rules.tpl.html:10
+#: templates/rules.tpl.html:66
 msgid "You can leave vehicles only in the places indicated by the management."
 msgstr ""
 "Het parkeren van vervoersmiddelen egestaan, na verkregen toestemming van "
 "de direktie. Een klein tentje wordt niet van elektriciteit voorzien."
 
-#: templates/rules.tpl.html:11
+#: templates/rules.tpl.html:67
 msgid ""
 "Silence is essential from 11.00 p.m. to 8.00 a.m.; limit the noise during"
 " the day; television is tolerated only if at very low volume."
@@ -497,7 +575,7 @@ msgstr ""
 "Van 23:00 uur tot 8:00 uur is stilte voorgeschreven, overdag gematigd "
 "geluid, de televisie mag alleen zachtjes aan."
 
-#: templates/rules.tpl.html:12
+#: templates/rules.tpl.html:68
 msgid ""
 "Guests must take care of their belongings; the management declines all "
 "responsibilities for any theft or damage except for the objects that have"
@@ -507,7 +585,7 @@ msgstr ""
 "niet aansprakelijk voor eventuele diefstal of schade, behalve als  die "
 "bezittigen ter bewaring waren afgegeven tegen een ontvangstbewijs."
 
-#: templates/rules.tpl.html:13
+#: templates/rules.tpl.html:69
 msgid ""
 "The vehicles inside the tourist complex must not exceed the speed of 5 "
 "km/h."
@@ -515,7 +593,7 @@ msgstr ""
 "De snelheid van voertuigen op het hele kampeerterrein mag de 5 km per uur"
 " niet overschrijden."
 
-#: templates/rules.tpl.html:14
+#: templates/rules.tpl.html:70
 msgid ""
 "You must respect the vegetation, the hygiene and the cleanliness of the "
 "site."
@@ -523,22 +601,22 @@ msgstr ""
 "Men is verplicht de groenzones, de hygi&#235;ne en properheid van de "
 "inrichting te respecteren."
 
-#: templates/rules.tpl.html:15
+#: templates/rules.tpl.html:71
 msgid "Dog entrance must be pre-authorized by the Management"
 msgstr "De aankomst moet worden goedgekeurd door de direktie."
 
-#: templates/rules.tpl.html:16
+#: templates/rules.tpl.html:72
 msgid ""
 "Under the authorisation of the management you can connect to the proper "
 "sockets necessary but only for lighting and fridge which must be earthen."
-" Tents are not entitled to power supply."
+" Small Tents (extra) are not entitled to power supply."
 msgstr ""
 "Aansluiting op het elektriciteitsnet aan de daarvoor bedoelde "
 "stopcontacten is alleen met geaarde stekkers voor verlichting en ijskast "
 "toegestaan, na verkregen toestemming van de direktie. Een klein tentje "
 "(extra) wordt niet van elektriciteit voorzien."
 
-#: templates/rules.tpl.html:17
+#: templates/rules.tpl.html:73
 msgid ""
 "No visits are allowed (see article 1). In case of authorised visits, they"
 " are subject to the price list."
@@ -546,7 +624,7 @@ msgstr ""
 "Bezoek is niet toegestaan (zie artikel 1). Voor eventueel toegestaan "
 "bezoek gelden de tarieven volgens de prijslijst."
 
-#: templates/rules.tpl.html:18
+#: templates/rules.tpl.html:74
 msgid ""
 "After consideration by the management, the non-observance of these rules "
 "or a behaviour that ruins the harmonious atmosphere of the camping site "

@@ -463,6 +463,11 @@ function init_booking(){
   });
 }
 
+function hideCookieBanner() {
+  document.getElementById('cookie-bar').style.display = 'none';
+  sessionStorage.setItem('cookie-bar', true);
+}
+
 /* main */
 $(function(){
     $('#menu').addClass('js closed');
