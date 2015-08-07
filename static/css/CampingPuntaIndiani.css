@@ -1671,6 +1671,7 @@ header.gallery-title {
   font-weight: 500;
   text-transform: capitalize;
   border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
 }
 
 section.gallery-album {
