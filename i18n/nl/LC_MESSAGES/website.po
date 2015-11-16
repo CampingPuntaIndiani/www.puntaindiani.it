@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2015-11-16 17:53+0100\n"
+"POT-Creation-Date: 2015-11-16 18:33+0100\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -666,16 +666,17 @@ msgstr "2 Mensen + 1 Pitch C + 1 Hond = &euro;17.00 al een dag"
 #: templates/services_and_offers.tpl.html:34
 #: templates/services_and_offers.tpl.html:50
 msgid "2 People + 1 Pitch B + power = &euro;19.00 a day"
-msgstr "2 Mensen + 1 Pitch B + power = &euro;19.00 al een dag"
+msgstr "2 Mensen + 1 Pitch B + stroom = &euro;19.00 al een dag"
 
 #: templates/services_and_offers.tpl.html:19
 #: templates/services_and_offers.tpl.html:35
 #: templates/services_and_offers.tpl.html:51
+#, fuzzy
 msgid ""
-"<strong>SPECIAL</strong> 2 People + 1 Pitch <strong>A</strong> + power = "
-"&euro;26.00 a day"
+"<strong>SPECIAL</strong> 2 People + 1 Pitch <strong>A directly on the "
+"lake</strong> + stroom = &euro;26.00 a day"
 msgstr ""
-"<strong>SPECIAL</strong> 2 Mensen + 1 Pitch <strong>A</strong> + power = "
+"<strong>SPECIAL</strong> 2 Mensen + 1 Pitch <strong>A direct aan het meer</strong> + stroom = "
 "&euro;26.00 al een dag"
 
 #: templates/services_and_offers.tpl.html:56
@@ -713,3 +714,4 @@ msgid ""
 "Discover the experiences that your stay in Valsugana offers.<br>\n"
 "            "
 msgstr ""
+

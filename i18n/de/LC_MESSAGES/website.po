@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2015-11-16 17:53+0100\n"
+"POT-Creation-Date: 2015-11-16 18:33+0100\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -687,12 +687,13 @@ msgstr "2 Personen + 1 Plaz B + Strom = &euro;19.00 pro Tag."
 #: templates/services_and_offers.tpl.html:19
 #: templates/services_and_offers.tpl.html:35
 #: templates/services_and_offers.tpl.html:51
+#, fuzzy
 msgid ""
-"<strong>SPECIAL</strong> 2 People + 1 Pitch <strong>A</strong> + power = "
-"&euro;26.00 a day"
+"<strong>SPECIAL</strong> 2 People + 1 Pitch <strong>A directly on the "
+"lake</strong> + power = &euro;26.00 a day"
 msgstr ""
-"<strong>SPECIAL</strong> 2 Personen + 1 Plaz <strong>A</strong> + Strom = "
-"&euro;26.00 a Tag"
+"<strong>SPECIAL</strong> 2 Personen + 1 Plaz <strong>A direkt am See</strong> + Strom ="
+" &euro;26.00 pro Tag"
 
 #: templates/services_and_offers.tpl.html:56
 msgid "cyclists offer"
@@ -733,3 +734,4 @@ msgstr ""
 "<br>\n"
 "Entdecken Sie die Erfahrungen, die Ihren Aufenthalt in Valsugana "
 "anbietet.\n"
+
