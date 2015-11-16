@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2015-11-16 15:47+0100\n"
+"POT-Creation-Date: 2015-11-16 17:53+0100\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -651,22 +651,38 @@ msgid "offers"
 msgstr ""
 
 #: templates/services_and_offers.tpl.html:16
-#: templates/services_and_offers.tpl.html:30
-#: templates/services_and_offers.tpl.html:44
-msgid "Low Season:<br> 2 People + 1 Pitch C + 1 dog = &euro;16 a day"
-msgstr "Low Season:<br> 2 Mensen + 1 Pitch C + 1 Hond = &euro;16 al een dag"
+#: templates/services_and_offers.tpl.html:32
+#: templates/services_and_offers.tpl.html:48
+msgid "Low Season:"
+msgstr "laagseizoen dagen:"
 
 #: templates/services_and_offers.tpl.html:17
-#: templates/services_and_offers.tpl.html:31
-#: templates/services_and_offers.tpl.html:45
-msgid "Low Season:<br> 2 People + 1 Pitch B + power = &euro;18 a day"
-msgstr "Low Season:<br> 2 Mensen + 1 Pitch B + power = &euro;18 al een dag"
+#: templates/services_and_offers.tpl.html:33
+#: templates/services_and_offers.tpl.html:49
+msgid "2 People + 1 Pitch C + 1 dog = &euro;17.00 a day"
+msgstr "2 Mensen + 1 Pitch C + 1 Hond = &euro;17.00 al een dag"
 
+#: templates/services_and_offers.tpl.html:18
+#: templates/services_and_offers.tpl.html:34
 #: templates/services_and_offers.tpl.html:50
+msgid "2 People + 1 Pitch B + power = &euro;19.00 a day"
+msgstr "2 Mensen + 1 Pitch B + power = &euro;19.00 al een dag"
+
+#: templates/services_and_offers.tpl.html:19
+#: templates/services_and_offers.tpl.html:35
+#: templates/services_and_offers.tpl.html:51
+msgid ""
+"<strong>SPECIAL</strong> 2 People + 1 Pitch <strong>A</strong> + power = "
+"&euro;26.00 a day"
+msgstr ""
+"<strong>SPECIAL</strong> 2 Mensen + 1 Pitch <strong>A</strong> + power = "
+"&euro;26.00 al een dag"
+
+#: templates/services_and_offers.tpl.html:56
 msgid "cyclists offer"
 msgstr "Speciaal voor Fietsers"
 
-#: templates/services_and_offers.tpl.html:57
+#: templates/services_and_offers.tpl.html:63
 msgid ""
 "Guests who arrive by bicycle and tent, pay ALWAYS (high and low season) "
 "only &euro;9.00 a day all incl."
@@ -674,11 +690,11 @@ msgstr ""
 "Als u komt met kleine tent en fiets , betaalt u ALTIJD (hoog-en "
 "laagseizoen) slechts €9.00 per dag alles inclusief."
 
-#: templates/services_and_offers.tpl.html:64
+#: templates/services_and_offers.tpl.html:70
 msgid "services"
 msgstr ""
 
-#: templates/services_and_offers.tpl.html:74
+#: templates/services_and_offers.tpl.html:80
 msgid ""
 "\n"
 "Camping Punta Indiani offers gratis for all guests:<br>\n"
@@ -689,7 +705,7 @@ msgid ""
 "            "
 msgstr ""
 
-#: templates/services_and_offers.tpl.html:90
+#: templates/services_and_offers.tpl.html:96
 msgid ""
 "\n"
 "Be prepared for your vacation!<br>\n"
@@ -697,28 +713,3 @@ msgid ""
 "Discover the experiences that your stay in Valsugana offers.<br>\n"
 "            "
 msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "You can reserve you place starting from 2015-01-01"
-#~ msgstr ""
-
-#~ msgid "surname"
-#~ msgstr ""
-
-#~ msgid "last"
-#~ msgstr ""
-
-#~ msgid "name"
-#~ msgstr ""
-
-#~ msgid "first"
-#~ msgstr ""
-
-#~ msgid "middle size caravan"
-#~ msgstr ""
-
-#~ msgid "Chose your favourite place"
-#~ msgstr ""
-

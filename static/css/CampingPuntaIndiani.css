@@ -1966,3 +1966,8 @@ form.booking .error {
   margin-top: 4px;
   margin-left: 40px;
 }
+
+strong {
+  color: #000;
+  font-weight: bold;
+}
