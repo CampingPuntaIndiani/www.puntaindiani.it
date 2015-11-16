@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2015-04-10 16:30+0200\n"
+"POT-Creation-Date: 2015-11-16 15:47+0100\n"
 "PO-Revision-Date: 2014-09-09 17:44+0200\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com\n"
 "Language-Team: -\n"
@@ -18,163 +18,167 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: templates/base.tpl.html:63
+#: templates/base.tpl.html:64
 msgid "home"
 msgstr ""
 
-#: templates/base.tpl.html:64
+#: templates/base.tpl.html:65
 msgid "prices"
 msgstr "prijzen"
 
-#: templates/base.tpl.html:65
+#: templates/base.tpl.html:66
 msgid "map"
 msgstr "plattegrond"
 
-#: templates/base.tpl.html:66
+#: templates/base.tpl.html:67
 msgid "route"
 msgstr ""
 
-#: templates/base.tpl.html:67
+#: templates/base.tpl.html:68
 msgid "around"
 msgstr "omgeving"
 
-#: templates/base.tpl.html:68
+#: templates/base.tpl.html:69
 msgid "gallery"
 msgstr ""
 
-#: templates/base.tpl.html:69
+#: templates/base.tpl.html:70
 msgid "services & offers"
 msgstr ""
 
-#: templates/base.tpl.html:73 templates/base.tpl.html:74
+#: templates/base.tpl.html:74 templates/base.tpl.html:75
 msgid "booking"
 msgstr "reserven"
 
-#: templates/base.tpl.html:93
+#: templates/base.tpl.html:94
 msgid "Merry Christmas and Happy new Year!"
 msgstr "Vrolijk Kerstfeest en Gelukkig Nieuwjaar!"
 
-#: templates/booking.tpl.html:15
+#: templates/booking.tpl.html:6
+msgid "Available from"
+msgstr ""
+
+#: templates/booking_2014.tpl.html:15
 msgid "Personal information"
 msgstr "Persoonlijke gegevens"
 
-#: templates/booking.tpl.html:18
+#: templates/booking_2014.tpl.html:18
 msgid "last name"
 msgstr "achternaam"
 
-#: templates/booking.tpl.html:26
+#: templates/booking_2014.tpl.html:26
 msgid "first name"
 msgstr "voornaam"
 
-#: templates/booking.tpl.html:34
+#: templates/booking_2014.tpl.html:34
 msgid "email"
 msgstr ""
 
-#: templates/booking.tpl.html:43
+#: templates/booking_2014.tpl.html:43
 msgid "birth date"
 msgstr "verjaardag"
 
-#: templates/booking.tpl.html:51
+#: templates/booking_2014.tpl.html:51
 msgid "gender"
 msgstr "geslacht"
 
-#: templates/booking.tpl.html:60
+#: templates/booking_2014.tpl.html:60
 msgid "citizenship"
 msgstr "burgerschap"
 
-#: templates/booking.tpl.html:71
+#: templates/booking_2014.tpl.html:71
 msgid "Other"
 msgstr "Ander"
 
-#: templates/booking.tpl.html:76
+#: templates/booking_2014.tpl.html:76
 msgid "staying"
 msgstr "verblijf"
 
-#: templates/booking.tpl.html:79
+#: templates/booking_2014.tpl.html:79
 msgid "arrival"
 msgstr "aankomst"
 
-#: templates/booking.tpl.html:87
+#: templates/booking_2014.tpl.html:87
 msgid "departure"
 msgstr "vertrek"
 
-#: templates/booking.tpl.html:96
+#: templates/booking_2014.tpl.html:96
 msgid "adults"
 msgstr "volwassenen"
 
-#: templates/booking.tpl.html:110
+#: templates/booking_2014.tpl.html:110
 msgid "children"
 msgstr "kind"
 
-#: templates/booking.tpl.html:125
+#: templates/booking_2014.tpl.html:125
 msgid "equipement"
 msgstr ""
 
-#: templates/booking.tpl.html:127
+#: templates/booking_2014.tpl.html:127
 msgid "middle sized caravan"
 msgstr "middelgrote caravan"
 
-#: templates/booking.tpl.html:132
+#: templates/booking_2014.tpl.html:132
 msgid "extra tents"
 msgstr "extra tenten"
 
-#: templates/booking.tpl.html:148
+#: templates/booking_2014.tpl.html:148
 msgid "I will take with me my pet &amp; thus I accept the following "
 msgstr "Ik zal nemen met mij mijn huisdier en dus accepteer ik de volgende "
 
-#: templates/booking.tpl.html:149 templates/prices.tpl.html:78
+#: templates/booking_2014.tpl.html:149 templates/prices.tpl.html:82
 msgid "conditions"
 msgstr "voorwaarden"
 
-#: templates/booking.tpl.html:153
+#: templates/booking_2014.tpl.html:153
 msgid "I will take a ..."
 msgstr "Ik zal een te nemen ..."
 
-#: templates/booking.tpl.html:158
+#: templates/booking_2014.tpl.html:158
 msgid "Booking options"
 msgstr "Boekingsmogelijkheden"
 
-#: templates/booking.tpl.html:162 templates/booking.tpl.html:173
+#: templates/booking_2014.tpl.html:162 templates/booking_2014.tpl.html:173
 msgid "day"
 msgstr "dag"
 
-#: templates/booking.tpl.html:164 templates/booking.tpl.html:175
+#: templates/booking_2014.tpl.html:164 templates/booking_2014.tpl.html:175
 msgid "people"
 msgstr "mensen"
 
-#: templates/booking.tpl.html:164 templates/booking.tpl.html:175
+#: templates/booking_2014.tpl.html:164 templates/booking_2014.tpl.html:175
 #: templates/prices.tpl.html:24 templates/prices.tpl.html:30
-#: templates/prices.tpl.html:36 templates/prices.tpl.html:88
-#: templates/prices.tpl.html:99 templates/prices.tpl.html:110
+#: templates/prices.tpl.html:36 templates/prices.tpl.html:92
+#: templates/prices.tpl.html:103 templates/prices.tpl.html:114
 msgid "pitch"
 msgstr "plek"
 
-#: templates/booking.tpl.html:164 templates/prices.tpl.html:66
+#: templates/booking_2014.tpl.html:164 templates/prices.tpl.html:66
 msgid "dog"
 msgstr "hond"
 
-#: templates/booking.tpl.html:165 templates/booking.tpl.html:176
+#: templates/booking_2014.tpl.html:165 templates/booking_2014.tpl.html:176
 msgid "low season days only"
 msgstr "laagseizoen dagen alleen"
 
-#: templates/booking.tpl.html:182
+#: templates/booking_2014.tpl.html:182
 msgid "Without promotions"
 msgstr "Zonder promoties"
 
-#: templates/booking.tpl.html:184
+#: templates/booking_2014.tpl.html:184
 msgid "Choose your favourite place"
 msgstr "Kies uw favoriete plek"
 
-#: templates/booking.tpl.html:194 templates/booking.tpl.html:224
-#: templates/booking.tpl.html:266
+#: templates/booking_2014.tpl.html:194 templates/booking_2014.tpl.html:224
+#: templates/booking_2014.tpl.html:266
 msgid "Any"
 msgstr "Elke"
 
-#: templates/booking.tpl.html:328
+#: templates/booking_2014.tpl.html:328
 msgid "note"
 msgstr ""
 
-#: templates/booking.tpl.html:329
+#: templates/booking_2014.tpl.html:329
 msgid ""
 "We would like to stay next to...\r\n"
 " We have got more than 5 children...\r\n"
@@ -184,19 +188,19 @@ msgstr ""
 " We hebben meer dan 5 kinderen kreeg...\r\n"
 " We willen graag een schaduwrijke plek...\r\n"
 
-#: templates/booking.tpl.html:333 templates/booking.tpl.html:334
+#: templates/booking_2014.tpl.html:333 templates/booking_2014.tpl.html:334
 msgid "I accept the"
 msgstr ""
 
-#: templates/booking.tpl.html:333 templates/prices.tpl.html:75
+#: templates/booking_2014.tpl.html:333 templates/prices.tpl.html:79
 msgid "camping regulations"
 msgstr ""
 
-#: templates/booking.tpl.html:334
+#: templates/booking_2014.tpl.html:334
 msgid "privacy policy"
 msgstr ""
 
-#: templates/booking.tpl.html:336
+#: templates/booking_2014.tpl.html:336
 msgid "reserve"
 msgstr ""
 
@@ -385,21 +389,29 @@ msgstr "kind"
 msgid "visitor"
 msgstr "bezoek"
 
-#: templates/prices.tpl.html:76
+#: templates/prices.tpl.html:72
+msgid "local tax"
+msgstr ""
+
+#: templates/prices.tpl.html:73
+msgid "0.70 each person (age&ge;14) for the first 10 days of stay"
+msgstr ""
+
+#: templates/prices.tpl.html:80
 msgid "2nd car | small tent | boats, etc.. Outside the place."
 msgstr ""
 
-#: templates/prices.tpl.html:77
+#: templates/prices.tpl.html:81
 msgid "each visit has to be pre-authorized by direction."
 msgstr "elk bezoek dienen te worden goedgekeurd door de richting."
 
-#: templates/prices.tpl.html:78
+#: templates/prices.tpl.html:82
 msgid ""
 "dog entrance must be pre-authorized by the Management and must comply the"
 " following"
 msgstr "De aankomst moet worden goedgekeurd door de direktie en op deze"
 
-#: templates/prices.tpl.html:91
+#: templates/prices.tpl.html:95
 msgid ""
 "\n"
 "Pitches direct on the water.\n"
@@ -409,7 +421,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:102
+#: templates/prices.tpl.html:106
 msgid ""
 "\n"
 "Pitches near the water but not directly on.\n"
@@ -419,7 +431,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/prices.tpl.html:113
+#: templates/prices.tpl.html:117
 msgid ""
 "\n"
 "Wooded and grassy pitches.\n"
@@ -666,7 +678,7 @@ msgstr ""
 msgid "services"
 msgstr ""
 
-#: templates/services_and_offers.tpl.html:75
+#: templates/services_and_offers.tpl.html:74
 msgid ""
 "\n"
 "Camping Punta Indiani offers gratis for all guests:<br>\n"
@@ -677,7 +689,7 @@ msgid ""
 "            "
 msgstr ""
 
-#: templates/services_and_offers.tpl.html:92
+#: templates/services_and_offers.tpl.html:90
 msgid ""
 "\n"
 "Be prepared for your vacation!<br>\n"
