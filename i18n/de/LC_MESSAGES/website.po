@@ -633,7 +633,6 @@ msgstr ""
 "der Direktion erforderlich."
 
 #: templates/rules.tpl.html:72
-#, fuzzy
 msgid ""
 "Under the authorisation of the management you can connect to the proper "
 "sockets necessary but only for lighting and fridge which must be earthen."
@@ -687,7 +686,6 @@ msgstr "2 Personen + 1 Plaz B + Strom = &euro;19.00 pro Tag."
 #: templates/services_and_offers.tpl.html:19
 #: templates/services_and_offers.tpl.html:35
 #: templates/services_and_offers.tpl.html:51
-#, fuzzy
 msgid ""
 "<strong>SPECIAL</strong> 2 People + 1 Pitch <strong>A directly on the "
 "lake</strong> + power = &euro;26.00 a day"
