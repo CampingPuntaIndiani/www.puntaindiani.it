@@ -331,31 +331,43 @@ function init_booking(){
 
   /* Season configuration */
   var
-    opening     = new Date('2015-05-01'),
-    closure     = new Date('2015-09-31'),
-    start_high  = new Date('2015-07-05'),
-    end_high    = new Date('2015-08-24');
+    opening     = new Date('2016-04-29'),
+    closure     = new Date('2016-09-30'),
+    start_high  = new Date('2016-07-07'),
+    end_high    = new Date('2016-08-26');
 
   function opt(_) { // is not validation but for manage booking options
-    var a = new Date(id('arrival').value), b = new Date(id('departure').value);
-    var wp = id('with_pet'), area = id('area'), pet = id('pet'),
-      opt_none = id('OPT_NONE'), opt_a = id('OPT_A'), opt_b = id('OPT_B');
+    var a = new Date(id('arrival').value), b = new Date(id('departure').value),
+      wp = id('with_pet'), areas = $('input[name=area]'), pet = id('pet'),
+      card = id('card'), area_c = $('input[name=area][value=C]')[0],
+      eligible = $('[data-eligible]');
 
     // Date based activation
-    var enable_opt = (!isNaN(a) && !(isNaN(b)) && (a < start_high || b > end_high));
-    opt_a.disabled = opt_b.disabled = !enable_opt;
+    var enable_opt = (!isNaN(a) && !(isNaN(b)) &&
+        (a < start_high || b > end_high)) &&
+        (card.value.length !== 0);
 
     // Pet based
     if (wp.checked) {
       pet.required = true;
-      area.value = 'C'; area.onchange(); // Too fast
-      area.disabled = true;
-
-      opt_b.disabled = opt_none.checked = true;
+      area_c.checked = 'checked';
+      sync_place();
+      areas.map(function(_,e){e.disabled=true;})
     } else {
-      pet.required = area.disabled = false;
-      opt_b.disabled = false || !enable_opt;
+      pet.required = false;
+      areas.map(function(_,e){e.disabled=false;})
     }
+
+    /*
+    var d = enable_opt ? 'block' : 'none';
+    eligible.map(function(_, e){e.style.display=d;});
+    */
+    if (enable_opt)
+      eligible.map(function(_, e){$(e).slideDown();});
+    else
+      eligible.map(function(_, e){$(e).slideUp();});
+
+
     return true;
   };
 
@@ -372,8 +384,6 @@ function init_booking(){
   // ref: http://www.regular-expressions.info/email.html
   email = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
-
-
   /* Real-time validation & processing */
   rt(id('surname'), val(id('surname'), [rx(string)]));
   rt(id('name'), val(id('name'), [rx(string)]));
@@ -382,11 +392,12 @@ function init_booking(){
   rt(id('arrival'), val(id('arrival'), [date, date_lt(function(){return id('departure');}), opt]));
   rt(id('departure'), val(id('departure'), [date, date_gt(function(){return id('arrival');}), opt]));
   rt(id('equipment'), val(id('equipment'), [rx(/^[\w\d ]+$/)]));
+  rt(id('card'), val(id('card'), [opt]));
 
   // Area - Pitch binding
-  rt(id('area'), function(){
-    var area = id('area').value,
-      pitch = $('#pitch');
+  function sync_place() {
+    var pitch = $('#pitch'),
+      area = $('input[name=area]:checked').val()
 
     pitch.children('optgroup').hide();
     pitch.val(pitch
@@ -395,27 +406,11 @@ function init_booking(){
       .children('option:first-child()').
       val()
     );
-  });
-  id('area').classList.remove('hide');
+  }
+  $('input[name=area]').on('change', sync_place).change();
 
   // Pet bindings
   rt(id('with_pet'), opt);
-
-  // Pitch bindings
-  (function(){
-    var area = document.getElementById('area'),
-      pitch = document.getElementById('pitch');
-
-    $('input[name=opt]').change(function(_){
-      var disable = this.value != 'NONE';
-      if (this.value == 'A_CKE_C') area.value = 'C';
-      if (this.value == 'A_CKE_B') area.value = 'B';
-      area.onchange();
-      area.disabled = disable;
-      pitch.disabled = disable;
-    }).change();
-  })();
-
 
   var form = $('form#reserve');
   form.on('submit', function(e){

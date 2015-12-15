@@ -1170,7 +1170,6 @@ body {padding-top: 10px;}
 #menu li.selected a {color: #129FEA;}
 #menu li.booking a {color: #097054; font-weight: 700;}
 
-#menu ul li:not(.nostyle) a:hover {text-decoration: underline;}
 
 @media only screen and (max-width: 1199px) {#brand {font-size: 46px;} #logo {height: 64px;}}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1831,7 +1830,77 @@ form.booking button[type=submit] {
   border: solid 1px #4cae4c;
 }
 
-form.booking section[name=offers] > div {
+
+form.booking div.o {
+  width: 124px;
+  height: 124px;
+  margin: auto;
+  margin: 1em 4px 1em 4px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  position: relative;
+  background: white;
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 1199px) {
+  form.booking div.o {margin: 1em 1.5em 1em 1.5em;display:inline-block;}
+}
+
+form.booking div.o header {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #333;
+}
+
+form.booking div.o header small {
+    font-weight: normal;
+    text-shadow: none;
+    font-size: 8pt;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+form.booking div.o span.enchant {
+    width: auto;
+    font-weight: bold;
+}
+
+form.booking div.o div.opt {
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align:center;
+}
+
+form.booking section[name="chose_place"] > * {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  vertical-align: top;
+}
+@media only screen and (min-width: 992px) {
+  form.booking section[name="chose_place"] > div {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+  }
+}
+
+form.booking div[name="d_area"] {height: auto;}
+form.booking div[name="d_place"] {height: 160px; padding-top: 60px;}
+
+form.booking div.o > div.opt  input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
+form.booking section[name="d_place"] > div {
   width: 268px;
   height: 166px;
   margin: auto;
@@ -1841,61 +1910,21 @@ form.booking section[name=offers] > div {
   position: relative;
 }
 
-@media only screen and (min-width: 1199px) {
-  form.booking section[name=offers] > div {margin: 0 2em 0 2em;display:inline-block;}
-  form.booking section[name=offers] > div:first-child {float:left;}
-  form.booking section[name=offers] > div:last-child {float:right;}
+.opt-banner {
+  width: 80%!important;
+  margin: auto;
+  margin-top: 1em;
+  padding: .5em 0 .5em 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  border-left: 1px solid;
+  border-left-color: #1b809e;
+  border-left-width: 4px;
+  box-shadow: 0 2px 3px #ccc;
 }
 
-form.booking section[name=offers] > div > header {
-  text-align: left;
-  float:left;
-  width: auto;
-  font-size: 16px;
-  height: 2.5em;
-  display: inline-block;
-}
-form.booking section[name=offers] label {
-  position: relative;
-  float: right;
-  height: 2.4em;
-  width: 2.4em;
-  border: solid #ccc;
-  border-width: 0 0 1px 1px;
-  border-bottom-left-radius: 3px;
-  line-height: 200%;
-  font-weight: bold;
-  text-shadow: 1px 1px 0 #333;
-  clear: right;
-}
-
-form.booking section[name=offers] span.enchant {
-  width: auto;
-  margin: .5em 0 .5em 0;p
-  font-size: 22px;
-  font-weight: bold;
-  text-shadow: 1px 1px 0 #333;
-}
-
-form.booking section[name=offers] footer {
-  width: 100%;
-  font-size:16px;
-}
-
-form.booking section[name=offers] > div > div.opt {
-  position: absolute;
-  bottom: -1em;
-  left: 0;
-  right: 0;
-  width: 100%;
-  text-align:center;
-}
-
-form.booking section[name=offers] > div > div.opt  input {
-  width: 18px;
-  height: 18px;
-  margin: 0;
-}
+.opt-banner span {color: #1b809e;}
+.star {font-size:8pt;}
 
 form.booking textarea {
   white-space: normal;
@@ -1905,6 +1934,8 @@ form.booking textarea {
 form.booking .error {
   border-color: red !important;
 }
+
+
 
 .hide {display:none;}
 
@@ -1971,3 +2002,5 @@ strong {
   color: #000;
   font-weight: bold;
 }
+
+form.booking [data-eligible] {display:none;}
