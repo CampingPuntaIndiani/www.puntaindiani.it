@@ -1839,8 +1839,8 @@ form.booking div.o {
   border: 1px solid #ccc;
   border-radius: 100%;
   position: relative;
-  background: white;
   vertical-align: top;
+  z-index: 0;
 }
 
 @media only screen and (min-width: 1199px) {
@@ -1877,7 +1877,7 @@ form.booking div.o div.opt {
   text-align:center;
 }
 
-form.booking section[name="chose_place"] > * {
+form.booking section[name="chose_place"] > div {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -1935,7 +1935,22 @@ form.booking .error {
   border-color: red !important;
 }
 
-
+#A:after, #B:after, #C:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity : 0.4;
+    z-index: -1;
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+#A:after {background-image: url('../img/prices/placeA.jpg');}
+#B:after {background-image: url('../img/prices/placeB.jpg');}
+#C:after {background-image: url('../img/prices/placeC.jpg');}
 
 .hide {display:none;}
 

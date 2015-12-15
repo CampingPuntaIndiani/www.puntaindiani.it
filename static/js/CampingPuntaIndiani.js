@@ -345,28 +345,28 @@ function init_booking(){
     // Date based activation
     var enable_opt = (!isNaN(a) && !(isNaN(b)) &&
         (a < start_high || b > end_high)) &&
-        (card.value.length !== 0);
+        (card.value !== 'NONE');
 
     // Pet based
     if (wp.checked) {
       pet.required = true;
       area_c.checked = 'checked';
       sync_place();
-      areas.map(function(_,e){e.disabled=true;})
     } else {
       pet.required = false;
-      areas.map(function(_,e){e.disabled=false;})
     }
+    areas.map(function(_,e){e.disabled=wp.checked;})
 
     /*
     var d = enable_opt ? 'block' : 'none';
     eligible.map(function(_, e){e.style.display=d;});
     */
-    if (enable_opt)
-      eligible.map(function(_, e){$(e).slideDown();});
-    else
-      eligible.map(function(_, e){$(e).slideUp();});
-
+    if ((eligible[0].style.display == 'none') === enable_opt) {
+      if (enable_opt)
+        eligible.map(function(_, e){$(e).slideDown();});
+      else
+        eligible.map(function(_, e){$(e).slideUp();});
+    }
 
     return true;
   };
