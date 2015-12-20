@@ -336,6 +336,28 @@ function init_booking(){
     start_high  = new Date('2016-07-07'),
     end_high    = new Date('2016-08-26');
 
+  function perm(_) {
+    var a = new Date(id('arrival').value), b = new Date(id('departure').value),
+      show_it = !isNaN(a) && !(isNaN(b)) &&
+                Math.ceil(
+                  Math.abs(a.getTime() - b.getTime())
+                    / (1000 * 3600 * 24)
+                ) <= 5,
+      perms=$('[data-perm]');
+    console.log(show_it);
+    console.log(perms[0].style.display);
+
+    if (perms.first().is(':visible') !== show_it) {
+      console.log('in if');
+      if (show_it)
+        perms.map(function(_, e){console.log(e); $(e).slideDown();});
+      else
+        perms.map(function(_, e){$(e).slideUp();});
+    }
+
+    return true;
+  };
+
   function opt(_) { // is not validation but for manage booking options
     var a = new Date(id('arrival').value), b = new Date(id('departure').value),
       wp = id('with_pet'), areas = $('input[name=area]'), pet = id('pet'),
@@ -361,7 +383,7 @@ function init_booking(){
     var d = enable_opt ? 'block' : 'none';
     eligible.map(function(_, e){e.style.display=d;});
     */
-    if ((eligible[0].style.display == 'none') === enable_opt) {
+    if (eligible.first().is(':visible') !== enable_opt) {
       if (enable_opt)
         eligible.map(function(_, e){$(e).slideDown();});
       else
@@ -389,8 +411,8 @@ function init_booking(){
   rt(id('name'), val(id('name'), [rx(string)]));
   rt(id('email'), val(id('email'), [rx(email)]));
   rt(id('birth_date'), val(id('birth_date'), [date]));
-  rt(id('arrival'), val(id('arrival'), [date, date_lt(function(){return id('departure');}), opt]));
-  rt(id('departure'), val(id('departure'), [date, date_gt(function(){return id('arrival');}), opt]));
+  rt(id('arrival'), val(id('arrival'), [date, date_lt(function(){return id('departure');}), opt, perm]));
+  rt(id('departure'), val(id('departure'), [date, date_gt(function(){return id('arrival');}), opt, perm]));
   rt(id('equipment'), val(id('equipment'), [rx(/^[\w\d ]+$/)]));
   rt(id('card'), val(id('card'), [opt]));
 
