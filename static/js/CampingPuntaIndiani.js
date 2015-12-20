@@ -408,6 +408,10 @@ function init_booking(){
     );
   }
   $('input[name=area]').on('change', sync_place).change();
+  $('div[name=d_area] > div').on('click', function(e){
+    $(e.currentTarget).find('input')[0].checked=true;
+    sync_place();
+  });
 
   // Pet bindings
   rt(id('with_pet'), opt);
