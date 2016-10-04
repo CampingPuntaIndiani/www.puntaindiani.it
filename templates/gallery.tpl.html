@@ -5,19 +5,25 @@
 
 {% block body %}
 
-    {% include 'album.tpl.html' %}
 
-    <header class="gallery-title">Videos</header>
+    <header class="gallery-title" id="videos">Videos</header>
 
     <section class="video">
-        <iframe src="http://www.youtube.com/embed/PqUCQyr6FtE" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
-        <footer>Video - J. Brouwers Production - Thanks again</footer>
+        <iframe src="http://player.vimeo.com/video/177881566" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
+        <footer><a href="https://vimeo.com/177881566">CAMPING PUNTA INDIANI - VALCANOVER ITALY</a> from <a href="https://vimeo.com/hansniew">Hans Nieuwenhuis</a> on <a href="https://vimeo.com">Vimeo</a>.</footer>
     </section>
 
     <section class="video">
         <iframe src="http://player.vimeo.com/video/8970989" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
         <footer><a href="http://vimeo.com/8970989">Camping Punta Indiani</a> from <a href="http://vimeo.com/renzomobiel">Renzo</a> on <a href="http://vimeo.com">Vimeo</a>.</footer>
     </section>
+
+    <section class="video">
+        <iframe src="http://www.youtube.com/embed/PqUCQyr6FtE" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
+        <footer>Video - J. Brouwers Production - Thanks again</footer>
+    </section>
+
+    {% include 'album.tpl.html' %}
 
     <div id="blueimp-gallery" class="blueimp-gallery">
         <div class="slides"></div>
