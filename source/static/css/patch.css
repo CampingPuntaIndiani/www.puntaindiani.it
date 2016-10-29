@@ -1,0 +1,73 @@
+input {
+	outline: none;
+
+	background: transparent;
+	border: none;
+	height: 20px;
+	margin-top: 4px;
+	padding: 0;
+	vertical-align: top;
+	width: 100%;
+
+	color: #222;
+	font: 16px arial,sans-serif;
+
+	color: #999;
+
+	color: #d3d3d3;
+
+	font-family: Roboto,arial,sans-serif!important;
+	height: auto!important;
+}
+
+select {
+	border: 1px solid #ccc;
+  box-shadow: none;
+
+	text-align: center;
+	padding: 5px 30px 5px 5px;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	border-radius: 5px;
+}
+select:focus {outline: none}
+
+
+.select-wrapper {display: inline-block;}
+.select-wrapper::after {
+	position: relative;
+
+	content: "\25BC";
+
+
+	left: -27px;
+	top: 1px;
+
+	font-size: .7em;
+
+	height: 1.2em;
+	padding: 5px 2px 5px 2px;
+	vertical-align: bottom;
+	border: 1px solid transparent;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width: 10px;
+
+	background: transparent;
+
+	pointer-events: none;
+ 	margin-right: -27px;
+}
+
+/*target Internet Explorer 9 and Internet Explorer 10:*/
+@media screen and (min-width:0\0) {
+	select {
+		background:none;
+		padding: 5px;
+	}
+}
+
+

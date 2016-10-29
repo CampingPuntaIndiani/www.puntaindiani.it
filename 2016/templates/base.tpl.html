@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+
+    <title>{{title|capitalize}}</title>
+
+    <!-- Google internalization -->
+    <link rel="alternate" hreflang="x-default" href="/en/{{page}}.html">
+    <link rel="alternate" hreflang="en" href="/en/{{page}}.html">
+    <link rel="alternate" hreflang="it" href="/it/{{page}}.html">
+    <link rel="alternate" hreflang="de" href="/de/{{page}}.html">
+    <link rel="alternate" hreflang="nl" href="/nl/{{page}}.html">
+
+
+    <!-- A little bit of egocentricism :p -->
+    <meta name="author" content="Martin Brugnara <martin.brugnara@gmail.com">
+
+    <!-- Google -->
+    <meta name="google-site-verification" content="h7NhDkvsryR3wPb1KDHoRfajA7moBLGymNKtzpgerJ8"/>
+    <meta name="description" content="Camping Punta Indiani snc - Lago Caldonazzo - Italy - Trentino - Camping">
+
+    <!-- IE compatibility shit -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="icon" href="/static/favicon.png">
+
+    <link rel="stylesheet" href="../static/css/CampingPuntaIndiani.min.css">
+
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/CampingPuntaIndiani.min.js"></script>
+
+    <noscript>
+        <style type="text/css">
+            #header-slide-show {list-style:none; margin-top: 40px;}
+            #header-slide-show li {display: none;}
+            #header-slide-show li:first-child {display: block;}
+            form.booking [data-perm] {display: block;}
+        </style>
+    </noscript>
+    {% block head %}{% endblock %}
+</head>
+<body>
+
+  <section name="lang">
+    <a href="../en/{{ page }}.html" target="_self"><i class="flag flag-en">en</i></a>
+    <a href="../nl/{{ page }}.html" target="_self"><i class="flag flag-nl">nl</i></a>
+    <a href="../de/{{ page }}.html" target="_self"><i class="flag flag-de">de</i></a>
+    <a href="../it/{{ page }}.html" target="_self"><i class="flag flag-it">it</i></a>
+  </section>
+
+    <header>
+      <img id="logo" src="../static/img/logo.png" alt="logo">
+      <p id="brand">Camping Punta Indiani</p>
+    </header>
+    <section id="menu">
+      <ul class="only-vert">
+        <li>Menu<i class="icon icon-open">&nbsp;</i><i class="icon icon-close">&nbsp;</i></li>
+      </uL>
+      <ul>
+        <li {% if page == 'home' %}class="selected"{% endif %}><a href="home.html">{{ _('home') }}</a></li>
+        <li {% if page == 'prices' %}class="selected"{% endif %}><a href="prices.html">{{ _('prices') }}</a></li>
+        <li {% if page == 'map' %}class="selected"{% endif %}><a href="map.html">{{ _('map') }}</a></li>
+        <li {% if page == 'route' %}class="selected"{% endif %}><a href="route.html">{{ _('route') }}</a></li>
+        <li {% if page == 'around' %}class="selected"{% endif %}><a href="around.html">{{ _('around') }}</a></li>
+        <li {% if page == 'gallery' %}class="selected"{% endif %}><a href="gallery.html">{{ _('gallery') }}</a></li>
+        <li {% if page == 'services_and_offers' %}class="selected"{% endif %}><a href="services_and_offers.html">{{ _('services & offers') }}</a></li>
+      </ul>
+      <ul class="pull-right">
+        <li class="booking" {% if page == "booking" %}class="pure-menu-selected"{% endif %}>
+          <a href="booking.html">{{ _("booking") }}</a>
+          <!-- <a href="http://booking.campingpuntaindiani.it">{{ _("booking") }}</a> -->
+        </li>
+      </ul>
+    </section>
+
+    <ul class="bxslider" id="header-slide-show">
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader0.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader1.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader2.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader3.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader4.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader5.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader6.jpg" alt="Camping Punta Indiani"></li>
+      <li><img src="../static/img/slideshow/CampingPuntaIndianiHeader7.jpg" alt="Camping Punta Indiani"></li>
+    </ul>
+
+    <!-- Used only to display important messages (should) -->
+    <section id="banner">
+      <a href="gallery.html#videos" style="color: white; text-decoration: underline;">{{ _('Watch the new video!') }}</a>
+    </section>
+
+    <!--
+    <section id="news">
+      <div>
+        News
+      </div><div>
+        {% include 'news.tpl.html' %}
+      </div>
+    </section>
+    -->
+
+<!-- BODY START -->
+    {% block body %}{%  endblock %}
+<!-- BODY END -->
+
+    <footer>
+        <section class="ref expand center">
+            <img src="../static/img/footer/trentino.png" alt="Trentino">
+            <img src="../static/img/footer/valsugana.png" alt="Valsugana">
+
+            <img src="../static/img/footer/adac.png" alt="ADAC">
+            <img src="../static/img/footer/anwb.png" alt="ANWB">
+            <img src="../static/img/footer/acsi.png" alt="ACSI">
+            <img src="../static/img/footer/campingit.png" alt="Camping.it">
+
+            <img src="../static/img/footer/dcc.png" alt="DCC"/>
+            <img src="../static/img/footer/ecc.png" alt="ECC">
+
+            <img src="../static/img/footer/alan_rogers.png" alt="Alan Rogers">
+
+            <img src="../static/img/footer/wifi.png" alt="WIFI">
+            <img src="../static/img/footer/zoover.png" alt="Zoover winner 2014">
+        </section>
+        <section class="half preserve">
+            <address>
+                <strong>Camping Punta Indiani</strong><br>
+                38057 Valcanover Pergine<br>
+                (TN) ITALY<br>
+                <abbr title="Phone">Phone: 0461 548062</abbr><br>
+                <a class="h" href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
+            </address>
+        </section><section class="half right preserve">
+            <br>
+            &copy; <a href="mailto:martin.brugnara@gmail.com">Martin Brugnara</a> 2010-2015 | <a href="authors.html" target="_blank">Contributors</a> <br>
+            <p><small>Last update : <time datetime="{{ now }}">{{ now }}</time></small><p>
+            <br>
+        </section>
+        <section class="expand center">
+        Camping Punta Indiani Snc  di Piffer Renzo e C. - P.IVA 01834810226 <br>
+        </section>
+    </footer>
+
+    <div id="modal">
+        <section>
+            <a href="#" data-action="close">&otimes;</a>
+            <section name="modal-content"><!-- load here via AJAX --></section>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+      /* Call here before HTML component is rendered */
+      (function(){if (!sessionStorage || !sessionStorage.getItem('cookie-bar')) document.write('<div id="cookie-bar"><p>Il Sito di Camping Punta Indiani utilizza cookies di sessione ed analytics.Per saperne di pi&ugrave; consulta la nostra <a href="cookie.html">Privacy Policy</a>.<br>Se prosegui nella navigazione di questo sito, acconsenti all’utilizzo dei cookies.</p><button onclick="hideCookieBanner()">Continua</button></div>');})();
+    </script>
+    <noscript>
+        <p>Il Sito di Camping Punta Indiani utilizza cookies di sessione ed analytics.
+        Per saperne di pi&ugrave; consulta la nostra <a href="cookie.html">Privacy Policy</a>.<br>
+        Se prosegui nella navigazione di questo sito, acconsenti all’utilizzo dei cookies.</p>
+    </noscript>
+
+    <!-- ShinyStat -->
+    <script type="text/javascript" language="JavaScript" src="http://codiceisp.shinystat.com/cgi-bin/getcod.cgi?USER=puntaindiani&P=4"></script>
+    <noscript>
+        <img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=puntaindiani&P=4" alt="" style="border:0; height:0; width:0;">
+    </noscript>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var ref = '';
+      if (sessionStorage) {
+        ref = sessionStorage.getItem('HomeRef');
+        sessionStorage.removeItem('HomeRef');
+      }
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34314298-1']);
+      if (ref) _gaq.push(['set', 'referrer', ref]); // Hacking referrer
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</body>
+</html>

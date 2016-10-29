@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=en/home.html">
+  </noscript>
+  <script type="text/javascript">
+  <!--
+    window.onload = function(){
+      if (sessionStorage) sessionStorage.setItem("HomeRef", document.referrer || ''); // Save referrer
+
+      // Redirect
+      var lang_map = {
+        'de': 'de',
+        'nl': 'nl',
+        'it': 'it',
+      }
+      var lang = lang_map[window.navigator.language];
+      if (lang === undefined) {
+        lang = 'en'
+      }
+
+      window.location = lang + "/home.html"
+    };
+  //-->
+  </script>
+</head>
+<body>
+</body>
+</html>

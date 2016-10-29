@@ -1,5 +1,0 @@
-unipath
-pytz
-babel
-Jinja2
-pillow
