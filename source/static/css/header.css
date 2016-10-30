@@ -1,8 +1,15 @@
-nav {
+body.fix #menu {
 	position: fixed;
 	z-index: 2;
 	top: 0;
+}
+#menu-placeholder {display: none;}
+body.fix #menu-placeholder {
+  display: block;
+	height: 55px;
+}
 
+nav {
 	display: flex;
 	justify-content: space-between;
 	box-sizing: border-box;
@@ -16,8 +23,7 @@ nav {
 	background-color: #0288d1;
 	box-shadow:rgba(0,0,0,0.3) 0 1px 4px 0;
 
-
-  font-family: 'Noto Sans';
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
 }
 
 nav ul {
@@ -40,6 +46,7 @@ nav a, nav a:hover, nav a:visited {
 
 	color: #fff;
 	text-decoration: none;
+  text-transform: capitalize;
 
 	padding: 0 20px 0 20px;
 }

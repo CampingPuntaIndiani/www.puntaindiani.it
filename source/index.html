@@ -31,14 +31,25 @@
     <link rel="alternate" hreflang="nl" href="/nl/{{page}}.html">
     -->
 
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="static/css/patch.css">
+    <!--    <link rel="stylesheet" type="text/css" href="static/css/patch.css"> -->
     <link rel="stylesheet" type="text/css" href="static/css/header.css">
     <link rel="stylesheet" type="text/css" href="static/css/base.css">
 
     </head>
     <body>
-		<nav>
+        <section id="intro">
+            <div>
+                <h1>Camping Punta&nbsp;Indiani</h1>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <a href="#reserve" class="reserve-button">Prenota</a>
+            </div>
+            <div class="arrow"><a href="#menu"><img src="static/img/arrow.png" alt="arrow"></a></div>
+        </section>
+
+        <div id="menu-placeholder"></div>
+		<nav id="menu">
             <span class="brand only-small">Camping Punta Indiani</span>
             <input type="checkbox" name="menu-toggle" id="menu-toggle" class="toggle" />
             <label for="menu-toggle"><div><div></div><div></div></div></label>
@@ -46,57 +57,79 @@
 			<span id="logo"></span>
 
             <ul>
-                <li><a href="#accomodations">Accommodations</a></li>
-                <li><a href="#outdoor">Outdoor</a></li>
-                <li><a href="#where-we-are">Where we are</a></li>
-                <li><a href="#offers">Offers</a></li>
-                <li><a href="#prices">Prices</a></li>
-                <li><a href="#reserve">Reserve</a></li>
+                <li><a href="#accomodations">piazzole</a></li>
+                <li><a href="#outdoors">dintorni</a></li>
+                <li><a href="#find-us">dove siamo</a></li>
+                <li><a href="#downloads">Lorem</a></li>
+                <li>|</li>
+                <li><a href="#offers">offerte</a></li>
+                <li><a href="#reserve">prenota</a></li>
             </ul>
         </nav>
 
-        <section id="intro">
-            <footer>
-				<span>Booking 2017</span>
-                <form action="#booking" method="GET">
-                    <fieldset name="start">
-                        <label for="start_month"><i class="arrival">&nbsp;</i><i class="fa fa-plane arrival" aria-hidden="true"></i><span class="big-only">Arrival</span></label>
-                        <!-- TODO: fix coherence via JS -->
-                        <input name="start_year" type="hidden" value="2017">
-                        <div class="select-wrapper"><select name="start_month" class="month"><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option></select></div>
-                        <div class="select-wrapper"><select name="start_day" class="day"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
-                    </fieldset>
 
-                    <fieldset name="end">
-                        <label for="end_month"><i class="fa fa-plane departure" aria-hidden="true"></i><span class="big-only">Departure</span></label>
-                        <!-- TODO: fix coherence via JS -->
-                        <input name="end_year" type="hidden" value="2017">
-                        <div class="select-wrapper"><select name="end_month" class="month"><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option></select></div>
-                        <div class="select-wrapper"><select name="end_day" class="day"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
-                    </fieldset>
+        <section id="welcome" class="no-full">
+            <header>
+                <p>Al Camping Punta Indiani, direttamente in riva al Lago di
+                    Caldonazzo, nel cuore della Valsugana, i veri campeggiatori
+                    trovano lo spirito originale del campeggio:
+                    familiare, autentico, essenziale, l'emozione di una vera
+                    vacanza per tutti nella natura del Trentino.
+                </p>
 
-                    <button type="submit" class="info">Info</button>
-                    <button type="submit" class="reserve">Reserve</button>
-                </form>
+                <input type="checkbox" name="welcome-more-control" id="welcome-more-control" />
+                <label for="welcome-more-control">more</label>
+
+                <div id="welcome-more">
+                    <p>Il campeggio occupa la penisola di Punta Indiani e si affaccia sul lago di Caldonazzo con 400 metri di spiaggia privata  riservata ai nostri ospiti.</p>
+                    <p>Le piazzole sono 115 , su una superficie di 15.000mq,  tutte accessibili a camper, roulottes e tende,  sono erbose e ombreggiate da grandi alberi.</p>
+                    <p>Tutte le piazzole sono dotate di allacciamento alla rete elettrica, tutto il campeggio   è coperto da rete wi-fi.</p>
+                    <p>Il campeggio  offre tre tipologie di piazzole, per soddisfare i diversi gusti ed esigenze.</p>
+                    <p>Nelle piazzole “Relax” si può portare il proprio cane. Non è invece possibile portare i cani nella zona sul lago.</p>
+                    <p>Abbiamo due blocchi servizi,   con  acqua calda corrente gratuita, locale per lavare stoviglie e panni,  sanitari e docce calde 24 ore su 24. A disposizione inoltre bagno per disabili, lavatrici ed asciugatrici,  due wc chimici.</p>
+                    <p>Ci un sono parco giochi per bambini, un campetto da green-volley/volano, un tavolo da ping-pong.</p>
+                    <p>Nel campeggio si possono acquistare vini Trentini,  bibite e gelati, Il Market del paese offre prodotti tipici genuini e convenienti e dista 50 metri dal campeggio, nelle immediate vicinanze  si trovano  anche la fermata del bus, bar e ristoranti.</p>
+                </div>
+            </header>
+		</section>
+
+
+        <section id="accomodations">
+            <header class="no-full">
+                <h1 class="center">Le nostre Piazzole</h1>
+                <p class="center">Condividi una nuova dimensione di vacanza con la tua famiglia,<br> i tuoi amici o con la tua metà e se hai un amico a 4 zampe...porta anche lui.</p>
+            </header>
+
+            <div id="pitch-matrix" class="flex">
+                <div id="pitch-text">
+                    <p>Abbiamo scelto di preservare le caratteristiche naturali di Punta indiani,   il campeggio è  adattato all'ambiente naturale originario, perciò le piazzole hanno caratteristiche uniche, variano per posizionamento e dimensioni, seguendo la naturale conformazione del terreno.</p>
+                    <p>Le piazzole  “spiaggia” e “lago” si affacciano su spiaggia e lago, mentre le piazzole  “relax” sono  posizionate su un  prato  a terrazze fra gli alberi, sono ampie e adatte per gruppi di amici, famiglie numerose, per chi ama la privacy ed il relax, qui si può soggiornare con il proprio cane.</p>
+                    <p>La maggior parte delle piazzole  “spiaggia” e alcune piazzole “lago” hanno il  parcheggio auto fuori piazzola, nelle piazzole “relax”, più ampie, è previsto il parcheggio auto in piazzola.</p>
+                    <p>Tutte le piazzole  dispongono di collegamento elettrico a  norme CEE (4 Ampere) e sono coperte da rete WI-FI.</p>
+                    <p>Tutte le tipologie di piazzola sono prenotabili: se desiderate una piazzola vicino ai vostri amici, un posto particolarmente ampio o ombreggiato o vicino al parco giochi o ai servizi specificatelo nelle “note” e faremo del nostro meglio per  riservarvi la piazzola più adatta.</p>
+                </div>
+                <div id="pitch-a"></div>
+                <div id="pitch-b"></div>
+                <div id="pitch-c"></div>
+            </div>
+
+            <footer class="center">
+                <a href="#reserve" class="reserve-button">Prenota ora la tua piazzola</a>
             </footer>
         </section>
 
-        <section id="welcome" class="no-full">
-			<h3>Close your eyes ...</h3>
-            <p>Would you like to have breakfast on the shore of the lake while the children are playing on the beach?
-            Can you imagine yourself relaxing on the grass in the shade of a weeping willow, or under the warm sun, before taking a dip in the water?
-            Would you like to be within walking distance of a supermarket, bank, pub, and restaurant?
-            If you are looking for a real holiday in nature without abandoning all comforts, you are most welcome at Camping Punta Indiani.
-            Here the atmosphere is friendly and every guest is special.</p>
-		</section>
-
-        <section id="accomodations">
-			<header>Our accommodations</header>
-			<div class="flex" id="pitch-list">
-				<div><header>By the Beach<span class="A">A</span></header><img src="static/img/placeA.jpg" alt="Place type A" /></div>
-				<div><header>Near the Lake<span class="B">B</span></header><img src="static/img/placeB.jpg" alt="Place type B" /></div>
-				<div><header>Maximum Relax<span class="C">C</span></header><img src="static/img/placeC.jpg" alt="Place type C" /></div>
-			</div>
+        <section id="camping-life">
+            <div id="welcome-carousell">
+                <!--
+                    TODO: http://csscience.com/responsiveslidercss3/
+                    JS bug fix is not anymore needed.
+                -->
+                <img src="static/img/TheCamping/TheCamping1.png" alt="The camping life">
+                <!--
+                <img src="static/img/TheCamping/TheCamping2.jpg">
+                <img src="static/img/TheCamping/TheCamping3.png">
+                -->
+            </div>
         </section>
 
 		<section id="notes">
@@ -109,5 +142,15 @@
 			SPLIT POINT: w:=1024px
 			-->
 		</section>
+
+		<section id="booking">
+            dsladsaldlsals
+		</section>
+
+
+
+
+
+        <script type="text/javascript" src="static/js/main.js"></script>
     </body>
 </html>
