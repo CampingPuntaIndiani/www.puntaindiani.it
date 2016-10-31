@@ -24,15 +24,14 @@ p {
   margin-bottom: .5em;
 }
 
-a, a:hover, a:visited, a:target, a:link {
-	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
-}
-
-a:hover {color: #0288d1}
-
 .center {text-align:center;}
+.cc {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
 
 /* Global */
 body > section {
@@ -196,7 +195,7 @@ input[type=checkbox].toggle:checked + label > div > div:last-child {
 #intro h2 {font-size: 1.5rem;}
 
 
-.reserve-button {
+.button {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
   display: inline-block;
@@ -212,13 +211,17 @@ input[type=checkbox].toggle:checked + label > div > div:last-child {
 
   text-decoration: none;
   text-align: center;
-  font-size: 1.25rem;
+/*  font-size: 1.25rem; */
   font-weight: 500;
   line-height: 1.25;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
 
   border: 1px solid transparent;
   border-radius: .3rem;
+}
+
+.reserve-button {
+  font-size: 1.25rem;
   color: #fff;
   border-color: #fff;
 }
@@ -228,7 +231,7 @@ input[type=checkbox].toggle:checked + label > div > div:last-child {
 }
 
 .reserve-button:hover {
-  color: #0275d8;
+  color: #FFAD33;
   background-color: #fff;
 }
 
@@ -303,79 +306,84 @@ button {
 /* ========================================================================== */
 
 #welcome-more {
-    max-height: 0;
-    transition: max-height 0.15s ease-out;
-    overflow: hidden;
+	max-height: 3.0em;
+	transition: max-height 0.15s ease-out;
+	overflow: hidden;
 }
 
-#welcome-more-control:checked + label + #welcome-more {
-    max-height: 1000px; /* Just random >> actual size */
-    transition: max-height 0.25s ease-in;
+#welcome-more > p:first-child {margin-top:0;}
+
+#welcome-more-label {
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	margin-bottom: -0.5em;
+}
+#welcome-more-label > i {
+	text-transform: lowercase;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	color: #0288d1;
+	border: 1px solid #0288d1;
+	border-radius: 100%;
+	transition: display 0.5s ease-in;
+}
+
+
+#welcome-more-control:not(:checked) ~ #welcome-more-label > i.close {display: none;}
+#welcome-more-control:checked ~ #welcome-more-label > i.open {display: none;}
+
+#welcome-more-control:not(:checked) + #welcome-more::before {
+	content:"";
+	position:relative;
+	top: 0; left: 0;
+	height: 3.0em; margin-bottom: -3.0em; /* Must be the same as max-height */
+
+	width:100%; float: left;
+	background: linear-gradient(rgba(0,0,0,0), #fff);
+}
+
+#welcome-more-control {position: absolute; left: -1000px;}
+#welcome-more-control:checked + #welcome-more {
+	max-height: 1000px; /* Just random >> actual size */
+	transition: max-height 0.5s ease-in;
 }
 
 
 
 /* ========================================================================== */
-
-#accomodations {
-	padding: 40px 0 40px 0;
-}
-
-#accomodations > div {
-/*  height: 50vh; */
-}
-
 #pitch-matrix {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	/*background: #eee; /* same as body */
-	padding-bottom: 18px;
+	text-align:center;
+	padding: 9px;
 }
-
 #pitch-matrix > div {
+	display: inline-block;
+	position: relative; /* Needed to use then absolute for bg */
+
 	background-color: #fff;
-	height: calc((50vw - 18px)/1.5);
-	width: calc(50vw - 18px);
+	height: calc((50vw - 27px)/1.5);
+	width: calc(50vw - 27px);
 
 	box-sizing: border-box;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
 
-	margin-top: 18px;
+	margin: 3px;
   overflow: hidden;
 }
-
 
 #pitch-text {
 	overflow-x: auto;
 	padding: 15px;
 }
 
-@media (max-width: 1280px) {
-	#pitch-matrix > div {
-		height: calc(100vw/1.5);
-		width: 100%;
-	}
-	#pitch-text {height: auto;}
-}
-
-
-#accomodations > p {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-#pitch-a:after, #pitch-b:after, #pitch-c:after {
+#pitch-matrix .pitch:before {
 	content: "";
-  position: relative;
-	display: inline-block;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+	top:0;bottom:0;left:0;right:0;
 
   background-size: cover;
   background-position: center;
-
-  filter: brightness(100%);
 
 	transition: all .5s ease-in;
 	-moz-transition: all .5s ease-in;
@@ -383,26 +391,59 @@ button {
 	-o-transition: all .5s ease-in;
 	-webkit-transition: all .5s ease-in;
 }
-#pitch-a:after {background-image: url("../img/Pitch/a.jpg");}
-#pitch-b:after {background-image: url("../img/Pitch/b.jpg");}
-#pitch-c:after {background-image: url("../img/Pitch/c.jpg");}
-#pitch-matrix > div:hover:after {
-	transform: scale(1.1);
-  filter: brightness(100%);
+#pitch-a:before {background-image: url("../img/Pitch/a.jpg");}
+#pitch-b:before {background-image: url("../img/Pitch/b.jpg");}
+#pitch-c:before {background-image: url("../img/Pitch/c.jpg");}
+#pitch-matrix .pitch:hover:before {transform: scale(1.1);}
+
+
+
+#accomodations .pitch > header,
+#accomodations .pitch > footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+	font-size: 1.5rem;
+	padding: 0.5em;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+#accomodations .pitch > header {
+	justify-content: space-between;
+
+	background: -moz-linear-gradient(bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+  background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+  background: linear-gradient(to top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000',GradientType=0 );
 }
 
-#accomodations footer {
-	margin-top: 1rem;
+#accomodations .pitch > footer {
+	bottom:0;
+	justify-content: space-around;
+
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#33000000',GradientType=0 );
 }
+
+#accomodations sup {font-size: 0.6em}
+
 #accomodations .reserve-button {
-  color: #000;
-  border-color: #000;
+	color: #fff;
+	border-color: #fff;
+
+	background: rgba(0,0,0,0.2);
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
 }
 
 #accomodations .reserve-button:hover {
-  color: #fff;
-	background-color: #000;
-  border-color: #000;
+  color: #FFAD33;
+  border-color: #FFAD33;
+  background-color: #fff;
 }
 
 /* ========================================================================== */
@@ -465,6 +506,7 @@ button {
 
 @keyframes progress {
 	0%    {width: 0; }
+  /*
 	20%   {width: 100%; }
 	20.1% {width: 0; }
 	40%   {width: 100%; }
@@ -473,20 +515,21 @@ button {
 	60.1% {width: 0; }
 	80%   {width: 100%; }
 	80.1% {width: 0; }
+  */
 	100%  {width: 100%;}
 }
 
 @keyframes absprogress {
-	0%    {width: 20%;}
-	19.9% {width: 20%;}
-	20% 	{width: 40%;}
-	39.9% {width: 40%;}
-	40% 	{width: 60%;}
-	59.9% {width: 60%;}
-	60% 	{width: 80%;}
-	79.9% {width: 80%;}
-	80% 	{width: 100%;}
-	100%  {width: 100%;}
+	0%    {margin-left: 20%; margin-left: calc(20% - .5em - 4px)}
+	19.9% {margin-left: 20%; margin-left: calc(20% - .5em - 4px)}
+	20% 	{margin-left: 40%; margin-left: calc(40% - .5em - 4px)}
+	39.9% {margin-left: 40%; margin-left: calc(40% - .5em - 4px)}
+	40% 	{margin-left: 60%; margin-left: calc(60% - .5em - 4px)}
+	59.9% {margin-left: 60%; margin-left: calc(60% - .5em - 4px)}
+	60% 	{margin-left: 80%; margin-left: calc(80% - .5em - 4px)}
+	79.9% {margin-left: 80%; margin-left: calc(80% - .5em - 4px)}
+	80% 	{margin-left: 100%; margin-left: calc(100% - .5em - 4px)}
+	100%  {margin-left: 100%; margin-left: calc(100% - .5em - 4px)}
 }
 
 .carousell .progressbar {
@@ -494,9 +537,8 @@ button {
 	left:0;right:0;
 
 	display: block;
-	height: .5em;
-	background-color: rgba(0,0,0,0.8);
-	opacity: .3;
+	height: .5rem;
+	background-color: rgba(0,0,0,0.3);
 }
 
 .carousell .progressbar > .progress {
@@ -506,23 +548,29 @@ button {
 	animation-name: progress;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-/*
--webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-*/
+
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 
 	box-sizing: border-box;
 	height: 100%;
 	padding: 4px;
 	background-color: #ccc;
+	background-color: rgba(220,220,220,0.5);
   background-clip: content-box;
 }
 
 .carousell .progressbar > .progress-total {
-	position: relative;
 	display: block;
+	position: relative;
 
 	top: -100%;
+
+  width: 0;
+  height: 0;
+	box-sizing: border-box;
+  border: .25rem solid rgba(0,0,0,0.5);
+  border-radius: 100%;
 
 	animation-name: absprogress;
 	animation-duration: 15s;
@@ -532,11 +580,6 @@ button {
     animation-timing-function: linear;
 */
 
-	box-sizing: border-box;
-	height: 100%;
-	padding: 4px;
-	border-right: 3px solid red;
-  background-clip: content-box;
 }
 
 .carousell > div:nth-child(1) { animation-delay: 0s; }
@@ -601,9 +644,14 @@ button {
 
 /* ========================================================================== */
 
+/*
 .A {color: rgb(229,66,52)}
 .B {color: rgb(51,165,82)}
 .C {color: rgb(0,0,0)}
+*/
+.A {color: darkred; text-shadow: 1px 1px rgba(255,255,255, 0.8)}
+.B {color: darkgreen; text-shadow: 1px 1px rgba(255,255,255, 0.8)}
+.C {color: black; text-shadow: 1px 1px rgba(255,255,255, 0.8)}
 
 #notes {
   height: 500px;

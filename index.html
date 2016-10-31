@@ -43,7 +43,7 @@
             <div>
                 <h1>Camping Punta&nbsp;Indiani</h1>
                 <h2>Lorem ipsum dolor sit amet.</h2>
-                <a href="#reserve" class="reserve-button">Prenota</a>
+                <a href="#reserve" class="button reserve-button">Prenota</a>
             </div>
             <div class="arrow"><a href="#menu"><img src="static/img/arrow.png" alt="arrow"></a></div>
         </section>
@@ -61,7 +61,7 @@
                 <li><a href="#outdoors">dintorni</a></li>
                 <li><a href="#find-us">dove siamo</a></li>
                 <li><a href="#downloads">Lorem</a></li>
-                <li>|</li>
+                <li class="separator"></li>
                 <li><a href="#offers">offerte</a></li>
                 <li><a href="#reserve">prenota</a></li>
             </ul>
@@ -70,7 +70,7 @@
 
         <section id="welcome" class="no-full">
             <header>
-                <p>Al Camping Punta Indiani, direttamente in riva al Lago di
+                <p>A Camping Punta Indiani, direttamente in riva al Lago di
                     Caldonazzo, nel cuore della Valsugana, i veri campeggiatori
                     trovano lo spirito originale del campeggio:
                     familiare, autentico, essenziale, l'emozione di una vera
@@ -78,7 +78,6 @@
                 </p>
 
                 <input type="checkbox" name="welcome-more-control" id="welcome-more-control" />
-                <label for="welcome-more-control">more</label>
 
                 <div id="welcome-more">
                     <p>Il campeggio occupa la penisola di Punta Indiani e si affaccia sul lago di Caldonazzo con 400 metri di spiaggia privata  riservata ai nostri ospiti.</p>
@@ -90,6 +89,12 @@
                     <p>Ci un sono parco giochi per bambini, un campetto da green-volley/volano, un tavolo da ping-pong.</p>
                     <p>Nel campeggio si possono acquistare vini Trentini,  bibite e gelati, Il Market del paese offre prodotti tipici genuini e convenienti e dista 50 metri dal campeggio, nelle immediate vicinanze  si trovano  anche la fermata del bus, bar e ristoranti.</p>
                 </div>
+
+                <label for="welcome-more-control" id="welcome-more-label">
+                    <i class="fa fa-angle-double-down open" aria-hidden="true"></i>
+                    <i class="fa fa-angle-double-up close" aria-hidden="true"></i>
+				</label>
+
             </header>
 		</section>
 
@@ -108,14 +113,31 @@
                     <p>Tutte le piazzole  dispongono di collegamento elettrico a  norme CEE (4 Ampere) e sono coperte da rete WI-FI.</p>
                     <p>Tutte le tipologie di piazzola sono prenotabili: se desiderate una piazzola vicino ai vostri amici, un posto particolarmente ampio o ombreggiato o vicino al parco giochi o ai servizi specificatelo nelle “note” e faremo del nostro meglio per  riservarvi la piazzola più adatta.</p>
                 </div>
-                <div id="pitch-a"></div>
-                <div id="pitch-b"></div>
-                <div id="pitch-c"></div>
-            </div>
-
-            <footer class="center">
-                <a href="#reserve" class="reserve-button">Prenota ora la tua piazzola</a>
-            </footer>
+                <div id="pitch-a" class="pitch">
+					<header><span>Curabitur fringilla</span><span class="A">A</span></header>
+					<footer>
+						<i class="fa fa-users" aria-hidden="true" aria-label="suggested number of persons">&nbsp;4</i>
+						<i class="fa fa-arrows-h" aria-hidden="true" aria-label="size">&nbsp;50-80m<sup>2</sup></i>
+						<span>4<em>A</em></span>
+					</footer>
+				</div>
+				<div id="pitch-b" class="pitch">
+					<header><span>Pellentesque sodales</span><span class="B">B</span></header>
+					<footer>
+						<i class="fa fa-users" aria-hidden="true" aria-label="suggested number of persons">&nbsp;4+</i>
+						<i class="fa fa-arrows-h" aria-hidden="true" aria-label="size">&nbsp;70-90m<sup>2</sup></i>
+						<span>4<em>A</em></span>
+					</footer>
+				</div>
+				<div id="pitch-c" class="pitch">
+					<header><span>Suspendisse semper</span><span class="C">C</span></header>
+					<footer>
+						<i class="fa fa-users" aria-hidden="true" aria-label="suggested number of persons">&nbsp;6+</i>
+						<i class="fa fa-arrows-h" aria-hidden="true" aria-label="size">&nbsp;100+m<sup>2</sup></i>
+						<span>4<em>A</em></span>
+					</footer>
+				</div>
+			</div>
         </section>
 
         <section id="camping-life">
@@ -176,9 +198,6 @@
 		<section id="reserve">
             dsladsaldlsals
 		</section>
-
-
-
 
 
         <script type="text/javascript" src="static/js/main.js"></script>

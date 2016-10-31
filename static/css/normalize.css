@@ -459,3 +459,15 @@ template {
 [hidden] {
   display: none;
 }
+
+
+/* Clean crappy style for 'a'.
+   ========================================================================== */
+a, a:hover, a:visited, a:target, a:link {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+a:hover {color: #0288d1}
+
