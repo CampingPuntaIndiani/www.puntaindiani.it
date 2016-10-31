@@ -19,6 +19,11 @@ body {
 }
 @-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} } /* needed for checkbox hack */
 
+.camping {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .2px;
+}
+
 p {
   text-align:justify;
   margin-bottom: .5em;
@@ -227,11 +232,19 @@ input[type=checkbox].toggle:checked + label > div > div:last-child {
 }
 
 #intro .reserve-button {
-  margin-top: 8rem;
+	position: absolute;
+	top: 50%;
+	left: 50%
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
 
 .reserve-button:hover {
   color: #FFAD33;
+  border-color: #FFAD33;
   background-color: #fff;
 }
 
@@ -297,6 +310,7 @@ button {
 }
 
 .no-full > * {
+  /* TODO: tweek me */
 	width: 80%;
 	max-width: 900px;
 	margin-left: auto;
@@ -305,101 +319,38 @@ button {
 
 /* ========================================================================== */
 
-#welcome-more {
-	max-height: 3.0em;
-	transition: max-height 0.15s ease-out;
-	overflow: hidden;
+#welcome {margin-top: 0}
+#welcome .row {
+  display: flex;
+	justify-content: space-around;
+  margin: 4em 0 1.5em 0;
+}
+#welcome .row > * {text-align: center}
+
+#welcome .row header {font-size: 2rem}
+#welcome .row footer {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .8rem;
 }
 
-#welcome-more > p:first-child {margin-top:0;}
-
-#welcome-more-label {
-	display: block;
-	text-align: center;
-	border-bottom: 1px solid #eee;
-	margin-bottom: -0.5em;
-}
-#welcome-more-label > i {
-	text-transform: lowercase;
-	width: 1.5em;
-	height: 1.5em;
-	line-height: 1.5em;
-	color: #0288d1;
-	border: 1px solid #0288d1;
-	border-radius: 100%;
-	transition: display 0.5s ease-in;
-}
-
-
-#welcome-more-control:not(:checked) ~ #welcome-more-label > i.close {display: none;}
-#welcome-more-control:checked ~ #welcome-more-label > i.open {display: none;}
-
-#welcome-more-control:not(:checked) + #welcome-more::before {
-	content:"";
-	position:relative;
-	top: 0; left: 0;
-	height: 3.0em; margin-bottom: -3.0em; /* Must be the same as max-height */
-
-	width:100%; float: left;
-	background: linear-gradient(rgba(0,0,0,0), #fff);
-}
-
-#welcome-more-control {position: absolute; left: -1000px;}
-#welcome-more-control:checked + #welcome-more {
-	max-height: 1000px; /* Just random >> actual size */
-	transition: max-height 0.5s ease-in;
-}
-
-
+#welcome .icon {width: 64px; height: 64px}
+#welcome .small-row {display: flex; justify-content: space-around; flex-wrap:wrap}
 
 /* ========================================================================== */
-#pitch-matrix {
-	text-align:center;
-	padding: 9px;
-}
-#pitch-matrix > div {
-	display: inline-block;
-	position: relative; /* Needed to use then absolute for bg */
-
-	background-color: #fff;
-	height: calc((50vw - 27px)/1.5);
-	width: calc(50vw - 27px);
+.pitch {
+  display: block;
+  position: relative;
+  width: 100%;
 
 	box-sizing: border-box;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
+  overflow: visible;
 
-	margin: 3px;
-  overflow: hidden;
+	margin-bottom: 3em;
 }
 
-#pitch-text {
-	overflow-x: auto;
-	padding: 15px;
-}
-
-#pitch-matrix .pitch:before {
-	content: "";
-  position: absolute;
-	top:0;bottom:0;left:0;right:0;
-
-  background-size: cover;
-  background-position: center;
-
-	transition: all .5s ease-in;
-	-moz-transition: all .5s ease-in;
-	-ms-transition: all .5s ease-in;
-	-o-transition: all .5s ease-in;
-	-webkit-transition: all .5s ease-in;
-}
-#pitch-a:before {background-image: url("../img/Pitch/a.jpg");}
-#pitch-b:before {background-image: url("../img/Pitch/b.jpg");}
-#pitch-c:before {background-image: url("../img/Pitch/c.jpg");}
-#pitch-matrix .pitch:hover:before {transform: scale(1.1);}
-
-
-
-#accomodations .pitch > header,
-#accomodations .pitch > footer {
+.pitch > header, .pitch > footer {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -411,8 +362,9 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 }
-#accomodations .pitch > header {
+.pitch > header {
 	justify-content: space-between;
+  top: 0;
 
 	background: -moz-linear-gradient(bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
   background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
@@ -420,7 +372,7 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000',GradientType=0 );
 }
 
-#accomodations .pitch > footer {
+.pitch > footer {
 	bottom:0;
 	justify-content: space-around;
 
@@ -430,21 +382,131 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#33000000',GradientType=0 );
 }
 
-#accomodations sup {font-size: 0.6em}
-
-#accomodations .reserve-button {
-	color: #fff;
-	border-color: #fff;
-
-	background: rgba(0,0,0,0.2);
+sup {font-size: 0.6em}
+.dot {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
 }
 
-#accomodations .reserve-button:hover {
-  color: #FFAD33;
-  border-color: #FFAD33;
-  background-color: #fff;
+
+/* Gallery mode */
+.pitch input {position: absolute;left: -10000px;}
+
+.pitch img {
+	width: 100%;
+	transition: all 1s linear;
 }
+
+.controls {
+	position: absolute;
+	top: 50%;
+
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 1em 0 1em;
+
+	color: #fff;
+	font-size: 2rem;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.controls > * {animation: arrowzoom 2s linear infinite alternate}
+.controls > *:hover {
+	cursor: pointer;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.8);
+}
+
+.pitch .nav {
+	position: absolute;
+	bottom: -1.5em;
+	width: 100%;
+	height: 1em;
+	font-size: .8em;
+	display: flex;
+	justify-content: center;
+}
+.nav > * {
+	display: block;
+	margin: 0 .2em 0 .2em;
+	transition: color 2s;
+}
+
+.pitch .nav .fa-circle {
+	opacity: .4;
+	color: #000;
+}
+
+/* hide all */
+.pitch .images > *:not(:first-child) { /* Scale space on the first img */
+	position: absolute;
+	bottom: 0;
+}
+.pitch .images > * {opacity:0;}
+
+.pitch .controls > *,
+.pitch .nav > * > .fa-dot-circle-o
+{
+	display: none;
+	opacity: 0;
+}
+
+/* show just necessary */
+.pitch > input:nth-child(1):checked ~ .images > *:nth-child(1),
+.pitch > input:nth-child(1):checked ~ .controls > *:nth-child(1),
+.pitch > input:nth-child(1):checked ~ .controls > *:nth-child(4),
+.pitch > input:nth-child(2):checked ~ .images > *:nth-child(2),
+.pitch > input:nth-child(2):checked ~ .controls > *:nth-child(2),
+.pitch > input:nth-child(2):checked ~ .controls > *:nth-child(5),
+.pitch > input:nth-child(3):checked ~ .images > *:nth-child(3),
+.pitch > input:nth-child(3):checked ~ .controls > *:nth-child(3),
+.pitch > input:nth-child(3):checked ~ .controls > *:nth-child(6)
+{
+	display: block;
+	opacity: 1;
+}
+
+.pitch .nav > *:hover .fa-dot-circle-o {
+	display: block;
+	position: absolute;
+	top: 0;
+	opacity: .6;
+	cursor: pointer;
+}
+
+.pitch > input:nth-child(1):checked ~ .nav > *:nth-child(1) .fa-dot-circle-o,
+.pitch > input:nth-child(2):checked ~ .nav > *:nth-child(2) .fa-dot-circle-o,
+.pitch > input:nth-child(3):checked ~ .nav > *:nth-child(3) .fa-dot-circle-o {
+	position: absolute;
+	display: block;
+	top: 0;
+	opacity: .8;
+}
+
+
+
+@keyframes arrowzoom {
+	0% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1); /* Dunno why 40 is better */
+	}
+	100% {
+		-webkit-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2); /* Dunno why 40 is better */
+	}
+}
+
 
 /* ========================================================================== */
 #downloads {
@@ -506,16 +568,6 @@ button {
 
 @keyframes progress {
 	0%    {width: 0; }
-  /*
-	20%   {width: 100%; }
-	20.1% {width: 0; }
-	40%   {width: 100%; }
-	40.1% {width: 0; }
-	60%   {width: 100%; }
-	60.1% {width: 0; }
-	80%   {width: 100%; }
-	80.1% {width: 0; }
-  */
 	100%  {width: 100%;}
 }
 
@@ -575,18 +627,13 @@ button {
 	animation-name: absprogress;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-/*
--webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-*/
-
 }
 
 .carousell > div:nth-child(1) { animation-delay: 0s; }
 .carousell > div:nth-child(2) { animation-delay: 3s; }
 .carousell > div:nth-child(3) { animation-delay: 6s; }
 .carousell > div:nth-child(4) { animation-delay: 9s; }
-.carousell > div:nth-child(5) { animation-delay: 12s; }
+.carousell > div:nth-child(5) { animation-delay: 12s;}
 
 /* ========================================================================== */
 
@@ -649,9 +696,9 @@ button {
 .B {color: rgb(51,165,82)}
 .C {color: rgb(0,0,0)}
 */
-.A {color: darkred; text-shadow: 1px 1px rgba(255,255,255, 0.8)}
-.B {color: darkgreen; text-shadow: 1px 1px rgba(255,255,255, 0.8)}
-.C {color: black; text-shadow: 1px 1px rgba(255,255,255, 0.8)}
+.A {background-color: darkred}
+.B {background-color: darkgreen}
+.C {background-color: white}
 
 #notes {
   height: 500px;
