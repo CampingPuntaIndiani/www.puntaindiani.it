@@ -9,9 +9,6 @@ body {
 
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
-
-/*  font-family: 'Noto Sans', sans-serif; */
-
   /* check box hack */
   -webkit-animation: bugfix infinite 1s; /* needed for checkbox hack */
 
@@ -42,6 +39,7 @@ p {
 body > section {
   margin: 18px 0 0 0;
   padding-top: 44px;
+  padding-bottom: 1em;
   background: #fff;
 }
 
@@ -309,10 +307,13 @@ button {
   border-color: #adadad;
 }
 
+
+
 .no-full > * {
   /* TODO: tweek me */
 	width: 80%;
-	max-width: 900px;
+	max-width: 1200px;
+	/* breakpoint: 1200, 992, 768, 480, 320 */
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -334,7 +335,7 @@ button {
   font-size: .8rem;
 }
 
-#welcome .icon {width: 64px; height: 64px}
+#welcome .icon {width: 64px; height: 64px;}
 #welcome .small-row {display: flex; justify-content: space-around; flex-wrap:wrap}
 
 /* ========================================================================== */
@@ -347,7 +348,36 @@ button {
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
   overflow: visible;
 
-	margin-bottom: 3em;
+	margin-top: 4em;
+}
+
+.desc {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-top: 0;
+	padding: 1.5em 1em 0 1em;
+	color: #000;
+	box-sizing: border-box;
+/*
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+*/
+	background: linear-gradient(to bottom, rgba(200,200,200,0.3) 0%, rgba(0,0,0,0) 100%);
+}
+.desc p {
+	padding-right: 1em;
+}
+.desc a {
+  color: #FFAD33;
+  border-color: #FFAD33;
+  background-color: #fff;
+}
+.desc a:hover {
+  color: #fff;
+  border-color: #fff;
+  background-color: #FFAD33;
 }
 
 .pitch > header, .pitch > footer {
@@ -371,6 +401,9 @@ button {
   background: linear-gradient(to top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000',GradientType=0 );
 }
+.pitch > header span {
+	text-transform: capitalize;
+}
 
 .pitch > footer {
 	bottom:0;
@@ -391,7 +424,6 @@ sup {font-size: 0.6em}
   width: 1em;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
 }
-
 
 /* Gallery mode */
 .pitch input {position: absolute;left: -10000px;}
@@ -420,7 +452,7 @@ sup {font-size: 0.6em}
 	text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 
-.controls > * {animation: arrowzoom 2s linear infinite alternate}
+.controls > * {animation: arrowzoom 2s linear infinite alternate;width: 1em; text-align: center}
 .controls > *:hover {
 	cursor: pointer;
 	text-shadow: 0 1px 2px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.8);
@@ -434,16 +466,16 @@ sup {font-size: 0.6em}
 	font-size: .8em;
 	display: flex;
 	justify-content: center;
+	color: #333;
 }
 .nav > * {
 	display: block;
 	margin: 0 .2em 0 .2em;
-	transition: color 2s;
+	transition: opacity 2s;
 }
 
 .pitch .nav .fa-circle {
 	opacity: .4;
-	color: #000;
 }
 
 /* hide all */
@@ -475,6 +507,9 @@ sup {font-size: 0.6em}
 	opacity: 1;
 }
 
+.pitch .nav .fa-dot-circle-o {
+	color: #333;
+}
 .pitch .nav > *:hover .fa-dot-circle-o {
 	display: block;
 	position: absolute;
@@ -507,7 +542,6 @@ sup {font-size: 0.6em}
 	}
 }
 
-
 /* ========================================================================== */
 #downloads {
 	display: flex;
@@ -534,27 +568,25 @@ sup {font-size: 0.6em}
 	100% { opacity: 0; }
 }
 
-.carousell {
-	/* TODO: fix once the image aspect ratio is decided
-	max-height: calc(900px/1.5);
-	height: calc(80vw/1.5);
-	*/
-	max-height: calc(900px/1.2);
-	height: calc(80vw/1.2);
-}
+.carousell {position: relative}
 .carousell > div {
 	opacity:0;
 	animation-name: fade;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-	position:absolute;
-	left:0;
-	right:0;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
+
+	position:absolute;
+	bottom: 0; left:0; right: 0;
+}
+.carousell > div:first-child {
+	position: relative;
 }
 
 .carousell img {
+	position: relative;
 	width:100%;
+	height:100%;
 	margin-bottom: -7px;
 }
 .carousell .info {
@@ -670,17 +702,24 @@ sup {font-size: 0.6em}
 	text-shadow: 1px 1px #333;
 	text-align: center;
 	font-size: 1.2rem;
+
+	padding-bottom: 1em;
 }
 
 #what-to-do .download {
   color: #fff;
-	padding-top: 1rem;
 	font-size: 2rem;
+}
+
+#what-to-do .icon {
+	color: #fff;
+	fill: #fff;
+	width: 48px;
+	height: 48px;
 }
 
 #what-to-do .dest {
 	color: #fff;
-	padding-top: 2rem;
 	font-size: 1.2rem;
 }
 
