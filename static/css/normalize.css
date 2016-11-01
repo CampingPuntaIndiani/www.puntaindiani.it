@@ -465,9 +465,8 @@ template {
    ========================================================================== */
 a, a:hover, a:visited, a:target, a:link {
 	text-decoration: none;
-	color: inherit;
 	cursor: pointer;
+  color: inherit;
 }
 
 a:hover {color: #0288d1}
-

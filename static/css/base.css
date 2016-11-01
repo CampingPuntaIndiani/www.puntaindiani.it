@@ -7,14 +7,6 @@
 	transform: translateY(-50%);
 }
 
-/* Global */
-
-section > header:first-child {
-  padding: 40px 0 40px 0;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 
 @media (max-width: 700px) {
   /* TODO: make responsive:
@@ -67,32 +59,16 @@ section > header:first-child {
 
 /* ************************* First Section ********************************** */
 #intro {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-
   height: 100vh;
   width: 100%;
-
-  margin: 0;
-  padding: 0;
-
-  /* Cover surface: adapt wrt/with or height */
-  overflow: hidden;
-  background: transparent;
-
-  color: #fff;
+  margin:0;padding:0;
   text-align: center;
 }
 
-#intro:before {
+#intro::before {
   content: "";
-
-  z-index: -1;
-
-  /* Full #intro size */
   position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-
-  /* Background */
+  top: 0;bottom: 0;left: 0;right: 0;
   filter: brightness(65%);
   background: url("../img/head.jpg");
   background-size: cover;
@@ -100,66 +76,47 @@ section > header:first-child {
 }
 
 #intro > div {
-  padding-top: 3rem;
+  position: absolute;
+  top: 0;bottom: 0;left: 0;right: 0;
+  padding: 3rem 2em;
 }
 
-#intro h1, #intro h2 {
-  font-weight: 500;
-  text-shadow: 1px 1px #000;
-}
+/* Writes */
+#intro h1, #intro h2 {color: white;font-weight: 200;text-shadow: 1px 1px #000}
 #intro h1 {font-size: 3.0rem;}
 #intro h2 {font-size: 1.5rem;}
 
+/* Button */
+#intro .reserve-button {
+  position: absolute;
+  top: 50%; left: 50%;
 
-.button {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
-  display: inline-block;
-  width: auto;
-
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  text-decoration: none;
-  text-align: center;
-/*  font-size: 1.25rem; */
-  font-weight: 500;
-  line-height: 1.25;
-  padding: 1em 2em;
-
-  border: 1px solid transparent;
-  border-radius: .3rem;
-}
-
-.reserve-button {
-  font-size: 1.25rem;
   color: #fff;
   border-color: #fff;
+  background-color: transparent;
+  font: 1.5rem;
 }
 
-#intro .reserve-button {
-	position: absolute;
-	top: 50%;
-	left: 50%
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-}
-
-.reserve-button:hover {
-  color: #FFAD33;
-  border-color: #FFAD33;
+#intro .reserve-button:hover {
+  color: #ffad33;
+  border-color: #ffad33;
   background-color: #fff;
 }
 
-@keyframes bottom{
+/* Arrow */
+#intro .arrow {
+    position: absolute;
+    bottom: 0;left: 0;right: 0;
+    text-align: center;
+    width: 100%;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
   0%, 100% {
       -webkit-transform: translate(0,-20px);
       -moz-transform: translate(0,-20px);
@@ -176,82 +133,32 @@ section > header:first-child {
   }
 }
 
-.arrow {
-    position: absolute;
-    bottom: 30px;
-    text-align: center;
-    width: 100%;
-    -webkit-animation: bottom 2s infinite;
-    animation: bottom 2s infinite;
-}
-
-/* TODO: move up */
-button {
-  -moz-user-select: none;
-  border: 1px solid transparent;
-  border-radius: .25em;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1em;
-  font-weight: 400;
-  padding: 0.25em .5em;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.reserve {
-  background-color: #0275d8;
-  border-color: #0275d8;
-  color: #fff;
-}
-
-.reserve:hover {
-  background-color: #025aa5;
-  border-color: #01549b;
-}
-
-.info {
-  background-color: #fff;
-  border-color: #ccc;
-  color: #373a3c;
-}
-.info:hover {
-  background-color: #e6e6e6;
-  border-color: #adadad;
-}
-
 /* ========================================================================== */
 
 #welcome {margin-top: 0}
-#welcome .row {
-  display: flex;
-	justify-content: space-around;
-  margin: 4em 0 1.5em 0;
-}
-#welcome .row > * {text-align: center}
 
-#welcome .row header {font-size: 2rem}
-#welcome .row footer {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: .8rem;
-}
 
-#welcome .icon {width: 64px; height: 64px;}
-#welcome .small-row {display: flex; justify-content: space-around; flex-wrap:wrap}
+#infographic {margin: 3em 0 1em 0}
+#infographic header {font-size: 2rem; font-weight: 200}
+#infographic footer {font-size: .8rem;letter-spacing: 1px;text-transform: uppercase}
+#services .icon {width: 64px; height: 64px;}
 
 /* ========================================================================== */
-.pitch {
+#accomodations .pitch {
   display: block;
   position: relative;
   width: 100%;
 
 	box-sizing: border-box;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
   overflow: visible;
-
-	margin-top: 4em;
 }
+#accomodations .pitch:not(:first-child) {margin-top: 4em}
+
+#accomodations .A {background: red}
+#accomodations .B {background: green}
+#accomodations .C {background: white}
+
+/* TODO: go ahead clean up from here */
 
 .desc {
 	display: flex;
@@ -260,13 +167,12 @@ button {
 
 	margin-top: 0;
 	padding: 1.5em 1em 0 1em;
-	color: #000;
+	color: #333;
 	box-sizing: border-box;
-/*
-	background: -moz-linear-gradient(bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
-*/
-	background: linear-gradient(to bottom, rgba(200,200,200,0.3) 0%, rgba(0,0,0,0) 100%);
+
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  background: #fff;
 }
 .desc p {
 	padding-right: 1em;
@@ -324,7 +230,6 @@ sup {font-size: 0.6em}
   border-radius: 100%;
   height: 1em;
   width: 1em;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
 }
 
 /* Gallery mode */
@@ -479,7 +384,6 @@ sup {font-size: 0.6em}
 	animation-name: fade;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
 
 	position:absolute;
 	bottom: 0; left:0; right: 0;
@@ -578,8 +482,6 @@ sup {font-size: 0.6em}
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
 }
 
 /* TODO: convert to user .ratio.r4-3 */
@@ -609,7 +511,8 @@ sup {font-size: 0.6em}
 	text-align: center;
 	font-size: 1.2rem;
 
-	padding-bottom: 1em;
+  margin-top: 1em;
+	padding-bottom: 3em;
 }
 
 #what-to-do .download {
@@ -620,8 +523,12 @@ sup {font-size: 0.6em}
 #what-to-do .icon {
 	color: #fff;
 	fill: #fff;
-	width: 48px;
-	height: 48px;
+	width: 64px;
+	height: 64px;
+}
+#what-to-do a .icon {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 #what-to-do .dest {
@@ -686,7 +593,6 @@ sup {font-size: 0.6em}
 #info-bar {
   display: flex;
   justify-content: space-around;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
   padding-top:0;
   box-sizing: border-box;
 }
@@ -714,7 +620,6 @@ sup {font-size: 0.6em}
   align-content: center;
   padding: 4px 0 4px 0;
   box-sizing: border-box;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
   font-size: 0;
 }
 
