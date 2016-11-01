@@ -8,54 +8,6 @@
 }
 
 
-@media (max-width: 700px) {
-  /* TODO: make responsive:
-  * move to vertical when ((width*# + margin) > screen)
-  */
-
-  nav {
-    top: 0;
-    left: 0;
-    width:100%;
-    text-align: right;
-  }
-  nav > ul {padding-top: 20px;}
-  nav > ul > li {
-    height: 2.35;
-    line-height: 2.35;
-    text-align: center;
-
-    background-color: #ffc914;
-    border-left: 1px solid rgba(25, 25, 25, 0.1);
-    border-right: 1px solid rgba(25, 25, 25, 0.1);
-  }
-
-  .brand {
-    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
-    font-size: 1.2em;
-    position: absolute;
-    left: 1em;
-  }
-
-
-  /* enable drop down */
-  label {cursor: pointer;}
-  /* hide the checkbox */
-  #menu-toggle {display: none}
-  #menu-toggle + label {
-    display: inline-block;
-    position: relative;
-    margin-right: 1em;
-    width: 1em;
-  }
-
-  #menu-toggle:not(:checked) + label + ul {display: none;}
-  #menu-toggle:checked + label + ul,
-  #menu-toggle:checked + label + ul > li {display: block;}
-}
-
-@media (min-width: 701px) {.only-small {display: none !important;}}
-@media (max-width: 701px) {.only-big {display: none !important;}}
 
 /* ************************* First Section ********************************** */
 #intro {
@@ -82,7 +34,7 @@
 }
 
 /* Writes */
-#intro h1, #intro h2 {color: white;font-weight: 200;text-shadow: 1px 1px #000}
+#intro h1, #intro h2 {color: white;font-weight: 300;text-shadow: 1px 1px #000}
 #intro h1 {font-size: 3.0rem;}
 #intro h2 {font-size: 1.5rem;}
 
@@ -97,7 +49,7 @@
   color: #fff;
   border-color: #fff;
   background-color: transparent;
-  font: 1.5rem;
+  font-size: 1.5rem;
 }
 
 #intro .reserve-button:hover {

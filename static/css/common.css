@@ -1,24 +1,43 @@
 /* Global style */
 
-@font-face { /* Use for body */
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url('../fonts/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf') format('truetype');
-  /* font-family: 'Open Sans', sans-serif; */
-}
+/* Use for body : 'Open Sans', sans-serif; */
+/* Headlines: 'Raleway', sans-serif; */
 
-@font-face { /* headlines */
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url('../fonts/bIcY3_3JNqUVRAQQRNVteQ.ttf') format('truetype');
-  /* font-family: 'Raleway', sans-serif; */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(../fonts/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Raleway'), local('Raleway-Regular'), url(../fonts/bIcY3_3JNqUVRAQQRNVteQ.ttf) format('truetype');
 }
 
 html { /* Note: rem are based on this. Default 16px */
   font-size: 24px;
 }
+@media (max-width: 1200px) {html {font-size: 16px}}
+@media (max-width: 992px) {html {font-size: 14px}}
+@media (max-width: 768px) {html {font-size: 13px}}
+	/* breakpoint: 1200, 992, 768, 480, 320 */
+
+@media (min-width: 769px) {.only-v {display: none !important;}}
+@media (max-width: 768px) {.only-h {display: none !important;}}
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Raleway', sans-serif;
@@ -33,6 +52,9 @@ body {
   color: #000;
   background: rgba(240,240,240,0.6);
 
+	overflow-x: hidden;
+	overflow-y: auto;
+
   /* check box hack */
   -webkit-animation: bugfix infinite 1s;
 }
@@ -43,9 +65,11 @@ p {
   padding: 0 .5em 0 .5em;
 }
 
+strong {font-weight: 700;}
+
 .brand {
   font-family: Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   /*
   text-decoration: none;
   text-transform: none;
@@ -75,6 +99,7 @@ section > header:first-child {
 	margin-left: auto;
 	margin-right: auto;
 }
+@media (max-width: 992px) {.no-full > * {width:100%}}
 
 
 /* ----------------------------------------------------------------------------
