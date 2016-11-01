@@ -71,3 +71,7 @@ input[type=checkbox].toggle:checked + label > div > div:last-child {
 .stack-3 {box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.3)}
 .stack-4 {box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3)}
 .stack-5 {rgba(0,0,0,0.14),0 6px 30px 5px rgba(0,0,0,0.12),0 8px 10px -5px rgba(0,0,0,0.3)}
+
+/* ----------------------------------------------------------------------------
+ * Prevent scroll */
+.scrollOff {pointer-events: none}

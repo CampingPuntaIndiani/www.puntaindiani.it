@@ -25,11 +25,11 @@
             cls = 'scrollOff';
         gmap.classList.add(cls);
         wrapper.addEventListener('click', function () {
-            wrapper.classList.remove(cls);
+            gmap.classList.remove(cls);
         });
 
         wrapper.addEventListener('mouseleave', function () {
-            wrapper.classList.add(cls);
+            gmap.classList.add(cls);
         });
     })();
 })();
