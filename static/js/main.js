@@ -17,4 +17,19 @@
 	}();
     window.addEventListener('scroll', sticky_bar);
     sticky_bar(/* Fire just in case anchor were used */);
+
+    // Prevent GMap to 'stole' the scroll wheel.
+    (function () {
+        var wrapper = document.getElementById('find-us'),
+            gmap = document.getElementById('gmap'),
+            cls = 'scrollOff';
+        gmap.classList.add(cls);
+        wrapper.addEventListener('click', function () {
+            wrapper.classList.remove(cls);
+        });
+
+        wrapper.addEventListener('mouseleave', function () {
+            wrapper.classList.add(cls);
+        });
+    })();
 })();

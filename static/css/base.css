@@ -6,13 +6,14 @@ html {
 body {
   padding: 0;
   margin: 0;
+  margin-bottom: 10em;
 
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
   /* check box hack */
   -webkit-animation: bugfix infinite 1s; /* needed for checkbox hack */
 
-  background: #eee;
+  background: rgba(240,240,240,0.6);
 }
 @-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} } /* needed for checkbox hack */
 
@@ -37,7 +38,7 @@ p {
 
 /* Global */
 body > section {
-  margin: 18px 0 0 0;
+  margin: 4px 0 0 0;
   padding-top: 44px;
   padding-bottom: 1em;
   background: #fff;
@@ -478,10 +479,13 @@ sup {font-size: 0.6em}
 	opacity: .4;
 }
 
+.images {font-size:0}
+
 /* hide all */
 .pitch .images > *:not(:first-child) { /* Scale space on the first img */
 	position: absolute;
-	bottom: 0;
+	top: 0;
+  left: 0;
 }
 .pitch .images > * {opacity:0;}
 
@@ -568,7 +572,7 @@ sup {font-size: 0.6em}
 	100% { opacity: 0; }
 }
 
-.carousell {position: relative}
+.carousell {position: relative; font-size:0;}
 .carousell > div {
 	opacity:0;
 	animation-name: fade;
@@ -587,10 +591,10 @@ sup {font-size: 0.6em}
 	position: relative;
 	width:100%;
 	height:100%;
-	margin-bottom: -7px;
 }
 .carousell .info {
 	position: absolute;
+  font-size: 1rem;
 	top: 1em;
 	left: 1em;
 	background: transparent;
@@ -604,21 +608,21 @@ sup {font-size: 0.6em}
 }
 
 @keyframes absprogress {
-	0%    {margin-left: 20%; margin-left: calc(20% - .5em - 4px)}
-	19.9% {margin-left: 20%; margin-left: calc(20% - .5em - 4px)}
-	20% 	{margin-left: 40%; margin-left: calc(40% - .5em - 4px)}
-	39.9% {margin-left: 40%; margin-left: calc(40% - .5em - 4px)}
-	40% 	{margin-left: 60%; margin-left: calc(60% - .5em - 4px)}
-	59.9% {margin-left: 60%; margin-left: calc(60% - .5em - 4px)}
-	60% 	{margin-left: 80%; margin-left: calc(80% - .5em - 4px)}
-	79.9% {margin-left: 80%; margin-left: calc(80% - .5em - 4px)}
-	80% 	{margin-left: 100%; margin-left: calc(100% - .5em - 4px)}
-	100%  {margin-left: 100%; margin-left: calc(100% - .5em - 4px)}
+	0%    {margin-left: 20%; margin-left: calc(20% - .5rem)}
+	19.9% {margin-left: 20%; margin-left: calc(20% - .5rem)}
+	20% 	{margin-left: 40%; margin-left: calc(40% - .5rem)}
+	39.9% {margin-left: 40%; margin-left: calc(40% - .5rem)}
+	40% 	{margin-left: 60%; margin-left: calc(60% - .5rem)}
+	59.9% {margin-left: 60%; margin-left: calc(60% - .5rem)}
+	60% 	{margin-left: 80%; margin-left: calc(80% - .5rem)}
+	79.9% {margin-left: 80%; margin-left: calc(80% - .5rem)}
+	80% 	{margin-left: 100%; margin-left: calc(100% - .5rem)}
+	100%  {margin-left: 100%; margin-left: calc(100% - .5rem)}
 }
 
 .carousell .progressbar {
 	position: absolute;
-	left:0;right:0;
+	left:0;right:0;top:
 
 	display: block;
 	height: .5rem;
@@ -677,6 +681,7 @@ sup {font-size: 0.6em}
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
 }
 
+/* TODO: convert to user .ratio.r4-3 */
 #what-to-do > div > div {
 	display: inline-block;
 	box-sizing: border-box;
@@ -727,24 +732,102 @@ sup {font-size: 0.6em}
 #cycleway {background-image: url("../img/WhatToDo/cycleway.jpg");}
 #trekking {background-image: url("../img/WhatToDo/trekking.jpg");}
 #cities 	{background-image: url("../img/WhatToDo/cities.jpg");}
+/* ========================================================================== */
+
+#find-us {padding:0;font-size:0}
+#find-us iframe {
+	width: 100%;
+	min-height: 500px;
+	height: 50hv;
+}
 
 /* ========================================================================== */
 
-/*
-.A {color: rgb(229,66,52)}
-.B {color: rgb(51,165,82)}
-.C {color: rgb(0,0,0)}
-*/
-.A {background-color: darkred}
-.B {background-color: darkgreen}
-.C {background-color: white}
+/* white space hack */
+.collapse-white-space {font-size: 0}
+.collapse-white-space > * {font-size: 1rem}
 
-#notes {
-  height: 500px;
 
-  background:
-    linear-gradient(65deg, transparent 50%, #fff 50%) center center no-repeat,
-    url("../img/header.jpg") left center no-repeat
-    ;
-  background-size: cover, 60% auto;
+/* http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
+.ratio {position:relative}
+.ratio::before {content: ""; display: block}
+.ratio.r4-3::before {padding-top: 75%}
+.ratio.r3-2::before {padding-top: 66.66%}
+.ratio.r16-9::before {padding-top: 56%}
+.ratio.r16-10::before {padding-top: 56.25%}
+.ratio > * {position: absolute; top: 0; left: 0; bottom: 0; right: 0}
+
+
+#media-links > div {
+  display: inline-block;
+  width: 25%;
+  background-size: cover;
+  background-position: center;
+}
+
+#media-links > div > div {
+	border-right: 1px solid #fff;
+
+  background-size: cover;
+  background-position: center;
+
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+
+  background-color: rgba(0,0,0,0.3);
+}
+
+#video {background-image: url("../img/MediaLinks/video.png")}
+#virtual-tour {background-image: url("../img/MediaLinks/tour.png")}
+#gallery {background-image: url("../img/MediaLinks/gallery.jpg")}
+
+#media-links a:hover {
+  text-shadow: 1px 1px rgba(255,255,255,0.6);
+}
+
+/* ========================================================================== */
+#info-bar {
+  display: flex;
+  justify-content: space-around;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
+  padding-top:0;
+  box-sizing: border-box;
+}
+#info-bar > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 3rem;
+  border-bottom: 2px solid transparent;
+}
+#info-bar > div:hover {
+  border-bottom-color: #000;
+}
+
+#info-bar a {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+/* ========================================================================== */
+#agreements {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 4px 0 4px 0;
+  box-sizing: border-box;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
+  font-size: 0;
+}
+
+#agreements span { font-size: 1rem; }
+#agreements img {
+  height: 2rem;
 }
