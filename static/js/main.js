@@ -3,17 +3,18 @@
 
 (function(){
     "use strict";
-    var sticky_bar = function() {
-        var body = document.getElementsByTagName('body')[0];
-        return function() {
-            var fix = body.scrollTop > window.innerHeight,
-                current = body.classList.contains('fix');
-            if (fix !== current)
-                body.classList.toggle('fix');
-        };
-    }();
+	var sticky_bar = function() {
+		return function() {
+			// Compute actual scroll position
+			var Y = (window.pageYOffset ||
+					document.scrollTop ||
+					document.documentElement.scrollTop ||
+					document.body.scrollTop),
+				mustFix = Y > window.innerHeight,
+				current = document.body.classList.contains('fix');
+			if (mustFix !== current) document.body.classList.toggle('fix');
+		};
+	}();
     window.addEventListener('scroll', sticky_bar);
     sticky_bar(/* Fire just in case anchor were used */);
-
-    console.log("Init completed");
 })();
