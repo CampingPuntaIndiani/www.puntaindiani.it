@@ -306,10 +306,6 @@
             -->
 		</section>
 
-		<section id="reserve">
-            dsladsaldlsals
-		</section>
-
         <section id="media-links" class="collapse-white-space">
             <div class="ratio r16-10" id="video"><div><a href="media.html#video" target="_blank">Video<br><i class="fa fa-play" aria-hidden="true"></i></a></div></div>
             <div class="ratio r16-10" id="virtual-tour"><div><a href="media.html#tour" target="_blank">Virtual<br>Tour</a></div></div>
@@ -355,6 +351,204 @@
             <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
         </section>
 
+        <section id="reserve">
+            <!-- Target _blank: on nojs and validation error please do not clear the data. -->
+            <form id="rsv" method="POST" action="https://dmbcau.martin-dev.eu/website/reserve/" autocomplete="on" autofocus="on" target="_blank">
+                <!-- This will be striped from js (if enabled) ;) -->
+                <input type="hidden" name="nojs" value="1">
+
+                <input type="hidden" name="lang" value="it">
+
+                <!-- TODO: replace date with 'select' (like dmbcau) -->
+
+                <fieldset>
+                    <legend>Informazioni personali</legend>
+                    <div><div><label for="surname">cognome</label></div><div><input id="surname" type="text" name="surname" placeholder="Rossi" required></div></div>
+                    <div><div><label for="name">nome</label></div><div><input id="name" type="text" name="name" placeholder="Mario" required></div></div>
+                    <div><div><label for="email">email</label></div><div><input id="email" type="email" name="email" placeholder="mario.rossi@gmail.com" required></div></div>
+
+                    <div><div><label for="citizenship">cittadinanza</label></div><div><select id="citizenship" name="citizenship"><option value="100000100" selected>Italy</option><option value="100000232">Netherlands</option><option value="100000216">Germany</option><option value="100000203">Austria</option><option value="100000241">Switzerland</option><option value="100000206">Belgium</option><option value="100000212">Denmark</option><option value="100000219">United Kingdom</option><option value="" >Altro</option></select></div></div>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>soggiorno</legend>
+                    <div><div><label for="arrival">arrivo</label></div><div><input type="text" id="arrival" name="start" placeholder="yyyy-mm-dd" min="2017-04-26" max="2017-09-29" required></div></div>
+                    <div><div><label for="departure">partenza</label></div><div><input type="text" id="departure" name="end" placeholder="yyyy-mm-dd" min="2017-04-27" max="2017-09-30" required></div></div>
+                    <div><div><label for="card">promozione</label></div><div><select id="card" name="card"><option value="NONE"></option><option value="CKE">Camping Key Europe</option><option value="ADAC">ADAC Camp Card</option><option value="ACSI">ACSI Camping Card</option></select></div></div>
+                    <div><div><label for="kind">piazzola</label></div>
+                    <div><select id="kind" name="kind"><option value="1">aqua</option><option value="2">panorama</option><option value="3">relax</option></select></div></div>
+                </fieldset>
+                <fieldset>
+                    <legend>extra</legend>
+                    <div><div><label for="adults">adulti extra</label></div><div><select type="text" id="adults" name="adults"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></div></div>
+                    <div><div><label for="children">bambini</label></div><div><select id="children" name="children"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></div></div>
+
+
+                    <div><div><label for="extra_tents">tendine extra</label></div><div><select id="extra_tents" name="extra_tents"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div></div>
+                    <div><div><label for="extras">extra</label></div><div><select id="extras" name="extras"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div></div>
+
+                    <div><div><label for="equipement">mezzo</label></div><div><select id="equipement" name="equipement"><option value="" selected></option><option value="car-only">solo macchina</option><option value="tent">tenda</option><option value="roulette">roulotte</option><option value="camper">camper</option><option value="bicyle">bicicletta</option></select></div></div>
+                    <div><div><label for="equipement_size">dimensioni</label></div><div><select id="equipement_size" name="equipement_size"><option value="" selected></option><option value="small">piccola</option><option value="mid">media</option><option value="big">grande</option><option value="huge">enorme</option></select></div></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Animali</legend>
+                    <input type="checkbox" name="with_pet" id="with_pet"><label for="with_pet">Porter&oacute; un'animale domestico.</label>
+                    <select id="pet" name="pet"><option value=""></option><option value="dog">cane</option><option value="gatto">gatto</option><option value="altro">altro</option></select>
+                </fieldset>
+
+                <!--
+                    <div name="d_place">
+                        <select name="resource" id="pitch">
+                            <optgroup data-kind="A" label="Area A">
+                                <option value="1">Qualsiasi in A</option>
+                                <option value="4">2</option>
+                                <option value="6">4</option>
+                                <option value="7">5</option>
+                                <option value="10">8</option>
+                                <option value="11">9</option>
+                                <option value="12">10</option>
+                                <option value="16">14</option>
+                                <option value="17">15</option>
+                                <option value="23">20</option>
+                                <option value="30">27</option>
+                                <option value="32">29</option>
+                                <option value="35">32</option>
+                                <option value="36">33</option>
+                                <option value="37">34</option>
+                                <option value="38">35</option>
+                                <option value="39">36</option>
+                                <option value="44">41</option>
+                                <option value="45">42</option>
+                                <option value="46">43</option>
+                                <option value="50">47</option>
+                                <option value="56">53</option>
+                                <option value="57">54</option>
+                                <option value="62">58</option>
+                                <option value="63">59</option>
+                                <option value="67">63</option>
+                                <option value="69">65</option>
+                            </optgroup>
+
+                            <optgroup data-kind="B" label="Area B">
+                                <option value="2" selected>Qualsiasi in B</option>
+                                <option value="5">3</option>
+                                <option value="8">6</option>
+                                <option value="9">7</option>
+                                <option value="13">11</option>
+                                <option value="14">12</option>
+                                <option value="15">13</option>
+                                <option value="18">16</option>
+                                <option value="19">17</option>
+                                <option value="21">18</option>
+                                <option value="22">19</option>
+                                <option value="24">21</option>
+                                <option value="25">22</option>
+                                <option value="26">23</option>
+                                <option value="27">24</option>
+                                <option value="28">25</option>
+                                <option value="29">26</option>
+                                <option value="31">28</option>
+                                <option value="33">30</option>
+                                <option value="34">31</option>
+                                <option value="40">37</option>
+                                <option value="41">38</option>
+                                <option value="42">39</option>
+                                <option value="43">40</option>
+                                <option value="47">44</option>
+                                <option value="48">45</option>
+                                <option value="49">46</option>
+                                <option value="51">48</option>
+                                <option value="52">49</option>
+                                <option value="53">50</option>
+                                <option value="54">51</option>
+                                <option value="55">52</option>
+                                <option value="59">55</option>
+                                <option value="60">56</option>
+                                <option value="61">57</option>
+                                <option value="64">60</option>
+                                <option value="65">61</option>
+                                <option value="66">62</option>
+                                <option value="68">64</option>
+                            </optgroup>
+
+                            <optgroup data-kind="C" label="Area C">
+                                <option value="3">Qualsiasi in C</option>
+                                <option value="70">66</option>
+                                <option value="71">67</option>
+                                <option value="72">68</option>
+                                <option value="73">69</option>
+                                <option value="74">70</option>
+                                <option value="75">71</option>
+                                <option value="76">72</option>
+                                <option value="77">73</option>
+                                <option value="78">74</option>
+                                <option value="79">75</option>
+                                <option value="80">76</option>
+                                <option value="81">77</option>
+                                <option value="82">78</option>
+                                <option value="83">79</option>
+                                <option value="84">80</option>
+                                <option value="85">81</option>
+                                <option value="86">82</option>
+                                <option value="87">83</option>
+                                <option value="88">84</option>
+                                <option value="89">85</option>
+                                <option value="90">86</option>
+                                <option value="91">87</option>
+                                <option value="92">88</option>
+                                <option value="93">89</option>
+                                <option value="94">90</option>
+                                <option value="95">91</option>
+                                <option value="96">92</option>
+                                <option value="97">93</option>
+                                <option value="98">94</option>
+                                <option value="99">95</option>
+                                <option value="100">96</option>
+                                <option value="101">97</option>
+                                <option value="102">98</option>
+                                <option value="103">99</option>
+                                <option value="104">100</option>
+                                <option value="105">101</option>
+                                <option value="106">102</option>
+                                <option value="107">103</option>
+                                <option value="108">104</option>
+                                <option value="109">105</option>
+                                <option value="110">106</option>
+                                <option value="111">107</option>
+                                <option value="112">108</option>
+                                <option value="113">109</option>
+                                <option value="114">110</option>
+                                <option value="115">111</option>
+                                <option value="116">112</option>
+                                <option value="117">113</option>
+                                <option value="118">114</option>
+                                <option value="119">115</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    -->
+                </fieldset>
+
+                <fieldset>
+                    <legend>note</legend>
+                    <textarea name="note" value="" placeholder="
+                        We would like to stay next to...
+                        We have got more than 5 children...
+                        We would like a shaded place...
+                        ">
+                    </textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>legal</legend>
+                    <input type="checkbox" name="CR" checked required> Accetto <a href="rules.html" target="_blank">il regolamento</a>.<br>
+                    <input type="checkbox" name="TC" checked required> Accetto <a href="privacy.html" target="_blank">privacy policy</a>.<br>
+                    <br>
+                    <button type="submit" class="button resverve-button">prenota ora</button>
+                </fieldset>
+            </form>
+        </section>
 
         <script type="text/javascript" src="static/js/main.js"></script>
     </body>
