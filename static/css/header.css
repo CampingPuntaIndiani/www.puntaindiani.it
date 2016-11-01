@@ -78,3 +78,6 @@ nav li.separator:after {
 
 	/*box-shadow:rgba(0,0,0,0.3) 0 1px 4px 0;*/
 }
+
+#menu-toggle,
+#menu-toggle + label {display: none}

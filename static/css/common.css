@@ -1,0 +1,114 @@
+/* Global settings */
+html {
+  /* Note: rem are based on this. Default 16px */
+  font-size: 24px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+  /* check box hack */
+  -webkit-animation: bugfix infinite 1s; /* needed for checkbox hack */
+
+  background: rgba(240,240,240,0.6);
+}
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} } /* needed for checkbox hack */
+
+p {text-align:justify; margin-bottom: .5em;}
+
+.camping {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: none;
+  font-style: normal;
+  letter-spacing: .2px;
+}
+
+body > section {
+  margin: 4px 0 0 0;
+  padding-top: 44px;
+  padding-bottom: 1em;
+  background: #fff;
+}
+
+.no-full > * {
+  /* TODO: tweek me */
+	width: 80%;
+	max-width: 1200px;
+	/* breakpoint: 1200, 992, 768, 480, 320 */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* ========================================================================== */
+/* ----------------------------------------------------------------------------
+ * Vertical Menu */
+input[type=checkbox].toggle + label > div {
+  width: 18px;
+  height: 8px;
+  position: relative;
+  display: block;
+  margin: -4px auto 0;
+}
+
+input[type=checkbox].toggle + label > div > div { /* bars */
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: relative;
+  background: #FFF;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/* Closed state */
+input[type=checkbox].toggle + label > div > div:first-child { /* upper bars */
+  -webkit-transform: translateY(0px) rotate(0deg);
+  transform: translateY(0px) rotate(0deg);
+}
+
+input[type=checkbox].toggle + label > div > div:last-child { /* upper bars */
+  -webkit-transform: translateY(6px) rotate(0deg);
+  transform: translateY(6px) rotate(0deg);
+}
+
+/* to open animation */
+input[type=checkbox].toggle + label > div > div {
+  -webkit-transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* Open state */
+input[type=checkbox].toggle:checked + label > div > div:first-child {
+  -webkit-transform: translateY(4px) rotate(45deg);
+  transform: translateY(4px) rotate(45deg);
+}
+
+input[type=checkbox].toggle:checked + label > div > div:last-child {
+  -webkit-transform: translateY(3px) rotate(-45deg);
+  transform: translateY(3px) rotate(-45deg);
+}
+
+/* ----------------------------------------------------------------------------
+ * Ratio based containers */
+
+/* http://www.mademyday.de/css-height-equals-width-with-pure-css.html */
+.ratio {position:relative}
+.ratio::before {content: ""; display: block}
+.ratio.r4-3::before {padding-top: 75%}
+.ratio.r3-2::before {padding-top: 66.66%}
+.ratio.r16-9::before {padding-top: 56%}
+.ratio.r16-10::before {padding-top: 56.25%}
+.ratio > * {position: absolute; top: 0; left: 0; bottom: 0; right: 0}
+
+
+
