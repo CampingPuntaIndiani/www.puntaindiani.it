@@ -239,33 +239,6 @@
             </div>
         </section>
 
-        <section id="camping-life">
-            <header><h1 class="center">La vita in campeggio</h1></header>
-            <div class="carousell no-full">
-                <div>
-                    <img src="static/img/CampingLife/CampingView.png" alt="Camping view">
-                    <div class="info"><h1>Punta Indiani</h1>Naturalmente campeggio</div>
-                </div>
-                <div>
-                    <img src="static/img/CampingLife/Friends.jpg" alt="">
-                    <div class="info"><h1>Relax</h1></div>
-                </div>
-                <div>
-                    <img src="static/img/CampingLife/RelaxOnTheBeach.jpg" alt="Relax on the beach">
-                    <div class="info"><h1>Animazione?</h1>Fare amicizia!</div>
-                </div>
-                <div>
-                    <img src="static/img/CampingLife/Moonlight.jpg" alt="Moonlight - magic experience">
-                    <div class="info"><h1>Moonlight...</h1>Momenti magici.</div>
-                </div>
-                <div>
-                    <img src="static/img/CampingLife/Happines.jpg" alt="Lago">
-                    <div class="info"><h1>Lago!</h1>Nuoto, sport, divertimento.</div>
-                </div>
-                <span class="progressbar"><span class="progress"></span><span class="progress-total"></span></span>
-            </div>
-        </section>
-
         <section id="what-to-do">
             <header class="no-full">
                 <h1 class="center">Un mondo da scoprire</h1>
@@ -300,6 +273,34 @@
             </div>
         </section>
 
+
+        <section id="camping-life">
+            <header><h1 class="center">La vita in campeggio</h1></header>
+            <div class="carousell no-full">
+                <div>
+                    <img src="static/img/CampingLife/CampingView.png" alt="Camping view">
+                    <div class="info"><h1>Punta Indiani</h1>Naturalmente campeggio</div>
+                </div>
+                <div>
+                    <img src="static/img/CampingLife/Friends.jpg" alt="">
+                    <div class="info"><h1>Relax</h1></div>
+                </div>
+                <div>
+                    <img src="static/img/CampingLife/RelaxOnTheBeach.jpg" alt="Relax on the beach">
+                    <div class="info"><h1>Animazione?</h1>Fare amicizia!</div>
+                </div>
+                <div>
+                    <img src="static/img/CampingLife/Moonlight.jpg" alt="Moonlight - magic experience">
+                    <div class="info"><h1>Moonlight...</h1>Momenti magici.</div>
+                </div>
+                <div>
+                    <img src="static/img/CampingLife/Happines.jpg" alt="Lago">
+                    <div class="info"><h1>Lago!</h1>Nuoto, sport, divertimento.</div>
+                </div>
+                <span class="progressbar"><span class="progress"></span><span class="progress-total"></span></span>
+            </div>
+        </section>
+
 		<section id="find-us">
             <!--
 			<iframe id="gmap" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD4nigm8rShwERBQ80TUTactTvvJQo-SZw&q=Camping+Punta+Indiani,Pergine+Italy" allowfullscreen></iframe>
@@ -321,39 +322,12 @@
             <div><a href="">special offer</a></div>
         </section>
 
-        <section id="agreements">
-            <!-- As seen on -->
-
-            <a href="#"><img src="static/img/Agreements/trentino.png" alt="Trentino"></a>
-            <a href="#"><img src="static/img/Agreements/valsugana.png" alt="Valsugana"></a>
-
-            <a href="#"><span class="separator"></span>
-
-            <a href="#"><img src="static/img/Agreements/adac.png" alt="ADAC"></a>
-            <a href="#"><img src="static/img/Agreements/anwb.png" alt="ANWB"></a>
-            <a href="#"><img src="static/img/Agreements/acsi.png" alt="ACSI"></a>
-            <a href="#"><img src="static/img/Agreements/campingit.png" alt="Camping.it"></a>
-
-            <a href="#"><img src="static/img/Agreements/dcc.png" alt="DCC"></a>
-            <a href="#"><img src="static/img/Agreements/ecc.png" alt="ECC"></a>
-
-            <a href="#"><img src="static/img/Agreements/alan_rogers.png" alt="Alan Rogers"></a>
-
-            <a href="#"><img src="static/img/Agreements/zoover.png" alt="Zoover winner 2014"></a>
-            <a href="#"><span class="separator"></span></a>
-
-            <a href="https://www.facebook.com/CampingPuntaIndiani/"><img src="static/img/Agreements/FB-f-Logo__blue_72.png" alt="Facebook Page"></a>
-        </section>
-
-        <section id="contacts">
-            <span class="camping">Camping Punta Indiani</span> snc di Piffer Renzo e C. - P.IVA 01834810226<br>
-            38057 Valcanover Pergine (TN) ITALY</span>|<abbr title="Phone">Phone: 0461 548062</abbr><br>
-            <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
-        </section>
 
         <section id="reserve">
+            <header class="no-full center"><h1>Prenota ora la tua piazzola preferita</h1><h3>... o richiedi informazioni</h3></header>
+
             <!-- Target _blank: on nojs and validation error please do not clear the data. -->
-            <form id="rsv" method="POST" action="https://dmbcau.martin-dev.eu/website/reserve/" autocomplete="on" autofocus="on" target="_blank">
+            <form id="rsv" class="no-full" method="POST" action="https://dmbcau.martin-dev.eu/website/reserve/" autocomplete="on" autofocus="on" target="_blank">
                 <!-- This will be striped from js (if enabled) ;) -->
                 <input type="hidden" name="nojs" value="1">
 
@@ -362,30 +336,28 @@
                 <!-- TODO: replace date with 'select' (like dmbcau) -->
 
                 <fieldset>
-                    <legend>Informazioni personali</legend>
+                    <legend>informazioni personali</legend>
                     <div><div><label for="surname">cognome</label></div><div><input id="surname" type="text" name="surname" placeholder="Rossi" required></div></div>
                     <div><div><label for="name">nome</label></div><div><input id="name" type="text" name="name" placeholder="Mario" required></div></div>
                     <div><div><label for="email">email</label></div><div><input id="email" type="email" name="email" placeholder="mario.rossi@gmail.com" required></div></div>
-
                     <div><div><label for="citizenship">cittadinanza</label></div><div><select id="citizenship" name="citizenship"><option value="100000100" selected>Italy</option><option value="100000232">Netherlands</option><option value="100000216">Germany</option><option value="100000203">Austria</option><option value="100000241">Switzerland</option><option value="100000206">Belgium</option><option value="100000212">Denmark</option><option value="100000219">United Kingdom</option><option value="" >Altro</option></select></div></div>
-
-
                 </fieldset>
+
                 <fieldset>
                     <legend>soggiorno</legend>
                     <div><div><label for="arrival">arrivo</label></div><div><input type="text" id="arrival" name="start" placeholder="yyyy-mm-dd" min="2017-04-26" max="2017-09-29" required></div></div>
                     <div><div><label for="departure">partenza</label></div><div><input type="text" id="departure" name="end" placeholder="yyyy-mm-dd" min="2017-04-27" max="2017-09-30" required></div></div>
                     <div><div><label for="card">promozione</label></div><div><select id="card" name="card"><option value="NONE"></option><option value="CKE">Camping Key Europe</option><option value="ADAC">ADAC Camp Card</option><option value="ACSI">ACSI Camping Card</option></select></div></div>
-                    <div><div><label for="kind">piazzola</label></div>
-                    <div><select id="kind" name="kind"><option value="1">aqua</option><option value="2">panorama</option><option value="3">relax</option></select></div></div>
+                    <div><div><label for="kind">piazzola</label></div><div><select id="kind" name="kind"><option value="1">aqua</option><option value="2">panorama</option><option value="3">relax</option></select></div></div>
                 </fieldset>
+
                 <fieldset>
                     <legend>extra</legend>
-                    <div><div><label for="adults">adulti extra</label></div><div><select type="text" id="adults" name="adults"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></div></div>
+                    <div><div><label for="adults">adulti</label></div><div><select type="text" id="adults" name="adults"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></div></div>
                     <div><div><label for="children">bambini</label></div><div><select id="children" name="children"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></div></div>
 
 
-                    <div><div><label for="extra_tents">tendine extra</label></div><div><select id="extra_tents" name="extra_tents"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div></div>
+                    <div><div><label for="extra_tents">tendine</label></div><div><select id="extra_tents" name="extra_tents"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div></div>
                     <div><div><label for="extras">extra</label></div><div><select id="extras" name="extras"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div></div>
 
                     <div><div><label for="equipement">mezzo</label></div><div><select id="equipement" name="equipement"><option value="" selected></option><option value="car-only">solo macchina</option><option value="tent">tenda</option><option value="roulette">roulotte</option><option value="camper">camper</option><option value="bicyle">bicicletta</option></select></div></div>
@@ -393,9 +365,8 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Animali</legend>
-                    <input type="checkbox" name="with_pet" id="with_pet"><label for="with_pet">Porter&oacute; un'animale domestico.</label>
-                    <select id="pet" name="pet"><option value=""></option><option value="dog">cane</option><option value="gatto">gatto</option><option value="altro">altro</option></select>
+                    <legend>animali</legend>
+                    <div><label for="with_pet">Porter&oacute; un'animale domestico:</label></div><div><select id="pet" name="pet"><option value="">no</option><option value="dog">cane</option><option value="gatto">gatto</option><option value="altro">altro</option></select></div>
                 </fieldset>
 
                 <!--
@@ -540,15 +511,48 @@
                         ">
                     </textarea>
                 </fieldset>
-                <fieldset>
+
+                <fieldset class="inline center">
                     <legend>legal</legend>
-                    <input type="checkbox" name="CR" checked required> Accetto <a href="rules.html" target="_blank">il regolamento</a>.<br>
-                    <input type="checkbox" name="TC" checked required> Accetto <a href="privacy.html" target="_blank">privacy policy</a>.<br>
-                    <br>
-                    <button type="submit" class="button resverve-button">prenota ora</button>
+                    <input type="checkbox" name="CR" id="CR" checked required> <label for="CR">Accetto</label> <a href="rules.html" target="_blank">il regolamento</a>.</input>
+                    <input type="checkbox" name="TC" id="TC" checked required> <label for="TC">Accetto</label> <a href="privacy.html" target="_blank">privacy policy</a>.</input>
                 </fieldset>
+
+                <button type="submit" class="button reserve-button">prenota ora</button>
             </form>
         </section>
+
+        <section id="agreements">
+            <!-- As seen on -->
+
+            <a href="#"><img src="static/img/Agreements/trentino.png" alt="Trentino"></a>
+            <a href="#"><img src="static/img/Agreements/valsugana.png" alt="Valsugana"></a>
+
+            <a href="#"><span class="separator"></span>
+
+            <a href="#"><img src="static/img/Agreements/adac.png" alt="ADAC"></a>
+            <a href="#"><img src="static/img/Agreements/anwb.png" alt="ANWB"></a>
+            <a href="#"><img src="static/img/Agreements/acsi.png" alt="ACSI"></a>
+            <a href="#"><img src="static/img/Agreements/campingit.png" alt="Camping.it"></a>
+
+            <a href="#"><img src="static/img/Agreements/dcc.png" alt="DCC"></a>
+            <a href="#"><img src="static/img/Agreements/ecc.png" alt="ECC"></a>
+
+            <a href="#"><img src="static/img/Agreements/alan_rogers.png" alt="Alan Rogers"></a>
+
+            <a href="#"><img src="static/img/Agreements/zoover.png" alt="Zoover winner 2014"></a>
+            <a href="#"><span class="separator"></span></a>
+
+            <a href="https://www.facebook.com/CampingPuntaIndiani/"><img src="static/img/Agreements/FB-f-Logo__blue_72.png" alt="Facebook Page"></a>
+        </section>
+
+        <section id="contacts">
+            <span class="camping">Camping Punta Indiani</span> snc di Piffer Renzo e C. - P.IVA 01834810226<br>
+            38057 Valcanover Pergine (TN) ITALY</span>|<abbr title="Phone">Phone: 0461 548062</abbr><br>
+            <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
+        </section>
+
+
 
         <script type="text/javascript" src="static/js/main.js"></script>
     </body>
