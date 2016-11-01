@@ -19,6 +19,9 @@ body {
 
 .camping {
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: none;
+  font-style: normal;
   letter-spacing: .2px;
 }
 
@@ -427,7 +430,7 @@ sup {font-size: 0.6em}
 }
 
 /* Gallery mode */
-.pitch input {position: absolute;left: -10000px;}
+.pitch input {position: absolute;left: -10000px;top:50%;}
 
 .pitch img {
 	width: 100%;
@@ -830,4 +833,9 @@ sup {font-size: 0.6em}
 #agreements span { font-size: 1rem; }
 #agreements img {
   height: 2rem;
+}
+
+/* ========================================================================== */
+#contacts {
+  text-align: center;
 }
