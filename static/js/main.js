@@ -10,7 +10,7 @@
 					document.scrollTop ||
 					document.documentElement.scrollTop ||
 					document.body.scrollTop),
-				mustFix = Y > window.innerHeight,
+				mustFix = Y >= window.innerHeight,
 				current = document.body.classList.contains('fix');
 			if (mustFix !== current) document.body.classList.toggle('fix');
 		};

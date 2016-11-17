@@ -466,7 +466,7 @@ template {
 a, a:hover, a:visited, a:target, a:link {
 	text-decoration: none;
 	cursor: pointer;
-  color: inherit;
+  color: #0288d1;
 }
 
-a:hover {color: #0288d1}
+a:hover {text-decoration: underline}

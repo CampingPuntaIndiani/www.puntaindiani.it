@@ -80,7 +80,10 @@ strong {font-weight: 700;}
 
 body > section {
   margin: 4px 0 0 0;
-  padding-top: 44px;
+
+	padding-top: 3.2rem;
+	padding-top: calc(3rem + 4px);
+
   padding-bottom: 1em;
   background: #fff;
 }
@@ -90,6 +93,8 @@ section > header:first-child {
   margin-right: auto;
   margin-left: auto;
 }
+section > header:first-child > :first-child {margin-top: .5em}
+
 
 .no-full > * {
   /* TODO: tweek me */
@@ -139,7 +144,16 @@ a.reserve-button:hover {
   color: #fff;
   border-color: #fff;
   background-color: #ffad33;
+	text-decoration: none;
 }
 
 .flex-row {display: flex; justify-content: space-around; flex-wrap: wrap}
 .flex-row > * {text-align: center}
+
+.active-only {display:none}
+.active-only:target {display:inherit}
+.space-up {
+	padding-top: 3.2rem;
+	padding-top: calc(3rem + 4px);
+}
+i.large {font-size: 1.6em}

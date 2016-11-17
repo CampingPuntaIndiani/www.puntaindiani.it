@@ -5,13 +5,17 @@
 	justify-content: space-between;
 	box-sizing: content-box;
 
-	width: 100%;
 	height: 3em;
 	padding: 2px 30px 2px 30px;
 
   color: #fff;
 	font-family: 'Raleway', sans-serif;
 	background-color: #0288d1;
+
+	box-shadow: 0;
+	transition: box-shadow 1s ease-in-out;
+  -moz-transition: box-shadow 1s ease-in-out;
+  -webkit-transition: box-shadow 1s ease-in-out;
 }
 
 #menu > ul {
@@ -42,6 +46,7 @@
 	text-decoration: none;
 
 	border: 2px solid transparent;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -73,11 +78,17 @@
 }
 
 /* Sticky binding */
-#menu-placeholder {display: none;}
-body.fix #menu {position: fixed;z-index: 2;top: 0}
-body.fix #menu-placeholder {
-  display: block;
-  height: 3rem; /* Same as #menu */
+body.fix #menu {
+	position: fixed;
+	z-index: 2; top: 0;left: 0;right: 0;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),
+		 				  0 1px 10px 0 rgba(0,0,0,0.12),
+						  0 2px 4px -1px rgba(0,0,0,0.3);
+}
+
+body.fix {
+  margin-top: 3rem; /* Same as #menu */
+  margin-top: calc(3rem + 4px); /* Same as #menu */
 }
 
 /* Collapsed version binding */
