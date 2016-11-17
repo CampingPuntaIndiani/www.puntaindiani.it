@@ -152,6 +152,7 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+.pitch > header {font-size: 2.5em}
 .pitch > header {
 	justify-content: space-between;
   top: 0;
@@ -285,7 +286,7 @@ sup {font-size: 0.6em}
 .pitch > input:nth-child(3):checked ~ .nav > *:nth-child(3) .fa-dot-circle-o {
 	position: absolute;
 	display: block;
-	top: 0;
+	top: 2px;
 	opacity: .8;
 }
 
