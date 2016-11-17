@@ -508,6 +508,7 @@ sup {font-size: 0.6em}
 .collapse-white-space > * {font-size: 1rem}
 
 
+#media-links {padding-bottom: 44px; margin-top:0;}
 #media-links > div {
   display: inline-block;
   width: 25%;

@@ -95,7 +95,7 @@ section > header:first-child {
   /* TODO: tweek me */
 	width: 80%;
 	max-width: 1200px;
-	/* breakpoint: 1200, 992, 768, 480, 320 */
+	/* breakpoint: 1200 (1128?), 992, 768, 480, 320 */
 	margin-left: auto;
 	margin-right: auto;
 }

@@ -55,15 +55,13 @@
             <li class="brand only-v">Camping Punta Indiani</li>
             <input checked type="checkbox" name="menu-toggle" id="menu-toggle" class="toggle" />
             <label for="menu-toggle"><div><div></div><div></div></div></label>
-
 			<span id="logo" class="only-h"></span>
-
             <ul id="menu-list">
                 <li><a href="index.html">home</a></li>
                 <li><a href="#accomodations">piazzole</a></li>
                 <li><a href="#outdoors">dintorni</a></li>
                 <li><a href="#find-us">dove siamo</a></li>
-                <li><a href="#downloads">Lorem</a></li>
+                <li><a href="#downloads">Prezzi &amp; Mappa</a></li>
                 <li class="separator"><a href="#">&nbsp;</a></li>
                 <li><a href="#offers">offerte</a></li>
                 <li><a href="#reserve">prenota</a></li>
@@ -304,28 +302,23 @@
             </div>
         </section>
 
+        <section id="media-links" class="collapse-white-space">
+            <div class="ratio r16-10 stack-1" id="video"><div><a href="media.html#video" target="_blank">Video</a></div></div>
+            <div class="ratio r16-10 stack-1" id="virtual-tour"><div><a href="media.html#tour" target="_blank">Virtual&nbsp;Tour</a></div></div>
+            <div class="ratio r16-10 stack-1" id="gallery"><div><a href="media.html#pictures" target="_blank">Gallery</a></div></div>
+            <div class="ratio r16-10 stack-1" id="team"><div><a href="media.html#team" target="_blank">Team</a></div></div>
+        </section>
+
 		<section id="find-us">
 			<iframe id="gmap" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD4nigm8rShwERBQ80TUTactTvvJQo-SZw&q=Camping+Punta+Indiani,Pergine+Italy" allowfullscreen></iframe>
 		</section>
 
-        <section id="media-links" class="collapse-white-space">
-            <div class="ratio r16-10 stack-1" id="video"><div><a href="media.html#video" target="_blank">Video<br><i class="fa fa-play" aria-hidden="true"></i></a></div></div>
-            <div class="ratio r16-10 stack-1" id="virtual-tour"><div><a href="media.html#tour" target="_blank">Virtual<br>Tour</a></div></div>
-            <div class="ratio r16-10 stack-1" id="gallery"><div><a href="media.html#pictures" target="_blank">Gallery<br><i class="fa fa-camera-retro" aria-hidden="true"></i></a></div></div>
-            <div class="ratio r16-10 stack-1" id="team"><div><a href="media.html#team" target="_blank">Team</a></div></div>
-        </section>
-
-        <section id="info-bar" class="collapse-white-space stack-1">
-            <div><a href="">mappa</a></div>
-            <div><a href="">prezzi</a></div>
-            <div><a href="">convenzioni &amp; forfait</a></div>
-            <div><a href="">regolamento</a></div>
-            <div><a href="">special offer</a></div>
-        </section>
-
-
         <section id="reserve">
-            <header class="no-full center"><h1>Prenota ora la tua piazzola preferita</h1><h3>... o richiedi informazioni</h3></header>
+            <header class="no-full center">
+                <h1>Prenota ora la tua piazzola preferita</h1>
+                <h3>... o richiedi informazioni</h3>
+                <p class="center"><a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a></p>
+            </header>
 
             <!-- Target _blank: on nojs and validation error please do not clear the data. -->
             <form id="rsv" class="no-full" method="POST" action="https://dmbcau.martin-dev.eu/website/reserve/" autocomplete="on" autofocus="on" target="_blank">
@@ -367,7 +360,7 @@
 
                 <fieldset>
                     <legend>animali</legend>
-                    <div><label for="with_pet">Porter&oacute; un'animale domestico:</label></div><div><select id="pet" name="pet"><option value="">no</option><option value="dog">cane</option><option value="gatto">gatto</option><option value="altro">altro</option></select></div>
+                    <div><label for="with_pet">Porter&ograve; un animale domestico:</label></div><div><select id="pet" name="pet"><option value="">no</option><option value="dog">cane</option><option value="gatto">gatto</option><option value="altro">altro</option></select></div>
                 </fieldset>
 
                 <!--
@@ -556,6 +549,6 @@
 
 
 
-        <script type="text/javascript" src="static/js/main.js"></script>
+         <script type="text/javascript" src="static/js/main.js"></script>
     </body>
 </html>
