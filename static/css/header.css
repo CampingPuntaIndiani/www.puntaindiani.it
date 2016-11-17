@@ -94,7 +94,7 @@ body.fix {
 /* Collapsed version binding */
 #menu-toggle,
 #menu-toggle + label {display: none}
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* TODO: instead of wrap, add .vertical to body */
   /*
   * move to vertical when ((width*# + margin) > screen)
   */
