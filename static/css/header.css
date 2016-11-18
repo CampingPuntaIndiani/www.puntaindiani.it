@@ -97,6 +97,7 @@ body.fix {
   #menu-toggle,
   #menu-toggle + label {display: none}
 }
+
 @media (max-width: 768px) {
   /*
   * move to vertical when ((width*# + margin) > screen)
@@ -109,7 +110,9 @@ body.fix {
 		position: relative;
     list-style: none;
     text-align: center;
+    max-height: 100vh;
 		height: auto;
+    overflow: auto;
   }
 
   #logo {
@@ -117,6 +120,7 @@ body.fix {
     position: absolute;
     top: 2px;
   }
+
   #menu-toggle:checked + label + .brand {
     border-bottom: 1px solid rgba(255,255,255, 0.3);
     padding-bottom: 5px;
@@ -140,11 +144,6 @@ body.fix {
     -webkit-transition: max-height .4s ease-in-out;
   }
 
-  #menu {
-    overflow: auto;
-    max-height: 100vh;
-  }
-
   #menu a:hover {
     background-color: #f6f6f6;
     color: #333;
@@ -158,4 +157,9 @@ body.fix {
     max-height: 30rem;
     padding-bottom: 5px;
   }
+}
+
+@media (max-width: 480px) {
+  #menu {padding: 5px}
+  #menu-label {right: 5px}
 }

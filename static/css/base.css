@@ -93,7 +93,7 @@
 #infographic {margin: 3em 0 1em 0}
 #infographic header {font-size: 2rem; font-weight: 200}
 #infographic footer {font-size: .8rem;letter-spacing: 1px;text-transform: uppercase}
-#services .icon {width: 64px; height: 64px;}
+.icon {width: 2.6rem; height: 2.6rem;}
 
 /* ========================================================================== */
 #accomodations .pitch {
@@ -442,7 +442,11 @@ sup {font-size: 0.6em}
 	display: inline-block;
 	box-sizing: border-box;
 	width: 25%;
-	height: calc((25vw)*3/4);
+
+  /* 2rem * 5 + space */
+  min-width: 12rem;
+  min-height: 9rem;
+  height: 18.75vw;
 
 	border-right: 1px solid #fff;
 
@@ -453,7 +457,10 @@ sup {font-size: 0.6em}
 	flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 1.5em;
 }
+
 
 
 #what-to-do > div > div::last-child {border-left:0}
@@ -465,7 +472,7 @@ sup {font-size: 0.6em}
 	font-size: 1.2rem;
 
   margin-top: 1em;
-	padding-bottom: 3em;
+	padding-bottom: 2em;
 }
 
 #what-to-do .download {
@@ -476,8 +483,8 @@ sup {font-size: 0.6em}
 #what-to-do .icon {
 	color: #fff;
 	fill: #fff;
-	width: 64px;
-	height: 64px;
+  width: 2rem;
+  height: 2rem;
 }
 #what-to-do a .icon {
   -webkit-animation: bounce 2s infinite;
