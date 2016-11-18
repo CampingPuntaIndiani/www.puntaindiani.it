@@ -13,8 +13,8 @@
 	background-color: #0288d1;
 
 	box-shadow: 0;
-	transition: box-shadow 1s ease-in-out;
-  -moz-transition: box-shadow 1s ease-in-out;
+	        transition: box-shadow 1s ease-in-out;
+     -moz-transition: box-shadow 1s ease-in-out;
   -webkit-transition: box-shadow 1s ease-in-out;
 }
 
@@ -92,22 +92,53 @@ body.fix {
 }
 
 /* Collapsed version binding */
-#menu-toggle,
-#menu-toggle + label {display: none}
-@media (max-width: 768px) { /* TODO: instead of wrap, add .vertical to body */
+
+@media (min-width: 769px) {
+  #menu-toggle,
+  #menu-toggle + label {display: none}
+}
+@media (max-width: 768px) {
   /*
   * move to vertical when ((width*# + margin) > screen)
   */
+  #menu-toggle {position: absolute; left: -10000px;}
+  #menu-label {position: absolute; top:1.5rem; right: 30px;}
 
   #menu, #menu-list, ul#menu-list > li {display: block;}
   #menu {
 		position: relative;
-    width:100%;
+    list-style: none;
     text-align: center;
 		height: auto;
   }
 
-	#menu-list {transition: all 2s}
+  #logo {
+    display: block;
+    position: absolute;
+    top: 2px;
+  }
+  #menu-toggle:checked + label + .brand {
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  #menu li.brand {
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+
+	#menu > ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+            transition: max-height .4s ease-in-out;
+       -moz-transition: max-height .4s ease-in-out;
+    -webkit-transition: max-height .4s ease-in-out;
+  }
 
 	#menu li.separator a {
 		padding: 0;
@@ -115,10 +146,20 @@ body.fix {
 		height: 0;
 		border: 1px inset rgba(255,255,255,0.2);
 		border-width: 1px 0 1px 0;
+    font-size: .95rem;
 	}
+
+  #menu a:hover {
+    background-color: #f6f6f6;
+    color: #333;
+  }
 
 	#menu .brand {height: 100%}
 
-  #menu-toggle:not(:checked) ~ #menu-list {max-height: 0;display: none;}
-  #menu-toggle:checked ~ #menu-list {max-height: 10000px;display: block}
+  /* set to be actual, or a bit more, but not too much (latency in animation) */
+  /* 3rem * 9 */
+  #menu-toggle:checked ~ #menu-list {
+    max-height: 30rem;
+    padding-bottom: 5px;
+  }
 }
