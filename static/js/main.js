@@ -4,6 +4,7 @@
 (function(){
     "use strict";
 	var sticky_bar = function() {
+        var lastScroll=0;
 		return function() {
 			// Compute actual scroll position
 			var Y = (window.pageYOffset ||
@@ -11,8 +12,20 @@
 					document.documentElement.scrollTop ||
 					document.body.scrollTop),
 				mustFix = Y >= window.innerHeight,
-				current = document.body.classList.contains('fix');
+				current = document.body.classList.contains('fix'),
+                scrollMin = 50,
+                menuToggle = document.getElementById('menu-toggle');
 			if (mustFix !== current) document.body.classList.toggle('fix');
+            if (mustFix && menuToggle.checked) {
+                if (lastScroll === 0) {
+                    lastScroll = Y;
+                } else if (Math.abs(Y-lastScroll) >= scrollMin) {
+                    /* auto menu close */
+                    document.getElementById('menu-toggle').checked=false;
+                }
+            } else {
+                lastScroll=0;
+            }
 		};
 	}();
     window.addEventListener('scroll', sticky_bar);
