@@ -366,16 +366,16 @@ sup {font-size: 0.6em}
 }
 
 @keyframes absprogress {
-	0%    {margin-left: 20%; margin-left: calc(20% - .5rem)}
-	19.9% {margin-left: 20%; margin-left: calc(20% - .5rem)}
-	20% 	{margin-left: 40%; margin-left: calc(40% - .5rem)}
-	39.9% {margin-left: 40%; margin-left: calc(40% - .5rem)}
-	40% 	{margin-left: 60%; margin-left: calc(60% - .5rem)}
-	59.9% {margin-left: 60%; margin-left: calc(60% - .5rem)}
-	60% 	{margin-left: 80%; margin-left: calc(80% - .5rem)}
-	79.9% {margin-left: 80%; margin-left: calc(80% - .5rem)}
-	80% 	{margin-left: 100%; margin-left: calc(100% - .5rem)}
-	100%  {margin-left: 100%; margin-left: calc(100% - .5rem)}
+	0%    {margin-left: 20%; margin-left: calc(20% -  .2rem - 4px)}
+	19.9% {margin-left: 20%; margin-left: calc(20% -  .2rem - 4px)}
+	20% 	{margin-left: 40%; margin-left: calc(40% -  .2rem - 4px)}
+	39.9% {margin-left: 40%; margin-left: calc(40% -  .2rem - 4px)}
+	40% 	{margin-left: 60%; margin-left: calc(60% -  .2rem - 4px)}
+	59.9% {margin-left: 60%; margin-left: calc(60% -  .2rem - 4px)}
+	60% 	{margin-left: 80%; margin-left: calc(80% -  .2rem - 4px)}
+	79.9% {margin-left: 80%; margin-left: calc(80% -  .2rem - 4px)}
+	80% 	{margin-left: 100; margin-left: calc(100% - .2rem - 4px)}
+	100%  {margin-left: 100; margin-left: calc(100% - .2rem - 4px)}
 }
 
 .carousell .progressbar {
@@ -384,7 +384,7 @@ sup {font-size: 0.6em}
 
 	display: block;
 	height: .5rem;
-	background-color: rgba(0,0,0,0.3);
+  background-color: #f6f6f6;
 }
 
 .carousell .progressbar > .progress {
@@ -401,8 +401,7 @@ sup {font-size: 0.6em}
 	box-sizing: border-box;
 	height: 100%;
 	padding: 4px;
-	background-color: #ccc;
-	background-color: rgba(220,220,220,0.5);
+  background-color: #333;
   background-clip: content-box;
 }
 
@@ -412,11 +411,14 @@ sup {font-size: 0.6em}
 
 	top: -100%;
 
-  width: 0;
-  height: 0;
+  width: .2rem;
+  height: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
 	box-sizing: border-box;
-  border: .25rem solid rgba(0,0,0,0.5);
-  border-radius: 100%;
+
+  background-color: #000;
+  background-clip: content-box;
 
 	animation-name: absprogress;
 	animation-duration: 15s;
