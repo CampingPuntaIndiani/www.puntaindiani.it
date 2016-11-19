@@ -88,6 +88,13 @@ body > section {
   background: #fff;
 }
 
+@media (max-width: 768px) {
+  body > section {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 section > header:first-child {
   padding: 0 0 40px 0;
   margin-right: auto;

@@ -234,10 +234,6 @@ sup {font-size: 0.6em}
 	transition: opacity 2s;
 }
 
-.pitch .nav .fa-circle {
-	opacity: .4;
-}
-
 .images {font-size:0}
 
 /* hide all */
@@ -249,6 +245,7 @@ sup {font-size: 0.6em}
 .pitch .images > * {opacity:0;}
 
 .pitch .controls > *,
+
 .pitch .nav > * > .fa-dot-circle-o
 {
 	display: none;
@@ -276,7 +273,7 @@ sup {font-size: 0.6em}
 .pitch .nav > *:hover .fa-dot-circle-o {
 	display: block;
 	position: absolute;
-	top: 0;
+	top: 1px;
 	opacity: .6;
 	cursor: pointer;
 }
@@ -286,7 +283,7 @@ sup {font-size: 0.6em}
 .pitch > input:nth-child(3):checked ~ .nav > *:nth-child(3) .fa-dot-circle-o {
 	position: absolute;
 	display: block;
-	top: 2px;
+	top: 1px;
 	opacity: .8;
 }
 
@@ -580,16 +577,15 @@ sup {font-size: 0.6em}
 #agreements {
   display: flex;
   justify-content: space-around;
+	flex-wrap: wrap;
   align-content: center;
   padding: 4px 0 4px 0;
   box-sizing: border-box;
   font-size: 0;
 }
 
-#agreements span { font-size: 1rem; }
-#agreements img {
-  height: 2rem;
-}
+#agreements span {font-size: 1rem}
+#agreements img {height: 2rem}
 
 /* ========================================================================== */
 #contacts {
@@ -608,15 +604,30 @@ sup {font-size: 0.6em}
   width: 48%;
   box-sizing: border-box;
 }
+
 #rsv label, #rsv select, #rsv input, #rsv option{
   font-size: 1rem;
   width: 100%;
   text-align: center;
   text-align-last:center;
+  box-sizing: border-box;
 }
 
 #rsv fieldset > div > div:first-child {width: 40%;}
 #rsv fieldset > div > div:last-child {width: 58%;}
+
+@media (max-width: 480px) {
+  #rsv fieldset div {
+    display: block;
+    width: auto;
+    margin: auto;
+  }
+  #rsv fieldset > div > div:first-child,
+  #rsv fieldset > div > div:last-child {
+    width: 100%;
+    margin: 0 auto .5em auto;
+  }
+}
 
 #rsv textarea {width: 100%;height: 20vh;}
 #rsv .inline > input {display: inline-block;width:auto;}
