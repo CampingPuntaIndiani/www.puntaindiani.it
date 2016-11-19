@@ -161,6 +161,7 @@ a.reserve-button:hover {
 
 .active-only {display:none}
 .active-only:target {display:inherit}
+
 .space-up {
 	padding-top: 3.2rem;
 	padding-top: calc(3rem + 4px);
