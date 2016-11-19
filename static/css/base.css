@@ -545,8 +545,9 @@ sup {font-size: 0.6em}
 #virtual-tour {background-image: url("../img/MediaLinks/tour.png")}
 #gallery {background-image: url("../img/MediaLinks/gallery.jpg")}
 
-#media-links a:hover {
-  text-shadow: 1px 1px rgba(255,255,255,0.6);
+#media-links a, #mdia-link:link {
+  color: white;
+  text-shadow: 0 0 1px rgba(0,0,0,0.3);
 }
 
 /* ========================================================================== */
