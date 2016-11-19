@@ -167,3 +167,7 @@ a.reserve-button:hover {
 	padding-top: calc(3rem + 4px);
 }
 i.large {font-size: 1.6em}
+
+tr > td:first-child {text-transform: capitalize}
+tr > td:not(:first-child) {text-align: center}
+td sub {font-size: .6em}
