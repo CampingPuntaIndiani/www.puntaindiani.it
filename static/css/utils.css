@@ -1,5 +1,10 @@
 /* ----------------------------------------------------------------------------
  * Vertical Menu */
+input[type=checkbox].toggle + label {
+  height: 1em;
+  padding-top: .5em;
+  box-sizing: border-box;
+}
 input[type=checkbox].toggle + label > div {
   width: 18px;
   height: 8px;

@@ -3,10 +3,10 @@
 #menu {
 	display: flex;
 	justify-content: space-between;
-	box-sizing: content-box;
+	box-sizing: border-box;
 
 	height: 3em;
-	padding: 2px 30px 2px 30px;
+	padding: 0 30px 0 30px;
 
   color: #fff;
 	font-family: 'Raleway', sans-serif;
@@ -17,6 +17,9 @@
      -moz-transition: box-shadow 1s ease-in-out;
   -webkit-transition: box-shadow 1s ease-in-out;
 }
+
+@media (max-width: 1200px) {#menu {padding: 0 10px 0 10px}}
+@media (max-width: 480px) {#menu {padding: 0 5px 0 5px}}
 
 #menu > ul {
 	display: inline-flex;
@@ -34,12 +37,15 @@
 }
 
 #menu a, #menu a:hover, #menu a:visited {
-	display: block;
+	display: flex;
 	height: 100%;
 	box-sizing: border-box;
+  text-align: center;
+  align-items: center;
 
 	font-size: .8rem;
-	line-height: 3rem;
+	line-height: 1.5rem;
+  height: 3rem;
 
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -103,7 +109,13 @@ body.fix {
   * move to vertical when ((width*# + margin) > screen)
   */
   #menu-toggle {position: absolute; left: -10000px;}
-  #menu-label {position: absolute; top:1.5rem; right: 30px;}
+  #menu-label {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    height: 3rem;
+    padding-top: 1.5rem;
+ }
 
   #menu, #menu-list, ul#menu-list > li {display: block;}
   #menu {
