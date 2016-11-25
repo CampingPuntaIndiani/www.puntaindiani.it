@@ -39,7 +39,8 @@ html { /* Note: rem are based on this. Default 16px */
 @media (min-width: 769px) {.only-v {display: none !important;}}
 @media (max-width: 768px) {.only-h {display: none !important;}}
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,.upper {
+  /* font-family: Verdana, Geneva, sans-serif; */
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
 }
@@ -47,7 +48,9 @@ h1,h2,h3,h4,h5,h6 {
 body {
   margin: 0;
 
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: 'Open Sans', sans-serif;
+
   color: #000;
   background: rgba(240,240,240,0.6);
 
@@ -79,7 +82,8 @@ strong {font-weight: 700;}
 }
 
 body > section {
-  margin: 4px 0 0 0;
+  /* NOTE: Add top margin here for the 'section split' effect */
+  margin: 0px 0 0 0;
 
 	padding-top: 3.2rem;
 	padding-top: calc(3rem + 4px);
@@ -167,7 +171,4 @@ a.reserve-button:hover {
 	padding-top: calc(3rem + 4px);
 }
 i.large {font-size: 1.6em}
-
-tr > td:first-child {text-transform: capitalize}
-tr > td:not(:first-child) {text-align: center}
-td sub {font-size: .6em}
+table {table-layout: fixed}

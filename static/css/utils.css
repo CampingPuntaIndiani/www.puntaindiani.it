@@ -77,3 +77,18 @@ input[type=checkbox].toggle:checked + label > div > div:last-child {
 /* ----------------------------------------------------------------------------
  * Prevent scroll */
 .scrollOff {pointer-events: none}
+
+/* ----------------------------------------------------------------------------
+ * Align */
+.txt-left {text-align:left;}
+.txt-right {text-align:right;}
+.center {text-align:center;}
+.cc {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.ib {display: inline-block}
+

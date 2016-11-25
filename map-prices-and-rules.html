@@ -37,80 +37,139 @@
     <link rel="stylesheet" type="text/css" href="static/css/utils.css">
     <link rel="stylesheet" type="text/css" href="static/css/header.css">
 
+    <link rel="stylesheet" type="text/css" href="static/css/map-prices-and-rules.css">
+
     </head>
     <body>
         <section class="no-full">
             <header><h1>prezzi 2017</h1></header>
+            <p>Il <strong>prezzo della piazzola include 2 Persone</strong>,
+                posto camper/roulotte/tenda, eventuali altre tendine in piazzola,
+                elettricità 4A, servizi igienici, docce calde, un posto auto.</p>
 
-            <p>Il <strong>prezzo della piazzola include: 2 Persone</strong>, posto camper/ roulotte/ tenda, elettricità 3A, servizi igienici, docce calde, un posto auto.</p>
-            <p><strong>La tassa di soggiorno è ESCLUSA</strong> (€ 1. a persona, a notte fino a un massimo di 10 notti; esenti i minori fino al compimento del 14° anno).</p>
-            <p><strong>Partenza</strong>: indipendentemente dall’ora di ingresso, sarà conteggiata un’ulteriore notte se la partenza avverrà dopo le ore 11:00.</p>
+            <p>Le persone aggiuntive sono conteggiate da listino.</p>
 
-            <table>
+            <p>Persona singola: In bassa stagione è possibile affittare una piazzola Panorama o Relax per una singola persona per euro 12. a notte.</p>
+
+            <p>Tariffa a notte, indipendentemente dall'ora di ingresso, sarà conteggiata un’ulteriore notte se la partenza avverrà dopo le ore 11:00.</p>
+
+            <p><strong>Bassa Stagione:</strong> 28/04 – 07/07 e 26/8 – 30/9</p>
+            <p><strong>Alta Stagione:</strong> 07/07 – 26/08</p>
+
+
+            <h2 class="center space-up">piazzole</h2>
+            <div id="places" class="flex-row upper">
+                <!-- Yes I am usign fucking tables! -->
+                <table class="aqua">
+                    <thead>
+                        <tr><th colspan="2" class="txt-left upper">aqua</th></tr>
+                        <tr><th colspan="2">
+                                + <i class="fa fa-user" aria-hidden="true" aria-label="adults" title="adults"></i>
+                                + <i class="fa fa-user" aria-hidden="true" aria-label="adults" title="adults"></i>
+                            </th>
+                        </tr>
+                    </head>
+                    <tbody>
+                        <tr class="season">
+                            <td>
+                                <div class="txt-left">bassa</div>
+                                <div class="txt-left"><small>stagione</small></div>
+                            </td>
+                            <td>
+                                <div class="txt-right">alta</div>
+                                <div class="txt-right"><small>stagione</small></div>
+                            </td>
+                        </tr>
+                        <tr class="price"><td>33<sub>.00</sub></td><td>45<sub>.00</sub></td></tr>
+                    </tbody>
+                </table>
+
+                <table class="panorama">
+                    <thead>
+                        <tr><th colspan="2" class="txt-left upper">panorama</th></tr>
+                        <tr><th colspan="2">
+                                + <i class="fa fa-user" aria-hidden="true" aria-label="adults" title="adults"></i>
+                                + <i class="fa fa-user" aria-hidden="true" aria-label="adults" title="adults"></i>
+                            </th>
+                        </tr>
+                    </head>
+                    <tbody>
+                        <tr class="season">
+                            <td>
+                                <div class="txt-left">bassa</div>
+                                <div class="txt-left"><small>stagione</small></div>
+                            </td>
+                            <td>
+                                <div class="txt-right">alta</div>
+                                <div class="txt-right"><small>stagione</small></div>
+                            </td>
+                        </tr>
+                        <tr class="price"><td>23<sub>.00</sub></td><td>42<sub>.00</sub></td></tr>
+                    </tbody>
+                </table>
+
+                <table class="relax">
+                    <thead>
+                        <tr><th colspan="2" class="txt-left upper">relax</th></tr>
+                        <tr><th colspan="2">
+                                + <i class="fa fa-user" aria-hidden="true" aria-label="adults" title="adults"></i>
+                                + <i class="fa fa-user" aria-hidden="true" aria-label="adults" title="adults"></i>
+                            </th>
+                        </tr>
+                    </head>
+                    <tbody>
+                        <tr class="season">
+                            <td>
+                                <div class="txt-left">bassa</div>
+                                <div class="txt-left"><small>stagione</small></div>
+                            </td>
+                            <td>
+                                <div class="txt-right">alta</div>
+                                <div class="txt-right"><small>stagione</small></div>
+                            </td>
+                        </tr>
+                        <tr class="price"><td>23<sub>.00</sub></td><td>38<sub>.00</sub></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="center space-up">persone aggiuntive</h2>
+            <table id="people-extra" class="center">
+                <tr class="upper"><th>adulto</th><th>bambino</th></tr>
+                <tr class="note"><td>(oltre i due compresi)</td><td>[2-12] anni</td></tr>
+                <tr class="price"><td>10<sub>.00</sub></td><td>6<sub>.00</sub></td></tr>
+            </table>
+
+            <h2 class="center space-up">extra</h2>
+            <table id="extra">
                 <thead>
-                    <tr>
-                        <th>2017</th>
-                        <th>28/4 - 07/7</th>
-                        <th>07/7 - 26/8</th>
-                        <th>26/8 - 30/9</th>
+                    <tr class="upper">
+                        <th>cane</th>
+                        <th>extra<br>fuori piazzola</th>
+                        <th>piazzola<br>disabitata</th>
+                        <th>ospite<br>giornaliero</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>relax</td>
-                        <td>&euro; 23<sub>00</sub></td>
-                        <td>&euro; 38<sub>00</sub></td>
-                        <td>&euro; 23<sub>00</sub></td>
+                        <td>4<sub><small>.00</small></sub></td>
+                        <td>5<sub><small>.00</small></sub></td>
+                        <td>10<sub><small>.00</small></sub></td>
+                        <td>9<sub><small>.00</small></sub></td>
                     </tr>
-
-                    <tr>
-                        <td>panorama</td>
-                        <td>&euro; 23<sub>00</sub></td>
-                        <td>&euro; 42<sub>00</sub></td>
-                        <td>&euro; 23<sub>00</sub></td>
-                    </tr>
-
-                    <tr>
-                        <td>aqua</td>
-                        <td>&euro; 33<sub>00</sub></td>
-                        <td>&euro; 45<sub>00</sub></td>
-                        <td>&euro; 33<sub>00</sub></td>
-                    </tr>
-
-                    <tr></tr>
-
-                    <tr>
-                        <td>cane</td>
-                        <td>&euro; 4<sub>00</sub></td>
-                        <td>&euro; 4<sub>00</sub></td>
-                        <td>&euro; 4<sub>00</sub></td>
-                    </tr>
-
-                    <tr>
-                        <td>ospite</td>
-                        <td>&euro; 9<sub>00</sub></td>
-                        <td>&euro; 9<sub>00</sub></td>
-                        <td>&euro; 9<sub>00</sub></td>
-                    </tr>
-
-                    <tr>
-                        <td>adulto (extra)</td>
-                        <td>&euro; 10<sub>00</sub></td>
-                        <td>&euro; 10<sub>00</sub></td>
-                        <td>&euro; 10<sub>00</sub></td>
-                    </tr>
-
-                    <tr>
-                        <td>bambino (extra)</td>
-                        <td>&euro; 6<sub>00</sub></td>
-                        <td>&euro; 6<sub>00</sub></td>
-                        <td>&euro; 6<sub>00</sub></td>
-                    </tr>
-
                 </tbody>
-                </tfoot>
                 <tfoot>
+                    <tr>
+                        <td>solo in piazzola relax</td>
+                        <td>&#8545; auto - barca - tendina - carrell - ecc.</td>
+                        <td>possibile <u>solo</u> in bassa stagione</td>
+                        <td>previo autorizzazione della direzione</td>
+                    </tr>
+                </tfoot>
             </table>
+
+            <p class="center"><small>Tutti i prezzi indicati sono da intendersi espressi in euro. La tassa di soggiorno è ESCLUSA.<br>
+                    <small>(&euro;1.00 a persona, a notte fino a un massimo di 10 notti; esenti i minori fino al compimento del 14° anno)</small></small></p>
         </section>
 
         <section>
