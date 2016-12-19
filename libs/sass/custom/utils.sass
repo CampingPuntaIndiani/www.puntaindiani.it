@@ -1,0 +1,60 @@
+.has-v-centered
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+
+.has-v-centered.is-dense
+  justify-content: center
+
+.has-v-centered.is-explode
+  justify-content: space-between
+
+@mixin highContrast($color)
+  color: $color
+  text-shadow: 1px 1px findColorInvert($color)
+
+.is-overlay .title
+  @include highContrast($light)
+  font-weight: $weight-title-bold
+
+.has-auto-overflow
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+
+  &>*
+    margin-bottom: 2em;
+
+.has-text-justify
+  text-align: justify
+
+.is-48h img
+  width: auto;
+  height: 48px
+  +mobile
+    height: 24px
+
+.sticky-placeholder
+  display: none
+
+body.fix
+  .sticky
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 10
+    background: $light
+  .sticky-placeholder
+    display: inherit
+
+.scrollOff
+  pointer-events: none
+
+body:not(.nojs):not(.fix)
+  .is-fix-only
+    display: none
+
+.hero.is-warning .is-text-white
+  color: $white
+  text-shadow: 0px 0px 3px #000, 0px 0px 10px #000;
