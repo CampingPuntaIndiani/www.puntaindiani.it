@@ -31,7 +31,7 @@
         </style>
     </head>
     <body class="nojs">
-        <section class="hero is-info is-fullheight main-hero" id="hero">
+        <section class="hero is-info is-fullheight main-hero" id="home">
             <div class="hero-head">
                 <header class="nav">
                     <div class="container">
@@ -46,13 +46,13 @@
                             <span></span>
                         </span>
                         <div class="nav-right nav-menu">
-                            <a class="nav-item is-active">Home</a>
-                            <a class="nav-item">Gallery</a>
-                            <a class="nav-item">Offerte</a>
+                            <a href="index.html" class="nav-item is-active">home</a>
+                            <a href="gallery.html" class="nav-item">gallery</a>
+                            <a href="{{ _('offerte') }}.html" class="nav-item">{{ _('offerte') }}</a>
                             <span class="nav-item">
-                                <a class="button is-info is-inverted">
+                                <a href="#{{ _('prenota') }}" class="button is-info is-inverted">
                                     <span class="icon"><i class="fa fa-pencil"></i></span>
-                                    <span>Prenota</span>
+                                    <span>{{ _('prenota') }}</span>
                                 </a>
                             </span>
                         </div>
@@ -62,7 +62,6 @@
 
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <!-- TODO: consider if better w/is-1 -->
                     <h1 class="title is-1">CAMPING PUNTA INDIANI</h1>
                     <h2 class="subtitle is-3">The original camping mood</h2>
                 </div>
@@ -72,42 +71,41 @@
         <!-- Desktop version -->
         <section>
             <div class="sticky-placeholder is-hidden-mobile" style="height:45px"></div>
-            <div class="sticky tabs is-hidden-mobile is-medium" style="flex-wrap:wrap" id="menu-desktop">
+            <div class="sticky tabs is-hidden-mobile is-medium has-overflow" style="flex-wrap:wrap" id="menu-desktop">
                 <ul class="is-left">
-                    <li class="is-active"><a href="#hero">home</a></li>
-                    <li><a href="#il-campeggio">il campeggio</a></li>
-                    <li><a href="#piazzole">piazzole</a></li>
-                    <li><a href="#dintorni">dintorni</a></li>
-                    <li><a href="#vita-del-campeggio">vita</a></li>
-                    <li><a href="#dove-siamo">dove siamo</a></li>
-                    <li><a>prezzi &amp; mappa</a></li>
-                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="#{{ _('il-campeggio') }}">{{ _('il campeggio') }}</a></li>
+                    <li><a href="#{{ _('piazzole') }}">{{ _('piazzole') }}</a></li>
+                    <li><a href="#outdoor">outdoor</a></li>
+                    <li><a href="#highlights">highlights</a></li>
+                    <li><a href="#{{ _('dove-siamo') }}">{{ _('dove siamo') }}</a></li>
+                    <li><a href="gallery.html"><span class="icon"><i class="fa fa-camera" aria-hidden="true" title="Gallery"></i></span></a></li>
                 </ul>
                 <ul class="is-center">
-                    <li><a><span class="icon"><i class="fa fa-facebook-f"></i></span></a></li>
-                    <li><a><span class="icon"><i class="fa fa-google-plus"></i></span></a></li>
-                    <li><a><span class="icon"><i class="fa fa-phone" aria-hidden="true" aria-label="contact via phone" title="">&nbsp;</i></span></a></li>
+                    <li><a href="https://www.facebook.com/CampingPuntaIndiani/" target="_blank"><span class="icon"><i class="fa fa-facebook-f"></i></span></a></li>
+                    <!-- <li><a href="https://plus.google.com/+CampingPuntaIndianiPergineValsugana" target="_blank"><span class="icon"><i class="fa fa-google-plus"></i></span></a></li> -->
+                    <li><a class="tooltip-bottom" data-tooltip="0461-548062 & 345 0794205"><span class="icon"><i class="fa fa-phone" aria-hidden="true" aria-label="contact via phone" title="">&nbsp;</i></span></a></li>
                     <li><a><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true" aria-label="contact via mail" title="info@campingpuntaindiani.it">&nbsp;</i></span></a></li>
                 </ul>
                 <ul class="is-right">
-                    <li><a href="offerte.html">offerte</a></li>
-                    <li><a href="#prenota">prenota</a></li>
+                    <li><a href="/pdf/{{ _('prezzi') }}.pdf"><span class="icon"><i class="fa fa-download" aria-hidden="true"></i></span>{{ _('prezzi') }}</a></li>
+                    <li><a href="{{ _('offerte') }}.html">{{ _('offerte') }}</a></li>
+                    <li><a href="#{{ _('prenota') }}">{{ _('prenota') }}</a></li>
                 </ul>
             </div>
         </section>
 
 
-        <!-- MOBILE version -->
+        <!-- Mobile version -->
         <div class="sticky-placeholder is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen" style="height:50px"></div>
         <nav class="sticky nav has-shadow is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen"  id="menu-mobile">
             <div class="container" style="align-content: space-between">
                 <div class="nav-left">
                     <!-- Put really important things here -->
-                    <a class="nav-item is-tab" href="#prenota">
+                    <a href="#{{ _('prenota') }}" class="nav-item is-tab">
                         <span class="icon"><i class="fa fa-pencil">&nbsp;</i></span>
-                        <span>Prenota</span>
+                        <span>{{ _('prenota') }}</span>
                     </a>
-                    <a class="nav-item is-tab" href="mailto:info@campingpuntaindiani.it"><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true" aria-label="contact via mail" title="info@campingpuntaindiani.it">&nbsp;</i></span>contatta</a>
+                    <a class="nav-item is-tab" href="mailto:info@campingpuntaindiani.it"><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true" aria-label="contact via mail" title="info@campingpuntaindiani.it">&nbsp;</i></span>{{ _('contatta') }}</a>
                 </div>
 
                 <span class="nav-toggle" id="menu-bar">
@@ -117,23 +115,27 @@
                 </span>
 
                 <div class="nav-menu">
-                    <a href="#hero" class="nav-item is-tab is-active">home</a>
-                    <a href="#il-campeggio" class="nav-item is-tab">il campeggio</a>
-                    <a href="#piazzole" class="nav-item is-tab">piazzole</a>
-                    <a href="#dintorni" class="nav-item is-tab">dintorni</a>
-                    <a href="#dove-siamo" class="nav-item is-tab">dove siamo</a>
-                    <a href="" class="nav-item is-tab">prezzi &amp; mappa</a>
-                    <a href="" class="nav-item is-tab">offerte</a>
+                    <a href="#{{ _('il-campeggio') }}" class="nav-item is-tab">{{ _('il campeggio') }}</a>
+                    <a href="#{{ _('piazzole') }}" class="nav-item is-tab">{{ _('piazzole') }}</a>
+                    <a href="#outdoor" class="nav-item is-tab">outdoor</a>
+                    <a href="#highlights" class="nav-item is-tab">highlights</a>
+                    <a href="#{{ _('dove-siamo') }}" class="nav-item is-tab">{{ _('dove siamo') }}</a>
+                    <a href="gallery.html" class="nav-item is-tab">gallery</a>
+
+                    <a href="/pdf/{{ _('prezzi') }}.pdf" class="nav-item is-tab">{{ _('scarica') }} {{ _('prezzi') }}</a>
+                    <a href="{{ _('offerte') }}.html" class="nav-item is-tab">{{ _('offerte') }}</a>
+
                     <div class="nav-item is-tab">
-                        <a class="is-tab"><span class="icon"><i class="fa fa-facebook-f"></i></span></a>
-                        <a class="is-tab"><span class="icon"><i class="fa fa-google-plus"></i></span></a>
-                        <a><span class="icon"><i class="fa fa-phone" aria-hidden="true" aria-label="contact via phone" title="">&nbsp;</i></span></a>
+                        <a href="gallery.html"><span class="icon"><i class="fa fa-camera" aria-hidden="true" title="Gallery"></i></span></a>
+                        <a href="https://www.facebook.com/CampingPuntaIndiani/" target="_blank"><span class="icon"><i class="fa fa-facebook-f"></i></span></a>
+                        <a class="tooltip-top" data-tooltip="0461-548062 & 345 0794205"><span class="icon"><i class="fa fa-phone" aria-hidden="true" aria-label="contact via phone" title="">&nbsp;</i></span></a>
                         <a href="mailto:info@campingpuntaindiani.it"><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true" aria-label="contact via mail" title="info@campingpuntaindiani.it">&nbsp;</i></span></a>
                     </div>
+
                     <span class="nav-item">
-                        <a class="button is-info" href="#prenota">
+                        <a class="button is-info" href="#{{ _('prenota') }}">
                             <span class="icon"><i class="fa fa-pencil"></i></span>
-                            <span>Prenota</span>
+                            <span>{{ _('prenota') }}</span>
                         </a>
                     </span>
                 </div>
@@ -208,8 +210,6 @@
                         {% endtrans %}
                     </p>
                 </div>
-
-                <!-- TODO: make text on overlay scale -->
 
                 <p>
                     {% trans %}
@@ -422,7 +422,7 @@
                         <figure class="image is-3by2 is-bg">
                             <img src="/images/WhatToDo/CampingPuntaIndiani_WhatDoTo_CyclewayCaldonazzoLakeToVenice_And_MountainBike.jpg" alt="{% trans %}Mountain bike e ciclabile{% endtrans %}">
                             <div class="is-overlay has-v-centered">
-                                <p class="has-text-centered title is-3">{{ _('Ciclabile&nbsp;80Km<br>&amp;Mountain-bike') }}</p>
+                                <p class="has-text-centered title is-3">{{ _('ciclabile&nbsp;80km<br>&amp;mountain-bike') }}</p>
                             </div>
                         </figure>
                     </div>
@@ -430,8 +430,8 @@
                         <div class="content is-medium has-text-centered">
                             <p>
                                 {% trans %}
-                                Raggiungi Venezia ed esplora la Valsugana con la tua bicicletta.
-                                Scarica la <a href="pdf/cycleway_and_mountainbike_map.pdf" target="_blank">mappa&nbsp;<span class="icon is-medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 28 4.46875 L 26.59375 5.09375 L 19.96875 7.9375 L 12.34375 5.0625 L 11.96875 4.9375 L 11.59375 5.09375 L 4.59375 8.09375 L 4 8.34375 L 4 9 L 4 26 L 4 27.53125 L 5.40625 26.90625 L 12.03125 24.0625 L 19.65625 26.9375 L 20.03125 27.0625 L 20.40625 26.90625 L 27.40625 23.90625 L 28 23.65625 L 28 23 L 28 6 L 28 4.46875 z M 12.03125 7.0625 L 19.65625 9.9375 L 20.03125 10.0625 L 20.40625 9.90625 L 26 7.5 L 26 22.34375 L 19.96875 24.9375 L 12.34375 22.0625 L 11.96875 21.9375 L 11.59375 22.09375 L 6 24.5 L 6 9.65625 L 12.03125 7.0625 z M 21 11 C 20.447715 11 20 11.447715 20 12 C 20 12.552285 20.447715 13 21 13 C 21.552285 13 22 12.552285 22 12 C 22 11.447715 21.552285 11 21 11 z M 9.71875 13.28125 L 8.28125 14.71875 L 10.5625 17 L 8.28125 19.28125 L 9.71875 20.71875 L 12 18.4375 L 14.28125 20.71875 L 15.71875 19.28125 L 13.4375 17 L 15.71875 14.71875 L 14.28125 13.28125 L 12 15.5625 L 9.71875 13.28125 z M 23 14 C 22.447715 14 22 14.447715 22 15 C 22 15.552285 22.447715 16 23 16 C 23.552285 16 24 15.552285 24 15 C 24 14.447715 23.552285 14 23 14 z M 17 16 C 16.447715 16 16 16.447715 16 17 C 16 17.552285 16.447715 18 17 18 C 17.552285 18 18 17.552285 18 17 C 18 16.447715 17.552285 16 17 16 z M 23 17 C 22.447715 17 22 17.447715 22 18 C 22 18.552285 22.447715 19 23 19 C 23.552285 19 24 18.552285 24 18 C 24 17.447715 23.552285 17 23 17 z M 20 18 C 19.447715 18 19 18.447715 19 19 C 19 19.552285 19.447715 20 20 20 C 20.552285 20 21 19.552285 21 19 C 21 18.447715 20.552285 18 20 18 z"></path></svg></span></a>.
+                                Raggiungi Venezia ed esplora la Valsugana con la tua bicicletta.<br>
+                                Scarica la <a href="/pdf/cycleway_and_mountainbike_map.pdf" target="_blank">mappa&nbsp;<span class="icon is-medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 28 4.46875 L 26.59375 5.09375 L 19.96875 7.9375 L 12.34375 5.0625 L 11.96875 4.9375 L 11.59375 5.09375 L 4.59375 8.09375 L 4 8.34375 L 4 9 L 4 26 L 4 27.53125 L 5.40625 26.90625 L 12.03125 24.0625 L 19.65625 26.9375 L 20.03125 27.0625 L 20.40625 26.90625 L 27.40625 23.90625 L 28 23.65625 L 28 23 L 28 6 L 28 4.46875 z M 12.03125 7.0625 L 19.65625 9.9375 L 20.03125 10.0625 L 20.40625 9.90625 L 26 7.5 L 26 22.34375 L 19.96875 24.9375 L 12.34375 22.0625 L 11.96875 21.9375 L 11.59375 22.09375 L 6 24.5 L 6 9.65625 L 12.03125 7.0625 z M 21 11 C 20.447715 11 20 11.447715 20 12 C 20 12.552285 20.447715 13 21 13 C 21.552285 13 22 12.552285 22 12 C 22 11.447715 21.552285 11 21 11 z M 9.71875 13.28125 L 8.28125 14.71875 L 10.5625 17 L 8.28125 19.28125 L 9.71875 20.71875 L 12 18.4375 L 14.28125 20.71875 L 15.71875 19.28125 L 13.4375 17 L 15.71875 14.71875 L 14.28125 13.28125 L 12 15.5625 L 9.71875 13.28125 z M 23 14 C 22.447715 14 22 14.447715 22 15 C 22 15.552285 22.447715 16 23 16 C 23.552285 16 24 15.552285 24 15 C 24 14.447715 23.552285 14 23 14 z M 17 16 C 16.447715 16 16 16.447715 16 17 C 16 17.552285 16.447715 18 17 18 C 17.552285 18 18 17.552285 18 17 C 18 16.447715 17.552285 16 17 16 z M 23 17 C 22.447715 17 22 17.447715 22 18 C 22 18.552285 22.447715 19 23 19 C 23.552285 19 24 18.552285 24 18 C 24 17.447715 23.552285 17 23 17 z M 20 18 C 19.447715 18 19 18.447715 19 19 C 19 19.552285 19.447715 20 20 20 C 20.552285 20 21 19.552285 21 19 C 21 18.447715 20.552285 18 20 18 z"></path></svg></span></a>.
                                 {% endtrans %}
                             </p>
                             <br>
@@ -449,7 +449,7 @@
                         <figure class="image is-3by2 is-bg">
                             <img src="/images/WhatToDo/CampingPuntaIndiani_WhatDoTo_TrekkingInTheNature.jpg" alt="Montagne e natura e percorsi storici">
                             <div class="is-overlay has-v-centered">
-                                <p class="has-text-centered title is-3">{{ _('Passeggiate<br>&amp;&nbsp;Trekking') }}</p>
+                                <p class="has-text-centered title is-3">{{ _('passeggiate') }}<br>&amp;&nbsp;trekking</p>
                             </div>
                         </figure>
                     </div>
@@ -463,7 +463,7 @@
 
                             <br>
 
-                            {{ _('Porta con te la tua') }} <a href="pdf/walking_and_trekking_map.pdf" target="_blank">{{ _('mappa') }}&nbsp;<span class="icon is-medium"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 28 4.46875 L 26.59375 5.09375 L 19.96875 7.9375 L 12.34375 5.0625 L 11.96875 4.9375 L 11.59375 5.09375 L 4.59375 8.09375 L 4 8.34375 L 4 9 L 4 26 L 4 27.53125 L 5.40625 26.90625 L 12.03125 24.0625 L 19.65625 26.9375 L 20.03125 27.0625 L 20.40625 26.90625 L 27.40625 23.90625 L 28 23.65625 L 28 23 L 28 6 L 28 4.46875 z M 12.03125 7.0625 L 19.65625 9.9375 L 20.03125 10.0625 L 20.40625 9.90625 L 26 7.5 L 26 22.34375 L 19.96875 24.9375 L 12.34375 22.0625 L 11.96875 21.9375 L 11.59375 22.09375 L 6 24.5 L 6 9.65625 L 12.03125 7.0625 z M 12 10 C 10.895431 10 10 10.895431 10 12 C 10 13.104569 10.895431 14 12 14 C 13.104569 14 14 13.104569 14 12 C 14 10.895431 13.104569 10 12 10 z M 9 14 C 8.4477153 14 8 14.447715 8 15 C 8 15.552285 8.4477153 16 9 16 C 9.5522847 16 10 15.552285 10 15 C 10 14.447715 9.5522847 14 9 14 z M 16 14 C 15.447715 14 15 14.447715 15 15 C 15 15.552285 15.447715 16 16 16 C 16.552285 16 17 15.552285 17 15 C 17 14.447715 16.552285 14 16 14 z M 23 14 C 22.447715 14 22 14.447715 22 15 C 22 15.552285 22.447715 16 23 16 C 23.552285 16 24 15.552285 24 15 C 24 14.447715 23.552285 14 23 14 z M 9 17 C 8.4477153 17 8 17.447715 8 18 C 8 18.552285 8.4477153 19 9 19 C 9.5522847 19 10 18.552285 10 18 C 10 17.447715 9.5522847 17 9 17 z M 17 17 C 16.447715 17 16 17.447715 16 18 C 16 18.552285 16.447715 19 17 19 C 17.552285 19 18 18.552285 18 18 C 18 17.447715 17.552285 17 17 17 z M 23 17 C 22.447715 17 22 17.447715 22 18 C 22 18.552285 22.447715 19 23 19 C 23.552285 19 24 18.552285 24 18 C 24 17.447715 23.552285 17 23 17 z M 20 19 C 18.895431 19 18 19.895431 18 21 C 18 22.104569 18.895431 23 20 23 C 21.104569 23 22 22.104569 22 21 C 22 19.895431 21.104569 19 20 19 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path></svg></span></a>.
+                            {{ _('Porta con te la tua') }} <a href="/pdf/walking_and_trekking_map.pdf" target="_blank">{{ _('mappa') }}&nbsp;<span class="icon is-medium"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 28 4.46875 L 26.59375 5.09375 L 19.96875 7.9375 L 12.34375 5.0625 L 11.96875 4.9375 L 11.59375 5.09375 L 4.59375 8.09375 L 4 8.34375 L 4 9 L 4 26 L 4 27.53125 L 5.40625 26.90625 L 12.03125 24.0625 L 19.65625 26.9375 L 20.03125 27.0625 L 20.40625 26.90625 L 27.40625 23.90625 L 28 23.65625 L 28 23 L 28 6 L 28 4.46875 z M 12.03125 7.0625 L 19.65625 9.9375 L 20.03125 10.0625 L 20.40625 9.90625 L 26 7.5 L 26 22.34375 L 19.96875 24.9375 L 12.34375 22.0625 L 11.96875 21.9375 L 11.59375 22.09375 L 6 24.5 L 6 9.65625 L 12.03125 7.0625 z M 12 10 C 10.895431 10 10 10.895431 10 12 C 10 13.104569 10.895431 14 12 14 C 13.104569 14 14 13.104569 14 12 C 14 10.895431 13.104569 10 12 10 z M 9 14 C 8.4477153 14 8 14.447715 8 15 C 8 15.552285 8.4477153 16 9 16 C 9.5522847 16 10 15.552285 10 15 C 10 14.447715 9.5522847 14 9 14 z M 16 14 C 15.447715 14 15 14.447715 15 15 C 15 15.552285 15.447715 16 16 16 C 16.552285 16 17 15.552285 17 15 C 17 14.447715 16.552285 14 16 14 z M 23 14 C 22.447715 14 22 14.447715 22 15 C 22 15.552285 22.447715 16 23 16 C 23.552285 16 24 15.552285 24 15 C 24 14.447715 23.552285 14 23 14 z M 9 17 C 8.4477153 17 8 17.447715 8 18 C 8 18.552285 8.4477153 19 9 19 C 9.5522847 19 10 18.552285 10 18 C 10 17.447715 9.5522847 17 9 17 z M 17 17 C 16.447715 17 16 17.447715 16 18 C 16 18.552285 16.447715 19 17 19 C 17.552285 19 18 18.552285 18 18 C 18 17.447715 17.552285 17 17 17 z M 23 17 C 22.447715 17 22 17.447715 22 18 C 22 18.552285 22.447715 19 23 19 C 23.552285 19 24 18.552285 24 18 C 24 17.447715 23.552285 17 23 17 z M 20 19 C 18.895431 19 18 19.895431 18 21 C 18 22.104569 18.895431 23 20 23 C 21.104569 23 22 22.104569 22 21 C 22 19.895431 21.104569 19 20 19 z" color="#000" overflow="visible" font-family="Bitstream Vera Sans"></path></svg></span></a>.
                         </div>
                     </div>
                 </div>
@@ -473,7 +473,7 @@
                         <figure class="image is-3by2 is-bg">
                             <img src="/images/WhatToDo/CampingPuntaIndiani_WhatDoTo_Culture_BuonconsiglioCastle.jpg" alt="Cultura e storia - CastellBuonconsiglio">
                             <div class="is-overlay has-v-centered">
-                                <p class="has-text-centered title is-3">{{ _('Città<br>Cultura<br>Storia') }}</p>
+                                <p class="has-text-centered title is-3">{{ _('città<br>cultura<br>storia') }}</p>
                             </div>
                         </figure>
                     </div>
@@ -497,8 +497,8 @@
         <section class="section" id="vita-del-campeggio">
             <div class="container">
                 <div class="heading">
-                    <h1 class="title">La vita in campeggio</h1>
-                    <h2 class="subtitle">Infinite emozioni raccontate per mezzo di foto e video</h2>
+                    <h1 class="title">{{ _('La vita in campeggio') }}</h1>
+                    <h2 class="subtitle">{{ _('Infinite emozioni raccontate per mezzo di foto e video') }}</h2>
                 </div>
             </div>
 
@@ -510,13 +510,13 @@
                         <li>
                             <a>
                                 <span class="icon"><i class="fa fa-film"></i></span>
-                                <span>Video</span>
+                                <span>video</span>
                             </a>
                         </li>
                         <li>
                             <a>
                                 <span class="icon"><i class="fa fa-street-view"></i></span>
-                                <span>Virtual&nbsp;Tour</span>
+                                <span>virtual&nbsp;tour</span>
                             </a>
                         </li>
                         <li>
@@ -526,13 +526,13 @@
                         <li>
                             <a>
                                 <span class="icon"><i class="fa fa-image"></i></span>
-                                <span>Foto</span>
+                                <span>{{ _('foto') }}</span>
                             </a>
                         </li>
                         <li>
                             <a>
                                 <span class="icon"><i class="fa fa-heartbeat"></i></span>
-                                <span>Team</span>
+                                <span>team</span>
                             </a>
                         </li>
                     </ul>
@@ -542,24 +542,24 @@
             <br>
 
             <div class="container carousell">
+                <!-- Video -->
                 <div class="container is-active carousell-item">
                     <iframe style="width:100%;height: 60vh" src="http://player.vimeo.com/video/177881566" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
                 </div>
 
-                <div class="container columns carousell-item">
-                    <div class="column is-one-third content is-block-mobile">
-                        <h1 class="title">title</h1>
-                        <p>descrizome</p>
-                    </div>
-                    <div class="column is-two-thirds">
-                        <figure style="width:auto;"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView.jpg" alt="Accomodation Aqua, direct on the Caldonazzo lake beach" style="height:60vh; width: auto;"></figure>
-                    </div>
-                </div>
 
+                <!-- Virtual tour -->
                 <div class="container carousell-item">
-                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1470377559608!6m8!1m7!1seRXtxWHRIykAAAQ1mGrD8A!2m2!1d46.02765734440566!2d11.2315088718135!3f61!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1470377559608!6m8!1m7!1seRXtxWHRIykAAAQ1mGrD8A!2m2!1d46.02765734440566!2d11.2315088718135!3f61!4f0!5f0.7820865974627469" frameborder="0"></iframe>
                 </div>
 
+                <!-- Drone panoramica -->
+                <div class="container carousell-item">
+                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1482279962067!6m8!1m7!1sF%3A-uF8bN-r6AW4%2FV6otwL72q3I%2FAAAAAAADTpQ%2F-_H9jQ7rDHgzMJiuFCdZnOxyOczxp4iCQCLIB!2m2!1d46.0283167!2d11.2329383!3f85.31835651740758!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+
+                <!-- The team -->
+                <!-- TODO: create foto and place it here
                 <div class="container columns carousell-item">
                     <div class="column is-two-thirds">
                         <figure style="width:auto;"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView.jpg" alt="Accomodation Aqua, direct on the Caldonazzo lake beach" style="height:60vh; width: auto;"></figure>
@@ -569,16 +569,16 @@
                         <p>descrizome</p>
                     </div>
                 </div>
+                -->
             </div>
         </section>
 
 
         <section class="section" id="prenota">
-            <!-- START REFACTOR -->
             <div class="container">
                 <div class="heading">
-                    <h1 class="title">prenota ora la tua piazzola preferita</h1>
-                    <h2 class="subtitle">... o richiedi informazioni</h2>
+                    <h1 class="title">{{ _('prenota ora la tua piazzola preferita') }}</h1>
+                    <h2 class="subtitle">... {{ _('o richiedi informazioni') }}</h2>
                     scrivendo a <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a></p></h2>
                 </div>
             </div>
@@ -591,36 +591,33 @@
 
                     <input type="hidden" name="lang" value="it">
 
-                    <!-- TODO: replace date with 'select' (like dmbcau) -->
-
                     <fieldset>
                         <!-- <legend>informazioni personali</legend> -->
 
                         <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="name">Nome</label></div>
-                            <p class="control is-expanded"><input class="input" id="name" type="text" name="name" placeholder="Mario" required></p>
-                            <div class="control-label"><label class="label" for="surname">Cognome</label></div>
-                            <p class="control is-expanded"><input class="input" id="surname" type="text" name="surname" placeholder="Rossi" required></p>
+                            <div class="control-label"><label class="label" for="name">{{ _('nome') }}</label></div>
+                            <p class="control is-expanded"><input class="input" id="name" type="text" name="name" placeholder="{{ _('Mario') }}" required></p>
+                            <div class="control-label"><label class="label" for="surname">{{ _('cognome') }}</label></div>
+                            <p class="control is-expanded"><input class="input" id="surname" type="text" name="surname" placeholder="{{ _('Rossi') }}" required></p>
                         </div>
 
                         <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="email">Email</label></div>
+                            <div class="control-label"><label class="label" for="email">email</label></div>
                             <p class="control is-expanded has-icon">
-                                <input class="input" id="email" type="email" name="email" placeholder="mario.rossi@gmail.com" required>
+                                <input class="input" id="email" type="email" name="email" placeholder="{{ _('mario.rossi@gmail.com') }}" required>
                                 <i class="fa fa-envelope"></i>
                             </p>
-                            <div class="control-label"><label class="label" for="citizenship">Cittadinanza</label></div>
-                            <div class="control select is-fullwidth"><select id="citizenship" name="citizenship"><option value="100000100" selected>Italy</option><option value="100000232">Netherlands</option><option value="100000216">Germany</option><option value="100000203">Austria</option><option value="100000241">Switzerland</option><option value="100000206">Belgium</option><option value="100000212">Denmark</option><option value="100000219">United Kingdom</option><option value="" >Altro</option></select></div>
+                            <div class="control-label"><label class="label" for="citizenship">{{ _('cittadinanza') }}</label></div>
+                            <div class="control select is-fullwidth"><select id="citizenship" name="citizenship"><option value="100000100" selected>{{ _('italia') }}</option><option value="100000232">{{ _('olanda') }}</option><option value="100000216">{{ _('germania') }}</option><option value="100000203">{{ _('austria') }}</option><option value="100000241">{{ _('swizzera') }}</option><option value="100000206">{{ _('belgio') }}</option><option value="100000212">{{ _('danimarca') }}</option><option value="100000219">{{ _('regno Unito') }}</option><option value="" >{{ _('altro') }}</option></select></div>
                         </div>
                     </fieldset>
 
                     <fieldset>
-                        <legend>soggiorno</legend>
-                        <!-- TODO: Easy date (choose only month and day via select) -->
+                        <legend>{{ _('soggiorno') }}</legend>
                         <!-- TODO: Let chose "offers" when coming from offers button (use get paramenters) -->
 
                         <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="arrival">Arrivo</label></div>
+                            <div class="control-label"><label class="label" for="arrival">{{ _('arrivo') }}</label></div>
                             <div class="control">
 
                                 <input type="hidden" id="arrival" data-min="2017-04-26" min="2017-04-26" data-max="2017-09-29" max="2017-09-29"/>
@@ -634,7 +631,7 @@
                                 <span class="help is-danger" id="arrival_error"></span>
                             </div>
 
-                            <div class="control-label"><label class="label" for="departure">Partenza</label></div>
+                            <div class="control-label"><label class="label" for="departure">{{ _('partenza') }}</label></div>
                             <div class="control has-addons">
 
                                 <input type="hidden" id="departure" data-min="2017-04-27" min="2017-04-27" data-max="2017-09-30" max="2017-09-30" />
@@ -651,29 +648,29 @@
                         </div>
 
                         <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="kind">Piazzola</label></div>
+                            <div class="control-label"><label class="label" for="kind">{{ _('piazzola') }}</label></div>
                             <div class="control has-addons">
-                                <a class="button" href="mappa_interna.html" target="_blank" data-modal="Mappa del Campeggio"><i class="fa fa-map"></i></a>
+                                <a class="button" href="mappa_interna.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map"></i></a>
                                 <span class="select">
                                     <select id="kind" name="kind"><option value="aqua">Aqua</option><option value="panorama" selected>Panorama</option><option value="relax">Relax</option></select>
                                 </span>
                             </div>
 
-                            <div class="control-label"><label class="label" for="pitch">Preferenza</label></div>
+                            <div class="control-label"><label class="label" for="pitch">{{ _('preferenza') }}</label></div>
                             <div class="control has-addons">
-                                <a href="mappa_interna.html" target="_blank" data-modal="Mappa del Campeggio" class="button"><i class="fa fa-map"></i></a>
+                                <a class="button" href="mappa_interna.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map"></i></a>
                                 <span class="select">
                                     <select id="pitch" name="resource">
-                                        <optgroup data-kind="aqua" label="AQUA"><option value="1">Qualsiasi Aqua</option><option value="4">2</option><option value="6">4</option><option value="7">5</option><option value="10">8</option><option value="11">9</option><option value="12">10</option><option value="16">14</option><option value="17">15</option><option value="23">20</option><option value="30">27</option><option value="32">29</option><option value="35">32</option><option value="36">33</option><option value="37">34</option><option value="38">35</option><option value="39">36</option><option value="44">41</option><option value="45">42</option><option value="46">43</option><option value="50">47</option><option value="56">53</option><option value="57">54</option><option value="62">58</option><option value="63">59</option><option value="67">63</option><option value="69">65</option></optgroup>
-                                        <optgroup data-kind="panorama" label="PANORAMA"><option value="2" selected>Qualsiasi Panorama</option><option value="5">3</option><option value="8">6</option><option value="9">7</option><option value="13">11</option><option value="14">12</option><option value="15">13</option><option value="18">16</option><option value="19">17</option><option value="21">18</option><option value="22">19</option><option value="24">21</option><option value="25">22</option><option value="26">23</option><option value="27">24</option><option value="28">25</option><option value="29">26</option><option value="31">28</option><option value="33">30</option><option value="34">31</option><option value="40">37</option><option value="41">38</option><option value="42">39</option><option value="43">40</option><option value="47">44</option><option value="48">45</option><option value="49">46</option><option value="51">48</option><option value="52">49</option><option value="53">50</option><option value="54">51</option><option value="55">52</option><option value="59">55</option><option value="60">56</option><option value="61">57</option><option value="64">60</option><option value="65">61</option><option value="66">62</option><option value="68">64</option></optgroup>
-                                        <optgroup data-kind="relax" label="RELAX"><option value="3">Qualsiasi Relax</option><option value="70">66</option><option value="71">67</option><option value="72">68</option><option value="73">69</option><option value="74">70</option><option value="75">71</option><option value="76">72</option><option value="77">73</option><option value="78">74</option><option value="79">75</option><option value="80">76</option><option value="81">77</option><option value="82">78</option><option value="83">79</option><option value="84">80</option><option value="85">81</option><option value="86">82</option><option value="87">83</option><option value="88">84</option><option value="89">85</option><option value="90">86</option><option value="91">87</option><option value="92">88</option><option value="93">89</option><option value="94">90</option><option value="95">91</option><option value="96">92</option><option value="97">93</option><option value="98">94</option><option value="99">95</option><option value="100">96</option><option value="101">97</option><option value="102">98</option><option value="103">99</option><option value="104">100</option><option value="105">101</option><option value="106">102</option><option value="107">103</option><option value="108">104</option><option value="109">105</option><option value="110">106</option><option value="111">107</option><option value="112">108</option><option value="113">109</option><option value="114">110</option><option value="115">111</option><option value="116">112</option><option value="117">113</option><option value="118">114</option><option value="119">115</option></optgroup>
+                                        <optgroup data-kind="aqua" label="AQUA"><option value="1">{{ _('qualsiasi') }} AQUA</option><option value="4">2</option><option value="6">4</option><option value="7">5</option><option value="10">8</option><option value="11">9</option><option value="12">10</option><option value="16">14</option><option value="17">15</option><option value="23">20</option><option value="30">27</option><option value="32">29</option><option value="35">32</option><option value="36">33</option><option value="37">34</option><option value="38">35</option><option value="39">36</option><option value="44">41</option><option value="45">42</option><option value="46">43</option><option value="50">47</option><option value="56">53</option><option value="57">54</option><option value="62">58</option><option value="63">59</option><option value="67">63</option><option value="69">65</option></optgroup>
+                                        <optgroup data-kind="panorama" label="PANORAMA"><option value="2" selected>{{ _('qualsiasi') }} PANORAMA</option><option value="5">3</option><option value="8">6</option><option value="9">7</option><option value="13">11</option><option value="14">12</option><option value="15">13</option><option value="18">16</option><option value="19">17</option><option value="21">18</option><option value="22">19</option><option value="24">21</option><option value="25">22</option><option value="26">23</option><option value="27">24</option><option value="28">25</option><option value="29">26</option><option value="31">28</option><option value="33">30</option><option value="34">31</option><option value="40">37</option><option value="41">38</option><option value="42">39</option><option value="43">40</option><option value="47">44</option><option value="48">45</option><option value="49">46</option><option value="51">48</option><option value="52">49</option><option value="53">50</option><option value="54">51</option><option value="55">52</option><option value="59">55</option><option value="60">56</option><option value="61">57</option><option value="64">60</option><option value="65">61</option><option value="66">62</option><option value="68">64</option></optgroup>
+                                        <optgroup data-kind="relax" label="RELAX"><option value="3">{{ _('qualsiasi') }} RELAX</option><option value="70">66</option><option value="71">67</option><option value="72">68</option><option value="73">69</option><option value="74">70</option><option value="75">71</option><option value="76">72</option><option value="77">73</option><option value="78">74</option><option value="79">75</option><option value="80">76</option><option value="81">77</option><option value="82">78</option><option value="83">79</option><option value="84">80</option><option value="85">81</option><option value="86">82</option><option value="87">83</option><option value="88">84</option><option value="89">85</option><option value="90">86</option><option value="91">87</option><option value="92">88</option><option value="93">89</option><option value="94">90</option><option value="95">91</option><option value="96">92</option><option value="97">93</option><option value="98">94</option><option value="99">95</option><option value="100">96</option><option value="101">97</option><option value="102">98</option><option value="103">99</option><option value="104">100</option><option value="105">101</option><option value="106">102</option><option value="107">103</option><option value="108">104</option><option value="109">105</option><option value="110">106</option><option value="111">107</option><option value="112">108</option><option value="113">109</option><option value="114">110</option><option value="115">111</option><option value="116">112</option><option value="117">113</option><option value="118">114</option><option value="119">115</option></optgroup>
                                     </select>
                                 </span>
                             </div>
                         </div>
 
                         <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="card">Affiliazione</label></div>
+                            <div class="control-label"><label class="label" for="card">{{ _('offerta') }}</label></div>
                             <div class="control"><span class="select"><select id="card" name="card"><option value="NONE"></option><option value="CKE">Camping Key Europe</option><option value="ADAC">ADAC Camp Card</option><option value="ACSI">ACSI Camping Card</option></select></span></div>
                             <div class="control-label"></div>
                             <div class="control"></div>
@@ -683,23 +680,23 @@
                     <fieldset>
                         <legend>extra</legend>
                         <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="adults">Adulti</label></div>
+                            <div class="control-label"><label class="label" for="adults">{{ _('adulti') }}</label></div>
                             <div class="control">
                                 <span class="select"><select type="text" id="adults" name="adults"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span>
-                                <!--<span class="help">Extra a quelli inclusi.</span>-->
+                                <span class="help">{{ _('extra a quelli inclusi.') }}</span>
                             </div>
 
-                            <div class="control-label"><label class="label" for="children">Bambini</label></div>
+                            <div class="control-label"><label class="label" for="children">{{ _('bambini') }}</label></div>
                             <div class="control"><span class="select"><select id="children" name="children"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span></div>
 
-                            <div class="control-label"><label class="label" for="extra_tents">Tendine</label></div>
+                            <div class="control-label"><label class="label" for="extra_tents">{{ _('tendine') }}</label></div>
                             <div class="control"><span class="select"><select id="extra_tents" name="extra_tents"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></span></div>
                         </div>
 
                         <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="equipement">Mezzo</label></div>
+                            <div class="control-label"><label class="label" for="equipement">{{ _('mezzo') }}</label></div>
                             <div class="control"><span class="select"><select id="equipement" name="equipement"><option value="" selected></option><option value="car-only">solo macchina</option><option value="tent">tenda</option><option value="roulette">roulotte</option><option value="camper">camper</option><option value="bicyle">bicicletta</option></select></span></div>
-                            <div class="control-label"><label class="label" for="equipement_size">Misure</label></div>
+                            <div class="control-label"><label class="label" for="equipement_size">{{ _('misure') }}</label></div>
                             <div class="control"><span class="select"><select id="equipement_size" name="equipement_size"><option value="" selected></option><option value="small">piccola</option><option value="mid">media</option><option value="big">grande</option><option value="huge">enorme</option></select></span></div>
                             <div class="control-label"><label class="label" for="extras">Extra</label></div>
                             <div class="control"><span class="select"><select id="extras" name="extras"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></span></div>
@@ -707,9 +704,9 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>animali</legend>
+                        <legend>{{ _('animali domestici') }}</legend>
                         <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="with_pet">Animale domestico:</label></div>
+                            <div class="control-label"><label class="label" for="with_pet">{{ _('animale domestico') }}:</label></div>
                             <div class="control"><span class="select"><select id="pet" name="pet"><option value="">no</option><option value="dog">cane</option><option value="gatto">gatto</option><option value="altro">altro</option></select></span></div>
                         </div>
                     </fieldset>
@@ -725,16 +722,16 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>legal</legend>
+                        <legend>{{ _('condizioni') }}</legend>
                         <p class="control">
                             <label class="checkbox">
                                 <input type="checkbox" name="CR" id="CR" checked required />
-                                <label for="CR">Accetto</label> <a href="rules.html" target="_blank" data-modal="Regolamento">il regolamento</a>.
+                                <label for="CR">{{ _('accetto') }}</label> <a href="rules.html" target="_blank" data-modal="{{ _('regolamento') }}">{{ _('il regolamento') }}</a>.
                             </label>
                         </p>
                         <p class="control">
                             <input type="checkbox" name="TC" id="TC" checked required />
-                            <label for="TC">Accetto</label> <a href="privacy.html" target="_blank" data-modal="Privacy Policy">privacy policy</a>.
+                            <label for="TC">{{ _('accetto') }}</label> <a href="privacy.html" target="_blank" data-modal="Privacy Policy">privacy policy</a>.
                         </p>
                     </fieldset>
 
@@ -743,7 +740,7 @@
                             <span class="icon">
                                 <i class="fa fa-check"></i>
                             </span>
-                            <span>PRENOTA</span>
+                            <span style="uppercase">{{ _('prenota') }}</span>
                         </button>
                     </center>
                 </form>
@@ -753,24 +750,23 @@
 
 
         <section class="section">
-            <!-- As seen on -->
-                <div class="level is-mobile">
-                        <figure class="image is-48h"><img src="/images/Agreements/trentino.png" alt="Trentino"></img></figure>
-                        <figure class="image is-48h"><img src="/images/Agreements/valsugana.png" alt="Valsugana"></img></figure>
+            <div class="level is-mobile">
+                <figure class="image is-48h"><img src="/images/Agreements/trentino.png" alt="Trentino"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/valsugana.png" alt="Valsugana"></img></figure>
 
-                        <figure class="image is-48h"><img src="/images/Agreements/adac.png" alt="ADAC"></img></figure>
-                        <figure class="image is-48h"><img src="/images/Agreements/anwb.png" alt="ANWB"></img></figure>
-                        <figure class="image is-48h"><img src="/images/Agreements/acsi.png" alt="ACSI"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/adac.png" alt="ADAC"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/anwb.png" alt="ANWB"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/acsi.png" alt="ACSI"></img></figure>
 
-                        <figure class="image is-48h"><img src="/images/Agreements/campingit.png" alt="Camping.it"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/campingit.png" alt="Camping.it"></img></figure>
 
-                        <figure class="image is-48h"><img src="/images/Agreements/dcc.png" alt="DCC"></img></figure>
-                        <figure class="image is-48h"><img src="/images/Agreements/ecc.png" alt="ECC"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/dcc.png" alt="DCC"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/ecc.png" alt="ECC"></img></figure>
 
-                        <figure class="image is-48h"><img src="/images/Agreements/alan_rogers.png" alt="Alan Rogers"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/alan_rogers.png" alt="Alan Rogers"></img></figure>
 
-                        <figure class="image is-48h"><img src="/images/Agreements/zoover.png" alt="Zoover reccomanded 2014"></img></figure>
-                </div>
+                <figure class="image is-48h"><img src="/images/Agreements/zoover.png" alt="Zoover reccomanded 2014"></img></figure>
+            </div>
         </section>
 
         <section class="section is-paddingless" id="dove-siamo">
@@ -784,11 +780,14 @@
                         <strong>Camping Punta Indiani</strong> di <a href="mailto:info@campingpuntaindiani.it">Piffer Renzo e C.</a> - P.IVA 01834810226<br>
                         38057 Valcanover Pergine (TN) ITALY</span><br>
                         <abbr title="Phone">Phone: (0039) 0461 548062</abbr> (summer only)<br>
+                        <abbr title="Cell.">Cell.: (0039) 345 0794205</abbr> (winter only)<br>
                         <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>
                     </p>
                 </div>
             </div>
         </footer>
+
+        <a href="#home" id="up" class="icon is-medium"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 
         <!-- empty modal to serve a[data-modal] (page loaded via ajax) -->
         <div class="modal">
@@ -806,8 +805,6 @@
                 </footer>
             </div>
         </div>
-
-
 
         <script src="/js/combo_date.js"></script>
         <script src="/js/main.js">

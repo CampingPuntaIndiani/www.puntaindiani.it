@@ -23,13 +23,13 @@
   justify-content: space-around
 
   &>*
-    margin-bottom: 2em;
+    margin-bottom: 2em
 
 .has-text-justify
   text-align: justify
 
 .is-48h img
-  width: auto;
+  width: auto
   height: 48px
   +mobile
     height: 24px
@@ -57,4 +57,32 @@ body:not(.nojs):not(.fix)
 
 .hero .hero-body .is-text-white
   color: $white
-  text-shadow: 0px 0px 3px #000, 0px 0px 10px #000;
+  text-shadow: 0px 0px 3px #000, 0px 0px 10px #000
+
+#up
+  display: none
+body.fix #up
+  +mobile
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    -moz-appearance: none
+    -webkit-appearance: none
+    background-color: #fff
+    border-color: $grey-dark
+    color: $grey-darker
+    border: none
+    border-radius: 100%
+    cursor: pointer
+    display: inline-block
+    outline: none
+    position: fixed
+    bottom: 7px
+    right: 4px
+    vertical-align: top
+    text-align: center
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)
+    i.fa
+      margin-top: -1px
