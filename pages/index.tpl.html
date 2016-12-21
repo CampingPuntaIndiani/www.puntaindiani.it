@@ -59,7 +59,6 @@
                     </div>
                 </header>
             </div>
-
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title is-1">CAMPING PUNTA INDIANI</h1>
@@ -505,36 +504,14 @@
             <br>
 
             <div class="container">
-                <div class="tabs is-medium is-toggle is-fullwidth has-fallback">
+                <div class="tabs is-medium is-toggle is-centered">
                     <ul>
-                        <li>
-                            <a>
-                                <span class="icon"><i class="fa fa-film"></i></span>
-                                <span>video</span>
-                            </a>
+                        <li><a data-carousell="back"><span class="icon"><i class="fa fa-step-backward" aria-hidden="true"></i></span></a></li>
+                        <li style="min-width:164px">
+                            <a data-carousell="play" class="non-active"><span class="icon is-medium"><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                            <a data-carousell="pause"><span class="icon is-medium"><i class="fa fa-pause" aria-hidden="true"></i></span></a>
                         </li>
-                        <li>
-                            <a>
-                                <span class="icon"><i class="fa fa-street-view"></i></span>
-                                <span>virtual&nbsp;tour</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a data-carousell="play" class="non-active"><span class="icon is-medium is-info"><i class="fa fa-play" aria-hidden="true"></i></span></a>
-                            <a data-carousell="pause"><span class="icon is-medium is-info"><i class="fa fa-pause" aria-hidden="true"></i></span></a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="icon"><i class="fa fa-image"></i></span>
-                                <span>{{ _('foto') }}</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <span class="icon"><i class="fa fa-heartbeat"></i></span>
-                                <span>team</span>
-                            </a>
-                        </li>
+                        <li><a data-carousell="next"><span class="icon"><i class="fa fa-step-forward" aria-hidden="true"></i></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -570,6 +547,19 @@
                     </div>
                 </div>
                 -->
+            </div>
+
+            <br>
+
+            <div class="container">
+                <div class="tabs is-medium is-toggle is-fullwidth has-fallback">
+                    <ul>
+                        <li><a><span class="icon"><i class="fa fa-film"></i></span><span>{{ _('ancora') }} video</span></a></li>
+                        <li><a><span class="icon"><i class="fa fa-street-view"></i></span><span>virtual&nbsp;tour</span></a></li>
+                        <li><a><span class="icon"><i class="fa fa-image"></i></span><span>{{ _('ancora foto') }}</span></a></li>
+                        <li><a><span class="icon"><i class="fa fa-heartbeat"></i></span><span>team</span></a></li>
+                    </ul>
+                </div>
             </div>
         </section>
 

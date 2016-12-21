@@ -285,11 +285,29 @@ var LifeAnimation = function () {
         window.clearTimeout(window.carousellCallback);
     });
 
-    var animationStep = function(){
+    var next = document.querySelectorAll('a[data-carousell="next"]')[0];
+    next.addEventListener('click', function(){
+        window.clearTimeout(window.carousellCallback);
+        animationStep();
+    });
+
+    var back = document.querySelectorAll('a[data-carousell="back"]')[0];
+    back.addEventListener('click', function(){
+        window.clearTimeout(window.carousellCallback);
+        animationStep(true);
+    });
+
+    var animationStep = function(is_back){
         var current = document.querySelectorAll('.carousell .is-active')[0];
         current.classList.remove('is-active');
-        var next = current.nextElementSibling;
-        if (!next) next = current.parentNode.children[0];
+        var next;
+        if (!is_back){
+            next = current.nextElementSibling;
+            if (!next) next = current.parentNode.children[0];
+        } else {
+            next = current.previousElementSibling;
+            if (!next) next = current.parentNode.children[current.parentNode.children.length - 1];
+        }
         next.classList.add('is-active');
         window.carousellCallback = setTimeout(animationStep, 5000);
     };

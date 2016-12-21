@@ -44,12 +44,16 @@ body.fix
     left: 0
     right: 0
     z-index: 10
-    background: $light
   .sticky-placeholder
     display: inherit
 
 .scrollOff
   pointer-events: none
+
+#menu-desktop,
+#menu-mobile
+  background-color: $grey-lighter
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1)
 
 body:not(.nojs):not(.fix)
   .is-fix-only
@@ -86,3 +90,9 @@ body.fix #up
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)
     i.fa
       margin-top: -1px
+
+.has-v-bottom
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
