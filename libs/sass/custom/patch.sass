@@ -19,6 +19,12 @@
     top: 0
     bottom: 0
 
+.hero-body img.is-logo
+  margin: auto auto 1rem auto
+  width: 256px
+  +mobile
+    width: 128px
+
 .contol.is-white
   background-color: white
   border-width: 0
@@ -88,3 +94,14 @@ $dimensions: 16 24 32 48 64 96 128
 .is-256x256
   width: 256px
   height: 256px
+
+.button.is-large.has-extra-padding
+  padding-left: 40px
+  padding-right: 40px
+
+// https://coolors.co/3273dc-00a6fb-006494-003554-051923
+.is-info-dark
+  background-color: #006494
+  .icon
+    color: $white
+    fill: $white

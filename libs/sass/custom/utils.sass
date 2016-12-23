@@ -52,8 +52,8 @@ body.fix
 
 #menu-desktop,
 #menu-mobile
-  background-color: $grey-lighter
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1)
+  background-color: $white
+  //box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1)
 
 body:not(.nojs):not(.fix)
   .is-fix-only
@@ -96,3 +96,14 @@ body.fix #up
   flex-direction: column
   justify-content: flex-end
 
+.is-upper
+  text-transform: uppercase
+
+.is-capitalize
+  text-transform: capitalize
+
+.is-title:first-letter
+  text-transform: uppercase
+
+body:not(.nojs) .is-active-only:not(:target)
+    display: none
