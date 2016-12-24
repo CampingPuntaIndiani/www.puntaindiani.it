@@ -105,5 +105,6 @@ body.fix #up
 .is-title:first-letter
   text-transform: uppercase
 
-body:not(.nojs) .is-active-only:not(:target)
+.is-target:not(:target) .is-target-only,
+.is-target:target .is-target-hide
     display: none
