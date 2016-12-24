@@ -122,6 +122,7 @@ var BindAccomodation = function () {
                 accomodation.getElementsByTagName('optgroup'),
                 function(opt){
             opt.style.display = opt.dataset.kind == kind.value ?  '' : 'none';
+            opt.disabled = opt.dataset.kind != kind.value;
             if (opt.dataset.kind == kind.value)
                 accomodation.value = opt.children[0].value;
         });

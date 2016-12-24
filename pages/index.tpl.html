@@ -613,16 +613,124 @@
                 </div>
             </div>
 
-            <div class="container">
+			<div class="container">
+
                 <!-- Target _blank: on nojs and validation error please do not clear the data. -->
                 <form class="no-full" method="POST" action="https://dmbcau.martin-dev.eu/website/reserve/" autocomplete="on" autofocus="on" target="_blank">
                     <!-- This will be striped from js (if enabled) ;) -->
                     <input type="hidden" name="nojs" value="1">
-
                     <input type="hidden" name="lang" value="it">
 
+
+					<div class="columns has-borders is-multiline">
+						<div class="column is-half">
+							<label class="label" for="arrival">{{ _('quando') }}</label>
+                            <span class="help is-hidden-widescreen">{{ _('date di arrivo e partenza') }}</span>
+							<div class="control is-centered">
+								<input type="hidden" id="arrival" data-min="2017-04-26" min="2017-04-26" data-max="2017-09-29" max="2017-09-29"/>
+								<input type="hidden" id="arrival_year" name="start_year" value="2017" required />
+
+								<span class="control has-addons inline">
+									<a class="button is-white is-disabled">2017</a>
+									<div class="select"><select id="arrival_month" name="start_month"><option value=""></option><option value="04">Aprile</option><option value="05">Maggio</option><option value="06">Giugno</option><option value="07">Luglio</option><option value="08">Agosto</option><option value="09">Settembre</option></select></div>
+									<div class="select"><select id="arrival_day"   name="start_day"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
+								</span>
+
+                                <span class="icon is-medium is-hidden-touch is-hidden-desktop-only"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+
+								<input type="hidden" id="departure" data-min="2017-04-27" min="2017-04-27" data-max="2017-09-30" max="2017-09-30" />
+								<input type="hidden" id="departure_year" name="end_year" value="2017" required />
+
+								<span class="control has-addons inline">
+									<a class="button is-white is-disabled">2017</a>
+									<div class="select"><select id="departure_month" name="end_month"><option value=""></option><option value="04">Aprile</option><option value="05">Maggio</option><option value="06">Giugno</option><option value="07">Luglio</option><option value="08">Agosto</option><option value="09">Settembre</option></select></div>
+									<div class="select"><select id="departure_day"   name="end_day"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
+								</span>
+							</div>
+							<span class="help is-danger" id="arrival_error"></span>
+							<span class="help is-danger" id="departure_error"></span>
+						</div>
+
+						<div class="column">
+							<label class="label" for="arrival">{{ _('piazzola') }}</label>
+							<div class="control has-addons is-centered">
+								<a class="button" href="mappa_interna.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map"></i></a>
+								<span class="select">
+									<select id="kind" name="kind"><option value="aqva">Aqva</option><option value="panorama" selected>Panorama</option><option value="relax">Relax</option></select>
+								</span>
+								<span class="select">
+									<select id="pitch" name="resource">
+										<optgroup data-kind="aqva" label="AQVA"><option value="1">{{ _('qualsiasi') }}</option><option value="4">2</option><option value="6">4</option><option value="7">5</option><option value="10">8</option><option value="11">9</option><option value="12">10</option><option value="16">14</option><option value="17">15</option><option value="23">20</option><option value="30">27</option><option value="32">29</option><option value="35">32</option><option value="36">33</option><option value="37">34</option><option value="38">35</option><option value="39">36</option><option value="44">41</option><option value="45">42</option><option value="46">43</option><option value="50">47</option><option value="56">53</option><option value="57">54</option><option value="62">58</option><option value="63">59</option><option value="67">63</option><option value="69">65</option></optgroup>
+										<optgroup data-kind="panorama" label="PANORAMA"><option value="2" selected>{{ _('qualsiasi') }}</option><option value="5">3</option><option value="8">6</option><option value="9">7</option><option value="13">11</option><option value="14">12</option><option value="15">13</option><option value="18">16</option><option value="19">17</option><option value="21">18</option><option value="22">19</option><option value="24">21</option><option value="25">22</option><option value="26">23</option><option value="27">24</option><option value="28">25</option><option value="29">26</option><option value="31">28</option><option value="33">30</option><option value="34">31</option><option value="40">37</option><option value="41">38</option><option value="42">39</option><option value="43">40</option><option value="47">44</option><option value="48">45</option><option value="49">46</option><option value="51">48</option><option value="52">49</option><option value="53">50</option><option value="54">51</option><option value="55">52</option><option value="59">55</option><option value="60">56</option><option value="61">57</option><option value="64">60</option><option value="65">61</option><option value="66">62</option><option value="68">64</option></optgroup>
+										<optgroup data-kind="relax" label="RELAX"><option value="3">{{ _('qualsiasi') }}</option><option value="70">66</option><option value="71">67</option><option value="72">68</option><option value="73">69</option><option value="74">70</option><option value="75">71</option><option value="76">72</option><option value="77">73</option><option value="78">74</option><option value="79">75</option><option value="80">76</option><option value="81">77</option><option value="82">78</option><option value="83">79</option><option value="84">80</option><option value="85">81</option><option value="86">82</option><option value="87">83</option><option value="88">84</option><option value="89">85</option><option value="90">86</option><option value="91">87</option><option value="92">88</option><option value="93">89</option><option value="94">90</option><option value="95">91</option><option value="96">92</option><option value="97">93</option><option value="98">94</option><option value="99">95</option><option value="100">96</option><option value="101">97</option><option value="102">98</option><option value="103">99</option><option value="104">100</option><option value="105">101</option><option value="106">102</option><option value="107">103</option><option value="108">104</option><option value="109">105</option><option value="110">106</option><option value="111">107</option><option value="112">108</option><option value="113">109</option><option value="114">110</option><option value="115">111</option><option value="116">112</option><option value="117">113</option><option value="118">114</option><option value="119">115</option></optgroup>
+									</select>
+								</span>
+							</div>
+						</div>
+
+                        <!-- TODO: Let chose "offers" when coming from offers button (use get paramenters) -->
+						<div class="column">
+							<label class="label" for="card">{{ _('offerta') }}</label>
+							<div class="control is-centered"><span class="select"><select id="card" name="card"><option value="NONE"></option><option value="CKE">Camping Key Europe</option><option value="ADAC">ADAC Camp Card</option><option value="ACSI">ACSI Camping Card</option></select></span></div>
+						</div>
+					</div>
+
+					<br>
+					<br>
+
+					<fieldset class="is-centered">
+						<div class="columns">
+							<div class="column is-half">
+								<legend>{{ _('Con chi condividerai la tua vacanza?') }}</legend>
+								<div class="columns is-mobile">
+									<div class="column">
+										<label class="label" for="adults">{{ _('adulti') }}</label>
+										<div class="control">
+											<span class="select"><select type="text" id="adults" name="adults"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
+										</div>
+										<span class="help">{{ _('extra a quelli inclusi.') }}</span>
+									</div>
+
+									<div class="column">
+										<label class="label" for="children">{{ _('bambini') }}</label>
+										<div class="control"><span class="select"><select id="children" name="children"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span></div>
+										<span class="help">[2-12] {{ _('anni') }}</span>
+									</div>
+
+									<div class="column">
+										<label class="label" for="infants">{{ _('infanti') }}</label>
+										<div class="control"><span class="select"><select id="infants" name="infants"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span></div>
+										<span class="help">&lt;2 {{ _('anni') }}</span>
+									</div>
+								</div>
+							</div>
+							<div class="column is-half">
+								<legend>{{ _('Cosa porterai con te?') }}</legend>
+								<div class="columns is-mobile">
+									<div class="column">
+										<label class="label" for="extra_tents">{{ _('tendine') }}</label>
+										<div class="control"><span class="select"><select id="extra_tents" name="extra_tents"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></span></div>
+										<span class="help">{{ _('fuori piazzola') }}</span>
+									</div>
+
+									<div class="column">
+										<label class="label" for="pet">{{ _('animale') }}:</label>
+										<div class="control"><span class="select"><select id="pet" name="pet"><option value="">no</option><option value="dog">cane</option><option value="gatto">gatto</option><option value="altro">altro</option></select></span></div>
+										<span class="help">&nbsp;</span>
+
+									</div>
+									<div class="column">
+										<label class="label" for="extras">extra</label>
+										<div class="control"><span class="select"><select id="extras" name="extras"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></span></div>
+										<span class="help">2<sup>nd</sup>{{ _('auto, barca') }}, ...</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+
                     <fieldset>
-                        <!-- <legend>informazioni personali</legend> -->
+						<legend>{{ _('Come possiamo contattarti?') }}</legend>
 
                         <div class="control is-horizontal">
                             <div class="control-label"><label class="label" for="name">{{ _('nome') }}</label></div>
@@ -638,108 +746,19 @@
                                 <i class="fa fa-envelope"></i>
                             </p>
                             <div class="control-label"><label class="label" for="citizenship">{{ _('cittadinanza') }}</label></div>
-                            <div class="control select is-fullwidth"><select id="citizenship" name="citizenship"><option value="100000100" selected>{{ _('italia') }}</option><option value="100000232">{{ _('olanda') }}</option><option value="100000216">{{ _('germania') }}</option><option value="100000203">{{ _('austria') }}</option><option value="100000241">{{ _('swizzera') }}</option><option value="100000206">{{ _('belgio') }}</option><option value="100000212">{{ _('danimarca') }}</option><option value="100000219">{{ _('regno Unito') }}</option><option value="" >{{ _('altro') }}</option></select></div>
+                            <div class="control select is-fullwidth"><select id="citizenship" name="citizenship"><option value="100000100" selected>{{ _('italia') }}</option><option value="100000232">{{ _('olanda') }}</option><option value="100000216">{{ _('germania') }}</option><option value="100000203">{{ _('austria') }}</option><option value="100000241">{{ _('swizzera') }}</option><option value="100000206">{{ _('belgio') }}</option><option value="100000212">{{ _('danimarca') }}</option><option value="100000219">{{ _('regno unito') }}</option><option value="" >{{ _('altro') }}</option></select></div>
                         </div>
                     </fieldset>
 
                     <fieldset>
-                        <legend>{{ _('soggiorno') }}</legend>
-                        <!-- TODO: Let chose "offers" when coming from offers button (use get paramenters) -->
+						<legend>{{ _('Che mezzo utilizzerai?') }}</legend>
+						<div class="control has-addons">
+							<a class="button"><i class="fa fa-car" aria-hidden="true"></i></a>
+							<span class="select"><select id="equipement" name="equipement"><option value="" selected></option><option value="car-only">solo macchina</option><option value="tent">tenda</option><option value="roulette">roulotte</option><option value="camper">camper</option><option value="bicyle">bicicletta</option></select></span>
+							<span class="select"><select id="equipement_size" name="equipement_size"><option value="" selected></option><option value="small">piccola</option><option value="mid">media</option><option value="big">grande</option><option value="huge">enorme</option></select></span>
+						</div>
+					</fieldset>
 
-                        <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="arrival">{{ _('arrivo') }}</label></div>
-                            <div class="control">
-
-                                <input type="hidden" id="arrival" data-min="2017-04-26" min="2017-04-26" data-max="2017-09-29" max="2017-09-29"/>
-                                <input type="hidden" id="arrival_year" name="start_year" value="2017" required />
-
-                                <span class="control has-addons">
-                                    <a class="button is-white is-disabled">2017</a>
-                                    <div class="select"><select id="arrival_month" name="start_month"><option value=""></option><option value="04">Aprile</option><option value="05">Maggio</option><option value="06">Giugno</option><option value="07">Luglio</option><option value="08">Agosto</option><option value="09">Settembre</option></select></div>
-                                    <div class="select"><select id="arrival_day"   name="start_day"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
-                                </span>
-                                <span class="help is-danger" id="arrival_error"></span>
-                            </div>
-
-                            <div class="control-label"><label class="label" for="departure">{{ _('partenza') }}</label></div>
-                            <div class="control has-addons">
-
-                                <input type="hidden" id="departure" data-min="2017-04-27" min="2017-04-27" data-max="2017-09-30" max="2017-09-30" />
-                                <input type="hidden" id="departure_year" name="end_year" value="2017" required />
-
-                                <span class="control has-addons">
-                                    <a class="button is-white is-disabled">2017</a>
-                                    <div class="select"><select id="departure_month" name="end_month"><option value=""></option><option value="04">Aprile</option><option value="05">Maggio</option><option value="06">Giugno</option><option value="07">Luglio</option><option value="08">Agosto</option><option value="09">Settembre</option></select></div>
-                                    <div class="select"><select id="departure_day"   name="end_day"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
-                                </span>
-
-                                <span class="help is-danger" id="departure_error"></span>
-                            </div>
-                        </div>
-
-                        <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="kind">{{ _('piazzola') }}</label></div>
-                            <div class="control has-addons">
-                                <a class="button" href="mappa_interna.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map"></i></a>
-                                <span class="select">
-                                    <select id="kind" name="kind"><option value="aqva">Aqva</option><option value="panorama" selected>Panorama</option><option value="relax">Relax</option></select>
-                                </span>
-                            </div>
-
-                            <div class="control-label"><label class="label" for="pitch">{{ _('preferenza') }}</label></div>
-                            <div class="control has-addons">
-                                <a class="button" href="mappa_interna.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map"></i></a>
-                                <span class="select">
-                                    <select id="pitch" name="resource">
-                                        <optgroup data-kind="aqva" label="AQVA"><option value="1">{{ _('qualsiasi') }} AQVA</option><option value="4">2</option><option value="6">4</option><option value="7">5</option><option value="10">8</option><option value="11">9</option><option value="12">10</option><option value="16">14</option><option value="17">15</option><option value="23">20</option><option value="30">27</option><option value="32">29</option><option value="35">32</option><option value="36">33</option><option value="37">34</option><option value="38">35</option><option value="39">36</option><option value="44">41</option><option value="45">42</option><option value="46">43</option><option value="50">47</option><option value="56">53</option><option value="57">54</option><option value="62">58</option><option value="63">59</option><option value="67">63</option><option value="69">65</option></optgroup>
-                                        <optgroup data-kind="panorama" label="PANORAMA"><option value="2" selected>{{ _('qualsiasi') }} PANORAMA</option><option value="5">3</option><option value="8">6</option><option value="9">7</option><option value="13">11</option><option value="14">12</option><option value="15">13</option><option value="18">16</option><option value="19">17</option><option value="21">18</option><option value="22">19</option><option value="24">21</option><option value="25">22</option><option value="26">23</option><option value="27">24</option><option value="28">25</option><option value="29">26</option><option value="31">28</option><option value="33">30</option><option value="34">31</option><option value="40">37</option><option value="41">38</option><option value="42">39</option><option value="43">40</option><option value="47">44</option><option value="48">45</option><option value="49">46</option><option value="51">48</option><option value="52">49</option><option value="53">50</option><option value="54">51</option><option value="55">52</option><option value="59">55</option><option value="60">56</option><option value="61">57</option><option value="64">60</option><option value="65">61</option><option value="66">62</option><option value="68">64</option></optgroup>
-                                        <optgroup data-kind="relax" label="RELAX"><option value="3">{{ _('qualsiasi') }} RELAX</option><option value="70">66</option><option value="71">67</option><option value="72">68</option><option value="73">69</option><option value="74">70</option><option value="75">71</option><option value="76">72</option><option value="77">73</option><option value="78">74</option><option value="79">75</option><option value="80">76</option><option value="81">77</option><option value="82">78</option><option value="83">79</option><option value="84">80</option><option value="85">81</option><option value="86">82</option><option value="87">83</option><option value="88">84</option><option value="89">85</option><option value="90">86</option><option value="91">87</option><option value="92">88</option><option value="93">89</option><option value="94">90</option><option value="95">91</option><option value="96">92</option><option value="97">93</option><option value="98">94</option><option value="99">95</option><option value="100">96</option><option value="101">97</option><option value="102">98</option><option value="103">99</option><option value="104">100</option><option value="105">101</option><option value="106">102</option><option value="107">103</option><option value="108">104</option><option value="109">105</option><option value="110">106</option><option value="111">107</option><option value="112">108</option><option value="113">109</option><option value="114">110</option><option value="115">111</option><option value="116">112</option><option value="117">113</option><option value="118">114</option><option value="119">115</option></optgroup>
-                                    </select>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="card">{{ _('offerta') }}</label></div>
-                            <div class="control"><span class="select"><select id="card" name="card"><option value="NONE"></option><option value="CKE">Camping Key Europe</option><option value="ADAC">ADAC Camp Card</option><option value="ACSI">ACSI Camping Card</option></select></span></div>
-                            <div class="control-label"></div>
-                            <div class="control"></div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>extra</legend>
-                        <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="adults">{{ _('adulti') }}</label></div>
-                            <div class="control">
-                                <span class="select"><select type="text" id="adults" name="adults"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span>
-                                <span class="help">{{ _('extra a quelli inclusi.') }}</span>
-                            </div>
-
-                            <div class="control-label"><label class="label" for="children">{{ _('bambini') }}</label></div>
-                            <div class="control"><span class="select"><select id="children" name="children"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span></div>
-
-                            <div class="control-label"><label class="label" for="extra_tents">{{ _('tendine') }}</label></div>
-                            <div class="control"><span class="select"><select id="extra_tents" name="extra_tents"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></span></div>
-                        </div>
-
-                        <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="equipement">{{ _('mezzo') }}</label></div>
-                            <div class="control"><span class="select"><select id="equipement" name="equipement"><option value="" selected></option><option value="car-only">solo macchina</option><option value="tent">tenda</option><option value="roulette">roulotte</option><option value="camper">camper</option><option value="bicyle">bicicletta</option></select></span></div>
-                            <div class="control-label"><label class="label" for="equipement_size">{{ _('misure') }}</label></div>
-                            <div class="control"><span class="select"><select id="equipement_size" name="equipement_size"><option value="" selected></option><option value="small">piccola</option><option value="mid">media</option><option value="big">grande</option><option value="huge">enorme</option></select></span></div>
-                            <div class="control-label"><label class="label" for="extras">Extra</label></div>
-                            <div class="control"><span class="select"><select id="extras" name="extras"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></span></div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>{{ _('animali domestici') }}</legend>
-                        <div class="control is-horizontal">
-                            <div class="control-label"><label class="label" for="with_pet">{{ _('animale domestico') }}:</label></div>
-                            <div class="control"><span class="select"><select id="pet" name="pet"><option value="">no</option><option value="dog">cane</option><option value="gatto">gatto</option><option value="altro">altro</option></select></span></div>
-                        </div>
-                    </fieldset>
 
                     <fieldset>
                         <legend>note</legend>
@@ -752,14 +771,13 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>{{ _('condizioni') }}</legend>
-                        <p class="control">
+                        <p class="control" style="text-align:center">
                             <label class="checkbox">
                                 <input type="checkbox" name="CR" id="CR" checked required />
                                 <label for="CR">{{ _('accetto') }}</label> <a href="rules.html" target="_blank" data-modal="{{ _('regolamento') }}">{{ _('il regolamento') }}</a>.
                             </label>
                         </p>
-                        <p class="control">
+                        <p class="control" style="text-align:center">
                             <input type="checkbox" name="TC" id="TC" checked required />
                             <label for="TC">{{ _('accetto') }}</label> <a href="privacy.html" target="_blank" data-modal="Privacy Policy">privacy policy</a>.
                         </p>
