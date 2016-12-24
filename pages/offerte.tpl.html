@@ -46,73 +46,169 @@
             </div>
         </nav>
 
+		<section class="section">
+			<div class="container content">
+				<p class="title is-1">{{ _('Provate a chiudere gli occhi...') }}</p>
 
-        <section class="hero">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">
-                        {{ _('offerte') }} &amp; {{ _('last minute') }}
-                    </h1>
-                </div>
-            </div>
+				<div class="columns">
+					<div class="column is-9">
+						<article class="media box">
+							<figure class="media-left">
+								<p class="image is-128x128 has-shadow-1">
+									<img src="/images/Team/CampingPuntaIndiani_Team_RenzoPiffer_and_AnitaMaines.jpg">
+								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p><strong>Renzo &amp; Anita</strong> <small>fst. gen</small></p>
+									<p>
+										{% trans %}
+										Vi piacerebbe far colazione in riva al lago mentre i bambini giocano liberamente sulla spiaggia?<br>
+										Immaginate di rilassarvi sull'erba, all'ombra di un salice o sotto il sole caldo, prima di tuffarvi in acqua?<br>
+										Vorreste poter raggiungere con una passeggiata supermarket, bar e ristoranti?<br>
+										Se cercate una vera vacanza nella natura senza rinunciare a tutti i comforts, siete a 'Punta Indiani'.<br>
+										Qui l'ambiente è familiare e ogni ospite è unico.
+										{% endtrans %}
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-offset-3 is-9">
+						<article class="media box">
+							<div class="media-content">
+								<div class="content">
+									<p class="has-text-right"><small>snd. gen</small> <strong>Lorenza &amp; Stefano</strong></p>
+									<p>
+										{% trans %}
+										Potete prenotare, a piacere, un posto al lago o una delle grandi piazzole erbose ed alberate della zona nord, sempre disponendo di 400 metri di spiaggia privata.<br>
+										Qualcuno dei vostri nuovi amici vi racconterá di quando veniva a "Punta Indiani" da piccolo con i genitori o da ragazzo con la moto e la tendina;<br>
+										oggi è qui con la famiglia... Perchè a "Punta Indiani" si ritorna.<br>
+										{% endtrans %}
+									</p>
+								</div>
+							</div>
+							<figure class="media-right">
+								<p class="image is-128x128 has-shadow-1">
+									<img src="/images/Team/CampingPuntaIndiani_Team_LorenzaPiffer_and_StefanoBrugnara_512x512.jpg">
+								</p>
+							</figure>
+						</article>
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="column is-9">
+						<article class="media box">
+							<figure class="media-left">
+								<p class="image is-128x128 has-shadow-1">
+									<img src="/images/Team/CampingPuntaIndiani_Team_GiadaBrugnara.jpg">
+								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p><strong>Giada</strong> <small>trd. gen</small></p>
+									<p class="subtitle is-3">
+										{{ _('Vi aspettiamo!') }}
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
         </section>
-        <section class="section">
-            <div class="container content">
-                <nav class="level has-shadow">
-                    <p class="level-item has-text-left">
-                        <span class="title is-3">OFFERTA PRIMAVERA</span><br>
-                        <span class="subtitle is-5">Anticipa l'estate a Punta Indiani</span>
-                    </p>
-                    <p class="level-item has-text-centered">
-                        25.05.2017 – 18.06.2017<br>
-                        <strong>1 SETTIMANA 2 PERSONE</strong>
-                    </p>
-                    <p class="level-item has-text-right">
-                        <span class="tag is-primary is-medium">&euro;150</span>
-                    </p>
-                </nav>
 
+
+		<!-- promotions group -->
+		<section class="hero is-light is-bold">
+			<div class="hero-body">
+				<div class="container">
+					<p class="title">
+						{{ _('offerte &amp; last minute') }}
+					</p>
+					<p class="subtitle">
+						{% trans %}
+						Prenota per tempo la tua vacanza in famiglia
+						sulla riva del Lago di Caldonazzo e anticipa l'estate
+						con le nostre offerte.
+						{% endtrans %}
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Promotion left -->
+        <section class="section">
+            <div class="container content is-medium is-target promotion" id="{{ _('offerta-primavera') }}">
                 <div class="columns">
-                    <div class="column is-narrow is-hidden-mobile">
-                        <div class="is-256x256" style="background: red">
-                            <p class="title is-5">Narrow column</p>
-                            <p class="subtitle">This column is only 200px wide.</p>
-                        </div>
+                    <div class="column is-half">
+                        <figure class="image">
+                            <img src="/images/Promotions/fiore natura - APT Valsugana Story Traveler.jpg" alt="" class="has-shadow-1">
+                        </figure>
                     </div>
                     <div class="column">
-                        <div>
-                            <p class="subtitle">L'offerta comprende:</p>
-                            <ul>
-                                <li>2 Persone in piazzola Panorama o Relax per 1 settimana</li>
-                                <li>caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  4 A, acqua calda nei servizi</li>
-                                <li>Trentino Guest Card  omaggio!</li>
-                            </ul>
-
-                            <p class="subtitle">Estendi pacchetto:</p>
-                            <ul>
-                                <li>1 Bambino extra ( 2 - 12 ) = + 42 euro  a settimana</li>
-                                <li>1 Adulto extra (&lt;12  anni) = +  70 euro  a settimana</li>
-                            </ul>
-
-                            <p>Offerta valida per prenotazioni confermate entro il 31.01.2017</p>
-                            <small>
-                                Non cumulabile con altre offerte. La prenotazione puo' essere modificata entro il 01.03.2017<br>
-                                Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.
-                            </small>
+                        <div class="columns">
+                            <div class="column">
+                                <h3 class="title is-2">OFFERTA PRIMAVERA</h3>
+                                <h5 class="subtitle is-3">Anticipa l'estate a Punta Indiani</h5>
+                            </div>
+                            <div class="column is-narrow">
+                                25.05.2017<br>
+                                18.06.2017
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="column has-v-bottom is-primary is-2 is-12-mobile">
-                        <a class="button is-medium is-primary">
-                            <span class="icon">
-                                <i class="fa fa-check"></i>
-                            </span>
-                            <span>{{ _('scegli') }}</span>
-                        </a>
+                        <br>
+                        <br class="is-target-only">
+                        <p class="subtitle has-text-centered txt-important">{{ _('solo early booking') }}</p>
+                        <br>
+                        <center>
+                            <h1 class="title is-1">1 settimana 2 persone</h1>
+                            <a href="index.html?promotion={{ _('offerta-primavera') }}#{{ _('prenota') }}"><p class="button is-large is-primary has-extra-padding">&euro;150</p></a>
+                            <br>
+							<br class="is-target-only">
+                            <br>
+                            <a class="link is-secondary is-target-hide" href="#{{ _('offerta-primavera') }}">{{ _('scopri tutti i dettagli.') }}</span></a>
+                        </center>
                     </div>
                 </div>
 
+
+                <div class="columns is-target-only"><!-- "offer_name" + '-more' -->
+					<div class="column">
+						<p class="subtitle">L'offerta comprende:</p>
+						<ul>
+							<li>2 Persone in piazzola Panorama o Relax per 1 settimana</li>
+							<li>caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  4 A, acqua calda nei servizi</li>
+							<li>Trentino Guest Card  omaggio!</li>
+						</ul>
+					</div>
+
+					<div class="column">
+						<p class="subtitle">Estendi pacchetto:</p>
+						<ul>
+							<li>1 Bambino extra ( 2 - 12 ) = + 42 euro  a settimana</li>
+							<li>1 Adulto extra (&lt;12  anni) = +  70 euro  a settimana</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="is-target-only has-text-centered">
+                    <p>
+						Offerta valida per prenotazioni confermate entro il 31.01.2017<br>
+						<small>
+							Non cumulabile con altre offerte. La prenotazione puo' essere modificata entro il 01.03.2017.
+							Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.
+						</small>
+					</p>
+
+                    <a href="index.html?promotion={{ _('offerta-primavera') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;{{ _('offerta primavera') }}</p></a>
+                </div>
             </div>
         </section>
+
     </body>
 </html>

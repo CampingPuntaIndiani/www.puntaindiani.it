@@ -64,7 +64,7 @@
                     <h1 class="title is-1">CAMPING PUNTA INDIANI</h1>
                     <h2 class="subtitle is-3">The original camping mood</h2>
                     <!-- <figure class="image"><img class="is-logo" src="/images/CampingPuntaIndiani_LogoTransparentWhite.png" alt="Logo"></figure> -->
-                    <a href="#{{ _('prenota') }}" class="button is-success is-large is-upper has-extra-padding">{{ _('prenota') }}</a>
+                    <a href="#{{ _('prenota') }}" class="button is-primary is-large is-upper has-extra-padding">{{ _('prenota') }}</a>
                 </div>
             </div>
         </section>
@@ -76,9 +76,9 @@
                 <ul class="is-left">
                     <li><a href="#{{ _('il-campeggio') }}">{{ _('il campeggio') }}</a></li>
                     <li><a href="#{{ _('piazzole') }}">{{ _('piazzole') }}</a></li>
+                    <li><a href="#{{ _('dove-siamo') }}">{{ _('dove siamo') }}</a></li>
                     <li><a href="#outdoor">outdoor</a></li>
                     <li><a href="#highlights">highlights</a></li>
-                    <li><a href="#{{ _('dove-siamo') }}">{{ _('dove siamo') }}</a></li>
                     <li><a href="gallery.html"><span class="icon"><i class="fa fa-camera" aria-hidden="true" title="Gallery"></i></span></a></li>
                 </ul>
                 <ul class="is-center">
@@ -118,9 +118,9 @@
                 <div class="nav-menu">
                     <a href="#{{ _('il-campeggio') }}" class="nav-item is-tab">{{ _('il campeggio') }}</a>
                     <a href="#{{ _('piazzole') }}" class="nav-item is-tab">{{ _('piazzole') }}</a>
+                    <a href="#{{ _('dove-siamo') }}" class="nav-item is-tab">{{ _('dove siamo') }}</a>
                     <a href="#outdoor" class="nav-item is-tab">outdoor</a>
                     <a href="#highlights" class="nav-item is-tab">highlights</a>
-                    <a href="#{{ _('dove-siamo') }}" class="nav-item is-tab">{{ _('dove siamo') }}</a>
                     <a href="gallery.html" class="nav-item is-tab">gallery</a>
 
                     <a href="/pdf/{{ _('prezzi') }}.pdf" class="nav-item is-tab">{{ _('scarica') }} {{ _('prezzi') }}</a>
@@ -653,6 +653,7 @@
 
                         <div class="column">
                             <label class="label" for="arrival">{{ _('piazzola') }}</label>
+                            <span class="help is-hidden-widescreen">&nbsp;</span>
                             <div class="control has-addons is-centered">
                                 <a class="button" href="mappa_interna.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map"></i></a>
                                 <span class="select">
@@ -671,6 +672,7 @@
                         <!-- TODO: Let chose "offers" when coming from offers button (use get paramenters) -->
                         <div class="column">
                             <label class="label" for="card">{{ _('offerta') }}</label>
+                            <span class="help is-hidden-widescreen">&nbsp;</span>
                             <div class="control is-centered"><span class="select"><select id="card" name="card"><option value="NONE"></option><option value="CKE">Camping Key Europe</option><option value="ADAC">ADAC Camp Card</option><option value="ACSI">ACSI Camping Card</option></select></span></div>
                         </div>
                     </div>
@@ -799,8 +801,6 @@
             </div>
         </section>
 
-
-
         <section class="section">
             <div class="level is-mobile">
                 <figure class="image is-48h"><img src="/images/Agreements/trentino.png" alt="Trentino"></img></figure>
@@ -820,7 +820,6 @@
                 <figure class="image is-48h"><img src="/images/Agreements/zoover.png" alt="Zoover reccomanded 2014"></img></figure>
             </div>
         </section>
-
 
         <footer class="footer">
             <div class="container">
