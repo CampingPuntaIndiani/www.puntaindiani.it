@@ -153,6 +153,48 @@ var parseGet = function (val) {
     return result;
 };
 
+
+var cardChange = function () {
+    "use strict";
+    var card = document.getElementById('card'),
+        kind = document.getElementById('kind');
+    return function() {
+        var opts = card.querySelectorAll('option[value='+card.value+']'),
+        opt = opts.length === 0 ? undefined : opts[0];
+        if (opt === undefined || !opt.dataset.only) {
+            for (var x=0; x<kind.children.length; x++) {
+                kind.children[x].style.display = '';
+                kind.children[x].disabled = false;
+            }
+            return;
+        }
+
+        var currentKind = kind.querySelectorAll('option[value='+kind.value+']');
+
+        var keep = opt.dataset.only.split(',');
+        for (var i=0; i<kind.children.length; i++) {
+            var show = false;
+            for (var k=0; k<keep.length; k++)
+                show = show || (kind.children[i].value === keep[k]);
+            kind.children[i].style.display = show ?  '' : 'none';
+            kind.children[i].disabled = !show;
+        }
+
+        // update UI, keep old if ok
+        if (!currentKind.length) return;
+
+        currentKind = currentKind[0];
+        var currentKindOptGroup = currentKind.parentNode.dataset.kind;
+        var isValid = false;
+        for (var j=0; j<keep.length; j++)
+            isValid = isValid || currentKindOptGroup === keep[j];
+        if (isValid) return;
+
+        kind.value = kind.querySelectorAll('option[value='+keep[0]+']')[0].value;
+        fireEvent(kind, 'change');
+    };
+}();
+
 var SetFromQuery = function () {
     "use strict";
 
@@ -167,7 +209,10 @@ var SetFromQuery = function () {
     // Enable / disable promotions
     var promotion = parseGet('promotion'),
         card = document.getElementById('card'),
-        opt;
+        opt, validOpt=false;
+
+    card.addEventListener('change', cardChange);
+
     if (promotion !== undefined) {
         opt = card.querySelectorAll('option[data-id='+promotion+']');
         if (opt.length === 0) {
@@ -175,26 +220,21 @@ var SetFromQuery = function () {
         } else {
             opt = opt[0];
             card.value = opt.value;
+            validOpt = true;
         }
     }
 
-    console.log("dump", opt);
 
     for (var i=0; i < card.children.length; i++) {
         var optg = card.children[i];
         if (optg.dataset.show === 'always') {
-            console.log("keep", optg);
             continue;
         } else {
-            console.log("process child", optg);
             for (var c=0; c < optg.children.length; c++) {
                 var child = optg.children[c];
-                console.log('child:', child, child.dataset.show === 'always', child === opt);
                 if (child.dataset.show === 'always' || child === opt) {
-                    console.log('keep child', child);
                     continue;
                 } else {
-                    console.log('remove child', child);
                     optg.removeChild(child);
                     c--;
                 }
@@ -205,6 +245,8 @@ var SetFromQuery = function () {
             }
         }
     }
+
+    if (validOpt) fireEvent(card, 'change');
 };
 
 var ModalSupport = function () {
