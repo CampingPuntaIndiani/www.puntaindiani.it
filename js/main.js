@@ -165,11 +165,45 @@ var SetFromQuery = function () {
     }
 
     // Enable / disable promotions
-    var promotion = parseGet('promotion');
+    var promotion = parseGet('promotion'),
+        card = document.getElementById('card'),
+        opt;
     if (promotion !== undefined) {
-        var card = document.getElementById('card');
-        card.querySelectorAll('option[value='+promotion+']')[0].style.display='';
-        card.value = promotion;
+        opt = card.querySelectorAll('option[data-id='+promotion+']');
+        if (opt.length === 0) {
+            opt = undefined;
+        } else {
+            opt = opt[0];
+            card.value = opt.value;
+        }
+    }
+
+    console.log("dump", opt);
+
+    for (var i=0; i < card.children.length; i++) {
+        var optg = card.children[i];
+        if (optg.dataset.show === 'always') {
+            console.log("keep", optg);
+            continue;
+        } else {
+            console.log("process child", optg);
+            for (var c=0; c < optg.children.length; c++) {
+                var child = optg.children[c];
+                console.log('child:', child, child.dataset.show === 'always', child === opt);
+                if (child.dataset.show === 'always' || child === opt) {
+                    console.log('keep child', child);
+                    continue;
+                } else {
+                    console.log('remove child', child);
+                    optg.removeChild(child);
+                    c--;
+                }
+            }
+            if (optg.children.length === 0) {
+                card.removeChild(optg);
+                i--;
+            }
+        }
     }
 };
 
