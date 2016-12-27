@@ -124,3 +124,43 @@ fieldset.is-centered .help, .help.is-centered
       box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23)
       .column:not(:last-child)
           border-right: 1px solid $grey-lighter
+
+.hero-body.has-stripe
+  padding: 0 20px
+  overflow: hidden
+
+  .level-item
+    position: relative
+    padding: 40px 0
+    &>*
+      position: relative
+      z-index: 1
+
+  .is-stripe:before
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 200%;
+    top: -50%;
+    left: 0%;
+    z-index: 0;
+    background: red;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+
+    color: $white
+    .icon
+      color: $white
+      fill: $white
+
+.hero.is-info .is-stripe:before
+  background-color: $dark-blue
+
+.hero.is-warning .is-stripe:before
+  background-color: $dark-yellow
+
+.hero.is-success .is-stripe:before
+  background-color: $dark-green
