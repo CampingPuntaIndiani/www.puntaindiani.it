@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <nav class="nav has-shadow">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="index.html" class="nav-item is-tab">home</a>
+                    <a href="#" class="nav-item is-tab is-active">{{ _('prezzi') }}</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+
+            {% include 'prices_txt.inc.html' %}
+
+            <div class="container">
+                <div class="content is-medium">
+
+                    <table class="table is-bordered">
+                        <thead>
+                            <tr>
+                                <th>{{ _('piazzola') }}</th>
+                                <th style="text-align:center">28/04 <span class="icon is-hidden-mobile"><i class="fa fa-long-arrow-right"></i></span><br class="is-hidden-tablet"> 07/07</th>
+                                <th style="text-align:center">07/07 <span class="icon is-hidden-mobile"><i class="fa fa-long-arrow-right"></i></span><br class="is-hidden-tablet"> 26/08</th>
+                                <th style="text-align:center">26/08 <span class="icon is-hidden-mobile"><i class="fa fa-long-arrow-right"></i></span><br class="is-hidden-tablet"> 30/09</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><a href="aqva.html">AQVA</a></td>    <td class="has-text-centered">&euro;33.</td><td class="has-text-centered">&euro;45.</td><td class="has-text-centered">&euro;33.</td></tr>
+                            <tr><td><a href="panorama.html">PANORAMA</td><td class="has-text-centered">&euro;23.</td><td class="has-text-centered">&euro;42.</td><td class="has-text-centered">&euro;23.</td></tr>
+                            <tr><td><a href="relax.html">RELAX</td>   <td class="has-text-centered">&euro;23.</td><td class="has-text-centered">&euro;38.</td><td class="has-text-centered">&euro;23.</td></tr>
+                        </tbody>
+                    </table>
+
+                    {% include 'prices_extra_table.inc.html' %}
+                </div>
+            </div>
+        </section>
+
+    </body>
+    <!--
+    // vim: spelllang=it
+    -->
+</html>

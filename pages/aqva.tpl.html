@@ -40,31 +40,11 @@
                     <a href="panorama.html" class="nav-item is-tab">Panorama</a>
                     <a href="relax.html" class="nav-item is-tab">Relax</a>
                 </div>
-                <div class="nav-right">
-                    <a href="/nl/aqva.html" class="nav-item is-tab">NL</a>
-                    <a href="/it/aqva.html" class="nav-item is-tab">IT</a>
-                    <a href="/de/aqva.html" class="nav-item is-tab">DE</a>
-                    <a href="/en/aqva.html" class="nav-item is-tab">EN</a>
-                </div>
             </div>
         </nav>
 
         <section class="section">
-            <div class="container content">
-                <h1>Prezzi 2017</h1>
-                {% trans %}
-                <p>Il <strong>prezzo della piazzola include 2 Persone</strong>,
-                    posto camper/roulotte/tenda, eventuali altre tendine in piazzola,
-                    elettricità 4A, servizi igienici, docce calde, un posto auto.</p>
-                <p>Le persone aggiuntive sono conteggiate da listino.</p>
-                <p>Tariffa a notte, indipendentemente dall'ora di ingresso, sarà conteggiata un’ulteriore notte se la partenza avverrà dopo le ore 11:00.</p>
-                <p>In bassa stagione &egrave; prevista l'opzione piazzola
-                    <a href="panorama.html">PANORAMA</a> o
-                    <a href="relax.html">RELAX</a> pi&ugrave; <strong>una sola persona</strong>
-                    per &euro;12. a notte.
-                </p>
-                {% endtrans %}
-            </div>
+            {% include 'prices_txt.inc.html' %}
         </section>
 
         <section class="hero is-info accomodation-prices">

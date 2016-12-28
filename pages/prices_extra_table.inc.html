@@ -1,4 +1,8 @@
 <div class="container content is-medium is-hidden-mobile">
+    <style type="text/css" scoped>
+        @media print {.is-hidden-print {display: none}}
+    </style>
+
     <table class="table is-narrow is-bordered">
         <thead>
             <tr>
@@ -41,7 +45,7 @@
     </table>
 </div>
 
-<div class="container content is-hidden-tablet">
+<div class="container content is-hidden-tablet is-hidden-print">
     <table class="table is-narrow is-bordered">
         <tr>
             <td>
