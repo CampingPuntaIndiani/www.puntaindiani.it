@@ -47,7 +47,8 @@ def generate():
                 'filename': page,
             }
 
-            with open(output_path.child(page + DIST_SUFFIX), 'w+') as out:
+            fname = gettext.gettext(page)
+            with open(output_path.child(fname + DIST_SUFFIX), 'w+') as out:
                 out.write(tpl.render(**context).encode('ascii', 'xmlcharrefreplace'))
         env.uninstall_gettext_translations(trans)
 

@@ -168,8 +168,7 @@
                     <div class="is-target-only">
                         <br><br>
 
-                        <!-- TODO: check if it has changed -->
-
+                        {% trans %}
                         <p>Il campeggio occupa la penisola di Punta Indiani e si affaccia direttamente sul lago di Caldonazzo,  una splendida piscina naturale, per nuotare e praticare  sport   già a maggio fino a tutto settembre. Lungo il campeggio ci sono 400 metri di spiaggia privata  riservata ai nostri ospiti.</p>
                         <p>Le piazzole sono 115 , su una superficie di 15.000mq,  tutte accessibili a camper, roulottes e tende,  sono erbose e ombreggiate da grandi alberi.</p>
                         <p>Tutte le piazzole sono dotate di allacciamento alla rete elettrica, e coperte da rete wi-fi.</p>
@@ -184,6 +183,7 @@
                         <p>La vicina ciclabile della Valsugana, con  80 km di percorso lungo il Lago di Caldonazzo e il fiume Brenta è adatta a ciclisti di tutte le età, i sentieri nei dintorni sono la miglior palestra per tenersi in forma nel verde e scoprire luoghi sempre diversi e suggestivi.</p>
                         <p>Le montagne del Lagorai e i vicini Altipiani sono il paradiso di escursionisti e mountainbikers  per esperienze a panorami da ricordare  oltre che luoghi  di interesse storico e culturale.</p>
                         <p>Le città di Trento, Rovereto, Verona sono  facilmente raggiungibili, anche con i mezzi pubblici, per una giornata all'insegna della cultura o dello shopping, un classico è la gita a Venezia con  il trenino della Valsugana ( un piccolo treno turistico , di due vagoni, che collega <strong>Trento</strong> e <strong>Venezia</strong> durante le <strong>ore diurne</strong> e attraversa il campeggio in pochi secondi senza creare disturbo)</p>
+                        {% endtrans %}
                     </div>
                 </div>
             </div>
@@ -240,7 +240,7 @@
             <div class="container">
                 <div class="heading">
                     <h1 class="title">{% trans %}le nostre piazzole{% endtrans %}</h1>
-                    <p class="subtitle has-text-centered">
+                    <p class="subtitle">
                         {% trans %}
                         Condividi una nuova dimensione di vacanza con la tua famiglia,<br>
                         i tuoi amici o con la tua metà e se hai un amico a 4 zampe...porta anche lui.
@@ -254,6 +254,8 @@
                     le piazzole variano per orientamento e dimensioni, seguendo la particolare conformazione della penisola di Punta Indiani.
                     {% endtrans %}
                 </p>
+
+                <br>
 
                 <! -- Accomodation presentaion -->
                 <div class="columns">
@@ -528,11 +530,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
-        <!-- TODO: continue configuring translation -->
 
         <section class="section" id="highlights">
             <div class="container">
@@ -606,12 +605,23 @@
 
 
         <section class="section" id="{{ _('prenota') }}">
-            <div class="container">
+            <div class="container content">
                 <div class="heading">
                     <h1 class="title">{{ _('prenota ora la tua piazzola preferita') }}</h1>
                     <h2 class="subtitle">... {{ _('o richiedi informazioni') }}</h2>
                     scrivendo a <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a></p></h2>
                 </div>
+
+                <br>
+                <br>
+
+                <p>
+                    {% trans %}
+                    Se desiderate una piazzola vicino ai vostri amici, un posto particolarmente
+                    ampio o ombreggiato o soleggiato o vicino al parco giochi o ai servizi
+                    specificatelo nelle “note” e faremo del nostro meglio per  riservarvi la piazzola più adatta.
+                    {% endtrans %}
+                </p>
             </div>
 
             <div class="container">
@@ -677,7 +687,6 @@
                             </div>
                         </div>
 
-                        <!-- TODO: Let chose "offers" when coming from offers button (use get paramenters) -->
                         <div class="column">
                             <label class="label" for="card">{{ _('offerta') }}</label>
                             <span class="help is-hidden-widescreen">&nbsp;</span>
@@ -745,9 +754,9 @@
                                     </div>
 
                                     <div class="column">
-                                        <label class="label" for="pet">{{ _('animale') }}:</label>
-                                        <div class="control"><span class="select"><select id="pet" name="pet"><option value="">no</option><option value="dog">cane</option><option value="gatto">gatto</option><option value="altro">altro</option></select></span></div>
-                                        <span class="help">&nbsp;</span>
+                                        <label class="label" for="pet">{{ _('cani') }}:</label>
+                                        <div class="control"><span class="select"><select id="pet" name="pet"><option value="0">no</option><option value="1">1</option><option value="2">2</option><option value="n">{{ _("di più") }}</option></select></span></div>
+                                        <span class="help">{{ _('specificare in note se &gt;2 ') }}</span>
 
                                     </div>
                                     <div class="column">
@@ -817,6 +826,17 @@
                         </textarea>
                     </fieldset>
 
+                    <small>
+                        {% trans %}
+                        La vostra prenotazione, una volta confermata, garantisce  il tipo di piazzola  e il periodo richiesto.
+                        Nella prenotazione è riportato anche il numero di piazzola preferito, che servirà come indicazione ma non è vincolante.
+                        Per esigenze organizzative il numero di piazzola verrà assegnato all'arrivo,  compatibilmente con la disponibilità.
+                        {% endtrans %}
+                    </small>
+
+                    <br>
+                    <br>
+                    <br>
 
                     <center>
                         <button action="submit" class="button is-primary is-large">
