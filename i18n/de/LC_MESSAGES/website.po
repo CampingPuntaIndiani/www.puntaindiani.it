@@ -189,20 +189,19 @@ msgid ""
 "<strong>Caldonazzo</strong>, nel cuore della <strong>Valsugana</strong>."
 "\n"
 "                        "
-msgstr ""
-"Direkt am <strong>Caldonazzo</strong> Seeufer, im Herz des <strong>Valsugana</strong> Tals."
+msgstr "Direkt am <strong>Caldonazzo</strong> Seeufer, im Herz des <strong>Valsugana</strong> Tals."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:166
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:167
 msgid "maggiori-dettagli-sul-campeggio"
-msgstr ""
+msgstr "mehr-uber-den-campingplatz"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:167
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:301
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:353
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:410
 msgid "scopri maggiori dettagli"
-msgstr ""
+msgstr "Mehr über den Campingplatz"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:171
 msgid ""
@@ -253,22 +252,35 @@ msgid ""
 "attraversa il campeggio in pochi secondi senza creare disturbo)</p>\n"
 "                        "
 msgstr ""
+"<p>Der Campingplatz liegt auf der Punta Indiani Halbinsel und blickt direkt auf den Caldonazzo See. Das ist ein wunderschönes naturnahes Schwimmbad, ideal zum Schwimmen und Sport treiben schon von Mai bis Ende September. Den Campingplatz entlang haben wir einen 400 Meter langen Privatstrand, der für unsere Gäste reserviert ist.</p>"
+"<p>Unsere 115  Stellplätze, die auf einer 15.000 qm Fläche ausgebreitet sind, sind alle erreichbar mit Wohnmobilen, Wohnwagen und Zelten. Sie sind grasbedeckt und beschattet durch hohe Bäume.</p>"
+"<p>Alle  Stellplätze sind mit Stromanschluss und Wi-fi Internetanschluss ausgestattet.</p>"
+"<p>Der Campingplatz bietet drei Plätzchenstypologien, um alle verschiedene Vorlieben und Bedürfnisse zu befriedigen.</p>"
+"<p>Auf die “Relax”  Stellplätze darf man Hunde bringen. Man darf nicht Hunde auf das Seegebiet bringen.</p>"
+"<p>Wir haben zwei Dienstleistungsbereiche, kostenloses warmes Fließwasser, einen Bereich zum Abspulen und Wäsche Waschen, Toiletten und einen Sanitärbereich mit warmen Duschen rund um die Uhr. Eine barrierefrei Toilette, Waschmaschinen, Wäschetrockner, und zwei chemische Toiletten stehen zur Verfügung.</p>"
+"<p>Es gibt auch einen Kinderspielplatz, ein Green-volley/Badminton Spielfeld, und einen Tischtennis-Tisch.</p>"
+"<p>Auf dem Campingplatz kann man Weine aus Trentino, Getränke und Eis kaufen. Der Minimarkt des Dorfes bietet viele Landesprodukte zu günstigen Preisen und liegt nur 50 Meter weit weg. In der Nähe von den Campingplatz sind auch die Bushaltestelle, Cafés und Restaurants.</p>"
+"<br>"
+"<p>Der Valsugana Radweg fährt 80 km entlang den Caldonazzo See und Fluß Brenta und es ist geeignet für Radfahrer, unabhängig vom Alter. Die Wanderwege nebenan machen die beste Gymnastik um sich fit an die frische Luft zu halten und immer verschiedene und plakative Orte zu entdecken.</p>"
+"<p>Die Lagorai Bergkette und die nahen Hochebene sind ein Paradies für Wanderer und Mountainbikers nicht nur um neue Ausblicke und Erfahrungen zu erleben sondern auch um Orte von historischem und kulturellem Interesse zu entdecken.</p>"
+"<p>Die Städte von Trient, Rovereto und Verona sind leicht erreichbar, auch mit den öffentlichen Verkehrsmittel, um einen Tag im Zeichen des Kulturs und des Shoppings zu verbringen.</p>"
+"<p>Ein Klassiker ist der Ausflug nach Venedig mit dem Valsugana Tal Zug (ein kleiner touristischer Zug mit zwei Wagen, der <strong>Trient</strong> und <strong>Venedig</strong> in den <strong>Tagesstunden</strong> miteinander verbindet und fährt über den Campingplatz in wenigen Sekunden und ohne Störungen hinüber).</p>"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:197
 msgid "superficie"
-msgstr ""
+msgstr "Fläche"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:205
 msgid "spiaggia privata"
-msgstr ""
+msgstr "Privatstrand"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:209
 msgid "blocchi servizi"
-msgstr ""
+msgstr "Sanitäranlagen"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:242
 msgid "le nostre piazzole"
-msgstr ""
+msgstr "unsere stellplätze"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:244
 msgid ""
@@ -279,6 +291,8 @@ msgid ""
 "a 4 zampe...porta anche lui.\n"
 "                        "
 msgstr ""
+"Teilen Sie eine neue Urlaub Dimension mit Ihrer Familie,<br>"
+"Ihren Freunden oder Ihren Geliebten und wenn Sie einen Pfotenfreund haben... bringen Sie ihn mit!"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:252
 msgid ""
@@ -289,6 +303,7 @@ msgid ""
 "seguendo la particolare conformazione della penisola di Punta Indiani.\n"
 "                    "
 msgstr ""
+"Wir mochten den Campingplatz in die ursprüngliche Umwelt einarbeiten, die Stellplätze  unterscheiden sich im Ausrichtung und Größe, um die besondere Gestalt  der Punta Indiani Halbinsel zu folgen."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:267
 msgid "Piazzola Aqva, direttamente sulla spiaggia del lago di Caldonazzo"
@@ -307,6 +322,7 @@ msgid ""
 "piazzola.\n"
 "                                        "
 msgstr ""
+"Direkt am Strand um den See 100% zu erleben. Das Erwachen der Natur am Morgen, zauberhafte Mondschein, einzigartige Gefühle. Der Großteil von Aqua Stellplätze  hat einen reservierten Autoabstellplatz außerhalb vom Plätzchen."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:320
 msgid "Piazzole Panorama, vista sul lago di Caldonazzo"
@@ -323,6 +339,7 @@ msgid ""
 "piazzola.\n"
 "                                        "
 msgstr ""
+"Aussicht am See, höchstens 30 Meter vom Strand, mehr Privatsphäre... die gleiche Atmosphäre! Gemäß der Größe des Plätze, der Autoabstellplatz kann entweder innerhalb oder außerhalb vom Panorama  Stellplätze sein."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:372
 msgid "Relax nel verde rinfrescati dalla brezza del lago di Caldonazzo"
@@ -342,6 +359,7 @@ msgid ""
 "                                        con un amico a quattro zampe.\n"
 "                                        "
 msgstr ""
+"Auf einer Wiese inmitten der Bäume, in der ruhigste Zone des Campingplatzes, 50 bis 100 Meter vom Strand, Relax  Stellplätze sind geräumig und geeignet für Freunde, Gruppen, größere Familien,  für wen seine Privatsphäre und Relax liebt oder für wen mit einem Freund auf vier Pfoten reist."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:431
 msgid "Un mondo da scoprire"

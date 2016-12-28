@@ -189,20 +189,19 @@ msgid ""
 "<strong>Caldonazzo</strong>, nel cuore della <strong>Valsugana</strong>."
 "\n"
 "                        "
-msgstr ""
-"Right on the shore of <strong>Caldonazzo</strong> lake, in the heart of <strong>Valsugana</strong>."
+msgstr "Right on the shore of <strong>Caldonazzo</strong> lake, in the heart of <strong>Valsugana</strong>."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:166
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:167
 msgid "maggiori-dettagli-sul-campeggio"
-msgstr ""
+msgstr "more-about-the-camping"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:167
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:301
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:353
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:410
 msgid "scopri maggiori dettagli"
-msgstr ""
+msgstr "discover more about us"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:171
 msgid ""
@@ -253,22 +252,35 @@ msgid ""
 "attraversa il campeggio in pochi secondi senza creare disturbo)</p>\n"
 "                        "
 msgstr ""
+"<p>The campsite is located on Punta Indiani peninsula and overlooks Caldonazzo lake, an amazing natural pool, suitable both for swimming and playing sports from May to the very end of September. The campsite has a 400-meter private beach reserved for our guests.</p>"
+"<p>Pitches are 115, on a 15.000 mq area, all accessible by camper, caravan and tents. They are all grassy and shaded by large trees.</p>"
+"<p>All pitches are provided with electricity and Wi-Fi access.</p>"
+"<p>The campsite offers three types of pitches, to meet all tastes and needs.</p>"
+"<p>Dogs are welcome on “Relax” pitches. You are not allowed to take dogs to the lake area, though.</p>"
+"<p>We have two facilities provided with free warm running water, a room for laundry and washing-up, toilets and hot showers 24h. A accessible restroom, washing machines, dryers and two chemical toilets are also available.</p>"
+"<p>There's a playground for kids, a green-volley/badminton field, and a pingpong table.</p>"
+"<p>Local wines, drinks and ice creams are available for purchase inside the campground area. Just 50 meters away from the campsite, the local market provides genuine local products at affordable prices. In the surrounding area there's also a bus stop, a bar and some restaurants.</p>"
+"<br>"
+"<p>Valsugana bike lane, which runs for 80 km along Caldonazzo Lake and Brenta River is suitable for cyclists of all ages. The paths in the surrounding area are the best gym to keep fit out in the open and discover new and evocative places.</p>"
+"<p>The Lagorai Mountain group and its uplands nearby are a real paradise for hikers and mountain bikers, with plenty of experiences and landscapes to remember, and places of historical and cultural significance to discover.</p>"
+"<p>Cities of Trento, Rovereto and Verona are easy to reach,  even by using public transports, and they are perfect for a day dedicated to culture and shopping.</p>"
+"<p>Don't miss a day trip to Venice taking the Valsugana Train (a little 2-wagon touristic train which connects <strong>Trento</strong> and <strong>Venice</strong> during <strong>daytime</strong> and crosses the campsite in few seconds without any disturbance).</p>"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:197
 msgid "superficie"
-msgstr ""
+msgstr "area"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:205
 msgid "spiaggia privata"
-msgstr ""
+msgstr "private beach"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:209
 msgid "blocchi servizi"
-msgstr ""
+msgstr "service areas"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:242
 msgid "le nostre piazzole"
-msgstr ""
+msgstr "our pitches"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:244
 msgid ""
@@ -279,6 +291,7 @@ msgid ""
 "a 4 zampe...porta anche lui.\n"
 "                        "
 msgstr ""
+"Share a new idea of holiday with your family,<br> friends or your significant other and if you've got a four-legged friend.. well, bring it along as well!"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:252
 msgid ""
@@ -289,6 +302,7 @@ msgid ""
 "seguendo la particolare conformazione della penisola di Punta Indiani.\n"
 "                    "
 msgstr ""
+"Our goal has been to integrate the campsite to the surrounding original natural environment. Our pitches vary in position and size, following the peculiar shape of Punta Indiani Peninsula."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:267
 msgid "Piazzola Aqva, direttamente sulla spiaggia del lago di Caldonazzo"
@@ -307,6 +321,7 @@ msgid ""
 "piazzola.\n"
 "                                        "
 msgstr ""
+"Right on the beach to fully experience the lake. From the Nature awakening at dawn to the magic of moonlights, unmatchable experiences. Most of “Aqua” pitches have a private parking space close to them."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:320
 msgid "Piazzole Panorama, vista sul lago di Caldonazzo"
@@ -323,6 +338,7 @@ msgid ""
 "piazzola.\n"
 "                                        "
 msgstr ""
+"Lakefront, maximum 30 mt from the beach, more privacy... same atmosphere! Depending on the size, the parking space is either inside or outside the Panorama pitch."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:372
 msgid "Relax nel verde rinfrescati dalla brezza del lago di Caldonazzo"
@@ -342,6 +358,7 @@ msgid ""
 "                                        con un amico a quattro zampe.\n"
 "                                        "
 msgstr ""
+"On a ledgelawn among the trees, in the quietest area of the Camping site, 50 to 100 mt away from the beach, “Relax” pitches are ample and suitable for groups of friends, large families, for those who love having their own space, privacy or relax and for those who travel with a four-legged friend."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:431
 msgid "Un mondo da scoprire"

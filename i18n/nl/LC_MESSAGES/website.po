@@ -189,21 +189,20 @@ msgid ""
 "<strong>Caldonazzo</strong>, nel cuore della <strong>Valsugana</strong>."
 "\n"
 "                        "
-msgstr ""
-"Vlak aan de oever van het <strong>Caldonazzomee</strong>r, in het hart van <strong>Valsugana</strong>."
+msgstr "Vlak aan de oever van het <strong>Caldonazzomee</strong>r, in het hart van <strong>Valsugana</strong>."
 
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:166
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:167
 msgid "maggiori-dettagli-sul-campeggio"
-msgstr ""
+msgstr "meer-informatie-over-de-camping"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:167
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:301
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:353
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:410
 msgid "scopri maggiori dettagli"
-msgstr ""
+msgstr "Meer informatie over de camping"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:171
 msgid ""
@@ -254,22 +253,33 @@ msgid ""
 "attraversa il campeggio in pochi secondi senza creare disturbo)</p>\n"
 "                        "
 msgstr ""
+"<p>De camping beslaat het schiereiland van Punta Indiani en ligt vlak aan het Caldonazzomeer, een prachtig natuurlijk meer, waarin al vanaf mei tot in september gezwommen en gesport kan worden. De camping beschikt over 400 meter privéstrand, exclusief voor onze gasten.</p>"
+"<p>De standplaatsen zijn 115 m2 groot, op een totaal oppervlak van 15.000 m2, en alle geschikt voor campers, caravans en tenten. Ze zijn met gras begroeid en liggen in de schaduw van grote bomen. Alle standplaatsen zijn verder uitgerust met stroom en wifi-verbinding.</p>"
+"<p>De camping biedt drie soorten standplaatsen om aan alle wensen tegemoet te komen: </p>"
+"<p>op de standplaatsen “Relax” mag je de hond meenemen. Honden zijn echter niet in de buurt van het meer toegestaan.</p>"
+"<p>We hebben twee sanitairgebouwen met gratis warm water, een wasruimte, toiletten en 24 uur per dag warme douches. Er zijn ook een toilet voor andersvaliden, wasmachines, drogers en twee chemische toiletten.</p>"
+"<p>Voor de kinderen is er een speeltuin, een volleybalveld en een ping-pongtafel.</p>"
+"<p>Het is mogelijk om wijnen uit Trentino, frisdrank en ijs te kopen op het campingterrein. Op 50 meter van de camping bevindt zich een supermarkt die betaalbare en regionale producten biedt. Er is een bushalte in de directe omgeving, alsmede bars en restaurants. </p>"
+"<br>"
+"<p>Dichtbij ligt het 80 km lange fietspad van Valsugana, dat langs het Caldonazzomeer en de rivier Brenta loopt en geschikt is voor alle leeftijden. De paden in de omgeving bieden de mogelijkheid om op een natuurlijke manier fit te blijven en steeds weer nieuwe mooie plekjes te ontdekken.</p>"
+"<p>De bergen van de Lagorai en nabijgelegen hoogvlaktes zijn een paradijs voor wandelaars en mountainbikers en zorgen voor onvergetelijke ervaringen en uitzichten, om niet te spreken van de vele historische en culturele bezienswaardigheden in de streek.</p>"
+"<p>De steden Trento, Rovereto en Verona zijn gemakkelijk te bereiken, ook met het openbaar vervoer, voor een dagje winkelen en sightseeing. Een klassieker is een trip naar Venetië met de trein van Valsugana (een kleine toeristische trein met twee wagons, die <strong>Trento</strong> en <strong>Venetië</strong> <strong>overdag</strong> met elkaar verbindt en gedurende een paar seconden door de camping heen rijdt zonder overlast te bezorgen). </p>"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:197
 msgid "superficie"
-msgstr ""
+msgstr "oppervlakte"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:205
 msgid "spiaggia privata"
-msgstr ""
+msgstr "privéstrand"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:209
 msgid "blocchi servizi"
-msgstr ""
+msgstr "sanitairgebouwen"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:242
 msgid "le nostre piazzole"
-msgstr ""
+msgstr "onze standplaatsen"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:244
 msgid ""
@@ -280,6 +290,8 @@ msgid ""
 "a 4 zampe...porta anche lui.\n"
 "                        "
 msgstr ""
+"Beleef de nieuwe manier van vakantie vieren samen met je gezin,<br> je vrienden of je partner. En de hond mag ook mee."
+
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:252
 msgid ""
@@ -290,6 +302,7 @@ msgid ""
 "seguendo la particolare conformazione della penisola di Punta Indiani.\n"
 "                    "
 msgstr ""
+"Het kampeerterrein gaat geheel op in de natuurlijke omgeving en de karakteristieke vorm van het schiereiland van Punta Indiani, dankzij de verschillende afmetingen en ligging van de standplaatsen."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:267
 msgid "Piazzola Aqva, direttamente sulla spiaggia del lago di Caldonazzo"
@@ -308,6 +321,7 @@ msgid ""
 "piazzola.\n"
 "                                        "
 msgstr ""
+"De camping ligt vlak aan het strand om voor de volle 100% van het meer te kunnen genieten. Unieke emoties, van het ontwaken van de natuur in de ochtend tot het betoverende maanlicht in de avond. De meeste standplaatsen Aqua hebben een eigen parkeerplaats buiten de standplaats."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:320
 msgid "Piazzole Panorama, vista sul lago di Caldonazzo"
@@ -324,6 +338,7 @@ msgid ""
 "piazzola.\n"
 "                                        "
 msgstr ""
+"Met uitzicht op het meer en op hoogstens 30m van het strand gelegen, bieden de standplaatsen Panorama meer privacy... maar zonder aan sfeer in te boeten. Afhankelijk van de oppervlakte, bevindt de parkeerplaats zich binnen of buiten de standplaats."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:372
 msgid "Relax nel verde rinfrescati dalla brezza del lago di Caldonazzo"
@@ -343,6 +358,7 @@ msgid ""
 "                                        con un amico a quattro zampe.\n"
 "                                        "
 msgstr ""
+"De standplaatsen Relax liggen in een terrasvormig gazon tussen de bomen, in de rustigste zone van de Camping, op 50 tot 100 m afstand van het strand. Dit zijn grote standplaatsen, geschikt voor groepen vrienden en grote gezinnen en voor iedereen die ruimte, privacy en relax wil, of voor reizigers met honden."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:431
 msgid "Un mondo da scoprire"
