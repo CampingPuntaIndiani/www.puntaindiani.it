@@ -32,6 +32,7 @@
         <nav class="nav has-shadow">
             <div class="container">
                 <div class="nav-left">
+                    <a href="./" class="nav-item is-tab">home</a>
                     <a href="#{{ _('offerta-primavera') }}" class="nav-item is-tab">{{ _('offerta primavera') }}</a>
                     <a href="#{{ _('offerta-luglio') }}" class="nav-item is-tab">{{ _('offerta luglio') }}</a>
                     <a href="#{{ _('offerta-week-end-lunghi') }}" class="nav-item is-tab">{{ _('offerta week-end lunghi') }}</a>
@@ -540,6 +541,8 @@
                 </div>
             </div>
         </section>
+
+        {% include 'footer.inc.html' %}
 
     </body>
 

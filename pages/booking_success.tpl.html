@@ -20,19 +20,41 @@
     </head>
     <body>
         <section class="hero is-info is-large booking-ok-hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1">{{ _('Prenotazione completata') }}</h1>
+                </div>
+            </div>
         </section>
+
+        <nav class="nav has-shadow">
+            <div class="container">
+                <div class="nav-center">
+                    <a href="../" class="nav-item">Home</a>
+                    <a href="../" class="nav-item">Home</a>
+                </div>
+            </div>
+        </nav>
 
         <section class="section">
             <div class="container content">
-                <h1 class="title is-1">{{ _('Prenotazione completata !') }}</h1>
+                <h1 class="title is-1">{{ _('Grazie per la Vs prenotazione!') }}</h1>
                 <h2 class="subtitle is-3">
                     {% trans %}
                     Vi abbiamo mandato un' e-mail con i dati della Vs prenotazione.<br>
                     Se non l'avete ricevuta, controllate nello spam.
                     {% endtrans %}
                 </h2>
+                <p>
+                    {% trans %}
+                    Per qualsiasi problema scrivete pure a <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>.
+                    {% endtrans %}
+                </p>
             </div>
         </section>
+
+        {% include 'footer.inc.html' %}
+
     </body>
 
     <!--
