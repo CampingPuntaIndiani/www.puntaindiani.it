@@ -26,6 +26,31 @@ LANGS = ['it', 'en', 'nl', 'de']
 PAGES = [f[:-len(TPL_SUFFIX)] for f in listdir(TPL_PATH) if isfile(join(TPL_PATH, f)) and f[-len(TPL_SUFFIX):] == TPL_SUFFIX]
 print(PAGES)
 
+_ = gettext.gettext
+PAGES_MAP = {
+        'offerte' : {
+            'en' : 'promotions',
+            'nl' : 'aanbieding',
+            'de' : 'angebote',
+            },
+        'prezzi' : {
+            'en' : 'prices',
+            'nl' : 'prijzen',
+            'de' : 'preise',
+            },
+
+        'mappa_campeggio' : {
+            'en' : 'camping_map',
+            'nl' : 'camping_map',
+            'de' : 'camping_karte',
+            },
+        'regolamento' : {
+            'en' : 'rules',
+            'nl' : 'reglement',
+            'de' : 'regeln',
+            },
+        }
+
 def generate():
     env = Environment(loader=FileSystemLoader(TPL_PATH), extensions=['jinja2.ext.i18n'])
 
@@ -41,13 +66,17 @@ def generate():
         for page in PAGES:
             tpl = env.get_template(page + TPL_SUFFIX)
 
+            page_map = PAGES_MAP.get(page, {})
+
             context = {
                 'now': datetime.datetime.utcnow().isoformat(),
                 'lang': lang,
                 'filename': page,
+                'page_map': page_map,
             }
 
-            fname = gettext.gettext(page)
+            fname = page_map.get(lang, page)
+
             with open(output_path.child(fname + DIST_SUFFIX), 'w+') as out:
                 out.write(tpl.render(**context).encode('ascii', 'xmlcharrefreplace'))
         env.uninstall_gettext_translations(trans)
