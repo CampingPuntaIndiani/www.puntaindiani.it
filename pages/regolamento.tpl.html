@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <nav class="nav has-shadow">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="./" class="nav-item is-tab">home</a>
+                    <a href="#" class="nav-item is-tab is-active">{{ _('prezzi') }}</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="container content">
+                <ol>
+                    <li>{% trans %}Per l'ingresso al Camping è obbligatoria l'autorizzazione della direzione e relativa registrazione di legge.{% endtrans %}</li>
+                    <li>{% trans %}Le tariffe di soggiorno camping esposte alla ricezione vanno dall'arrivo fino alle ore 11.00 del giorno successivo.{% endtrans %}</li>
+                    <li>{% trans %}L'occupazione del posto tenda o caravan è subordinata all'autorizzazione della direzione.{% endtrans %}</li>
+                    <li>{% trans %}Lo stazionamento dei veicoli è permesso negli spazi indicati dalla direzione.{% endtrans %}</li>
+                    <li>{% trans %}Dalle ore 23 alle ore 8 è richiesto il silenzio, moderazione dei rumori durante il giorno.{% endtrans %}</li>
+                    <li>{% trans %}Gli ospiti dovranno avere cura degli oggetti di loro proprietà, la direzione non è responsabile degli eventuali furti o danneggiamenti salvo che per gli oggetti affidati ad essa ed accettati in consegna con rilascio di ricevuta.{% endtrans %}</li>
+                    <li>{% trans %}La velocità dei veicoli all'interno del complesso turistico non deve superare i 5 km orari.{% endtrans %}</li>
+                    <li>{% trans %}E' obbligatorio rispettare la vegetazione l'igiene e la pulizia del complesso.{% endtrans %}</li>
+                    <li>{% trans %}Cani<sup>1</sup> ammessi previo accordo con la direzione.{% endtrans %}</li>
+                    <li>{% trans %}E’ consentito l’allacciamento elettrico alle apposite prese con spine regolamentari fino ad un massimo di 4 (quattro) ampere. (un allacciamento per piazzola){% endtrans %}</li>
+                    <li>{% trans %}Eventuali visite<sup>2</sup> autorizzate dalla direzione saranno soggette a listino prezzi.{% endtrans %}</li>
+                    <li>{% trans %}A giudizio della direzione la mancata osservazione di tali norme ed un comportamento che danneggi l'armonia e lo spirito dell'insediamento, potrà comportare l'allontanamento dal camping, come ospite indesiderato.{% endtrans %}</li>
+                </ol>
+
+                <p>
+                    <sup>1</sup>
+                    {% trans %}
+                    Gli animali domestici sono ammessi solo in determinate piazzole (Piazzole Relax).
+                    Il loro ingresso è subordinato ad autorizzazione e presentazione di libretto sanitario/vaccinazioni.
+                    Devono essere sempre tenuti al guinzaglio.
+                    E’ vietato portare animali sulla spiaggia, in zona lago (Piazzole Panorama e Aqva), nel parco giochi e in tutti i luoghi comuni.
+                    Devono essere accompagnati per i loro bisogni fuori dal complesso turistico (munirsi di paletta e sacchetti).
+                    I proprietari devono assicurare il rispetto delle norme igienico-sanitarie e sono responsabili di eventuali danni arrecati dagli animali a persone e cose.
+                    {% endtrans %}
+                </p>
+
+
+                <p>
+                    <sup>2</sup>
+                    {% trans %}
+                    I visitatori possono essere ammessi esclusivamente a discrezione della Reception
+                    e possono accedere al Campeggio solamente dopo aver lasciato all’ingresso un documento di identità al personale incaricato.
+                    La visita può avere la durata massima di mezz’ora; superato tale tempo, il visitatore deve pagare la tariffa prevista dal listino prezzi.
+                    È vietato portare animali domestici.
+                    Orario visite: dalle ore 8.00 alle ore 21.00.
+                    {% endtrans %}
+                </p>
+            </div>
+        </section>
+
+        {% include 'footer.inc.html' %}
+
+    </body>
+    <!--
+    // vim: spelllang=it
+    -->
+</html>

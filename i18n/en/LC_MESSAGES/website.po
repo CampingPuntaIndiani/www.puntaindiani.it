@@ -1,16 +1,18 @@
-# English translations for PROJECT.
+# English translations for .
 # Copyright (C) 2016 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the  project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.1\n"
+"Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2016-12-28 18:40+0100\n"
+"POT-Creation-Date: 2016-12-29 18:48+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,6 +26,8 @@ msgstr "Place right on the lake shore"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:78
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:64
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:78
+#: /Users/martin/Projects/www.puntaindiani.it/pages/prezzi.tpl.html:33
+#: /Users/martin/Projects/www.puntaindiani.it/pages/prezzi.tpl.html:35
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:64
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:78
 msgid "bassa stagione"
@@ -31,6 +35,7 @@ msgstr "low season"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:71
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:71
+#: /Users/martin/Projects/www.puntaindiani.it/pages/prezzi.tpl.html:34
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:71
 msgid "alta stagione"
 msgstr "high season"
@@ -48,7 +53,7 @@ msgstr "pitch"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:105
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:104
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:105
-msgid "ritorna alla homepage"
+msgid "ritorna alla home page"
 msgstr "return to home page"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:106
@@ -76,10 +81,10 @@ msgstr "return to home page"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:413
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:448
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:478
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:511
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:538
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:539
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:540
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:515
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:542
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:543
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:544
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:105
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:106
 msgid "prenota"
@@ -107,9 +112,8 @@ msgid ""
 "                    Se non l'avete ricevuta, controllate nello spam.\n"
 "                    "
 msgstr ""
-"We have sent you an email with your reservation data.<br>"
-"If it's not in your incoming mail please check the spam folder."
-""
+"We have sent you an email with your reservation data.<br>If it's not in "
+"your incoming mail please check the spam folder."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:49
 msgid ""
@@ -119,7 +123,9 @@ msgid ""
 "\n"
 "                    "
 msgstr ""
-"Feel free to contact us at <a href=\"mailto:info@campingpuntaindiani.it\">info@campingpuntaindiani.it</a> for further assistance."
+"Feel free to contact us at <a "
+"href=\"mailto:info@campingpuntaindiani.it\">info@campingpuntaindiani.it</a>"
+" for further assistance."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:52
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:93
@@ -153,6 +159,7 @@ msgstr "find us"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:92
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:127
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prezzi.tpl.html:17
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:17
 msgid "prezzi"
 msgstr "prices"
 
@@ -163,6 +170,10 @@ msgstr "contact"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:127
 msgid "scarica"
 msgstr "download"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:150
+msgid "campeggiare è una passione"
+msgstr "camping is passion"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:152
 msgid ""
@@ -176,20 +187,22 @@ msgid ""
 "natura del <strong>Trentino</strong>.\n"
 "                        "
 msgstr ""
-"<strong>Camping Punta Indiani</strong> makes you experience the true"
-"<strong>essence</strong> of camping:<br> <strong>homey</strong>,"
-"<strong>genuine</strong>, <strong>essential</strong>.<br>"
-"The thrill of a real holiday fit for everyone, deep in the nature of"
-"<strong>Trentino</strong>."
+"<strong>Camping Punta Indiani</strong> makes you experience the "
+"true<strong>essence</strong> of "
+"camping:<brstrong>homey</strong>,<strong>genuine</strong>, <strong>essential</strong>.<br>The"
+" thrill of a real holiday fit for everyone, deep in the nature "
+"of<strong>Trentino</strong>."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:160
 msgid ""
 "\n"
-"                        Direttamente sulla riva del lago di "
-"<strong>Caldonazzo</strong>, nel cuore della <strong>Valsugana</strong>."
-"\n"
+"                        <strong>Direttamente sulla riva</strong> del lago"
+" di <strong>Caldonazzo</strong>, nel cuore della "
+"<strong>Valsugana</strong>.\n"
 "                        "
-msgstr "Right on the shore of <strong>Caldonazzo</strong> lake, in the heart of <strong>Valsugana</strong>."
+msgstr ""
+"Right on the shore of <strong>Caldonazzo</strong> lake, in the heart of "
+"<strong>Valsugana</strong>."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:166
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:167
@@ -207,64 +220,82 @@ msgstr "discover more about us"
 msgid ""
 "\n"
 "                        <p>Il campeggio occupa la penisola di Punta "
-"Indiani e si affaccia direttamente sul lago di Caldonazzo,  una splendida"
-" piscina naturale, per nuotare e praticare  sport   già a maggio fino a "
+"Indiani e si affaccia direttamente sul lago di Caldonazzo, una splendida "
+"piscina naturale, per nuotare e praticare sport  già a maggio fino a "
 "tutto settembre. Lungo il campeggio ci sono 400 metri di spiaggia privata"
-"  riservata ai nostri ospiti.</p>\n"
-"                        <p>Le piazzole sono 115 , su una superficie di "
-"15.000mq,  tutte accessibili a camper, roulottes e tende,  sono erbose e "
+" riservata ai nostri ospiti.</p>\n"
+"                        <p>Le piazzole sono 115, su una superficie di "
+"15.000mq, tutte accessibili a camper, roulottes e tende, sono erbose e "
 "ombreggiate da grandi alberi.</p>\n"
 "                        <p>Tutte le piazzole sono dotate di allacciamento"
 " alla rete elettrica, e coperte da rete wi-fi.</p>\n"
-"                        <p>Il campeggio  offre tre tipologie di piazzole,"
-" per soddisfare i diversi gusti ed esigenze.</p>\n"
+"                        <p>Il campeggio offre tre tipologie di piazzole, "
+"per soddisfare i diversi gusti ed esigenze.</p>\n"
 "                        <p>Nelle piazzole “Relax” si può portare il "
 "proprio cane. Non è invece possibile portare i cani nella zona sul "
 "lago.</p>\n"
-"                        <p>Abbiamo due blocchi servizi,   con  acqua "
-"calda corrente gratuita, locale per lavare stoviglie e panni,  sanitari e"
-" docce calde 24 ore su 24. A disposizione inoltre <strong>bagno per "
-"disabili, lavatrici ed asciugatrici</strong>,  due wc chimici.</p>\n"
+"                        <p>Abbiamo due blocchi servizi, con acqua calda "
+"corrente gratuita, locale per lavare stoviglie e panni, sanitari e docce "
+"calde 24 ore su 24. A disposizione inoltre bagno per disabili, lavatrici "
+"ed asciugatrici, due wc chimici.</p>\n"
 "                        <p>Ci un sono parco giochi per bambini, un "
 "campetto da green-volley/volano, un tavolo da ping-pong.</p>\n"
 "                        <p>Nel campeggio si possono acquistare vini "
-"Trentini,  bibite e gelati, Il Market del paese offre prodotti tipici "
+"Trentini, bibite e gelati, Il Market del paese offre prodotti tipici "
 "genuini e convenienti e dista 50 metri dal campeggio, nelle immediate "
-"vicinanze  si trovano  anche la fermata del bus, bar e ristoranti.</p>\n"
+"vicinanze si trovano anche la fermata del bus, bar e ristoranti.</p>\n"
 "\n"
 "                        <br>\n"
 "\n"
-"                        <p>La vicina ciclabile della Valsugana, con  80 "
-"km di percorso lungo il Lago di Caldonazzo e il fiume Brenta è adatta a "
+"                        <p>La vicina ciclabile della Valsugana, con 80 km"
+" di percorso lungo il Lago di Caldonazzo e il fiume Brenta è adatta a "
 "ciclisti di tutte le età, i sentieri nei dintorni sono la miglior "
 "palestra per tenersi in forma nel verde e scoprire luoghi sempre diversi "
 "e suggestivi.</p>\n"
 "                        <p>Le montagne del Lagorai e i vicini Altipiani "
-"sono il paradiso di escursionisti e mountainbikers  per esperienze a "
-"panorami da ricordare  oltre che luoghi  di interesse storico e "
+"sono il paradiso di escursionisti e mountainbikers per esperienze a "
+"panorami da ricordare oltre che luoghi di interesse storico e "
 "culturale.</p>\n"
-"                        <p>Le città di Trento, Rovereto, Verona sono  "
+"                        <p>Le città di Trento, Rovereto, Verona sono "
 "facilmente raggiungibili, anche con i mezzi pubblici, per una giornata "
 "all'insegna della cultura o dello shopping, un classico è la gita a "
-"Venezia con  il trenino della Valsugana ( un piccolo treno turistico , di"
-" due vagoni, che collega <strong>Trento</strong> e "
+"Venezia con il trenino della Valsugana ( un piccolo treno turistico , di "
+"due vagoni, che collega <strong>Trento</strong> e "
 "<strong>Venezia</strong> durante le <strong>ore diurne</strong> e "
 "attraversa il campeggio in pochi secondi senza creare disturbo)</p>\n"
 "                        "
 msgstr ""
-"<p>The campsite is located on Punta Indiani peninsula and overlooks Caldonazzo lake, an amazing natural pool, suitable both for swimming and playing sports from May to the very end of September. The campsite has a 400-meter private beach reserved for our guests.</p>"
-"<p>Pitches are 115, on a 15.000 mq area, all accessible by camper, caravan and tents. They are all grassy and shaded by large trees.</p>"
-"<p>All pitches are provided with electricity and Wi-Fi access.</p>"
-"<p>The campsite offers three types of pitches, to meet all tastes and needs.</p>"
-"<p>Dogs are welcome on “Relax” pitches. You are not allowed to take dogs to the lake area, though.</p>"
-"<p>We have two facilities provided with free warm running water, a room for laundry and washing-up, toilets and hot showers 24h. A accessible restroom, washing machines, dryers and two chemical toilets are also available.</p>"
-"<p>There's a playground for kids, a green-volley/badminton field, and a pingpong table.</p>"
-"<p>Local wines, drinks and ice creams are available for purchase inside the campground area. Just 50 meters away from the campsite, the local market provides genuine local products at affordable prices. In the surrounding area there's also a bus stop, a bar and some restaurants.</p>"
-"<br>"
-"<p>Valsugana bike lane, which runs for 80 km along Caldonazzo Lake and Brenta River is suitable for cyclists of all ages. The paths in the surrounding area are the best gym to keep fit out in the open and discover new and evocative places.</p>"
-"<p>The Lagorai Mountain group and its uplands nearby are a real paradise for hikers and mountain bikers, with plenty of experiences and landscapes to remember, and places of historical and cultural significance to discover.</p>"
-"<p>Cities of Trento, Rovereto and Verona are easy to reach,  even by using public transports, and they are perfect for a day dedicated to culture and shopping.</p>"
-"<p>Don't miss a day trip to Venice taking the Valsugana Train (a little 2-wagon touristic train which connects <strong>Trento</strong> and <strong>Venice</strong> during <strong>daytime</strong> and crosses the campsite in few seconds without any disturbance).</p>"
+"<p>The campsite is located on Punta Indiani peninsula and overlooks "
+"Caldonazzo lake, an amazing natural pool, suitable both for swimming and "
+"playing sports from May to the very end of September. The campsite has a "
+"400-meter private beach reserved for our guests.</p><p>Pitches are 115, "
+"on a 15.000 mq area, all accessible by camper, caravan and tents. They "
+"are all grassy and shaded by large trees.</p><p>All pitches are provided "
+"with electricity and Wi-Fi access.</p><p>The campsite offers three types "
+"of pitches, to meet all tastes and needs.</p><p>Dogs are welcome on "
+"“Relax” pitches. You are not allowed to take dogs to the lake area, "
+"though.</p><p>We have two facilities provided with free warm running "
+"water, a room for laundry and washing-up, toilets and hot showers 24h. A "
+"accessible restroom, washing machines, dryers and two chemical toilets "
+"are also available.</p><p>There's a playground for kids, a green-"
+"volley/badminton field, and a pingpong table.</p><p>Local wines, drinks "
+"and ice creams are available for purchase inside the campground area. "
+"Just 50 meters away from the campsite, the local market provides genuine "
+"local products at affordable prices. In the surrounding area there's also"
+" a bus stop, a bar and some restaurants.</p><br><p>Valsugana bike lane, "
+"which runs for 80 km along Caldonazzo Lake and Brenta River is suitable "
+"for cyclists of all ages. The paths in the surrounding area are the best "
+"gym to keep fit out in the open and discover new and evocative "
+"places.</p><p>The Lagorai Mountain group and its uplands nearby are a "
+"real paradise for hikers and mountain bikers, with plenty of experiences "
+"and landscapes to remember, and places of historical and cultural "
+"significance to discover.</p><p>Cities of Trento, Rovereto and Verona are"
+" easy to reach,  even by using public transports, and they are perfect "
+"for a day dedicated to culture and shopping.</p><p>Don't miss a day trip "
+"to Venice taking the Valsugana Train (a little 2-wagon touristic train "
+"which connects <strong>Trento</strong> and <strong>Venice</strong> during"
+" <strong>daytime</strong> and crosses the campsite in few seconds without"
+" any disturbance).</p>"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:197
 msgid "superficie"
@@ -291,7 +322,9 @@ msgid ""
 "a 4 zampe...porta anche lui.\n"
 "                        "
 msgstr ""
-"Share a new idea of holiday with your family,<br> friends or your significant other and if you've got a four-legged friend.. well, bring it along as well!"
+"Share a new idea of holiday with your family,<br> friends or your "
+"significant other and if you've got a four-legged friend.. well, bring it"
+" along as well!"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:252
 msgid ""
@@ -302,7 +335,9 @@ msgid ""
 "seguendo la particolare conformazione della penisola di Punta Indiani.\n"
 "                    "
 msgstr ""
-"Our goal has been to integrate the campsite to the surrounding original natural environment. Our pitches vary in position and size, following the peculiar shape of Punta Indiani Peninsula."
+"Our goal has been to integrate the campsite to the surrounding original "
+"natural environment. Our pitches vary in position and size, following the"
+" peculiar shape of Punta Indiani Peninsula."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:267
 msgid "Piazzola Aqva, direttamente sulla spiaggia del lago di Caldonazzo"
@@ -321,7 +356,9 @@ msgid ""
 "piazzola.\n"
 "                                        "
 msgstr ""
-"Right on the beach to fully experience the lake. From the Nature awakening at dawn to the magic of moonlights, unmatchable experiences. Most of “Aqua” pitches have a private parking space close to them."
+"Right on the beach to fully experience the lake. From the Nature "
+"awakening at dawn to the magic of moonlights, unmatchable experiences. "
+"Most of “Aqua” pitches have a private parking space close to them."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:320
 msgid "Piazzole Panorama, vista sul lago di Caldonazzo"
@@ -338,7 +375,9 @@ msgid ""
 "piazzola.\n"
 "                                        "
 msgstr ""
-"Lakefront, maximum 30 mt from the beach, more privacy... same atmosphere! Depending on the size, the parking space is either inside or outside the Panorama pitch."
+"Lakefront, maximum 30 mt from the beach, more privacy... same atmosphere!"
+" Depending on the size, the parking space is either inside or outside the"
+" Panorama pitch."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:372
 msgid "Relax nel verde rinfrescati dalla brezza del lago di Caldonazzo"
@@ -358,7 +397,11 @@ msgid ""
 "                                        con un amico a quattro zampe.\n"
 "                                        "
 msgstr ""
-"On a ledgelawn among the trees, in the quietest area of the Camping site, 50 to 100 mt away from the beach, “Relax” pitches are ample and suitable for groups of friends, large families, for those who love having their own space, privacy or relax and for those who travel with a four-legged friend."
+"On a ledgelawn among the trees, in the quietest area of the Camping site,"
+" 50 to 100 mt away from the beach, “Relax” pitches are ample and suitable"
+" for groups of friends, large families, for those who love having their "
+"own space, privacy or relax and for those who travel with a four-legged "
+"friend."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:431
 msgid "Un mondo da scoprire"
@@ -450,7 +493,7 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:525
 msgid ""
 "\n"
-"                            Raggiungi in pochi minuti di treno Trento e "
+"                            Raggiungi confortevolmente in treno Trento e "
 "Venezia.<br>\n"
 "                            Vista lo storico castello del Buonconsiglio\n"
 "                            e rivivi la storia esplorando i forti della "
@@ -476,10 +519,14 @@ msgstr "more photoes"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:610
 msgid "prenota ora la tua piazzola preferita"
-msgstr ""
+msgstr "book now your favourite pitch"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:611
 msgid "o richiedi informazioni"
+msgstr "or ask for more information"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:612
+msgid "scrivendo a"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:619
@@ -493,7 +540,10 @@ msgid ""
 " per  riservarvi la piazzola più adatta.\n"
 "                    "
 msgstr ""
-"If you'd like to have a pitch close to your friends', or if you'd enjoy a spot which is particularly ample or shady or which is close to the playground or the toilet, please add a note in the “Notes” field and we'll do our best to save you the most suitable pitch."
+"If you'd like to have a pitch close to your friends', or if you'd enjoy a"
+" spot which is particularly ample or shady or which is close to the "
+"playground or the toilet, please add a note in the “Notes” field and "
+"we'll do our best to save you the most suitable pitch."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:638
 msgid "quando"
@@ -530,7 +580,7 @@ msgid "BICI"
 msgstr "bicycle"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:684
-msgid "solo bici"
+msgid "solo ciclisti"
 msgstr "cyclists only"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:691
@@ -540,7 +590,7 @@ msgstr "promotion"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:697
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:26
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:42
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:526
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:530
 msgid "convenzioni"
 msgstr "agreements"
 
@@ -637,7 +687,7 @@ msgstr "Spring at Punta Indiani"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:465
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:478
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:482
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:511
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:515
 msgid "ponti-e-week-end"
 msgstr "shortbreaks-and-week-ends"
 
@@ -649,15 +699,16 @@ msgstr "shortbreaks and week-ends"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:724
 msgid "Con chi condividerai la tua vacanza?"
-msgstr ""
+msgstr "With whom will you share your vacation?"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:727
 msgid "adulti"
 msgstr "adults"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:731
-msgid "extra a quelli inclusi."
-msgstr ""
+#, fuzzy
+msgid "totale adulti"
+msgstr "adults"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:735
 msgid "bambini"
@@ -674,7 +725,7 @@ msgstr "infants"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:748
 msgid "Cosa porterai con te?"
-msgstr ""
+msgstr "What will you bring along?"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:751
 msgid "tendine"
@@ -704,7 +755,7 @@ msgstr "cat, boat"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:773
 msgid "Come possiamo contattarti?"
-msgstr ""
+msgstr "How shall we contact you?"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:776
 msgid "nome"
@@ -768,7 +819,7 @@ msgstr "other"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:796
 msgid "Che mezzo utilizzerai?"
-msgstr ""
+msgstr "Which vehicle are you going to use?"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:804
 msgid "Condizioni"
@@ -798,18 +849,20 @@ msgid ""
 "verrà assegnato all'arrivo,  compatibilmente con la disponibilità.\n"
 "                        "
 msgstr ""
-"Your reservation, once confirmed, guarantees both the pitch type and the requested period of stay."
-"In the booking form you'll be asked to write your favorite pitch number, which will be used as a guide but it's not binding."
-"Due to organizational reasons, your pitch number will be assigned at your arrival, based on availability."
+"Your reservation, once confirmed, guarantees both the pitch type and the "
+"requested period of stay.In the booking form you'll be asked to write "
+"your favorite pitch number, which will be used as a guide but it's not "
+"binding.Due to organizational reasons, your pitch number will be assigned"
+" at your arrival, based on availability."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:42
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:520
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:524
 msgid "card convenzionate"
-msgstr ""
+msgstr "agreements"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:49
 msgid "Provate a chiudere gli occhi..."
-msgstr ""
+msgstr "Close your eyes ..."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:63
 msgid ""
@@ -828,6 +881,14 @@ msgid ""
 " ospite è unico.\n"
 "                                        "
 msgstr ""
+"Would you like to have breakfast on the shore of the lake while the "
+"children are playing on the beach?<br>Can you imagine yourself relaxing "
+"on the grass in the shade of a weeping willow, or under the warm sun, "
+"before taking a dip in the water?<br>Would you like to be within walking "
+"distance of a supermarket, bank, pub, and restaurant?<br>If you are "
+"looking for a real holiday in nature without abandoning all comforts, you"
+" are most welcome at Camping Punta Indiani.<br>Here the atmosphere is "
+"friendly and every guest is special."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:89
 msgid ""
@@ -842,10 +903,17 @@ msgid ""
 "Perchè a \"Punta Indiani\" si ritorna.<br>\n"
 "                                        "
 msgstr ""
+"You can book, as you wish, a lakeside site or one of the large grass "
+"pitches under the trees in the northern area, always with 400 meters of "
+"private beach at your disposal.<br>Some of your new friends will tell you"
+" about the time they used to come to Punta Indiani with their parents "
+"when they were small, or as teenagers with a motorbike and a "
+"tent.<br>Today they are here with the family... because one always "
+"returns to Punta Indiani.<br>"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:113
 msgid "Vi aspettiamo!"
-msgstr ""
+msgstr "We are waiting to welcome you!"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:128
 msgid "early booking"
@@ -856,20 +924,22 @@ msgid ""
 "Prenota per tempo la tua vacanza in famiglia sulla riva del Lago di "
 "Caldonazzo e anticipa l'estate con le nostre offerte."
 msgstr ""
+"Book now your family holiday right on the shore of Caldonazzo lake!Book  "
+"by 31/01/2017 to take advantage of our special offers."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:145
 msgid "Anticipa l'estate a Punta Indiani"
-msgstr ""
+msgstr "Swimming, hiking, cycling and much more"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:149
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:211
 msgid "solo early booking"
-msgstr ""
+msgstr "early booking only"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:151
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:213
 msgid "1&nbsp;settimana 2&nbsp;persone"
-msgstr ""
+msgstr "1&nbsp;week 2&nbsp;persons"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:156
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:218
@@ -878,7 +948,7 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:417
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:482
 msgid "scopri tutti i dettagli."
-msgstr ""
+msgstr "read more"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:164
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:228
@@ -887,29 +957,33 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:425
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:492
 msgid "L'offerta comprende"
-msgstr ""
+msgstr "This offer includes"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:166
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:230
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:303
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:427
 msgid "2 persone in piazzola Panorama o Relax"
-msgstr ""
+msgstr "2 persons in pitch Panorama or Relax"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:167
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:231
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:304
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:428
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:495
 msgid ""
 "Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità"
 "  4A, acqua calda nei servizi"
 msgstr ""
+"Caravan/camper/tent/small tents inside the place + 1 car +  4 amp power "
+"supply and warm water in the toilet blocks."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:168
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:232
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:429
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:496
 msgid "Trentino Guest Card in omaggio!"
-msgstr ""
+msgstr "Trentino Guest Card"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:175
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:239
@@ -917,7 +991,7 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:14
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:59
 msgid "bambino"
-msgstr ""
+msgstr "child"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:175
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:176
@@ -926,7 +1000,7 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:240
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:241
 msgid "settimana"
-msgstr ""
+msgstr "week"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:176
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:240
@@ -934,19 +1008,19 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:10
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:52
 msgid "adulto"
-msgstr ""
+msgstr "person"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:177
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:241
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:313
 msgid "supplemento"
-msgstr ""
+msgstr "surcharge"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:184
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:248
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:371
 msgid "Offerta valida per prenotazioni confermate entro il 31.01.2017"
-msgstr ""
+msgstr "Offer Valid for bookings confirmed before 31.01.2017."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:186
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:250
@@ -958,73 +1032,81 @@ msgid ""
 "(anni≥14) per i primi 10 giorni di soggiorno.\n"
 "                            "
 msgstr ""
+"Not combinable with other offers. Changes in reservation until "
+"01.03.2017.Local Tax not included: &euro;1 each person (age≥14) for the "
+"first 10 days of stay."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:193
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:257
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:321
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:375
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:448
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:511
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:538
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:539
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:540
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:515
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:542
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:543
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:544
 msgid "prenota ora"
-msgstr ""
+msgstr "book now"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:207
 msgid "Non solo sole e lago"
-msgstr ""
+msgstr "Swimming, hiking, cycling and much more"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:266
 msgid "scopri Punta Indiani"
-msgstr ""
+msgstr "discover Punta Indiani"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:282
 msgid "Trasforma i ponti di primavera in una breve vacanza"
-msgstr ""
+msgstr "enjoy a short break on the lake"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:288
 msgid "4 giorni/3 notti 2 persone"
-msgstr ""
+msgstr "4 days/3 nights 2 persons"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:303
 msgid ""
 "con partenza <strong>fino alle 20.00</strong> (anzichè entro le 11.00)  "
 "del quarto giorno"
 msgstr ""
+"departures are allowed until 8 pm (instead of 11am) with no extra charge "
+"for the day, enjoy 4 days pay for 3 nights"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:319
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:372
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:508
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:535
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:445
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:512
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:539
 msgid ""
 "Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a "
 "persona (anni≥14) per i primi 10 giorni di soggiorno."
 msgstr ""
+"Not combinable with other offers.Local Tax not included: &euro;1 each "
+"person (age≥14) for the first 10 days of stay."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:335
 msgid "Ciclisti che vivono la vacanza a contatto con la natura"
-msgstr ""
+msgstr "Is worth a stopover at the lake"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:339
 msgid "da solo o in gruppo"
-msgstr ""
+msgstr "single or group"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:341
 msgid "1&nbsp;persona +&nbsp;bici +&nbsp;tendina"
-msgstr ""
+msgstr "1&nbsp;person +&nbsp;bicycle +&nbsp;tent"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:358
 msgid "1 persona + bicicletta + tendina"
-msgstr ""
+msgstr "1 person + bicycle + tent "
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:359
 msgid "acqua calda nei servizi"
-msgstr ""
+msgstr "warm water in the toilet blocks."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:365
 msgid "per gruppi si consiglia di prenotare"
-msgstr ""
+msgstr "We suggest groups to book"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:386
 msgid ""
@@ -1037,34 +1119,32 @@ msgid ""
 "Valsugana da scoprire.\n"
 "                        "
 msgstr ""
+"Just before everyone else arrives... enjoy some leisure time in spring at"
+" Punta Indiani.A good swim in the lake in the morning, long ridings on "
+"the bike lane and strolls in the greenery, town markets and local "
+"festivals, the entire Valsugana to explore and experience."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:412
 msgid "persone"
-msgstr ""
+msgstr "persons"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:430
-msgid "cane - solo Relax)"
-msgstr ""
+msgid "cane - solo Relax"
+msgstr "dog - Relax only"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:437
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:500
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:504
 msgid "Eventuali persone aggiuntive saranno conteggiate secondo listino"
-msgstr ""
+msgstr "each additional person will be charged according to the price list"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:444
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:507
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:511
 msgid "Disponibilità limitata."
-msgstr ""
-
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:445
-msgid ""
-"Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a "
-"persona (anni≥14) per i primi 10 giorni di soggiorno. "
-msgstr ""
+msgstr "Limited availability"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:457
 msgid "perchè aspettare?"
-msgstr ""
+msgstr "are you in the mood of camping but it's not yet holiday time?"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:458
 msgid ""
@@ -1072,84 +1152,83 @@ msgid ""
 "Punta Indiani e passare tutti i weekend  e i   ponti di primavera sul "
 "Lago."
 msgstr ""
+"If you wish to leave your caravan on campingsite and enjoy week-ends and "
+"short break at the lake"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:477
 msgid ""
 "2&nbsp;persone tutti&nbsp;i&nbsp;week-end "
 "e&nbsp;ponti&nbsp;di&nbsp;primavera"
-msgstr ""
-
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:493
-msgid ""
-"1  Piazzola Panorama o Relax dal 28 aprile al  25 giugno  "
-"caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità"
-"  4 A, acqua calda nei servizi, un cane (possibile in piazzola Relax)"
-msgstr ""
+msgstr "2&nbsp;people 26&nbsp;nights"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:494
-msgid "26  pernottamenti per 2 persone"
-msgstr ""
+msgid "1 Piazzola Panorama o Relax dal 28 aprile al 25 giugno"
+msgstr "1 pitch Panorama or Relax from 28 april to 25 june"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:511
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:497
+msgid "26 pernottamenti per 2 persone"
+msgstr "4 days/3 nights 2 persons"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:515
 msgid "forfait ponti e week-end"
-msgstr ""
+msgstr "shortbreaks and week-ends"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:531
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:535
 msgid "2 persone + 1 piazzola RELAX + 2 cani + 4A corrente = €17.00 al giorno"
-msgstr ""
+msgstr "2 persons + 1 pitch RELAX + 2 dogs + 4A power = €17.00 per day"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:532
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:536
 msgid "2 persone + 1 piazzola PANORAMA + 4A corrente = €19.00 al giorno"
-msgstr ""
+msgstr "2 persons + 1 pitch PANORAMA + 4A power= €19.00 per day"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:533
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:537
 msgid ""
 "2 persone + 1 piazzola AQUA direttamente sul lago + 4A corrente = €27.00 "
 "al giorno"
-msgstr ""
+msgstr "2 persons + 1 pitch AQUA at the lake + 4A power = €27.00 per day"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:538
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:542
 msgid "ACSI"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:539
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:543
 msgid "ADAC"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:540
+#: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:544
 msgid "CKE"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:29
 msgid "Piazzola vista lago"
-msgstr ""
+msgstr "Lakefront"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:11
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:15
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:53
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:60
 msgid "aggiuntivo"
-msgstr ""
+msgstr "additional"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:18
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:66
 msgid "cane"
-msgstr ""
+msgstr "dog"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:19
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:67
 msgid "solo piazzola"
-msgstr ""
+msgstr "only pitch"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:22
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:73
 msgid "piazzola disabitata"
-msgstr ""
+msgstr "occupied but uninhabited pitch"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:23
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:74
 msgid "solo bassa stagione"
-msgstr ""
+msgstr "low season only"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:30
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:87
@@ -1159,7 +1238,7 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:31
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:88
 msgid "previo autorizzazione"
-msgstr ""
+msgstr "authorized only"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_txt.inc.html:3
 msgid ""
@@ -1182,7 +1261,151 @@ msgid ""
 "    "
 msgstr ""
 
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:25
+msgid ""
+"Per l'ingresso al Camping è obbligatoria l'autorizzazione della direzione"
+" e relativa registrazione di legge."
+msgstr ""
+"Management authorisation and legal registration is compulsory to access "
+"the camping site."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:26
+msgid ""
+"Le tariffe di soggiorno camping esposte alla ricezione vanno dall'arrivo "
+"fino alle ore 11.00 del giorno successivo."
+msgstr ""
+"The prices exhibited at the reception for the stay at the camping site "
+"are valid from arrival to 11.00 a.m. of the following day."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:27
+msgid ""
+"L'occupazione del posto tenda o caravan è subordinata all'autorizzazione "
+"della direzione."
+msgstr ""
+"To take possession of your tent or caravan pitch you must be authorised "
+"by the management."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:28
+msgid ""
+"Lo stazionamento dei veicoli è permesso negli spazi indicati dalla "
+"direzione."
+msgstr "You can leave vehicles only in the places indicated by the management."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:29
+msgid ""
+"Dalle ore 23 alle ore 8 è richiesto il silenzio, moderazione dei rumori "
+"durante il giorno."
+msgstr ""
+"Silence is essential from 11.00 p.m. to 8.00 a.m.; limit the noise during"
+" the day."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:30
+msgid ""
+"Gli ospiti dovranno avere cura degli oggetti di loro proprietà, la "
+"direzione non è responsabile degli eventuali furti o danneggiamenti salvo"
+" che per gli oggetti affidati ad essa ed accettati in consegna con "
+"rilascio di ricevuta."
+msgstr ""
+"Guests must take care of their belongings; the management declines all "
+"responsibilities for any theft or damage except for the objects that have"
+" been left in custody with regular receipt."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:31
+msgid ""
+"La velocità dei veicoli all'interno del complesso turistico non deve "
+"superare i 5 km orari."
+msgstr ""
+"The vehicles inside the tourist complex must not exceed the speed of 5 "
+"km/h."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:32
+msgid ""
+"E' obbligatorio rispettare la vegetazione l'igiene e la pulizia del "
+"complesso."
+msgstr ""
+"You must respect the vegetation, the hygiene and the cleanliness of the "
+"site."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:33
+msgid "Cani<sup>1</sup> ammessi previo accordo con la direzione."
+msgstr "Pets<sup>1</sup> entrance must be pre-authorized by the Management."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:34
+msgid ""
+"E’ consentito l’allacciamento elettrico alle apposite prese con spine "
+"regolamentari fino ad un massimo di 4 (quattro) ampere. (un allacciamento"
+" per piazzola)"
+msgstr ""
+"Under the authorisation of the management you can connect to the proper "
+"sockets  (4 A) which must be earthen, european plugs are necessary (One "
+"connection per site.)."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:35
+msgid ""
+"Eventuali visite<sup>2</sup> autorizzate dalla direzione saranno soggette"
+" a listino prezzi."
+msgstr ""
+"In case of authorised visits<sup>2</sup>, they are subject to the price "
+"list."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:36
+msgid ""
+"A giudizio della direzione la mancata osservazione di tali norme ed un "
+"comportamento che danneggi l'armonia e lo spirito dell'insediamento, "
+"potrà comportare l'allontanamento dal camping, come ospite indesiderato."
+msgstr ""
+"After consideration by the management, the non-observance of these rules "
+"or a behaviour that ruins the harmonious atmosphere of the camping site "
+"may result in expulsion as an unwelcome guest."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:41
+msgid ""
+"\n"
+"                    Gli animali domestici sono ammessi solo in "
+"determinate piazzole (Piazzole Relax).\n"
+"                    Il loro ingresso è subordinato ad autorizzazione e "
+"presentazione di libretto sanitario/vaccinazioni.\n"
+"                    Devono essere sempre tenuti al guinzaglio.\n"
+"                    E’ vietato portare animali sulla spiaggia, in zona "
+"lago (Piazzole Panorama e Aqva), nel parco giochi e in tutti i luoghi "
+"comuni.\n"
+"                    Devono essere accompagnati per i loro bisogni fuori "
+"dal complesso turistico (munirsi di paletta e sacchetti).\n"
+"                    I proprietari devono assicurare il rispetto delle "
+"norme igienico-sanitarie e sono responsabili di eventuali danni arrecati "
+"dagli animali a persone e cose.\n"
+"                    "
+msgstr ""
+"Pets are admitted only to specific Camping areas, (Pitch Relax) Sanitary "
+"condition certificat is compulsory to welcome dog in the campsite.They "
+"must be kept always on a leash. Guests may not take animals onto the "
+"beach, on the lake area (Pitch Panorama, Aqva) into the playground, and "
+"all public areas , they must be taken outside the campsite for their "
+"physical needs (take with you scoop and bags).Owners must ensure respect "
+"of sanitary rules and are personally responsible for any damage cause by "
+"their dogs."
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:54
+msgid ""
+"\n"
+"                    I visitatori possono essere ammessi esclusivamente a "
+"discrezione della Reception\n"
+"                    e possono accedere al Campeggio solamente dopo aver "
+"lasciato all’ingresso un documento di identità al personale incaricato.\n"
+"                    La visita può avere la durata massima di mezz’ora; "
+"superato tale tempo, il visitatore deve pagare la tariffa prevista dal "
+"listino prezzi.\n"
+"                    È vietato portare animali domestici.\n"
+"                    Orario visite: dalle ore 8.00 alle ore 21.00.\n"
+"                    "
+msgstr ""
+"Any visitors must report to Reception and leave a document of "
+"identification to the Staff before they are permitted to enter the "
+"Camping.Visitors may stay at the Camping for a maximum of half an hour, "
+"after which they will be charged for the daily Camping rate. Pets are not"
+" permitted.Visiting times: from 8 a.m. to 9 p.m. ."
+
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:29
 msgid "Relax e Privacy nel verde"
-msgstr ""
+msgstr "Relax and Privacy in the green Nature"
 

@@ -37,6 +37,7 @@ done
 # Internalization
 echo "[+] Compile lang"
 [[ ! -d "i18n" ]] && ./build/lang.sh -i "$(pwd)/i18n" "$(pwd)/pages"
+./build/lang.sh -u "$(pwd)/i18n" "$(pwd)/pages"
 ./build/lang.sh -c "$(pwd)/i18n" "$(pwd)/pages"
 
 # Generate Pages
