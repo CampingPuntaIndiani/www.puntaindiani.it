@@ -164,3 +164,69 @@ fieldset.is-centered .help, .help.is-centered
 
 .hero.is-success .is-stripe:before
   background-color: $dark-green
+
+.x-menu
+  text-transform: uppercase
+  font-size: 80%
+
+.x-button-fix
+  margin: -1px 8px
+
+.is-infographic
+  background-color: #97B4C9
+  *
+    color: $white
+  .icon
+    color: $white
+    fill: $white
+
+.is-infographic-dark
+  background-color: #7198B5
+  *
+    color: $white
+  .icon
+    color: $white
+    fill: $white
+
+.hero .nav-menu.is-top-header-menu.is-active
+  +mobile
+    background-color: rgba(10,10,10,.3)
+    a:not(.button)
+      color: $white
+
+
+.x-matrix
+  display: flex
+  flex-direction: column
+  padding: 0 9px
+  font-family: $family-monospace
+  margin-bottom: -1px
+
+  .x-row
+    display: flex
+    justify-content: space-between
+    margin-bottom: -2px
+    a
+      border-bottom-color: transparent
+      padding: 0 4px
+      .active
+        color: $primary
+      &:hover
+        text-decoration: underline
+
+.x-card-patched
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+body.it .x-card-patched
+  min-height: 175px
+
+body.de .x-card-patched
+  min-height: 250px
+
+body.nl .x-card-patched
+  min-height: 175px
+
+body.en .x-card-patched
+  min-height: 200px
