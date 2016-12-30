@@ -38,7 +38,9 @@
                     <a href="#{{ _('offerta-week-end-lunghi') }}" class="nav-item is-tab">{{ _('offerta week-end lunghi') }}</a>
                     <a href="#{{ _('offerta-bici-e-tendina') }}" class="nav-item is-tab">{{ _('offerta bici e tendina') }}</a>
                     <a href="#{{ _('forfait-primavera-sul-lago') }}" class="nav-item is-tab">{{ _('forfait primavera sul lago') }}</a>
-                    <a href="#{{ _('ponti-e-week-end') }}" class="nav-item is-tab">{{ _('forfait ponti/week-end') }}</a>
+                    {% if lang != 'nl' %}
+                        <a href="#{{ _('ponti-e-week-end') }}" class="nav-item is-tab">{{ _('forfait ponti/week-end') }}</a>
+                    {% endif %}
                     <a href="#{{ _('convenzioni') }}" class="nav-item is-tab">{{ _('card convenzionate') }}</a>
                 </div>
             </div>
@@ -450,6 +452,9 @@
             </div>
         </section>
 
+
+        {% if lang != 'nl' %}
+
         <!-- promotions group -->
         <section class="hero is-light is-bold">
             <div class="hero-body">
@@ -516,6 +521,8 @@
                 </div>
             </div>
         </section>
+
+        {% endif %}
 
         <!-- promotions group -->
         <section class="hero is-warning is-bold">

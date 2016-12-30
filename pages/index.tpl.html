@@ -709,7 +709,10 @@
                                         </optgroup>
                                         <optgroup data-pgroup="forfait" label="{{ _('forfait') }}">
                                             <option value="f-spring" data-only='relax,panorama' data-id="{{ _('forfait-primavera-sul-lago') }}">{{ _('forfait primavera sul lago') }}</option>
-                                            <option value="f-weekend" data-only='relax,panorama' data-id="{{ _('ponti-e-week-end') }}">{{ _('forfait ponti/week-end') }}</option>
+
+                                            {% if lang != 'nl' %}
+                                                <option value="f-weekend" data-only='relax,panorama' data-id="{{ _('ponti-e-week-end') }}">{{ _('forfait ponti/week-end') }}</option>
+                                            {% endif %}
                                         </optgroup>
                                     </select>
                                 </span>
@@ -807,7 +810,7 @@
                                 <p class="control has-text-centered">
                                     <label class="checkbox">
                                         <input type="checkbox" name="CR" id="CR" checked required />
-                                        <label for="CR">{{ _('accetto') }}</label> <a href="rules.html" target="_blank" data-modal="{{ _('regolamento') }}">{{ _('il regolamento') }}</a>.
+                                        <label for="CR">{{ _('accetto') }}</label> <a href="{{ _('regolamento') }}.html" target="_blank" data-modal="{{ _('regolamento') }}">{{ _('il regolamento') }}</a>.
                                     </label>&nbsp;&nbsp;
                                     <label class="checkbox">
                                         <input type="checkbox" name="TC" id="TC" checked required />

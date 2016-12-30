@@ -46,7 +46,7 @@ PAGES_MAP = {
             },
         'regolamento' : {
             'en' : 'rules',
-            'nl' : 'reglement',
+            'nl' : 'verordening',
             'de' : 'regeln',
             },
         }
