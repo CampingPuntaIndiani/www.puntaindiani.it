@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2016-12-30 01:45+0100\n"
+"POT-Creation-Date: 2016-12-30 01:52+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -214,7 +214,7 @@ msgstr "more-about-the-camping"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:353
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:410
 msgid "scopri maggiori dettagli"
-msgstr "discover more about us"
+msgstr "discover more details"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:171
 msgid ""
