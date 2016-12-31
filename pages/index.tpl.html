@@ -616,7 +616,7 @@
             <br>
 
             <div class="container">
-                <div class="tabs is-medium is-toggle is-fullwidth has-fallback">
+                <div class="tabs is-medium is-toggle is-fullwidth has-fallback is-capitalize">
                     <ul>
                         <li><a><span class="icon"><i class="fa fa-film"></i></span><span>{{ _('ancora') }} video</span></a></li>
                         <li><a><span class="icon"><i class="fa fa-street-view"></i></span><span>virtual&nbsp;tour</span></a></li>
@@ -717,6 +717,7 @@
                             <div class="control is-centered">
                                 <span class="select">
                                     <select id="card" name="card">
+                                        <!-- value max length := 10 -->
                                         <option data-show="always" value="NONE"></option>
                                         <optgroup data-show="always" data-pgroup="agreements" label="{{ _('convenzioni') }}">
                                             <option value="CKE"  data-id="CKE">Camping Key Europe</option>
@@ -727,7 +728,7 @@
                                             <option value="o-spring" data-id="{{ _('offerta-primavera') }}">{{ _('offerta primavera') }}</option>
                                             <option value="o-july" data-id="{{ _('offerta-luglio') }}">{{ _('offerta luglio') }}</option>
                                             <option value="o-weekend" data-id="{{ _('offerta-week-end-lunghi') }}">{{ _('offerta week-end lunghi') }}</option>
-                                            <option value="o-bicycle" data-only='bicycle' data-id="{{ _('offerta-bici-e-tendina') }}">{{ _('offerta bici e tendina') }}</option>
+                                            <option value="BICYCLE" data-only='bicycle' data-id="{{ _('offerta-bici-e-tendina') }}">{{ _('offerta bici e tendina') }}</option>
                                         </optgroup>
                                         <optgroup data-pgroup="forfait" label="{{ _('forfait') }}">
                                             <option value="f-spring" data-only='relax,panorama' data-id="{{ _('forfait-primavera-sul-lago') }}">{{ _('forfait primavera sul lago') }}</option>
@@ -781,7 +782,7 @@
                                     </div>
 
                                     <div class="column">
-                                        <label class="label" for="pet">{{ _('cani') }}:</label>
+                                        <label class="label" for="pet">{{ _('cani') }}</label>
                                         <div class="control"><span class="select"><select id="pet" name="pet"><option value="0">no</option><option value="1">1</option><option value="2">2</option><option value="n">{{ _("di più") }}</option></select></span></div>
                                         <span class="help">{{ _('specificare in note se &gt;2 ') }}</span>
 
