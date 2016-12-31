@@ -71,7 +71,7 @@ def generate():
             context = {
                 'now': datetime.datetime.utcnow().isoformat(),
                 'lang': lang,
-                'filename': page,
+                'page': page,
                 'page_map': page_map,
             }
 

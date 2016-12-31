@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-12-31 00:24+0100\n"
+"POT-Creation-Date: 2016-12-31 01:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,41 +21,41 @@ msgstr ""
 msgid "Piazzola direttamente sul lago"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:64
-#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:78
-#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:64
-#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:78
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:55
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:69
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:55
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:69
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prezzi.tpl.html:33
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prezzi.tpl.html:35
-#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:64
-#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:78
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:55
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:69
 msgid "bassa stagione"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:71
-#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:71
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:62
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:62
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prezzi.tpl.html:34
-#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:71
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:62
 msgid "alta stagione"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:105
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:96
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:79
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:132
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:212
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:249
-#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:104
-#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:105
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:95
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:96
 msgid "piazzole"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:105
-#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:104
-#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:105
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:96
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:95
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:96
 msgid "ritorna alla home page"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:106
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:97
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:54
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:56
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:68
@@ -84,14 +84,14 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:549
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:550
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:551
-#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:105
-#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:106
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:96
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:97
 msgid "prenota"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:106
-#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:105
-#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:106
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:97
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:96
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:97
 msgid "ora"
 msgstr ""
 
@@ -99,11 +99,11 @@ msgstr ""
 msgid "Prenotazione completata"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:41
+#: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:40
 msgid "Grazie per la Vs prenotazione!"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:43
+#: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:42
 msgid ""
 "\n"
 "                    Vi abbiamo mandato un' e-mail con i dati della Vs "
@@ -112,7 +112,7 @@ msgid ""
 "                    "
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:49
+#: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:48
 msgid ""
 "\n"
 "                    Per qualsiasi problema scrivete pure a <a "
