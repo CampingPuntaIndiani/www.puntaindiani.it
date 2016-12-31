@@ -814,7 +814,20 @@
                                 <i class="fa fa-envelope"></i>
                             </p>
                             <div class="control-label"><label class="label" for="citizenship">{{ _('cittadinanza') }}</label></div>
-                            <div class="control select is-fullwidth"><select id="citizenship" name="citizenship"><option value="100000100" selected>{{ _('italia') }}</option><option value="100000232">{{ _('olanda') }}</option><option value="100000216">{{ _('germania') }}</option><option value="100000203">{{ _('austria') }}</option><option value="100000241">{{ _('swizzera') }}</option><option value="100000206">{{ _('belgio') }}</option><option value="100000212">{{ _('danimarca') }}</option><option value="100000219">{{ _('regno unito') }}</option><option value="" >{{ _('altro') }}</option></select></div>
+                            <div class="control select is-fullwidth">
+                                <select id="citizenship" name="citizenship">
+                                    <option value="" ></option>
+                                    <option value="100000203">{{ _('austria') }}</option>
+                                    <option value="100000206">{{ _('belgio') }}</option>
+                                    <option value="100000212">{{ _('danimarca') }}</option>
+                                    <option value="100000216">{{ _('germania') }}</option>
+                                    <option value="100000100"{% if lang == 'it' %} selected{% endif %}>{{ _('italia') }}</option>
+                                    <option value="100000232"{% if lang == 'nl' %} selected{% endif %}>{{ _('olanda') }}</option>
+                                    <option value="100000219">{{ _('regno unito') }}</option>
+                                    <option value="100000241">{{ _('swizzera') }}</option>
+                                    <option value="" >{{ _('altro') }}</option>
+                                </select>
+                            </div>
                         </div>
                     </fieldset>
 
