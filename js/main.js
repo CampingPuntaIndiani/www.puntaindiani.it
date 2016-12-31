@@ -1,4 +1,4 @@
-/* global ComboDate */
+/* global ComboDate, ga */
 /* jshint browser:true */
 /* jshint devel:true */
 
@@ -275,6 +275,7 @@ var ModalSupport = function () {
             e.preventDefault();
             modalTitle.innerHTML = this.dataset.modal;
             loadPage(this.href, function(txt){modalBody.innerHTML=txt;});
+            ga('send', 'event', 'modal', 'open', this.href);
             modal.classList.add('is-active');
         });
     });
@@ -293,6 +294,7 @@ var SectionChange = function(){
         mm = document.getElementById('menu-mobile');
 
     return function(sec_id) {
+        if (!sec_id) return;
         var old = md.getElementsByClassName('is-active');
         if (old.length > 0) old[0].classList.remove('is-active');
         var cur = md.querySelectorAll('a[href="#' + sec_id + '"]');
@@ -303,9 +305,8 @@ var SectionChange = function(){
         cur = mm.querySelectorAll('a[href="#' + sec_id + '"]');
         if (cur.length > 0) cur[0].classList.add('is-active');
 
-        // TODO: handle menu
         console.log("now on", sec_id);
-        // TODO: stats
+        ga('send', 'event', 'section', 'read', 'sec_id');
     };
 }();
 
