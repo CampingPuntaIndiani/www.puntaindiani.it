@@ -16,6 +16,8 @@
                 -o-background-size: cover;
                 background-size: cover;
             }
+
+            .hero:not(.main-hero) .title {text-transform: uppercase}
         </style>
     </head>
     <body class="nojs">
@@ -31,7 +33,7 @@
 
         <nav class="nav has-shadow">
             <div class="container">
-                <div class="nav-left">
+                <div class="nav-left x-menu">
                     <a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
                     <a href="#{{ _('offerta-primavera') }}" class="nav-item is-tab">{{ _('offerta primavera') }}</a>
                     <a href="#{{ _('offerta-luglio') }}" class="nav-item is-tab">{{ _('offerta luglio') }}</a>
@@ -56,8 +58,8 @@
                             <div class="media-content">
                                 <div class="content">
                                     <figure class="media-left is-pulled-left">
-                                        <p class="image is-128x128 has-shadow-1">
-                                            <img src="/images/Team/CampingPuntaIndiani_Team_RenzoPiffer_and_AnitaMaines.jpg">
+                                        <p class="image is-128x128">
+                                            <img src="/images/Team/CampingPuntaIndiani_Team_RenzoPiffer_and_AnitaMaines.jpg" class="has-shadow-1">
                                         </p>
                                     </figure>
                                     <p><strong>Renzo &amp; Anita</strong> <small class="is-block-mobile">fst. gen</small></p>
@@ -107,7 +109,7 @@
                                 <div class="content">
                                     <figure class="media-left is-pulled-left">
                                         <p class="image is-128x128 has-shadow-1">
-                                            <img src="/images/Team/CampingPuntaIndiani_Team_GiadaBrugnara.jpg">
+                                            <img src="/images/Team/CampingPuntaIndiani_Team_GiadaBrugnara_512x512.jpg">
                                         </p>
                                     </figure>
                                     <p><strong>Giada</strong> <small class="is-block-mobile">trd. gen</small></p>
@@ -192,7 +194,7 @@
                         </small>
                     </p>
 
-                    <a href="index.html?promotion={{ _('offerta-primavera') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;{{ _('offerta primavera') }}</p></a>
+                    <a href="index.html?promotion={{ _('offerta-primavera') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;{{ _('offerta primavera') }}</p></a>
                 </div>
             </div>
         </section>
@@ -256,7 +258,7 @@
                         </small>
                     </p>
 
-                    <a href="index.html?promotion={{ _('offerta-luglio') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;{{ _('offerta luglio') }}</p></a>
+                    <a href="index.html?promotion={{ _('offerta-luglio') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;{{ _('offerta luglio') }}</p></a>
                 </div>
             </div>
         </section>
@@ -320,7 +322,7 @@
                 <div class="is-target-only has-text-centered">
                     <p><small>{% trans %}Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.{% endtrans %}</small></p>
 
-                    <a href="index.html?promotion={{ _('offerta-week-end-lunghi') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;{{ _('offerta week-end lunghi') }}</p></a>
+                    <a href="index.html?promotion={{ _('offerta-week-end-lunghi') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;{{ _('offerta week-end lunghi') }}</p></a>
                 </div>
             </div>
         </section>
@@ -374,7 +376,7 @@
                         <small>{% trans %}Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.{% endtrans %}</small>
                     </p>
 
-                    <a href="index.html?promotion={{ _('offerta-bici-e-tendina') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;{{ _('offerta bici e tendina') }}</p></a>
+                    <a href="index.html?promotion={{ _('offerta-bici-e-tendina') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;{{ _('offerta bici e tendina') }}</p></a>
                 </div>
             </div>
         </section>
@@ -447,7 +449,7 @@
                         <small>{% trans %}Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.{% endtrans %}</small>
                     </p>
 
-                    <a href="index.html?promotion={{ _('forfait-primavera-sul-lago') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;{{ _('forfait primavera sul lago') }}</p></a>
+                    <a href="index.html?promotion={{ _('forfait-primavera-sul-lago') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper is-upper">{{ _('prenota ora') }}&nbsp;{{ _('forfait primavera sul lago') }}</p></a>
                 </div>
             </div>
         </section>
@@ -517,7 +519,7 @@
                         <small>{% trans %}Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.{% endtrans %}</small>
                     </p>
 
-                    <a href="index.html?promotion={{ _('ponti-e-week-end') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;{{ _('forfait ponti e week-end') }}</p></a>
+                    <a href="index.html?promotion={{ _('ponti-e-week-end') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;{{ _('forfait ponti e week-end') }}</p></a>
                 </div>
             </div>
         </section>
@@ -546,9 +548,9 @@
                 <small>{% trans %}Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.{% endtrans %}</small>
 
                 <div class="columns">
-                    <div class="column"><a href="index.html?promotion={{ _('ACSI') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;ACSI</p></a></div>
-                    <div class="column"><a href="index.html?promotion={{ _('ADAC') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;ADAC</p></a></div>
-                    <div class="column"><a href="index.html?promotion={{ _('CKE') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth">{{ _('prenota ora') }}&nbsp;CKE</p></a></div>
+                    <div class="column"><a href="index.html?promotion={{ _('ACSI') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;ACSI</p></a></div>
+                    <div class="column"><a href="index.html?promotion={{ _('ADAC') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;ADAC</p></a></div>
+                    <div class="column"><a href="index.html?promotion={{ _('CKE') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;CKE</p></a></div>
                 </div>
             </div>
         </section>

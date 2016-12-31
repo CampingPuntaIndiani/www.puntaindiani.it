@@ -27,7 +27,7 @@ cp -vf sitemap.xml dist/sitemap.xml
 # Static file
 echo "[+] Copy static"
 mkdir -p dist/js
-cp -r css images fonts pdf dist/
+cp -r css images fonts pdf index.html dist/
 sassc -t compressed -m libs/bulma.sass > dist/css/bulma.css
 for script in js/*; do
   script=$(basename "$script")
