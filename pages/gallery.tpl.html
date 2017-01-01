@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <nav class="nav has-shadow">
+            <div class="container">
+                <div class="nav-left x-menu">
+                    <a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
+                    <a href="#" class="nav-item is-tab is-active">{{ _('gallery') }}</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="container content">
+                <h1 class="title is-1">Coming soon</h1>
+                <h2 class="title is-2">Stay tuned!</h2>
+            </div>
+        </section>
+
+        {% include 'footer.inc.html' %}
+        {% include 'google.inc.html' %}
+
+    </body>
+    <!--
+    // vim: spelllang=it
+    -->
+</html>
