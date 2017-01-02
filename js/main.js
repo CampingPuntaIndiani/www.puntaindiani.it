@@ -272,9 +272,11 @@ var ModalSupport = function () {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             modalTitle.innerHTML = this.dataset.modal;
-            loadPage(this.href, function(txt){modalBody.innerHTML=txt;});
+            loadPage(this.href, function(txt){
+                modalBody.innerHTML=txt;
+                modal.classList.add('is-active');
+            });
             ga('send', 'event', 'modal', 'open', this.href);
-            modal.classList.add('is-active');
         });
     });
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-02 03:01+0100\n"
+"POT-Creation-Date: 2017-01-02 03:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:384
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:441
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:640
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:896
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:891
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:156
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:197
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:218
@@ -772,7 +772,13 @@ msgstr ""
 msgid "il regolamento"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:880
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:871
+msgid ""
+"We would like to stay next to our friend Jhon Smith and, if possible, "
+"have a place with some shadow."
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:875
 msgid ""
 "\n"
 "                        La vostra prenotazione, una volta confermata, "
