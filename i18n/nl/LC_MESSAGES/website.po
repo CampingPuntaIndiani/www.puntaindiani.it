@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-01-02 02:06+0100\n"
+"POT-Creation-Date: 2017-01-02 03:01+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -394,7 +394,7 @@ msgstr ""
 "De camping ligt vlak aan het strand om voor de volle 100% van het meer te"
 " kunnen genieten. Unieke emoties, van het ontwaken van de natuur in de "
 "ochtend tot het betoverende maanlicht in de avond. De meeste "
-"standplaatsen Aqua hebben een eigen parkeerplaats buiten de standplaats."
+"standplaatsen Aqva hebben een eigen parkeerplaats buiten de standplaats."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:348
 msgid "Piazzole Panorama, vista sul lago di Caldonazzo"
@@ -1202,11 +1202,12 @@ msgid "2 persone + 1 piazzola PANORAMA + 4A corrente = €19.00 al giorno"
 msgstr "2 personen + 1 plaats PANORAMA + 4A  elektriciteit = €19.00 pro Tag."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:546
+#, fuzzy
 msgid ""
-"2 persone + 1 piazzola AQUA direttamente sul lago + 4A corrente = €27.00 "
+"2 persone + 1 piazzola AQVA direttamente sul lago + 4A corrente = €27.00 "
 "al giorno"
 msgstr ""
-"2 personen + 1 plaats AQUA aan het meer + 4A elektriciteit = €27.00 pro "
+"2 personen + 1 plaats AQVA aan het meer + 4A elektriciteit = €27.00 pro "
 "Tag."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:551

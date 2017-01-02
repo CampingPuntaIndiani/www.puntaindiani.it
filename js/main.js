@@ -115,12 +115,11 @@ var EnancheForm = function() {
 var BindAccomodation = function () {
     "use strict";
     var kind = document.getElementById('kind'),
-        accomodation = document.getElementById('pitch');
+        accomodation = document.getElementById('resource'),
+        optgroups = document.querySelectorAll('#resource optgroup');
 
     kind.addEventListener('change', function () {
-        Array.prototype.forEach.call(
-                accomodation.getElementsByTagName('optgroup'),
-                function(opt){
+        Array.prototype.forEach.call(optgroups, function(opt){
             opt.style.display = opt.dataset.kind == kind.value ?  '' : 'none';
             opt.disabled = opt.dataset.kind != kind.value;
             if (opt.dataset.kind == kind.value)
@@ -209,7 +208,7 @@ var SetFromQuery = function () {
     // Enable / disable promotions
     var promotion = parseGet('promotion'),
         card = document.getElementById('card'),
-        opt, validOpt=false;
+        opt;
 
     card.addEventListener('change', cardChange);
 
@@ -220,11 +219,12 @@ var SetFromQuery = function () {
         } else {
             opt = opt[0];
             card.value = opt.value;
-            validOpt = true;
+            fireEvent(card, 'change');
         }
     }
 
 
+    // Hide promotions
     for (var i=0; i < card.children.length; i++) {
         var optg = card.children[i];
         if (optg.dataset.show === 'always') {
@@ -245,8 +245,6 @@ var SetFromQuery = function () {
             }
         }
     }
-
-    if (validOpt) fireEvent(card, 'change');
 };
 
 var ModalSupport = function () {
@@ -305,7 +303,6 @@ var SectionChange = function(){
         cur = mm.querySelectorAll('a[href="#' + sec_id + '"]');
         if (cur.length > 0) cur[0].classList.add('is-active');
 
-        console.log("now on", sec_id);
         ga('send', 'event', 'section', 'read', 'sec_id');
     };
 }();

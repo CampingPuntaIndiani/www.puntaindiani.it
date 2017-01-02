@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-01-02 02:06+0100\n"
+"POT-Creation-Date: 2017-01-02 03:01+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -393,7 +393,7 @@ msgid ""
 msgstr ""
 "Right on the beach to fully experience the lake. From the Nature "
 "awakening at dawn to the magic of moonlights, unmatchable experiences. "
-"Most of “Aqua” pitches have a private parking space close to them."
+"Most of “Aqva” pitches have a private parking space close to them."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:348
 msgid "Piazzole Panorama, vista sul lago di Caldonazzo"
@@ -1202,10 +1202,11 @@ msgid "2 persone + 1 piazzola PANORAMA + 4A corrente = €19.00 al giorno"
 msgstr "2 persons + 1 pitch PANORAMA + 4A power= €19.00 per day"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:546
+#, fuzzy
 msgid ""
-"2 persone + 1 piazzola AQUA direttamente sul lago + 4A corrente = €27.00 "
+"2 persone + 1 piazzola AQVA direttamente sul lago + 4A corrente = €27.00 "
 "al giorno"
-msgstr "2 persons + 1 pitch AQUA at the lake + 4A power = €27.00 per day"
+msgstr "2 persons + 1 pitch AQVA at the lake + 4A power = €27.00 per day"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:551
 msgid "ACSI"
