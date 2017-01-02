@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-01-02 00:03+0100\n"
+"POT-Creation-Date: 2017-01-02 02:06+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -1085,7 +1085,7 @@ msgstr " "
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:292
 msgid "4 giorni/3 notti 2 persone"
-msgstr "3 nacht betalen en 4 daagen verblijven."
+msgstr "3 nachten betalen en 4 nachten verblijven."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:307
 msgid ""
@@ -1118,11 +1118,11 @@ msgstr "alleen of in groep"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:345
 msgid "1&nbsp;persona +&nbsp;bici +&nbsp;tendina"
-msgstr "1&nbsp;person +&nbsp;fiets +1&nbsp;kleine tent"
+msgstr "1&nbsp;persoon +&nbsp;fiets +1&nbsp;kleine tent"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:362
 msgid "1 persona + bicicletta + tendina"
-msgstr "1 person + fiets + 1 kleine tent"
+msgstr "1 persoon + fiets + 1 kleine tent"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:363
 msgid "acqua calda nei servizi"
