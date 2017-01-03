@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-01-02 14:39+0100\n"
+"POT-Creation-Date: 2017-01-03 18:40+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -88,7 +88,7 @@ msgstr "return to home page"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:96
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:97
 msgid "prenota"
-msgstr "reserven"
+msgstr "reserveren"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:97
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:96

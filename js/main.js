@@ -305,7 +305,7 @@ var SectionChange = function(){
         cur = mm.querySelectorAll('a[href="#' + sec_id + '"]');
         if (cur.length > 0) cur[0].classList.add('is-active');
 
-        ga('send', 'event', 'section', 'read', 'sec_id');
+        ga('send', 'event', 'section', 'read', sec_id);
     };
 }();
 
@@ -391,6 +391,18 @@ var LifeAnimation = function () {
     animationStep();
 };
 
+var BindExtraAnalitycs = function () {
+    "use strict";
+    var mail="mailto:info@campingpuntaindiani.it";
+    Array.prototype.forEach.call(
+        document.querySelectorAll('a[href="' + mail + '"]'),
+        function(a) {
+            a.addEventListener('click', function () {
+                ga('send', 'event', 'mail', 'click', this.href);
+            });
+        });
+};
+
 (function(){
     "use strict";
 
@@ -417,4 +429,6 @@ var LifeAnimation = function () {
     SectionHandler();
 
     LifeAnimation();
+
+    BindExtraAnalitycs();
 })();
