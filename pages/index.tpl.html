@@ -41,7 +41,7 @@
         </style>
     </head>
     <body class="nojs {{lang}}">
-        <section class="hero is-info is-fullheight main-hero" id="home">
+        <section class="hero is-info is-fullheight main-hero" id="home" data-gaid="home">
             <div class="hero-head">
                 <header class="nav">
                     <div class="container">
@@ -164,7 +164,7 @@
             </div>
         </nav>
 
-        <section class="section" id="{{ _('il-campeggio') }}">
+        <section class="section" id="{{ _('il-campeggio') }}"  data-gaid="il-campeggio">
             <div class="container">
                 <div class="content is-medium has-text-centered">
                     <h1 class="title is-1 is-upper">{{ _('campeggiare è una passione') }}.</h1>
@@ -255,7 +255,7 @@
 
         <!--            TODO: inserire anche qui versione nera di ADAC ANWB ACSI e? -->
 
-        <section class="section" id="{{ _('piazzole') }}">
+        <section class="section" id="{{ _('piazzole') }}" data-gaid="piazzole">
             <div class="container">
                 <div class="heading">
                     <h1 class="title">{% trans %}le nostre piazzole{% endtrans %}</h1>
@@ -449,11 +449,11 @@
             </div>
         </section>
 
-        <section class="section is-paddingless" id="{{ _('dove-siamo') }}">
+        <section class="section is-paddingless" id="{{ _('dove-siamo') }}" data-gaid="dove-siamo">
             <iframe class="gmap" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD4nigm8rShwERBQ80TUTactTvvJQo-SZw&q=Camping+Punta+Indiani,Pergine+Italy" allowfullscreen></iframe>
         </section>
 
-        <section class="section" id="outdoor">
+        <section class="section" id="outdoor" data-gaid="outdoor">
             <div class="container">
                 <div class="heading">
                     <h1 class="title">{% trans %}Un mondo da scoprire{% endtrans %}</h1>
@@ -566,7 +566,7 @@
             </div>
         </section>
 
-        <section class="section" id="highlights">
+        <section class="section" id="highlights" data-gaid="highlights">
             <div class="container">
                 <div class="heading">
                     <h1 class="title">{{ _('La vita in campeggio') }}</h1>
@@ -637,7 +637,7 @@
         </section>
 
 
-        <section class="section" id="{{ _('prenota') }}">
+        <section class="section" id="{{ _('prenota') }}" data-gaid="prenota">
             <div class="container content">
                 <div class="heading">
                     <h1 class="title">{{ _('prenota ora la tua piazzola preferita') }}</h1>

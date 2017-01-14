@@ -293,7 +293,7 @@ var SectionChange = function(){
     var md = document.getElementById('menu-desktop'),
         mm = document.getElementById('menu-mobile');
 
-    return function(sec_id) {
+    return function(sec_id, ga_sec_id) {
         if (!sec_id) return;
         var old = md.getElementsByClassName('is-active');
         if (old.length > 0) old[0].classList.remove('is-active');
@@ -305,7 +305,7 @@ var SectionChange = function(){
         cur = mm.querySelectorAll('a[href="#' + sec_id + '"]');
         if (cur.length > 0) cur[0].classList.add('is-active');
 
-        ga('send', 'event', 'section', 'read', sec_id);
+        ga('send', 'event', 'section', 'read', ga_sec_id ? ga_sec_id : sec_id);
     };
 }();
 
@@ -333,7 +333,7 @@ var SectionHandler = function() {
         var sec = Sections[s];
         if (sec.id !== LastSec) {
             LastSec = sec.id;
-            SectionChange(sec.id);
+            SectionChange(sec.id, sec.dataset.gaid);
         }
     });
 };
