@@ -27,6 +27,8 @@
                 background-size: cover;
             }
 
+            .hero.main-hero .hero-head {background-color: rgba(0,0,0,0.3)}
+
             /* Features broken on phones (on touch)
             TODO: consider detecting via JS instead
              */
@@ -60,8 +62,7 @@
                             <a href="gallery.html" class="nav-item">gallery</a>
                             <a href="{{ _('offerte') }}.html" class="nav-item">{{ _('offerte') }}</a>
                             <span class="nav-item">
-                                <a href="#{{ _('prenota') }}" class="button is-primary is-inverted">
-                                    <span class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+                                <a href="#{{ _('prenota') }}" class="button is-primary is-upper">
                                     <span>{{ _('prenota') }}</span>
                                 </a>
                             </span>
@@ -93,8 +94,7 @@
                 </ul>
                 <ul class="is-center x-menu">
                     <li><a href="https://www.facebook.com/CampingPuntaIndiani/" target="_blank"><span class="icon"><i class="fa fa-facebook-f"></i></span></a></li>
-                    <li><a class="tooltip-bottom" data-tooltip="0461-548062 & 345 0794205"><span class="icon"><i class="fa fa-phone" aria-hidden="true" aria-label="contact via phone" title="">&nbsp;</i></span></a></li>
-                    <li><a><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true" aria-label="contact via mail" title="info@campingpuntaindiani.it">&nbsp;</i></span></a></li>
+                    <li><a href="#{{ _('contatti') }}"><span class="icon" title="{{ _('contatti') }}"><i class="fa fa-address-card-o" aria-hidden="true"></i></span></a></li>
                     <li>
                         <span class="x-matrix">
                             <span class="x-row">
@@ -326,7 +326,7 @@
                                 </div>
                                 <nav class="level">
                                     <p class="level-item has-text-centered">
-                                        <a href="aqva.html" class="link is-medium is-secondary">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
+                                        <a href="aqva.html" class="link is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
                                         <a href="?pitch=aqva#prenota" class="button is-medium is-primary">{% trans %}prenota{% endtrans %} AQVA</a>
@@ -378,7 +378,7 @@
                                 </div>
                                 <nav class="level">
                                     <p class="level-item has-text-centered">
-                                        <a href="panorama.html" class="link is-medium is-secondary">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
+                                        <a href="panorama.html" class="link is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
                                         <a href="?pitch=panorama#prenota" class="button is-medium is-primary">{% trans %}prenota{% endtrans %} PANORAMA</a>
@@ -435,7 +435,7 @@
                                 </div>
                                 <nav class="level">
                                     <p class="level-item has-text-centered">
-                                        <a href="relax.html" class="link is-medium is-secondary">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
+                                        <a href="relax.html" class="link is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
                                         <a href="?pitch=relax#prenota" class="button is-medium is-primary">{% trans %}prenota{% endtrans %} RELAX</a>
@@ -763,7 +763,7 @@
                                     <div class="column">
                                         <label class="label" for="adults">{{ _('adulti') }}</label>
                                         <div class="control">
-                                            <span class="select"><select type="text" id="adults" name="adults"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
+                                            <span class="select"><select type="text" id="adults" name="adults"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
                                         </div>
                                         <span class="help">{{ _('totale adulti') }}.</span>
                                     </div>
@@ -846,8 +846,23 @@
                                 <legend>{{ _('Che mezzo utilizzerai?') }}</legend>
                                 <div class="control has-addons">
                                     <a class="button"><i class="fa fa-car" aria-hidden="true"></i></a>
-                                    <span class="select"><select id="equipement" name="equipement"><option value="" selected></option><option value="car-only">solo macchina</option><option value="tent">tenda</option><option value="roulette">roulotte</option><option value="camper">camper</option><option value="bicyle">bicicletta</option></select></span>
-                                    <span class="select"><select id="equipement_size" name="equipement_size"><option value="" selected></option><option value="small">piccola</option><option value="mid">media</option><option value="big">grande</option><option value="huge">enorme</option></select></span>
+                                    <span class="select"><select id="equipement" name="equipement">
+                                            <option value="" selected></option>
+                                            <option value="car-only">{{ _('solo macchina') }}</option>
+                                            <option value="tent">{{ _('tenda') }}</option>
+                                            <option value="roulotte">{{ _('roulotte') }}</option>
+                                            <option value="camper">{{ _('camper') }}</option>
+                                            <option value="bicyle">{{ _('bicicletta') }}</option>
+                                        </select>
+                                    </span>
+                                    <span class="select"><select id="equipement_size" name="equipement_size">
+                                            <option value="" selected></option>
+                                            <option value="small">{{ _('piccola') }}</option>
+                                            <option value="mid">{{ _('media') }}</option>
+                                            <option value="big">{{ _('grande') }}</option>
+                                            <option value="huge">{{ _('enorme') }}</option>
+                                        </select>
+                                    </span>
                                 </div>
                             </div>
                             <div class="column">
