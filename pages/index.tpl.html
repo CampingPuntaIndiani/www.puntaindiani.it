@@ -763,7 +763,7 @@
                                     <div class="column">
                                         <label class="label" for="adults">{{ _('adulti') }}</label>
                                         <div class="control">
-                                            <span class="select"><select type="text" id="adults" name="adults"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
+                                            <span class="select"><select type="text" id="adults" name="adults" required><option></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
                                         </div>
                                         <span class="help">{{ _('totale adulti') }}.</span>
                                     </div>
@@ -846,8 +846,8 @@
                                 <legend>{{ _('Che mezzo utilizzerai?') }}</legend>
                                 <div class="control has-addons">
                                     <a class="button"><i class="fa fa-car" aria-hidden="true"></i></a>
-                                    <span class="select"><select id="equipement" name="equipement">
-                                            <option value="" selected></option>
+                                    <span class="select"><select id="equipement" name="equipement" required>
+                                            <option value=""></option>
                                             <option value="car-only">{{ _('solo macchina') }}</option>
                                             <option value="tent">{{ _('tenda') }}</option>
                                             <option value="roulotte">{{ _('roulotte') }}</option>
@@ -855,8 +855,8 @@
                                             <option value="bicyle">{{ _('bicicletta') }}</option>
                                         </select>
                                     </span>
-                                    <span class="select"><select id="equipement_size" name="equipement_size">
-                                            <option value="" selected></option>
+                                    <span class="select"><select id="equipement_size" name="equipement_size" required>
+                                            <option value=""></option>
                                             <option value="small">{{ _('piccola') }}</option>
                                             <option value="mid">{{ _('media') }}</option>
                                             <option value="big">{{ _('grande') }}</option>
