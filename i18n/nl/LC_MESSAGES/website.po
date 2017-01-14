@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-01-14 16:48+0100\n"
+"POT-Creation-Date: 2017-01-14 16:58+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -579,6 +579,36 @@ msgstr "wanneer"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:672
 msgid "date di arrivo e partenza"
 msgstr "check-in &amp; check-out datum"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:679
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:690
+msgid "Aprile"
+msgstr "April"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:679
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:690
+msgid "Maggio"
+msgstr "Mei"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:679
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:690
+msgid "Giugno"
+msgstr "Juni"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:679
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:690
+msgid "Luglio"
+msgstr "Juli"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:679
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:690
+msgid "Agosto"
+msgstr "Augustus"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:679
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:690
+msgid "Settembre"
+msgstr "September"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:699
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:181
