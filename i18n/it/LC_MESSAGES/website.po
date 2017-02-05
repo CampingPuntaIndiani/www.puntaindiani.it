@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-02-05 19:18+0100\n"
+"POT-Creation-Date: 2017-02-05 21:01+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -90,6 +90,20 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prezzi.tpl.html:33
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:63
 msgid "alta stagione"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:94
+msgid ""
+"Roulotte sulla spiaggia del Campeggio Punta Indiani, sul Lago di "
+"Caldonazzo"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:95
+msgid "Tenda sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:96
+msgid "Camper sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:103
@@ -336,7 +350,9 @@ msgid ""
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:304
-msgid "Piazzola Aqva, direttamente sulla spiaggia del lago di Caldonazzo"
+msgid ""
+"Grande piazzola sull'erba  in riva al Lago di Caldonazzo al Camping Punta"
+" Indiani"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:328
@@ -354,7 +370,9 @@ msgid ""
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:357
-msgid "Piazzole Panorama, vista sul lago di Caldonazzo"
+msgid ""
+"Piazzole del Campeggio Punta indiani direttamente sul Lago di Caldonazzo "
+"in Trentino"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:381
@@ -370,7 +388,7 @@ msgid ""
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:409
-msgid "Relax nel verde rinfrescati dalla brezza del lago di Caldonazzo"
+msgid "Vacanza in campeggio con il cane – sito del Camping Punta Indiani"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:436
@@ -396,6 +414,12 @@ msgstr ""
 msgid "Infiniti modi di trascorrere la tua vacanza"
 msgstr ""
 
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:479
+msgid ""
+"Sport sul Lago di Caldonazzo e vacanza per famiglie al Camping Punta "
+"Indiani"
+msgstr ""
+
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:481
 msgid "Nuoto<br>&amp;&nbsp;Sport"
 msgstr ""
@@ -407,7 +431,9 @@ msgid ""
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:502
-msgid "Mountain bike e ciclabile"
+msgid ""
+"Vacanze in bicicletta al camping Punta Indiani vicino alla ciclabile "
+"della Valsugana"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:504
@@ -431,6 +457,12 @@ msgstr ""
 msgid "mappa"
 msgstr ""
 
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:530
+msgid ""
+"Escursione al lago di Erdemolo Lagorai Trentino Vacanza attiva nella "
+"natura – Campeggio Punta Indiani"
+msgstr ""
+
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:532
 msgid "passeggiate"
 msgstr ""
@@ -447,6 +479,12 @@ msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:547
 msgid "Porta con te la tua"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:556
+msgid ""
+"Castello del buonconsiglio Trento, gita per la famiglia, vicino al "
+"Campeggio Punta indiani"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:558
@@ -1201,6 +1239,22 @@ msgstr ""
 msgid "Piazzola vista lago"
 msgstr ""
 
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:93
+msgid ""
+"Foto area piazzole Panorama al Campeggio Punta indiani – Lago di "
+"Caldonazzo Trentino"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:94
+msgid ""
+"Tenda in piazzola Panorama al Campeggio Punta Indiani, sul Lago di "
+"Caldonazzo"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:95
+msgid "Vacanze in famiglia al campeggio Punta Indiani – Trentino"
+msgstr ""
+
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:11
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:15
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:53
@@ -1377,6 +1431,24 @@ msgstr ""
 msgid "Relax e Privacy nel verde"
 msgstr ""
 
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:94
+msgid ""
+"Grande piazzola sull'erba sotto gli alberi nella natura del Camping Punta"
+" Indiani"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:95
+msgid ""
+"Coppia con moto e tenda seduta sotto gli alberi al Campeggio Punta "
+"Indiani. Lo spirito originale del campeggio"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:96
+msgid ""
+"Cane pastore del Lagorai sull'erba nell'area Piazzole Relax.Vacanza con "
+"il cane Camping Punta Indiani"
+msgstr ""
+
 #~ msgid "ritorna alla homepage"
 #~ msgstr ""
 
@@ -1408,5 +1480,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Offerta valida per prenotazioni confermate entro il"
+#~ msgstr ""
+
+#~ msgid "Piazzola Aqva, direttamente sulla spiaggia del lago di Caldonazzo"
+#~ msgstr ""
+
+#~ msgid "Piazzole Panorama, vista sul lago di Caldonazzo"
+#~ msgstr ""
+
+#~ msgid "Relax nel verde rinfrescati dalla brezza del lago di Caldonazzo"
+#~ msgstr ""
+
+#~ msgid "Mountain bike e ciclabile"
 #~ msgstr ""
 

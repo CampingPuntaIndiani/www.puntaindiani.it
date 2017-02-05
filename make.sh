@@ -34,6 +34,10 @@ for script in js/*; do
   java -jar $JSCC --charset utf-8 --js "js/$script" --js_output_file "dist/js/$script"
 done
 
+# Generate Pages (be sure we can extract strings)
+echo "[+] Compile templates"
+python build/generator.py || exit 1
+
 # Internalization
 echo "[+] Compile lang"
 [[ ! -d "i18n" ]] && ./build/lang.sh -i "$(pwd)/i18n" "$(pwd)/pages"
