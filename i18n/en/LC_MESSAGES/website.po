@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-01-22 18:48+0100\n"
+"POT-Creation-Date: 2017-02-05 19:18+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -28,16 +28,16 @@ msgstr "Place right on the lake shore"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:65
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:66
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:78
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:114
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:126
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:128
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:161
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:115
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:127
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:129
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:163
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:335
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:387
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:444
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:643
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:909
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:165
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:341
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:393
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:450
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:649
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:915
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:156
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:197
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:218
@@ -94,9 +94,9 @@ msgstr "high season"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:103
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:89
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:144
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:224
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:261
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:145
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:226
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:263
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:102
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:103
 msgid "piazzole"
@@ -140,10 +140,10 @@ msgstr ""
 " for further assistance."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/footer.inc.html:1
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:97
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:130
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:98
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:131
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:132
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:133
 msgid "contatti"
 msgstr "contact"
 
@@ -180,46 +180,54 @@ msgstr ""
 "Valsugana Camping"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:63
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:113
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:151
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:114
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:153
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:28
 msgid "offerte"
 msgstr "promotions"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:88
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:143
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:170
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:144
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:172
 msgid "il-campeggio"
 msgstr "the-camping"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:88
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:143
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:144
 msgid "il campeggio"
 msgstr "the camping"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:90
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:145
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:455
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:146
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:461
 msgid "dove-siamo"
 msgstr "find-us"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:90
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:145
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:146
 msgid "dove siamo"
 msgstr "find us"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:112
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:94
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:150
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:289
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:708
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:711
+msgid "mappa del campeggio"
+msgstr "camping map"
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:113
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:152
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prezzi.tpl.html:17
 #: /Users/martin/Projects/www.puntaindiani.it/pages/regolamento.tpl.html:17
 msgid "prezzi"
 msgstr "prices"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:173
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:175
 msgid "campeggiare è una passione"
 msgstr "camping is passion"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:175
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:177
 msgid ""
 "\n"
 "                        <strong>Camping Punta Indiani</strong> ti fa "
@@ -237,7 +245,7 @@ msgstr ""
 "real holiday fit for everyone, deep in the nature of "
 "<strong>Trentino</strong>."
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:183
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:185
 msgid ""
 "\n"
 "                        <strong>Direttamente sulla riva</strong> del lago"
@@ -248,19 +256,19 @@ msgstr ""
 "Right on the shore of <strong>Caldonazzo</strong> lake, in the heart of "
 "<strong>Valsugana</strong>."
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:189
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:190
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:191
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:192
 msgid "maggiori-dettagli-sul-campeggio"
 msgstr "more-about-the-camping"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:190
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:332
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:384
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:441
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:192
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:338
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:390
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:447
 msgid "scopri maggiori dettagli"
 msgstr "discover more details"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:194
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:196
 msgid ""
 "\n"
 "                        <p>Il campeggio occupa la penisola di Punta "
@@ -341,23 +349,23 @@ msgstr ""
 " <strong>daytime</strong> and crosses the campsite in few seconds without"
 " any disturbance).</p>"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:220
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:222
 msgid "superficie"
 msgstr "area"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:228
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:230
 msgid "spiaggia privata"
 msgstr "private beach"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:232
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:234
 msgid "blocchi servizi"
 msgstr "service areas"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:268
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:270
 msgid "le nostre piazzole"
 msgstr "our pitches"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:273
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:275
 msgid ""
 "\n"
 "                            Condividi una nuova dimensione di vacanza con"
@@ -370,7 +378,7 @@ msgstr ""
 " other.<br>And if you've got a four-legged friend.. well, bring it along "
 "as well!"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:280
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:282
 msgid ""
 "\n"
 "                            Abbiamo voluto integrare il campeggio "
@@ -384,11 +392,11 @@ msgstr ""
 "natural environment.<br>Our pitches vary in position and size, following "
 "the peculiar shape of Punta Indiani Peninsula."
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:298
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:304
 msgid "Piazzola Aqva, direttamente sulla spiaggia del lago di Caldonazzo"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:322
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:328
 msgid ""
 "\n"
 "                                            Direttamente sulla spiaggia "
@@ -405,11 +413,11 @@ msgstr ""
 "awakening at dawn to the magic of moonlights, unmatchable experiences. "
 "Most of “Aqva” pitches have a private parking space close to them."
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:351
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:357
 msgid "Piazzole Panorama, vista sul lago di Caldonazzo"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:375
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:381
 msgid ""
 "\n"
 "                                            Vista lago, massimo 30m dalla"
@@ -424,11 +432,11 @@ msgstr ""
 " Depending on the size, the parking space is either inside or outside the"
 " Panorama pitch."
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:403
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:409
 msgid "Relax nel verde rinfrescati dalla brezza del lago di Caldonazzo"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:430
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:436
 msgid ""
 "\n"
 "                                        In un prato a terrazze fra gli "
@@ -448,19 +456,19 @@ msgstr ""
 "own space, privacy or relax and for those who travel with a four-legged "
 "friend."
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:462
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:468
 msgid "Un mondo da scoprire"
 msgstr "a world to discover"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:463
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:469
 msgid "Infiniti modi di trascorrere la tua vacanza"
 msgstr "Countless ways to spend your holiday"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:475
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:481
 msgid "Nuoto<br>&amp;&nbsp;Sport"
 msgstr "Swim<br>&amp;&nbsp;Sport"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:481
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:487
 msgid ""
 "Divertiti e mantieniti in forma nuotando e praticando il tuo sport "
 "preferito nelle accoglienti acque del Lago di Caldonazzo."
@@ -468,15 +476,15 @@ msgstr ""
 "Have fun and keep fit swimming and do your favourite sport in the "
 "pleasant water of Caldonazzo lake"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:496
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:502
 msgid "Mountain bike e ciclabile"
 msgstr "Mountain-bike and cyclepath"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:498
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:504
 msgid "ciclabile&nbsp;80km<br>&amp;mountain-bike"
 msgstr "cyclepath&nbsp;80km<br>&amp;mountain-bike"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:505
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:511
 msgid ""
 "\n"
 "                                Raggiungi Venezia ed esplora la Valsugana"
@@ -484,20 +492,20 @@ msgid ""
 "                                "
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:509
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:515
 msgid "Scarica la"
 msgstr "download the"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:509
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:541
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:515
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:547
 msgid "mappa"
 msgstr "map"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:526
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:532
 msgid "passeggiate"
 msgstr "hike"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:533
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:539
 msgid ""
 "\n"
 "                                    Rilassati passeggiando tra la natura\n"
@@ -509,15 +517,15 @@ msgstr ""
 "keep fit out in the open  and discover new and evocative places walking  "
 "the paths surrounding the lake or trekking the mountains of the Lagorai."
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:541
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:547
 msgid "Porta con te la tua"
 msgstr "Bring with you your"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:552
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:558
 msgid "città<br>cultura<br>storia"
 msgstr "city<br>culture<br>history"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:560
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:566
 msgid ""
 "\n"
 "                                Raggiungi confortevolmente in treno "
@@ -532,35 +540,35 @@ msgstr ""
 "visit  Medieval castles and forts of the First World War, learn The local"
 " history and culture"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:575
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:581
 msgid "La vita in campeggio"
 msgstr "Camping life"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:576
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:582
 msgid "Infinite emozioni raccontate per mezzo di foto e video"
 msgstr "Endless emotions in pictures and videos"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:633
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:639
 msgid "ancora"
 msgstr "more"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:635
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:641
 msgid "ancora foto"
 msgstr "more photoes"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:646
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:652
 msgid "prenota ora la tua piazzola preferita"
 msgstr "book now your favourite pitch"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:647
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:653
 msgid "o richiedi informazioni"
 msgstr "or ask for more information"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:648
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:654
 msgid "scrivendo a"
 msgstr "write to"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:655
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:661
 msgid ""
 "\n"
 "                    Se desiderate una piazzola vicino ai vostri amici, un"
@@ -576,45 +584,45 @@ msgstr ""
 "playground or the toilet, please add a note in the “Notes” field and "
 "we'll do our best to save you the most suitable pitch."
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:674
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:680
 msgid "quando"
 msgstr "when"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:675
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:681
 msgid "date di arrivo e partenza"
 msgstr "check-in and check-out dates"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:682
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:693
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:688
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:699
 msgid "Aprile"
 msgstr "April"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:682
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:693
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:688
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:699
 msgid "Maggio"
 msgstr "May"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:682
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:693
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:688
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:699
 msgid "Giugno"
 msgstr "June"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:682
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:693
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:688
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:699
 msgid "Luglio"
 msgstr "July"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:682
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:693
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:688
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:699
 msgid "Agosto"
 msgstr "August"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:682
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:693
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:688
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:699
 msgid "Settembre"
 msgstr "September"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:702
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:708
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:181
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:245
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:317
@@ -622,44 +630,40 @@ msgstr "September"
 msgid "piazzola"
 msgstr "pitch"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:705
-msgid "mappa del campeggio"
-msgstr "camping map"
-
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:711
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:717
 msgid "Bici"
 msgstr "bicycle"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:716
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:717
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:718
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:722
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:723
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:724
 msgid "qualsiasi"
 msgstr "any"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:720
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:726
 msgid "BICI"
 msgstr "bicycle"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:720
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:726
 msgid "solo ciclisti"
 msgstr "cyclists only"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:727
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:733
 msgid "offerta"
 msgstr "promotion"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:734
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:740
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:28
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:46
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:539
 msgid "convenzioni"
 msgstr "agreements"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:739
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:745
 msgid "promozioni"
 msgstr "promotions"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:740
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:746
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:38
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:140
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:156
@@ -668,14 +672,14 @@ msgstr "promotions"
 msgid "offerta-primavera"
 msgstr "the-pentecost-holiday-on-the-lake"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:740
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:746
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:38
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:148
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:197
 msgid "offerta primavera"
 msgstr "The Pentecost Holiday on the Lake"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:741
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:747
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:39
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:204
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:218
@@ -684,14 +688,14 @@ msgstr "The Pentecost Holiday on the Lake"
 msgid "offerta-luglio"
 msgstr "family-holiday"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:741
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:747
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:39
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:210
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:261
 msgid "offerta luglio"
 msgstr "Family holiday"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:742
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:748
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:40
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:277
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:293
@@ -700,14 +704,14 @@ msgstr "Family holiday"
 msgid "offerta-week-end-lunghi"
 msgstr "discover-punta-indiani"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:742
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:748
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:40
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:285
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:325
 msgid "offerta week-end lunghi"
 msgstr "discover Punta Indiani"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:743
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:749
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:41
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:332
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:346
@@ -716,18 +720,18 @@ msgstr "discover Punta Indiani"
 msgid "offerta-bici-e-tendina"
 msgstr "just-bike-and-tent"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:743
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:749
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:41
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:338
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:379
 msgid "offerta bici e tendina"
 msgstr "just bike and tent"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:745
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:751
 msgid "forfait"
 msgstr "forfait"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:746
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:752
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:42
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:402
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:417
@@ -736,14 +740,14 @@ msgstr "forfait"
 msgid "forfait-primavera-sul-lago"
 msgstr "spring-at-punta-indiani"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:746
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:752
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:42
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:410
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:452
 msgid "forfait primavera sul lago"
 msgstr "Spring at Punta Indiani"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:749
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:755
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:44
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:472
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:485
@@ -752,191 +756,191 @@ msgstr "Spring at Punta Indiani"
 msgid "ponti-e-week-end"
 msgstr "shortbreaks-and-week-ends"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:749
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:755
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:44
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:478
 msgid "forfait ponti/week-end"
 msgstr "shortbreaks and week-ends"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:764
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:770
 msgid "Con chi condividerai la tua vacanza?"
 msgstr "With whom will you share your vacation?"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:767
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:773
 msgid "adulti"
 msgstr "adults"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:771
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:777
 msgid "totale adulti"
 msgstr "tot adults"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:775
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:781
 msgid "bambini"
 msgstr "children"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:777
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:783
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:789
 msgid "anni"
 msgstr "years old"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:781
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:787
 msgid "infanti"
 msgstr "infants"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:788
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:794
 msgid "Cosa porterai con te?"
 msgstr "What will you bring along?"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:791
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:797
 msgid "tendine"
 msgstr "tents"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:793
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:799
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:26
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_extra_table.inc.html:80
 msgid "fuori piazzola"
 msgstr "outside the pitch"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:797
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:803
 msgid "cani"
 msgstr "dogs"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:799
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:805
 msgid "specificare in note se &gt;2 "
 msgstr "write in notes if &gt;2"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:805
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:811
 msgid "auto, barca"
 msgstr "cat, boat"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:813
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:819
 msgid "Come possiamo contattarti?"
 msgstr "How shall we contact you?"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:816
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:822
 msgid "nome"
 msgstr "first name"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:817
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:823
 msgid "Mario"
 msgstr "Jhon"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:818
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:824
 msgid "cognome"
 msgstr "last name"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:819
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:825
 msgid "Rossi"
 msgstr "Smith"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:825
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:831
 msgid "mario.rossi@gmail.com"
 msgstr "jhon.smith@gmail.com"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:828
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:834
 msgid "cittadinanza"
 msgstr "citizenship"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:832
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:838
 msgid "austria"
 msgstr "austria"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:833
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:839
 msgid "belgio"
 msgstr "belgium"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:834
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:840
 msgid "danimarca"
 msgstr "denmark"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:835
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:841
 msgid "germania"
 msgstr "germany"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:836
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:842
 msgid "italia"
 msgstr "italy"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:837
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:843
 msgid "olanda"
 msgstr "holland"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:838
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:844
 msgid "regno unito"
 msgstr "UK"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:839
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:845
 msgid "swizzera"
 msgstr "swiss"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:840
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:846
 msgid "altro"
 msgstr "other"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:849
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:855
 msgid "Che mezzo utilizzerai?"
 msgstr "Which vehicle are you going to use?"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:854
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:860
 msgid "solo macchina"
 msgstr "car only"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:855
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:861
 msgid "tenda"
 msgstr "tent"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:856
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:862
 msgid "roulotte"
 msgstr "caravan"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:857
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:863
 msgid "camper"
 msgstr "camper van"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:858
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:864
 msgid "bicicletta"
 msgstr "bicycle"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:863
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:869
 msgid "piccola"
 msgstr "small"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:864
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:870
 msgid "media"
 msgstr "medium"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:865
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:871
 msgid "grande"
 msgstr "big"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:866
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:872
 msgid "enorme"
 msgstr "huge"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:872
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:878
 msgid "Condizioni"
 msgstr "Terms and Conditions"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:876
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:880
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:882
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:886
 msgid "accetto"
 msgstr "accept"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:876
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:882
 msgid "regolamento"
 msgstr "rules"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:876
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:882
 msgid "il regolamento"
 msgstr "the rules"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:889
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:895
 msgid ""
 "We would like to stay next to our friend Jhon Smith and, if possible, "
 "have a place with some shadow."
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:893
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:899
 msgid ""
 "\n"
 "                        La vostra prenotazione, una volta confermata, "
@@ -1125,8 +1129,8 @@ msgstr "surcharge"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:188
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:252
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:375
-msgid "Offerta valida per prenotazioni confermate entro il 31.01.2017"
-msgstr "Offer Valid for bookings confirmed before 31.01.2017."
+msgid "Offerta valida per prenotazioni confermate entro il 31.02.2017"
+msgstr "Offer Valid for bookings confirmed before 31.02.2017."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:190
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:254
@@ -1211,9 +1215,8 @@ msgid "acqua calda nei servizi"
 msgstr "warm water in the toilet blocks."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:368
-#, fuzzy
 msgid "Note"
-msgstr "first name"
+msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:369
 msgid "per gruppi si consiglia di prenotare"

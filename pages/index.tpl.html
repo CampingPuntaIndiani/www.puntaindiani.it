@@ -91,6 +91,7 @@
                     <li><a href="#outdoor">outdoor</a></li>
                     <li><a href="#highlights">highlights</a></li>
                     <li><a href="gallery.html"><span class="icon"><i class="fa fa-camera" aria-hidden="true" title="Gallery"></i></span></a></li>
+                    <li><a href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><span class="icon"><i class="fa fa-map" title="Camping Map"></i></span></a></li>
                 </ul>
                 <ul class="is-center x-menu">
                     <li><a href="https://www.facebook.com/CampingPuntaIndiani/" target="_blank"><span class="icon"><i class="fa fa-facebook-f"></i></span></a></li>
@@ -146,6 +147,7 @@
                     <a href="#outdoor" class="nav-item is-tab">outdoor</a>
                     <a href="#highlights" class="nav-item is-tab">highlights</a>
                     <a href="gallery.html" class="nav-item is-tab">gallery</a>
+                    <a href="camping_map.html" class="nav-item is-tab" target="_blank" data-modal="{{ _('mappa del campeggio') }}">{{ _('mappa del campeggio') }}</a>
 
                     <a href="{{ _('prezzi') }}.html" class="nav-item is-tab">{{ _('prezzi') }}</a>
                     <a href="{{ _('offerte') }}.html" class="nav-item is-tab">{{ _('offerte') }}</a>
@@ -281,6 +283,10 @@
                             Abbiamo voluto integrare il campeggio nell'ambiente naturale originario,
                             le piazzole variano per orientamento e dimensioni, seguendo la particolare conformazione della penisola di Punta Indiani.
                             {% endtrans %}
+                        </p>
+
+                        <p class="has-text-centered">
+                            <a class="button" href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map">&nbsp;</i>{{ _('mappa del campeggio') }}</a>
                         </p>
                     </div>
                     <div class="column"></div>
@@ -699,7 +705,7 @@
                         </div>
 
                         <div class="column">
-                            <label class="label" for="arrival">{{ _('piazzola') }}</label>
+                            <label class="label" for="arrival">{{ _('piazzola') }} - <a href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}">{{ _('mappa del campeggio') }}</a></label>
                             <span class="help is-hidden-widescreen">&nbsp;</span>
                             <div class="control has-addons is-centered">
                                 <a class="button" href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map"></i></a>

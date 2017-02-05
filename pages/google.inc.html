@@ -30,4 +30,9 @@ var google_remarketing_only = true;
     ga('create', 'UA-34314298-1', 'auto');
     if (ref) ga('set', 'referrer', ref);
     ga('send', 'pageview');
+
+    // If not on index, consider all page as a section
+    if ("{{ page }}" !== "index")
+        ga('send', 'event', 'section', 'read', 'page-' + "{{ page }}");
+
 </script>
