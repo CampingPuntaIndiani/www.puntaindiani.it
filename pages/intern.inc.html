@@ -1,0 +1,3 @@
+{% for (l, p) in page_map.items() %}
+    {% if l != lang %}<link rel="alternate" href="/{{ l }}/{{ p }}.html" hreflang="{{ l }}" />{% endif %}
+{% endfor %}

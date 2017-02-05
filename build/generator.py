@@ -66,7 +66,8 @@ def generate():
         for page in PAGES:
             tpl = env.get_template(page + TPL_SUFFIX)
 
-            page_map = PAGES_MAP.get(page, {})
+            page_map = dict(map(lambda l: (l, page), LANGS))
+            page_map.update(PAGES_MAP.get(page, dict()))
 
             context = {
                 'now': datetime.datetime.utcnow().isoformat(),
