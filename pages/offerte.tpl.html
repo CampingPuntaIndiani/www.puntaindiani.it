@@ -35,8 +35,10 @@
             <div class="container">
                 <div class="nav-left x-menu">
                     <a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
+                {#
                     <a href="#{{ _('offerta-primavera') }}" class="nav-item is-tab">{{ _('offerta primavera') }}</a>
                     <a href="#{{ _('offerta-luglio') }}" class="nav-item is-tab">{{ _('offerta luglio') }}</a>
+                #}
                     <a href="#{{ _('offerta-week-end-lunghi') }}" class="nav-item is-tab">{{ _('offerta week-end lunghi') }}</a>
                     <a href="#{{ _('offerta-bici-e-tendina') }}" class="nav-item is-tab">{{ _('offerta bici e tendina') }}</a>
                     <a href="#{{ _('forfait-primavera-sul-lago') }}" class="nav-item is-tab">{{ _('forfait primavera sul lago') }}</a>
@@ -124,7 +126,7 @@
             </div>
         </section>
 
-
+{# Disable early booking (will become last minute)
         <!-- promotions group -->
         <section class="hero is-light is-bold">
             <div class="hero-body">
@@ -262,6 +264,8 @@
                 </div>
             </div>
         </section>
+
+#}
 
         <!-- promotions group -->
         <section class="hero is-light is-bold">
