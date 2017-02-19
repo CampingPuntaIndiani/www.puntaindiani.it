@@ -1,25 +1,2 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# Distribution / packaging
-.Python
-.venv/
-.DS_Store
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Translations
-*.mo
-
-# Editor
-.idea/
-*.sw*
-
-# generated dirs
-dist/
-img/gallery/
-
-node_modules
+.venv
+dist

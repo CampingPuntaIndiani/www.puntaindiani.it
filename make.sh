@@ -1,75 +1,57 @@
 #!/bin/bash
 
+# require sassc, python, virtualenv
+
+rm -rf dist/
+
 # Create virtualenv
 if [ ! -d ".venv" ];then
     virtualenv .venv
     . .venv/bin/activate
+    pip install --upgrade pip
     pip install -r requirements.txt
 else
     . .venv/bin/activate
 fi
 
+JSCC='build/closure-compiler-v20161201.jar'
 
 # Reset environment
 echo "[+] Clean dist"
 rm -rf dist
 mkdir -p dist
 
-# copy index
-echo "[+] Copy index"
-cp templates/index.html dist/index.html
-
-echo "[+] Copy index"
-cp sitemap.xml dist/sitemap.xml
+echo "[+] Copy site map"
+cp -vf sitemap.xml dist/sitemap.xml
 
 # Static file
 echo "[+] Copy static"
-cp -r static dist/static
+mkdir -p dist/js
+cp -r css images fonts pdf index.html dist/
+sassc -t compressed -m libs/bulma.sass > dist/css/bulma.css
+for script in js/*; do
+  script=$(basename "$script")
+  java -jar $JSCC --charset utf-8 --js "js/$script" --js_output_file "dist/js/$script"
+done
 
-# Compress static
-echo "[+] Compile static"
-java -jar tool/yuicompressor-2.4.8.jar --charset utf-8 --type css dist/static/css/CampingPuntaIndiani.css -o dist/static/css/CampingPuntaIndiani.min.css
-rm dist/static/css/CampingPuntaIndiani.css
-java -jar tool/yuicompressor-2.4.8.jar  --charset utf-8 --type js dist/static/js/CampingPuntaIndiani.js -o dist/static/js/CampingPuntaIndiani.min.js
-rm dist/static/js/CampingPuntaIndiani.js
-
-# Gallery
-function gallery {
-    function generate {
-        echo "[+] Generate Gallery"
-        cd ./Gallery && python build.py && cd ..
-        find Gallery/original -type f -name "*" -exec md5sum {} + | awk '{print $1}' | sort | md5sum | awk -F" " '{print $1}' > Gallery/original.md5
-    }
-
-    echo "[+] Check Gallery"
-    if [ ! -f "Gallery/original.md5" ]; then
-        rm -rf Gallery/gallery
-        generate
-    else
-        old_hash=`head -n1 Gallery/original.md5`
-        curr_hash=`find Gallery/original -type f -name "*" -exec md5sum {} + | awk '{print $1}' | sort | md5sum | awk -F" " '{print $1}'`
-        if [ "$old_hash" != "$curr_hash" ]; then
-            rm -rf Gallery/gallery
-            generate
-        fi
-        echo "[+] Keeping old Gallery"
-    fi
-
-    cp Gallery/out.html templates/album.tpl.html
-    cp -r Gallery/gallery dist/static/img/gallery
-}
-gallery
+# Generate Pages (be sure we can extract strings)
+echo "[+] Compile templates"
+python build/generator.py || exit 1
 
 # Internalization
 echo "[+] Compile lang"
-./lang.sh -c
+[[ ! -d "i18n" ]] && ./build/lang.sh -i "$(pwd)/i18n" "$(pwd)/pages"
+./build/lang.sh -u "$(pwd)/i18n" "$(pwd)/pages"
+./build/lang.sh -c "$(pwd)/i18n" "$(pwd)/pages"
 
 # Generate Pages
 echo "[+] Compile templates"
-python generator.py
+python build/generator.py
 
 # Copy CNAME
 echo "[+] Copy CNAME config"
 cp CNAME dist/CNAME
 
 echo "[+] Completed"
+echo "[+] Running webserver"
+cd dist && python -m SimpleHTTPServer

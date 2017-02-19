@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="robots" content="noindex,nofollow">
+        {% include 'intern.inc.html' %}
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+        <style type="text/css">
+            .hero.booking-ok-hero {
+                background: url('/images/CampingPuntaIndiani_BeautifullViewOfTheCaldonazzoLake.jpg') no-repeat center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="hero is-info is-large booking-ok-hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1">{{ _('Prenotazione completata') }}</h1>
+                </div>
+            </div>
+            {% include "cookies.inc.html" %}
+        </section>
+
+        <nav class="nav has-shadow">
+            <div class="container">
+                <div class="nav-center">
+                    <a href="../" class="nav-item"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="container content">
+                <h1 class="title is-1">{{ _('Grazie per la Vs prenotazione!') }}</h1>
+                <h2 class="subtitle is-3">
+                    {% trans %}
+                    Vi abbiamo mandato un' e-mail con i dati della Vs prenotazione.<br>
+                    Se non l'avete ricevuta, controllate nello spam.
+                    {% endtrans %}
+                </h2>
+                <p>
+                    {% trans %}
+                    Per qualsiasi problema scrivete pure a <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a>.
+                    {% endtrans %}
+                </p>
+            </div>
+        </section>
+
+        {% include 'footer.inc.html' %}
+        {% include 'google.inc.html' %}
+
+    </body>
+
+    <!--
+    // vim: spelllang=it
+    -->
+</html>

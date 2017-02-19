@@ -1,0 +1,65 @@
+.image-board-header
+  align-items: stretch
+  display: flex
+  min-height: 40px
+  @include linearGradient(rgba(0,0,0,0.3), rgba(0,0,0,0))
+
+.image-board-header-title
+  align-items: flex-start
+  color: $text-strong
+  display: flex
+  flex-grow: 1
+  font-weight: bold
+  padding: 10px
+  color: $light;
+  font-size: $size-huge
+  font-weight: $weight-normal
+  @include highContrast($light)
+  +mobile
+    font-size: $size-large
+
+.image-board-content
+  padding: 20px
+  .title + .subtitle
+    margin-top: -20px
+
+.image-board-footer
+  align-items: stretch
+  display: flex
+  @include linearGradient(rgba(0,0,0,0), rgba(0,0,0,0.3))
+
+.image-board-footer-item
+  align-items: center
+  display: flex
+  flex-grow: 1
+  justify-content: center
+  padding: 10px
+  color: $light;
+  font-size: $size-large
+  +mobile
+    font-size: $size-medium
+  &.icon
+    height: 32px
+    width: 32px
+    +mobile
+      height: 16px
+      width: 16px
+
+.image-board
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.image.is-bg > img
+  -webkit-filter: brightness(.95);
+  filter: brightness(.95);
+
+
+.image-board
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.image.is-bg > img
+  -webkit-filter: brightness(.95);
+  filter: brightness(.95);

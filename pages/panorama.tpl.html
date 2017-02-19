@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% include 'intern.inc.html' %}
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+        <style type="text/css">
+            .hero.panorama-hero {
+                background: url('/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_asHeader.jpg') no-repeat center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body class="nojs">
+        <section class="hero is-warning is-large panorama-hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1 is-text-white">
+                        PANORAMA
+                    </h1>
+                    <h2 class="subtitle is-3 is-text-white">
+                        {{ _('Piazzola vista lago') }}
+                    </h2>
+                    <p><a href="index.html?pitch=panorama#{{ _('prenota') }}" class="button is-upper is-warning is-large">{{ _('prenota') }}&nbsp;{{ _('ora') }}</a></p>
+                </div>
+            </div>
+            {% include "cookies.inc.html" %}
+        </section>
+
+        {% include 'menu-piazzola.inc.html' %}
+
+        <section class="section">
+            {% include 'prices_txt.inc.html' %}
+        </section>
+
+        <section class="hero is-warning accomodation-prices">
+            <div class="hero-body has-stripe">
+                <div class="container">
+                    <div class="level content">
+                        <div class="level-item has-text-centered">
+                            <p class="heading">Inc. 2 adulti</p>
+                            <p class="title">
+                                <span class="icon is-large"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                <span class="icon is-large"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                <span class="icon is-large"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            </p>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <p class="heading">
+                                {{ _('bassa stagione') }}<br>
+                                28/04 - 07/07
+                            </p>
+                            <p class="title">&euro;23.</p>
+                        </div>
+                        <div class="level-item has-text-centered is-stripe">
+                            <p class="heading">
+                                {{ _('alta stagione') }}<br>
+                                07/07 - 26/08
+                            </p>
+                            <p class="title">&euro;42.</p>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <p class="heading">
+                                {{ _('bassa stagione') }}<br>
+                                26/08 - 30/09
+                            </p>
+                            <p class="title">&euro;23.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            {% include 'prices_extra_table.inc.html' %}
+
+            <br>
+
+            <div class="container content has-text-centered">
+                <p><a href="index.html?pitch=panorama#{{ _('prenota') }}" class="button is-upper is-warning is-large is-fullwidth">{{ _('prenota') }}&nbsp;{{ _('ora') }}&nbsp;PANORAMA</a></p>
+            </div>
+
+            <br>
+
+            <div class="container">
+                <div class="columns">
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_OverTheBridge.jpg" alt="{% trans %}Foto area piazzole Panorama al Campeggio Punta indiani – Lago di Caldonazzo Trentino{% endtrans %}"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Tent.jpg" alt="{% trans %}Tenda in piazzola Panorama al Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView_Family.jpg" alt="{% trans %}Vacanze in famiglia al campeggio Punta Indiani – Trentino{% endtrans %}"></figure>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="container content has-text-centered">
+                <p><a href="index.html#{{ _('piazzole') }}" class="link is-secondary is-fullwidth">{{ _('ritorna alla home page') }}</a></p>
+                <p><a href="index.html?pitch=panorama#{{ _('prenota') }}" class="button is-upper is-warning is-large is-fullwidth">{{ _('prenota') }}&nbsp;{{ _('ora') }}&nbsp;PANORAMA</a></p>
+            </div>
+        </section>
+
+        {% include 'footer.inc.html' %}
+        {% include 'google.inc.html' %}
+
+    </body>
+
+    <!--
+    // vim: spelllang=it
+    -->
+</html>
