@@ -313,7 +313,7 @@ var SectionHandler = function() {
     "use strict";
     var Sections = []; // TODO: recompute on resize
     Array.prototype.forEach.call(document.querySelectorAll('section'), function(sec){
-        Sections.push({'id':sec.id, 'top':sec.offsetTop});
+        Sections.push({'id':sec.id, 'top':sec.offsetTop, 'gaid': sec.dataset.gaid});
     });
     Array.prototype.sort(Sections, function(a,b){return a.top-b.top;});
 
@@ -333,7 +333,7 @@ var SectionHandler = function() {
         var sec = Sections[s];
         if (sec.id !== LastSec) {
             LastSec = sec.id;
-            SectionChange(sec.id, sec.dataset.gaid);
+            SectionChange(sec.id, sec.gaid);
         }
     });
 };
