@@ -11,6 +11,19 @@
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <style type="text/css">
             #gallery .image {margin-bottom: 20px}
+            .wrapper {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 */
+                padding-top: 25px;
+                height: 0;
+            }
+            .wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         </style>
     </head>
     <body>
@@ -19,12 +32,87 @@
             <div class="container">
                 <div class="nav-left x-menu">
                     <a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
-                    <a href="#" class="nav-item is-tab is-active">{{ _('gallery') }}</a>
+                    <a href="#virtual-tour" class="nav-item is-tab">{{ _('virtual tour') }}</a>
+                    <a href="#videos" class="nav-item is-tab">{{ _('videos') }}</a>
+                    <a href="#pictures" class="nav-item is-tab">{{ _('pictures') }}</a>
                 </div>
             </div>
         </nav>
 
-        <section class="section" id="gallery">
+        <section class="section" id="virtual-tour">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="title">{{ _('virtual tour') }}</h1>
+                </div>
+            </div>
+
+            <!-- Virtual tour -->
+            <div class="container">
+                <div class="wrapper">
+                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1470377559608!6m8!1m7!1seRXtxWHRIykAAAQ1mGrD8A!2m2!1d46.02765734440566!2d11.2315088718135!3f61!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
+
+            <!-- Drone panoramica -->
+            <div class="container carousell-item">
+                <div class="wrapper">
+                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1482279962067!6m8!1m7!1sF%3A-uF8bN-r6AW4%2FV6otwL72q3I%2FAAAAAAADTpQ%2F-_H9jQ7rDHgzMJiuFCdZnOxyOczxp4iCQCLIB!2m2!1d46.0283167!2d11.2329383!3f85.31835651740758!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="videos">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="title">{{ _('videos') }}</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <iframe src="http://player.vimeo.com/video/177881566" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
+                </div>
+                <center><footer><a href="https://vimeo.com/177881566">CAMPING PUNTA INDIANI - VALCANOVER ITALY</a> from <a href="https://vimeo.com/hansniew">Hans Nieuwenhuis</a> on <a href="https://vimeo.com">Vimeo</a>.</footer></center>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <iframe src="http://player.vimeo.com/video/8970989" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
+                </div>
+                <center><footer><a href="http://vimeo.com/8970989">Camping Punta Indiani</a> from <a href="http://vimeo.com/renzomobiel">Renzo</a> on <a href="http://vimeo.com">Vimeo</a>.</footer></center>
+            </div>
+
+            <div class="container">
+                <div class="wrapper">
+                    <iframe src="http://www.youtube.com/embed/PqUCQyr6FtE" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
+                </div>
+                <center><footer>Video - J. Brouwers Production - Thanks again</footer></center>
+            </div>
+        </section>
+
+        <section class="section" id="team">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="title">{{_('team') }}</h1>
+                </div>
+            </div>
+
+            <div class="container is-fluid">
+                <nav class="level is-mobile">
+                    <div class="level-item has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_RenzoPiffer_and_AnitaMaines.jpg"></figure></div>
+                    <div class="level-item has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_LorenzaPiffer_and_StefanoBrugnara.jpg"></figure></div>
+                    <div class="level-item has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_MartinBrugnara_and_GiadaBrugnaraVertical.jpg"></figure></div>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section" id="pictures">
+            <div class="container">
+                <div class="heading">
+                    <h1 class="title">{{_('pictures') }}</h1>
+                </div>
+            </div>
+
             <div class="container is-fluid">
                 <div class="columns is-multiline">
                     <div class="column">
@@ -43,8 +131,8 @@
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_12.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_32.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_44.jpg"></figure>
-                     </div>
-                     <div class="column">
+                    </div>
+                    <div class="column">
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_25.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_30.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_35.jpg"></figure>
@@ -59,8 +147,8 @@
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_37.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_19.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_22.jpg"></figure>
-                     </div>
-                     <div class="column">
+                    </div>
+                    <div class="column">
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_21.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_3.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_40.jpg"></figure>
@@ -79,8 +167,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
         </section>
 
         {% include "cookies.inc.html" %}

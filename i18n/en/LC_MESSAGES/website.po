@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-02-20 17:17+0100\n"
+"POT-Creation-Date: 2017-03-05 17:13+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
+"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 1.3\n"
+"Generated-By: Babel 2.3.4\n"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:31
 msgid "Piazzola direttamente sul lago"
@@ -157,8 +158,23 @@ msgstr ""
 msgid "contatti"
 msgstr "contact"
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:22
-msgid "gallery"
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:35
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:45
+msgid "virtual tour"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:36
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:67
+msgid "videos"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:37
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:112
+msgid "pictures"
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:96
+msgid "team"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:11
@@ -1543,4 +1559,7 @@ msgstr "Shepherd dog on the grass . Holiday with the dog at Camping Punta Indian
 
 #~ msgid "offerta luglio"
 #~ msgstr "Family holiday"
+
+#~ msgid "gallery"
+#~ msgstr ""
 
