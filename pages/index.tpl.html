@@ -40,6 +40,9 @@
                 width: 100%;
                 height: 60vh;
             }
+
+            .white {background-color: #fff}
+            .nobg {background-color: transparent}
         </style>
     </head>
     <body class="nojs {{lang}}">
@@ -65,7 +68,7 @@
                             <a href="{{ _('offerte') }}.html" class="nav-item">{{ _('offerte') }}</a>
                             <span class="nav-item">
                                 <a href="#{{ _('prenota') }}" class="button is-primary is-upper">
-                                    <span>{{ _('prenota') }}</span>
+                                    <span>{{ _('contattaci') }}</span>
                                 </a>
                             </span>
                         </div>
@@ -77,7 +80,7 @@
                     <h1 class="title is-1">CAMPING PUNTA INDIANI</h1>
                     <h2 class="subtitle is-3">The original camping mood</h2>
                     <!-- <figure class="image"><img class="is-logo" src="/images/CampingPuntaIndiani_LogoTransparentWhite.png" alt="Logo"></figure> -->
-                    <a href="#{{ _('prenota') }}" class="button is-primary is-large is-upper has-extra-padding">{{ _('prenota') }}</a>
+                    <a href="#{{ _('prenota') }}" class="button is-primary is-large is-upper has-extra-padding">{{ _('contattaci') }}</a>
                 </div>
             </div>
             {% include "cookies.inc.html" %}
@@ -115,7 +118,7 @@
                 <ul class="is-right x-menu">
                     <li><a href="{{ _('prezzi') }}.html">{{ _('prezzi') }}</a></li>
                     <li><a href="{{ _('offerte') }}.html">{{ _('offerte') }}</a></li>
-                    <li><a href="#{{ _('prenota') }}" class="button is-primary x-button-fix">{{ _('prenota') }}</a></li>
+                    <li><a href="#{{ _('prenota') }}" class="button is-primary x-button-fix">{{ _('contattaci') }}</a></li>
                 </ul>
             </div>
         </section>
@@ -129,7 +132,7 @@
                     <!-- Put really important things here -->
                     <a href="#{{ _('prenota') }}" class="nav-item is-tab">
                         <span class="icon"><i class="fa  fa-calendar-check-o">&nbsp;</i></span>
-                        <span>{{ _('prenota') }}</span>
+                        <span>{{ _('contattaci') }}</span>
                     </a>
                     <a class="nav-item is-tab" href="#{{ _('contatti') }}">
                         <span class="icon" title="{{ _('contatti') }}"><i class="fa fa-address-card-o" aria-hidden="true">&nbsp;</i></span>
@@ -165,7 +168,7 @@
                     <span class="nav-item">
                         <a class="button is-primary" href="#{{ _('prenota') }}">
                             <span class="icon"><i class="fa fa-calendar-check-o"></i></span>
-                            <span>{{ _('prenota') }}</span>
+                            <span>{{ _('contattaci') }}</span>
                         </a>
                     </span>
                 </div>
@@ -341,7 +344,7 @@
                                         <a href="aqva.html" class="button is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
-                                        <a href="?pitch=aqva#{{ _('prenota') }}" class="button is-medium is-primary">{% trans %}prenota{% endtrans %} AQVA</a>
+                                        <a href="?pitch=aqva#{{ _('prenota') }}" class="button is-medium is-primary">{{ _('richiedi') }} AQVA</a>
                                     </p>
                                 </nav>
                             </div>
@@ -393,7 +396,7 @@
                                         <a href="panorama.html" class="button is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
-                                        <a href="?pitch=panorama#{{ _('prenota') }}" class="button is-medium is-primary">{% trans %}prenota{% endtrans %} PANORAMA</a>
+                                        <a href="?pitch=panorama#{{ _('prenota') }}" class="button is-medium is-primary">{{ _('richiedi') }} PANORAMA</a>
                                     </p>
                                 </nav>
                             </div>
@@ -450,7 +453,7 @@
                                         <a href="relax.html" class="button is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
                                     </p>
                                     <p class="level-item has-text-centered is-upper">
-                                        <a href="?pitch=relax#{{ _('prenota') }}" class="button is-medium is-primary">{% trans %}prenota{% endtrans %} RELAX</a>
+                                        <a href="?pitch=relax#{{ _('prenota') }}" class="button is-medium is-primary">{{ _('richiedi') }} RELAX</a>
                                     </p>
                                 </nav>
                             </div>
@@ -649,11 +652,11 @@
         </section>
 
 
-        <section class="section" id="{{ _('prenota') }}" data-gaid="prenota">
+        <section class="section nobg" id="{{ _('prenota') }}" data-gaid="prenota">
             <div class="container content">
                 <div class="heading">
-                    <h1 class="title">{{ _('prenota ora la tua piazzola preferita') }}</h1>
-                    <h2 class="subtitle">... {{ _('o richiedi informazioni') }}</h2>
+                    <h1 class="title">{{ _('scegli la tua piazzola preferita e richiedine la disponibilità compilando il modulo') }}</h1>
+                    <h2 class="subtitle">... {{ _('oppure chiedi informazioni') }}</h2>
                     {{ _('scrivendo a') }} <a href="mailto:info@campingpuntaindiani.it">info@campingpuntaindiani.it</a></p></h2>
                 </div>
 
@@ -662,9 +665,9 @@
 
                 <p>
                     {% trans %}
-                    Se desiderate una piazzola vicino ai vostri amici, un posto particolarmente
-                    ampio o ombreggiato o soleggiato o vicino al parco giochi o ai servizi
-                    specificatelo nelle “note” e faremo del nostro meglio per  riservarvi la piazzola più adatta.
+                    Se desideri una piazzola vicino ai tuoi amici, un posto particolarmente ampio o ombreggiato o soleggiato o vicino al parco giochi o ai servizi,
+                    se c'è bisogno di ulteriore spazio, fuori dalla piazzola per una seconda auto, un carrello, una barca, una tendina e per ogni esigenza particolare,
+                    specificalo  nelle “note” e faremo del nostro meglio per offrire la piazzola più adatta.
                     {% endtrans %}
                 </p>
             </div>
@@ -677,7 +680,7 @@
                     <input type="hidden" name="lang" value="{{ lang }}">
 
 
-                    <div class="columns has-borders is-multiline">
+                    <div class="columns has-borders is-multiline white">
                         <div class="column is-half">
                             <label class="label" for="arrival">{{ _('quando') }}</label>
                             <span class="help is-hidden-widescreen">{{ _('date di arrivo e partenza') }}</span>
@@ -788,7 +791,7 @@
                                     </div>
 
                                     <div class="column">
-                                        <label class="label" for="infants">{{ _('infanti') }}</label>
+                                        <label class="label" for="infants">baby</label>
                                         <div class="control"><span class="select"><select id="infants" name="infants"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span></div>
                                         <span class="help">&lt;2 {{ _('anni') }}</span>
                                     </div>
@@ -839,15 +842,15 @@
                             <div class="control select is-fullwidth">
                                 <select id="citizenship" name="citizenship">
                                     <option value="" ></option>
-                                    <option value="100000203">{{ _('austria') }}</option>
-                                    <option value="100000206">{{ _('belgio') }}</option>
-                                    <option value="100000212">{{ _('danimarca') }}</option>
-                                    <option value="100000216">{{ _('germania') }}</option>
-                                    <option value="100000100"{% if lang == 'it' %} selected{% endif %}>{{ _('italia') }}</option>
-                                    <option value="100000232"{% if lang == 'nl' %} selected{% endif %}>{{ _('olanda') }}</option>
-                                    <option value="100000219">{{ _('regno unito') }}</option>
-                                    <option value="100000241">{{ _('swizzera') }}</option>
-                                    <option value="" >{{ _('altro') }}</option>
+                                    <option value="100000203">{{ _('austriaca') }}</option>
+                                    <option value="100000206">{{ _('belga') }}</option>
+                                    <option value="100000212">{{ _('danese') }}</option>
+                                    <option value="100000216">{{ _('tedesca') }}</option>
+                                    <option value="100000100"{% if lang == 'it' %} selected{% endif %}>{{ _('italiana') }}</option>
+                                    <option value="100000232"{% if lang == 'nl' %} selected{% endif %}>{{ _('olandese') }}</option>
+                                    <option value="100000219">{{ _('inglese') }}</option>
+                                    <option value="100000241">{{ _('svizzera') }}</option>
+                                    <option value="" >{{ _('altra') }}</option>
                                 </select>
                             </div>
                         </div>
@@ -916,7 +919,7 @@
                             <span class="icon">
                                 <i class="fa fa-check"></i>
                             </span>
-                            <span class="is-upper">{{ _('prenota') }}</span>
+                            <span class="is-upper">{{ _('invia richiesta') }}</span>
                         </button>
                     </center>
                 </form>
