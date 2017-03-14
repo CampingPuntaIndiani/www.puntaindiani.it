@@ -6,6 +6,27 @@
       +mobile
         display: block
         width: 100%
+  .control
+    position: absolute
+    top: 50%
+
+    &.left
+      left: 10px
+    &.right
+      right: 10px
+
+    &:hover
+      color: white
+
+    .icon
+      width: auto
+      .fa
+        margin-top: -50%
+        font-size: 4rem
+
+a.carousell-status.is-active *
+  color: $link
+
 
 a.non-active
   display: none

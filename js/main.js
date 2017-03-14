@@ -349,44 +349,61 @@ var LifeAnimation = function () {
     window.carousellCallback=undefined;
 
     var play = document.querySelectorAll('a[data-carousell="play"]')[0];
-    play.addEventListener('click', function(){
-        this.classList.toggle('non-active');
-        this.nextElementSibling.classList.toggle('non-active');
-        animationStep();
-    });
+    if (play) {
+        play.addEventListener('click', function(){
+            this.classList.toggle('non-active');
+            this.nextElementSibling.classList.toggle('non-active');
+            animationStep(false, false);
+        });
+    }
 
     var pause = document.querySelectorAll('a[data-carousell="pause"]')[0];
-    pause.addEventListener('click', function(){
-        this.classList.toggle('non-active');
-        this.previousElementSibling.classList.toggle('non-active');
-        window.clearTimeout(window.carousellCallback);
-    });
+    if (pause) {
+        pause.addEventListener('click', function(){
+            this.classList.toggle('non-active');
+            this.previousElementSibling.classList.toggle('non-active');
+            window.clearTimeout(window.carousellCallback);
+        });
+    }
 
     var next = document.querySelectorAll('a[data-carousell="next"]')[0];
     next.addEventListener('click', function(){
         window.clearTimeout(window.carousellCallback);
-        animationStep();
+        animationStep(false, true);
     });
 
     var back = document.querySelectorAll('a[data-carousell="back"]')[0];
     back.addEventListener('click', function(){
         window.clearTimeout(window.carousellCallback);
-        animationStep(true);
+        animationStep(true, true);
     });
 
-    var animationStep = function(is_back){
+    var animationStep = function(is_back, is_manual){
         var current = document.querySelectorAll('.carousell .is-active')[0];
         current.classList.remove('is-active');
-        var next;
-        if (!is_back){
-            next = current.nextElementSibling;
-            if (!next) next = current.parentNode.children[0];
-        } else {
-            next = current.previousElementSibling;
-            if (!next) next = current.parentNode.children[current.parentNode.children.length - 1];
+        var cref = current.dataset.ref;
+        if (cref) {
+            var celm = document.getElementById(cref);
+            celm.classList.remove('is-active');
         }
+        var next;
+        do {
+            if (!is_back){
+                next = current.nextElementSibling;
+                if (!next) next = current.parentNode.children[0];
+            } else {
+                next = current.previousElementSibling;
+                if (!next) next = current.parentNode.children[current.parentNode.children.length - 1];
+            }
+            current = next;
+        } while (!next.classList.contains('carousell-item'))
         next.classList.add('is-active');
-        window.carousellCallback = setTimeout(animationStep, 5000);
+        var nref = next.dataset.ref;
+        if (nref) {
+            var nelm = document.getElementById(nref);
+            nelm.classList.add('is-active');
+        }
+        if (!is_manual) window.carousellCallback = setTimeout(animationStep, 5000);
     };
     animationStep();
 };
