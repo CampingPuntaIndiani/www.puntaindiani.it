@@ -260,3 +260,33 @@ label.label
 .modal-card-title
   text-transform: capitalize
 
+.content
+  h1
+    text-align: center
+    text-transform: uppercase
+
+.big-quote
+  display: flex
+  width: 100%
+  margin-top: 1rem
+  margin-bottom: 1rem
+  margin-left: auto;
+  margin-right: auto;
+  &:after, &:before
+    font-size: 100px
+    font-weight: bold
+    color: $dark-yellow
+  &:before
+    content: open-quote
+    align-self: flex-start
+    line-height: 70px
+  &:after
+    content: close-quote
+    align-self: flex-end
+    line-height: 0
+  *
+    flex-grow: 2
+    padding: 10px 20px
+
+.tabs li.is-active a.is-primary
+  color: white

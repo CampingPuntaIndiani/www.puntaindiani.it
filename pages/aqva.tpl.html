@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/images/favicon.png">
 
         {% include 'intern.inc.html' %}
 
@@ -24,19 +25,44 @@
         <section class="hero is-info is-large aqva-hero">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title is-1">
-                        AQVA
-                    </h1>
-                    <h2 class="subtitle is-3">
-                        {{ _('Piazzola direttamente sul lago') }}
-                    </h2>
+                    <h1 class="title is-1">AQVA</h1>
                     <p><a href="index.html?pitch=aqva#{{ _('prenota') }}" class="button is-upper is-info is-large">{{ _('richiedi disponibilità') }}</a></p>
                 </div>
             </div>
             {% include "cookies.inc.html" %}
         </section>
 
+
         {% include 'menu-piazzola.inc.html' %}
+
+        <section class="section">
+            <div class="content container is-large">
+                <h1>{{ _('Piazzola direttamente sul lago') }}</h1>
+                <div class="big-quote" style="width:80%">
+                    <p>
+                    {% trans %}
+                        Direttamente sulla spiaggia per vivere il lago al 100%.
+                        Dal risveglio della natura al mattino alla magia dei chiari di luna,
+                        emozioni uniche. La maggior parte delle piazzole Aqva hanno il posto
+                        auto riservato fuori piazzola.
+                    {% endtrans %}
+                    </p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="columns">
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_CaravanOnCaldonazzoLakeBeach.jpg" alt="{% trans %}Roulotte sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_TentOnCaldonazzoLakeBeach.jpg"    alt="{% trans %}Tenda sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_CamperOnCaldonazzoLakeBeach.jpg"  alt="{% trans %}Camper sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="container content has-text-centered"><p><a href="index.html?pitch=aqva#{{ _('prenota') }}" class="button is-upper is-info is-large is-fullwidth">{{ _('richiedi disponibilità') }}&nbsp;AQVA</a></p></div>
+        </section>
+
 
         <section class="section">
             {% include 'prices_txt.inc.html' %}
@@ -83,29 +109,7 @@
 
         <section class="section">
             {% include 'prices_extra_table.inc.html' %}
-
-            <br>
-
-            <div class="container content has-text-centered">
-                <p><a href="index.html?pitch=aqva#{{ _('prenota') }}" class="button is-upper is-info is-large is-fullwidth">{{ _('richiedi disponibilità') }}&nbsp;AQVA</a></p>
-            </div>
-
-            <br>
-
-            <div class="container">
-                <div class="columns">
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_CaravanOnCaldonazzoLakeBeach.jpg" alt="{% trans %}Roulotte sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_TentOnCaldonazzoLakeBeach.jpg"    alt="{% trans %}Tenda sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
-                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_CamperOnCaldonazzoLakeBeach.jpg"  alt="{% trans %}Camper sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="container content has-text-centered">
-                <p><a href="index.html#{{ _('piazzole') }}" class="link is-secondary is-fullwidth">{{ _('ritorna alla home page') }}</a></p>
-                <p><a href="index.html?pitch=aqva#{{ _('prenota') }}" class="button is-upper is-info is-large is-fullwidth">{{ _('richiedi disponibilità') }}&nbsp;AQVA</a></p>
-            </div>
+            <div class="container content has-text-centered"><p><a href="index.html?pitch=aqva#{{ _('prenota') }}" class="button is-upper is-info is-large is-fullwidth">{{ _('richiedi disponibilità') }}&nbsp;AQVA</a></p></div>
         </section>
 
         {% include 'footer.inc.html' %}

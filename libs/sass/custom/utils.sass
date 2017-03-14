@@ -11,7 +11,7 @@
 
 @mixin highContrast($color)
   color: $color
-  text-shadow: 1px 1px findColorInvert($color)
+  text-shadow: 0 0 1px $color, 0 0 3px findColorInvert($color)
 
 .is-overlay .title
   @include highContrast($light)
@@ -121,12 +121,12 @@ body.fix #up
 /// @requires {function} top-shadow
 /// @requires {function} bottom-shadow
 =card($depth)
-	@if $depth < 1
-	  box-shadow: none
-	@else if $depth > 5
-	  @warn "Invalid $depth `#{$depth}` for mixin `card`."
-	@else
-	  box-shadow: bottom-shadow($depth), top-shadow($depth)
+    @if $depth < 1
+      box-shadow: none
+    @else if $depth > 5
+      @warn "Invalid $depth `#{$depth}` for mixin `card`."
+    @else
+      box-shadow: bottom-shadow($depth), top-shadow($depth)
 
 
 /// Computes a top-shadow for a card effect.
@@ -150,11 +150,11 @@ body.fix #up
 $shadows: 1 2 3 4 5
 
 @each $shadow in $shadows
-	.has-shadow-#{$shadow}
-		+card($shadow)
+    .has-shadow-#{$shadow}
+        +card($shadow)
 
 p.txt-important
-	color: $danger
-	font-weight: $weight-bold
-	text-transform: uppercase
-	font-size: 90%
+    color: $danger
+    font-weight: $weight-bold
+    text-transform: uppercase
+    font-size: 90%

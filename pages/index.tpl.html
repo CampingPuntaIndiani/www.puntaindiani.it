@@ -96,8 +96,8 @@
                     <li><a href="#{{ _('dove-siamo') }}">{{ _('dove siamo') }}</a></li>
                     <li><a href="#outdoor">outdoor</a></li>
                     <li><a href="#highlights">highlights</a></li>
+                    <li><a href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}">MAP</a></li>
                     <li><a href="gallery.html"><span class="icon"><i class="fa fa-camera" aria-hidden="true" title="Gallery"></i></span></a></li>
-                    <li><a href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><span class="icon"><i class="fa fa-map" title="Camping Map"></i></span></a></li>
                 </ul>
                 <ul class="is-center x-menu">
                     <li><a href="https://www.facebook.com/CampingPuntaIndiani/" target="_blank"><span class="icon"><i class="fa fa-facebook-f"></i></span></a></li>
@@ -272,28 +272,31 @@
                 <div class="columns">
                     <div class="column"></div>
                     <div class="column is-three-quarters">
-                        <div class="heading">
-                            <h1 class="title">{% trans %}le nostre piazzole{% endtrans %}</h1>
-                        </div>
-                        <br>
-
-                        <p class="subtitle is-4">
+                        <div class="content is-large">
+                            <!--
                             {% trans %}
                             Condividi una nuova dimensione di vacanza con la tua famiglia,<br>
                             i tuoi amici o con la tua metà e se hai un amico a 4 zampe...porta anche lui.
                             {% endtrans %}
-                        </p>
+                            -->
 
-                        <p class="subtitle is-5">
-                            {% trans %}
-                            Abbiamo voluto integrare il campeggio nell'ambiente naturale originario,
-                            le piazzole variano per orientamento e dimensioni, seguendo la particolare conformazione della penisola di Punta Indiani.
-                            {% endtrans %}
-                        </p>
+                            <h1>{% trans %}le nostre piazzole{% endtrans %}</h1>
 
-                        <p class="has-text-centered">
-                            <a class="button" href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map">&nbsp;</i>{{ _('mappa del campeggio') }}</a>
-                        </p>
+                            <div class="big-quote">
+                                <div>
+                                    {% trans %}
+                                    Abbiamo voluto integrare il campeggio nell'ambiente naturale originario,
+                                    le piazzole variano per orientamento e dimensioni, seguendo la particolare conformazione della penisola di Punta Indiani.
+                                    {% endtrans %}
+                                </div>
+                            </div>
+
+                            <!--
+                            <p class="has-text-centered">
+                                <a class="button" href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map">&nbsp;</i>{{ _('mappa del campeggio') }}</a>
+                            </p>
+                            -->
+                        </div>
                     </div>
                     <div class="column"></div>
                 </div>
@@ -304,7 +307,7 @@
                 <div class="columns">
                     <div class="column"></div>
                     <div class="column is-three-quarters">
-                        <div class="card is-fullwidth">
+                        <div class="card is-fullwidth" style="margin-bottom:3rem">
                             <div class="card-image">
                                 <figure class="image is-3by2">
                                     <img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_OnCaldonazzoLakeBeach.jpg" alt="{% trans %}Grande piazzola sull'erba  in riva al Lago di Caldonazzo al Camping Punta Indiani{% endtrans %}">
@@ -312,9 +315,8 @@
                                 <div class="is-overlay image-board">
                                     <header class="image-board-header">
                                         <h1 class="image-board-header-title">Aqva</h1>
+                                        <h2 class="image-board-header-title">{{ _('Piazzola direttamente sul lago') }}</h2>
                                     </header>
-                                    <div class="image-board-content">
-                                    </div>
                                     <footer class="image-board-footer">
                                         <p class="image-board-footer-item">
                                             <span class="icon"><i class="fa fa-users" aria-hidden="true" aria-label="numero suggerito di persone">&nbsp;</i></span>5
@@ -328,25 +330,9 @@
                                     </footer>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <div class="content columns">
-                                    <div class="column" style="text-align:justify">
-                                        {% trans %}
-                                            Direttamente sulla spiaggia per vivere il lago al 100%.
-                                            Dal risveglio della natura al mattino alla magia dei chiari di luna,
-                                            emozioni uniche. La maggior parte delle piazzole Aqva hanno il posto
-                                            auto riservato fuori piazzola.
-                                        {% endtrans %}
-                                    </div>
-                                </div>
-                                <nav class="level">
-                                    <p class="level-item has-text-centered">
-                                        <a href="aqva.html" class="button is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
-                                    </p>
-                                    <p class="level-item has-text-centered is-upper">
-                                        <a href="?pitch=aqva#{{ _('prenota') }}" class="button is-medium is-primary">{{ _('richiedi') }} AQVA</a>
-                                    </p>
-                                </nav>
+                            <div class="card-content slim-action">
+                                <p><a href="aqva.html" class="button is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a></p>
+                                <p><a href="?pitch=aqva#{{ _('prenota') }}" class="button button is-medium is-primary">{{ _('richiedi') }} AQVA</a></p>
                             </div>
                         </div>
                     </div>
@@ -357,14 +343,15 @@
                 <div class="columns">
                     <div class="column"></div>
                     <div class="column is-three-quarters">
-                        <div class="card is-fullwidth">
+                        <div class="card is-fullwidth" style="margin-bottom:3rem">
                             <div class="card-image">
                                 <figure class="image is-3by2">
                                     <img src="/images/Accomodations/CampingPuntaIndiani_AccomodationPanorama_BeautifulCaldonzzoLakeView.jpg" alt="{% trans %}Piazzole del Campeggio Punta indiani direttamente sul Lago di Caldonazzo in Trentino{% endtrans %}">
                                 </figure>
                                 <div class="is-overlay image-board">
                                     <header class="image-board-header">
-                                        <p class="image-board-header-title">Panorama</p>
+                                        <h1 class="image-board-header-title">Panorama</h1>
+                                        <h2 class="image-board-header-title">{{ _('Piazzola vista lago') }}</h2>
                                     </header>
                                     <div class="image-board-content">
                                     </div>
@@ -381,24 +368,9 @@
                                     </footer>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <div class="content columns">
-                                    <div class="column" style="text-align:justify">
-                                        {% trans %}
-                                            Vista lago, massimo 30m dalla spiaggia, maggiore privacy...
-                                            Stessa atmosfera! A seconda delle dimensioni, il posto auto è
-                                            interno o esterno alla piazzola.
-                                        {% endtrans %}
-                                    </div>
-                                </div>
-                                <nav class="level">
-                                    <p class="level-item has-text-centered">
-                                        <a href="panorama.html" class="button is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
-                                    </p>
-                                    <p class="level-item has-text-centered is-upper">
-                                        <a href="?pitch=panorama#{{ _('prenota') }}" class="button is-medium is-primary">{{ _('richiedi') }} PANORAMA</a>
-                                    </p>
-                                </nav>
+                            <div class="card-content slim-action">
+                                <p><a href="panorama.html" class="button is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a></p>
+                                <p><a href="?pitch=panorama#{{ _('prenota') }}" class="button is-medium is-primary">{{ _('richiedi') }} PANORAMA</a></p>
                             </div>
                         </div>
                     </div>
@@ -409,14 +381,15 @@
                 <div class="columns">
                     <div class="column"></div>
                     <div class="column is-three-quarters">
-                        <div class="card is-fullwidth">
+                        <div class="card is-fullwidth" style="margin-bottom:3rem">
                             <div class="card-image">
                                 <figure class="image is-3by2">
                                     <img src="/images/Accomodations/CampingPuntaIndiani_AccomodationRelax_InTheNature.jpg" alt="{% trans %}Vacanza in campeggio con il cane – sito del Camping Punta Indiani{% endtrans %}">
                                 </figure>
                                 <div class="is-overlay image-board">
                                     <header class="image-board-header">
-                                        <p class="image-board-header-title">Relax</p>
+                                        <h1 class="image-board-header-title">Relax</h1>
+                                        <h2 class="image-board-header-title">{{ _('Relax &amp; Privacy nel verde') }}</h2>
                                     </header>
                                     <div class="image-board-content">
                                     </div>
@@ -436,26 +409,9 @@
                                     </footer>
                                 </div>
                             </div>
-                            <div class="card-content">
-                                <div class="content has-text-justify">
-                                    <p>
-                                        {% trans %}
-                                        In un prato a terrazze fra gli alberi, nella zona più tranquilla
-                                        del Camping, da 50 a 100 m distanti dalla spiaggia, le piazzole
-                                        Relax sono ampie ed adatte per gruppi di amici, famiglie numerose,
-                                        per chi ama il suo spazio, la privacy ed il relax e per chi viaggia
-                                        con un amico a quattro zampe.
-                                        {% endtrans %}
-                                    </p>
-                                </div>
-                                <nav class="level">
-                                    <p class="level-item has-text-centered">
-                                        <a href="relax.html" class="button is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a>
-                                    </p>
-                                    <p class="level-item has-text-centered is-upper">
-                                        <a href="?pitch=relax#{{ _('prenota') }}" class="button is-medium is-primary">{{ _('richiedi') }} RELAX</a>
-                                    </p>
-                                </nav>
+                            <div class="card-content slim-action">
+                                <p><a href="relax.html" class="button is-medium is-secondary is-upper">{% trans %}scopri maggiori dettagli{% endtrans %}</a></p>
+                                <p><a href="?pitch=relax#{{ _('prenota') }}" class="button is-medium is-primary">{{ _('richiedi') }} RELAX</a></p>
                             </div>
                         </div>
                     </div>
