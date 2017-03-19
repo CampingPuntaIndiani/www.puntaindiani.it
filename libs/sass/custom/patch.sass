@@ -12,12 +12,11 @@
 
 .hero-head .nav-item.has-logo
   display: block
+  padding: 2px
+
   img.is-logo
     max-height: none
-    height: 100%
-    position: absolute
-    top: 0
-    bottom: 0
+    height: 95%
 
 .hero-body img.is-logo
   margin: auto auto 1rem auto
@@ -290,3 +289,13 @@ label.label
 
 .tabs li.is-active a.is-primary
   color: white
+
+// Make SVG images work
+svg
+  color: "#000"
+  overflow: "visible"
+  font-family: "Bitstream Vera Sans"
+
+iframe
+  // frameborder = 0
+  border: 0

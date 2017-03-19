@@ -378,6 +378,12 @@ var LifeAnimation = function () {
         animationStep(true, true);
     });
 
+    document.querySelector('[data-gaid="highlights"]')
+        .addEventListener('click', function(){
+            // STOP animation on first interaction
+            window.clearTimeout(window.carousellCallback);
+        });
+
     var animationStep = function(is_back, is_manual){
         var current = document.querySelectorAll('.carousell .is-active')[0];
         current.classList.remove('is-active');

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex,nofollow">
+        <link rel="stylesheet" href="/css/bulma.css">
+    </head>
+    <body class="nojs">
+        <section class="section">
+            <div class="container content">
+                <h1>{{ _('condizioni di vendita') }}</h1>
+                <p>{{ _('A conferma della prenotazione viene richiesta una caparra.') }}</p>
+
+
+                <h3>{{ _('Annullamento') }}</h3>
+                <p>{{ _("In caso di rinuncia entro 14 giorni dall’arrivo, viene rimborsata la caparra, esclusi €10,00 Euro di spese di prenotazione. Successivamente non c’è diritto ad alcun rimborso.") }}</p>
+
+
+                <h3>{{ _('Arrivi posticipati ') }} </h3>
+                <p>{{ _("Qualora la piazzola non fosse stata occupata entro le ore 12.00 del giorno successivo a quello indicato nella prenotazione, la prenotazione viene automaticamente annullata.") }}</p>
+            </div>
+        </section>
+
+        {% include "cookies.inc.html" %}
+        {% include 'google.inc.html' %}
+    </body>
+</html>
