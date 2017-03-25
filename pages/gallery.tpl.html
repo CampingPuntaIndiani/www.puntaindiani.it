@@ -18,6 +18,7 @@
                 padding-top: 25px;
                 height: 0;
             }
+
             .wrapper iframe {
                 position: absolute;
                 top: 0;
@@ -25,50 +26,82 @@
                 width: 100%;
                 height: 100%;
             }
+            .bottom > * {margin-bottom: 3em;}
+            .hero span {text-transform: capitalize}
+
+            section.hero.is-custom {background-color: #F8F4E3}
+            .us-custom .tabs li a {border-color: #333}
+
+            .album .image:hover {
+                cursor: pointer;
+                box-shadow: 0 3px 12px rgba(0,0,0,0.23),0 3px 12px rgba(0,0,0,0.16);<Paste>
+            }
+
+            .modal .modal-content {
+                width: auto;
+                max-height: calc(100vh - 40px);
+                max-width: calc(100vw - 40px);
+            }
+
+            .modal .image {margin: auto}
+            .modal .image img {
+                width: auto;
+                height: auto;
+                max-height: 90vh;
+                max-width: 90vw;
+                max-height: calc(100vh - 40px);
+                max-width: calc(100vw - 40px);
+                object-fit: contain;
+            }
         </style>
     </head>
     <body>
 
-        <nav class="nav has-shadow">
-            <div class="container">
-                <div class="nav-left x-menu">
-                    <a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>Home</a>
-                    <a href="#virtual-tour" class="nav-item is-tab">{{ _('virtual tour') }}</a>
-                    <a href="#videos" class="nav-item is-tab">{{ _('videos') }}</a>
-                    <a href="#pictures" class="nav-item is-tab">{{ _('pictures') }}</a>
-                </div>
+        <section class="section">
+            <div class="has-text-centered content is-large">
+                <h1>Camping Punta Indiani's Gallery</h1>
+                <h2>Lago di Caldonazzo - Trentino / Alto Adige - Italy</h2>
             </div>
-        </nav>
+        </section>
 
-        <section class="section" id="virtual-tour">
-            <div class="container">
-                <div class="heading">
-                    <h1 class="title">{{ _('virtual tour') }}</h1>
-                </div>
-            </div>
-
-            <!-- Virtual tour -->
-            <div class="container">
-                <div class="wrapper">
-                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1470377559608!6m8!1m7!1seRXtxWHRIykAAAQ1mGrD8A!2m2!1d46.02765734440566!2d11.2315088718135!3f61!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                </div>
-            </div>
-
-            <!-- Drone panoramica -->
-            <div class="container carousell-item">
-                <div class="wrapper">
-                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1482279962067!6m8!1m7!1sF%3A-uF8bN-r6AW4%2FV6otwL72q3I%2FAAAAAAADTpQ%2F-_H9jQ7rDHgzMJiuFCdZnOxyOczxp4iCQCLIB!2m2!1d46.0283167!2d11.2329383!3f85.31835651740758!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <section class="hero is-light is-custom" id="virtual-tour">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tabs is-toggle is-fullwidth is-medium">
+                        <ul>
+                            <li><a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true">&nbsp;</i></span></a></li>
+                            <li class="is-active"><a href="#virtual-tour"><span class="icon"><i class="fa fa-street-view"></i></span><span>{{ _('virtual tour') }}</span></a></li>
+                            <li><a href="#videos"><span class="icon"><i class="fa fa-film"></i></span><span>{{ _('videos') }}</span></a></li>
+                            <li><a href="#team"><span class="icon"><i class="fa fa-heartbeat"></i></span><span>{{ _('the team') }}</span></a></li>
+                            <li><a href="#pictures"><span class="icon"><i class="fa fa-image"></i></span><span>{{ _('photoes') }}</span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="videos">
-            <div class="container">
-                <div class="heading">
-                    <h1 class="title">{{ _('videos') }}</h1>
+        <section class="section bottom">
+            <div class="container"><iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1470377559608!6m8!1m7!1seRXtxWHRIykAAAQ1mGrD8A!2m2!1d46.02765734440566!2d11.2315088718135!3f61!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+            <div class="container"><iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1482279962067!6m8!1m7!1sF%3A-uF8bN-r6AW4%2FV6otwL72q3I%2FAAAAAAADTpQ%2F-_H9jQ7rDHgzMJiuFCdZnOxyOczxp4iCQCLIB!2m2!1d46.0283167!2d11.2329383!3f85.31835651740758!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+        </section>
+
+        <section class="hero is-light is-custom" id="videos">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tabs is-toggle is-fullwidth is-medium">
+                        <ul>
+                            <li><a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true">&nbsp;</i></span></a></li>
+                            <li><a href="#virtual-tour"><span class="icon"><i class="fa fa-street-view"></i></span><span>{{ _('virtual tour') }}</span></a></li>
+                            <li class="is-active"><a href="#videos"><span class="icon"><i class="fa fa-film"></i></span><span>{{ _('videos') }}</span></a></li>
+                            <li><a href="#team"><span class="icon"><i class="fa fa-heartbeat"></i></span><span>{{ _('the team') }}</span></a></li>
+                            <li><a href="#pictures"><span class="icon"><i class="fa fa-image"></i></span><span>{{ _('photoes') }}</span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </section>
 
+        <section class="section bottom">
             <div class="container">
                 <div class="wrapper">
                     <iframe src="http://player.vimeo.com/video/177881566" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
@@ -91,32 +124,50 @@
             </div>
         </section>
 
-        <section class="section" id="team">
-            <div class="container">
-                <div class="heading">
-                    <h1 class="title">{{_('team') }}</h1>
+        <section class="hero is-light is-custom" id="team">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tabs is-toggle is-fullwidth is-medium">
+                        <ul>
+                            <li><a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true">&nbsp;</i></span></a></li>
+                            <li><a href="#virtual-tour"><span class="icon"><i class="fa fa-street-view"></i></span><span>{{ _('virtual tour') }}</span></a></li>
+                            <li><a href="#videos"><span class="icon"><i class="fa fa-film"></i></span><span>{{ _('videos') }}</span></a></li>
+                            <li class="is-active"><a href="#team"><span class="icon"><i class="fa fa-heartbeat"></i></span><span>{{ _('the team') }}</span></a></li>
+                            <li><a href="#pictures"><span class="icon"><i class="fa fa-image"></i></span><span>{{ _('photoes') }}</span></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <div class="container is-fluid">
-                <nav class="level is-mobile">
-                    <div class="level-item has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_RenzoPiffer_and_AnitaMaines.jpg"></figure></div>
-                    <div class="level-item has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_LorenzaPiffer_and_StefanoBrugnara.jpg"></figure></div>
-                    <div class="level-item has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_MartinBrugnara_and_GiadaBrugnaraVertical.jpg"></figure></div>
-                </nav>
             </div>
         </section>
 
-        <section class="section" id="pictures">
-            <div class="container">
-                <div class="heading">
-                    <h1 class="title">{{_('pictures') }}</h1>
+        <section class="section">
+            <div class="container" style="display:flex">
+                <div class="has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_RenzoPiffer_and_AnitaMaines.jpg"></figure></div>
+                <div class="has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_LorenzaPiffer_and_StefanoBrugnara.jpg"></figure></div>
+                <div class="has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_MartinBrugnara_and_GiadaBrugnaraVertical.jpg"></figure></div>
+            </div>
+        </section>
+
+        <section class="hero is-light is-custom" id="pictures">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="tabs is-toggle is-fullwidth is-medium">
+                        <ul>
+                            <li><a href="./" class="nav-item is-tab"><span class="icon"><i class="fa fa-home" aria-hidden="true">&nbsp;</i></span></a></li>
+                            <li><a href="#virtual-tour"><span class="icon"><i class="fa fa-street-view"></i></span><span>{{ _('virtual tour') }}</span></a></li>
+                            <li><a href="#videos"><span class="icon"><i class="fa fa-film"></i></span><span>{{ _('videos') }}</span></a></li>
+                            <li><a href="#team"><span class="icon"><i class="fa fa-heartbeat"></i></span><span>{{ _('the team') }}</span></a></li>
+                            <li class="is-active"><a href="#pictures"><span class="icon"><i class="fa fa-image"></i></span><span>{{ _('photoes') }}</span></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </section>
 
+        <section class="section">
             <div class="container is-fluid">
-                <div class="columns is-multiline">
-                    <div class="column">
+                <div class="columns is-multiline" id="ph">
+                    <div class="column album">
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_34.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_23.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_15.jpg"></figure>
@@ -133,7 +184,7 @@
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_32.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_44.jpg"></figure>
                     </div>
-                    <div class="column">
+                    <div class="column album">
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_25.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_30.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_35.jpg"></figure>
@@ -149,7 +200,7 @@
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_19.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_22.jpg"></figure>
                     </div>
-                    <div class="column">
+                    <div class="column album">
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_21.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_3.jpg"></figure>
                         <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_40.jpg"></figure>
@@ -173,6 +224,59 @@
         {% include "cookies.inc.html" %}
         {% include 'footer.inc.html' %}
         {% include 'google.inc.html' %}
+
+        <div class="modal" id="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <p class="image">
+                    <img id="modal_img" src="http://bulma.io/images/placeholders/1280x960.png">
+                </p>
+            </div>
+            <button class="modal-close"></button>
+        </div>
+
+        <script type="text/javascript">
+// main.js::GMapHack
+(function () {
+    "use strict";
+    Array.prototype.forEach.call(document.getElementsByClassName('gmap'),
+    function(gmap){
+        var wrapper = gmap.parentNode,
+            cls = 'scrollOff';
+        gmap.classList.add(cls);
+        wrapper.addEventListener('click', function () {
+            gmap.classList.remove(cls);
+        });
+
+        wrapper.addEventListener('mouseleave', function () {
+            gmap.classList.add(cls);
+        });
+    });
+})();
+
+// Modal
+(function () {
+    "use strict";
+    var modal = document.getElementById('modal'),
+        img = document.getElementById('modal_img');
+    Array.prototype.forEach.call(document.querySelectorAll('.album img'),
+    function(album){
+        album.addEventListener('click', function (e) {
+            console.log(e.currentTarget);
+            img.src = e.currentTarget.src;
+            modal.classList.add('is-active');
+        });
+    });
+
+    // Close
+    Array.prototype.forEach.call(document.querySelectorAll('.modal-close,.modal-background'), function(btn){
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.classList.remove('is-active');
+        });
+    });
+})();
+        </script>
 
     </body>
     <!--

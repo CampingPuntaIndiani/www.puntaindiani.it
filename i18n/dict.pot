@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-20 00:31+0100\n"
+"POT-Creation-Date: 2017-03-25 19:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,23 +144,32 @@ msgstr ""
 msgid "contatti"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:36
-#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:46
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:73
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:94
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:133
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:157
 msgid "virtual tour"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:37
-#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:68
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:74
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:95
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:134
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:158
 msgid "videos"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:38
-#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:113
-msgid "pictures"
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:75
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:96
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:135
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:159
+msgid "the team"
 msgstr ""
 
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:76
 #: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:97
-msgid "team"
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:136
+#: /Users/martin/Projects/www.puntaindiani.it/pages/gallery.tpl.html:160
+msgid "photoes"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:11
