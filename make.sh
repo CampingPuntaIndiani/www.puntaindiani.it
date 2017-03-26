@@ -53,5 +53,5 @@ echo "[+] Copy CNAME config"
 cp CNAME dist/CNAME
 
 echo "[+] Completed"
-echo "[+] Running webserver"
+echo "[+] Starting webserver"
 cd dist && python -m SimpleHTTPServer

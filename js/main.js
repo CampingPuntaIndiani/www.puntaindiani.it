@@ -95,16 +95,13 @@ var EnancheForm = function() {
             var aok = arrival.isValid(),
                 dok = departure.isValid();
             if (aok && dok && arrival.getValue() >= departure.getValue()) {
-                arrival.setError('Must be before then departure');
-                departure.setError('Must be after then arriaval');
+                arrival.setError('you are supposed to "arrive" before "leaving"');
             }
 
-            if (arrival.getError() !== undefined &&
-                    arrival.getValueString().length == 10)
-                arrival_error.innerHTML = '&nbsp;' + arrival.getError();
-            if (departure.getError() !== undefined &&
-                    departure.getValueString().length == 10)
-                departure_error.innerHTML = '&nbsp;' + departure.getError();
+            if (arrival.getValueString().length == 10)
+                arrival_error.innerHTML = arrival.getError();
+            if (departure.getValueString().length == 10)
+                departure_error.innerHTML = departure.getError();
         };
     }();
 

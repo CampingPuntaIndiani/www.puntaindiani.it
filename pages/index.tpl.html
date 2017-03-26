@@ -2,7 +2,7 @@
 <html lang='{{ lang }}'>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-site-verification" content="h7NhDkvsryR3wPb1KDHoRfajA7moBLGymNKtzpgerJ8"/>
 
@@ -44,6 +44,7 @@
 
             .white {background-color: #fff}
             .nobg {background-color: transparent}
+            .help::first-letter {text-transform: capitalize}
         </style>
     </head>
     <body class="nojs {{lang}}">
@@ -419,7 +420,7 @@
         </section>
 
         <section class="section is-paddingless" id="{{ _('dove-siamo') }}" data-gaid="dove-siamo">
-            <iframe class="gmap" seamless src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD4nigm8rShwERBQ80TUTactTvvJQo-SZw&q=Camping+Punta+Indiani,Pergine+Italy" allowfullscreen></iframe>
+            <iframe class="gmap" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD4nigm8rShwERBQ80TUTactTvvJQo-SZw&q=Camping+Punta+Indiani,Pergine+Italy" allowfullscreen></iframe>
         </section>
 
         <section class="section" id="outdoor" data-gaid="outdoor">
@@ -548,18 +549,18 @@
             <div class="container carousell" style="box-shadow:0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)">
                 <!-- Video -->
                 <div class="container is-active carousell-item" data-ref="mv">
-                    <iframe style="width:100%;height: 60vh" src="http://player.vimeo.com/video/177881566" allowfullscreen seamless></iframe>
+                    <iframe style="width:100%;height: 60vh" src="http://player.vimeo.com/video/177881566" allowfullscreen></iframe>
                 </div>
 
 
                 <!-- Virtual tour -->
                 <div class="container carousell-item" data-ref="vt">
-                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1470377559608!6m8!1m7!1seRXtxWHRIykAAAQ1mGrD8A!2m2!1d46.02765734440566!2d11.2315088718135!3f61!4f0!5f0.7820865974627469" seamless allowfullscreen></iframe>
+                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1470377559608!6m8!1m7!1seRXtxWHRIykAAAQ1mGrD8A!2m2!1d46.02765734440566!2d11.2315088718135!3f61!4f0!5f0.7820865974627469" allowfullscreen></iframe>
                 </div>
 
                 <!-- Drone panoramica -->
                 <div class="container carousell-item" data-ref="mp">
-                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1482279962067!6m8!1m7!1sF%3A-uF8bN-r6AW4%2FV6otwL72q3I%2FAAAAAAADTpQ%2F-_H9jQ7rDHgzMJiuFCdZnOxyOczxp4iCQCLIB!2m2!1d46.0283167!2d11.2329383!3f85.31835651740758!4f0!5f0.7820865974627469" seamless allowfullscreen></iframe>
+                    <iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1482279962067!6m8!1m7!1sF%3A-uF8bN-r6AW4%2FV6otwL72q3I%2FAAAAAAADTpQ%2F-_H9jQ7rDHgzMJiuFCdZnOxyOczxp4iCQCLIB!2m2!1d46.0283167!2d11.2329383!3f85.31835651740758!4f0!5f0.7820865974627469" allowfullscreen></iframe>
                 </div>
 
                 <!-- The team -->
@@ -621,34 +622,34 @@
 
                 <!-- Target _blank: on nojs and validation error please do not clear the data. -->
                 <!-- check if using a sub domain also mess up with GA -->
-                <form class="no-full" method="POST" action="https://reserve.campingpuntaindiani.it/website/reserve/" autocomplete="on" autofocus="on">
+                <form class="no-full" method="POST" action="https://reserve.campingpuntaindiani.it/website/reserve/" autocomplete="on">
                     <input type="hidden" name="nojs" value="1">
                     <input type="hidden" name="lang" value="{{ lang }}">
 
 
                     <div class="columns has-borders is-multiline white">
                         <div class="column is-half">
-                            <label class="label" for="arrival">{{ _('quando') }}</label>
+                            <label class="label">{{ _('quando') }}</label>
                             <span class="help is-hidden-widescreen">{{ _('date di arrivo e partenza') }}</span>
                             <div class="control is-centered">
-                                <input type="hidden" id="arrival" data-min="2017-04-26" min="2017-04-26" data-max="2017-09-29" max="2017-09-29"/>
-                                <input type="hidden" id="arrival_year" name="start_year" value="2017" required />
+                                <input type="hidden" id="arrival" data-min="2017-04-26" data-max="2017-09-29">
+                                <input type="hidden" id="arrival_year" name="start_year" value="2017">
 
                                 <span class="control has-addons inline">
                                     <a class="button is-white is-disabled">2017</a>
-                                    <div class="select"><select id="arrival_month" name="start_month"><option value=""></option><option value="04">{{ _('Aprile') }}</option><option value="05">{{ _('Maggio') }}</option><option value="06">{{ _('Giugno') }}</option><option value="07">{{ _('Luglio') }}</option><option value="08">{{ _('Agosto') }}</option><option value="09">{{ _('Settembre') }}</option></select></div>
-                                    <div class="select"><select id="arrival_day"   name="start_day"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
+                                    <span class="select"><select id="arrival_month" name="start_month"><option value="">&nbsp;</option><option value="04">{{ _('Aprile') }}</option><option value="05">{{ _('Maggio') }}</option><option value="06">{{ _('Giugno') }}</option><option value="07">{{ _('Luglio') }}</option><option value="08">{{ _('Agosto') }}</option><option value="09">{{ _('Settembre') }}</option></select></span>
+                                    <span class="select"><select id="arrival_day"   name="start_day"><option value="">&nbsp;</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></span>
                                 </span>
 
                                 <span class="icon is-medium is-hidden-touch is-hidden-desktop-only"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
 
-                                <input type="hidden" id="departure" data-min="2017-04-27" min="2017-04-27" data-max="2017-09-30" max="2017-09-30" />
-                                <input type="hidden" id="departure_year" name="end_year" value="2017" required />
+                                <input type="hidden" id="departure" data-min="2017-04-27" data-max="2017-09-30">
+                                <input type="hidden" id="departure_year" name="end_year" value="2017">
 
                                 <span class="control has-addons inline">
                                     <a class="button is-white is-disabled">2017</a>
-                                    <div class="select"><select id="departure_month" name="end_month"><option value=""></option><option value="04">{{ _('Aprile') }}</option><option value="05">{{ _('Maggio') }}</option><option value="06">{{ _('Giugno') }}</option><option value="07">{{ _('Luglio') }}</option><option value="08">{{ _('Agosto') }}</option><option value="09">{{ _('Settembre') }}</option></select></div>
-                                    <div class="select"><select id="departure_day"   name="end_day"><option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></div>
+                                    <span class="select"><select id="departure_month" name="end_month"><option value="">&nbsp;</option><option value="04">{{ _('Aprile') }}</option><option value="05">{{ _('Maggio') }}</option><option value="06">{{ _('Giugno') }}</option><option value="07">{{ _('Luglio') }}</option><option value="08">{{ _('Agosto') }}</option><option value="09">{{ _('Settembre') }}</option></select></span>
+                                    <span class="select"><select id="departure_day"   name="end_day"><option value="">&nbsp;</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></span>
                                 </span>
                             </div>
                             <span class="help is-danger" id="arrival_error"></span>
@@ -656,7 +657,7 @@
                         </div>
 
                         <div class="column">
-                            <label class="label" for="arrival">{{ _('piazzola') }} - <a href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}">{{ _('mappa del campeggio') }}</a></label>
+                            <label class="label" for="resource">{{ _('piazzola') }} - <a href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}">{{ _('mappa del campeggio') }}</a></label>
                             <span class="help is-hidden-widescreen">&nbsp;</span>
                             <div class="control has-addons is-centered">
                                 <a class="button" href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map"></i></a>
@@ -687,7 +688,7 @@
                                 <span class="select">
                                     <select id="card" name="card">
                                         <!-- value max length := 10 -->
-                                        <option data-show="always" value="NONE"></option>
+                                        <option data-show="always" value="NONE">&nbsp;</option>
                                         <optgroup data-show="always" data-pgroup="agreements" label="{{ _('convenzioni') }}">
                                             <option value="CKE"  data-id="CKE">Camping Key Europe</option>
                                             <option value="ADAC" data-id="ADAC">ADAC Camp Card</option>
@@ -717,17 +718,17 @@
                     <br>
                     <br>
 
-                    <fieldset class="is-centered">
-                        <div class="columns">
-                            <div class="column is-half">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <fieldset class="is-centered">
                                 <legend>{{ _('Con chi condividerai la tua vacanza?') }}</legend>
                                 <div class="columns is-mobile">
                                     <div class="column">
                                         <label class="label" for="adults">{{ _('adulti') }}</label>
                                         <div class="control">
-                                            <span class="select"><select type="text" id="adults" name="adults" required><option></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
+                                            <span class="select"><select id="adults" name="adults" required><option value="">&nbsp;</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
                                         </div>
-                                        <span class="help">{{ _('totale adulti') }}.</span>
+                                        <span class="help">{{ _('totale adulti') }}</span>
                                     </div>
 
                                     <div class="column">
@@ -742,8 +743,10 @@
                                         <span class="help">&lt;2 {{ _('anni') }}</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="column is-half">
+                            </fieldset>
+                        </div>
+                        <div class="column is-half">
+                            <fieldset class="is-centered">
                                 <legend>{{ _('Cosa porterai con te?') }}</legend>
                                 <div class="columns is-mobile">
                                     <div class="column">
@@ -764,9 +767,9 @@
                                         <span class="help">2<sup>nd</sup>{{ _('auto, barca') }}, ...</span>
                                     </div>
                                 </div>
-                            </div>
+                            </fieldset>
                         </div>
-                    </fieldset>
+                    </div>
 
                     <fieldset>
                         <legend>{{ _('Come possiamo contattarti?') }}</legend>
@@ -787,7 +790,7 @@
                             <div class="control-label"><label class="label" for="citizenship">{{ _('cittadinanza') }}</label></div>
                             <div class="control select is-fullwidth">
                                 <select id="citizenship" name="citizenship" style="text-transform:capitalize">
-                                    <option value="" ></option>
+                                    <option value="">&nbsp;</option>
                                     <option value="100000203">{{ _('austriaca') }}</option>
                                     <option value="100000206">{{ _('belga') }}</option>
                                     <option value="100000212">{{ _('danese') }}</option>
@@ -802,14 +805,15 @@
                         </div>
                     </fieldset>
 
-                    <fieldset class="is-centered">
-                        <div class="columns">
-                            <div class="column is-half">
+                    <div class="columns">
+                        <div class="column is-half">
+                            <fieldset class="is-centered">
                                 <legend>{{ _('Che mezzo utilizzerai?') }}</legend>
                                 <div class="control has-addons">
                                     <a class="button"><i class="fa fa-car" aria-hidden="true"></i></a>
-                                    <span class="select"><select id="equipement" name="equipement" required>
-                                            <option value=""></option>
+                                    <span class="select">
+                                        <select id="equipement" name="equipement" required>
+                                            <option value="">&nbsp;</option>
                                             <option value="car-only">{{ _('solo macchina') }}</option>
                                             <option value="tent">{{ _('tenda') }}</option>
                                             <option value="roulotte">{{ _('roulotte') }}</option>
@@ -817,8 +821,9 @@
                                             <option value="bicyle">{{ _('bicicletta') }}</option>
                                         </select>
                                     </span>
-                                    <span class="select"><select id="equipement_size" name="equipement_size" required>
-                                            <option value=""></option>
+                                    <span class="select">
+                                        <select id="equipement_size" name="equipement_size" required>
+                                            <option value="">&nbsp;</option>
                                             <option value="small">{{ _('piccola') }}</option>
                                             <option value="mid">{{ _('media') }}</option>
                                             <option value="big">{{ _('grande') }}</option>
@@ -826,8 +831,10 @@
                                         </select>
                                     </span>
                                 </div>
-                            </div>
-                            <div class="column">
+                            </fieldset>
+                        </div>
+                        <div class="column">
+                            <fieldset class="is-centered">
                                 <legend>{{ _('Condizioni') }}</legend>
                                 <p class="control has-text-centered">
                                     <label class="checkbox"><input type="checkbox" name="CR" id="CR" checked required />&nbsp;{{ _('accetto') }}</label>
@@ -839,9 +846,9 @@
                                     <label class="checkbox"><input type="checkbox" name="TC" id="TC" checked required />&nbsp;{{ _('accetto') }}</label>
                                     <a href="sell_conditions.html" target="_blank" data-modal="{{ _('condizioni di vendita') }}">{{ _('condizioni di vendita') }}</a>.
                                 </p>
-                            </div>
+                            </fieldset>
                         </div>
-                    </fieldset>
+                    </div>
 
                     <fieldset>
                         <legend>note</legend>
@@ -856,7 +863,7 @@
                                 </p>
                             </div>
                             <div class="column">
-                                <textarea class="textarea" name="note" value="" placeholder="{% trans %}We would like to stay next to our friend James T. and, if possible, have a place with some shadow.{% endtrans %}"></textarea>
+                                <textarea class="textarea" name="note" placeholder="{% trans %}We would like to stay next to our friend James T. and, if possible, have a place with some shadow.{% endtrans %}"></textarea>
                             </div>
                         </div>
                     </fieldset>
@@ -873,35 +880,33 @@
                     <br>
                     <br>
 
-                    <center>
-                        <button action="submit" class="button is-primary is-large">
-                            <span class="icon">
-                                <i class="fa fa-check"></i>
-                            </span>
-                            <span class="is-upper">{{ _('invia richiesta') }}</span>
-                        </button>
-                    </center>
+                    <button type="submit" class="button is-primary is-large" style="display:block;margin:auto">
+                        <span class="icon">
+                            <i class="fa fa-check"></i>
+                        </span>
+                        <span class="is-upper">{{ _('invia richiesta') }}</span>
+                    </button>
                 </form>
             </div>
         </section>
 
         <section class="section" style="padding: 20px 80px">
             <div class="level is-mobile">
-                <figure class="image is-48h"><img src="/images/Agreements/trentino.png" alt="Trentino"></img></figure>
-                <figure class="image is-48h"><img src="/images/Agreements/valsugana.png" alt="Valsugana"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/trentino.png" alt="Trentino"></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/valsugana.png" alt="Valsugana"></figure>
 
-                <figure class="image is-48h"><img src="/images/Agreements/adac.jpg" alt="ADAC"></img></figure>
-                <figure class="image is-48h"><img src="/images/Agreements/anwb.png" alt="ANWB"></img></figure>
-                <figure class="image is-48h"><img src="/images/Agreements/acsi.png" alt="ACSI"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/adac.jpg" alt="ADAC"></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/anwb.png" alt="ANWB"></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/acsi.png" alt="ACSI"></figure>
 
-                <figure class="image is-48h"><img src="/images/Agreements/campingit.png" alt="Camping.it"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/campingit.png" alt="Camping.it"></figure>
 
-                <figure class="image is-48h"><img src="/images/Agreements/dcc.jpg" alt="DCC"></img></figure>
-                <figure class="image is-48h"><img src="/images/Agreements/ecc.png" alt="ECC"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/dcc.jpg" alt="DCC"></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/ecc.png" alt="ECC"></figure>
 
-                <figure class="image is-48h"><img src="/images/Agreements/alan_rogers.png" alt="Alan Rogers"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/alan_rogers.png" alt="Alan Rogers"></figure>
 
-                <figure class="image is-48h"><img src="/images/Agreements/zoover.png" alt="Zoover reccomanded 2014"></img></figure>
+                <figure class="image is-48h"><img src="/images/Agreements/zoover.png" alt="Zoover reccomanded 2014"></figure>
             </div>
         </section>
 

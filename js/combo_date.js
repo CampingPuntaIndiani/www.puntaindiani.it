@@ -52,7 +52,8 @@ function ComboDate(base_id) {
     };
 
     this.setError = function(error) {
-        this.error = error;
+        if (!error) this.error = '';
+        else this.error = this.base_id + ': ' + error;
     };
 
     this.getError = function(){
@@ -114,11 +115,11 @@ function ComboDate(base_id) {
     };
 
     this.resetDays = function(that, month, year) {
-        var days = ['<option></option>'],
+        var days = ['<option value="">&nbsp;</option>'],
             old_value = that.base_day.value;
         for (var d=1; d <= 31; d++)
             days.push('<option value="' + d + '"> ' + d + '</option>');
-        that.base_day.innerHTML=days.join(', ');
+        that.base_day.innerHTML=days.join('');
         that.base_day.value = old_value;
 
         /* Apply gregorian if month is set */
@@ -141,7 +142,6 @@ function ComboDate(base_id) {
     this.on_month_change = function() {
         var that = this;
         return function () {
-            console.log("here 1");
             var year = parseInt(that.base_year.value),
             month = parseInt(that.base_month.value);
 
@@ -166,10 +166,9 @@ function ComboDate(base_id) {
                 for (var u=31; u > dmax; u--)
                     hiding_days.push('option[value="' + u + '"]');
 
-                console.log("here 2", hiding_days);
                 if (hiding_days.length) {
                     Array.prototype.forEach.call(
-                        that.base_day.querySelectorAll(hiding_days.join(', ')),
+                        that.base_day.querySelectorAll(hiding_days.join('')),
                         removeNode);
                 }
             }
