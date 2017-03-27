@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="/images/favicon.png">
 
+        <title>Camping Punta Indiani's Gallery</title>
+
         {% include 'intern.inc.html' %}
 
         <link rel="stylesheet" href="/css/bulma.css">
@@ -26,6 +28,8 @@
                 width: 100%;
                 height: 100%;
             }
+            iframe{border: 0}
+
             .bottom > * {margin-bottom: 3em;}
             .hero span {text-transform: capitalize}
 
@@ -34,7 +38,7 @@
 
             .album .image:hover {
                 cursor: pointer;
-                box-shadow: 0 3px 12px rgba(0,0,0,0.23),0 3px 12px rgba(0,0,0,0.16);<Paste>
+                box-shadow: 0 3px 12px rgba(0,0,0,0.23),0 3px 12px rgba(0,0,0,0.16);
             }
 
             .modal .modal-content {
@@ -53,6 +57,14 @@
                 max-width: calc(100vw - 40px);
                 object-fit: contain;
             }
+
+            #modal .xcontrol {position: absolute; top: 50%; color: white}
+            #modal .xcontrol.left {left: 10px}
+            #modal .xcontrol.right {right: 10px}
+            #modal .xcontrol:hover {color: white}
+
+            #modal .xcontrol .icon {width: auto}
+            #modal .xcontrol .icon .fa {margin-top: -50%;font-size: 4rem}
         </style>
     </head>
     <body>
@@ -81,8 +93,8 @@
         </section>
 
         <section class="section bottom">
-            <div class="container"><iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1470377559608!6m8!1m7!1seRXtxWHRIykAAAQ1mGrD8A!2m2!1d46.02765734440566!2d11.2315088718135!3f61!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
-            <div class="container"><iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1482279962067!6m8!1m7!1sF%3A-uF8bN-r6AW4%2FV6otwL72q3I%2FAAAAAAADTpQ%2F-_H9jQ7rDHgzMJiuFCdZnOxyOczxp4iCQCLIB!2m2!1d46.0283167!2d11.2329383!3f85.31835651740758!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+            <div class="container"><iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1470377559608!6m8!1m7!1seRXtxWHRIykAAAQ1mGrD8A!2m2!1d46.02765734440566!2d11.2315088718135!3f61!4f0!5f0.7820865974627469" allowfullscreen="allowfullscreen"></iframe></div>
+            <div class="container"><iframe class="gmap" style="border: 0; width:100%; height: 60vh" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1482279962067!6m8!1m7!1sF%3A-uF8bN-r6AW4%2FV6otwL72q3I%2FAAAAAAADTpQ%2F-_H9jQ7rDHgzMJiuFCdZnOxyOczxp4iCQCLIB!2m2!1d46.0283167!2d11.2329383!3f85.31835651740758!4f0!5f0.7820865974627469" allowfullscreen="allowfullscreen"></iframe></div>
         </section>
 
         <section class="hero is-light is-custom" id="videos">
@@ -104,23 +116,23 @@
         <section class="section bottom">
             <div class="container">
                 <div class="wrapper">
-                    <iframe src="http://player.vimeo.com/video/177881566" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
+                    <iframe src="http://player.vimeo.com/video/177881566" allowfullscreen="allowfullscreen"></iframe>
                 </div>
-                <center><footer><a href="https://vimeo.com/177881566">CAMPING PUNTA INDIANI - VALCANOVER ITALY</a> from <a href="https://vimeo.com/hansniew">Hans Nieuwenhuis</a> on <a href="https://vimeo.com">Vimeo</a>.</footer></center>
+                <footer class="has-text-centered"><a href="https://vimeo.com/177881566">CAMPING PUNTA INDIANI - VALCANOVER ITALY</a> from <a href="https://vimeo.com/hansniew">Hans Nieuwenhuis</a> on <a href="https://vimeo.com">Vimeo</a>.</footer>
             </div>
 
             <div class="container">
                 <div class="wrapper">
-                    <iframe src="http://player.vimeo.com/video/8970989" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
+                    <iframe src="http://player.vimeo.com/video/8970989" allowfullscreen="allowfullscreen"></iframe>
                 </div>
-                <center><footer><a href="http://vimeo.com/8970989">Camping Punta Indiani</a> from <a href="http://vimeo.com/renzomobiel">Renzo</a> on <a href="http://vimeo.com">Vimeo</a>.</footer></center>
+                <footer class="has-text-centered"><a href="http://vimeo.com/8970989">Camping Punta Indiani</a> from <a href="http://vimeo.com/renzomobiel">Renzo</a> on <a href="http://vimeo.com">Vimeo</a>.</footer>
             </div>
 
             <div class="container">
                 <div class="wrapper">
-                    <iframe src="http://www.youtube.com/embed/PqUCQyr6FtE" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" frameborder="0"></iframe>
+                    <iframe src="http://www.youtube.com/embed/PqUCQyr6FtE" allowfullscreen="allowfullscreen"></iframe>
                 </div>
-                <center><footer>Video - J. Brouwers Production - Thanks again</footer></center>
+                <footer class="has-text-centered">Video - J. Brouwers Production - Thanks again</footer>
             </div>
         </section>
 
@@ -142,9 +154,9 @@
 
         <section class="section">
             <div class="container" style="display:flex">
-                <div class="has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_RenzoPiffer_and_AnitaMaines.jpg"></figure></div>
-                <div class="has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_LorenzaPiffer_and_StefanoBrugnara.jpg"></figure></div>
-                <div class="has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_MartinBrugnara_and_GiadaBrugnaraVertical.jpg"></figure></div>
+                <div class="has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_RenzoPiffer_and_AnitaMaines.jpg" alt="Renzo Piffer, Anita Maines"></figure></div>
+                <div class="has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_LorenzaPiffer_and_StefanoBrugnara.jpg" alt="Lorenza Piffer, Stefano Brugnara"></figure></div>
+                <div class="has-text-centered"><figure class="image has-shadow-1"><img src="/images/Team/CampingPuntaIndiani_Team_MartinBrugnara_and_GiadaBrugnaraVertical.jpg" alt="Martin Brugnara, Giada Brugnara"></figure></div>
             </div>
         </section>
 
@@ -168,54 +180,56 @@
             <div class="container is-fluid">
                 <div class="columns is-multiline" id="ph">
                     <div class="column album">
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_34.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_23.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_15.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_16.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_17.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_18.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_27.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_36.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_38.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_13.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_14.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_24.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_12.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_32.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_44.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_25"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_25_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_0_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_0_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_10"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_10_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_11"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_11_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_12"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_12_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_13"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_13_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_14"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_14_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_15"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_15_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_16"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_16_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_18"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_18_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_19"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_19_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_1_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_1_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_20"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_20_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_35"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_35_small.jpg"></figure>
                     </div>
+
                     <div class="column album">
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_25.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_30.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_35.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_4.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_5.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_6.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_7.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_8.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_11.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_33.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_20.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_37.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_19.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_22.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_23"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_23_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_24"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_24_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_26"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_26_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_27"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_27_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_21"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_21_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_17"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_17_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_22"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_22_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_28"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_28_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_29"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_29_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_39"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_39_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_30"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_30_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_31"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_31_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_32"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_32_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_34"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_34_small.jpg"></figure>
                     </div>
+
                     <div class="column album">
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_21.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_3.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_40.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_2.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_9.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_0.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_29.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_31.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_43.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_26.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_28.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_42.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_39.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_41.jpg"></figure>
-                        <figure class="image has-shadow-1"><img src="/images/Gallery/Camping_Punta_Indiani_1.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_36"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_36_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_37"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_37_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_38"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_38_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_2_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_2_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_3_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_3_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_40"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_40_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_41"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_41_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_42"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_42_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_43"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_43_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_44"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_44_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_4_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_4_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_9_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_9_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_5_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_5_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_6_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_6_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_7_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_7_small.jpg"></figure>
+                        <figure class="image has-shadow-1"><img id="img_8_"  alt="Camping Punta Indiani Gallery Picture" src="/images/Gallery/Camping_Punta_Indiani_8_small.jpg"></figure>
                     </div>
                 </div>
             </div>
@@ -229,55 +243,15 @@
             <div class="modal-background"></div>
             <div class="modal-content">
                 <p class="image">
-                    <img id="modal_img" src="http://bulma.io/images/placeholders/1280x960.png">
+                    <img id="modal_img" src="/images/favicon.png" alt="Camping Punta Indiani Gallery HD Picture">
                 </p>
             </div>
             <button class="modal-close"></button>
+            <a class="xcontrol left" data-carousell="back"><span class="icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></span></a>
+            <a class="xcontrol right" data-carousell="next"><span class="icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
         </div>
 
-        <script type="text/javascript">
-// main.js::GMapHack
-(function () {
-    "use strict";
-    Array.prototype.forEach.call(document.getElementsByClassName('gmap'),
-    function(gmap){
-        var wrapper = gmap.parentNode,
-            cls = 'scrollOff';
-        gmap.classList.add(cls);
-        wrapper.addEventListener('click', function () {
-            gmap.classList.remove(cls);
-        });
-
-        wrapper.addEventListener('mouseleave', function () {
-            gmap.classList.add(cls);
-        });
-    });
-})();
-
-// Modal
-(function () {
-    "use strict";
-    var modal = document.getElementById('modal'),
-        img = document.getElementById('modal_img');
-    Array.prototype.forEach.call(document.querySelectorAll('.album img'),
-    function(album){
-        album.addEventListener('click', function (e) {
-            console.log(e.currentTarget);
-            img.src = e.currentTarget.src;
-            modal.classList.add('is-active');
-        });
-    });
-
-    // Close
-    Array.prototype.forEach.call(document.querySelectorAll('.modal-close,.modal-background'), function(btn){
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            modal.classList.remove('is-active');
-        });
-    });
-})();
-        </script>
-
+        <script src="/js/gallery.js"></script>
     </body>
     <!--
     // vim: spelllang=it
