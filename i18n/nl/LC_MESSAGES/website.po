@@ -79,6 +79,7 @@ msgid ""
 "                        auto riservato fuori piazzola.\n"
 "                    "
 msgstr ""
+"De camping ligt vlak aan het strand om voor de volle 100% van het meer te kunnen genieten. Unieke emoties, van het ontwaken van de natuur in de ochtend tot het betoverende maanlicht in de avond. De meeste standplaatsen Aqva hebben een eigen parkeerplaats buiten de standplaats."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:55
 msgid ""
@@ -435,6 +436,7 @@ msgid ""
 "Punta Indiani.\n"
 "                                    "
 msgstr ""
+"Het kampeerterrein gaat geheel op in de natuurlijke omgeving en de karakteristieke vorm van het schiereiland van Punta Indiani, dankzij de verschillende afmetingen en ligging van de standplaatsen."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:312
 msgid ""
@@ -465,12 +467,12 @@ msgstr "Met uitzicht op het meer"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:386
 msgid "Vacanza in campeggio con il cane – sito del Camping Punta Indiani"
-msgstr ""
+msgstr "Kampeervakantie met de hond op Camping Punta Indiani- Caldonazzomeer"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:391
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:39
 msgid "Relax &amp; Privacy nel verde"
-msgstr ""
+msgstr "Relax &amp; Privacy in het groen"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:429
 msgid "Un mondo da scoprire"
@@ -516,7 +518,7 @@ msgid ""
 "                                Raggiungi Venezia ed esplora la Valsugana"
 " con la tua bicicletta.\n"
 "                                "
-msgstr ""
+msgstr "Naar Venetië en verken de Valsugana met uw fiets."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:476
 msgid "Scarica la"
@@ -600,15 +602,15 @@ msgstr "meer foto's"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:615
 msgid "scegli la tua piazzola preferita!"
-msgstr ""
+msgstr "kies nu je favoriete plaats!"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:616
 msgid "richiedine la disponibilità compilando il modulo"
-msgstr ""
+msgstr "vraag naar de beschikbaarheid door het invullen van onderstaand formulier"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:617
 msgid "oppure chiedi informazioni"
-msgstr ""
+msgstr "of klik hier voor meer informatie"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:617
 msgid "scrivendo a"
@@ -926,7 +928,7 @@ msgstr "verordening"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:847
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:13
 msgid "condizioni di vendita"
-msgstr ""
+msgstr "Verkoopvoorwaarden"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:858
 msgid ""
@@ -967,7 +969,7 @@ msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:887
 msgid "invia richiesta"
-msgstr ""
+msgstr "Aanvraag sturen"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:51
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:540
@@ -1035,7 +1037,7 @@ msgstr "ontdekken Punta Indiani"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:293
 msgid "Trasforma i ponti di primavera in una breve vacanza"
-msgstr " "
+msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:299
 msgid "4 giorni/3 notti 2 persone"
@@ -1145,7 +1147,7 @@ msgstr "warm water in het toiletgebouw"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:375
 msgid "Note"
-msgstr ""
+msgstr "Opmerkingen"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:376
 msgid "per gruppi si consiglia di prenotare"
@@ -1257,7 +1259,7 @@ msgid ""
 "                        A seconda delle dimensioni, il posto auto è "
 "interno o esterno alla piazzola.\n"
 "                        "
-msgstr ""
+msgstr "Met uitzicht op het meer en op hoogstens 30m van het strand gelegen, bieden de standplaatsen Panorama meer privacy... maar zonder aan sfeer in te boeten.<br> Afhankelijk van de oppervlakte, bevindt de parkeerplaats zich binnen of buiten de standplaats."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:52
 msgid ""
@@ -1516,7 +1518,7 @@ msgid ""
 " e per chi viaggia\n"
 "                        con un amico a quattro zampe.\n"
 "                        "
-msgstr ""
+msgstr "De standplaatsen Relax liggen in een terrasvormig gazon tussen de bomen, in de rustigste zone van de Camping, op 50 tot 100 m afstand van het strand. Dit zijn grote standplaatsen, geschikt voor groepen vrienden en grote gezinnen en voor iedereen die ruimte, privacy en relax wil, of voor reizigers met honden."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:55
 msgid ""
@@ -1540,252 +1542,27 @@ msgstr "Herdershond op het gras. Vakantie met de hond op Camping Punta Indiani"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:14
 msgid "A conferma della prenotazione viene richiesta una caparra."
-msgstr ""
+msgstr "Om uw boeking te bevestigen  vragen wij u een aanbetaling te doen."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:17
 msgid "Annullamento"
-msgstr ""
+msgstr "Annulering"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:18
 msgid ""
 "In caso di rinuncia entro 14 giorni dall’arrivo, viene rimborsata la "
 "caparra, esclusi €10,00 Euro di spese di prenotazione. Successivamente "
 "non c’è diritto ad alcun rimborso."
-msgstr ""
+msgstr "Als u uw reservering tot 14 dagen voor uw aankomst annuleert, krijgt u uw aanbetaling terug, exclusief €10,- als annuleringskosten. Als u uw reservering na 14 dagen voor uw aankomst annuleert krijt u uw aanbetaling niet terug."
+
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:21
 msgid "Arrivi posticipati "
-msgstr ""
+msgstr "Late aankomst"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:22
 msgid ""
 "Qualora la piazzola non fosse stata occupata entro le ore 12.00 del "
 "giorno successivo a quello indicato nella prenotazione, la prenotazione "
 "viene automaticamente annullata."
-msgstr ""
-
-#~ msgid "early booking"
-#~ msgstr "Vroegboekkorting"
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Anticipa l'estate a Punta Indiani"
-#~ msgstr "Zwemmen, wandelen, fietsen, en nog veel meer"
-
-#~ msgid "solo early booking"
-#~ msgstr "Alleen vroege boeking"
-
-#~ msgid "1&nbsp;settimana 2&nbsp;persone"
-#~ msgstr "1&nbsp;week 2&nbsp;personen"
-
-#~ msgid "settimana"
-#~ msgstr "week"
-
-#~ msgid "Non solo sole e lago"
-#~ msgstr "Zwemmen, wandelen, fietsen, en nog veel meer"
-
-#~ msgid "offerta-primavera"
-#~ msgstr "hemelvaart-pinksteren-aanbieding"
-
-#~ msgid "offerta primavera"
-#~ msgstr "Hemelvaart - Pinksteren aanbieding"
-
-#~ msgid "offerta-luglio"
-#~ msgstr "gezinsvakantie-aanbieding"
-
-#~ msgid "offerta luglio"
-#~ msgstr "gezinsvakantie aanbieding"
-
-#~ msgid "gallery"
-#~ msgstr ""
-
-#~ msgid "ora"
-#~ msgstr "nou"
-
-#~ msgid "prenota ora la tua piazzola preferita"
-#~ msgstr "boek nu uw favoriete plaats"
-
-#~ msgid "o richiedi informazioni"
-#~ msgstr "of klik hier voor meer informatie"
-
-#~ msgid "infanti"
-#~ msgstr "zuigelingen"
-
-#~ msgid "austria"
-#~ msgstr "Oostenrijk"
-
-#~ msgid "belgio"
-#~ msgstr "België"
-
-#~ msgid "danimarca"
-#~ msgstr "Denemarken"
-
-#~ msgid "germania"
-#~ msgstr "Duitsland"
-
-#~ msgid "italia"
-#~ msgstr "Italië"
-
-#~ msgid "olanda"
-#~ msgstr "Holland"
-
-#~ msgid "regno unito"
-#~ msgstr "UK"
-
-#~ msgid "swizzera"
-#~ msgstr "Zwitsers"
-
-#~ msgid "altro"
-#~ msgstr "meer"
-
-#~ msgid "ritorna alla home page"
-#~ msgstr "return to home page"
-
-#~ msgid "pictures"
-#~ msgstr ""
-
-#~ msgid "team"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "                            Abbiamo voluto integrare"
-#~ " il campeggio nell'ambiente naturale "
-#~ "originario,\n"
-#~ "                            le piazzole variano "
-#~ "per orientamento e dimensioni, seguendo "
-#~ "la particolare conformazione della penisola"
-#~ " di Punta Indiani.\n"
-#~ "                            "
-#~ msgstr ""
-#~ "Het kampeerterrein gaat geheel op in "
-#~ "de natuurlijke omgeving en de "
-#~ "karakteristieke vorm van het schiereiland "
-#~ "van Punta Indiani, dankzij de "
-#~ "verschillende afmetingen en ligging van "
-#~ "de standplaatsen."
-
-#~ msgid ""
-#~ "\n"
-#~ "                                            Direttamente "
-#~ "sulla spiaggia per vivere il lago "
-#~ "al 100%.\n"
-#~ "                                            Dal risveglio"
-#~ " della natura al mattino alla magia"
-#~ " dei chiari di luna,\n"
-#~ "                                            emozioni "
-#~ "uniche. La maggior parte delle piazzole"
-#~ " Aqva hanno il posto\n"
-#~ "                                            auto riservato"
-#~ " fuori piazzola.\n"
-#~ "                                        "
-#~ msgstr ""
-#~ "De camping ligt vlak aan het "
-#~ "strand om voor de volle 100% van"
-#~ " het meer te kunnen genieten. Unieke"
-#~ " emoties, van het ontwaken van de "
-#~ "natuur in de ochtend tot het "
-#~ "betoverende maanlicht in de avond. De"
-#~ " meeste standplaatsen Aqva hebben een "
-#~ "eigen parkeerplaats buiten de standplaats."
-
-#~ msgid ""
-#~ "\n"
-#~ "                                            Vista lago,"
-#~ " massimo 30m dalla spiaggia, maggiore "
-#~ "privacy...\n"
-#~ "                                            Stessa "
-#~ "atmosfera! A seconda delle dimensioni, "
-#~ "il posto auto è\n"
-#~ "                                            interno o "
-#~ "esterno alla piazzola.\n"
-#~ "                                        "
-#~ msgstr ""
-#~ "Met uitzicht op het meer en op "
-#~ "hoogstens 30m van het strand gelegen,"
-#~ " bieden de standplaatsen Panorama meer "
-#~ "privacy... maar zonder aan sfeer in "
-#~ "te boeten. Afhankelijk van de "
-#~ "oppervlakte, bevindt de parkeerplaats zich "
-#~ "binnen of buiten de standplaats."
-
-#~ msgid ""
-#~ "\n"
-#~ "                                        In un prato"
-#~ " a terrazze fra gli alberi, nella "
-#~ "zona più tranquilla\n"
-#~ "                                        del Camping, "
-#~ "da 50 a 100 m distanti dalla "
-#~ "spiaggia, le piazzole\n"
-#~ "                                        Relax sono "
-#~ "ampie ed adatte per gruppi di "
-#~ "amici, famiglie numerose,\n"
-#~ "                                        per chi ama"
-#~ " il suo spazio, la privacy ed "
-#~ "il relax e per chi viaggia\n"
-#~ "                                        con un amico a quattro zampe.\n"
-#~ "                                        "
-#~ msgstr ""
-#~ "De standplaatsen Relax liggen in een "
-#~ "terrasvormig gazon tussen de bomen, in"
-#~ " de rustigste zone van de Camping,"
-#~ " op 50 tot 100 m afstand van"
-#~ " het strand. Dit zijn grote "
-#~ "standplaatsen, geschikt voor groepen vrienden"
-#~ " en grote gezinnen en voor iedereen"
-#~ " die ruimte, privacy en relax wil,"
-#~ " of voor reizigers met honden."
-
-#~ msgid ""
-#~ "scegli la tua piazzola preferita e "
-#~ "richiedine la disponibilità compilando il "
-#~ "modulo"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "                    Se desideri una piazzola"
-#~ " vicino ai tuoi amici, un posto "
-#~ "particolarmente ampio o ombreggiato o "
-#~ "soleggiato o vicino al parco giochi "
-#~ "o ai servizi,\n"
-#~ "                    se c'è bisogno di "
-#~ "ulteriore spazio, fuori dalla piazzola "
-#~ "per una seconda auto, un carrello, "
-#~ "una barca, una tendina e per ogni"
-#~ " esigenza particolare,\n"
-#~ "                    specificalo  nelle “note” "
-#~ "e faremo del nostro meglio per "
-#~ "offrire la piazzola più adatta.\n"
-#~ "                    "
-#~ msgstr ""
-#~ "Als je dicht bij je vrienden wil"
-#~ " staan, een extra grote standplaats, "
-#~ "een plaats in de schaduw of juist"
-#~ " in de zon wil, of de voorkeur"
-#~ " geeft aan een plaats in de "
-#~ "buurt van de speeltuin of de "
-#~ "faciliteiten wil staan, wanneer je een "
-#~ "extra plek buiten de staanplaats voor"
-#~ " een tweede auto, boot, aanhanger of"
-#~ " een kleine tent nodig heeft, of "
-#~ "voor een ander speciaal doel: Aarzel "
-#~ "niet en geef je wens aan in "
-#~ "het veld “Opmerkingen”. Wij zullen "
-#~ "altijd proberen de geschikte plek te "
-#~ "bieden."
-
-#~ msgid "il regolamento"
-#~ msgstr "verordening"
-
-#~ msgid ""
-#~ "We would like to stay next to "
-#~ "our friend Jhon Smith and, if "
-#~ "possible, have a place with some "
-#~ "shadow."
-#~ msgstr ""
-
-#~ msgid "Relax e Privacy nel verde"
-#~ msgstr "Relax &amp; Privacy in het groen"
-
+msgstr "Als u niet aankomt voor 11:00 uur de dag na uw geplande aankomstdatum wordt uw reservering automatisch geannuleerd."

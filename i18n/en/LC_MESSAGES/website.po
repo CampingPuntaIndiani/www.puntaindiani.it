@@ -470,7 +470,7 @@ msgstr "Camping holiday with the dog - site of Camping Punta Indiani"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:391
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:39
 msgid "Relax &amp; Privacy nel verde"
-msgstr "Relax and Privacy in the green Nature"
+msgstr "Relax &amp; Privacy in the green Nature"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:429
 msgid "Un mondo da scoprire"

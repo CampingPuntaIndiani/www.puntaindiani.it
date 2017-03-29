@@ -468,7 +468,7 @@ msgstr "Campingurlaub mit dem Hund - Website von Camping Punta Indiani"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:391
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:39
 msgid "Relax &amp; Privacy nel verde"
-msgstr ""
+msgstr "Relax &amp; Privacy in het groen"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:429
 msgid "Un mondo da scoprire"
