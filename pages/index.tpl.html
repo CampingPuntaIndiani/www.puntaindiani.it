@@ -45,6 +45,7 @@
             .white {background-color: #fff}
             .nobg {background-color: transparent}
             .help::first-letter {text-transform: capitalize}
+            input[type=checkbox]{vertical-align: middle}
         </style>
     </head>
     <body class="nojs {{lang}}">
@@ -728,7 +729,7 @@
                                         <div class="control">
                                             <span class="select"><select id="adults" name="adults" required><option value="">&nbsp;</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">&gt;5</option></select></span><br>
                                         </div>
-                                        <span class="help">{{ _('totale adulti') }}</span>
+                                        <span class="help">{{ _('totale adulti') }} (&ge;13)</span>
                                     </div>
 
                                     <div class="column">
@@ -764,7 +765,7 @@
                                     <div class="column">
                                         <label class="label" for="extras">extra</label>
                                         <div class="control"><span class="select"><select id="extras" name="extras"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></span></div>
-                                        <span class="help">2<sup>nd</sup>{{ _('auto, barca') }}, ...</span>
+                                        <span class="help">2nd&nbsp;{{ _('auto, barca') }}, ...</span>
                                     </div>
                                 </div>
                             </fieldset>
@@ -836,14 +837,15 @@
                         <div class="column">
                             <fieldset class="is-centered">
                                 <legend>{{ _('Condizioni') }}</legend>
-                                <p class="control has-text-centered">
-                                    <label class="checkbox"><input type="checkbox" name="CR" id="CR" checked required />&nbsp;{{ _('accetto') }}</label>
+                                <p class="control has-text-centered" style="text-transform:capitalize">
+                                    {{ _('accetto') }}:
+                                    <label class="checkbox"><input type="checkbox" name="CR" id="CR" checked required />&nbsp;</label>
                                     <a href="{{ _('regolamento') }}.html" target="_blank" data-modal="{{ _('regolamento') }}">{{ _('regolamento') }}</a>.
                                     &nbsp;&nbsp;
-                                    <label class="checkbox"><input type="checkbox" name="PP" id="PP" checked required />&nbsp;{{ _('accetto') }}</label>
+                                    <label class="checkbox"><input type="checkbox" name="PP" id="PP" checked required />&nbsp;</label>
                                     <a href="privacy.html" target="_blank" data-modal="Privacy Policy">privacy policy</a>.
                                     &nbsp;&nbsp;
-                                    <label class="checkbox"><input type="checkbox" name="TC" id="TC" checked required />&nbsp;{{ _('accetto') }}</label>
+                                    <label class="checkbox"><input type="checkbox" name="TC" id="TC" checked required />&nbsp;</label>
                                     <a href="sell_conditions.html" target="_blank" data-modal="{{ _('condizioni di vendita') }}">{{ _('condizioni di vendita') }}</a>.
                                 </p>
                             </fieldset>
@@ -851,7 +853,7 @@
                     </div>
 
                     <fieldset>
-                        <legend>note</legend>
+                        <legend>{{ _('Note') }}</legend>
                         <div class="columns">
                             <div class="column content">
                                 <p>
