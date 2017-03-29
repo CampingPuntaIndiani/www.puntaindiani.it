@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-03-29 21:12+0200\n"
+"POT-Creation-Date: 2017-03-29 22:17+0200\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language: en\n"
@@ -79,8 +79,9 @@ msgid ""
 "                        auto riservato fuori piazzola.\n"
 "                    "
 msgstr ""
-"Right on the beach to fully experience the lake. From the Nature awakening at dawn to the magic of moonlights, unmatchable experiences. Most of “Aqua” pitches have a private parking space close to them."
-
+"Right on the beach to fully experience the lake. From the Nature "
+"awakening at dawn to the magic of moonlights, unmatchable experiences. "
+"Most of “Aqua” pitches have a private parking space close to them."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:55
 msgid ""
@@ -415,8 +416,9 @@ msgid ""
 "amico a 4 zampe...porta anche lui.\n"
 "                            "
 msgstr ""
-"Share a new idea of holiday with your family, friends or your significant other and if you've got a four-legged friend... Well, bring it along as well!"
-
+"Share a new idea of holiday with your family, friends or your significant"
+" other and if you've got a four-legged friend... Well, bring it along as "
+"well!"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:282
 msgid "le nostre piazzole"
@@ -432,15 +434,17 @@ msgid ""
 "Punta Indiani.\n"
 "                                    "
 msgstr ""
-"Our goal has been to integrate the campsite to the surrounding original natural environment. Our pitches vary in position and size, following the peculiar shape of the Punta Indiani peninsula."
-
+"Our goal has been to integrate the campsite to the surrounding original "
+"natural environment. Our pitches vary in position and size, following the"
+" peculiar shape of the Punta Indiani peninsula."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:312
 msgid ""
 "Grande piazzola sull'erba  in riva al Lago di Caldonazzo al Camping Punta"
 " Indiani"
 msgstr ""
-"Large grassy place on the shore of Lake Caldonazzo at Camping Punta Indiani"
+"Large grassy place on the shore of Lake Caldonazzo at Camping Punta "
+"Indiani"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:334
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:372
@@ -1255,7 +1259,9 @@ msgid ""
 "interno o esterno alla piazzola.\n"
 "                        "
 msgstr ""
-"Lakefront, maximum 30 mt from the beach, more privacy... same atmosphere! Depending on the size, the parking space is either inside or outside the Panorama pitch."
+"Lakefront, maximum 30 mt from the beach, more privacy... same atmosphere!"
+" Depending on the size, the parking space is either inside or outside the"
+" Panorama pitch."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:52
 msgid ""
@@ -1508,7 +1514,11 @@ msgid ""
 "                        con un amico a quattro zampe.\n"
 "                        "
 msgstr ""
-"On a ledgelawn among the trees, in the quietest area of the Camping site, 50 to 100 mt away from the beach, “Relax” pitches are ample and suitable for groups of friends, large families, for those who love having their own space, privacy or relax and for those who travel with a four-legged friend."
+"On a ledgelawn among the trees, in the quietest area of the Camping site,"
+" 50 to 100 mt away from the beach, “Relax” pitches are ample and suitable"
+" for groups of friends, large families, for those who love having their "
+"own space, privacy or relax and for those who travel with a four-legged "
+"friend."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:55
 msgid ""
@@ -1546,7 +1556,10 @@ msgid ""
 "caparra, esclusi €10,00 Euro di spese di prenotazione. Successivamente "
 "non c’è diritto ad alcun rimborso."
 msgstr ""
-"If you cancel your reservation at least 14 days before your arrival your deposit will be refunded except Euro 10,00 as cancellation fees. If you cancel your reservation within 14 days before your arrival you will not be refunded."
+"If you cancel your reservation at least 14 days before your arrival your "
+"deposit will be refunded except Euro 10,00 as cancellation fees. If you "
+"cancel your reservation within 14 days before your arrival you will not "
+"be refunded."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:21
 msgid "Arrivi posticipati "
@@ -1557,4 +1570,7 @@ msgid ""
 "Qualora la piazzola non fosse stata occupata entro le ore 12.00 del "
 "giorno successivo a quello indicato nella prenotazione, la prenotazione "
 "viene automaticamente annullata."
-msgstr "If you don’t arrive before 11.00 a.m. of the day after the day you are due to arrive, your reservation will be automatically cancelled."
+msgstr ""
+"If you don’t arrive before 11.00 a.m. of the day after the day you are "
+"due to arrive, your reservation will be automatically cancelled."
+
