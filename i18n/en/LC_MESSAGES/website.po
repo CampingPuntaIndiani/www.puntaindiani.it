@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-03-27 23:54+0200\n"
+"POT-Creation-Date: 2017-03-29 21:12+0200\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language: en\n"
@@ -79,6 +79,8 @@ msgid ""
 "                        auto riservato fuori piazzola.\n"
 "                    "
 msgstr ""
+"Right on the beach to fully experience the lake. From the Nature awakening at dawn to the magic of moonlights, unmatchable experiences. Most of “Aqua” pitches have a private parking space close to them."
+
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/aqva.tpl.html:55
 msgid ""
@@ -413,6 +415,8 @@ msgid ""
 "amico a 4 zampe...porta anche lui.\n"
 "                            "
 msgstr ""
+"Share a new idea of holiday with your family, friends or your significant other and if you've got a four-legged friend... Well, bring it along as well!"
+
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:282
 msgid "le nostre piazzole"
@@ -428,12 +432,15 @@ msgid ""
 "Punta Indiani.\n"
 "                                    "
 msgstr ""
+"Our goal has been to integrate the campsite to the surrounding original natural environment. Our pitches vary in position and size, following the peculiar shape of the Punta Indiani peninsula."
+
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:312
 msgid ""
 "Grande piazzola sull'erba  in riva al Lago di Caldonazzo al Camping Punta"
 " Indiani"
 msgstr ""
+"Large grassy place on the shore of Lake Caldonazzo at Camping Punta Indiani"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:334
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:372
@@ -459,7 +466,7 @@ msgstr "Camping holiday with the dog - site of Camping Punta Indiani"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:391
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:39
 msgid "Relax &amp; Privacy nel verde"
-msgstr ""
+msgstr "Relax and Privacy in the green Nature"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:429
 msgid "Un mondo da scoprire"
@@ -505,11 +512,11 @@ msgid ""
 "                                Raggiungi Venezia ed esplora la Valsugana"
 " con la tua bicicletta.\n"
 "                                "
-msgstr ""
+msgstr "Reach Venice and explore the Valsugana with your bike."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:476
 msgid "Scarica la"
-msgstr "download the"
+msgstr "Download the"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:476
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:508
@@ -589,19 +596,19 @@ msgstr "more photoes"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:615
 msgid "scegli la tua piazzola preferita!"
-msgstr ""
+msgstr "choose your favourite pitch!"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:616
 msgid "richiedine la disponibilità compilando il modulo"
-msgstr ""
+msgstr "check availability filling out the form below"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:617
 msgid "oppure chiedi informazioni"
-msgstr ""
+msgstr "or ask for more information"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:617
 msgid "scrivendo a"
-msgstr "write to"
+msgstr "writing to"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:632
 msgid "quando"
@@ -915,7 +922,7 @@ msgstr "rules"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:847
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:13
 msgid "condizioni di vendita"
-msgstr ""
+msgstr "sell conditions"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:858
 msgid ""
@@ -956,7 +963,7 @@ msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:887
 msgid "invia richiesta"
-msgstr ""
+msgstr "send request"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:51
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:540
@@ -1248,6 +1255,7 @@ msgid ""
 "interno o esterno alla piazzola.\n"
 "                        "
 msgstr ""
+"Lakefront, maximum 30 mt from the beach, more privacy... same atmosphere! Depending on the size, the parking space is either inside or outside the Panorama pitch."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/panorama.tpl.html:52
 msgid ""
@@ -1500,6 +1508,7 @@ msgid ""
 "                        con un amico a quattro zampe.\n"
 "                        "
 msgstr ""
+"On a ledgelawn among the trees, in the quietest area of the Camping site, 50 to 100 mt away from the beach, “Relax” pitches are ample and suitable for groups of friends, large families, for those who love having their own space, privacy or relax and for those who travel with a four-legged friend."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/relax.tpl.html:55
 msgid ""
@@ -1525,11 +1534,11 @@ msgstr "Shepherd dog on the grass . Holiday with the dog at Camping Punta Indian
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:14
 msgid "A conferma della prenotazione viene richiesta una caparra."
-msgstr ""
+msgstr "To finalize the booking process  we’ll ask a deposit."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:17
 msgid "Annullamento"
-msgstr ""
+msgstr "Cancellation"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:18
 msgid ""
@@ -1537,114 +1546,15 @@ msgid ""
 "caparra, esclusi €10,00 Euro di spese di prenotazione. Successivamente "
 "non c’è diritto ad alcun rimborso."
 msgstr ""
+"If you cancel your reservation at least 14 days before your arrival your deposit will be refunded except Euro 10,00 as cancellation fees. If you cancel your reservation within 14 days before your arrival you will not be refunded."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:21
 msgid "Arrivi posticipati "
-msgstr ""
+msgstr "Late arrivals"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/sell_conditions.tpl.html:22
 msgid ""
 "Qualora la piazzola non fosse stata occupata entro le ore 12.00 del "
 "giorno successivo a quello indicato nella prenotazione, la prenotazione "
 "viene automaticamente annullata."
-msgstr ""
-
-#~ msgid "early booking"
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Anticipa l'estate a Punta Indiani"
-#~ msgstr "Swimming, hiking, cycling and much more"
-
-#~ msgid "solo early booking"
-#~ msgstr "early booking only"
-
-#~ msgid "1&nbsp;settimana 2&nbsp;persone"
-#~ msgstr "1&nbsp;week 2&nbsp;persons"
-
-#~ msgid "settimana"
-#~ msgstr "week"
-
-#~ msgid "Non solo sole e lago"
-#~ msgstr "Swimming, hiking, cycling and much more"
-
-#~ msgid "offerta-primavera"
-#~ msgstr "the-pentecost-holiday-on-the-lake"
-
-#~ msgid "offerta primavera"
-#~ msgstr "The Pentecost Holiday on the Lake"
-
-#~ msgid "offerta-luglio"
-#~ msgstr "family-holiday"
-
-#~ msgid "offerta luglio"
-#~ msgstr "Family holiday"
-
-#~ msgid "gallery"
-#~ msgstr ""
-
-#~ msgid "ora"
-#~ msgstr "now"
-
-#~ msgid "prenota ora la tua piazzola preferita"
-#~ msgstr "book now your favourite pitch"
-
-#~ msgid "o richiedi informazioni"
-#~ msgstr "or ask for more information"
-
-#~ msgid "infanti"
-#~ msgstr "infants"
-
-#~ msgid "austria"
-#~ msgstr "austria"
-
-#~ msgid "belgio"
-#~ msgstr "belgium"
-
-#~ msgid "danimarca"
-#~ msgstr "denmark"
-
-#~ msgid "germania"
-#~ msgstr "germany"
-
-#~ msgid "italia"
-#~ msgstr "italy"
-
-#~ msgid "olanda"
-#~ msgstr "holland"
-
-#~ msgid "regno unito"
-#~ msgstr "UK"
-
-#~ msgid "swizzera"
-#~ msgstr "swiss"
-
-#~ msgid "altro"
-#~ msgstr "other"
-
-#~ msgid "ritorna alla home page"
-#~ msgstr "return to home page"
-
-#~ msgid "Relax e Privacy nel verde"
-#~ msgstr "Relax and Privacy in the green Nature"
-
-#~ msgid "scegli la tua piazzola preferita"
-#~ msgstr ""
-
-#~ msgid "il regolamento"
-#~ msgstr "the rules"
-
-#~ msgid "team"
-#~ msgstr ""
-
-#~ msgid "pictures"
-#~ msgstr ""
-
-#~ msgid "month"
-#~ msgstr ""
-
-#~ msgid "day"
-#~ msgstr ""
-
+msgstr "If you don’t arrive before 11.00 a.m. of the day after the day you are due to arrive, your reservation will be automatically cancelled."
