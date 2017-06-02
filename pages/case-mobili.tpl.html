@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/images/favicon.png">
+
+        {% include 'intern.inc.html' %}
+
+        <link rel="stylesheet" href="/css/bulma.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+        <style type="text/css">
+            .hero.mh-hero {
+                background: url('/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_TentOnCaldonazzoLakeBeach_asHeader.jpg') no-repeat center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body class="nojs">
+        <section class="hero is-info is-large mh-hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1" style="text-transform:capitalize">{{ _('case mobili') }}</h1>
+                    <p><a href="index.html?pitch=mobilehome#{{ _('prenota') }}" class="button is-upper is-info is-large">{{ _('richiedi disponibilità') }}</a></p>
+                </div>
+            </div>
+            {% include "cookies.inc.html" %}
+        </section>
+
+        <!-- {% include 'menu-piazzola.inc.html' %} -->
+
+
+        <section class="section">
+            <div class="content container is-large">
+                <h1>{{ _('Case Mobili, comodità e relax') }}</h1>
+                <div class="big-quote" style="width:80%">
+                    <p>
+                    {% trans %}
+                    Ogni unità abitativa, con superficie di 24 mq, può ospitare da 2 a 6 persone.
+                    Le case mobili sono dotate di camera matrimoniale, camera doppia, cucina attrezzata con dinette estraibile (1 o 2 posti letto), bagno con doccia/WC. Non viene fornita la biancheria da letto, da cucina e da bagno.
+                    {% endtrans %}
+                    </p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="columns">
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_CaravanOnCaldonazzoLakeBeach.jpg" alt="{% trans %}Roulotte sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_TentOnCaldonazzoLakeBeach.jpg"    alt="{% trans %}Tenda sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
+                    <figure class="column is-one-third image is3by2"><img src="/images/Accomodations/CampingPuntaIndiani_AccomodationAqva_CamperOnCaldonazzoLakeBeach.jpg"  alt="{% trans %}Camper sulla spiaggia del Campeggio Punta Indiani, sul Lago di Caldonazzo{% endtrans %}"></figure>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="container content has-text-centered"><p><a href="index.html?pitch=mobilehome#{{ _('prenota') }}" class="button is-upper is-info is-large is-fullwidth">{{ _('richiedi disponibilità') }}&nbsp;{{ _('case mobili') }}</a></p></div>
+        </section>
+
+
+        <section class="section">
+            <div class="container content">
+                <h1>{{ _('prezzi') }} 2017</h1>
+                <p>{{ _('Il <strong>prezzo include</strong>: acqua, gas, elettricità, un posto auto ed il numero di persone indicate nella tabella.') }}</p>
+                <p>{{ _('Tassa soggiorno: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.') }}</p>
+                <a href="camping_map.html" target="_blank" data-modal="{{ _('mappa del campeggio') }}"><i class="fa fa-map">&nbsp;</i>{{ _('mappa del campeggio') }}</a>
+            </div>
+            <div class="container content is-medium">
+                <!-- TODO: add vertical version for mobile -->
+                <table class="table is-bordered is-narrow is-capitalize">
+                    <thead>
+                        <tr>
+                            <th class="has-text-centered">28/04 – 02/07</th>
+                            <th class="has-text-centered">02/07 – 15/07</th>
+                            <th class="has-text-centered">15/07 – 26/08</th>
+                            <th class="has-text-centered">26/08 – 09/09</th>
+                            <th class="has-text-centered">09/09 - 30/09</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="has-text-centered">
+                            <td class="has-text-centered">&euro;45.</td>
+                            <td class="has-text-centered">&euro;60.</td>
+                            <td class="has-text-centered">&euro;120.</td>
+                            <td class="has-text-centered">&euro;60</td>
+                            <td class="has-text-centered">&euro;45</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-centered" colspan="2"><small class="is-upper">{{ _('incluse') }} 2 {{ _('persone') }}</small></td>
+                            <td class="has-text-centered"><small class="is-upper">{{ _('incluse') }} 4 {{ _('persone') }}</small></td>
+                            <td class="has-text-centered" colspan="2"><small class="is-upper">{{ _('incluse') }} 2 {{ _('persone') }}</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {% include 'prices_extra_table.inc.html' %}
+            <div class="container content has-text-centered"><p><a href="index.html?pitch=mobilehome#{{ _('prenota') }}" class="button is-upper is-info is-large is-fullwidth">{{ _('richiedi disponibilità') }}&nbsp;{{ _('case mobili') }}</a></p></div>
+        </section>
+
+        <section class="section">
+            <div class="container content">
+                <h1>{{ _('condizioni di vendita') }}</h1>
+                {% trans %}
+                <p>All'arrivo la casa mobile sarà disponibile dalle ore 15.00.</p>
+                <p>Il giorno della partenza va lasciata libera entro le ore 10.00.</p>
+                <p>La casa mobile e l’angolo cottura dovranno essere riconsegnati puliti ed ordinati; in caso contrario verranno addebitati € 40,00 per la pulizia.</p>
+                <p>Al momento dell'arrivo verrà chiesto il saldo dell'intero soggiorno, in caso di partenza anticipata non sono previsti rimborsi.</p>
+                <p>Gli ospiti sono tenuti a rispettare il regolamento interno del camping.</p>
+                <p>Gli animali non sono ammessi.</p>
+                {% endtrans %}
+
+                <h2 class="is-capitalize">{{ _('prenotazioni') }}</h2>
+                <p>Per la prenotazione di case mobili (minimo 3 giorni ) viene richiesta una caparra.</p>
+
+                <h2 class="is-capitalize">{{ _('annullamento') }}</h2>
+                <p>In caso di rinuncia entro 14 giorni dall’arrivo, viene rimborsata la caparra, esclusi €10,00 Euro di spese di prenotazione. Successivamente non c’è diritto ad alcun rimborso.</p>
+
+                <h2 class="is-capitalize">{{ _('arrivo posticipato') }}</h2>
+                <p>Qualora la casa mobile non fosse stata occupata entro le ore 11.00 del giorno successivo a quello indicato nella prenotazione, la prenotazione viene automaticamente annullata.</p>
+            </div>
+            <div class="container content has-text-centered"><p><a href="index.html?pitch=mobilehome#{{ _('prenota') }}" class="button is-upper is-info is-large is-fullwidth">{{ _('richiedi disponibilità') }}&nbsp;{{ _('case mobili') }}</a></p></div>
+        </section>
+
+
+
+        {% include 'footer.inc.html' %}
+        {% include 'google.inc.html' %}
+
+    </body>
+
+    <!--
+    // vim: spelllang=it
+    -->
+</html>
