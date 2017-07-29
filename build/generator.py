@@ -38,7 +38,6 @@ PAGES_MAP = {
             'nl' : 'prijzen',
             'de' : 'preise',
             },
-
         'mappa_campeggio' : {
             'en' : 'camping_map',
             'nl' : 'camping_map',
@@ -49,6 +48,11 @@ PAGES_MAP = {
             'nl' : 'verordening',
             'de' : 'regeln',
             },
+        'case-mobili': {
+            'en' : 'mobile-homes',
+            'nl' : 'mobile-homes',
+            'de' : 'mobile-homes',
+            }
         }
 
 def generate():
