@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-07-29 17:23+0200\n"
+"POT-Creation-Date: 2017-07-29 17:35+0200\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language: nl\n"
@@ -165,17 +165,18 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:104
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:134
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:440
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:450
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:465
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:719
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:728
 #: /Users/martin/Projects/www.puntaindiani.it/pages/menu-piazzola.inc.html:8
 msgid "case mobili"
-msgstr ""
+msgstr "stacaravan"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:39
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:441
 msgid "naturalmente confortevole"
-msgstr ""
+msgstr "campingsfeer met comfort"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:42
 msgid ""
@@ -184,6 +185,8 @@ msgid ""
 "campeggio in un'esperienza unica da vivere in famiglia.\n"
 "                    "
 msgstr ""
+"Een super combinatie van comfort, gecombineerd met de vrijheid van het "
+"camping leven, om zo het camping gevoel te ervaren met je geziz."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:70
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:117
@@ -199,6 +202,9 @@ msgid ""
 "Il <strong>prezzo include</strong>: acqua, gas, elettricità, un posto "
 "auto ed il numero di persone indicate nella tabella."
 msgstr ""
+"De <strong>prijs van de stacaravan is inclusief</strong>: Water, gas, "
+"elektriciteit, parkeerplaats voor een auto en in de tabel aangegeven "
+"aantal personen. De prijs is exclusief toeristen belasting."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:72
 #: /Users/martin/Projects/www.puntaindiani.it/pages/prices_txt.inc.html:15
@@ -206,6 +212,8 @@ msgid ""
 "Tassa soggiorno: &euro;1 a persona (anni≥14) per i primi 10 giorni di "
 "soggiorno."
 msgstr ""
+"Toeristen belasting: €1 per persoon (jaar≥14) voor de eerste 10 dagen van"
+" het verblijf."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:73
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:97
@@ -221,7 +229,7 @@ msgstr "camping kaart"
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:97
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:98
 msgid "incluse"
-msgstr ""
+msgstr "inclusief"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:96
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:97
@@ -264,20 +272,32 @@ msgid ""
 "                <p>Gli animali non sono ammessi.</p>\n"
 "                "
 msgstr ""
+"<p>Elke stacaravan (24 m²) is geschikt voor 2-6 personen en is voorzien "
+"van twee slaapkamers, volledig uitgeruste keuken met een eethoek waarvan "
+"1 of 2 bedden gemaakt kunnen worden, badkamer met douche/WC, De "
+"stacaravans zijn niet voorzien van bedlinnen en keuken- en badhanddoeken."
+" Geen huisdieren toegestaanDe stacaravan en de keuken moeten door de "
+"klant schoon achtergelaten worden, anders wordt € 40 in rekening "
+"gebracht.</p><p>De sleutel van de stacaravan is beschikbaar vanaf 15:00 "
+"uur. Op de dag van vertrek moet de stacaravan verlaten zijn voor 10:00 "
+"uur. U kunt de rest van de dag nog gebruik maken van de "
+"faciliteiten.</p><p>Betaling bij aankomst op de camping, er wordt geen "
+"restitutie verstrekt bij een late aankomst of vervroegd "
+"vertrek.</p><p>Huisdieren zijn niet toegestaan</p>"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:125
 msgid "prenotazioni"
-msgstr ""
+msgstr "reserveren"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:126
 msgid ""
 "Per la prenotazione di case mobili (minimo 3 giorni ) viene richiesta una"
 " caparra."
-msgstr ""
+msgstr "Om uw boeking te bevestigen  vragen wij u een aanbetaling te doen."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:128
 msgid "annullamento"
-msgstr ""
+msgstr "annulering"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:129
 msgid ""
@@ -285,10 +305,14 @@ msgid ""
 "caparra, esclusi €10,00 Euro di spese di prenotazione. Successivamente "
 "non c’è diritto ad alcun rimborso."
 msgstr ""
+"Als u uw reservering tot 14 dagen voor uw aankomst annuleert, krijgt u uw"
+" aanbetaling terug, exclusief €10,- als annuleringskosten. Als u uw "
+"reservering binnen 14 dagen voor uw aankomst annuleert krijgt u uw "
+"aanbetaling niet terug."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:131
 msgid "arrivo posticipato"
-msgstr ""
+msgstr "late aankomst"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:132
 msgid ""
@@ -296,6 +320,8 @@ msgid ""
 "giorno successivo a quello indicato nella prenotazione, la prenotazione "
 "viene automaticamente annullata."
 msgstr ""
+"Als u niet aankomt voor 11:00 uur op de dag na uw geplande aankomstdatum "
+"wordt uw reservering automatisch geannuleerd."
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/footer.inc.html:1
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:102
@@ -624,14 +650,10 @@ msgid ""
 "Caldonazzo in Trentino"
 msgstr ""
 
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:450
-msgid "casa mobili"
-msgstr ""
-
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:464
 #: /Users/martin/Projects/www.puntaindiani.it/pages/menu-piazzola.inc.html:8
 msgid "case-mobili"
-msgstr ""
+msgstr "stacaravan"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:483
 msgid "Un mondo da scoprire"
@@ -1714,5 +1736,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
+#~ msgstr ""
+
+#~ msgid "casa mobili"
 #~ msgstr ""
 

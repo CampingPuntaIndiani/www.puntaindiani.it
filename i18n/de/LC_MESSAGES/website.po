@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-07-29 17:23+0200\n"
+"POT-Creation-Date: 2017-07-29 17:35+0200\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language: de\n"
@@ -161,6 +161,7 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:104
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:134
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:440
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:450
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:465
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:719
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:728
@@ -649,10 +650,6 @@ msgstr "Relax &amp; Privacy im Grün"
 msgid ""
 "Case mobili presso Campeggio Punta indiani direttamente sul Lago di "
 "Caldonazzo in Trentino"
-msgstr ""
-
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:450
-msgid "casa mobili"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:464
@@ -1746,5 +1743,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
+#~ msgstr ""
+
+#~ msgid "casa mobili"
 #~ msgstr ""
 

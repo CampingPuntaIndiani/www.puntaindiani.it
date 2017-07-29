@@ -50,7 +50,7 @@ PAGES_MAP = {
             },
         'case-mobili': {
             'en' : 'mobile-homes',
-            'nl' : 'mobile-homes',
+            'nl' : 'stacaravan',
             'de' : 'mobilheimes',
             }
         }
