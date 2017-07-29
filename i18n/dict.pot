@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-07-29 18:34+0200\n"
+"POT-Creation-Date: 2017-07-29 18:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -183,6 +183,12 @@ msgstr ""
 msgid ""
 "&hellip; dove il comfort si fonde con la libertà del campeggio in "
 "un'esperienza unica da vivere in famiglia."
+msgstr ""
+
+#: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:18
+#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:475
+#: /Users/martin/Projects/www.puntaindiani.it/pages/menu-piazzola.inc.html:8
+msgid "case-mobili"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/case-mobili.tpl.html:55
@@ -579,11 +585,6 @@ msgstr ""
 msgid ""
 "Case mobili presso Campeggio Punta indiani direttamente sul Lago di "
 "Caldonazzo in Trentino"
-msgstr ""
-
-#: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:475
-#: /Users/martin/Projects/www.puntaindiani.it/pages/menu-piazzola.inc.html:8
-msgid "case-mobili"
 msgstr ""
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/index.tpl.html:494
