@@ -312,7 +312,7 @@ var SectionHandler = function() {
     Array.prototype.forEach.call(document.querySelectorAll('section'), function(sec){
         Sections.push({'id':sec.id, 'top':sec.offsetTop, 'gaid': sec.dataset.gaid});
     });
-    Array.prototype.sort(Sections, function(a,b){return a.top-b.top;});
+    Sections.sort(function(a,b){return a.top-b.top; });
 
     var LastSec;
     window.addEventListener('scroll', function(){
@@ -423,6 +423,18 @@ var BindExtraAnalitycs = function () {
         });
 };
 
+var BindNews = function() {
+    "use strict";
+    var news_btn = document.getElementById('close-news');
+    if (!news_btn) return
+    news_btn.addEventListener('click', function () {
+        var news = document.getElementById('news');
+        if (news) {
+            news.style.display = "none";
+        }
+    });
+};
+
 (function(){
     "use strict";
 
@@ -451,4 +463,7 @@ var BindExtraAnalitycs = function () {
     LifeAnimation();
 
     BindExtraAnalitycs();
+
+    BindNews();
 })();
+

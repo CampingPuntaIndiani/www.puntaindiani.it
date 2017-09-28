@@ -187,12 +187,11 @@
         <section class="section" id="{{ _('il-campeggio') }}"  data-gaid="il-campeggio">
             <div class="container">
                 <div class="content is-medium has-text-centered">
-                    <!-- News bar
-                    <div class="notification">
-                    <button class="delete"></button>
-                    New 2017: 6A in all places | mobilehomes | 100Mb/s wifi
+                    <div class="notification is-info is-upper" id="news">
+                        <!-- New 2017: 6A in all places | mobilehomes | 100Mb/s wifi -->
+                        {{ _('Aperto fino al 3 ottobre') }}
+                        <button class="delete" id="close-news"></button>
                     </div>
-                    -->
                     <h1 class="title is-1 is-upper">{{ _('campeggiare è una passione') }}.</h1>
                     <p>
                         {% trans %}
@@ -208,7 +207,7 @@
                         {% endtrans %}
                     </p>
 
-                    <i>{% trans %}Vi aspettiamo dal 28 aprile al 30 settembre{% endtrans %}</i>
+                    <i>{% trans %}Vi aspettiamo dal 28 aprile al 03 ottobre{% endtrans %}</i>
                 </div>
 
                 <div class="content is-medium has-text-justify is-target" id="{{ _('maggiori-dettagli-sul-campeggio') }}">
@@ -693,23 +692,23 @@
                             <label class="label">{{ _('quando') }}</label>
                             <span class="help is-hidden-widescreen">{{ _('date di arrivo e partenza') }}</span>
                             <div class="control is-centered">
-                                <input type="hidden" id="arrival" data-min="2017-04-26" data-max="2017-09-29">
+                                <input type="hidden" id="arrival" data-min="2017-04-26" data-max="2017-10-02">
                                 <input type="hidden" id="arrival_year" name="start_year" value="2017">
 
                                 <span class="control has-addons inline">
                                     <a class="button is-white is-disabled">2017</a>
-                                    <span class="select"><select id="arrival_month" name="start_month"><option value="">&nbsp;</option><option value="04">{{ _('Aprile') }}</option><option value="05">{{ _('Maggio') }}</option><option value="06">{{ _('Giugno') }}</option><option value="07">{{ _('Luglio') }}</option><option value="08">{{ _('Agosto') }}</option><option value="09">{{ _('Settembre') }}</option></select></span>
+                                    <span class="select"><select id="arrival_month" name="start_month"><option value="">&nbsp;</option><option value="04">{{ _('Aprile') }}</option><option value="05">{{ _('Maggio') }}</option><option value="06">{{ _('Giugno') }}</option><option value="07">{{ _('Luglio') }}</option><option value="08">{{ _('Agosto') }}</option><option value="09">{{ _('Settembre') }}</option><option value="10">{{ _('Ottobre') }}</option></select></span>
                                     <span class="select"><select id="arrival_day"   name="start_day"><option value="">&nbsp;</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></span>
                                 </span>
 
                                 <span class="icon is-medium is-hidden-touch is-hidden-desktop-only"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
 
-                                <input type="hidden" id="departure" data-min="2017-04-27" data-max="2017-09-30">
+                                <input type="hidden" id="departure" data-min="2017-04-27" data-max="2017-10-03">
                                 <input type="hidden" id="departure_year" name="end_year" value="2017">
 
                                 <span class="control has-addons inline">
                                     <a class="button is-white is-disabled">2017</a>
-                                    <span class="select"><select id="departure_month" name="end_month"><option value="">&nbsp;</option><option value="04">{{ _('Aprile') }}</option><option value="05">{{ _('Maggio') }}</option><option value="06">{{ _('Giugno') }}</option><option value="07">{{ _('Luglio') }}</option><option value="08">{{ _('Agosto') }}</option><option value="09">{{ _('Settembre') }}</option></select></span>
+                                    <span class="select"><select id="departure_month" name="end_month"><option value="">&nbsp;</option><option value="04">{{ _('Aprile') }}</option><option value="05">{{ _('Maggio') }}</option><option value="06">{{ _('Giugno') }}</option><option value="07">{{ _('Luglio') }}</option><option value="08">{{ _('Agosto') }}</option><option value="09">{{ _('Settembre') }}</option><option value="10">{{ _('Ottobre') }}</option></select></span>
                                     <span class="select"><select id="departure_day"   name="end_day"><option value="">&nbsp;</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select></span>
                                 </span>
                             </div>
@@ -762,9 +761,10 @@
                                             <option value="o-spring" data-id="{{ _('offerta-primavera') }}">{{ _('offerta primavera') }}</option>
                                             <option value="o-july" data-id="{{ _('offerta-luglio') }}">{{ _('offerta luglio') }}</option>
                                         #}
-                                            <option value="o-weekend" data-id="{{ _('offerta-week-end-lunghi') }}">{{ _('offerta week-end lunghi') }}</option>
+                                            <option value="o-weekend" data-id="{{ _('offerta-week-end-lunghi') }}">{{ _('week-end di fine estate') }}</option>
                                             <option value="o-bicycle" data-only='bicycle' data-id="{{ _('offerta-bici-e-tendina') }}">{{ _('offerta bici e tendina') }}</option>
                                         </optgroup>
+                                        {#
                                         <optgroup data-pgroup="forfait" label="{{ _('forfait') }}">
                                             <option value="f-spring" data-only='relax,panorama' data-id="{{ _('forfait-primavera-sul-lago') }}">{{ _('forfait primavera sul lago') }}</option>
 
@@ -772,6 +772,7 @@
                                                 <option value="f-weekend" data-only='relax,panorama' data-id="{{ _('ponti-e-week-end') }}">{{ _('forfait ponti/week-end') }}</option>
                                             {% endif %}
                                         </optgroup>
+                                        #}
                                     </select>
                                 </span>
                             </div>

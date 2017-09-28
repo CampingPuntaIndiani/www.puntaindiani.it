@@ -42,12 +42,14 @@
                     <a href="#{{ _('offerta-primavera') }}" class="nav-item is-tab">{{ _('offerta primavera') }}</a>
                     <a href="#{{ _('offerta-luglio') }}" class="nav-item is-tab">{{ _('offerta luglio') }}</a>
                 #}
-                    <a href="#{{ _('offerta-week-end-lunghi') }}" class="nav-item is-tab">{{ _('offerta week-end lunghi') }}</a>
+                    <a href="#{{ _('offerta-week-end-lunghi') }}" class="nav-item is-tab">{{ _('week-end di fine estate') }}</a>
                     <a href="#{{ _('offerta-bici-e-tendina') }}" class="nav-item is-tab">{{ _('offerta bici e tendina') }}</a>
+                {#
                     <a href="#{{ _('forfait-primavera-sul-lago') }}" class="nav-item is-tab">{{ _('forfait primavera sul lago') }}</a>
                     {% if lang != 'nl' %}
                         <a href="#{{ _('ponti-e-week-end') }}" class="nav-item is-tab">{{ _('forfait ponti/week-end') }}</a>
                     {% endif %}
+                #}
                     <a href="#{{ _('convenzioni') }}" class="nav-item is-tab">{{ _('card convenzionate') }}</a>
                 </div>
             </div>
@@ -173,7 +175,7 @@
                         <p class="subtitle">{{ _("L'offerta comprende") }}:</p>
                         <ul>
                             <li>{{ _('2 persone in piazzola Panorama o Relax') }}</li>
-                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  4A, acqua calda nei servizi') }}</li>
+                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  6A, acqua calda nei servizi') }}</li>
                             <li>{{ _('Trentino Guest Card in omaggio!') }}</li>
                         </ul>
                     </div>
@@ -237,7 +239,7 @@
                         <p class="subtitle">{{ _("L'offerta comprende") }}:</p>
                         <ul>
                             <li>{{ _('2 persone in piazzola Panorama o Relax') }}</li>
-                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  4A, acqua calda nei servizi') }}</li>
+                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  6A, acqua calda nei servizi') }}</li>
                             <li>{{ _('Trentino Guest Card in omaggio!') }}</li>
                         </ul>
                     </div>
@@ -289,10 +291,10 @@
                     <div class="column">
                         <div class="columns">
                             <div class="column">
-                                <h3 class="title is-2 is-upper">{{ _('offerta week-end lunghi') }}</h3>
-                                <h5 class="subtitle is-3">{{ _('Trasforma i ponti di primavera in una breve vacanza') }}</h5>
+                                <h3 class="title is-2 is-upper">{{ _('week-end di fine estate') }}</h3>
+                                <h5 class="subtitle is-3">{{ _("Concedetevi ancora un po' di relax") }}</h5>
                             </div>
-                            <div class="column is-narrow">28.05.2017<br>26.06.2017</div>
+                            <div class="column is-narrow">26.08.2017<br>30.09.2017</div>
                         </div>
                         <br class="is-target-only"><p class="subtitle has-text-centered txt-important"></p><br>
                         <center>
@@ -312,7 +314,7 @@
                         <p class="subtitle">{{ _("L'offerta comprende") }}:</p>
                         <ul>
                             <li>{{ _('2 persone in piazzola Panorama o Relax') }} {{ _("con partenza <strong>fino alle 20.00</strong> (anzichè entro le 11.00)  del quarto giorno") }}</li>
-                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  4A, acqua calda nei servizi') }}</li>
+                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  6A, acqua calda nei servizi') }}</li>
                         </ul>
                     </div>
 
@@ -329,7 +331,7 @@
                 <div class="is-target-only has-text-centered">
                     <p><small>{% trans %}Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.{% endtrans %}</small></p>
 
-                    <a href="index.html?promotion={{ _('offerta-week-end-lunghi') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;{{ _('offerta week-end lunghi') }}</p></a>
+                    <a href="index.html?promotion={{ _('offerta-week-end-lunghi') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;{{ _('week-end di fine estate') }}</p></a>
                 </div>
             </div>
         </section>
@@ -385,6 +387,7 @@
             </div>
         </section>
 
+        {#
         <!-- promotions group -->
         <section class="hero is-light is-bold">
             <div class="hero-body">
@@ -433,7 +436,7 @@
                         <p class="subtitle">{{ _("L'offerta comprende") }}:</p>
                         <ul>
                             <li>{{ _('2 persone in piazzola Panorama o Relax') }}</li>
-                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  4A, acqua calda nei servizi') }}</li>
+                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  6A, acqua calda nei servizi') }}</li>
                             <li>{{ _('Trentino Guest Card in omaggio!') }}</li>
                             <li>{{ _('cane - solo Relax') }}</li>
                         </ul>
@@ -457,8 +460,10 @@
                 </div>
             </div>
         </section>
+        #}
 
 
+        {#
         {% if lang != 'nl' %}
 
         <!-- promotions group -->
@@ -503,7 +508,7 @@
                         <p class="subtitle">{{ _("L'offerta comprende") }}:</p>
                         <ul>
                             <li>{{ _('1 Piazzola Panorama o Relax dal 28 aprile al 25 giugno') }}</li>
-                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  4A, acqua calda nei servizi') }}</li>
+                            <li>{{ _('Caravan/camper/tenda + eventuali tendine in piazzola, 1 auto, elettricità  6A, acqua calda nei servizi') }}</li>
                             <li>{{ _('Trentino Guest Card in omaggio!') }}</li>
                             <li>{{ _('26 pernottamenti per 2 persone') }}</li>
                         </ul>
@@ -529,6 +534,7 @@
         </section>
 
         {% endif %}
+        #}
 
         <!-- promotions group -->
         <section class="hero is-warning is-bold">
@@ -545,9 +551,9 @@
                 <span class="is-5"><strong>28.04.2017 - 07.07.2017</strong></span><br>
                 <span class="is-5"><strong>25.08-2017 - 30.09-2017</strong></span>
                 <ul>
-                    <li>{{ _('2 persone + 1 piazzola RELAX + 2 cani + 4A corrente = €17.00 al giorno') }}</li>
-                    <li>{{ _('2 persone + 1 piazzola PANORAMA + 4A corrente = €19.00 al giorno') }}</li>
-                    <li>{{ _('2 persone + 1 piazzola AQVA direttamente sul lago + 4A corrente = €27.00 al giorno') }}</li>
+                    <li>{{ _('2 persone + 1 piazzola RELAX + 2 cani + 6A corrente = €17.00 al giorno') }}</li>
+                    <li>{{ _('2 persone + 1 piazzola PANORAMA + 6A corrente = €19.00 al giorno') }}</li>
+                    <li>{{ _('2 persone + 1 piazzola AQVA direttamente sul lago + 6A corrente = €27.00 al giorno') }}</li>
                 </ul>
                 <small>{% trans %}Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.{% endtrans %}</small>
 
