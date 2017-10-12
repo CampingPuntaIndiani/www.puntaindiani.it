@@ -168,7 +168,7 @@ function ComboDate(base_id) {
 
                 if (hiding_days.length) {
                     Array.prototype.forEach.call(
-                        that.base_day.querySelectorAll(hiding_days.join('')),
+                        that.base_day.querySelectorAll(hiding_days.join(',')),
                         removeNode);
                 }
             }

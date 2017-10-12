@@ -41,11 +41,11 @@
                 {#
                     <a href="#{{ _('offerta-primavera') }}" class="nav-item is-tab">{{ _('offerta primavera') }}</a>
                     <a href="#{{ _('offerta-luglio') }}" class="nav-item is-tab">{{ _('offerta luglio') }}</a>
-                #}
                     <a href="#{{ _('offerta-week-end-lunghi') }}" class="nav-item is-tab">{{ _('week-end di fine estate') }}</a>
+                #}
                     <a href="#{{ _('offerta-bici-e-tendina') }}" class="nav-item is-tab">{{ _('offerta bici e tendina') }}</a>
-                {#
                     <a href="#{{ _('forfait-primavera-sul-lago') }}" class="nav-item is-tab">{{ _('forfait primavera sul lago') }}</a>
+                {#
                     {% if lang != 'nl' %}
                         <a href="#{{ _('ponti-e-week-end') }}" class="nav-item is-tab">{{ _('forfait ponti/week-end') }}</a>
                     {% endif %}
@@ -280,6 +280,7 @@
                 </div>
             </div>
         </section>
+{#
 
         <!-- Promotion left -->
         <section class="section">
@@ -335,6 +336,7 @@
                 </div>
             </div>
         </section>
+#}
 
         <!-- Promotion right -->
         <section class="section">
@@ -347,7 +349,7 @@
                                 <h3 class="title is-2 is-upper">{{ _('offerta bici e tendina') }}</h3>
                                 <h5 class="subtitle is-3">{{ _('Ciclisti che vivono la vacanza a contatto con la natura') }}</h5>
                             </div>
-                            <div class="column is-narrow">28.04.2017<br>30.09.2017</div>
+                            <div class="column is-narrow">28.04.2018<br>30.09.2018</div>
                         </div>
                         <br class="is-target-only"><p class="subtitle has-text-centered txt-important">{{ _('da solo o in gruppo') }}<sup>*</sup></p><br>
                         <center>
@@ -387,7 +389,6 @@
             </div>
         </section>
 
-        {#
         <!-- promotions group -->
         <section class="hero is-light is-bold">
             <div class="hero-body">
@@ -416,7 +417,7 @@
                             <div class="column">
                                 <h3 class="title is-2 is-upper">{{ _('forfait primavera sul lago') }}</h3>
                             </div>
-                            <div class="column is-narrow">28.04.2017<br>30.06.2017</div>
+                            <div class="column is-narrow">28.04.2018<br>30.06.2018</div>
                         </div>
                         <br class="is-target-only"><p class="subtitle has-text-centered txt-important"></p><br>
                         <center>
@@ -460,7 +461,6 @@
                 </div>
             </div>
         </section>
-        #}
 
 
         {#
@@ -540,22 +540,78 @@
         <section class="hero is-warning is-bold">
             <div class="hero-body">
                 <div class="container">
-                    <p class="title">{{ _('card convenzionate') }}</p>
+                    <p class="title">{{ _('card convenzionate') }} 2018</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
             <div class="container content is-medium is-target" id="{{ _('convenzioni') }}">
-                <h3 class="subtitle is-3">ACSI Camping Card  - ADAC/ANWB CAMP CARD -  Camping Key Europe</h3>
-                <span class="is-5"><strong>28.04.2017 - 07.07.2017</strong></span><br>
-                <span class="is-5"><strong>25.08-2017 - 30.09-2017</strong></span>
-                <ul>
-                    <li>{{ _('2 persone + 1 piazzola RELAX + 2 cani + 6A corrente = €17.00 al giorno') }}</li>
-                    <li>{{ _('2 persone + 1 piazzola PANORAMA + 6A corrente = €19.00 al giorno') }}</li>
-                    <li>{{ _('2 persone + 1 piazzola AQVA direttamente sul lago + 6A corrente = €27.00 al giorno') }}</li>
-                </ul>
-                <small>{% trans %}Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.{% endtrans %}</small>
+                <nav class="level has-text-centered title is-3" style="margin-bottom:2.5em">
+                    <div class="level-item"><strong>ACSI</strong> <span class="">Camping Card</span></div>
+                    <div class="level-item"><strong>ADAC/ANWB</strong> <span class="">Camp Card</span></div>
+                    <div class="level-item"><strong>Camping Key</strong> <span class="">Europe</span></div>
+                </nav>
+
+                <nav class="columns">
+                    <div class="column has-text-centered">
+                        <div>
+                            <span class="is-5">29/04 - 05/07</span><br>
+                            <span class="is-5">28/08 - 29/09</span>
+                        </div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div><strong style="color:#20bc56">RELAX</strong></div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div style="min-width:260px">2 {{ _('persone') }} + 6A + 2 {{ _('cani') }}</div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div><strong>€17.00</strong> {{ _('al giorno') }}</div>
+                    </div>
+                </nav>
+
+                <nav class="columns">
+                    <div class="column has-text-centered">
+                        <div>
+                            <span class="is-5">03/06 - 05/07</span><br>
+                            <span class="is-5">28/08 - 29/09</span>
+                        </div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div><span style="color:#d1b647">PANORAMA</span></div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div style="min-width:260px">2 {{ _('persone') }} + 6A</div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div><strong>€19.00</strong> {{ _('al giorno') }}</div>
+                    </div>
+                </nav>
+
+                <nav class="columns">
+                    <div class="column has-text-centered">
+                        <div>
+                            <span class="is-5">03/06 - 05/07</span><br>
+                            <span class="is-5">28/08 - 29/09</span>
+                        </div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div>
+                            <span style="color:#3273dc">AQVA</span><br>
+                            <i>...{{ _('direttamente sul lago') }}.</i>
+                        </div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div style="min-width:260px">2 {{ _('persone') }} + 6A</div>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div><strong>€27.00</strong> {{ _('al giorno') }}</div>
+                    </div>
+                </nav>
+
+
+                <p class="has-text-centered"><small>{% trans %}Non cumulabile con altre offerte. Tassa soggiorno esclusa: &euro;1 a persona (anni≥14) per i primi 10 giorni di soggiorno.{% endtrans %}</small></p>
 
                 <div class="columns">
                     <div class="column"><a href="index.html?promotion={{ _('ACSI') }}#{{ _('prenota') }}"><p class="button is-large is-primary is-fullwidth is-upper">{{ _('prenota ora') }}&nbsp;ACSI</p></a></div>
