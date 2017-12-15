@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2017-10-12 16:13+0200\n"
+"POT-Creation-Date: 2017-12-15 11:06+0100\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language: de\n"
@@ -1342,7 +1342,7 @@ msgstr "Begrenzte Verfügbarkeit."
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:588
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:609
 msgid "al giorno"
-msgstr ""
+msgstr "pro Tag"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:602
 msgid "direttamente sul lago"
