@@ -28,10 +28,12 @@
 
             <div class="container">
                 <div class="content is-medium">
+
+                    <h3 class="is-capitalize">{{ _('piazzole') }}</h3>
                     <table class="table is-bordered is-capitalize">
                         <thead>
                             <tr>
-                                <th>{{ _('piazzola') }}</th>
+                                <th></th>
                                 <th style="text-align:center">28/04 <span class="icon is-hidden-mobile"><i class="fa fa-long-arrow-right"></i></span><br class="is-hidden-tablet"> 06/07<br><small class="is-upper">{{ _('bassa stagione') }}</small></th>
                                 <th style="text-align:center">06/07 <span class="icon is-hidden-mobile"><i class="fa fa-long-arrow-right"></i></span><br class="is-hidden-tablet"> 26/08<br><small class="is-upper">{{ _('alta stagione') }}</small></th>
                                 <th style="text-align:center">26/08 <span class="icon is-hidden-mobile"><i class="fa fa-long-arrow-right"></i></span><br class="is-hidden-tablet"> 03/10<br><small class="is-upper">{{ _('bassa stagione') }}</small></th>
@@ -44,6 +46,37 @@
                         </tbody>
                     </table>
 
+
+                    <h3 class="is-capitalize">{{ _('case mobili') }}</h3>
+                    <table class="table is-bordered is-narrow is-capitalize">
+                        <thead>
+                            <tr>
+                                <th class="has-text-centered">28/04 – 02/07</th>
+                                <th class="has-text-centered">02/07 – 15/07</th>
+                                <th class="has-text-centered">15/07 – 26/08</th>
+                                <th class="has-text-centered">26/08 – 09/09</th>
+                                <th class="has-text-centered">09/09 - 30/09</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="has-text-centered">
+                                <td class="has-text-centered">&euro;45.</td>
+                                <td class="has-text-centered">&euro;60.</td>
+                                <td class="has-text-centered">&euro;120.</td>
+                                <td class="has-text-centered">&euro;60</td>
+                                <td class="has-text-centered">&euro;45</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-centered" colspan="2"><small class="is-upper">{{ _('incluse') }} 2 {{ _('persone') }}</small></td>
+                                <td class="has-text-centered"><small class="is-upper">{{ _('incluse') }} 4 {{ _('persone') }}</small></td>
+                                <td class="has-text-centered" colspan="2"><small class="is-upper">{{ _('incluse') }} 2 {{ _('persone') }}</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p style="text-align:center"><a href="{{ _('case-mobili') }}.html">{{ _('condizioni di vendita') }} </a></p>
+
+                    <h3 class="is-capitalize">Extra</h3>
                     {% include 'prices_extra_table.inc.html' %}
                 </div>
             </div>
