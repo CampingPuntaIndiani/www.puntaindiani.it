@@ -78,6 +78,7 @@ def generate():
                 'lang': lang,
                 'page': page,
                 'page_map': page_map,
+                #'page_map': sorted(page_map.items()),
             }
 
             fname = page_map.get(lang, page)
