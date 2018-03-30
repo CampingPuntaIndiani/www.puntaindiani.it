@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2018-03-29 20:27+0200\n"
+"POT-Creation-Date: 2018-03-30 17:56+0200\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language: en\n"
@@ -142,7 +142,7 @@ msgstr "Reservation completed"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:44
 msgid "Grazie per la Vs prenotazione!"
-msgstr "Thank you for your reservation!"
+msgstr "Thank you for your request!"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:46
 msgid ""
@@ -1336,7 +1336,7 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:442
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:512
 msgid "Valsugana Card in omaggio!"
-msgstr ""
+msgstr "Valsugana Card for free"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:443
 msgid "cane - solo Relax"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  0.1\n"
 "Report-Msgid-Bugs-To: martin.brugnara@gmail.com\n"
-"POT-Creation-Date: 2018-03-29 20:27+0200\n"
+"POT-Creation-Date: 2018-03-30 17:56+0200\n"
 "PO-Revision-Date: 2016-12-28 18:40+0100\n"
 "Last-Translator: Martin Brugnara <martin.brugnara@gmail.com>\n"
 "Language: de\n"
@@ -144,7 +144,7 @@ msgstr "füllte Buchungs"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:44
 msgid "Grazie per la Vs prenotazione!"
-msgstr "Vielen Dank für Ihre Reservierung!"
+msgstr "Vielen Dank für Ihre Anforderung!"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/booking_success.tpl.html:46
 msgid ""
@@ -1352,7 +1352,7 @@ msgstr ""
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:442
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:512
 msgid "Valsugana Card in omaggio!"
-msgstr ""
+msgstr "Valsugana Card kostenlos"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:443
 msgid "cane - solo Relax"
@@ -1395,7 +1395,7 @@ msgstr "1&nbsp;Platz +&nbsp;2 Personen am Wochenende und Brückentage"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:510
 msgid "1 Piazzola Panorama o Relax dal 28.04 al 01.07"
-msgstr "1 Stellplatz Panorama/Relax von den 28.04 bis den 25.07"
+msgstr "1 Stellplatz Panorama/Relax von den 28.04 bis den 01.07"
 
 #: /Users/martin/Projects/www.puntaindiani.it/pages/offerte.tpl.html:513
 msgid "28 pernottamenti per 2 persone"
