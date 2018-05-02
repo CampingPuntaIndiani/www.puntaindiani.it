@@ -4,7 +4,7 @@
         <meta name="google-site-verification" content="h7NhDkvsryR3wPb1KDHoRfajA7moBLGymNKtzpgerJ8"/>
         <meta name="robots" content="noindex,follow">
         <noscript>
-            <meta http-equiv="refresh" content="0; url=/en/">
+            <meta http-equiv="refresh" content="0; url=//en/">
         </noscript>
         <script type="text/javascript">
             <!--
@@ -17,8 +17,8 @@
                         'it': 'it',
                     }
                     var lang = lang_map[window.navigator.language];
-                    if (lang === undefined) lang='en'
-                    window.location = lang
+                    if (lang === undefined) lang='en';
+                    window.location = window.location.protocol + '//' + window.location.hostname + '/' + lang;
                 };
             //-->
         </script>

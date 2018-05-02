@@ -1,438 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/de/</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/de/</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/gallery.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/gallery.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/promotions.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/promotions.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/prices.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/prices.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/aqva.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/aqva.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/panorama.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/panorama.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/relax.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/relax.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/camping_map.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/camping_map.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/rules.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/en/rules.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/gallery.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/aanbieding.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/gallery.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/prijzen.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/aanbieding.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/aqva.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/prijzen.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/panorama.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/aqva.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/relax.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/panorama.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/camping_map.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/relax.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/verordening.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/camping_map.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/gallery.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/nl/verordening.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/offerte.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/prezzi.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/gallery.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/aqva.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/offerte.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/panorama.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/prezzi.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/relax.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/aqva.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/camping_map.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/panorama.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/regolamento.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/relax.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/de/gallery.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/camping_map.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/de/angebote.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/it/regolamento.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/de/preise.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/de/aqva.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/de/gallery.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/de/panorama.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/de/angebote.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/de/relax.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/de/preise.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/de/camping_map.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/de/aqva.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/en/mobile-homes.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/de/panorama.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/it/case-mobili.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/de/relax.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/de/mobilheimes.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.campingpuntaindiani.it/de/camping_map.html</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?pitch=aqva#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?pitch=panorama#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?pitch=relax#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?promotion=the-pentecost-holiday-on-the-lake#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?promotion=family-holiday#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?promotion=discover-punta-indiani#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?promotion=just-bike-and-tent#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?promotion=spring-at-punta-indiani#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?promotion=shortbreaks-and-week-ends#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?promotion=ACSI#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?promotion=ADAC#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/en/index.html?promotion=CKE#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?pitch=aqva#reserven</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?pitch=panorama#reserven</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?pitch=relax#reserven</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?promotion=hemelvaart-pinksteren-aanbieding#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?promotion=gezinsvakantie-aanbieding#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?promotion=ontdek-punta-indiani-aanbieding#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?promotion=met-fiets-en-tent#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?promotion=voorjaar-in-punta-indiani#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?promotion=ACSI#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?promotion=ADAC#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/nl/index.html?promotion=CKE#book</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?pitch=aqva#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?pitch=panorama#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?pitch=relax#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?promotion=offerta-primavera#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?promotion=offerta-luglio#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?promotion=offerta-week-end-lunghi#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?promotion=offerta-bici-e-tendina#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?promotion=forfait-primavera-sul-lago#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?promotion=ponti-e-week-end#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?promotion=ACSI#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?promotion=ADAC#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/it/index.html?promotion=CKE#prenota</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?pitch=aqva#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?pitch=panorama#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?pitch=relax#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?promotion=pfingsten#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?promotion=familienurlaub#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?promotion=bruckentage#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?promotion=rad-und-zelt#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?promotion=fruhling-am-see-pauschale#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?promotion=wochenende-und-bruckentage-pauschale#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?promotion=ACSI#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?promotion=ADAC#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://www.campingpuntaindiani.it/de/index.html?promotion=CKE#reservieren</loc>
-  <lastmod>2017-01-02T02:40:10+00:00</lastmod>
+  <loc>https://www.campingpuntaindiani.it/nl/stacaravan.html</loc>
+  <lastmod>2018-05-02T02:20:00+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 </urlset>
